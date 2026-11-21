@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoSE Science Comics — K–12 Illustrated Space Biology Anthology</title>
+  <meta name="description" content="114 illustrated K–12 science comics translating Dr. Richard Barker's open-source GitHub space biology, astrobotany, mycoponics, CFD, and astronaut health research into accessible, inspirational stories.">
+  <link rel="icon" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-logo.png">
+  <link rel="stylesheet" href="css/comics.css">
+</head>
+<body data-site-id="Comics">
+
+  <!-- Top CoSE Ecosystem Navigation Bar -->
+  <nav class="cose-top-bar" aria-label="CoSE Ecosystem Navigation">
+    <div class="wrap">
+      <a class="cose-brand-link" href="https://dr-richard-barker.github.io/">
+        🌌 Dr. Richard Barker · CoSE Open Science Ecosystem
+      </a>
+      <div class="cose-hub-links">
+        <a href="https://dr-richard-barker.github.io/CoSE_Cloud/Hub/">☁️ CoSE Cloud</a>
+        <a href="https://dr-richard-barker.github.io/AstroBotany/">🌱 AstroBotany</a>
+        <a href="https://dr-richard-barker.github.io/DeepSpaceAg/">🌾 Deep Space Ag</a>
+        <a href="https://dr-richard-barker.github.io/AstronautHealth/">🩺 Astronaut Health</a>
+        <a href="https://dr-richard-barker.github.io/dr-richard-barker/">🎓 CoSE Academy</a>
+        <a href="https://github.com/dr-richard-barker" target="_blank" rel="noopener">🐙 GitHub (170+ Repos)</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Anthology Hero Masthead -->
+  <header class="hero-header">
+    <div class="wrap">
+      <p class="hero-eyebrow">The Collaborative Science Environment (CoSE) · K–12 Illustrated Anthology</p>
+      <h1 class="hero-title">🚀 CoSE Science Comics: Stories from the Space Biology Lab</h1>
+      <p class="hero-lede">
+        Every research repository tells an adventure story! Explore <strong>114 illustrated comic issues</strong> across
+        <strong>8 distinct visual art styles</strong>—following <em>Doc B, Sprout, Myco, Statolith, Pixel, and Commander Astra</em>
+        as they uncover how plants, fungi, physics, AI, and astronauts adapt from Earth to the Moon and Mars.
+      </p>
+    </div>
+  </header>
+
+  <!-- Sticky Control Deck: View Mode Tabs + K-12 Reading Level Switcher -->
+  <div class="control-deck">
+    <div class="wrap control-deck-inner">
+      <div class="view-tabs-bar" role="tablist" aria-label="Comic Portal Views">
+        <button class="tab-btn active" data-tab-btn="newsstand" role="tab">📚 Comic Newsstand (114 Issues)</button>
+        <button class="tab-btn" data-tab-btn="reader" role="tab">📖 Interactive Comic Reader</button>
+        <button class="tab-btn" data-tab-btn="constellation" role="tab">🌌 Concept Constellation Graph</button>
+        <button class="tab-btn" data-tab-btn="educator" role="tab">👩‍🏫 Cast, Art Styles &amp; K–12 Educator Guide</button>
+      </div>
+
+      <div class="level-switcher-group" role="group" aria-label="K-12 Reading Level Switcher">
+        <span class="level-label">Reading Level:</span>
+        <button class="level-btn" data-level-btn="k5" aria-pressed="false">🌱 K–5 Explorer</button>
+        <button class="level-btn active" data-level-btn="ms" aria-pressed="true">🔬 6–8 Investigator</button>
+        <button class="level-btn" data-level-btn="hs" aria-pressed="false">🚀 9–12 + Teacher Guide</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       VIEW 1: COMIC NEWSSTAND (All 114 Issues across 8 Thematic Series)
+       ==================================================================== -->
+  <main id="view-newsstand" class="view-section active">
+    <div class="wrap">
+      <div class="filter-console">
+        <div id="series-filter-bar" class="series-filter-bar"></div>
+        <div class="filter-controls-row">
+          <input
+            type="search"
+            id="comic-search-input"
+            class="filter-input"
+            placeholder="🔍 Search comics by project name, topic, gene, Moon/Mars, or question (e.g. 'CFD', 'mycoponics', 'calcium', 'tomato')..."
+            aria-label="Search comics"
+          >
+          <select id="concept-filter-select" class="filter-select" aria-label="Filter by Connecting Concept"></select>
+          <select id="cast-filter-select" class="filter-select" aria-label="Filter by Character Cast"></select>
+          <button id="reset-filters-btn" class="btn-reset">Reset Filters</button>
+        </div>
+      </div>
+
+      <div class="newsstand-status-bar">
+        <span id="newsstand-count-label">Showing all 114 Illustrated Research Comics</span>
+        <span>💡 Click any comic card to open its full 5-panel story &amp; live research tool!</span>
+      </div>
+
+      <div id="newsstand-container"></div>
+    </div>
+  </main>
+
+  <!-- ====================================================================
+       VIEW 2: INTERACTIVE 5-PANEL COMIC BOOK READER
+       ==================================================================== -->
+  <section id="view-reader" class="view-section" aria-label="Interactive Comic Book Reader">
+    <div class="wrap">
+      <div id="comic-reader-stage"></div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       VIEW 3: INTERACTIVE CONCEPT CONSTELLATION GRAPH
+       ==================================================================== -->
+  <section id="view-constellation" class="view-section" aria-label="Concept Constellation Graph">
+    <div class="wrap">
+      <div class="constellation-pills-bar" id="constellation-concept-pills"></div>
+      <div class="constellation-layout">
+        <div class="constellation-stage-card">
+          <canvas id="constellation-canvas" width="900" height="600"></canvas>
+        </div>
+        <aside class="constellation-inspector-panel" id="constellation-inspector">
+          <div class="inspector-empty">
+            <h3>🌌 Interactive Concept Constellation</h3>
+            <p>Click any of the <strong>16 Core Concept Stars</strong> (inner ring) or <strong>114 Research Comic Planets</strong> (outer ring) to see how key scientific ideas bridge every project in the lab!</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       VIEW 4: CAST, 8 ART STYLES & K-12 EDUCATOR NGSS GUIDE
+       ==================================================================== -->
+  <section id="view-educator" class="view-section" aria-label="Cast and K-12 Educator Guide">
+    <div class="wrap">
+      <h2>👩‍🚀 Meet the Recurring Cast of the CoSE Space Lab</h2>
+      <p class="hero-lede">
+        Across all 8 visual comic styles, these six characters guide K–12 explorers from microscopic starch crystals
+        and fungal threads up to orbital greenhouses and lunar cities.
+      </p>
+      <div id="cast-cards-grid" class="cast-cards-grid"></div>
+
+      <h2>🎨 Eight Distinct Comic Art Styles — One Unified Scientific Universe</h2>
+      <p class="hero-lede">
+        Each thematic series features its own custom SVG artwork palette, panel geometry, and visual texture while sharing
+        our 5-panel narrative arc (<em>1. The Big Wonder → 2. The Space Challenge → 3. The CoSE Experiment → 4. The Eureka Discovery → 5. Inspirational Take-Home</em>).
+      </p>
+      <div id="styles-showcase-grid" class="styles-showcase-grid"></div>
+
+      <h2>📐 K–12 Next Generation Science Standards (NGSS) &amp; Concept Matrix</h2>
+      <p class="hero-lede">
+        Every comic issue connects 3 to 4 of these 16 core concepts and includes a 5-minute hands-on investigation using the project's free browser simulator.
+      </p>
+      <div class="ngss-table-wrap">
+        <table class="ngss-table">
+          <thead>
+            <tr>
+              <th>Core Concept Thread</th>
+              <th>NGSS Alignment</th>
+              <th>🌱 Elementary (K–5)</th>
+              <th>🔬 Middle School (6–8)</th>
+              <th>🚀 High School (9–12)</th>
+              <th>Connected Comics</th>
+            </tr>
+          </thead>
+          <tbody id="ngss-concepts-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>
+        <strong>CoSE Science Comics: The Illustrated Space Biology Anthology</strong> · Created by
+        <a href="https://dr-richard-barker.github.io/">Dr. Richard J. Barker</a> (Director,
+        <a href="https://cosecloud.com">Collaborative Science Environment</a> · Chair, NASA GeneLab Plant Analysis Working Group).<br>
+        All 114 comics are grounded in open-source repositories and FAIR datasets across
+        <a href="https://github.com/dr-richard-barker">@dr-richard-barker</a> and the NASA Open Science Data Repository (OSDR).
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data/comics_catalog.js"></script>
+  <script src="js/svg-art-engine.js"></script>
+  <script src="js/constellation.js"></script>
+  <script src="js/comic-reader.js"></script>
+</body>
+</html>
