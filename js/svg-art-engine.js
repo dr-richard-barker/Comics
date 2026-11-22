@@ -713,20 +713,20 @@
 
       case "fvcb-carbon-cycle": {
         return `
-          <g transform="translate(${cx},${cy}) scale(1.18)">
-            <circle cx="-40" cy="0" r="28" fill="#15803d" stroke="#86efac" stroke-width="2.2"/>
-            <text x="-40" y="-2" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">RUBISCO</text>
-            <text x="-40" y="9" font-size="8" fill="#bbf7d0" text-anchor="middle">Chloroplast</text>
+          <g transform="translate(${cx},${cy}) scale(1.12)">
+            <circle cx="-46" cy="0" r="32" fill="#15803d" stroke="#86efac" stroke-width="2.2"/>
+            <text x="-46" y="-2" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">RUBISCO</text>
+            <text x="-46" y="10" font-size="7.5" fill="#bbf7d0" text-anchor="middle">Chloroplast</text>
 
-            <circle cx="38" cy="-19" r="23" fill="#b45309" stroke="#fde047" stroke-width="2"/>
-            <text x="38" y="-17" font-size="8" fill="#fff" text-anchor="middle" font-weight="bold">Peroxisome</text>
-            <text x="38" y="-6" font-size="7.5" fill="#fef08a" text-anchor="middle">GOX / H₂O₂</text>
+            <circle cx="44" cy="-24" r="29" fill="#b45309" stroke="#fde047" stroke-width="2"/>
+            <text x="44" y="-23" font-size="7.5" fill="#fff" text-anchor="middle" font-weight="bold">Peroxisome</text>
+            <text x="44" y="-12" font-size="7.5" fill="#fef08a" text-anchor="middle">GOX / H₂O₂</text>
 
-            <circle cx="38" cy="24" r="23" fill="#be123c" stroke="#fda4af" stroke-width="2"/>
-            <text x="38" y="24" font-size="8" fill="#fff" text-anchor="middle" font-weight="bold">Mitochondria</text>
-            <text x="38" y="34" font-size="7.5" fill="#fecdd3" text-anchor="middle">GDC / SHMT</text>
+            <circle cx="44" cy="28" r="29" fill="#be123c" stroke="#fda4af" stroke-width="2"/>
+            <text x="44" y="28" font-size="7.5" fill="#fff" text-anchor="middle" font-weight="bold">Mitochondria</text>
+            <text x="44" y="39" font-size="7.5" fill="#fecdd3" text-anchor="middle">GDC / SHMT</text>
 
-            <path d="M -11 -10 L 15 -18 M 38 4 L 38 2 M 15 23 L -12 11" fill="none" stroke="${pal.accent2}" stroke-width="2.6" stroke-dasharray="5 3">
+            <path d="M -14 -12 L 15 -22 M 44 5 L 44 -1 M 15 26 L -15 12" fill="none" stroke="${pal.accent2}" stroke-width="2.6" stroke-dasharray="5 3">
               <animate attributeName="stroke-dashoffset" from="16" to="0" dur="1.2s" repeatCount="indefinite"/>
             </path>
           </g>

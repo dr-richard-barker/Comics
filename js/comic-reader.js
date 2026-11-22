@@ -546,9 +546,10 @@
     const panelsHtml = comic.panels
       .map((panel) => {
         const lvlData = panel[currentLevel] || panel.ms;
-        const svgArt = window.CoSEArtEngine.renderPanelSVG(comic, panel);
+        const isWide = panel.number === 1 || panel.number === 4 || panel.number === 5 || panel.layout === "wide-hero" || panel.layout === "wide-finale";
+        const panelForArt = isWide && panel.layout === "standard" ? Object.assign({}, panel, { layout: "wide-hero" }) : panel;
+        const svgArt = window.CoSEArtEngine.renderPanelSVG(comic, panelForArt);
         const speakerChar = castById[panel.speaker] || castById["doc-b"];
-        const isWide = panel.layout === "wide-hero" || panel.layout === "wide-finale";
         const anns = panel.annotations || [];
 
         return `
