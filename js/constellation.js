@@ -149,6 +149,9 @@
     if (!ctx) return;
     ctx.clearRect(0, 0, width, height);
 
+    const isLight =
+      window.CoSEArtEngine && window.CoSEArtEngine.getActiveTheme() === "light";
+
     const activeNode = selectedNode || hoveredNode;
     const connected = getConnectedSet(activeNode);
     const nodeById = {};
@@ -160,7 +163,7 @@
     const cx = width * 0.5;
     const cy = height * 0.5;
     ctx.save();
-    ctx.strokeStyle = "rgba(148, 163, 184, 0.12)";
+    ctx.strokeStyle = isLight ? "rgba(15, 23, 42, 0.16)" : "rgba(148, 163, 184, 0.14)";
     ctx.setLineDash([4, 6]);
     ctx.beginPath();
     ctx.arc(cx, cy, Math.min(width, height) * 0.23, 0, Math.PI * 2);
@@ -182,13 +185,13 @@
       ctx.moveTo(s.x, s.y);
       ctx.lineTo(t.x, t.y);
       if (isHighlighted) {
-        ctx.strokeStyle = s.color || "#38bdf8";
-        ctx.lineWidth = 2.2;
-        ctx.globalAlpha = 0.9;
+        ctx.strokeStyle = s.color || "#0284c7";
+        ctx.lineWidth = 2.4;
+        ctx.globalAlpha = 0.92;
       } else {
         ctx.strokeStyle = s.color || "#64748b";
-        ctx.lineWidth = 0.8;
-        ctx.globalAlpha = activeNode ? 0.07 : 0.22;
+        ctx.lineWidth = 0.9;
+        ctx.globalAlpha = activeNode ? 0.08 : isLight ? 0.28 : 0.22;
       }
       ctx.stroke();
     });
@@ -213,29 +216,29 @@
 
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
-      ctx.fillStyle = n.type === "concept" ? "#0f172a" : n.color;
+      ctx.fillStyle = n.type === "concept" ? (isLight ? "#ffffff" : "#0f172a") : n.color;
       ctx.fill();
-      ctx.lineWidth = n.type === "concept" ? 3 : 1.5;
-      ctx.strokeStyle = n.type === "concept" ? n.color : "#f8fafc";
+      ctx.lineWidth = n.type === "concept" ? 3 : 1.6;
+      ctx.strokeStyle = n.type === "concept" ? n.color : isLight ? "#0f172a" : "#f8fafc";
       ctx.stroke();
 
       if (n.type === "concept") {
         ctx.font = "13px system-ui, sans-serif";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.fillStyle = "#fff";
+        ctx.fillStyle = isLight ? "#0f172a" : "#ffffff";
         ctx.fillText(n.emoji, n.x, n.y);
 
-        // Concept Tag Label
+        // Concept Tag Label (Contrast-calibrated for both Light & Dark schemes)
         ctx.font = "bold 10px system-ui, sans-serif";
-        ctx.fillStyle = "#e2e8f0";
+        ctx.fillStyle = isLight ? "#0f172a" : "#f1f5f9";
         ctx.fillText(n.shortLabel, n.x, n.y + n.radius + 11);
       } else if (isFocused && activeNode) {
         // Show issue number on connected comics
         ctx.font = "bold 8.5px monospace";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.fillStyle = "#fff";
+        ctx.fillStyle = "#ffffff";
         ctx.fillText(String(n.issue_number), n.x, n.y);
       }
 
@@ -420,6 +423,7 @@
   window.CoSEConstellation = {
     initConstellation,
     selectConceptById,
-    resizeCanvas
+    resizeCanvas,
+    drawConstellation
   };
 })();

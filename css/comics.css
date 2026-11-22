@@ -1,23 +1,142 @@
 /* ==========================================================================
-   CoSE Science Comics — Illustrated Space Biology Anthology Stylesheet
+   CoSE Science Comics — Hyper-Detailed Academic Graphic Novel Stylesheet
+   Contrast-Optimized for Both Light Mode (Archival Ink) & Dark Mode (Space Console)
    ========================================================================== */
 
 :root {
-  --bg-deep: #070b14;
-  --bg-surface: #0f172a;
-  --bg-card: #15203b;
-  --bg-elevated: #1e293b;
-  --fg-primary: #f8fafc;
-  --fg-secondary: #cbd5e1;
-  --fg-muted: #94a3b8;
-  --border-line: rgba(148, 163, 184, 0.22);
-  --cose-teal: #0f7f9f;
-  --cose-cyan: #38bdf8;
-  --cose-gold: #fbbf24;
-  --cose-green: #22c55e;
+  /* Raw Light ("Archival Graphic Novel Ink") & Dark ("Deep-Space Console") Tokens */
+  --bg-deep-light: #f5f3ec;
+  --bg-deep-dark: #070b14;
+
+  --bg-surface-light: #ffffff;
+  --bg-surface-dark: #0f172a;
+
+  --bg-card-light: #f8fafc;
+  --bg-card-dark: #15203b;
+
+  --bg-elevated-light: #e2e8f0;
+  --bg-elevated-dark: #1e293b;
+
+  --fg-primary-light: #0f172a;
+  --fg-primary-dark: #f8fafc;
+
+  --fg-secondary-light: #1e293b;
+  --fg-secondary-dark: #e2e8f0;
+
+  --fg-muted-light: #334155;
+  --fg-muted-dark: #cbd5e1;
+
+  --border-line-light: rgba(15, 23, 42, 0.28);
+  --border-line-dark: rgba(148, 163, 184, 0.34);
+
+  --cose-teal-light: #0369a1;
+  --cose-teal-dark: #0284c7;
+
+  --cose-cyan-light: #0369a1;
+  --cose-cyan-dark: #38bdf8;
+
+  --cose-gold-light: #92400e;
+  --cose-gold-dark: #fde047;
+
+  --takehome-bg-light: #fefce8;
+  --takehome-bg-dark: rgba(15, 23, 42, 0.94);
+
+  --caption-bar-bg-light: #0f172a;
+  --caption-bar-bg-dark: #060a12;
+
+  /* Default to Light fallback before media query / light-dark() */
+  --bg-deep: var(--bg-deep-light);
+  --bg-surface: var(--bg-surface-light);
+  --bg-card: var(--bg-card-light);
+  --bg-elevated: var(--bg-elevated-light);
+  --fg-primary: var(--fg-primary-light);
+  --fg-secondary: var(--fg-secondary-light);
+  --fg-muted: var(--fg-muted-light);
+  --border-line: var(--border-line-light);
+  --cose-teal: var(--cose-teal-light);
+  --cose-cyan: var(--cose-cyan-light);
+  --cose-gold: var(--cose-gold-light);
+  --takehome-bg: var(--takehome-bg-light);
+  --caption-bar-bg: var(--caption-bar-bg-light);
+
+  /* Fallback for browsers without light-dark() support */
+  @media (prefers-color-scheme: dark) {
+    --bg-deep: var(--bg-deep-dark);
+    --bg-surface: var(--bg-surface-dark);
+    --bg-card: var(--bg-card-dark);
+    --bg-elevated: var(--bg-elevated-dark);
+    --fg-primary: var(--fg-primary-dark);
+    --fg-secondary: var(--fg-secondary-dark);
+    --fg-muted: var(--fg-muted-dark);
+    --border-line: var(--border-line-dark);
+    --cose-teal: var(--cose-teal-dark);
+    --cose-cyan: var(--cose-cyan-dark);
+    --cose-gold: var(--cose-gold-dark);
+    --takehome-bg: var(--takehome-bg-dark);
+    --caption-bar-bg: var(--caption-bar-bg-dark);
+  }
+
+  /* Modern CSS light-dark() resolution following computed color-scheme */
+  @supports (color: light-dark(white, black)) {
+    --bg-deep: light-dark(var(--bg-deep-light), var(--bg-deep-dark));
+    --bg-surface: light-dark(var(--bg-surface-light), var(--bg-surface-dark));
+    --bg-card: light-dark(var(--bg-card-light), var(--bg-card-dark));
+    --bg-elevated: light-dark(var(--bg-elevated-light), var(--bg-elevated-dark));
+    --fg-primary: light-dark(var(--fg-primary-light), var(--fg-primary-dark));
+    --fg-secondary: light-dark(var(--fg-secondary-light), var(--fg-secondary-dark));
+    --fg-muted: light-dark(var(--fg-muted-light), var(--fg-muted-dark));
+    --border-line: light-dark(var(--border-line-light), var(--border-line-dark));
+    --cose-teal: light-dark(var(--cose-teal-light), var(--cose-teal-dark));
+    --cose-cyan: light-dark(var(--cose-cyan-light), var(--cose-cyan-dark));
+    --cose-gold: light-dark(var(--cose-gold-light), var(--cose-gold-dark));
+    --takehome-bg: light-dark(var(--takehome-bg-light), var(--takehome-bg-dark));
+    --caption-bar-bg: light-dark(var(--caption-bar-bg-light), var(--caption-bar-bg-dark));
+  }
+
+  /* MANDATORY: Declare light dark on :root and map <meta name="color-scheme"> override */
+  color-scheme: light dark;
+  accent-color: var(--cose-teal);
+
+  &:has(> head > meta[name="color-scheme"][content="dark"]) {
+    color-scheme: dark;
+  }
+  &:has(> head > meta[name="color-scheme"][content="light"]) {
+    color-scheme: light;
+  }
+
   --radius-lg: 14px;
   --radius-md: 10px;
-  --shadow-card: 0 10px 28px rgba(0, 0, 0, 0.42);
+  --shadow-card: 0 10px 26px rgba(0, 0, 0, 0.22);
+}
+
+/* Toggle option branching without JS dependencies */
+.theme-toggle-btn .when-dark {
+  display: none;
+}
+.theme-toggle-btn .when-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(:has(> head > meta[name="color-scheme"][content="light"])) .theme-toggle-btn .when-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  :root:not(:has(> head > meta[name="color-scheme"][content="light"])) .theme-toggle-btn .when-light {
+    display: none;
+  }
+}
+
+:root:has(> head > meta[name="color-scheme"][content="dark"]) .theme-toggle-btn .when-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+:root:has(> head > meta[name="color-scheme"][content="dark"]) .theme-toggle-btn .when-light {
+  display: none;
 }
 
 * {
@@ -28,9 +147,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-deep);
-  background-image:
-    radial-gradient(circle at 12% 10%, rgba(15, 127, 159, 0.16), transparent 36%),
-    radial-gradient(circle at 88% 18%, rgba(124, 58, 237, 0.14), transparent 38%);
   color: var(--fg-primary);
   font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.5;
@@ -45,7 +161,7 @@ body {
 }
 
 .wrap {
-  max-width: 1320px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -54,10 +170,10 @@ body {
    Top CoSE Ecosystem Banner & Hero Header
    ========================================================================== */
 .cose-top-bar {
-  background: rgba(7, 11, 20, 0.92);
-  border-bottom: 1px solid var(--border-line);
-  padding: 8px 0;
-  font-size: 0.82rem;
+  background: var(--bg-surface);
+  border-bottom: 1.5px solid var(--border-line);
+  padding: 9px 0;
+  font-size: 0.84rem;
 }
 
 .cose-top-bar .wrap {
@@ -70,37 +186,39 @@ body {
 
 .cose-brand-link {
   color: var(--cose-cyan);
-  font-weight: 700;
+  font-weight: 800;
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .cose-hub-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 14px;
 }
 
 .cose-hub-links a {
   color: var(--fg-secondary);
+  font-weight: 600;
   text-decoration: none;
-  transition: color 0.15s;
 }
 
 .cose-hub-links a:hover {
   color: var(--cose-cyan);
+  text-decoration: underline;
 }
 
 .hero-header {
-  padding: 28px 0 22px;
-  border-bottom: 1px solid var(--border-line);
-  background: linear-gradient(180deg, rgba(15, 127, 159, 0.14), transparent);
+  padding: 26px 0 20px;
+  border-bottom: 1.5px solid var(--border-line);
+  background: linear-gradient(180deg, rgba(3, 105, 161, 0.12), transparent);
 }
 
 .hero-eyebrow {
   margin: 0 0 6px;
   color: var(--cose-cyan);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.84rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -108,30 +226,31 @@ body {
 
 .hero-title {
   margin: 0 0 10px;
-  font-size: clamp(1.8rem, 3.3vw, 2.7rem);
+  font-size: clamp(1.75rem, 3.2vw, 2.65rem);
   font-weight: 900;
   letter-spacing: -0.02em;
   line-height: 1.15;
+  color: var(--fg-primary);
 }
 
 .hero-lede {
-  margin: 0 0 18px;
-  max-width: 920px;
+  margin: 0 0 12px;
+  max-width: 960px;
   color: var(--fg-secondary);
-  font-size: 1.02rem;
+  font-size: 1.01rem;
 }
 
 /* ==========================================================================
-   Sticky Control Deck (Grade Level Toggle + View Mode Tabs)
+   Sticky Control Deck (View Mode Tabs + Reading Level + Theme Toggle)
    ========================================================================== */
 .control-deck {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: rgba(15, 23, 42, 0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-line);
-  padding: 12px 0;
+  background: var(--bg-surface);
+  border-bottom: 2px solid var(--border-line);
+  padding: 11px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .control-deck-inner {
@@ -139,7 +258,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
 
 .view-tabs-bar {
@@ -150,72 +269,87 @@ body {
 
 .tab-btn {
   background: var(--bg-card);
-  color: var(--fg-secondary);
-  border: 1px solid var(--border-line);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
   border-radius: 9px;
-  padding: 9px 15px;
-  font-size: 0.88rem;
+  padding: 8px 14px;
+  font-size: 0.87rem;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.14s ease;
 }
 
 .tab-btn:hover {
   border-color: var(--cose-cyan);
-  color: #fff;
 }
 
 .tab-btn.active {
   background: var(--cose-teal);
-  border-color: var(--cose-cyan);
-  color: #fff;
-  box-shadow: 0 0 16px rgba(56, 189, 248, 0.28);
+  border-color: var(--cose-teal);
+  color: #ffffff;
+}
+
+.right-controls-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
 
 .level-switcher-group {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5px;
   background: var(--bg-deep);
-  padding: 5px;
+  padding: 4px;
   border-radius: 10px;
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
 }
 
 .level-label {
-  font-size: 0.76rem;
-  font-weight: 700;
+  font-size: 0.75rem;
+  font-weight: 800;
   color: var(--fg-muted);
-  padding: 0 8px;
+  padding: 0 7px;
   text-transform: uppercase;
 }
 
 .level-btn {
   background: transparent;
-  color: var(--fg-secondary);
-  border: 1px solid transparent;
+  color: var(--fg-primary);
+  border: 1.5px solid transparent;
   border-radius: 7px;
-  padding: 6px 12px;
-  font-size: 0.82rem;
+  padding: 6px 11px;
+  font-size: 0.81rem;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.15s;
-}
-
-.level-btn:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.05);
 }
 
 .level-btn.active {
-  background: linear-gradient(135deg, #0284c7, #2563eb);
-  color: #fff;
-  border-color: #7dd3fc;
+  background: var(--cose-teal);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.theme-toggle-btn {
+  background: var(--bg-card);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
+  border-radius: 9px;
+  padding: 8px 13px;
+  font-size: 0.83rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--cose-cyan);
 }
 
 /* ==========================================================================
-   View Sections & Filter Bars
+   View Sections & Filter Console
    ========================================================================== */
 .view-section {
   display: none;
@@ -228,10 +362,10 @@ body {
 
 .filter-console {
   background: var(--bg-surface);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: var(--radius-lg);
   padding: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .series-filter-bar {
@@ -246,29 +380,27 @@ body {
   align-items: center;
   gap: 7px;
   background: var(--bg-card);
-  color: var(--fg-secondary);
-  border: 1px solid var(--border-line);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
   border-radius: 999px;
   padding: 6px 13px;
   font-size: 0.81rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.15s;
 }
 
 .series-pill:hover {
   border-color: var(--s-color, var(--cose-cyan));
-  color: #fff;
 }
 
 .series-pill.active {
   background: var(--s-color, var(--cose-teal));
-  border-color: #fff;
-  color: #fff;
+  border-color: var(--s-color, var(--cose-teal));
+  color: #ffffff;
 }
 
 .pill-count {
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.25);
   padding: 1px 7px;
   border-radius: 99px;
   font-size: 0.74rem;
@@ -291,35 +423,33 @@ body {
 .filter-select {
   background: var(--bg-deep);
   color: var(--fg-primary);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: 8px;
   padding: 9px 12px;
   font-size: 0.88rem;
+  font-weight: 600;
   width: 100%;
 }
 
 .btn-reset {
   background: var(--bg-elevated);
-  color: var(--fg-secondary);
-  border: 1px solid var(--border-line);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
   border-radius: 8px;
   padding: 9px 14px;
   font-size: 0.84rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-}
-
-.btn-reset:hover {
-  color: #fff;
-  border-color: var(--cose-cyan);
 }
 
 .newsstand-status-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
   color: var(--fg-muted);
+  font-weight: 600;
   font-size: 0.88rem;
 }
 
@@ -328,11 +458,12 @@ body {
    ========================================================================== */
 .series-shelf {
   margin-bottom: 44px;
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid var(--border-line);
-  border-top: 4px solid var(--series-color);
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-line);
+  border-top: 5px solid var(--series-color);
   border-radius: var(--radius-lg);
   padding: 22px;
+  box-shadow: var(--shadow-card);
 }
 
 .series-shelf-header {
@@ -343,16 +474,16 @@ body {
   gap: 12px;
   margin-bottom: 20px;
   padding-bottom: 14px;
-  border-bottom: 1px solid var(--border-line);
+  border-bottom: 1.5px solid var(--border-line);
 }
 
 .series-badge {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.73rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #fff;
+  color: #ffffff;
   padding: 3px 10px;
   border-radius: 5px;
   margin-bottom: 6px;
@@ -361,19 +492,20 @@ body {
 .series-title-group h2 {
   margin: 0 0 6px;
   font-size: 1.4rem;
+  color: var(--fg-primary);
 }
 
 .series-title-group p {
   margin: 0;
   color: var(--fg-secondary);
-  font-size: 0.92rem;
+  font-size: 0.93rem;
   max-width: 880px;
 }
 
 .series-count-badge {
   background: var(--bg-card);
-  border: 1px solid var(--series-color);
-  color: var(--series-accent);
+  border: 1.5px solid var(--series-color);
+  color: var(--fg-primary);
   font-weight: 800;
   font-size: 0.85rem;
   padding: 6px 14px;
@@ -382,7 +514,7 @@ body {
 
 .comic-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   gap: 18px;
 }
 
@@ -390,7 +522,7 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--bg-card);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
@@ -401,12 +533,10 @@ body {
 .comic-card:hover {
   transform: translateY(-4px);
   border-color: var(--card-accent, var(--cose-cyan));
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.58);
 }
 
 .comic-card-cover {
   width: 100%;
-  background: #050911;
   border-bottom: 2px solid var(--card-accent, var(--cose-cyan));
 }
 
@@ -433,16 +563,16 @@ body {
 .issue-pill {
   font-size: 0.72rem;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
   padding: 2px 8px;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
 .style-pill {
-  font-size: 0.76rem;
+  font-size: 0.77rem;
   color: var(--fg-muted);
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -452,23 +582,24 @@ body {
   margin: 0 0 8px;
   font-size: 1.08rem;
   line-height: 1.3;
-  color: #fff;
+  color: var(--fg-primary);
 }
 
 .comic-card-hook {
   margin: 0 0 10px;
-  font-size: 0.86rem;
+  font-size: 0.87rem;
   color: var(--fg-secondary);
   line-height: 1.45;
 }
 
 .comic-card-takehome {
-  background: rgba(15, 23, 42, 0.72);
-  border-left: 3px solid var(--card-accent, var(--cose-gold));
+  background: var(--takehome-bg);
+  border-left: 3.5px solid var(--card-accent, var(--cose-teal));
   padding: 8px 10px;
   border-radius: 6px;
-  font-size: 0.81rem;
-  color: #fef08a;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cose-gold);
   margin-bottom: 12px;
   flex: 1;
 }
@@ -482,55 +613,67 @@ body {
 
 .card-concept-tag {
   font-size: 0.72rem;
-  padding: 2px 7px;
+  font-weight: 700;
+  padding: 2px 8px;
   border-radius: 99px;
-  border: 1px solid;
-  background: rgba(0, 0, 0, 0.3);
-  color: var(--fg-secondary);
+  border: 1.5px solid;
+  background: var(--bg-surface);
+  color: var(--fg-primary);
 }
 
 .comic-card-footer {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
 }
 
 .btn-read-comic {
   flex: 1;
   background: var(--card-accent, var(--cose-teal));
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 7px;
-  padding: 8px 12px;
-  font-size: 0.83rem;
-  font-weight: 700;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  font-weight: 800;
   cursor: pointer;
+}
+
+.btn-export-quick {
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
+  border-radius: 7px;
+  padding: 7px 9px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-export-quick:hover {
+  border-color: var(--cose-cyan);
 }
 
 .btn-live-mini {
   background: var(--bg-elevated);
   color: var(--fg-primary);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: 7px;
-  padding: 7px 10px;
-  font-size: 0.78rem;
-  font-weight: 600;
+  padding: 7px 9px;
+  font-size: 0.76rem;
+  font-weight: 800;
   text-decoration: none;
 }
 
-.btn-live-mini:hover {
-  border-color: var(--cose-cyan);
-}
-
 /* ==========================================================================
-   5-Panel Interactive Comic Book Reader Page
+   5-Panel Interactive Graphic Novel Reader Page
    ========================================================================== */
 .comic-book-page {
   background: var(--bg-surface);
-  border: 2px solid var(--series-color, var(--cose-cyan));
+  border: 2.5px solid var(--series-color, var(--cose-cyan));
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.65);
+  box-shadow: var(--shadow-card);
 }
 
 .reader-nav-toolbar {
@@ -539,9 +682,7 @@ body {
   gap: 10px;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border-line);
+  margin-bottom: 14px;
 }
 
 .reader-issue-picker-wrap {
@@ -552,19 +693,18 @@ body {
 .reader-issue-select {
   width: 100%;
   background: var(--bg-deep);
-  color: #fff;
-  border: 1px solid var(--series-color);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--series-color);
   border-radius: 8px;
   padding: 9px 12px;
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-.btn-nav-step,
-.btn-print-zine {
+.btn-nav-step {
   background: var(--bg-card);
-  color: #fff;
-  border: 1px solid var(--border-line);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
   border-radius: 8px;
   padding: 9px 15px;
   font-size: 0.86rem;
@@ -572,15 +712,57 @@ body {
   cursor: pointer;
 }
 
-.btn-nav-step:hover,
-.btn-print-zine:hover {
-  border-color: var(--series-accent);
+.btn-nav-step:hover {
+  border-color: var(--series-color);
   background: var(--bg-elevated);
 }
 
+/* Multi-Format Export & Embed Suite Bar */
+.media-export-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-line);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+}
+
+.met-label {
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: var(--fg-primary);
+}
+
+.met-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn-media-export {
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--series-color);
+  border-radius: 7px;
+  padding: 7px 12px;
+  font-size: 0.81rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.14s;
+}
+
+.btn-media-export:hover {
+  background: var(--series-color);
+  color: #ffffff;
+}
+
 .comic-page-masthead {
-  background: rgba(7, 11, 20, 0.72);
-  border: 1px solid var(--border-line);
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-line);
   border-left: 6px solid var(--series-color);
   border-radius: 12px;
   padding: 18px 20px;
@@ -598,7 +780,7 @@ body {
 .masthead-series-tag {
   font-size: 0.75rem;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
   padding: 4px 10px;
   border-radius: 5px;
   letter-spacing: 0.05em;
@@ -608,23 +790,45 @@ body {
 .masthead-level-tag {
   font-size: 0.78rem;
   font-weight: 700;
-  background: var(--bg-card);
-  color: var(--fg-secondary);
+  background: var(--bg-surface);
+  color: var(--fg-primary);
   padding: 4px 10px;
   border-radius: 5px;
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
 }
 
 .masthead-comic-title {
   margin: 0 0 6px;
   font-size: clamp(1.45rem, 2.5vw, 2.1rem);
   font-weight: 900;
+  color: var(--fg-primary);
 }
 
 .masthead-project-sub {
-  margin: 0 0 12px;
+  margin: 0 0 10px;
   color: var(--fg-secondary);
-  font-size: 0.93rem;
+  font-size: 0.94rem;
+}
+
+.masthead-telemetry-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.telemetry-badge {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.79rem;
+  color: var(--fg-primary);
+}
+
+.telemetry-badge code {
+  color: var(--cose-cyan);
+  font-weight: 700;
 }
 
 .masthead-cast-row {
@@ -636,13 +840,14 @@ body {
 }
 
 .reader-cast-chip {
-  background: var(--bg-card);
-  border: 1px solid;
+  background: var(--bg-surface);
+  border: 1.5px solid;
   padding: 3px 10px;
   border-radius: 99px;
+  color: var(--fg-primary);
 }
 
-/* 5-Panel Comic Grid: Panel 1 Wide, Panels 2-3-4 Row, Panel 5 Wide */
+/* 5-Panel Comic Grid */
 .comic-panels-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -657,7 +862,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-card);
 }
 
 .comic-panel-card.panel-wide {
@@ -674,7 +879,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #060a12;
+  background: var(--caption-bar-bg);
   padding: 9px 14px;
   border-bottom: 1.5px solid var(--border-line);
 }
@@ -688,7 +893,7 @@ body {
   justify-content: center;
   font-size: 0.8rem;
   font-weight: 900;
-  color: #fff;
+  color: #ffffff;
   flex-shrink: 0;
 }
 
@@ -701,7 +906,7 @@ body {
 
 .panel-art-viewport {
   width: 100%;
-  background: #07101e;
+  border-bottom: 1.5px solid var(--border-line);
 }
 
 .comic-panel-svg {
@@ -710,21 +915,38 @@ body {
   display: block;
 }
 
-/* Comic Speech Bubble */
+.panel-annotations-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 8px 12px 2px;
+}
+
+.pa-chip {
+  font-size: 0.72rem;
+  font-family: monospace;
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  border: 1px solid var(--border-line);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* Comic Speech Bubble — Always Ultra-High Contrast Ink on Archival Ivory */
 .panel-speech-bubble {
-  margin: 12px 14px 8px;
-  background: #f8fafc;
+  margin: 10px 14px 8px;
+  background: #ffffff;
   color: #0f172a;
   border: 2.5px solid var(--speaker-color, #0284c7);
   border-radius: 14px;
   padding: 12px 14px;
   position: relative;
-  box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 3px 4px 0 rgba(15, 23, 42, 0.25);
 }
 
 .speech-speaker-tag {
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -736,7 +958,7 @@ body {
 .speech-dialogue-text {
   margin: 0;
   font-size: 0.94rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.45;
   color: #0f172a;
 }
@@ -744,10 +966,12 @@ body {
 .panel-science-footnote {
   margin: auto 14px 12px;
   padding: 8px 11px;
-  background: rgba(7, 11, 20, 0.65);
+  background: var(--bg-surface);
   border-radius: 8px;
-  border-left: 3px solid var(--series-accent);
-  font-size: 0.8rem;
+  border: 1px solid var(--border-line);
+  border-left: 3.5px solid var(--series-color);
+  font-size: 0.81rem;
+  font-weight: 600;
   color: var(--fg-secondary);
   display: flex;
   gap: 7px;
@@ -758,13 +982,12 @@ body {
    Inspirational K-12 Take-Home Banner & Teacher Activity Box
    ========================================================================== */
 .inspirational-takehome-banner {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.92));
+  background: var(--takehome-bg);
   border: 2.5px solid var(--series-color);
   border-radius: 14px;
   padding: 22px 24px;
   margin-bottom: 24px;
   text-align: center;
-  position: relative;
 }
 
 .takehome-star-badge {
@@ -772,7 +995,7 @@ body {
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.08em;
-  color: #fff;
+  color: #ffffff;
   padding: 4px 14px;
   border-radius: 99px;
   margin-bottom: 10px;
@@ -783,14 +1006,14 @@ body {
   max-width: 900px;
   font-size: clamp(1.18rem, 2vw, 1.55rem);
   font-weight: 800;
-  color: #fef08a;
+  color: var(--cose-gold);
   line-height: 1.35;
 }
 
 .takehome-science-summary {
   max-width: 880px;
   margin: 0 auto 18px;
-  color: var(--fg-secondary);
+  color: var(--fg-primary);
   font-size: 0.95rem;
 }
 
@@ -811,28 +1034,21 @@ body {
   font-size: 0.92rem;
   font-weight: 800;
   text-decoration: none;
-  transition: transform 0.12s;
 }
 
 .btn-launch-live {
-  color: #fff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
 }
 
 .btn-view-repo {
   background: var(--bg-card);
   color: var(--fg-primary);
-  border: 1px solid var(--border-line);
-}
-
-.btn-launch-live:hover,
-.btn-view-repo:hover {
-  transform: translateY(-2px);
+  border: 1.5px solid var(--border-line);
 }
 
 .teacher-activity-box {
-  background: rgba(15, 118, 110, 0.14);
-  border: 1px solid rgba(45, 212, 191, 0.35);
+  background: var(--bg-card);
+  border: 2px solid var(--cose-teal);
   border-radius: 12px;
   padding: 18px 20px;
   margin-bottom: 24px;
@@ -850,22 +1066,24 @@ body {
 .teacher-box-header h3 {
   margin: 0;
   font-size: 1.1rem;
-  color: #5eead4;
+  color: var(--cose-cyan);
 }
 
 .ngss-pill {
-  background: rgba(15, 23, 42, 0.8);
-  color: #99f6e4;
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  border: 1px solid var(--border-line);
   padding: 3px 10px;
   border-radius: 6px;
   font-size: 0.78rem;
+  font-weight: 700;
   font-family: monospace;
 }
 
 .teacher-activity-prompt {
   margin: 0 0 14px;
   font-size: 0.95rem;
-  color: #f0fdfa;
+  color: var(--fg-primary);
 }
 
 .teacher-discussion-grid {
@@ -881,11 +1099,12 @@ body {
 }
 
 .td-card {
-  background: rgba(15, 23, 42, 0.75);
-  border: 1px solid var(--border-line);
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-line);
   border-radius: 8px;
   padding: 12px;
-  font-size: 0.84rem;
+  font-size: 0.85rem;
+  color: var(--fg-primary);
 }
 
 .td-card p {
@@ -895,7 +1114,7 @@ body {
 
 /* Connecting Concepts & Connected Comics Trail */
 .connecting-concepts-section {
-  border-top: 1px solid var(--border-line);
+  border-top: 1.5px solid var(--border-line);
   padding-top: 20px;
 }
 
@@ -914,13 +1133,14 @@ body {
   gap: 4px;
   padding: 10px 14px;
   border-radius: 10px;
-  border: 1.5px solid;
-  color: #fff;
+  border: 2px solid;
+  background: var(--bg-card);
+  color: var(--fg-primary);
   cursor: pointer;
 }
 
 .rc-sub {
-  font-size: 0.78rem;
+  font-size: 0.79rem;
   color: var(--fg-secondary);
 }
 
@@ -937,22 +1157,17 @@ body {
   text-align: left;
   gap: 5px;
   background: var(--bg-card);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: 10px;
   padding: 12px;
-  color: #fff;
+  color: var(--fg-primary);
   cursor: pointer;
-  transition: transform 0.14s;
-}
-
-.connected-comic-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--cose-cyan);
 }
 
 .cc-issue {
-  font-size: 0.73rem;
+  font-size: 0.74rem;
   font-weight: 800;
+  color: var(--cose-cyan);
 }
 
 .cc-project {
@@ -963,12 +1178,191 @@ body {
 .cc-shared {
   font-size: 0.76rem;
   color: var(--cose-gold);
-  font-weight: 700;
+  font-weight: 800;
   margin-top: auto;
 }
 
 /* ==========================================================================
-   Concept Constellation Explorer Tab
+   Multi-Format Export & Embed Modal Dialog
+   ========================================================================== */
+.export-modal-dialog {
+  width: min(1240px, 95vw);
+  max-height: 92vh;
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  border: 2.5px solid var(--cose-cyan);
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.75);
+}
+
+.export-modal-dialog::backdrop {
+  background: rgba(7, 11, 20, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.export-modal-shell {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.export-modal-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1.5px solid var(--border-line);
+  background: var(--bg-card);
+}
+
+.export-modal-header h2 {
+  margin: 4px 0 0;
+  font-size: 1.25rem;
+}
+
+.export-modal-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 2px 9px;
+  border-radius: 4px;
+}
+
+.export-format-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ef-tab {
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
+  border-radius: 7px;
+  padding: 7px 11px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.ef-tab.active {
+  background: var(--cose-teal);
+  color: #ffffff;
+  border-color: var(--cose-teal);
+}
+
+.ef-close-btn {
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 12px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.export-modal-body {
+  padding: 18px 20px;
+  overflow-y: auto;
+}
+
+.export-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-line);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 0.88rem;
+}
+
+.export-btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-download-media,
+.btn-open-newtab {
+  background: var(--cose-teal);
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 14px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.export-preview-stage {
+  background: var(--bg-deep);
+  border: 1.5px solid var(--border-line);
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+
+.export-preview-stage svg,
+.export-preview-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.pdf-plate-sheet {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.pdf-academic-caption {
+  text-align: left;
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  color: #0f172a;
+  border-top: 2px solid #0f172a;
+  font-size: 0.86rem;
+}
+
+.embed-snippets-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.embed-box {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-line);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.embed-box h4 {
+  margin: 0 0 6px;
+}
+
+.embed-textarea {
+  width: 100%;
+  background: var(--bg-deep);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
+  border-radius: 7px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 0.82rem;
+}
+
+/* ==========================================================================
+   Concept Constellation, Cast & NGSS Matrix
    ========================================================================== */
 .constellation-layout {
   display: grid;
@@ -985,7 +1379,7 @@ body {
 
 .constellation-stage-card {
   background: var(--bg-surface);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: var(--radius-lg);
   padding: 14px;
   overflow: hidden;
@@ -1003,8 +1397,8 @@ body {
   align-items: center;
   gap: 6px;
   background: var(--bg-card);
-  color: var(--fg-secondary);
-  border: 1px solid var(--c-color, var(--cose-cyan));
+  color: var(--fg-primary);
+  border: 1.5px solid var(--c-color, var(--cose-cyan));
   border-radius: 99px;
   padding: 4px 10px;
   font-size: 0.76rem;
@@ -1014,11 +1408,11 @@ body {
 
 .constellation-pill:hover {
   background: var(--c-color);
-  color: #fff;
+  color: #ffffff;
 }
 
 .cp-count {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.25);
   padding: 1px 6px;
   border-radius: 99px;
   font-size: 0.7rem;
@@ -1026,7 +1420,7 @@ body {
 
 .constellation-inspector-panel {
   background: var(--bg-surface);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: var(--radius-lg);
   padding: 18px;
   max-height: 640px;
@@ -1042,7 +1436,7 @@ body {
   display: inline-block;
   font-size: 0.74rem;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
   padding: 3px 9px;
   border-radius: 5px;
   margin-right: 6px;
@@ -1057,10 +1451,11 @@ body {
 .inspector-quote {
   margin: 10px 0;
   padding: 10px;
-  background: var(--bg-card);
-  border-left: 3px solid var(--cose-gold);
+  background: var(--takehome-bg);
+  border-left: 3px solid var(--cose-teal);
   border-radius: 6px;
-  color: #fef08a;
+  color: var(--cose-gold);
+  font-weight: 700;
   font-size: 0.88rem;
 }
 
@@ -1073,7 +1468,7 @@ body {
 
 .btn-primary {
   background: var(--cose-teal);
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 7px;
   padding: 8px 13px;
@@ -1084,8 +1479,8 @@ body {
 
 .btn-secondary {
   background: var(--bg-card);
-  color: #fff;
-  border: 1px solid var(--border-line);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
   border-radius: 7px;
   padding: 8px 13px;
   font-size: 0.83rem;
@@ -1104,21 +1499,18 @@ body {
   align-items: center;
   gap: 9px;
   background: var(--bg-card);
-  color: #fff;
-  border: 1px solid var(--border-line);
+  color: var(--fg-primary);
+  border: 1.5px solid var(--border-line);
   border-radius: 8px;
   padding: 8px 11px;
   text-align: left;
   cursor: pointer;
 }
 
-.inspector-comic-btn:hover {
-  border-color: var(--cose-cyan);
-}
-
 .ic-num {
   font-size: 0.73rem;
   font-weight: 800;
+  color: #ffffff;
   padding: 2px 7px;
   border-radius: 4px;
 }
@@ -1126,13 +1518,13 @@ body {
 .ic-title {
   flex: 1;
   font-size: 0.83rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .ic-go {
   font-size: 0.76rem;
   color: var(--cose-cyan);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .inspector-concept-pills {
@@ -1143,17 +1535,15 @@ body {
 
 .concept-pill-btn {
   background: var(--bg-card);
-  color: #fff;
+  color: var(--fg-primary);
   border: 1.5px solid;
   border-radius: 99px;
   padding: 5px 11px;
   font-size: 0.8rem;
+  font-weight: 700;
   cursor: pointer;
 }
 
-/* ==========================================================================
-   Cast & Universe Guide + Educator NGSS Matrix
-   ========================================================================== */
 .cast-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -1165,7 +1555,7 @@ body {
   display: flex;
   gap: 16px;
   background: var(--bg-surface);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: 12px;
   padding: 18px;
 }
@@ -1184,7 +1574,7 @@ body {
   display: inline-block;
   font-size: 0.7rem;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
   padding: 2px 8px;
   border-radius: 4px;
   margin-bottom: 4px;
@@ -1199,13 +1589,14 @@ body {
   margin: 0 0 8px;
   font-size: 0.82rem;
   color: var(--cose-cyan);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .cast-quote {
   margin: 0 0 8px;
   font-size: 0.83rem;
-  color: #fef08a;
+  color: var(--cose-gold);
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -1219,11 +1610,11 @@ body {
 .btn-filter-series-jump {
   background: var(--bg-card);
   color: var(--cose-cyan);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: 6px;
   padding: 6px 11px;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
   cursor: pointer;
 }
 
@@ -1236,7 +1627,7 @@ body {
 
 .style-guide-card {
   background: var(--bg-surface);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: 10px;
   padding: 16px;
 }
@@ -1245,7 +1636,7 @@ body {
   display: inline-block;
   font-size: 0.72rem;
   font-weight: 800;
-  color: #fff;
+  color: #ffffff;
   padding: 2px 8px;
   border-radius: 4px;
   margin-bottom: 6px;
@@ -1260,7 +1651,7 @@ body {
   margin: 0 0 6px;
   font-size: 0.83rem;
   color: var(--cose-cyan);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .sg-desc {
@@ -1272,7 +1663,7 @@ body {
 .ngss-table-wrap {
   overflow-x: auto;
   background: var(--bg-surface);
-  border: 1px solid var(--border-line);
+  border: 1.5px solid var(--border-line);
   border-radius: 12px;
 }
 
@@ -1298,7 +1689,7 @@ body {
 
 .table-concept-badge {
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 0.78rem;
   padding: 3px 9px;
@@ -1306,32 +1697,51 @@ body {
   white-space: nowrap;
 }
 
-/* ==========================================================================
-   Site Footer & Print-to-Poster Stylesheet
-   ========================================================================== */
 .site-footer {
-  border-top: 1px solid var(--border-line);
+  border-top: 1.5px solid var(--border-line);
   padding: 28px 0 40px;
   color: var(--fg-muted);
   font-size: 0.86rem;
-  background: rgba(7, 11, 20, 0.85);
+  background: var(--bg-surface);
 }
 
 .site-footer a {
   color: var(--cose-cyan);
+  font-weight: 700;
   text-decoration: none;
 }
 
+/* Forced Colors (High Contrast Windows Mode) Support */
+@media (forced-colors: active) {
+  .comic-card,
+  .comic-panel-card,
+  .tab-btn,
+  .level-btn,
+  .series-pill,
+  .theme-toggle-btn {
+    border: 2px solid CanvasText;
+  }
+  .tab-btn.active,
+  .level-btn.active,
+  .series-pill.active {
+    outline: 3px solid Highlight;
+  }
+}
+
 @media print {
+  :root {
+    color-scheme: light !important;
+  }
   body {
-    background: #fff !important;
-    color: #000 !important;
+    background: #ffffff !important;
+    color: #000000 !important;
   }
   .cose-top-bar,
   .hero-header,
   .control-deck,
   .no-print,
-  .site-footer {
+  .site-footer,
+  .export-modal-dialog {
     display: none !important;
   }
   .view-section {
@@ -1343,7 +1753,7 @@ body {
   }
   .comic-book-page {
     box-shadow: none !important;
-    border: 2px solid #000 !important;
+    border: 2px solid #000000 !important;
     padding: 12px !important;
   }
 }

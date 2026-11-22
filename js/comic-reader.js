@@ -1,5 +1,5 @@
 /**
- * CoSE Science Comics — Main Application Controller & Comic Book Reader
+ * CoSE Science Comics — Main Application Controller, Theme Engine & Comic Book Reader
  */
 (function () {
   "use strict";
@@ -25,6 +25,61 @@
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
+  }
+
+  /**
+   * Light / Dark Mode Theme Controller following modern-web-guidance:
+   * - <meta name="color-scheme"> is the source of truth mapped to :root color-scheme
+   * - Toggling flips the currently rendered scheme; if the target matches the OS
+   *   preference, localStorage is cleared and meta resets to "light dark".
+   */
+  function getSystemScheme() {
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches
+      ? "light"
+      : "dark";
+  }
+
+  function getRenderedScheme() {
+    const meta = document.querySelector('meta[name="color-scheme"]');
+    const val = meta ? meta.content : "light dark";
+    if (val === "light" || val === "dark") return val;
+    return getSystemScheme();
+  }
+
+  function applyColorSchemeMeta(schemeValue) {
+    const meta = document.querySelector('meta[name="color-scheme"]');
+    if (meta) {
+      meta.content = schemeValue || "light dark";
+    }
+    refreshAllThemeVisuals();
+  }
+
+  function toggleColorScheme() {
+    const currentRendered = getRenderedScheme();
+    const target = currentRendered === "dark" ? "light" : "dark";
+    const sys = getSystemScheme();
+
+    try {
+      if (target === sys) {
+        localStorage.removeItem("color-scheme");
+        applyColorSchemeMeta("light dark");
+      } else {
+        localStorage.setItem("color-scheme", target);
+        applyColorSchemeMeta(target);
+      }
+    } catch (_) {
+      applyColorSchemeMeta(target);
+    }
+  }
+
+  function refreshAllThemeVisuals() {
+    if (!DATA) return;
+    renderNewsstand();
+    renderComicIssue(currentComicId);
+    renderEducatorAndCastHub();
+    if (window.CoSEConstellation && window.CoSEConstellation.drawConstellation) {
+      window.CoSEConstellation.drawConstellation();
+    }
   }
 
   function init() {
@@ -54,9 +109,23 @@
       syncUIWithState();
     });
 
+    window.addEventListener("storage", (e) => {
+      if (e.key === "color-scheme") {
+        applyColorSchemeMeta(e.newValue ?? "light dark");
+      }
+    });
+
+    if (window.matchMedia) {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", () => {
+          refreshAllThemeVisuals();
+        });
+    }
+
     window.addEventListener("keydown", (e) => {
       if (currentTab !== "reader") return;
-      if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "SELECT")) return;
+      if (e.target && (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA")) return;
       if (e.key === "ArrowRight") stepIssue(1);
       if (e.key === "ArrowLeft") stepIssue(-1);
     });
@@ -92,6 +161,12 @@
   }
 
   function setupControls() {
+    // Theme Toggle Button
+    const themeBtn = document.getElementById("theme-toggle-btn");
+    if (themeBtn) {
+      themeBtn.addEventListener("click", toggleColorScheme);
+    }
+
     // Reading Level Switcher
     document.querySelectorAll("[data-level-btn]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -142,14 +217,12 @@
   }
 
   function syncUIWithState() {
-    // Update Level Buttons
     document.querySelectorAll("[data-level-btn]").forEach((btn) => {
       const isMatch = btn.getAttribute("data-level-btn") === currentLevel;
       btn.classList.toggle("active", isMatch);
       btn.setAttribute("aria-pressed", isMatch ? "true" : "false");
     });
 
-    // Update View Tabs
     document.querySelectorAll("[data-tab-btn]").forEach((btn) => {
       const isMatch = btn.getAttribute("data-tab-btn") === currentTab;
       btn.classList.toggle("active", isMatch);
@@ -251,6 +324,8 @@
           " " +
           c.metric_badge +
           " " +
+          (c.equation || "") +
+          " " +
           c.concepts.join(" ")
         ).toLowerCase();
         if (!hay.includes(searchQuery)) return false;
@@ -266,7 +341,7 @@
 
     const filtered = getFilteredComics();
     if (countLabel) {
-      countLabel.textContent = `Showing ${filtered.length} of ${DATA.comics.length} Illustrated Research Comics`;
+      countLabel.textContent = `Showing ${filtered.length} of ${DATA.comics.length} Hyper-Detailed Academic Graphic Novels`;
     }
 
     if (filtered.length === 0) {
@@ -284,7 +359,6 @@
       conceptsById[c.id] = c;
     });
 
-    // Group by Series for clean thematic shelves
     const htmlBlocks = DATA.series
       .map((s) => {
         const issues = filtered.filter((c) => c.series_id === s.id);
@@ -331,8 +405,9 @@
                         </div>
                         <div class="comic-card-concepts">${conceptTags}</div>
                         <div class="comic-card-footer">
-                          <button class="btn-read-comic" data-read-btn="${comic.id}">📖 Read 5-Panel Comic →</button>
-                          <a class="btn-live-mini" href="${esc(comic.url)}" target="_blank" rel="noopener" title="Launch Live Interactive Project" onclick="event.stopPropagation()">🚀 Live App</a>
+                          <button class="btn-read-comic" data-read-btn="${comic.id}">📖 Read Graphic Novel →</button>
+                          <button class="btn-export-quick" data-quick-export="${comic.id}" title="View as SVG / PNG / Animated GIF / PDF">🎞️ SVG·GIF·PDF</button>
+                          <a class="btn-live-mini" href="${esc(comic.url)}" target="_blank" rel="noopener" title="Launch Live Interactive Project">🚀 App</a>
                         </div>
                       </div>
                     </article>
@@ -348,8 +423,20 @@
     container.innerHTML = htmlBlocks;
 
     container.querySelectorAll("[data-comic-card]").forEach((card) => {
-      card.addEventListener("click", () => {
+      card.addEventListener("click", (e) => {
+        if (e.target.closest("[data-quick-export]") || e.target.closest(".btn-live-mini")) return;
         openComicInReader(card.getAttribute("data-comic-card"));
+      });
+    });
+
+    container.querySelectorAll("[data-quick-export]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const cid = btn.getAttribute("data-quick-export");
+        const cm = DATA.comics.find((x) => x.id === cid);
+        if (cm && window.CoSEExportEngine) {
+          window.CoSEExportEngine.openExportModal(cm, currentLevel, "svg");
+        }
       });
     });
   }
@@ -370,7 +457,7 @@
   }
 
   /**
-   * Renders the full 5-Panel Comic Strip Page inside the Interactive Reader
+   * Renders the full 5-Panel Hyper-Detailed Graphic Novel inside the Interactive Reader
    */
   function renderComicIssue(comicId) {
     const readerRoot = document.getElementById("comic-reader-stage");
@@ -388,7 +475,6 @@
       castById[c.id] = c;
     });
 
-    // Connected comics sharing at least 2 concepts (or 1 if needed)
     const connectedComics = DATA.comics
       .filter((c) => c.id !== comic.id)
       .map((c) => {
@@ -405,6 +491,7 @@
         const svgArt = window.CoSEArtEngine.renderPanelSVG(comic, panel);
         const speakerChar = castById[panel.speaker] || castById["doc-b"];
         const isWide = panel.layout === "wide-hero" || panel.layout === "wide-finale";
+        const anns = panel.annotations || [];
 
         return `
           <div class="comic-panel-card ${isWide ? "panel-wide" : "panel-std"} style-${comic.art_style}" data-panel-num="${panel.number}">
@@ -417,6 +504,16 @@
               ${svgArt}
             </div>
 
+            <!-- Panel Technical Callout Tags Strip -->
+            <div class="panel-annotations-strip">
+              ${anns
+                .map(
+                  (a, idx) =>
+                    `<span class="pa-chip"><strong>[${idx + 1}]</strong> ${esc(a)}</span>`
+                )
+                .join("")}
+            </div>
+
             <div class="panel-speech-bubble" style="--speaker-color:${speakerChar.color}">
               <div class="speech-speaker-tag" style="background:${speakerChar.color}">
                 ${esc(panel.speaker_name)}
@@ -425,7 +522,7 @@
             </div>
 
             <div class="panel-science-footnote">
-              <span class="fn-icon">💡</span>
+              <span class="fn-icon" aria-hidden="true">💡</span>
               <span class="fn-text">${esc(lvlData.note)}</span>
             </div>
           </div>
@@ -439,7 +536,7 @@
         if (!ch) return "";
         return `
           <span class="reader-cast-chip" style="border-color:${ch.color}">
-            <strong style="color:${ch.accent}">${esc(ch.name)}</strong> · ${esc(ch.role)}
+            <strong>${esc(ch.name)}</strong> · ${esc(ch.role)}
           </span>
         `;
       })
@@ -450,7 +547,7 @@
         const co = conceptsById[cid];
         if (!co) return "";
         return `
-          <button class="reader-concept-badge" data-jump-concept="${co.id}" style="border-color:${co.color}; background:rgba(15,23,42,0.75)">
+          <button class="reader-concept-badge" data-jump-concept="${co.id}" style="border-color:${co.color}">
             <span>${co.emoji} <strong>${esc(co.name)}</strong> (${esc(co.tag)})</span>
             <span class="rc-sub">${esc(co[currentLevel] || co.ms)}</span>
           </button>
@@ -475,7 +572,18 @@
             </select>
           </div>
           <button class="btn-nav-step" id="btn-next-issue">Next Issue →</button>
-          <button class="btn-print-zine" id="btn-print-comic" title="Print or Save as Classroom PDF Poster">🖨️ Print Classroom Poster</button>
+        </div>
+
+        <!-- Multi-Format View, Export & Embed Suite Bar -->
+        <div class="media-export-toolbar no-print">
+          <span class="met-label">📦 View / Export / Embed Graphic Novel Plate:</span>
+          <div class="met-buttons">
+            <button class="btn-media-export" data-export-fmt="svg">🖼️ Embedded SVG</button>
+            <button class="btn-media-export" data-export-fmt="png">📸 HD PNG Sheet</button>
+            <button class="btn-media-export" data-export-fmt="gif">🎞️ Animated GIF</button>
+            <button class="btn-media-export" data-export-fmt="pdf">📄 Academic PDF Plate</button>
+            <button class="btn-media-export" data-export-fmt="embed">🔗 Embed &amp; BibTeX</button>
+          </div>
         </div>
 
         <!-- Comic Issue Masthead Header -->
@@ -491,13 +599,18 @@
           <p class="masthead-project-sub">
             Research Project: <strong>${esc(comic.title)}</strong> · <span class="masthead-metric">${esc(comic.metric_badge)}</span> · NGSS: <code>${esc(comic.ngss)}</code>
           </p>
+          <div class="masthead-telemetry-row">
+            <span class="telemetry-badge"><strong>∑ Governing Equation:</strong> <code>${esc(comic.equation)}</code></span>
+            <span class="telemetry-badge"><strong>📏 Resolution:</strong> <code>${esc(comic.scale_bar)}</code></span>
+            <span class="telemetry-badge"><strong>🔬 Subcellular Lens:</strong> <code>${esc(comic.zoom_inset)}</code></span>
+          </div>
           <div class="masthead-cast-row">
             <span class="cast-row-label">Starring Cast:</span>
             ${castBadges}
           </div>
         </header>
 
-        <!-- 5-Panel Comic Strip Grid -->
+        <!-- 5-Panel Hyper-Detailed Graphic Novel Strip Grid -->
         <div class="comic-panels-grid">
           ${panelsHtml}
         </div>
@@ -516,7 +629,7 @@
               🚀 Launch Live Interactive Research Tool →
             </a>
             <a class="btn-view-repo" href="${esc(comic.repo_url)}" target="_blank" rel="noopener">
-              🐙 View Open-Source GitHub Code & Data
+              🐙 View Open-Source GitHub Code &amp; Data
             </a>
           </div>
         </section>
@@ -524,7 +637,7 @@
         <!-- Hands-On Classroom Activity & Teacher Guide Box -->
         <section class="teacher-activity-box">
           <div class="teacher-box-header">
-            <h3>👩‍🏫 5-Minute Hands-On Classroom & Home Investigation (${LEVEL_LABELS[currentLevel]})</h3>
+            <h3>👩‍🏫 5-Minute Hands-On Classroom &amp; Home Investigation (${LEVEL_LABELS[currentLevel]})</h3>
             <span class="ngss-pill">NGSS Standards: ${esc(comic.ngss)}</span>
           </div>
           <p class="teacher-activity-prompt"><strong>Try This Right Now with the Live Tool:</strong> ${esc(comic.activity)}</p>
@@ -558,7 +671,7 @@
               .map(
                 (item) => `
                 <button class="connected-comic-card" data-open-connected="${item.comic.id}" style="border-top: 3px solid ${item.comic.series_color}">
-                  <span class="cc-issue" style="color:${item.comic.series_accent}">Issue #${item.comic.issue_number} · ${esc(item.comic.series_title)}</span>
+                  <span class="cc-issue">Issue #${item.comic.issue_number} · ${esc(item.comic.series_title)}</span>
                   <strong>${item.comic.emoji} ${esc(item.comic.comic_title)}</strong>
                   <span class="cc-project">${esc(item.comic.title)}</span>
                   <span class="cc-shared">${item.sharedCount} shared ${item.sharedCount === 1 ? "concept" : "concepts"} →</span>
@@ -574,17 +687,24 @@
     // Wire Reader Events
     const prevBtn = document.getElementById("btn-prev-issue");
     const nextBtn = document.getElementById("btn-next-issue");
-    const printBtn = document.getElementById("btn-print-comic");
     const issueSel = document.getElementById("reader-issue-select");
 
     if (prevBtn) prevBtn.addEventListener("click", () => stepIssue(-1));
     if (nextBtn) nextBtn.addEventListener("click", () => stepIssue(1));
-    if (printBtn) printBtn.addEventListener("click", () => window.print());
     if (issueSel) {
       issueSel.addEventListener("change", () => {
         openComicInReader(issueSel.value);
       });
     }
+
+    readerRoot.querySelectorAll("[data-export-fmt]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const fmt = btn.getAttribute("data-export-fmt");
+        if (window.CoSEExportEngine) {
+          window.CoSEExportEngine.openExportModal(comic, currentLevel, fmt);
+        }
+      });
+    });
 
     readerRoot.querySelectorAll("[data-open-connected]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -608,9 +728,6 @@
     });
   }
 
-  /**
-   * Renders the Cast & Universe Guide + K-12 Educator NGSS Portal tab
-   */
   function renderEducatorAndCastHub() {
     const castContainer = document.getElementById("cast-cards-grid");
     const stylesContainer = document.getElementById("styles-showcase-grid");
@@ -704,6 +821,7 @@
   window.CoSEReader = {
     init,
     openComicInReader,
+    toggleColorScheme,
     getCurrentLevel: () => currentLevel
   };
 
