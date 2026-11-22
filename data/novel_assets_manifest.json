@@ -377,6 +377,20 @@
       "height": 788,
       "bytes": 332536,
       "kb": 324.7
+    },
+    "page-05": {
+      "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-05.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 149994,
+      "kb": 146.5
+    },
+    "page-06": {
+      "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-06.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 263120,
+      "kb": 257.0
     }
   },
   "vol-09-mission-control-everywhere": {
@@ -386,6 +400,13 @@
       "height": 1200,
       "bytes": 362000,
       "kb": 353.5
+    },
+    "page-01": {
+      "path": "assets/novels/vol-09-mission-control-everywhere/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 344590,
+      "kb": 336.5
     }
   },
   "vol-10-the-closed-loop-frontier": {
@@ -395,6 +416,13 @@
       "height": 1200,
       "bytes": 188318,
       "kb": 183.9
+    },
+    "page-01": {
+      "path": "assets/novels/vol-10-the-closed-loop-frontier/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 306998,
+      "kb": 299.8
     }
   }
 }

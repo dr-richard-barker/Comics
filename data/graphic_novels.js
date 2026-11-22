@@ -5,8 +5,8 @@ window.COSE_GRAPHIC_NOVELS = {
   "total_novels": 10,
   "total_pages": 60,
   "total_plates": 70,
-  "raster_plates": 54,
-  "vector_studio_plates": 16,
+  "raster_plates": 58,
+  "vector_studio_plates": 12,
   "worlds": [
     "ISS",
     "Moon",
@@ -2907,7 +2907,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-05.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p05_rothamsted_eden_split"
@@ -2968,7 +2968,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-06.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p06_solarpunk_lava_tube"
@@ -2982,7 +2982,7 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol07_cover"
       },
-      "raster_plate_count": 5
+      "raster_plate_count": 7
     },
     {
       "volume": 8,
@@ -3512,7 +3512,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-09-mission-control-everywhere/page-01.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol09_p01_classroom_abcd_diffuser"
@@ -3831,7 +3831,7 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol09_cover"
       },
-      "raster_plate_count": 1
+      "raster_plate_count": 2
     },
     {
       "volume": 10,
@@ -3940,7 +3940,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-10-the-closed-loop-frontier/page-01.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol10_p01_lunar_lfm_scan"
@@ -4259,7 +4259,7 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol10_cover"
       },
-      "raster_plate_count": 1
+      "raster_plate_count": 2
     }
   ],
   "comic_to_novels": {

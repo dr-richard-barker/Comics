@@ -18,10 +18,10 @@
 | **04** | **KIRBY'S QUANTUM SHIELD**: *Beyond Earth's Magnetic Cocoon* | Earth, Moon | Phytonaut, Astronaut | Silver-Age Marvel Cosmic (Jack Kirby) | 7/7 AI WebP + 0/7 Vector Art Studio |
 | **05** | **LIGHTNING WITHOUT A BRAIN**: *The Cellular Alarm Network* | Earth, ISS | Phytonaut, Mission Control | Shōnen Kinetic Action Manga | 7/7 AI WebP + 0/7 Vector Art Studio |
 | **06** | **THE RED ROBIN HARVEST**: *Tomatoes of the Orbital Garden* | ISS, Earth | Astronaut, Phytonaut | Botanical Iyashikei / Ghibli Watercolor Manga | 7/7 AI WebP + 0/7 Vector Art Studio |
-| **07** | **ALCHEMISTS OF MOON DUST**: *Myco & the Living Habitat* | Moon, Earth | Phytonaut, Astronaut | Marvel Solarpunk / Mythic Graphic Novel | 5/7 AI WebP + 2/7 Vector Art Studio |
+| **07** | **ALCHEMISTS OF MOON DUST**: *Myco & the Living Habitat* | Moon, Earth | Phytonaut, Astronaut | Marvel Solarpunk / Mythic Graphic Novel | 7/7 AI WebP + 0/7 Vector Art Studio |
 | **08** | **CREW VITAL**: *The Molecular Counterattack* | ISS, Earth | Astronaut, Mission Control | Bio-Action Medical Manga (Cells at Work! Style) | 5/7 AI WebP + 2/7 Vector Art Studio |
-| **09** | **MISSION CONTROL EVERYWHERE**: *The Citizen-Scientist Uprising* | Earth, ISS | Mission Control | Modern Marvel Pop-Art (Spider-Verse Energy) | 1/7 AI WebP + 6/7 Vector Art Studio |
-| **10** | **THE CLOSED-LOOP FRONTIER**: *Architects of Artemis City* | Earth, ISS, Moon | Astronaut, Phytonaut, Mission Control | Marvel Cinematic Crossover Event | 1/7 AI WebP + 6/7 Vector Art Studio |
+| **09** | **MISSION CONTROL EVERYWHERE**: *The Citizen-Scientist Uprising* | Earth, ISS | Mission Control | Modern Marvel Pop-Art (Spider-Verse Energy) | 2/7 AI WebP + 5/7 Vector Art Studio |
+| **10** | **THE CLOSED-LOOP FRONTIER**: *Architects of Artemis City* | Earth, ISS, Moon | Astronaut, Phytonaut, Mission Control | Marvel Cinematic Crossover Event | 2/7 AI WebP + 5/7 Vector Art Studio |
 
 ---
 
@@ -536,7 +536,7 @@
 - **Science Data HUD:** **Fungal BGC Biomanufacturing & Space Probiotics** — `MIBiG BGCs (PKS/NRPS/Terpenes) + Probiotic Seed Coat` (Hundreds of Fungal Strains · Sphingomonas & Paenibacillus · *fungal-bgc-atlas & osdr-plant-microbiome*)
 
 #### Page 5 (Act III — Wisdom of Earth's Oldest Field & Coldest Greenhouse) — 180 Years at Rothamsted Meets Antarctica's EDEN ISS
-- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-05.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `268 KG HARVEST!`
+- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-05.webp` (AI-Illustrated WebP) · **SFX:** `268 KG HARVEST!`
 - **Director's Camera & Lighting:** Breathtaking split-world Earth Heritage spread! Left: sun-drenched golden English wheat swaying across 180-year-old dark living soil at Rothamsted. Right: the glowing EDEN ISS greenhouse container shining amid vast sapphire-white Antarctic ice overflowing with fresh greens. Warm nostalgic golden wheat on the left colliding dramatically with crisp glacial cyan-white ice and vibrant indoor emerald-red vegetable glow on the right.
 - **Pacing & Data Story:** Grounding and awe-inspiring—anchoring lunar dreams in centuries of real Earth proof. *Synthesizes Rothamsted_BroadBaulk (180 years of organic/mineral soil resilience) and ISS_EDEN (OSD-895 Antarctica greenhouse yielding 268 kg of fresh veggies in one polar year).*
 - **Narration (6–8):** ROTHAMSTED BROADBALK × EDEN ISS ANTARCTICA. 180 years of data prove organic recycling weathers droughts—while EDEN ISS grew 268 kg of fresh food in polar darkness!
@@ -545,7 +545,7 @@
 - **Science Data HUD:** **180 Years of Soil + 268 kg/yr Polar Proof** — `Organic Recycling (180 yr) + Polar CEA (268 kg/yr) → Lunar BLSS` (Rothamsted Broadbalk + Antarctica EDEN ISS (OSD-895) · *Rothamsted_BroadBaulk & ISS_EDEN*)
 
 #### Page 6 (Act III — The Living Lava Tube) — From Dead Moon Dust to a Solarpunk Oasis
-- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-06.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `LIFE AWAKENS!`
+- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-06.webp` (AI-Illustrated WebP) · **SFX:** `LIFE AWAKENS!`
 - **Director's Camera & Lighting:** Soaring Marvel Solarpunk finale spread! Inside a cathedral-scale lunar lava tube, terraced sintered-terracotta arches overflow with microgreens, wheat, and glowing golden mushrooms while Astra and Doc B (hologram) survey the thriving underground ecosystem. Sun-pipe golden skylight shafts streaming through terracotta ceramic arches onto emerald foliage and glowing amber fungal webs.
 - **Pacing & Data Story:** Mythic triumph—dead grey dust transformed into warm Solarpunk abundance. *Unites sintered ceramics, mycoponics, fungal BGCs, probiotics, and crop biodiversity—preparing the segue to Vol. 08 (how these space foods protect astronaut health!).*
 - **Narration (6–8):** FROM DUST TO LIFE. Sintered regolith ceramics, Myco's living nutrient web, and biodiverse crops turn barren lunar basalt into a self-renewing habitat.
@@ -652,7 +652,7 @@
 ### Page-by-Page Script & Director's Notes
 
 #### Page 1 (Act I — The $0 Lab Upgrade) — Cardboard Diffusers & The ABCD v2 Magic Card
-- **Art Plate:** `assets/novels/vol-09-mission-control-everywhere/page-01.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `SNAP—CALIBRATE!!`
+- **Art Plate:** `assets/novels/vol-09-mission-control-everywhere/page-01.webp` (AI-Illustrated WebP) · **SFX:** `SNAP—CALIBRATE!!`
 - **Director's Camera & Lighting:** Kinetic Spider-Verse pop-art splash inside a vibrant classroom! Students slip a clever white cardboard light-diffuser over a desk lamp beside a Petri dish and colorful mosaic ABCD card as a smartphone snaps a glowing cyan alignment grid. Punchy teal, coral-red, and canary-yellow Ben-Day halftone highlights bursting around crisp black comic inkwork.
 - **Pacing & Data Story:** Infectious DIY maker joy—demolishing the myth that real science requires fancy gear. *Highlights Space_Photography_Guide.io ($0 cardboard diffuser beats pricey cameras) and ABCD_v2 (automatic perspective un-tilting, millimeter scale, and color correction).*
 - **Narration (6–8):** SPACE PHOTOGRAPHY GUIDE × ABCD V2. Even glare ruins fancy microscopes—yet a $0 cardboard diffuser plus an ABCD calibration card unlocks razor-sharp precision!
@@ -728,7 +728,7 @@
 ### Page-by-Page Script & Director's Notes
 
 #### Page 1 (Act I — Mapping the South Pole) — NASA-IBM Lunar Foundation Models Scan the Shadows
-- **Art Plate:** `assets/novels/vol-10-the-closed-loop-frontier/page-01.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `SCAN—LOCKED!!`
+- **Art Plate:** `assets/novels/vol-10-the-closed-loop-frontier/page-01.webp` (AI-Illustrated WebP) · **SFX:** `SCAN—LOCKED!!`
 - **Director's Camera & Lighting:** Monumental orbital Marvel crossover opening! Sweeping golden-and-cyan multispectral AI scanning grids drape across jagged Lunar South Pole craters, revealing glowing sapphire water-ice veins beside sunlit ridge peaks. Stark obsidian crater shadows illuminated by golden solar-peak rims and glowing sapphire ice contours.
 - **Pacing & Data Story:** Grand cinematic scale—choosing where humanity's first permanent off-world city will rise. *Highlights lunar-lfm-explorer (NASA-IBM Lunar Foundation Model) and LunarSims' fundamental law of lunar urban planning: solar power peaks vs. shadowed crater ice.*
 - **Narration (6–8):** NASA-IBM LUNAR FOUNDATION MODEL. Combining optical, elevation, and thermal layers solves the #1 law of lunar city planning: balancing sunlit solar ridges against crater ice!
