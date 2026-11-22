@@ -5,8 +5,8 @@ window.COSE_GRAPHIC_NOVELS = {
   "total_novels": 10,
   "total_pages": 60,
   "total_plates": 70,
-  "raster_plates": 42,
-  "vector_studio_plates": 28,
+  "raster_plates": 54,
+  "vector_studio_plates": 16,
   "worlds": [
     "ISS",
     "Moon",
@@ -1277,7 +1277,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-03-ghost-in-the-genome/page-06.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol03_p06_open_science_dawn"
@@ -1291,7 +1291,7 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol03_cover"
       },
-      "raster_plate_count": 6
+      "raster_plate_count": 7
     },
     {
       "volume": 4,
@@ -2121,7 +2121,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-05-lightning-without-a-brain/page-06.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol05_p06_floodwave_truth"
@@ -2135,7 +2135,7 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol05_cover"
       },
-      "raster_plate_count": 6
+      "raster_plate_count": 7
     },
     {
       "volume": 6,
@@ -2481,7 +2481,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-06-the-red-robin-harvest/page-05.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol06_p05_harvest_droplet"
@@ -2542,7 +2542,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-06-the-red-robin-harvest/page-06.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol06_p06_cupola_feast"
@@ -2556,7 +2556,7 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol06_cover"
       },
-      "raster_plate_count": 5
+      "raster_plate_count": 7
     },
     {
       "volume": 7,
@@ -2663,7 +2663,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-01.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p01_raw_apollo_regolith"
@@ -2724,7 +2724,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-02.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p02_sintered_ceramics"
@@ -2785,7 +2785,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-03.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p03_mycoponics_web"
@@ -2846,7 +2846,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-04.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p04_bgc_microbiome"
@@ -2982,7 +2982,7 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol07_cover"
       },
-      "raster_plate_count": 1
+      "raster_plate_count": 5
     },
     {
       "volume": 8,
@@ -3087,7 +3087,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-08-crew-vital/page-01.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol08_p01_six_species_mito"
@@ -3148,7 +3148,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-08-crew-vital/page-02.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol08_p02_muscle_atrophy_battle"
@@ -3209,7 +3209,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-08-crew-vital/page-03.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol08_p03_cfrna_liquid_biopsy"
@@ -3270,7 +3270,7 @@ window.COSE_GRAPHIC_NOVELS = {
           },
           "art": {
             "path": "assets/novels/vol-08-crew-vital/page-04.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol08_p04_phytochemical_charge"
@@ -3406,7 +3406,7 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol08_cover"
       },
-      "raster_plate_count": 1
+      "raster_plate_count": 5
     },
     {
       "volume": 9,

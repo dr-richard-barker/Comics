@@ -4,8 +4,8 @@
   "total_novels": 10,
   "total_pages": 60,
   "total_plates": 70,
-  "raster_plates": 42,
-  "vector_studio_plates": 28,
+  "raster_plates": 54,
+  "vector_studio_plates": 16,
   "worlds": [
     "ISS",
     "Moon",
@@ -1276,7 +1276,7 @@
           },
           "art": {
             "path": "assets/novels/vol-03-ghost-in-the-genome/page-06.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol03_p06_open_science_dawn"
@@ -1290,7 +1290,7 @@
         "height": 1200,
         "scene_key": "vol03_cover"
       },
-      "raster_plate_count": 6
+      "raster_plate_count": 7
     },
     {
       "volume": 4,
@@ -2120,7 +2120,7 @@
           },
           "art": {
             "path": "assets/novels/vol-05-lightning-without-a-brain/page-06.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol05_p06_floodwave_truth"
@@ -2134,7 +2134,7 @@
         "height": 1200,
         "scene_key": "vol05_cover"
       },
-      "raster_plate_count": 6
+      "raster_plate_count": 7
     },
     {
       "volume": 6,
@@ -2480,7 +2480,7 @@
           },
           "art": {
             "path": "assets/novels/vol-06-the-red-robin-harvest/page-05.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol06_p05_harvest_droplet"
@@ -2541,7 +2541,7 @@
           },
           "art": {
             "path": "assets/novels/vol-06-the-red-robin-harvest/page-06.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol06_p06_cupola_feast"
@@ -2555,7 +2555,7 @@
         "height": 1200,
         "scene_key": "vol06_cover"
       },
-      "raster_plate_count": 5
+      "raster_plate_count": 7
     },
     {
       "volume": 7,
@@ -2662,7 +2662,7 @@
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-01.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p01_raw_apollo_regolith"
@@ -2723,7 +2723,7 @@
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-02.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p02_sintered_ceramics"
@@ -2784,7 +2784,7 @@
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-03.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p03_mycoponics_web"
@@ -2845,7 +2845,7 @@
           },
           "art": {
             "path": "assets/novels/vol-07-alchemists-of-moon-dust/page-04.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol07_p04_bgc_microbiome"
@@ -2981,7 +2981,7 @@
         "height": 1200,
         "scene_key": "vol07_cover"
       },
-      "raster_plate_count": 1
+      "raster_plate_count": 5
     },
     {
       "volume": 8,
@@ -3086,7 +3086,7 @@
           },
           "art": {
             "path": "assets/novels/vol-08-crew-vital/page-01.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol08_p01_six_species_mito"
@@ -3147,7 +3147,7 @@
           },
           "art": {
             "path": "assets/novels/vol-08-crew-vital/page-02.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol08_p02_muscle_atrophy_battle"
@@ -3208,7 +3208,7 @@
           },
           "art": {
             "path": "assets/novels/vol-08-crew-vital/page-03.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol08_p03_cfrna_liquid_biopsy"
@@ -3269,7 +3269,7 @@
           },
           "art": {
             "path": "assets/novels/vol-08-crew-vital/page-04.webp",
-            "has_raster": false,
+            "has_raster": true,
             "width": 1400,
             "height": 788,
             "scene_key": "vol08_p04_phytochemical_charge"
@@ -3405,7 +3405,7 @@
         "height": 1200,
         "scene_key": "vol08_cover"
       },
-      "raster_plate_count": 1
+      "raster_plate_count": 5
     },
     {
       "volume": 9,

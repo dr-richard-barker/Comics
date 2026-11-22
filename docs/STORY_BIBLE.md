@@ -14,12 +14,12 @@
 | :---: | :--- | :--- | :--- | :--- | :--- |
 | **01** | **BREATHLESS IN ZERO-G**: *The Invisible Pillow* | ISS, Earth | Phytonaut, Mission Control | Modern Marvel Sci-Fi Action | 7/7 AI WebP + 0/7 Vector Art Studio |
 | **02** | **ARTEMIS III: ONE SMALL SPROUT**: *First Garden on the Lunar South Pole* | Moon, Earth | Astronaut, Phytonaut | Classic Marvel Heroic Lunar Epic | 7/7 AI WebP + 0/7 Vector Art Studio |
-| **03** | **GHOST IN THE GENOME**: *The 1,337-Sample Mystery* | Earth, ISS | Mission Control, Phytonaut | Seinen Cyberpunk Data-Manga | 6/7 AI WebP + 1/7 Vector Art Studio |
+| **03** | **GHOST IN THE GENOME**: *The 1,337-Sample Mystery* | Earth, ISS | Mission Control, Phytonaut | Seinen Cyberpunk Data-Manga | 7/7 AI WebP + 0/7 Vector Art Studio |
 | **04** | **KIRBY'S QUANTUM SHIELD**: *Beyond Earth's Magnetic Cocoon* | Earth, Moon | Phytonaut, Astronaut | Silver-Age Marvel Cosmic (Jack Kirby) | 7/7 AI WebP + 0/7 Vector Art Studio |
-| **05** | **LIGHTNING WITHOUT A BRAIN**: *The Cellular Alarm Network* | Earth, ISS | Phytonaut, Mission Control | Shōnen Kinetic Action Manga | 6/7 AI WebP + 1/7 Vector Art Studio |
-| **06** | **THE RED ROBIN HARVEST**: *Tomatoes of the Orbital Garden* | ISS, Earth | Astronaut, Phytonaut | Botanical Iyashikei / Ghibli Watercolor Manga | 5/7 AI WebP + 2/7 Vector Art Studio |
-| **07** | **ALCHEMISTS OF MOON DUST**: *Myco & the Living Habitat* | Moon, Earth | Phytonaut, Astronaut | Marvel Solarpunk / Mythic Graphic Novel | 1/7 AI WebP + 6/7 Vector Art Studio |
-| **08** | **CREW VITAL**: *The Molecular Counterattack* | ISS, Earth | Astronaut, Mission Control | Bio-Action Medical Manga (Cells at Work! Style) | 1/7 AI WebP + 6/7 Vector Art Studio |
+| **05** | **LIGHTNING WITHOUT A BRAIN**: *The Cellular Alarm Network* | Earth, ISS | Phytonaut, Mission Control | Shōnen Kinetic Action Manga | 7/7 AI WebP + 0/7 Vector Art Studio |
+| **06** | **THE RED ROBIN HARVEST**: *Tomatoes of the Orbital Garden* | ISS, Earth | Astronaut, Phytonaut | Botanical Iyashikei / Ghibli Watercolor Manga | 7/7 AI WebP + 0/7 Vector Art Studio |
+| **07** | **ALCHEMISTS OF MOON DUST**: *Myco & the Living Habitat* | Moon, Earth | Phytonaut, Astronaut | Marvel Solarpunk / Mythic Graphic Novel | 5/7 AI WebP + 2/7 Vector Art Studio |
+| **08** | **CREW VITAL**: *The Molecular Counterattack* | ISS, Earth | Astronaut, Mission Control | Bio-Action Medical Manga (Cells at Work! Style) | 5/7 AI WebP + 2/7 Vector Art Studio |
 | **09** | **MISSION CONTROL EVERYWHERE**: *The Citizen-Scientist Uprising* | Earth, ISS | Mission Control | Modern Marvel Pop-Art (Spider-Verse Energy) | 1/7 AI WebP + 6/7 Vector Art Studio |
 | **10** | **THE CLOSED-LOOP FRONTIER**: *Architects of Artemis City* | Earth, ISS, Moon | Astronaut, Phytonaut, Mission Control | Marvel Cinematic Crossover Event | 1/7 AI WebP + 6/7 Vector Art Studio |
 
@@ -241,7 +241,7 @@
 - **Science Data HUD:** **Alternative Splicing & MicroRNA Dimmer Switches** — `ΔPSI = PSI_flight − PSI_ground  (199 Libraries)` (Arabidopsis & Brassica Splicing + 21-nt miRNAs · *OSDR_Plant_Alternative_Splicing & smallRNAseq-DREAM*)
 
 #### Page 6 (Act III — Symphony of Open Science) — The Ghost in the Genome Speaks Clearly
-- **Art Plate:** `assets/novels/vol-03-ghost-in-the-genome/page-06.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `SYNCHRONIZED.`
+- **Art Plate:** `assets/novels/vol-03-ghost-in-the-genome/page-06.webp` (AI-Illustrated WebP) · **SFX:** `SYNCHRONIZED.`
 - **Director's Camera & Lighting:** Serene, breathtaking seinen-manga dawn finale: golden morning sunlight cuts across Mission Control as Sprout's layered transparent hologram shines in complete harmony. Warm dawn amber breaking across cool violet-cyan holographic rings—transitioning from noir mystery to luminous open-science clarity.
 - **Pacing & Data Story:** Calm, profound resolution—honoring open FAIR data and collaborative AI. *Links the entire multi-omics stack to genai-spacebio-roadmap: bridging correlation to causation for deep-space biology.*
 - **Narration (6–8):** FROM CORRELATION TO CAUSATION. By uniting single-cell AI, chromatin vaults, circadian clocks, and RNA splicing, decades of NASA data finally speak in harmony.
@@ -393,7 +393,7 @@
 - **Science Data HUD:** **Cell-Wall Glycome × Cytoskeleton Coupling** — `Pectin / Xyloglucan Wall ↔ Actin / Microtubule Motors` (NASA OSD-615 Multi-Modal Systems Network · *OSD615-glycome-cytoskeleton-systems-biology*)
 
 #### Page 6 (Act III — The Scientist's Ultimate Superpower) — FloodWave-At: Stripping Away the Illusion to Find the Truth
-- **Art Plate:** `assets/novels/vol-05-lightning-without-a-brain/page-06.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `AHA—CLARITY!`
+- **Art Plate:** `assets/novels/vol-05-lightning-without-a-brain/page-06.webp` (AI-Illustrated WebP) · **SFX:** `AHA—CLARITY!`
 - **Director's Camera & Lighting:** Classic Shōnen 'detective revelation' finale! Doc B adjusts his gleaming glasses beside Pixel as a crisp holographic split-screen strips shaky water-reflection glare on the left to unveil the calm true emerald calcium rise on the right. Sharp white lens-glint on Doc B's glasses; turbulent noisy static on left resolving into pure, serenely glowing emerald GCaMP signal on right.
 - **Pacing & Data Story:** Inspiring intellectual punchline—celebrating scientific honesty and rigor. *Highlights FloodWave-At: removing camera motion and water reflection artifacts replaces an apparent ultra-fast flash with the real gradual ~4-minute GCaMP biological rise.*
 - **Narration (6–8):** FLOODWAVE-AT REVISITED. After subtracting camera wobble and water glare, the fake instant flash vanished—revealing the TRUE gradual calcium wave rising over minutes!
@@ -460,7 +460,7 @@
 - **Science Data HUD:** **Wild Biodiversity & Spaceflight GWAS** — `Phenotype_0g = μ + Σ β_i SNP_i + E_light + ε` (1001 Genomes · AstroGrass Brachypodium · TICTOC Cotton · *arabidopsis-gwas-spaceflight & brachypodium-gwas-spaceflight*)
 
 #### Page 5 (Act III — The Ruby Jewel of Orbit) — Harvesting Fresh Fruit in Weightlessness
-- **Art Plate:** `assets/novels/vol-06-the-red-robin-harvest/page-05.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `SNIP... FLOAT`
+- **Art Plate:** `assets/novels/vol-06-the-red-robin-harvest/page-05.webp` (AI-Illustrated WebP) · **SFX:** `SNIP... FLOAT`
 - **Director's Camera & Lighting:** Tender, hyper-detailed Ghibli close-up: Commander Astra's gloved fingers gently pluck a glistening ruby-red cherry tomato while a single floating dewdrop mirrors curved blue Earth. Luminous backlit ruby translucency on the ripe fruit, crystalline sparkle on the floating water sphere, soft sunlit halo.
 - **Pacing & Data Story:** Quiet, unforgettable emotional pause—the heartbeat of the entire story. *Connects orbital horticulture directly to human psychology, sensory enrichment, and fresh micronutrient bioavailability.*
 - **Narration (6–8):** MORE THAN CALORIES. After months of sterile corridors and freeze-dried meals, touching living leaves and smelling ripe fruit transforms crew well-being.
@@ -469,7 +469,7 @@
 - **Science Data HUD:** **Fresh Space Crop Value (VEG-05 & Veggie)** — `Bioregenerative Value = Nutrition + O₂/CO₂ + Crew Morale` (Rivals or Exceeds Earth Control Carotenoids & Phenolics · *VEGGIE_Tom_Red_Blue_Leaves_and_adv_roots*)
 
 #### Page 6 (Act III — Dinner Over a Blue Sunrise) — Sharing the Harvest in the ISS Cupola
-- **Art Plate:** `assets/novels/vol-06-the-red-robin-harvest/page-06.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `CRUNCH! SMILE!`
+- **Art Plate:** `assets/novels/vol-06-the-red-robin-harvest/page-06.webp` (AI-Illustrated WebP) · **SFX:** `CRUNCH! SMILE!`
 - **Director's Camera & Lighting:** Heartwarming Ghibli finale spread inside the panoramic ISS Cupola: smiling crew members float around bowls of ruby space tomatoes and crisp greens as golden orbital sunrise arcs across Earth below. Golden sunrise flaring across curved sapphire oceans, bathing the floating crew and bright green/red salad bowls in radiant warmth.
 - **Pacing & Data Story:** Peaceful, luminous closure—before pivoting toward the rugged Moon dust challenge of Vol. 07. *Bridges orbital hydroponic gardens to the next frontier: how do we grow crops when we can't ship Earth soil or water to the Moon?*
 - **Narration (6–8):** THE ORBITAL GARDEN THRIVES. From light recipes to wild genomes, humanity has learned how to grow fresh fruit among the stars.
@@ -500,7 +500,7 @@
 ### Page-by-Page Script & Director's Notes
 
 #### Page 1 (Act I — The Hostile Dust) — Why Raw Apollo Regolith Bites Back
-- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-01.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `SCRAPE—STING!`
+- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-01.webp` (AI-Illustrated WebP) · **SFX:** `SCRAPE—STING!`
 - **Director's Camera & Lighting:** Stark, dramatic Marvel macro-meets-lunar-surface splash: jagged glassy grey Apollo basalt shards bristle under harsh sunlight as a fragile seedling's roots glow with fiery red oxidative stress. Unforgiving charcoal-silver regolith glare clashing against crimson-orange metallic stress sparks at the root hairs.
 - **Pacing & Data Story:** Raw geological menace—respecting how brutally hard lunar soil really is. *Highlights AstroRegolith & ares-curation: mature Apollo 11 regolith contains sharp nanophase iron/titanium glass that triggers salt, metal, and oxidative stress genes.*
 - **Narration (6–8):** ASTROREGOLITH & ARES CURATION. Real Apollo 11 dust packed with sharp iron-titanium oxides slows plant growth and fires intense metal and oxidative stress alarms!
@@ -509,7 +509,7 @@
 - **Science Data HUD:** **Apollo Lunar Regolith Chemistry & Stress** — `Raw Regolith (SiO₂, FeO, TiO₂, npFe⁰) → Root ROS & Metal Stress` (Apollo 11/12/17 Real Sample Meta-Analysis · *AstroRegolith & ares-curation*)
 
 #### Page 2 (Act I — Fire Turns Dust to Pottery) — Sintered Regolith Ceramics & Capillary Wicks
-- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-02.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `FUSE—GLOW!!`
+- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-02.webp` (AI-Illustrated WebP) · **SFX:** `FUSE—GLOW!!`
 - **Director's Camera & Lighting:** Heroic Solarpunk Marvel forge cutaway! Concentrated sunlight sinters sharp grey lunar dust into glowing terracotta-bronze porous ceramic pots that pull sparkling blue water cleanly upward. Molten kiln amber-orange glowing against cool lunar basalt shadows and crisp sparkling sapphire capillary water channels.
 - **Pacing & Data Story:** Satisfying craft transformation—turning a hazard into an engineering tool. *Highlights lunar-regolith-blss-review: tuning sintering temperature and pore geometry creates strong, reusable ceramic wicks delivering water and O₂ safely in 0.166g.*
 - **Narration (6–8):** SINTERED REGOLITH CERAMICS. By tuning furnace heat and microscopic pore size, lunar dust becomes reusable capillary wicks—zero floating water blobs, plenty of root oxygen!
@@ -518,7 +518,7 @@
 - **Science Data HUD:** **Sintered Lunar Regolith Capillary Ceramics** — `h_cap = 2 γ cos(θ) / (ρ g_Moon r_pore)` (Reusable Porous Wicks · Zero Free-Liquid Sloshing · *lunar-regolith-blss-review*)
 
 #### Page 3 (Act II — The Glowing Underground Web) — Mycoponics: Fungi & Plants Partner Up
-- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-03.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `WEAVE—BLOOM!`
+- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-03.webp` (AI-Illustrated WebP) · **SFX:** `WEAVE—BLOOM!`
 - **Director's Camera & Lighting:** Mythic underground Marvel Solarpunk cutaway! Glowing golden fungal hyphae wrap tenderly around emerald plant roots inside bronze sintered rock, dissolving mineral gems with turquoise organic-acid droplets while golden oyster mushrooms sprout from recycled stalks. Bioluminescent gold, warm terracotta, vibrant emerald, and shimmering turquoise acid pearls glowing inside dark lunar stone.
 - **Pacing & Data Story:** Lush, magical wonder—revealing fungi as nature's ultimate circular-economy engineers. *Synthesizes Mycoponics_Perspective, Myco_tissue_RNAseq, and AstroMycology: fungal tissues specialize like organs to unlock minerals, stop water sloshing, and turn inedible stalks into mushroom protein!*
 - **Narration (6–8):** FUNGAL TISSUES SPECIALIZE LIKE ORGANS. Myco_tissue_RNAseq reveals specialized hyphae pumping organic acids into rock while fruiting bodies pack rich protein overhead!
@@ -527,7 +527,7 @@
 - **Science Data HUD:** **Mycoponics & Fungal Tissue Specialization** — `Inedible Lignocellulose + Regolith → Mushroom Protein + Bioavailable Ions` (Tissue-Specific RNA-seq + 3D Surface-to-Volume Scans · *Mycoponics_Perspective, Myco_tissue_RNAseq & AstroMycology*)
 
 #### Page 4 (Act II — The Living Pharmacy & Probiotic Allies) — Fungal Gene Clusters & Friendly Space Microbes
-- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-04.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `SYNTHESIZE!!`
+- **Art Plate:** `assets/novels/vol-07-alchemists-of-moon-dust/page-04.webp` (AI-Illustrated WebP) · **SFX:** `SYNTHESIZE!!`
 - **Director's Camera & Lighting:** Bioluminescent micro-factory spread inside glowing fungal and root chambers: crystalline amber/violet pharmaceutical molecules assemble alongside silver-blue probiotic Sphingomonas and Paenibacillus allies guarding root hairs. Jewel-toned amber, violet, and cyan glowing bio-reactors interwoven with pearlescent root hairs.
 - **Pacing & Data Story:** High-tech biological marvel—showing life as a programmable space factory. *Synthesizes fungal-bgc-atlas (MIBiG PKS/NRPS/terpene biosynthetic gene clusters) and Microbiome_of_seedlings_in_space / osdr-plant-microbiome.*
 - **Narration (6–8):** THE FUNGAL BGC ATLAS & SPACE MICROBIOME. Mapped PKS/NRPS gene clusters turn fungi into mini-pharmacies while friendly bacteria coat seeds like tiny bodyguards!
@@ -576,7 +576,7 @@
 ### Page-by-Page Script & Director's Notes
 
 #### Page 1 (Act I — Six Species, One Cosmic Secret) — The Universal Mitochondrial Power-Down
-- **Art Plate:** `assets/novels/vol-08-crew-vital/page-01.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `POWER—DIMMING!`
+- **Art Plate:** `assets/novels/vol-08-crew-vital/page-01.webp` (AI-Illustrated WebP) · **SFX:** `POWER—DIMMING!`
 - **Director's Camera & Lighting:** Iconic Bio-Action Manga mandala spread! Six glowing species silhouettes (plant, fly, worm, mouse, fish, astronaut) ring a colossal central mitochondrion whose golden energy turbines flicker dim blue in zero-G. Dramatic crimson-indigo biological backdrop electrified by flickering amber-to-blue mitochondrial power cores.
 - **Pacing & Data Story:** Staggering evolutionary revelation—unifying all kingdoms of life in one unforgettable frame. *Visualizes OSDR_X-species_V2 (22 NASA OSDR datasets × 6 species) and plant-mitocarta: conserved Complex I–V oxidative phosphorylation slowdown across plants and animals!*
 - **Narration (6–8):** 22 NASA OSDR DATASETS · 6 SPECIES META-ANALYSIS. Plants and humans look totally different—yet spaceflight hits the EXACT same ancient cellular powerhouses: mitochondria!
@@ -585,7 +585,7 @@
 - **Science Data HUD:** **Cross-Species Mitochondrial Power-Down** — `6 Species × 22 OSDR Studies ⇒ OXPHOS Complex I–V ↓, ROS ↑` (Universal Plant-to-Human Spaceflight Signature · *OSDR_X-species_V2 & plant-mitocarta*)
 
 #### Page 2 (Act I — Red Alert in the Muscle Fibers) — Atrogin-1, MuRF1 & The Escaping Minerals
-- **Art Plate:** `assets/novels/vol-08-crew-vital/page-02.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `CRACKLE—DRAIN!!`
+- **Art Plate:** `assets/novels/vol-08-crew-vital/page-02.webp` (AI-Illustrated WebP) · **SFX:** `CRACKLE—DRAIN!!`
 - **Director's Camera & Lighting:** High-octane *Cells at Work!* bio-action manga battle inside Commander Astra's weightless leg muscle! Jagged crimson ubiquitin-proteasome jaws gnaw at slack muscle fibers while white calcium and magnesium sparks drift out of porous bone lattices. Pulsing crimson alarm glow contrasting ivory bone lattices and electric-blue mineral trails escaping into the bloodstream.
 - **Pacing & Data Story:** Urgent anime crisis beat—making invisible physiological decline dramatically clear. *Synthesizes Muscle-Atrophy-Multi-Omics-OSDR (Atrogin-1/MuRF1), SpaceMineralAtlas, and astronaut-mineral-final (NHANES percentiles).*
 - **Narration (6–8):** ATROPHY & MINERAL DRIFT. Microgravity switches on Atrogin-1 and MuRF1 muscle-breakdown genes while SpaceMineralAtlas tracks calcium and magnesium slipping away!
@@ -594,7 +594,7 @@
 - **Science Data HUD:** **Muscle Atrophy & Space Mineral Atlas** — `Unloading → Atrogin-1/MuRF1 ↑ + Renal Ca/Mg Excretion ↑` (Astronaut Trajectories Benchmarked vs. NHANES · *Muscle-Atrophy-Multi-Omics-OSDR & SpaceMineralAtlas*)
 
 #### Page 3 (Act II — Reading Messages in a Drop of Plasma) — JAXA Cell-Free RNA & Honest Biomarker Science
-- **Art Plate:** `assets/novels/vol-08-crew-vital/page-03.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `PING—DECODE!`
+- **Art Plate:** `assets/novels/vol-08-crew-vital/page-03.webp` (AI-Illustrated WebP) · **SFX:** `PING—DECODE!`
 - **Director's Camera & Lighting:** Sleek clinical manga spread: a single glowing drop of plasma suspended in Pixel's cyan laser scanner unfurls into shimmering golden cell-free RNA waveforms monitored by Doc B. Clean medical sapphire and luminous golden RNA strands against crisp dark bio-console panels.
 - **Pacing & Data Story:** Focused diagnostic calm—emphasizing scientific honesty and pre-registration. *Highlights Astronaut_flavenoids_and_biomarkers (JAXA OSD-530 cfRNA) and astronaut-oncogene-biomarkers (pre-registered transparent analysis preventing false alarms).*
 - **Narration (6–8):** JAXA CELL-FREE RNA (OSD-530) & HONEST SCIENCE. Non-invasive liquid biopsies track orbital adaptation—and publishing the test plan upfront prevents false alarms!
@@ -603,7 +603,7 @@
 - **Science Data HUD:** **Plasma cfRNA & Pre-Registered Biomarkers** — `Pre-Flight → In-Flight → Post-Flight cfRNA (JAXA OSD-530)` (Non-Invasive Tracking + Pre-Registered Rigor · *Astronaut_flavenoids_and_biomarkers & astronaut-oncogene-biomarkers*)
 
 #### Page 4 (Act II — Opposite Forcing: Veggies Charge In!) — Sulforaphane & Flavonoids Flip the Switch!
-- **Art Plate:** `assets/novels/vol-08-crew-vital/page-04.webp` (Marvel/Manga Vector Art Studio) · **SFX:** `COUNTER—BOOST!!`
+- **Art Plate:** `assets/novels/vol-08-crew-vital/page-04.webp` (AI-Illustrated WebP) · **SFX:** `COUNTER—BOOST!!`
 - **Director's Camera & Lighting:** Heroic *Cells at Work!* manga charge! Vibrant emerald broccoli sprouts, purple radishes, and ruby Veggie greens burst into glowing golden-green phytochemical warriors (sulforaphane & flavonoids) roaring down the bloodstream to push back Atrogin-1! Electrifying emerald-gold energy trails slicing through crimson vessels to reignite golden mitochondrial turbines.
 - **Pacing & Data Story:** Exhilarating anime turnaround—food transformed into precision molecular heroes! *Synthesizes Astronaut_brain_food (LINCS L1000 Opposite Forcing: flavonoids, sulforaphane, omega seeds) and OSDR-Veggie-Nutrition-Dashboard.*
 - **Narration (6–8):** OPPOSITE FORCING (LINCS L1000). Plant flavonoids, sulforaphane, and carotenoids trigger gene shifts that directly REVERSE spaceflight stress and muscle-loss patterns!
