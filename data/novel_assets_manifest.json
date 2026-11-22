@@ -1,0 +1,316 @@
+{
+  "vol-01-breathless-in-zero-g": {
+    "cover": {
+      "path": "assets/novels/vol-01-breathless-in-zero-g/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 194594,
+      "kb": 190.0
+    },
+    "page-01": {
+      "path": "assets/novels/vol-01-breathless-in-zero-g/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 360752,
+      "kb": 352.3
+    },
+    "page-03": {
+      "path": "assets/novels/vol-01-breathless-in-zero-g/page-03.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 151648,
+      "kb": 148.1
+    },
+    "page-02": {
+      "path": "assets/novels/vol-01-breathless-in-zero-g/page-02.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 229502,
+      "kb": 224.1
+    },
+    "page-04": {
+      "path": "assets/novels/vol-01-breathless-in-zero-g/page-04.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 272734,
+      "kb": 266.3
+    },
+    "page-05": {
+      "path": "assets/novels/vol-01-breathless-in-zero-g/page-05.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 217612,
+      "kb": 212.5
+    },
+    "page-06": {
+      "path": "assets/novels/vol-01-breathless-in-zero-g/page-06.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 210362,
+      "kb": 205.4
+    }
+  },
+  "vol-02-artemis-three-one-small-sprout": {
+    "cover": {
+      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 179558,
+      "kb": 175.3
+    },
+    "page-01": {
+      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 210162,
+      "kb": 205.2
+    },
+    "page-02": {
+      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-02.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 162152,
+      "kb": 158.4
+    },
+    "page-03": {
+      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-03.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 342412,
+      "kb": 334.4
+    },
+    "page-04": {
+      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-04.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 173112,
+      "kb": 169.1
+    },
+    "page-05": {
+      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-05.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 416456,
+      "kb": 406.7
+    },
+    "page-06": {
+      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-06.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 206212,
+      "kb": 201.4
+    }
+  },
+  "vol-03-ghost-in-the-genome": {
+    "cover": {
+      "path": "assets/novels/vol-03-ghost-in-the-genome/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 242352,
+      "kb": 236.7
+    },
+    "page-01": {
+      "path": "assets/novels/vol-03-ghost-in-the-genome/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 227066,
+      "kb": 221.7
+    },
+    "page-02": {
+      "path": "assets/novels/vol-03-ghost-in-the-genome/page-02.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 166408,
+      "kb": 162.5
+    },
+    "page-03": {
+      "path": "assets/novels/vol-03-ghost-in-the-genome/page-03.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 483678,
+      "kb": 472.3
+    },
+    "page-04": {
+      "path": "assets/novels/vol-03-ghost-in-the-genome/page-04.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 333758,
+      "kb": 325.9
+    },
+    "page-05": {
+      "path": "assets/novels/vol-03-ghost-in-the-genome/page-05.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 480820,
+      "kb": 469.6
+    }
+  },
+  "vol-04-kirbys-quantum-shield": {
+    "cover": {
+      "path": "assets/novels/vol-04-kirbys-quantum-shield/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 269150,
+      "kb": 262.8
+    },
+    "page-01": {
+      "path": "assets/novels/vol-04-kirbys-quantum-shield/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 381552,
+      "kb": 372.6
+    },
+    "page-02": {
+      "path": "assets/novels/vol-04-kirbys-quantum-shield/page-02.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 351646,
+      "kb": 343.4
+    },
+    "page-03": {
+      "path": "assets/novels/vol-04-kirbys-quantum-shield/page-03.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 442268,
+      "kb": 431.9
+    },
+    "page-04": {
+      "path": "assets/novels/vol-04-kirbys-quantum-shield/page-04.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 334272,
+      "kb": 326.4
+    },
+    "page-05": {
+      "path": "assets/novels/vol-04-kirbys-quantum-shield/page-05.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 445606,
+      "kb": 435.2
+    },
+    "page-06": {
+      "path": "assets/novels/vol-04-kirbys-quantum-shield/page-06.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 405968,
+      "kb": 396.5
+    }
+  },
+  "vol-05-lightning-without-a-brain": {
+    "cover": {
+      "path": "assets/novels/vol-05-lightning-without-a-brain/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 169258,
+      "kb": 165.3
+    },
+    "page-01": {
+      "path": "assets/novels/vol-05-lightning-without-a-brain/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 328766,
+      "kb": 321.1
+    },
+    "page-02": {
+      "path": "assets/novels/vol-05-lightning-without-a-brain/page-02.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 323672,
+      "kb": 316.1
+    },
+    "page-03": {
+      "path": "assets/novels/vol-05-lightning-without-a-brain/page-03.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 336068,
+      "kb": 328.2
+    },
+    "page-04": {
+      "path": "assets/novels/vol-05-lightning-without-a-brain/page-04.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 281604,
+      "kb": 275.0
+    },
+    "page-05": {
+      "path": "assets/novels/vol-05-lightning-without-a-brain/page-05.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 217210,
+      "kb": 212.1
+    }
+  },
+  "vol-08-crew-vital": {
+    "cover": {
+      "path": "assets/novels/vol-08-crew-vital/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 196452,
+      "kb": 191.8
+    }
+  },
+  "vol-06-the-red-robin-harvest": {
+    "cover": {
+      "path": "assets/novels/vol-06-the-red-robin-harvest/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 222044,
+      "kb": 216.8
+    },
+    "page-01": {
+      "path": "assets/novels/vol-06-the-red-robin-harvest/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 284718,
+      "kb": 278.0
+    },
+    "page-02": {
+      "path": "assets/novels/vol-06-the-red-robin-harvest/page-02.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 280432,
+      "kb": 273.9
+    },
+    "page-03": {
+      "path": "assets/novels/vol-06-the-red-robin-harvest/page-03.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 156144,
+      "kb": 152.5
+    },
+    "page-04": {
+      "path": "assets/novels/vol-06-the-red-robin-harvest/page-04.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 303920,
+      "kb": 296.8
+    }
+  },
+  "vol-07-alchemists-of-moon-dust": {
+    "cover": {
+      "path": "assets/novels/vol-07-alchemists-of-moon-dust/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 170328,
+      "kb": 166.3
+    }
+  },
+  "vol-09-mission-control-everywhere": {
+    "cover": {
+      "path": "assets/novels/vol-09-mission-control-everywhere/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 362000,
+      "kb": 353.5
+    }
+  },
+  "vol-10-the-closed-loop-frontier": {
+    "cover": {
+      "path": "assets/novels/vol-10-the-closed-loop-frontier/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 188318,
+      "kb": 183.9
+    }
+  }
+}

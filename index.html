@@ -9,10 +9,11 @@
       document.querySelector('meta[name="color-scheme"]').content = localStorage.getItem("color-scheme") ?? "light dark";
     } catch (_) {}
   </script>
-  <title>CoSE Science Comics — Hyper-Detailed K–12 Space Biology Graphic Novel Anthology</title>
-  <meta name="description" content="114 hyper-detailed K–12 academic graphic novels translating Dr. Richard Barker's open-source GitHub space biology, astrobotany, mycoponics, CFD, and astronaut health research into embeddable SVG, PNG, GIF, and PDF stories.">
+  <title>CoSE Science Comics — 10 Flagship Space Biology Graphic Novels &amp; 114-Issue Research Archive</title>
+  <meta name="description" content="10 flagship Marvel- and Manga-styled illustrated space biology graphic novels across the ISS, the Moon, and Earth, plus a 114-issue open-science research archive from Dr. Richard Barker's CoSE portfolio.">
   <link rel="icon" href="https://dr-richard-barker.github.io/Plant_response_to_radiation/cose/cose-logo.png">
   <link rel="stylesheet" href="css/comics.css">
+  <link rel="stylesheet" href="css/graphic-novels.css">
 </head>
 <body data-site-id="Comics">
 
@@ -36,12 +37,12 @@
   <!-- Anthology Hero Masthead -->
   <header class="hero-header">
     <div class="wrap">
-      <p class="hero-eyebrow">The Collaborative Science Environment (CoSE) · Digital Academic Graphic Novel Series</p>
-      <h1 class="hero-title">🚀 CoSE Science Comics: Illustrated Space Biology Graphic Novels</h1>
+      <p class="hero-eyebrow">The Collaborative Science Environment (CoSE) · Educational Graphic Novel Anthology</p>
+      <h1 class="hero-title">🚀 CoSE Science Comics: The Space Biology Chronicles</h1>
       <p class="hero-lede">
-        Every research repository tells an adventure story! Explore <strong>114 hyper-detailed 5-panel graphic novels</strong> across
-        <strong>8 distinct visual art styles</strong>—packed with governing equations, annotated cellular &amp; CFD diagrams, subcellular zoom lenses,
-        embedded quantitative mini-plots, and one-click export to <strong>SVG, High-DPI PNG, Animated GIF, and Academic PDF Plates</strong>.
+        Journey across the <strong>ISS, the Moon, and Earth</strong> as <strong>Astronauts, Phytonauts, and Mission Control Scientists</strong>!
+        Dive into <strong>10 flagship Marvel- and Manga-styled graphic novels</strong> synthesizing the biggest breakthroughs from our
+        <strong>114 open-source research projects</strong>—complete with dynamic K–12 lettering, Science Data HUDs, Director's Scripts, and direct links to every live simulator.
       </p>
     </div>
   </header>
@@ -50,8 +51,9 @@
   <div class="control-deck">
     <div class="wrap control-deck-inner">
       <div class="view-tabs-bar" role="tablist" aria-label="Comic Portal Views">
-        <button class="tab-btn active" data-tab-btn="newsstand" role="tab">📚 Graphic Novel Newsstand (114)</button>
-        <button class="tab-btn" data-tab-btn="reader" role="tab">📖 Interactive Reader &amp; Exporter</button>
+        <button class="tab-btn active" data-tab-btn="novels" role="tab">⚡ Flagship Graphic Novels (10)</button>
+        <button class="tab-btn" data-tab-btn="newsstand" role="tab">📚 Research Archive (114)</button>
+        <button class="tab-btn" data-tab-btn="reader" role="tab">📖 Archive Reader &amp; Exporter</button>
         <button class="tab-btn" data-tab-btn="constellation" role="tab">🌌 Concept Constellation</button>
         <button class="tab-btn" data-tab-btn="educator" role="tab">👩‍🏫 Cast, Styles &amp; NGSS Guide</button>
       </div>
@@ -73,9 +75,18 @@
   </div>
 
   <!-- ====================================================================
-       VIEW 1: COMIC NEWSSTAND (All 114 Issues across 8 Thematic Series)
+       VIEW 0 (HERO LANDING): 10 FLAGSHIP GRAPHIC NOVELS (MARVEL & MANGA)
        ==================================================================== -->
-  <main id="view-newsstand" class="view-section active">
+  <main id="view-novels" class="view-section active" aria-label="10 Flagship Graphic Novels">
+    <div class="wrap">
+      <div id="graphic-novels-stage"></div>
+    </div>
+  </main>
+
+  <!-- ====================================================================
+       VIEW 1: RESEARCH ARCHIVE NEWSSTAND (All 114 Issues across 8 Series)
+       ==================================================================== -->
+  <section id="view-newsstand" class="view-section" aria-label="114-Issue Research Archive">
     <div class="wrap">
       <div class="filter-console">
         <div id="scope-filter-bar" class="scope-filter-bar"></div>
@@ -101,7 +112,7 @@
 
       <div id="newsstand-container"></div>
     </div>
-  </main>
+  </section>
 
   <!-- ====================================================================
        VIEW 2: INTERACTIVE 5-PANEL COMIC BOOK READER & EXPORTER
@@ -188,9 +199,13 @@
 
   <!-- Scripts -->
   <script src="data/comics_catalog.js"></script>
+  <script src="data/graphic_novels.js"></script>
   <script src="js/svg-art-engine.js"></script>
+  <script src="js/graphic-novel-art-studio.js"></script>
+  <script src="js/graphic-novel-export.js"></script>
   <script src="js/export-engine.js"></script>
   <script src="js/constellation.js"></script>
   <script src="js/comic-reader.js"></script>
+  <script src="js/graphic-novel-reader.js"></script>
 </body>
 </html>

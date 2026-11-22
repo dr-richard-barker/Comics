@@ -1,0 +1,952 @@
+/* ==========================================================================
+   The CoSE Chronicles — 10 Flagship Graphic Novels Stylesheet
+   Marvel & Manga Visual Grammars · Light/Dark Contrast Calibrated
+   ========================================================================== */
+
+.gn-showcase-banner {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--bg-card) 92%, #0284c7 8%), color-mix(in srgb, var(--bg-surface) 92%, #7c3aed 8%));
+  border: 2px solid var(--border-line);
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin-bottom: 22px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+}
+
+.gn-showcase-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(color-mix(in srgb, var(--cose-cyan) 18%, transparent) 1.2px, transparent 1.2px);
+  background-size: 16px 16px;
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+.gn-banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.gn-banner-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--cose-cyan);
+  margin: 0 0 8px;
+}
+
+.gn-banner-title {
+  margin: 0 0 10px;
+  font-size: clamp(1.5rem, 2.7vw, 2.2rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--fg-primary);
+  line-height: 1.15;
+}
+
+.gn-banner-lede {
+  margin: 0 0 16px;
+  color: var(--fg-secondary);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  max-width: 82ch;
+}
+
+.gn-banner-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gn-stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-line);
+  color: var(--fg-primary);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* Mission Filters Console */
+.gn-filter-deck {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 18px;
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-line);
+  border-radius: 14px;
+  margin-bottom: 22px;
+}
+
+.gn-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.gn-filter-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--fg-muted);
+  min-width: 92px;
+}
+
+.gn-pill {
+  appearance: none;
+  border: 1.5px solid var(--border-line);
+  background: var(--bg-card);
+  color: var(--fg-primary);
+  padding: 6px 13px;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.14s ease, background 0.14s ease, border-color 0.14s ease;
+}
+
+.gn-pill:hover {
+  transform: translateY(-1px);
+  border-color: var(--cose-cyan);
+}
+
+.gn-pill.active {
+  background: var(--cose-teal);
+  border-color: var(--cose-teal);
+  color: #ffffff;
+}
+
+/* 10 Graphic Novel Collectible Cover Grid */
+.gn-covers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 22px;
+  margin-bottom: 34px;
+}
+
+.gn-cover-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 2.5px solid var(--border-line);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+}
+
+.gn-cover-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gn-color, var(--cose-cyan));
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.34);
+}
+
+.gn-cover-art-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: #070b14;
+  overflow: hidden;
+  border-bottom: 3px solid #020617;
+}
+
+.gn-cover-art-wrap img,
+.gn-cover-art-wrap .gn-studio-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.gn-cover-card:hover .gn-cover-art-wrap img,
+.gn-cover-card:hover .gn-cover-art-wrap .gn-studio-svg {
+  transform: scale(1.03);
+}
+
+/* Classic Marvel / Manga Comic Cover Masthead Overlay */
+.gn-cover-masthead {
+  position: absolute;
+  inset: 0 0 auto 0;
+  padding: 12px 12px 26px;
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.88) 0%, rgba(2, 6, 23, 0.48) 65%, transparent 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.gn-corner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  padding: 5px 7px;
+  background: #fef08a;
+  color: #09090b;
+  border: 2.5px solid #09090b;
+  box-shadow: 3px 3px 0 #09090b;
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.gn-cover-card.gn-family-manga .gn-corner-box {
+  background: #ffffff;
+  color: #09090b;
+  border-radius: 2px;
+}
+
+.gn-corner-vol {
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+}
+
+.gn-corner-num {
+  font-size: 1.15rem;
+}
+
+.gn-cover-title-stack {
+  flex: 1;
+  text-align: right;
+}
+
+.gn-cover-title {
+  margin: 0;
+  font-size: 1.06rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #020617, -1px -1px 0 #020617;
+  line-height: 1.1;
+}
+
+.gn-cover-sub {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 7px;
+  background: var(--gn-color, #0284c7);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 rgba(2, 6, 23, 0.85);
+}
+
+.gn-cover-bottom-bar {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 22px 10px 9px;
+  background: linear-gradient(0deg, rgba(2, 6, 23, 0.9) 0%, rgba(2, 6, 23, 0.45) 70%, transparent 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+}
+
+.gn-style-ribbon {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.88);
+  color: #f8fafc;
+  border: 1.5px solid var(--gn-accent, #38bdf8);
+}
+
+.gn-art-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: rgba(34, 197, 94, 0.22);
+  color: #bbf7d0;
+  border: 1px solid rgba(74, 222, 128, 0.55);
+}
+
+.gn-cover-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.gn-meta-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.gn-chip {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-line);
+  color: var(--fg-secondary);
+}
+
+.gn-tagline {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--fg-primary);
+  line-height: 1.45;
+}
+
+.gn-find-preview {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--fg-muted);
+  line-height: 1.42;
+  padding-left: 10px;
+  border-left: 3px solid var(--gn-color, var(--cose-cyan));
+}
+
+.gn-cover-cta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 6px;
+}
+
+.btn-gn-launch {
+  flex: 1;
+  border: none;
+  border-radius: 9px;
+  padding: 9px 14px;
+  background: var(--gn-color, var(--cose-teal));
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.86rem;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+
+.btn-gn-launch:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   CINEMATIC GRAPHIC NOVEL READER
+   ========================================================================== */
+
+.gn-reader-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.gn-reader-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-line);
+  border-radius: 14px;
+  position: sticky;
+  top: 66px;
+  z-index: 25;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.gn-toolbar-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.gn-tool-btn {
+  appearance: none;
+  border: 1.5px solid var(--border-line);
+  background: var(--bg-card);
+  color: var(--fg-primary);
+  padding: 6px 12px;
+  border-radius: 9px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.gn-tool-btn:hover {
+  border-color: var(--gn-color, var(--cose-cyan));
+}
+
+.gn-tool-btn.active {
+  background: var(--gn-color, var(--cose-teal));
+  border-color: var(--gn-color, var(--cose-teal));
+  color: #ffffff;
+}
+
+.gn-reader-header {
+  background: var(--bg-surface);
+  border: 2.5px solid var(--gn-color, var(--border-line));
+  border-radius: 16px;
+  padding: 20px 22px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 680px) {
+  .gn-reader-header {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gn-reader-mini-cover {
+  aspect-ratio: 3 / 4;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2.5px solid #020617;
+  box-shadow: 4px 4px 0 rgba(2, 6, 23, 0.6);
+}
+
+.gn-reader-mini-cover img,
+.gn-reader-mini-cover .gn-studio-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gn-reader-header-meta h2 {
+  margin: 6px 0 4px;
+  font-size: clamp(1.35rem, 2.4vw, 1.95rem);
+  font-weight: 900;
+  color: var(--fg-primary);
+}
+
+.gn-reader-subtitle {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gn-color, var(--cose-cyan));
+}
+
+.gn-reader-style-note {
+  margin: 0 0 10px;
+  font-size: 0.86rem;
+  color: var(--fg-muted);
+  line-height: 1.48;
+}
+
+/* Comic Spread Stage */
+.gn-pages-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.gn-page-article {
+  background: var(--bg-surface);
+  border: 3px solid #020617;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+}
+
+.gn-page-article.gn-family-manga {
+  border-width: 3.5px;
+  border-radius: 6px;
+}
+
+.gn-page-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--caption-bar-bg);
+  color: #f8fafc;
+  font-size: 0.82rem;
+  font-weight: 800;
+  border-bottom: 2.5px solid #020617;
+}
+
+.gn-page-act-tag {
+  color: var(--gn-accent, #fbbf24);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Art Canvas & Interactive Overlay Layer */
+.gn-spread-canvas {
+  position: relative;
+  aspect-ratio: 1400 / 788;
+  background: #020617;
+  overflow: hidden;
+}
+
+.gn-spread-canvas img,
+.gn-spread-canvas .gn-studio-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Lettering Overlay Layer */
+.gn-lettering-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity 0.2s ease;
+}
+
+.gn-clean-art .gn-lettering-layer,
+.gn-hide-lettering .gn-lettering-layer {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gn-top-lettering-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* Classic Marvel Goldenrod Narration Box vs. Manga Crisp Ink Narration Plate */
+.gn-caption-box {
+  max-width: min(56%, 540px);
+  padding: 10px 14px;
+  background: #fef3c7;
+  color: #09090b;
+  border: 2.5px solid #09090b;
+  box-shadow: 4px 4px 0 #09090b;
+  font-size: clamp(0.8rem, 1.05vw, 0.94rem);
+  font-weight: 800;
+  line-height: 1.38;
+  letter-spacing: 0.01em;
+}
+
+.gn-family-manga .gn-caption-box {
+  background: rgba(255, 255, 255, 0.95);
+  color: #09090b;
+  border: 2.5px solid #09090b;
+  border-left: 7px solid var(--gn-color, #7c3aed);
+  box-shadow: 3px 3px 0 rgba(9, 9, 11, 0.9);
+}
+
+/* Comic & Manga Stylized SFX Stamp */
+.gn-sfx-stamp {
+  font-family: Impact, "Arial Black", "Trebuchet MS", sans-serif;
+  font-size: clamp(1.05rem, 2vw, 1.7rem);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: #fde047;
+  -webkit-text-stroke: 1.5px #09090b;
+  text-shadow: 3px 3px 0 #09090b, 0 0 18px rgba(250, 204, 21, 0.55);
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.gn-family-manga .gn-sfx-stamp {
+  color: #ffffff;
+  -webkit-text-stroke: 1.6px var(--gn-color, #7c3aed);
+  text-shadow: 3px 3px 0 #09090b, -2px -2px 0 #09090b;
+}
+
+/* Speech Balloons */
+.gn-bubbles-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.gn-speech-balloon {
+  max-width: min(46%, 460px);
+  padding: 10px 14px 11px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #09090b;
+  border: 2.5px solid #09090b;
+  border-radius: 18px;
+  box-shadow: 4px 4px 0 rgba(9, 9, 11, 0.88);
+  position: relative;
+}
+
+.gn-family-manga .gn-speech-balloon {
+  border-radius: 22px 22px 16px 16px;
+  border-width: 2.5px;
+}
+
+.gn-speaker-pill {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.69rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  background: var(--speaker-color, #0284c7);
+}
+
+.gn-speech-text {
+  margin: 0;
+  font-size: clamp(0.79rem, 1vw, 0.92rem);
+  font-weight: 700;
+  line-height: 1.38;
+  color: #0f172a;
+}
+
+/* Responsive Mobile Lettering Dock: Never crowd small screens! */
+@media (max-width: 780px) {
+  .gn-lettering-layer {
+    position: static;
+    background: var(--bg-card);
+    padding: 14px;
+    gap: 12px;
+    border-top: 2.5px solid #020617;
+  }
+  .gn-caption-box,
+  .gn-speech-balloon {
+    max-width: 100%;
+  }
+  .gn-bubbles-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .gn-top-lettering-row {
+    flex-direction: column;
+  }
+}
+
+/* Science Data HUD Drawer Strip */
+.gn-data-hud-bar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 13px 16px;
+  background: color-mix(in srgb, var(--bg-card) 90%, var(--gn-color, #0284c7) 10%);
+  border-top: 2px solid var(--border-line);
+}
+
+.gn-clean-art .gn-data-hud-bar,
+.gn-hide-hud .gn-data-hud-bar {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .gn-data-hud-bar {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gn-hud-headline {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--fg-primary);
+  margin: 0 0 4px;
+}
+
+.gn-hud-eq-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.gn-hud-eq {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  color: var(--cose-cyan);
+}
+
+.gn-hud-metric {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--fg-secondary);
+}
+
+.gn-hud-desc {
+  margin: 0;
+  font-size: 0.81rem;
+  color: var(--fg-muted);
+  line-height: 1.42;
+}
+
+.gn-hud-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn-hud-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 11px;
+  border-radius: 8px;
+  border: 1.5px solid var(--gn-color, var(--cose-teal));
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-hud-link:hover {
+  background: var(--gn-color, var(--cose-teal));
+  color: #ffffff;
+}
+
+/* Compact Director's Shot Footnote */
+.gn-director-strip {
+  padding: 9px 16px;
+  background: var(--bg-elevated);
+  color: var(--fg-muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  border-top: 1px solid var(--border-line);
+}
+
+.gn-clean-art .gn-director-strip {
+  display: none;
+}
+
+/* Cinema Page Filmstrip Navigator */
+.gn-filmstrip-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-line);
+  border-radius: 14px;
+  flex-wrap: wrap;
+}
+
+.gn-filmstrip-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  flex: 1;
+}
+
+.gn-thumb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 11px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border-line);
+  background: var(--bg-card);
+  color: var(--fg-primary);
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.gn-thumb-btn.active {
+  background: var(--gn-color, var(--cose-teal));
+  border-color: var(--gn-color, var(--cose-teal));
+  color: #ffffff;
+}
+
+/* Mission Debrief & Cross-Linked Research Projects */
+.gn-debrief-section {
+  background: var(--bg-surface);
+  border: 2.5px solid var(--gn-color, var(--border-line));
+  border-radius: 16px;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gn-debrief-finds {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--fg-secondary);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.gn-source-repos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+}
+
+.gn-source-repo-card {
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-line);
+  border-top: 3px solid var(--gn-color, var(--cose-teal));
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--fg-primary);
+  transition: transform 0.14s ease, border-color 0.14s ease;
+}
+
+.gn-source-repo-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--gn-color, var(--cose-cyan));
+}
+
+.gn-source-repo-card span {
+  font-size: 0.74rem;
+  color: var(--fg-muted);
+}
+
+/* Native <dialog> Director's Script & Notes Modal */
+dialog.gn-script-dialog {
+  width: min(880px, 94vw);
+  max-height: 86vh;
+  padding: 0;
+  border: 2.5px solid var(--gn-color, var(--cose-cyan));
+  border-radius: 16px;
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+
+dialog.gn-script-dialog::backdrop {
+  background: rgba(2, 6, 23, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.gn-dialog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--bg-card);
+  border-bottom: 1.5px solid var(--border-line);
+}
+
+.gn-dialog-head h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.gn-dialog-body {
+  padding: 18px 22px 24px;
+  overflow-y: auto;
+  max-height: calc(86vh - 68px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gn-script-beat-card {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-line);
+}
+
+.gn-script-beat-card h4 {
+  margin: 0 0 8px;
+  font-size: 0.96rem;
+  color: var(--cose-cyan);
+}
+
+.gn-script-beat-card p {
+  margin: 4px 0;
+  font-size: 0.86rem;
+  line-height: 1.48;
+  color: var(--fg-secondary);
+}
+
+/* Cross-link Banner inside 114-Issue Archive Reader */
+.archive-featured-novel-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--bg-card) 86%, #fbbf24 14%);
+  border: 2px solid var(--border-line);
+}
+
+.archive-featured-novel-bar strong {
+  color: var(--fg-primary);
+}
+
+.btn-jump-novel {
+  border: none;
+  border-radius: 8px;
+  padding: 7px 13px;
+  background: var(--cose-teal);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+@media print {
+  .gn-reader-toolbar,
+  .gn-filmstrip-nav,
+  .gn-hud-actions {
+    display: none !important;
+  }
+  .gn-page-article {
+    break-inside: avoid;
+    margin-bottom: 18px;
+  }
+}

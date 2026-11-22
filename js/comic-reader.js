@@ -6,7 +6,7 @@
 
   let DATA = null;
   let currentLevel = "ms"; // 'k5' | 'ms' | 'hs'
-  let currentTab = "newsstand"; // 'newsstand' | 'reader' | 'constellation' | 'educator'
+  let currentTab = "novels"; // 'novels' | 'newsstand' | 'reader' | 'constellation' | 'educator'
   let currentComicId = "LunarLeaf-CFD";
   let activeScopeFilter = "all"; // 'all' | 'astrobotany' | 'deepspaceag' | 'astronauthealth' | 'simulations'
   let activeSeriesFilter = "all";
@@ -78,6 +78,9 @@
     renderNewsstand();
     renderComicIssue(currentComicId);
     renderEducatorAndCastHub();
+    if (window.CoSEGraphicNovels && window.CoSEGraphicNovels.render) {
+      window.CoSEGraphicNovels.render();
+    }
     if (window.CoSEConstellation && window.CoSEConstellation.drawConstellation) {
       window.CoSEConstellation.drawConstellation();
     }
@@ -149,7 +152,7 @@
       currentComicId = issue;
       if (!tab) currentTab = "reader";
     }
-    if (tab && ["newsstand", "reader", "constellation", "educator"].includes(tab)) {
+    if (tab && ["novels", "newsstand", "reader", "constellation", "educator"].includes(tab)) {
       currentTab = tab;
     }
   }
@@ -283,6 +286,9 @@
 
     renderComicIssue(currentComicId);
     renderEducatorAndCastHub();
+    if (window.CoSEGraphicNovels && window.CoSEGraphicNovels.render) {
+      window.CoSEGraphicNovels.render();
+    }
   }
 
   function renderSeriesFilterPills() {
@@ -607,8 +613,37 @@
       })
       .join("");
 
+    const featuredNovels =
+      window.CoSEGraphicNovels && typeof window.CoSEGraphicNovels.getNovelsForComic === "function"
+        ? window.CoSEGraphicNovels.getNovelsForComic(comic.id)
+        : [];
+    const featuredNovelsHtml = featuredNovels.length
+      ? `
+        <div class="archive-featured-novel-bar no-print">
+          <div>
+            <strong>⚡ Featured in The CoSE Chronicles:</strong>
+            ${featuredNovels
+              .map(
+                (fn) =>
+                  `<span>Vol. ${String(fn.volume).padStart(2, "0")} — <em>${esc(fn.title)}: ${esc(fn.subtitle)}</em> (${esc(fn.art_style_label)})</span>`
+              )
+              .join(" · ")}
+          </div>
+          <div>
+            ${featuredNovels
+              .map(
+                (fn) =>
+                  `<button class="btn-jump-novel" type="button" data-open-flagship-novel="${esc(fn.id)}" style="background:${fn.theme_color}">⚡ Read Vol. ${String(fn.volume).padStart(2, "0")} →</button>`
+              )
+              .join(" ")}
+          </div>
+        </div>
+      `
+      : "";
+
     readerRoot.innerHTML = `
       <div class="comic-book-page style-${comic.art_style}" style="--series-color:${comic.series_color}; --series-accent:${comic.series_accent}">
+        ${featuredNovelsHtml}
         <!-- Reader Top Navigation Bar -->
         <div class="reader-nav-toolbar no-print">
           <button class="btn-nav-step" id="btn-prev-issue">← Previous Issue</button>
@@ -752,6 +787,15 @@
       });
     }
 
+    readerRoot.querySelectorAll("[data-open-flagship-novel]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const nid = btn.getAttribute("data-open-flagship-novel");
+        if (window.CoSEGraphicNovels && typeof window.CoSEGraphicNovels.openNovel === "function") {
+          window.CoSEGraphicNovels.openNovel(nid, 1);
+        }
+      });
+    });
+
     readerRoot.querySelectorAll("[data-export-fmt]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const fmt = btn.getAttribute("data-export-fmt");
@@ -873,9 +917,17 @@
     }
   }
 
+  function switchTab(tabName) {
+    if (["novels", "newsstand", "reader", "constellation", "educator"].includes(tabName)) {
+      currentTab = tabName;
+      syncUIWithState();
+    }
+  }
+
   window.CoSEReader = {
     init,
     openComicInReader,
+    switchTab,
     toggleColorScheme,
     getCurrentLevel: () => currentLevel
   };

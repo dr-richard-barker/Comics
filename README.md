@@ -1,12 +1,32 @@
-# 🚀 CoSE Science Comics: The K–12 Illustrated Space Biology Anthology
+# 🚀 CoSE Science Comics: The Space Biology Chronicles & K–12 Anthology
 
-An interactive, multi-style K–12 comic anthology and GitHub Pages showcase covering **114 open-source research projects** across **Dr. Richard J. Barker's** Collaborative Science Environment ([CoSE](https://cosecloud.com)) and GitHub portfolio (`@dr-richard-barker`).
-
-Every comic issue translates real scientific discoveries—from leaf gas boundary layers (CFD) and NASA OSDR spaceflight multi-omics to sintered lunar regolith, mycoponics, quantum magnetobiology, and astronaut health countermeasures—into an accessible, inspiring 5-panel story for K–12 students, teachers, and curious explorers.
+An interactive, educational graphic novel portal and GitHub Pages showcase featuring **10 Flagship Marvel- & Manga-Styled Graphic Novels** (*The CoSE Chronicles*) alongside the complete **114-issue open-source research archive** across **Dr. Richard J. Barker's** Collaborative Science Environment ([CoSE](https://cosecloud.com)) and GitHub portfolio (`@dr-richard-barker`).
 
 ---
 
-## ✨ Key Features
+## ⚡ NEW: The CoSE Chronicles — 10 Flagship Graphic Novels
+
+Synthesizing the biggest discoveries across all 114 projects into ten 3-act illustrated adventures across **the ISS, the Moon, and Earth**, told from the perspectives of **Astronauts**, **Phytonauts** (spacefaring plants & fungi), and **Mission Control Scientists**:
+
+| Vol. | Title | Worlds | Perspective | Art Style |
+| :---: | :--- | :--- | :--- | :--- |
+| **01** | **BREATHLESS IN ZERO-G**: *The Invisible Pillow* | ISS · Earth | Phytonaut · Mission Control | Modern Marvel Sci-Fi Action |
+| **02** | **ARTEMIS III: ONE SMALL SPROUT** | Moon · Earth | Astronaut · Phytonaut | Classic Marvel Heroic Lunar Epic |
+| **03** | **GHOST IN THE GENOME**: *The 1,337-Sample Mystery* | Earth · ISS | Mission Control · Phytonaut | Seinen Cyberpunk Data-Manga |
+| **04** | **KIRBY'S QUANTUM SHIELD**: *Beyond Earth's Magnetic Cocoon* | Earth · Moon | Phytonaut · Astronaut | Silver-Age Marvel Cosmic (Jack Kirby) |
+| **05** | **LIGHTNING WITHOUT A BRAIN**: *The Cellular Alarm Network* | Earth · ISS | Phytonaut · Mission Control | Shōnen Kinetic Action Manga |
+| **06** | **THE RED ROBIN HARVEST**: *Tomatoes of the Orbital Garden* | ISS · Earth | Astronaut · Phytonaut | Botanical *Iyashikei* / Ghibli Watercolor Manga |
+| **07** | **ALCHEMISTS OF MOON DUST**: *Myco & the Living Habitat* | Moon · Earth | Phytonaut · Astronaut | Marvel Solarpunk / Mythic Graphic Novel |
+| **08** | **CREW VITAL**: *The Molecular Counterattack* | ISS · Earth | Astronaut · Mission Control | Bio-Action Medical Manga (*Cells at Work!* Style) |
+| **09** | **MISSION CONTROL EVERYWHERE**: *The Citizen-Scientist Uprising* | Earth · ISS | Mission Control | Modern Marvel Pop-Art (*Spider-Verse* Energy) |
+| **10** | **THE CLOSED-LOOP FRONTIER**: *Architects of Artemis City* | Earth · ISS · Moon | Astronaut · Phytonaut · Mission Control | Marvel Cinematic Crossover Event |
+
+- **3-Layer Interactive Reader**: Toggle **💬 Story Lettering** (synced live to K–5 / 6–8 / 9–12), **🔬 Science Data HUD** (governing equations, OSDR datasets, live simulator links), **🎨 Clean Art Mode**, **🎬 Cinema vs. 📜 Webtoon Scroll**, and the **🎬 Director's Script & Storyboard** modal.
+- **Full Story Bible & Scripts**: See [docs/STORY_BIBLE.md](docs/STORY_BIBLE.md).
+
+---
+
+## ✨ Full Anthology & Archive Features
 
 1. **114 Complete 5-Panel Comic Issues Across 8 Thematic Series & Art Styles**:
    - **Series 1 — Invisible Winds: Gas Transport & Spaceflight Biophysics** (*Retro NASA Blueprint & Airflow Manga* · 12 issues)
@@ -66,10 +86,11 @@ Comics/
 
 ## 🛠️ Local Preview & Rebuilding the Catalog
 
-To rebuild and validate the comic catalog after adding or editing issues in `scripts/build_comics_data.py`:
+To rebuild and validate both the **10 Flagship Graphic Novels** and the **114-issue Research Archive**:
 
 ```bash
 python3 scripts/build_comics_data.py --verify
+python3 scripts/build_graphic_novels.py --verify
 ```
 
 To preview locally:
