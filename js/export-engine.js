@@ -309,10 +309,10 @@
       `;
       setTimeout(async () => {
         try {
-          const gifW = 820;
-          const gifH = 265;
+          const gifW = 760;
+          const gifH = 430;
           const frames = [];
-          const heroPanel = comic.panels[3] || comic.panels[0]; // Panel 4 Eureka Discovery or Panel 1 Hero
+          const heroPanel = comic.panels[3] || comic.panels[0]; // Panel 4 Eureka Discovery (760x430)
           for (let f = 0; f < 8; f++) {
             const phase = f / 8;
             const frameSvg = window.CoSEArtEngine.renderPanelSVG(comic, heroPanel, {
@@ -320,18 +320,7 @@
               phase
             });
             const c = await renderSvgToCanvas(frameSvg, gifW, gifH);
-            const ctx = c.getContext("2d");
-            // Overlay comic title & take-home strip on the animated GIF frame
-            ctx.fillStyle = "rgba(7, 11, 20, 0.86)";
-            ctx.fillRect(0, gifH - 34, gifW, 34);
-            ctx.fillStyle = "#fde047";
-            ctx.font = "bold 12px monospace";
-            ctx.fillText(
-              `CoSE #${comic.issue_number} ${comic.title}: "${comic.take_home.slice(0, 74)}..."`,
-              12,
-              gifH - 13
-            );
-            frames.push(ctx.getImageData(0, 0, gifW, gifH));
+            frames.push(c.getContext("2d").getImageData(0, 0, gifW, gifH));
           }
           const gifBlob = encodeAnimatedGIF(frames, gifW, gifH, 16);
           const gifUrl = URL.createObjectURL(gifBlob);

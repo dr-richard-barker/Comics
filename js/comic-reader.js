@@ -8,6 +8,7 @@
   let currentLevel = "ms"; // 'k5' | 'ms' | 'hs'
   let currentTab = "newsstand"; // 'newsstand' | 'reader' | 'constellation' | 'educator'
   let currentComicId = "LunarLeaf-CFD";
+  let activeScopeFilter = "all"; // 'all' | 'astrobotany' | 'deepspaceag' | 'astronauthealth' | 'simulations'
   let activeSeriesFilter = "all";
   let activeConceptFilter = "all";
   let activeCastFilter = "all";
@@ -91,6 +92,7 @@
 
     parseUrlHash();
     setupControls();
+    renderScopeFilterPills();
     renderSeriesFilterPills();
     renderConceptFilterSelect();
     renderCastFilterSelect();
@@ -201,6 +203,7 @@
     const resetBtn = document.getElementById("reset-filters-btn");
     if (resetBtn) {
       resetBtn.addEventListener("click", () => {
+        activeScopeFilter = "all";
         activeSeriesFilter = "all";
         activeConceptFilter = "all";
         activeCastFilter = "all";
@@ -210,10 +213,56 @@
         if (cSel) cSel.value = "all";
         const castSel = document.getElementById("cast-filter-select");
         if (castSel) castSel.value = "all";
+        renderScopeFilterPills();
         renderSeriesFilterPills();
         renderNewsstand();
       });
     }
+  }
+
+  function renderScopeFilterPills() {
+    const container = document.getElementById("scope-filter-bar");
+    if (!container) return;
+
+    const scopes = [
+      { id: "all", label: `🌐 All CoSE Projects (${DATA.comics.length})` },
+      {
+        id: "astrobotany",
+        label: `🌱 AstroBotany Hub (${DATA.comics.filter((c) => (c.cose_scopes || []).includes("astrobotany")).length})`
+      },
+      {
+        id: "deepspaceag",
+        label: `🌾 Deep Space Ag (${DATA.comics.filter((c) => (c.cose_scopes || []).includes("deepspaceag")).length})`
+      },
+      {
+        id: "astronauthealth",
+        label: `🩺 Astronaut Health (${DATA.comics.filter((c) => (c.cose_scopes || []).includes("astronauthealth")).length})`
+      },
+      {
+        id: "simulations",
+        label: `🕹️ Serious Simulations & Academy (${DATA.comics.filter((c) => (c.cose_scopes || []).includes("simulations")).length})`
+      }
+    ];
+
+    container.innerHTML =
+      `<span class="scope-filter-label">CoSE Hub Scope:</span>` +
+      scopes
+        .map(
+          (sc) => `
+          <button class="scope-pill ${activeScopeFilter === sc.id ? "active" : ""}" data-scope-filter="${sc.id}" type="button">
+            ${esc(sc.label)}
+          </button>
+        `
+        )
+        .join("");
+
+    container.querySelectorAll("[data-scope-filter]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        activeScopeFilter = btn.getAttribute("data-scope-filter");
+        renderScopeFilterPills();
+        renderNewsstand();
+      });
+    });
   }
 
   function syncUIWithState() {
@@ -307,6 +356,7 @@
 
   function getFilteredComics() {
     return DATA.comics.filter((c) => {
+      if (activeScopeFilter !== "all" && !(c.cose_scopes || []).includes(activeScopeFilter)) return false;
       if (activeSeriesFilter !== "all" && c.series_id !== activeSeriesFilter) return false;
       if (activeConceptFilter !== "all" && !c.concepts.includes(activeConceptFilter)) return false;
       if (activeCastFilter !== "all" && !c.characters.includes(activeCastFilter)) return false;
@@ -325,6 +375,8 @@
           c.metric_badge +
           " " +
           (c.equation || "") +
+          " " +
+          (c.qc_verified_note || "") +
           " " +
           c.concepts.join(" ")
         ).toLowerCase();
@@ -603,6 +655,9 @@
             <span class="telemetry-badge"><strong>∑ Governing Equation:</strong> <code>${esc(comic.equation)}</code></span>
             <span class="telemetry-badge"><strong>📏 Resolution:</strong> <code>${esc(comic.scale_bar)}</code></span>
             <span class="telemetry-badge"><strong>🔬 Subcellular Lens:</strong> <code>${esc(comic.zoom_inset)}</code></span>
+          </div>
+          <div class="qc-verified-banner">
+            <strong>✓ AstroBotany &amp; CoSE Scientific QC Audit:</strong> ${esc(comic.qc_verified_note || "")}
           </div>
           <div class="masthead-cast-row">
             <span class="cast-row-label">Starring Cast:</span>
