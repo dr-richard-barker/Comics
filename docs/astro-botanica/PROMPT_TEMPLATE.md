@@ -9,8 +9,8 @@ Fill the placeholders for the next volume:
 
 | Placeholder | Next value |
 |---|---|
-| `{{VOLUME_NUMBER}}` | `69` |
-| `{{OSD_ACCESSION}}` | `SERIES_COMPLETE` |
+| `{{VOLUME_NUMBER}}` | `91` |
+| `{{OSD_ACCESSION}}` | `(see series_index.json → remaining_after_last_volume)` |
 | `{{PREVIOUS_VOLUMES_JSON_OR_SUMMARY}}` | `data/astro_botanica/series_bible.json` (or the last volume's SERIES_BIBLE_DELTA) |
 | `{{OSDR_API_JSON_AND_DEG_TABLE}}` | OSDR study metadata + DEG table for that accession |
 

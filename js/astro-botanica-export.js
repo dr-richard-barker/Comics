@@ -1,6 +1,6 @@
 /**
  * ASTRO-BOTANICA: ZERO-G ROOTS — Graphic Novel HD PNG & Printable PDF Book Exporter
- * Zero-dependency client-side exporter for the 68-Volume Seinen Manga Series:
+ * Zero-dependency client-side exporter for the 90-Volume Seinen Manga Series:
  *  1. Export Active Page as High-Resolution PNG Plate (1400x960) with authentic
  *     screentones, narration box, Katakana SFX, dialogue & NASA OSDR Science HUD.
  *  2. Compile & Print Full Illustrated Manga Tankōbon / Classroom PDF Booklet

@@ -324,12 +324,14 @@ def build(verify: bool) -> int:
         volumes.append(vol)
 
     # Check for additional post-turn volumes written to VOL_DIR (e.g. Vol 63+)
-    for vol_file in sorted(VOL_DIR.glob("vol-*.md")):
+    extra_files = []
+    for vol_file in VOL_DIR.glob("vol-*.md"):
         m = re.match(r"vol-(\d+)-(osd-\d+)\.md", vol_file.name)
-        if not m:
-            continue
-        v_num = int(m.group(1))
-        v_acc = m.group(2).upper()
+        if m:
+            extra_files.append((int(m.group(1)), m.group(2).upper(), vol_file))
+    extra_files.sort(key=lambda x: x[0])
+
+    for v_num, v_acc, vol_file in extra_files:
         if any(v["accession"] == v_acc for v in volumes):
             continue  # Already in volumes from turns
         raw_file_text = vol_file.read_text(encoding="utf-8")
@@ -338,6 +340,12 @@ def build(verify: bool) -> int:
             parts = text.split("---", 2)
             if len(parts) >= 3:
                 text = parts[2].lstrip()
+        while text.startswith("> [!"):
+            lines = text.splitlines(keepends=True)
+            idx = 0
+            while idx < len(lines) and (lines[idx].startswith(">") or lines[idx].strip() == ""):
+                idx += 1
+            text = "".join(lines[idx:]).lstrip()
         header = header_block(text)
         bible, bible_status = last_json_block(text)
         has_header = "Volume Metadata Header" in text
@@ -495,9 +503,15 @@ def build(verify: bool) -> int:
     dups = sorted({a for a in accs if accs.count(a) > 1})
     if dups:
         errors.append(f"duplicate accessions: {dups}")
-    unsorted = [(a, b) for a, b in zip(accs, accs[1:]) if acc_num(a) >= acc_num(b)]
-    if unsorted:
-        errors.append(f"accessions not strictly ascending: {unsorted}")
+    # Check ascending order within Core Series (Vols 1-68) and Special Chronicles (Vols 69+)
+    core_accs = accs[:68]
+    special_accs = accs[68:]
+    unsorted_core = [(a, b) for a, b in zip(core_accs, core_accs[1:]) if acc_num(a) >= acc_num(b)]
+    unsorted_spec = [(a, b) for a, b in zip(special_accs, special_accs[1:]) if acc_num(a) >= acc_num(b)]
+    if unsorted_core:
+        errors.append(f"core accessions not strictly ascending: {unsorted_core}")
+    if unsorted_spec:
+        errors.append(f"special chronicles accessions not strictly ascending: {unsorted_spec}")
     for e in index_entries:
         if e["qa"]["bible_json"] in ("missing", "unparseable"):
             notes.append(f"Vol {e['volume']} ({e['accession']}): SERIES_BIBLE JSON {e['qa']['bible_json']}")

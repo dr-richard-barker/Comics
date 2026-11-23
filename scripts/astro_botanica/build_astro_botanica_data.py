@@ -225,8 +225,8 @@ def build(verify: bool) -> int:
     print(f"Compiled {len(compiled_volumes)} volumes into {json_path.relative_to(ROOT)} and {js_path.relative_to(ROOT)}", file=sys.stderr)
 
     if verify:
-        if len(compiled_volumes) != 68:
-            print(f"ERROR: Expected 68 volumes, found {len(compiled_volumes)}", file=sys.stderr)
+        if len(compiled_volumes) != 90:
+            print(f"ERROR: Expected 90 volumes, found {len(compiled_volumes)}", file=sys.stderr)
             return 1
         for i, v in enumerate(compiled_volumes, start=1):
             if v["volume"] != i:
@@ -238,5 +238,5 @@ def build(verify: bool) -> int:
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--verify", action="store_true", help="Assert complete 68-volume dataset")
+    ap.add_argument("--verify", action="store_true", help="Assert complete 90-volume dataset")
     raise SystemExit(build(ap.parse_args().verify))

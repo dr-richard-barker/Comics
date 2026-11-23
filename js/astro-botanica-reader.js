@@ -1,6 +1,6 @@
 /**
- * ASTRO-BOTANICA: ZERO-G ROOTS — Flagship 68-Volume Seinen Manga Reader Controller
- * Powers the 68-Volume Showcase Grid, NASA OSDR Accession Filters (ISS/Moon/Mars/Polar Analog),
+ * ASTRO-BOTANICA: ZERO-G ROOTS — Flagship 90-Volume Seinen Manga Reader Controller
+ * Powers the 90-Volume Showcase Grid, NASA OSDR Accession Filters (ISS/Moon/Mars/Polar Analog),
  * Plant Family Filters (Brassicaceae, Asteraceae, Solanaceae, Poaceae, Fabaceae, Bryophytes),
  * Cinema Spread & Webtoon Scroll Reader, 3-Layer Overlays (Lettering, OSDR Data HUD, Clean Art),
  * and Native <dialog> 32-Page Master Script & Dramatis Personae Modal.
@@ -9,7 +9,7 @@
   "use strict";
 
   let AB_DATA = window.ASTRO_BOTANICA_DATA || null;
-  let activeVolNum = null; // null = Showcase Grid; number 1..68 = Open Volume
+  let activeVolNum = null; // null = Showcase Grid; number 1..90 = Open Volume
   let activePageNum = 1;
   let readerLayout = "cinema"; // 'cinema' | 'scroll'
   let showLettering = true;
@@ -60,6 +60,7 @@
         if (filterArc === "16-35" && (v.volume < 16 || v.volume > 35)) return false;
         if (filterArc === "36-50" && (v.volume < 36 || v.volume > 50)) return false;
         if (filterArc === "51-68" && (v.volume < 51 || v.volume > 68)) return false;
+        if (filterArc === "69-90" && (v.volume < 69 || v.volume > 90)) return false;
       }
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
@@ -139,14 +140,14 @@
           <p class="ab-banner-eyebrow">🌱 Flagship Seinen Manga Series · NASA Open Science Data Repository (OSDR)</p>
           <h2 class="ab-banner-title">ASTRO-BOTANICA: ZERO-G ROOTS (宇宙植物学 · 根の無重力)</h2>
           <p class="ab-banner-lede">
-            Synthesizing <strong>68 verified NASA OSDR space plant biology missions</strong> (from <em>OSD-7</em> through <em>OSD-971</em>) into <strong>2,176 pages of seinen manga</strong>.
-            Grounded in genuine transcriptomic assays, differential gene expression (DEG) ledgers, Apollo lunar soil interactions, and polar analog harvests across the ISS, the Moon, Mars simulants, and Antarctica.
+            Synthesizing <strong>90 verified NASA OSDR space plant biology missions</strong> (100% complete OSDR coverage, from <em>OSD-7</em> through <em>OSD-782</em>) into <strong>2,880 pages of seinen manga</strong>.
+            Grounded in genuine transcriptomic assays, differential gene expression (DEG) ledgers, Apollo lunar soil interactions, parabolic starfighter runs, and polar analog harvests across the ISS, the Moon, Mars simulants, and Antarctica.
           </p>
           <div class="ab-banner-stats">
-            <span class="ab-stat-pill">🗾 68 Seinen Manga Volumes</span>
-            <span class="ab-stat-pill">🔬 68 Verified NASA OSDR Accessions</span>
-            <span class="ab-stat-pill">🛰️ ISS · 🌙 Moon · 🪐 Mars · ❄️ Polar Analog</span>
-            <span class="ab-stat-pill">🧬 2,176 Master Script Pages</span>
+            <span class="ab-stat-pill">🗾 90 Seinen Manga Volumes</span>
+            <span class="ab-stat-pill">🔬 90 Verified NASA OSDR Accessions (100% OSDR Complete)</span>
+            <span class="ab-stat-pill">🛰️ ISS · 🌙 Moon · 🪐 Mars · ❄️ Polar Analog · 🚀 Suborbital</span>
+            <span class="ab-stat-pill">🧬 2,880 Master Script Pages</span>
             <span class="ab-stat-pill">⚡ High-Frequency 60°/45° Vector Screentones</span>
             <span class="ab-stat-pill">🔗 Direct NASA OSDR Study Links</span>
           </div>
@@ -158,7 +159,7 @@
         <div class="ab-search-row">
           <div class="ab-search-box">
             <span class="ab-search-icon">🔍</span>
-            <input id="ab-search-input" type="search" placeholder="Search 68 volumes by accession (e.g. OSD-855), gene (XTH, PIN), plant (Arabidopsis, Lettuce), or hardware..." value="${esc(searchQuery)}" aria-label="Search ASTRO-BOTANICA manga volumes">
+            <input id="ab-search-input" type="search" placeholder="Search 90 volumes by accession (e.g. OSD-855, OSD-193), gene (SOG1, PIN, TAC1), plant, or hardware..." value="${esc(searchQuery)}" aria-label="Search ASTRO-BOTANICA manga volumes">
           </div>
           <button id="ab-reset-filters-btn" class="ab-tool-btn" type="button">↺ Reset Filters</button>
         </div>
@@ -166,7 +167,7 @@
         <!-- World / Destination Filter -->
         <div class="ab-filter-row">
           <span class="ab-filter-label">Destination:</span>
-          <button class="ab-pill ${filterWorld === "all" ? "active" : ""}" data-ab-world="all">🌌 All Worlds (68)</button>
+          <button class="ab-pill ${filterWorld === "all" ? "active" : ""}" data-ab-world="all">🌌 All Worlds (90)</button>
           <button class="ab-pill ${filterWorld === "ISS" ? "active" : ""}" data-ab-world="ISS">🛰️ ISS / LEO</button>
           <button class="ab-pill ${filterWorld === "Moon" ? "active" : ""}" data-ab-world="Moon">🌙 The Moon (Apollo Regolith)</button>
           <button class="ab-pill ${filterWorld === "Mars" ? "active" : ""}" data-ab-world="Mars">🪐 Mars Simulants</button>
@@ -189,11 +190,12 @@
         <!-- Story Arc Filter -->
         <div class="ab-filter-row">
           <span class="ab-filter-label">Chronology:</span>
-          <button class="ab-pill ${filterArc === "all" ? "active" : ""}" data-ab-arc="all">📚 All 68 Volumes</button>
+          <button class="ab-pill ${filterArc === "all" ? "active" : ""}" data-ab-arc="all">📚 All 90 Volumes</button>
           <button class="ab-pill ${filterArc === "1-15" ? "active" : ""}" data-ab-arc="1-15">Arc I: Foundations (Vols 01–15)</button>
           <button class="ab-pill ${filterArc === "16-35" ? "active" : ""}" data-ab-arc="16-35">Arc II: Deep Space Ag &amp; Regolith (Vols 16–35)</button>
           <button class="ab-pill ${filterArc === "36-50" ? "active" : ""}" data-ab-arc="36-50">Arc III: Multi-Omics &amp; Epigenetics (Vols 36–50)</button>
           <button class="ab-pill ${filterArc === "51-68" ? "active" : ""}" data-ab-arc="51-68">Arc IV: Frontier &amp; Climax (Vols 51–68)</button>
+          <button class="ab-pill ${filterArc === "69-90" ? "active" : ""}" data-ab-arc="69-90">🌟 Special Chronicles Suite (Vols 69–90)</button>
         </div>
       </div>
 
@@ -363,7 +365,7 @@
         <!-- Sticky Reader Toolbar -->
         <div class="ab-reader-toolbar">
           <div class="ab-toolbar-group">
-            <button class="ab-tool-btn" type="button" id="btn-ab-back">← All 68 Volumes</button>
+            <button class="ab-tool-btn" type="button" id="btn-ab-back">← All 90 Volumes</button>
             <button class="ab-tool-btn" type="button" id="btn-ab-prev-vol">◀ Prev Vol</button>
             <select id="ab-volume-select" class="ab-vol-dropdown" aria-label="Select Volume">
               ${volumeOptionsHtml}
@@ -390,7 +392,7 @@
           <div class="ab-reader-mini-cover">${renderCoverVisual(volume)}</div>
           <div class="ab-reader-header-meta">
             <div class="ab-meta-chips">
-              <span class="ab-chip ab-chip-primary">VOLUME ${String(volume.volume).padStart(2, "0")} OF 68</span>
+              <span class="ab-chip ab-chip-primary">VOLUME ${String(volume.volume).padStart(2, "0")} OF 90</span>
               <a class="ab-chip ab-chip-link" href="${esc(volume.osdr_url)}" target="_blank" rel="noopener">🛰️ ${esc(volume.accession)}</a>
               <span class="ab-chip">🌱 ${esc(volume.plant_family)}</span>
               <span class="ab-chip">🌌 ${esc(volume.world)}</span>

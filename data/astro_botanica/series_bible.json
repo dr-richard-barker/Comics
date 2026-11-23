@@ -1,6 +1,6 @@
 {
   "series_title": "ASTRO-BOTANICA: ZERO-G ROOTS",
-  "built_from_volumes": 68,
+  "built_from_volumes": 90,
   "hardware": [
     {
       "name": "Advanced Biological Research System (ABRS)",
@@ -1359,6 +1359,13 @@
       "volumes": [
         32,
         32
+      ]
+    },
+    {
+      "name": "Col-0 wild-type vs myb3r1 myb3r3 myb3r5 triple mutant",
+      "first_volume": 82,
+      "volumes": [
+        82
       ]
     }
   ],

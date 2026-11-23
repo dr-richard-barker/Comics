@@ -11,12 +11,6 @@ source: docs/astro-botanica/source/conversation.md (turn 9999)
 
 > [!NOTE]
 > Script status **partial**: 30/32 pages have their own heading.
-> [!NOTE]
-> Script status **partial**: 30/32 pages have their own heading.
-> [!NOTE]
-> Script status **partial**: 30/32 pages have their own heading.
-> [!NOTE]
-> Script status **partial**: 30/32 pages have their own heading.
 ## 1. Volume Metadata Header
 
 - **Series:** *Roots in Orbit: The NASA OSDR Plant Chronicles*

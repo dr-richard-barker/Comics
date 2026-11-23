@@ -4,17 +4,17 @@
 
 ## Summary
 
-- Volumes ingested: **68** (complete: 3, partial: 49, condensed: 16)
-- Science verification: **0 / 68 verified** (all `unverified` — Phase B)
+- Volumes ingested: **90** (complete: 3, partial: 49, condensed: 38)
+- Science verification: **0 / 90 verified** (all `unverified` — Phase B)
 - Molecular characters in merged bible: **39**; hardware entries: **126**
-- Next queued accession: `SERIES_COMPLETE`
+- Next queued accession: `None`
 - Live OSDR reconciliation: not yet run
 
 ## Fragments — script must be regenerated (0)
 
 None.
 
-## Condensed volumes — pages merged into ranges (16)
+## Condensed volumes — pages merged into ranges (38)
 
 | Vol | Accession | Title | Detail |
 |---:|---|---|---|
@@ -34,6 +34,28 @@ None.
 | 50 | OSD-594 | Blades in the Bead Mill | 12 page headings; ranges 4-6, 11-13, 14-16, 17-19, 20-22, 23-25, 26-28 |
 | 51 | OSD-615 | Walls Woven in Zero-G | 12 page headings; ranges 4-6, 11-13, 14-16, 17-19, 20-22, 23-25, 26-28 |
 | 52 | OSD-624 | Three Minutes on the Calf | 12 page headings; ranges 4-6, 11-13, 14-16, 17-19, 20-22, 23-25, 26-28 |
+| 69 | OSD-193 | The Helical Skew: Tubulin Dynamics in Orbit | 10 page headings; ranges 5-10, 11-15, 16-20, 21-25, 26-30 |
+| 70 | OSD-282 | Submerged in Vacuum: The Anoxia Rescue | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 71 | OSD-329 | The Double-Strand Vanguard: ATM and ADM | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 72 | OSD-346 | Spectral Shades: Phytochrome Fractional Gravity | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 73 | OSD-411 | The Gravity Threshold: Plant Gravity Perception Pilot | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 74 | OSD-416 | The Epigenetic Imprint: Bisulfite Methylomes in Orbit | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 75 | OSD-428 | Supersonic Parabola: Starfighter G-Transitions | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 76 | OSD-434 | Mach-Speed Signaling: The Starfighter Maiden Run | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 77 | OSD-436 | Thirty Seconds of Weightlessness: The C-9 Parabolic Pulse | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 78 | OSD-450 | The Parabolic Relay: Live Phosphoprotein Tracking | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 79 | OSD-480 | The Gravi-Photo Nexus: Vector Competition on the ISS | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 80 | OSD-496 | The Genome Sentinel: SOG1 ChIP-Seq Binding | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 81 | OSD-498 | The Radiation Checkpoint: Gamma versus Mock | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 82 | OSD-502 | The Repressor Triple: myb3r135 Mutant Rescue | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 83 | OSD-508 | Chronos of the Break: Temporal Repair Kinetics | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 84 | OSD-510 | Dynamic Regulatory Events: The DREM Circuit Topology | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 85 | OSD-518 | The Branch Angle Duel: TAC1 versus LAZY1 | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 86 | OSD-519 | The Lateral Brake: PUCHI Primordium Architecture | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 87 | OSD-531 | The Bending Stalk: Inflorescence Gravity Tracers | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 88 | OSD-622 | The Recoverable Satellite: Dwarf Wheat on SJ-10 | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 89 | OSD-655 | The Orbital Harvest: Multi-Elemental Mizuna | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
+| 90 | OSD-782 | The Planetary Hormone: Ethylene and Epigenetic Resilience | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 
 ## Partial volumes — some pages lack their own heading (49)
 

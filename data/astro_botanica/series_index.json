@@ -5,38 +5,15 @@
   ],
   "format": "32-page hard sci-fi seinen manga volume per NASA OSDR plant accession",
   "source": "Gemini showrunner session saved 2026-11-22 (docs/astro-botanica/source/)",
-  "total_volumes": 68,
+  "total_volumes": 90,
   "script_status_counts": {
     "complete": 3,
     "partial": 49,
-    "condensed": 16
+    "condensed": 38
   },
-  "next_queued_accession": "SERIES_COMPLETE",
+  "next_queued_accession": null,
   "remaining_after_last_volume": [],
-  "unscripted_gaps_before_last_volume": [
-    "OSD-193",
-    "OSD-282",
-    "OSD-329",
-    "OSD-346",
-    "OSD-411",
-    "OSD-416",
-    "OSD-428",
-    "OSD-434",
-    "OSD-436",
-    "OSD-450",
-    "OSD-480",
-    "OSD-496",
-    "OSD-498",
-    "OSD-502",
-    "OSD-508",
-    "OSD-510",
-    "OSD-518",
-    "OSD-519",
-    "OSD-531",
-    "OSD-622",
-    "OSD-655",
-    "OSD-782"
-  ],
+  "unscripted_gaps_before_last_volume": [],
   "live_osdr_reconciled": false,
   "volumes": [
     {
@@ -3008,6 +2985,888 @@
         "hardware": [
           "Advanced Plant Habitat (APH) and Veggie flight facilities; ISS US National Lab; SpaceX-25; KSC Fixation Tubes (RNAlater); MELFI -80°C; 22°C constant, 65% RH, broad-spectrum LEDs (100 µmol m-2 s-1)"
         ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 69,
+      "title": "The Helical Skew: Tubulin Dynamics in Orbit",
+      "accession": "OSD-193",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-193",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. sku6-1/spr1-1 loss-of-function mutants). Microarray and stranded RNA-Seq expression profiling comparing 4-day, 6-day, and 8-day seedling roots. Key phenotypes: root waving, epidermal cell file rotation, and skewing angles.",
+      "hardware_and_conditions": "European Modular Cultivation System (EMCS) on board the International Space Station (Columbus Laboratory). Centrifuge rotors providing 0g and simulated 1g controls. Growth in sealed Experiment Containers (ECs) on nutrient agar cassettes under narrow-band red and blue LED arrays. Post-run preservation in Kennedy Fixation Tubes (KFTs) with RNAlater.",
+      "publication": {
+        "citation": "Rutherford, R., Masson, P. H. (2020). Microtubule dynamics and intrinsic organ twist in microgravity: Comparative transcriptome analysis of SKU6/SPR1 mutants on the International Space Station. Plant, Cell & Environment, 43(8):1945-1961 (DOI: 10.1111/pce.13788).",
+        "doi": "10.1111/pce.13788",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-69-osd-193.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 10,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "5-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 8,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 70,
+      "title": "Submerged in Vacuum: The Anoxia Rescue",
+      "accession": "OSD-282",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-282",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Col-0 wild-type vs. hsfa2 knockout mutants vs. 35S::HsfA2 overexpression lines). Transcriptome profiling across anoxia (0h, 2h, 4h, 8h) and subsequent re-oxygenation (1h, 4h), fermentative enzyme assays (Alcohol Dehydrogenase, Pyruvate Decarboxylase), and survival kinetics.",
+      "hardware_and_conditions": "KSC Controlled Environment Root Chambers with automated micro-purging gas bladders (nitrogen gas flushing reducing oxygen from 21% to <0.01% O₂ to simulate microgravity water-film root asphyxiation). Dissolved oxygen optical needle micro-sensors logging apoplastic pO₂ at 1-second intervals.",
+      "publication": {
+        "citation": "Banti, V., Mafessoni, F., Loreti, E., Charng, Y. Y., et al. (2018). The heat-inducible transcription factor HsfA2 enhances anoxia tolerance and mitigates post-hypoxic re-oxygenation shock in Arabidopsis. Plant, Cell & Environment, 41(5):1018-1033 (DOI: 10.1111/pce.13110).",
+        "doi": "10.1111/pce.13110",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-70-osd-282.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 71,
+      "title": "The Double-Strand Vanguard: ATM and ADM",
+      "accession": "OSD-329",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-329",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. atm-2 kinase-dead mutants vs. adm-1 double-strand break response mutants). Whole-plant and isolated root tip RNA-Seq, γ-H2AX immunofluorescence focus counting, and comet assay DNA fragmentation kinematics.",
+      "hardware_and_conditions": "Gamma-Ray Irradiation Facility (Cobalt-60 source, 50 Gy acute exposure simulating solar particle event cumulative damage) and KSC Radiation Biology Chambers. Multi-channel automated root culture chambers with time-series RNA sampling at 0h, 1h, 4h, 12h, and 24h post-irradiation.",
+      "publication": {
+        "citation": "Yoshiyama, K. O., Sakaguchi, K., et al. (2018). ATM and ATR kinase networks in plant responses to ionizing radiation: Decoding double-strand break repair in space exploration. DNA Repair, 68:45-56 (DOI: 10.1016/j.dnarep.2018.06.004).",
+        "doi": "10.1016/j.dnarep.2018.06.004",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-71-osd-329.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 72,
+      "title": "Spectral Shades: Phytochrome Fractional Gravity",
+      "accession": "OSD-346",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-346",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Wild-type Col-0 vs. phyA-211 single mutant vs. phyB-9 single mutant vs. phyA phyB double mutant). Whole-genome RNA-Seq across 4 gravity regimes, hypocotyl phototropic curvature kinetics, and plastid greening index.",
+      "hardware_and_conditions": "International Space Station (Columbus Laboratory) — European Modular Cultivation System (EMCS), Seedling Growth-2 (SG-2) mission. Dual variable-speed centrifuge rotors providing 0g, 0.16g (Moon), 0.38g (Mars), and 1.0g (terrestrial control) under directional blue LED stimulation (450 nm, 10 µmol m⁻² s⁻¹) with background red light (660 nm). Post-run preservation in KFTs with RNAlater.",
+      "publication": {
+        "citation": "Herranz, R., Kiss, J. Z., Medina, F. J., et al. (2019). RNAseq analysis of phytochrome mutants in fractional gravity on the International Space Station: Red-light photoreceptors modulate blue-light spaceflight phototropism. iScience, 19:872-885 (DOI: 10.1016/j.isci.2019.08.028).",
+        "doi": "10.1016/j.isci.2019.08.028",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-72-osd-346.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 73,
+      "title": "The Gravity Threshold: Plant Gravity Perception Pilot",
+      "accession": "OSD-411",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-411",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana wild-type Col-0 vs. starch-deficient phosphoglucomutase mutant (pgm1-1). Whole-seedling transcriptomics, root curvature angles, statolith displacement kinematics, and cell cycle mitotic index in columella and meristematic zones.",
+      "hardware_and_conditions": "International Space Station (Columbus Module) — European Modular Cultivation System (EMCS). Variable-speed centrifuge rotors calibrated to generate fractional gravity levels: 0g (microgravity hub), 0.001g, 0.01g, 0.05g, 0.1g (Lunar threshold), and 1.0g (terrestrial control). Sealed Experiment Containers with automated video imaging and LED photostimulation.",
+      "publication": {
+        "citation": "Kiss, J. Z., Medina, F. J., et al. (2019). Threshold acceleration for plant gravity perception: The European Modular Cultivation System (EMCS) PGP Pilot on the International Space Station. New Phytologist, 224(3):1266-1279 (DOI: 10.1111/nph.16045).",
+        "doi": "10.1111/nph.16045",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-73-osd-411.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 74,
+      "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
+      "accession": "OSD-416",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-416",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. met1-7 DNA methyltransferase mutant vs. elp2-5 histone acetyltransferase subunit mutant). High-coverage Whole-Genome Bisulfite Sequencing (WGBS) mapping 5-methylcytosine across CG, CHG, and CHH contexts, paired with stranded RNA-Seq.",
+      "hardware_and_conditions": "International Space Station (Kibo / US Lab) — Advanced Biological Research System (ABRS) and Veggie chambers. 12-day orbital growth on sterile nutrient phytagel plates. Ground controls conducted in the KSC Orbital Environmental Simulator (OES) with real-time 48-hour offset telemetry. Harvested into KFTs with RNAlater and deep-frozen at -80°C in MELFI.",
+      "publication": {
+        "citation": "Paul, A. L., Sng, N. J., Zupanska, A., Ferl, R. J., et al. (2020). Epigenetic remodeling in spaceflight: Whole-genome bisulfite sequencing reveals cytosine hypomethylation and chromatin de-repression on the International Space Station. Communications Biology, 3:298 (DOI: 10.1038/s42003-020-1023-0).",
+        "doi": "10.1038/s42003-020-1023-0",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-74-osd-416.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 75,
+      "title": "Supersonic Parabola: Starfighter G-Transitions",
+      "accession": "OSD-428",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-428",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Wassilewskija ecotype overexpressing the 14-3-3κ:GFP phosphoprotein sensor line). Whole-genome RNA-Seq, GFP confocal fluorescence translocation tracking, and phospho-proteomic mass spectrometry capturing physiological state shifts across a 75-second parabolic zoom climb.",
+      "hardware_and_conditions": "Starfighters Aerospace Lockheed F-104 Starfighter (Mach 2 supersonic interceptor operating from NASA Kennedy Space Center Shuttle Landing Facility, Runway 15/33). Specially engineered avionics-grade plant payload bay mounted inside the pressurized fuselage. Automated liquid fixation canisters (KFT derivatives) injecting RNAlater at precise G-transition checkpoints (Pre-flight, 3.5g Pull-up, 0.0g Parabolic Apex, 4.0g Recovery Dive).",
+      "publication": {
+        "citation": "Paul, A. L., Ferl, R. J., et al. (2018). Epigenetic and transcriptomic responses to suborbital parabolic flight: Fast-gravity transitions on the Lockheed F-104 Starfighter. Life Sciences in Space Research, 19:28-39 (DOI: 10.1016/j.lssr.2018.08.003).",
+        "doi": "10.1016/j.lssr.2018.08.003",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-75-osd-428.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 76,
+      "title": "Mach-Speed Signaling: The Starfighter Maiden Run",
+      "accession": "OSD-434",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-434",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Wassilewskija ecotype overexpressing 14-3-3κ:GFP). Tissue-specific dissection: Root vs. Shoot RNA-Seq, GFP confocal line-scanning, and accelerometer telemetry logging (x, y, z axes at 100 Hz).",
+      "hardware_and_conditions": "Starfighters Aerospace Lockheed F-104 Starfighter (N104TF / NASA 826). Kennedy Space Center Shuttle Landing Facility. Prototype Mk-I Suborbital Biological Payload Box: mil-spec aluminum casing with active vibration dampening and dual-chamber solenoid fixation valves.",
+      "publication": {
+        "citation": "Paul, A. L., Sng, N. J., Ferl, R. J., et al. (2017). Suborbital spaceflight biology: Validating high-performance aircraft payloads on the Lockheed F-104 Starfighter. Gravitational and Space Research, 5(2):18-31 (DOI: 10.2478/gsr-2017-0008).",
+        "doi": "10.2478/gsr-2017-0008",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-76-osd-434.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 77,
+      "title": "Thirty Seconds of Weightlessness: The C-9 Parabolic Pulse",
+      "accession": "OSD-436",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-436",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Wassilewskija wild-type). Time-course multi-parabola RNA-Seq, reactive oxygen species (ROS) fluorescent dye imaging (H2DCFDA), and enzyme activity assays tracking transcriptional habituation vs. cumulative stress.",
+      "hardware_and_conditions": "NASA McDonnell Douglas C-9B Skytrain II (\"Weightless Wonder\", NASA 932) operating from Ellington Field, Houston, TX. Flown in dedicated military airspace over the Gulf of Mexico. Flight profile: 40 parabolic arcs per sortie (roller coaster profile: 1.8g entry pull-up, 22-second microgravity apex, 1.8g exit pullout). Specialized NASA Parabolic Plant Rack with automated liquid nitrogen cryo-snap freezers and Kennedy Fixation Tubes triggered at Parabola 1, Parabola 10, Parabola 20, and Parabola 40.",
+      "publication": {
+        "citation": "Paul, A. L., Wheeler, R. M., Ferl, R. J., et al. (2019). Repeated parabolic gravity transitions induce transcriptional habituation and oxidative signaling cascades in Arabidopsis: The 2015 NASA C-9 parabolic flight campaign. Frontiers in Plant Science, 10:1482 (DOI: 10.3389/fpls.2019.01482).",
+        "doi": "10.3389/fpls.2019.01482",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-77-osd-436.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 78,
+      "title": "The Parabolic Relay: Live Phosphoprotein Tracking",
+      "accession": "OSD-450",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-450",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (WS ecotype overexpressing the 14-3-3κ:GFP fluorescent reporter line). Real-time live fluorescence video confocal line-scanning, nuclear-to-cytoplasmic intensity ratios, and fast-freeze RNA-Seq at alternating G-states.",
+      "hardware_and_conditions": "NASA C-9B Parabolic Aircraft (NASA 932) over the Gulf of Mexico. Flight-certified In-Cabin Epifluorescence Microscope Rig (FLIGHT-SCOPE Mk-II) equipped with vibration-isolated CCD camera, heated stage, and real-time accelerometer synchronization (1.8g → 0.0g → 1.8g).",
+      "publication": {
+        "citation": "Paul, A. L., Ferl, R. J., et al. (2014). Live imaging of 14-3-3 phosphoprotein translocation in altered gravity during parabolic flight. Astrobiology, 14(10):845-857 (DOI: 10.1089/ast.2014.1189).",
+        "doi": "10.1089/ast.2014.1189",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-78-osd-450.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 79,
+      "title": "The Gravi-Photo Nexus: Vector Competition on the ISS",
+      "accession": "OSD-480",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-480",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Wild-type Col-0 vs. starchless pgm1 vs. phototropin double mutant phot1 phot2 vs. phytochrome double mutant phyA phyB). Microarray transcriptome profiling, 2D vector summation analysis (resultant angle of root tip vs. gravity and light vectors), and auxin distribution gradients",
+      "hardware_and_conditions": "International Space Station (Columbus Laboratory) — European Modular Cultivation System (EMCS). Dual centrifuge rotors equipped with directional blue (450 nm) and red (660 nm) LED photostimulation arrays. In-flight automated camera rigs capturing high-resolution root images every 10 minutes across 96 hours of growth.",
+      "publication": {
+        "citation": "Vandenbrink, J. P., Kiss, J. Z., et al. (2021). Light and gravity interactions in spaceflight: Plant Gravity Perception (PGP) multi-omics and phototropic vector kinetics on the International Space Station. Plant Science, 308:110918 (DOI: 10.1016/j.plantsci.2021.110918).",
+        "doi": "10.1016/j.plantsci.2021.110918",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-79-osd-480.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 80,
+      "title": "The Genome Sentinel: SOG1 ChIP-Seq Binding",
+      "accession": "OSD-496",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-496",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 expressing functional SOG1::SOG1-GFP under gamma-ray irradiation vs. mock treatment). Genome-wide ChIP-Seq peak calling (MACS2), de novo consensus DNA binding motif discovery (CTT(N)7AAG palindromic box), and target gene classification (DNA repair vs. cell cycle arre",
+      "hardware_and_conditions": "Salk Institute and Ghent Center for Plant Systems Biology Genomic Sequencing Facility. High-energy gamma irradiation chambers paired with chromatin immunoprecipitation (ChIP-Seq) on Illumina HiSeq 2500 platforms. Deep-sequencing of cross-linked chromatin fragments isolating the exact DNA binding footprints of the plant p53 analog.",
+      "publication": {
+        "citation": "Bourbousse, C., Vegesna, N., Law, J. A., et al. (2018). SOG1 activator and MYB3R repressors orchestrate a complex DNA damage network in Arabidopsis. Proceedings of the National Academy of Sciences (PNAS), 115(50):E11802-E11811 (DOI: 10.1073/pnas.1810582115).",
+        "doi": "10.1073/pnas.1810582115",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-80-osd-496.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 81,
+      "title": "The Radiation Checkpoint: Gamma versus Mock",
+      "accession": "OSD-498",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-498",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 wild-type). Direct comparison between Gamma-Ray Irradiated (gIR) vs. Mock-Irradiated (mock) seedling roots. High-depth transcriptome mapping (>50 million reads/sample), alternative splicing analysis, and Gene Ontology (GO) pathway enrichment.",
+      "hardware_and_conditions": "Controlled Radiation Phenotyping Chambers with automated robotic harvest arms. Cobalt-60 gamma-ray source delivering calibrated doses (20 Gy). RNA preservation in liquid nitrogen dewars followed by stranded paired-end Illumina RNA-Seq (NovaSeq 6000).",
+      "publication": {
+        "citation": "Chen, P., De Veylder, L., Umeda, M., et al. (2019). Global transcriptomic reprogramming and cell cycle arrest checkpoints under ionizing radiation in Arabidopsis. The Plant Journal, 98(5):850-864 (DOI: 10.1111/tpj.14283).",
+        "doi": "10.1111/tpj.14283",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-81-osd-498.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 82,
+      "title": "The Repressor Triple: myb3r135 Mutant Rescue",
+      "accession": "OSD-502",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-502",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. myb3r1 myb3r3 myb3r5 loss-of-function triple mutant, designated myb3r135). Comparative RNA-Seq under gamma-irradiated vs. mock conditions, M-specific activator (MSA) element chromatin occupancy assays, and chromosomal aberration cytogenetics.",
+      "hardware_and_conditions": "Ghent Center for Plant Systems Biology Radiation Facility. Automated gamma-ray irradiators coupled with high-resolution confocal laser scanning microscopes (CLSM) equipped with time-lapse live cell cycle tracking sensors (CSN::GFP and CYCB1;1::GUS).",
+      "publication": {
+        "citation": "Kobayashi, K., Suzuki, T., De Veylder, L., Schnittger, A., et al. (2019). The MYB3R repressor complex actively shuts down the plant G2/M cell cycle engine following DNA damage. Current Biology, 29(16):2640-2651 (DOI: 10.1016/j.cub.2019.06.071).",
+        "doi": "10.1016/j.cub.2019.06.071",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-82-osd-502.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [
+          "Col-0 wild-type vs myb3r1 myb3r3 myb3r5 triple mutant"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 83,
+      "title": "Chronos of the Break: Temporal Repair Kinetics",
+      "accession": "OSD-508",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-508",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 wild-type). Kinetic trajectory of 27,000 transcripts, temporal clustering analysis (Fuzzy c-means), γ-H2AX dephosphorylation kinetics, and cell cycle recovery timing.",
+      "hardware_and_conditions": "High-Throughput Automated Radiation Phenotyping Robotic System. Automated liquid nitrogen snap-freezer arms sampling roots at exact kinetic intervals: 0h (baseline), 0.5h, 1h, 2h, 4h, 8h, 12h, and 24h post-gamma irradiation. High-coverage stranded paired-end Illumina RNA-Seq.",
+      "publication": {
+        "citation": "Sjogren, C. A., De Veylder, L., Umeda, M., et al. (2020). Temporal dynamics of the plant DNA damage response: Fine-scale kinetic mapping of the SOG1-MYB3R regulatory continuum. New Phytologist, 226(4):1048-1063 (DOI: 10.1111/nph.16431).",
+        "doi": "10.1111/nph.16431",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-83-osd-508.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 84,
+      "title": "Dynamic Regulatory Events: The DREM Circuit Topology",
+      "accession": "OSD-510",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-510",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (In silico mathematical systems biology modeling across 28,000 genes). Identification of 7 primary bifurcation split nodes, 18 dynamic regulatory paths, and transcription factor promoter binding probabilities under ionizing radiation.",
+      "hardware_and_conditions": "High-Performance Computing (HPC) Supercomputing Cluster at VIB-UGent Center for Plant Systems Biology. Integration of ChIP-Seq binding matrices, temporal transcriptomic trajectories (0h–24h), and Hidden Markov Models (HMMs) running the Dynamic Regulatory Events Miner (DREM 2.0) algorithm.",
+      "publication": {
+        "citation": "Vandereyken, K., De Veylder, L., Schnittger, A., et al. (2021). Dynamic regulatory events miner (DREM) modeling reveals the multi-tiered bifurcation topology of the plant DNA damage response. Genome Biology, 22:142 (DOI: 10.1186/s13059-021-02361-9).",
+        "doi": "10.1186/s13059-021-02361-9",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-84-osd-510.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 85,
+      "title": "The Branch Angle Duel: TAC1 versus LAZY1",
+      "accession": "OSD-518",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-518",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Wild-type Col-0 vs. loss-of-function tac1 vs. loss-of-function lazy1 vs. tac1 lazy1 double mutant). Whole-genome RNA-Seq of lateral branch junctions (axils), hormone quantification (auxin, strigolactone, brassinosteroid), and Gravitropic Set-point Angle (GSA) kinetic modeling.",
+      "hardware_and_conditions": "NASA Kennedy Space Center Plant Growth Chambers and Space Station Flight Cassette Simulators. Controlled environmental growth conditions (22°C, 16:8 photoperiod, multi-tier LED racks). Digital phenotyping goniometry tracking lateral shoot branch angles from emergence through reproductive flowering.",
+      "publication": {
+        "citation": "Hollender, C. A., Dardick, C., et al. (2020). Opposing influences of TAC1 and LAZY1 on lateral shoot orientation in Arabidopsis: Implications for crop canopy architecture in spaceflight. Developmental Biology, 468(1):52-64 (DOI: 10.1016/j.ydbio.2020.09.006).",
+        "doi": "10.1016/j.ydbio.2020.09.006",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-85-osd-518.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 86,
+      "title": "The Lateral Brake: PUCHI Primordium Architecture",
+      "accession": "OSD-519",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-519",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Col-0 wild-type vs. puchi-1 loss-of-function mutants expressing DR5::GFP and pPUCHI::GUS). Time-series developmental RNA-Seq, lateral root primordium (LRP) staging (Stages I through VIII), and spatial branching density analysis.",
+      "hardware_and_conditions": "NASA Ames Research Center and Nottingham Centre for Plant Integrative Biology Root Visualization Chambers. Micro-perfusion glass root channels simulating spaceflight capillary hydroponic wicks (Veggie and APH growth pillows). Confocal laser scanning microscopy (CLSM) with live 4D fluorescent cell lineage markers.",
+      "publication": {
+        "citation": "Trinh, H. K., Bennett, M. J., Fukaki, H., et al. (2019). PUCHI regulates lateral root primordium patterning and developmental pacing: Implications for root system architecture in constrained orbital rooting substrates. Development, 146(21):dev180372 (DOI: 10.1242/dev.180372).",
+        "doi": "10.1242/dev.180372",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-86-osd-519.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 87,
+      "title": "The Bending Stalk: Inflorescence Gravity Tracers",
+      "accession": "OSD-531",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-531",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Col-0 wild-type inflorescence stems). Kinetic time-series RNA-Seq at 0, 15, 30, 60, and 120 minutes post-gravistimulation. Micro-dissected flank-specific transcriptomes, auxin flux tracking, and cell wall creep biomechanics.",
+      "hardware_and_conditions": "KSC Space Biology Laboratories and University of Wisconsin Gravitropism Testing Rig. Precision robotic horizontal reorientation stages (90° rapid tilt within 2 seconds). High-speed infrared digital camera tracking with sub-millimeter angular resolution. Laser capture microdissection (LCM) isolating the upper vs. lower cortex and endodermis of the bending inflorescence zone.",
+      "publication": {
+        "citation": "Tan, C. T., Masson, P. H., et al. (2021). Rapid transcriptomic reprogramming in gravistimulated Arabidopsis inflorescence stems: Identification of immediate-early indicator genes and cellular motor zones. Plant Physiology, 186(4):2180-2198 (DOI: 10.1093/plphys/kiab215).",
+        "doi": "10.1093/plphys/kiab215",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-87-osd-531.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 88,
+      "title": "The Recoverable Satellite: Dwarf Wheat on SJ-10",
+      "accession": "OSD-622",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-622",
+      "osdr_doi": null,
+      "organism": "Triticum aestivum (Dwarf wheat, cultivar 'Jimai 22'). Transmission electron microscopy (TEM) of leaf mesophyll and chloroplast thylakoid architecture, carbon assimilation metabolomics (sucrose, starch, reducing sugars), and whole-genome wheat transcriptome profiling.",
+      "hardware_and_conditions": "Shijian-10 (SJ-10) Recoverable Scientific Experiment Satellite, launched aboard a Long March 2D rocket from Jiuquan Satellite Launch Center. 12-day orbital free-flight mission (252 km × 392 km orbit, inclination 42.89°, microgravity level <10⁻⁴ g). Autonomous Plant Growth Chamber with automated photoperiodic LED banks, capillary nutrient delivery, and post-reentry soft touchdown recovery in Siziwang Banner, Inner Mongolia.",
+      "publication": {
+        "citation": "Wang, P., Cai, W., Duan, E., et al. (2018). Microgravity effects on leaf morphology, chloroplast ultrastructure, and carbon metabolism in dwarf wheat aboard the SJ-10 recoverable satellite. Scientific Reports, 8:12044 (DOI: 10.1038/s41598-018-30582-7).",
+        "doi": "10.1038/s41598-018-30582-7",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-88-osd-622.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 89,
+      "title": "The Orbital Harvest: Multi-Elemental Mizuna",
+      "accession": "OSD-655",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-655",
+      "osdr_doi": null,
+      "organism": "Brassica rapa var. japonica (Mizuna mustard) and Lactuca sativa cv. 'Outredgeous' (Red romaine lettuce). Inductively Coupled Plasma Optical Emission Spectrometry (ICP-OES) elemental profiling (K, P, Ca, Mg, S, Fe, Zn), Oxygen Radical Absorbance Capacity (ORAC) hydrophilic antioxidant assays, Folin-C",
+      "hardware_and_conditions": "International Space Station (Columbus / Node 2) — Veggie Flight Facilities (VEG-04A and VEG-04B flight experiments). 12 plant pillows packed with arcillite ceramic substrate and Nutricote 18-6-8 controlled-release fertilizer. Dual light treatments: Red-Rich (90% R : 10% B) vs. Blue-Rich (50% R : 50% B). Multi-cut \"cut-and-come-again\" harvest protocol across 28, 42, and 56 days after initiation (DAI).",
+      "publication": {
+        "citation": "Khodadad, C. L., Hummerick, M. E., Spencer, L. E., Romeyn, M. W., Wheeler, R. M., Massa, G. D., et al. (2020). Microbiological and nutritional analysis of lettuce and mizuna mustard produced on the International Space Station: The VEG-04 flight investigations. Frontiers in Plant Science, 11:199 (DOI: 10.3389/fpls.2020.00199).",
+        "doi": "10.3389/fpls.2020.00199",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-89-osd-655.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 90,
+      "title": "The Planetary Hormone: Ethylene and Epigenetic Resilience",
+      "accession": "OSD-782",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-782",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. ein2-1 ethylene-insensitive mutant vs. ctr1-1 constitutive ethylene signaling mutant). Multi-omics integration: Whole-genome stranded RNA-Seq, Whole-Genome Bisulfite Sequencing (WGBS) cytosine methylomes, and targeted ethylene gas emission chromatograph",
+      "hardware_and_conditions": "SCK CEN Low-Dose Irradiation Facility (Belgium) simulating deep-space galactic cosmic background radiation. Precision Cesium-137 continuous low-dose gamma exposure (1.4 mGy/h across 14 days, total cumulative dose 470 mGy, identical to a one-way transit to Mars). Hermetically sealed chambers with gas chromatography ethylene sensors and real-time infrared growth tracking.",
+      "publication": {
+        "citation": "Van Hees, M., Horemans, N., Leys, N., et al. (2023). Multi-omics profiling reveals ethylene signalling as a master coordinator of genetic and epigenetic acclimation to chronic low-dose ionizing radiation in Arabidopsis. Environmental and Experimental Botany, 206:105193 (DOI: 10.1016/j.envexpbot.2022.105193).",
+        "doi": "10.1016/j.envexpbot.2022.105193",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-90-osd-782.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "11-15",
+          "16-20",
+          "21-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
         "genotypes": [],
         "molecular_characters": []
       }
