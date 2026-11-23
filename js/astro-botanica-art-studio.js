@@ -114,6 +114,39 @@
         <!-- Deep Ink Celestial Horizon -->
         <path d="M 30,${H * 0.7} Q ${W * 0.5},${H * 0.58} ${W - 30},${H * 0.72} L ${W - 30},${H - 30} L 30,${H - 30} Z" fill="#09090b" />
 
+        ${
+          isMoon
+            ? `
+            <!-- Lunar Regolith Crater Details & Earthrise Globe -->
+            <ellipse cx="${W * 0.75}" cy="${H * 0.28}" rx="120" ry="120" fill="#09090b" />
+            <circle cx="${W * 0.75 - 30}" cy="${H * 0.28 - 20}" r="40" fill="#38bdf8" opacity="0.85" />
+            <path d="M ${W * 0.75 - 55},${H * 0.28 - 15} Q ${W * 0.75 - 30},${H * 0.28 - 45} ${W * 0.75},${H * 0.28 - 25} Q ${W * 0.75 - 10},${H * 0.28 + 10} ${W * 0.75 - 55},${H * 0.28 - 15} Z" fill="#ffffff" opacity="0.85" />
+            <!-- Regolith Basalt Crater Rings -->
+            <ellipse cx="${W * 0.28}" cy="${H * 0.68}" rx="80" ry="24" fill="none" stroke="#fff" stroke-width="3" opacity="0.6" />
+            <ellipse cx="${W * 0.65}" cy="${H * 0.75}" rx="110" ry="32" fill="none" stroke="#fff" stroke-width="2.5" opacity="0.4" />
+            <ellipse cx="${W * 0.85}" cy="${H * 0.66}" rx="50" ry="15" fill="none" stroke="#fff" stroke-width="2" opacity="0.5" />
+            `
+            : isMars
+            ? `
+            <!-- Martian Layered Dunes & Phobos -->
+            <path d="M 30,${H * 0.65} Q ${W * 0.35},${H * 0.52} ${W * 0.7},${H * 0.66} T ${W - 30},${H * 0.62} L ${W - 30},${H - 30} L 30,${H - 30} Z" fill="#7f1d1d" opacity="0.6" />
+            <ellipse cx="${W * 0.25}" cy="${H * 0.22}" rx="18" ry="12" fill="#fff" stroke="#000" stroke-width="2" />
+            `
+            : volume.volume === 68
+            ? `
+            <!-- Vol 68 Polyamine Molecular Forcefield Shield -->
+            <polygon points="${W * 0.5},${H * 0.32} ${W * 0.75},${H * 0.45} ${W * 0.75},${H * 0.72} ${W * 0.5},${H * 0.85} ${W * 0.25},${H * 0.72} ${W * 0.25},${H * 0.45}" fill="none" stroke="#38bdf8" stroke-width="5" stroke-dasharray="12 6" opacity="0.85" />
+            <polygon points="${W * 0.5},${H * 0.36} ${W * 0.71},${H * 0.47} ${W * 0.71},${H * 0.70} ${W * 0.5},${H * 0.81} ${W * 0.29},${H * 0.70} ${W * 0.29},${H * 0.47}" fill="url(#hud-glow-${uid})" opacity="0.4" />
+            `
+            : volume.volume === 90
+            ? `
+            <!-- Vol 90 Ethylene Flow Ribbons & Canopy Energy -->
+            <path d="M 60,${H * 0.4} Q ${W * 0.4},${H * 0.32} ${W * 0.5},${H * 0.5} T ${W - 60},${H * 0.42}" fill="none" stroke="#10b981" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+            <path d="M 40,${H * 0.48} Q ${W * 0.35},${H * 0.6} ${W * 0.6},${H * 0.45} T ${W - 40},${H * 0.54}" fill="none" stroke="#34d399" stroke-width="4" stroke-dasharray="10 5" opacity="0.75" />
+            `
+            : ""
+        }
+
         <!-- Celestial Body / Orbit Arc -->
         <circle cx="${W * 0.75}" cy="${H * 0.28}" r="140" fill="none" stroke="#000" stroke-width="4" stroke-dasharray="8 4" />
         <circle cx="${W * 0.75}" cy="${H * 0.28}" r="130" fill="url(#manga-dense-${uid})" opacity="0.4" />

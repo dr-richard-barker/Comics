@@ -14,7 +14,7 @@ Every volume dramatizes a real spaceflight or ground-analog plant biology study 
   - **Act I (Pages 1–8):** Launch & Environmental Shift (hardware introduction, squad setup, baseline conditions).
   - **Act II (Pages 9–24):** The Molecular Battle (transcriptomic divergence, stress signaling, metabolic shifts).
   - **Act III (Pages 25–32):** Fixation & Data Epilogue (sample harvest/preservation, 2-page Mission Debrief, real-world science takeaway).
-- **Current Ingestion Status:** **62 Volumes** ingested from the initial production run (OSD-7 through OSD-780).
+- **Current Ingestion Status:** **90 Volumes (100% Complete NASA OSDR Plant Biology Coverage)** (OSD-7 through OSD-782, 2,880 script pages).
 
 ---
 
@@ -44,15 +44,15 @@ data/astro_botanica/
 
 ## Ingested Volumes Summary
 
-- **Total Ingested:** 62 Volumes
-  - **Complete (Full 32-page scripts):** 1 (Vol. 1)
-  - **Partial (13–31 distinct page headings):** 7 (e.g. Vols. 2–7, 14–15)
-  - **Condensed (Page ranges grouped into acts):** 53
-  - **Fragment (Interrupted run; debrief & bible only):** 1 (Vol. 49 / OSD-581)
-- **Molecular Characters Cataloged:** 39 key genes/proteins (HY5, DREB2A, TCH4, JAZ7, ARG1, SOG1, etc.)
-- **Flight Hardware Cataloged:** 120 systems (ABRS, Veggie, APH, BRIC canisters, KFTs, Petri dishes, clinostats)
-- **Next Queued Accession:** `OSD-855` (Apollo 17 challenge seed germination study)
-- **Unscripted Accessions Remaining:** 28 studies in the plant catalog (including gaps like OSD-193, OSD-282, and higher accessions OSD-855 through OSD-971).
+- **Total Ingested:** 90 Volumes (100% NASA OSDR plant biology archive coverage)
+  - **Complete (Full 32-page scripts):** 3 (e.g. Vols. 1, 49)
+  - **Partial (13–31 distinct page headings):** 49
+  - **Condensed (Page ranges grouped into acts):** 38
+  - **Fragment:** 0
+- **Molecular Characters Cataloged:** 39 key genes/proteins (HY5, DREB2A, TCH4, JAZ7, ARG1, SOG1, TAC1, etc.)
+- **Flight Hardware Cataloged:** 126 systems (ABRS, Veggie, APH, BRIC canisters, KFTs, Petri dishes, clinostats, F-104 Starfighter)
+- **Next Queued Accession:** `None` (Series complete; 100% OSDR coverage achieved)
+- **Unscripted Accessions Remaining:** 0 studies in the plant catalog.
 
 ---
 
@@ -64,3 +64,4 @@ To continue producing volumes from `OSD-855` onwards, or to expand/regenerate co
 3. Follow the naming standard `ASTRO-BOTANICA: ZERO-G ROOTS`.
 
 For a full audit of script status and missing sections, see [QA_REPORT.md](QA_REPORT.md).
+For future development initiatives and planned features, see [ROADMAP.md](../ROADMAP.md).

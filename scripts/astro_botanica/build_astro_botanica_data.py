@@ -190,9 +190,35 @@ def build(verify: bool) -> int:
     vol_files = sorted(VOL_DIR.glob("vol-*.md"), key=lambda p: int(re.search(r"vol-(\d+)", p.name).group(1)))
     print(f"Found {len(vol_files)} volume markdown files in {VOL_DIR.relative_to(ROOT)}", file=sys.stderr)
 
+    manifest_path = ROOT / "data" / "astro_botanica_covers_manifest.json"
+    covers_manifest = {}
+    if manifest_path.exists():
+        try:
+            covers_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except Exception:
+            covers_manifest = {}
+
     compiled_volumes = []
+    raster_cover_count = 0
     for vf in vol_files:
         vol_data = parse_volume_markdown(vf)
+        v_num_str = str(vol_data["volume"])
+        cover_info = covers_manifest.get(v_num_str)
+        if cover_info and (ROOT / cover_info["path"]).exists():
+            vol_data["cover"] = {
+                "has_raster": True,
+                "path": cover_info["path"],
+                "width": cover_info.get("width", 900),
+                "height": cover_info.get("height", 1200)
+            }
+            raster_cover_count += 1
+        else:
+            vol_data["cover"] = {
+                "has_raster": False,
+                "path": f"assets/astro_botanica/covers/vol-{vol_data['volume']:02d}.webp",
+                "width": 900,
+                "height": 1200
+            }
         compiled_volumes.append(vol_data)
 
     compiled_corpus = {
@@ -200,6 +226,8 @@ def build(verify: bool) -> int:
         "anthology_subtitle": SERIES_SUBTITLE,
         "total_volumes": len(compiled_volumes),
         "total_pages_cataloged": sum(v["pages_count"] for v in compiled_volumes),
+        "raster_cover_count": raster_cover_count,
+        "vector_cover_count": len(compiled_volumes) - raster_cover_count,
         "worlds": ["ISS", "Moon", "Mars", "Polar Analog", "Suborbital", "Ground Analog"],
         "plant_families": [
             "Brassicaceae (Arabidopsis/Mustard)",
@@ -223,6 +251,7 @@ def build(verify: bool) -> int:
     js_path.write_text(js_content, encoding="utf-8")
 
     print(f"Compiled {len(compiled_volumes)} volumes into {json_path.relative_to(ROOT)} and {js_path.relative_to(ROOT)}", file=sys.stderr)
+    print(f"  ({raster_cover_count} AI-illustrated WebP covers + {len(compiled_volumes) - raster_cover_count} Vector Art Studio covers)", file=sys.stderr)
 
     if verify:
         if len(compiled_volumes) != 90:

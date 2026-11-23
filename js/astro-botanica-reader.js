@@ -37,6 +37,9 @@
   }
 
   function renderCoverVisual(volume) {
+    if (volume.cover && volume.cover.has_raster) {
+      return `<img src="${esc(volume.cover.path)}" alt="${esc(volume.title)} cover illustration" class="ab-cover-img" width="${volume.cover.width || 900}" height="${volume.cover.height || 1200}" loading="lazy" decoding="async">`;
+    }
     if (window.AstroBotanicaArtStudio && typeof window.AstroBotanicaArtStudio.renderMangaCover === "function") {
       return window.AstroBotanicaArtStudio.renderMangaCover(volume);
     }
@@ -113,7 +116,11 @@
               </div>
               <div class="ab-cover-bottom-bar">
                 <span class="ab-style-ribbon">🌱 SEINEN MANGA · ${esc(v.plant_family.split("(")[0].trim())}</span>
-                <span class="ab-art-badge">📐 32-PAGE SCRIPT</span>
+                ${
+                  v.cover && v.cover.has_raster
+                    ? `<span class="ab-art-badge" style="background:rgba(5, 150, 105, 0.85); color:#fff; font-weight:800;">✨ TANKŌBON COVER</span>`
+                    : `<span class="ab-art-badge">📐 32-PAGE SCRIPT</span>`
+                }
               </div>
             </div>
             <div class="ab-cover-body">

@@ -162,7 +162,9 @@
    */
   function printMangaPDF(volume) {
     const baseHref = window.location.href.split("#")[0];
-    const coverSvg = window.AstroBotanicaArtStudio.renderMangaCover(volume);
+    const coverVisual = (volume.cover && volume.cover.has_raster)
+      ? `<img src="${esc(volume.cover.path)}" alt="${esc(volume.title)} cover" style="width:100%;height:100%;object-fit:cover;border-radius:6px;">`
+      : window.AstroBotanicaArtStudio.renderMangaCover(volume);
 
     const spreadsHtml = (volume.pages || [])
       .slice(0, 6)
@@ -217,7 +219,7 @@
     .cover-sheet { display: flex; align-items: center; justify-content: center; background: #09090b; color: #ffffff; padding: 30px; }
     .cover-inner { display: flex; gap: 30px; align-items: center; max-width: 900px; }
     .cover-art-wrap { width: 340px; aspect-ratio: 3/4; }
-    .cover-art-wrap svg { width: 100%; height: 100%; display: block; }
+    .cover-art-wrap svg, .cover-art-wrap img { width: 100%; height: 100%; display: block; object-fit: cover; }
     .cover-info h1 { margin: 0 0 10px; font-size: 2rem; color: #34d399; }
     .cover-info p { margin: 6px 0; font-size: 0.95rem; color: #d4d4d8; line-height: 1.5; }
     .sheet-bar { display: flex; justify-content: space-between; padding: 6px 14px; background: #09090b; color: #ffffff; font-size: 0.8rem; font-weight: 800; }
@@ -244,7 +246,7 @@
   <!-- Sheet 1: Cover -->
   <section class="manga-sheet cover-sheet">
     <div class="cover-inner">
-      <div class="cover-art-wrap">${coverSvg}</div>
+      <div class="cover-art-wrap">${coverVisual}</div>
       <div class="cover-info">
         <span style="font-size:0.8rem; font-weight:900; letter-spacing:0.1em; color:#38bdf8;">VOL ${String(volume.volume).padStart(2, "0")} · NASA OSDR ${esc(volume.accession)}</span>
         <h1>${esc(volume.title)}</h1>
