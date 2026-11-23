@@ -1,0 +1,901 @@
+{
+  "source": "Gemini in-page OSDR filter (76 studies)",
+  "live_fetched_at": null,
+  "studies": [
+    {
+      "accession": "OSD-7",
+      "title": "The Arabidopsis spaceflight transcriptome: a comparison of whole plants to discrete root, hypocotyl and shoot responses to the orbital environment",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 1
+    },
+    {
+      "accession": "OSD-8",
+      "title": "Gravitational and magnetic field variations synergize to cause subtle variations in the global transcriptional state of Arabidopsis in vitro callus cultures",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 2
+    },
+    {
+      "accession": "OSD-16",
+      "title": "Spaceflight adaptation requires organ specific alterations in the proteomes of Arabidopsis",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 3
+    },
+    {
+      "accession": "OSD-17",
+      "title": "Transcription profiling by array of the response of Arabidopsis cultivar Columbia etiolated seedlings and undifferentiated tissue culture cells to the spaceflight environment",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 4
+    },
+    {
+      "accession": "OSD-22",
+      "title": "Root transcriptome remodeling of Arabidopsis in response to high levels of magnesium sulfate",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 5
+    },
+    {
+      "accession": "OSD-37",
+      "title": "Comparison of the spaceflight transcriptome of four commonly used Arabidopsis thaliana ecotypes",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 6
+    },
+    {
+      "accession": "OSD-38",
+      "title": "Proteomics and Transcriptomics analysis of Arabidopsis Seedlings in Microgravity",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 7
+    },
+    {
+      "accession": "OSD-44",
+      "title": "Transcriptomics analysis of etiolated Arabidopsis thaliana seedlings in response to microgravity",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 8
+    },
+    {
+      "accession": "OSD-45",
+      "title": "Action of microgravity on root development",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 9
+    },
+    {
+      "accession": "OSD-46",
+      "title": "Gamma radiation and HZE treatment of seedlings in Arabidopsis",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 10
+    },
+    {
+      "accession": "OSD-57",
+      "title": "RNA-Seq analysis identifies potential modulators of gravity response in Ceratopteris spores: Evidence for modulation by calcium pumps and apyrase activity",
+      "organisms": [
+        "Ceratopteris richardii"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 11
+    },
+    {
+      "accession": "OSD-59",
+      "title": "RNA-Seq transcriptome analysis of reactive oxygen species gene network in Mizuna plants grown in long-term space flight",
+      "organisms": [
+        "Brassica rapa"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 12
+    },
+    {
+      "accession": "OSD-120",
+      "title": "Genetic dissection of the Arabidopsis spaceflight transcriptome: Are some responses dispensable for the physiological adaptation of plants to spaceflight?",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 13
+    },
+    {
+      "accession": "OSD-121",
+      "title": "Biological Research in Canisters-16 (BRIC-16): Transcriptomics, Glycomics, and Morphometric photography.",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 14
+    },
+    {
+      "accession": "OSD-134",
+      "title": "Dissecting Low Atmospheric Pressure Stress: Transcriptome Responses to the Components of Hypobaria in Arabidopsis [Experiment 1]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 15
+    },
+    {
+      "accession": "OSD-136",
+      "title": "Dissecting Low Atmospheric Pressure Stress: Transcriptome Responses to the Components of Hypobaria in Arabidopsis [Experiment 2]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 16
+    },
+    {
+      "accession": "OSD-144",
+      "title": "Gravitational signature of synchronized cell cultures in particular cell cycle stages",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 17
+    },
+    {
+      "accession": "OSD-147",
+      "title": "Arg1 functions in the physiological adaptation of undifferentiated plant cells to spaceflight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 18
+    },
+    {
+      "accession": "OSD-193",
+      "title": "During development, the Sku6 mutant roots engage different genes than wild type Col-0 roots, either on the ground or in spaceflight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-205",
+      "title": "HSFA2 functions in the physiological adaptation of undifferentiated plant cells to spaceflight microgravity environment",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 19
+    },
+    {
+      "accession": "OSD-208",
+      "title": "Comparing RNA-Seq and microarray gene expression data in two zones of the Arabidopsis root apex relevant to spaceflight.",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 20
+    },
+    {
+      "accession": "OSD-210",
+      "title": "Approaches for Surveying Cosmic Radiation Damage in Large Populations of Arabidopsis thaliana Seeds- an Antarctic Example",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 21
+    },
+    {
+      "accession": "OSD-213",
+      "title": "The Centrifuge Alibi",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 22
+    },
+    {
+      "accession": "OSD-217",
+      "title": "Characterization of Epigenetic Regulation in an Extraterrestrial Environment: The Arabidopsis Spaceflight Methylome",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 23
+    },
+    {
+      "accession": "OSD-218",
+      "title": "Plant development on ISS differs from the development on the ground and is influenced by the genetic background",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 24
+    },
+    {
+      "accession": "OSD-220",
+      "title": "The Recoverable Epigenome",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 25
+    },
+    {
+      "accession": "OSD-223",
+      "title": "The effect of spaceflight on transgenic Arabidopsis plants with compromised signaling",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 26
+    },
+    {
+      "accession": "OSD-251",
+      "title": "RNAseq analysis of the response of Arabidopsis thaliana to fractional gravity under blue-light stimulation during spaceflight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 27
+    },
+    {
+      "accession": "OSD-267",
+      "title": "The Outredgeous Harvest",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 28
+    },
+    {
+      "accession": "OSD-281",
+      "title": "During development, the Sku5 mutant roots engage different genes than wild type WS roots, either on the ground or in spaceflight.",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 29
+    },
+    {
+      "accession": "OSD-282",
+      "title": "The Heat-Inducible Transcription Factor HsfA2 Enhances Anoxia Tolerance in Arabidopsis",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-296",
+      "title": "Transcription profiling of Arabidopsis seedings exposed to UV-B irradiation",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 30
+    },
+    {
+      "accession": "OSD-301",
+      "title": "Eruca sativa Rocket Science RNA-seq",
+      "organisms": [
+        "Eruca vesicaria"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 31
+    },
+    {
+      "accession": "OSD-313",
+      "title": "Dissecting transcriptional responses of nucleolin mutants to red light stimulation and darkness in ground reference conditions",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 32
+    },
+    {
+      "accession": "OSD-314",
+      "title": "Adaptive response of Arabidopsis seedlings in microgravity and Mars reduced gravity environment is enhanced by red light photostimulation",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 33
+    },
+    {
+      "accession": "OSD-320",
+      "title": "Gamma radiation and HZE treatment of seedlings in Arabidopsis",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 34
+    },
+    {
+      "accession": "OSD-321",
+      "title": "Relevance of Unfolded Protein Response to Spaceflight-Induced Transcriptional Reprogramming in Arabidopsis",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 35
+    },
+    {
+      "accession": "OSD-329",
+      "title": "Transcription profiling of atm mutant, adm mutant and wild type whole plants and roots of Arabidopsis after gamma ray irradiation in a time series",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-346",
+      "title": "RNAseq analysis of the response of Arabidopsis thaliana phytochrome mutants (PhyA, PhyB) to fractional gravity under blue-light stimulation during spaceflight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-375",
+      "title": "Transcriptional profiling of roots and shoots from Brachypodium distachyon seedlings flown on the ISS",
+      "organisms": [
+        "Brachypodium distachyon"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 36
+    },
+    {
+      "accession": "OSD-385",
+      "title": "The Clean Seed Paradox",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 37
+    },
+    {
+      "accession": "OSD-386",
+      "title": "The Mustard's Quiet Border",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 38
+    },
+    {
+      "accession": "OSD-406",
+      "title": "Transcriptomic responses of Arabidopsis thaliana lines WS and sku5 to the Blue Origin NS-12 and Virgin Galactic VP-03 suborbital flights",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 39
+    },
+    {
+      "accession": "OSD-411",
+      "title": "Plant Gravity Perception: Pilot (PGP Pilot)",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-412",
+      "title": "Three Greens Under One Fan",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 40
+    },
+    {
+      "accession": "OSD-413",
+      "title": "The Clean Chamber's First Crop",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 41
+    },
+    {
+      "accession": "OSD-414",
+      "title": "The Veteran Chamber's Red Harvest",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 42
+    },
+    {
+      "accession": "OSD-416",
+      "title": "Characterizing Epigenetic Changes in Methylation Mutants (elp2-5 and met1-7) in Response to Spaceflight. [Bisulfite-Seq]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-427",
+      "title": "Characterizing Epigenetic Changes in Methylation Mutants (elp2-5 and met1-7) in Response to Spaceflight. [RNA-Seq]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 43
+    },
+    {
+      "accession": "OSD-428",
+      "title": "Profiling the response of Arabidopsis thaliana to altered gravity environments: Exposure of the 14-3-3k:GFP overexpression line on the F-104 Starfighter, second flight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-434",
+      "title": "Arabidopsis thaliana in altered gravity: the 14-3-3k:GFP overexpression line on the F-104 Starfighter, first flight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-436",
+      "title": "Arabidopsis thaliana in altered gravity: WS in C-9 parabolic flight, 2015",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-437",
+      "title": "Transcriptional and Post transcriptional Regulation of Seedling Development in Microgravity",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 44
+    },
+    {
+      "accession": "OSD-450",
+      "title": "Arabidopsis thaliana in altered gravity: the 14-3-3κ:GFP overexpression line in C-9 parabolic flight, 2013",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-476",
+      "title": "Plants grown in Apollo lunar regolith present stress-associated transcriptomes that inform prospects for lunar exploration",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 45
+    },
+    {
+      "accession": "OSD-480",
+      "title": "Plant Gravity Perception (PGP) Flight Study",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-496",
+      "title": "The SOG1 transcriptional activator and the MYB3R family of repressors control a complex gene network in response to DNA damage in Arabidopsis [SOG1 ChIP-seq]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-498",
+      "title": "The SOG1 transcriptional activator and the MYB3R family of repressors control a complex gene network in response to DNA damage in Arabidopsis [RNA-seq gIR vs mock wt]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-502",
+      "title": "The SOG1 transcriptional activator and the MYB3R family of repressors control a complex gene network in response to DNA damage in Arabidopsis [RNA-seq myb3r135 vs wt]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-508",
+      "title": "The SOG1 transcriptional activator and the MYB3R family of repressors control a complex gene network in response to DNA damage in Arabidopsis [RNA-seq t vs t0]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-510",
+      "title": "The SOG1 transcriptional activator and the MYB3R family of repressors control a complex gene network in response to DNA damage in Arabidopsis [RNA-seq DREMmodel]",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-518",
+      "title": "Opposing influences of TAC1 and LAZY1 on Lateral Shoot Orientation in Arabidopsis",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-519",
+      "title": "PUCHI represses early meristem formation in developing lateral roots of Arabidopsis thaliana",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-520",
+      "title": "Changes in DNA Methylation in Arabidopsis thaliana Plants Exposed Over Multiple Generations to Gamma Radiation",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 46
+    },
+    {
+      "accession": "OSD-522",
+      "title": "Integrative Transcriptomics and Proteomics Profiling of Arabidopsis thaliana Elucidates Novel Mechanisms Underlying Spaceflight Adaptation",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 47
+    },
+    {
+      "accession": "OSD-531",
+      "title": "Identification of gravitropic response indicator genes in Arabidopsis inflorescence stems",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-565",
+      "title": "Utilizing the KSC Fixation Tube to Conduct Human-Tended Plant Biology Experiments on a Suborbital Spaceflight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 48
+    },
+    {
+      "accession": "OSD-581",
+      "title": "A molecular study of Italian ryegrass grown on Martian regolith simulant",
+      "organisms": [
+        "Lolium multiflorum"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 49
+    },
+    {
+      "accession": "OSD-594",
+      "title": "Blades in the Bead Mill",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 50
+    },
+    {
+      "accession": "OSD-615",
+      "title": "Glycome profiling and immunohistochemistry uncover changes in cell walls of Arabidopsis thaliana roots during spaceflight: Advanced Plant EXperiment (APEX) 03-1 Raw Dataset",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 51
+    },
+    {
+      "accession": "OSD-622",
+      "title": "Microgravity effects on leaf morphology, cell structure, carbon metabolism and mRNA expression of dwarf wheat",
+      "organisms": [
+        "Triticum aestivum"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-624",
+      "title": "Arabidopsis transcriptome in Virgin Galactic human-tended suborbital spaceflight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 52
+    },
+    {
+      "accession": "OSD-625",
+      "title": "Single-molecule long-read methylation profiling reveals regional DNA methylation regulated by Elongator Complex Subunit 2 in Arabidopsis roots experiencing spaceflight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 53
+    },
+    {
+      "accession": "OSD-655",
+      "title": "Pick-and-eat space crop production flight testing on the International Space Station (Elemental Analysis, ORAC, Phenolic Content)",
+      "organisms": [
+        "Brassica rapa"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-658",
+      "title": "Simulated Galactic Cosmic Ray Exposure Activates Dose-Dependent DNA Repair Response and Downregulates Glucosinolate Pathway in Arabidopsis Seedlings",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 54
+    },
+    {
+      "accession": "OSD-670",
+      "title": "CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production",
+      "organisms": [
+        "Raphanus sativus",
+        "Lactuca sativa",
+        "Capsicum annuum"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 55
+    },
+    {
+      "accession": "OSD-678",
+      "title": "Light has a principal role in the Arabidopsis transcriptomic response to the spaceflight environment",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 56
+    },
+    {
+      "accession": "OSD-723",
+      "title": "The Unbuffered Ion",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 57
+    },
+    {
+      "accession": "OSD-745",
+      "title": "Microbiological and Nutritional Analysis of Lettuce Crops Grown on the International Space Station (Anthocyanin Content, Phenolic Content, Elemental Analysis, ORAC)",
+      "organisms": [
+        "Lactuca sativa"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 58
+    },
+    {
+      "accession": "OSD-750",
+      "title": "Tubers in the Basalt Dust",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 59
+    },
+    {
+      "accession": "OSD-772",
+      "title": "137 Days to Heat",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 60
+    },
+    {
+      "accession": "OSD-773",
+      "title": "Roots in Thin Air",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 61
+    },
+    {
+      "accession": "OSD-780",
+      "title": "Red-Rich, Blue-Rich, Pick-and-Eat",
+      "organisms": [],
+      "in_gemini_master_list": false,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 62
+    },
+    {
+      "accession": "OSD-782",
+      "title": "Multi-omics profiling reveals ethylene signalling as a key pathway underlying both genetic and epigenetic responses to low-dose ionizing radiation in Arabidopsis",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": null
+    },
+    {
+      "accession": "OSD-855",
+      "title": "Apollo 17 Challenge System - Seed Germination (Cabbage, Brussel Sprouts, Radish and Lettuce)",
+      "organisms": [
+        "Lactuca sativa",
+        "Raphanus sativus",
+        "Brassica oleracea"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 63
+    },
+    {
+      "accession": "OSD-856",
+      "title": "Effect of varying amounts of simulated lunar soil batch #005 upon growth of lettuce explants",
+      "organisms": [
+        "Lactuca sativa"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 64
+    },
+    {
+      "accession": "OSD-877",
+      "title": "Element content of seedlings from seed and liverwort plant tissue in Apollo 15 and Apollo 16 post-flight biomedical evaluations (MMP 21243, MMP 21242)",
+      "organisms": [
+        "Raphanus sativus",
+        "Lactuca sativa",
+        "Brassica oleracea",
+        "Glycine max",
+        "Citrus limonia",
+        "Marchantia"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 65
+    },
+    {
+      "accession": "OSD-883",
+      "title": "Analysis of Vegetable Seedlings Grown in Contact with Apollo 14 Lunar Surface Fines",
+      "organisms": [
+        "Brassica oleracea",
+        "Lactuca sativa",
+        "Raphanus sativus",
+        "Daucus carota"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 66
+    },
+    {
+      "accession": "OSD-895",
+      "title": "Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase",
+      "organisms": [
+        "Lactuca sativa",
+        "Brassica rapa",
+        "Solanum lycopersicum",
+        "Cucumis sativus",
+        "Eruca vesicaria",
+        "Ocimum basilicum",
+        "Brassica juncea",
+        "Beta vulgaris",
+        "Raphanus sativus",
+        "Brassica oleracea",
+        "Allium schoenoprasum",
+        "Petroselinum crispum"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 67
+    },
+    {
+      "accession": "OSD-971",
+      "title": "Genetic alterations of the putrescine metabolic pathway attenuate plant responses to spaceflight",
+      "organisms": [
+        "Arabidopsis thaliana"
+      ],
+      "in_gemini_master_list": true,
+      "in_live_osdr_plant_list": null,
+      "scripted_volume": 68
+    }
+  ]
+}

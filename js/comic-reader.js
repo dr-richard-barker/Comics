@@ -81,6 +81,9 @@
     if (window.CoSEGraphicNovels && window.CoSEGraphicNovels.render) {
       window.CoSEGraphicNovels.render();
     }
+    if (window.AstroBotanicaReader && window.AstroBotanicaReader.render) {
+      window.AstroBotanicaReader.render();
+    }
     if (window.CoSEConstellation && window.CoSEConstellation.drawConstellation) {
       window.CoSEConstellation.drawConstellation();
     }
@@ -152,7 +155,7 @@
       currentComicId = issue;
       if (!tab) currentTab = "reader";
     }
-    if (tab && ["novels", "newsstand", "reader", "constellation", "educator"].includes(tab)) {
+    if (tab && ["novels", "astro-botanica", "newsstand", "reader", "constellation", "educator"].includes(tab)) {
       currentTab = tab;
     }
   }
@@ -288,6 +291,9 @@
     renderEducatorAndCastHub();
     if (window.CoSEGraphicNovels && window.CoSEGraphicNovels.render) {
       window.CoSEGraphicNovels.render();
+    }
+    if (window.AstroBotanicaReader && window.AstroBotanicaReader.render) {
+      window.AstroBotanicaReader.render();
     }
   }
 
@@ -919,7 +925,7 @@
   }
 
   function switchTab(tabName) {
-    if (["novels", "newsstand", "reader", "constellation", "educator"].includes(tabName)) {
+    if (["novels", "astro-botanica", "newsstand", "reader", "constellation", "educator"].includes(tabName)) {
       currentTab = tabName;
       syncUIWithState();
     }

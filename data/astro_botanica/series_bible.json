@@ -1,0 +1,3664 @@
+{
+  "series_title": "ASTRO-BOTANICA: ZERO-G ROOTS",
+  "built_from_volumes": 68,
+  "hardware": [
+    {
+      "name": "Advanced Biological Research System (ABRS)",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "GFP Imaging System (GIS)",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Kennedy Space Center Fixation Tube (KFT) with RNAlater",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Orbital Environmental Simulator (OES)",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MELFI Freezer (<-40C)",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HFML Water-Cooled Duplex-Bitter Magnet (10.1T–16.5T)",
+      "first_volume": 2,
+      "volumes": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Random Positioning Machine (μg-RPM, ESA-ESTEC)",
+      "first_volume": 2,
+      "volumes": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Large Diameter Centrifuge (2g-LDC, ESA-ESTEC)",
+      "first_volume": 2,
+      "volumes": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Liquid Nitrogen Flash-Freeze (<2 min)",
+      "first_volume": 2,
+      "volumes": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Agilent Arabidopsis Oligo Microarrays v4",
+      "first_volume": 2,
+      "volumes": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "iTRAQ 8-plex Mass Tagging (Tags 113–121)",
+      "first_volume": 3,
+      "volumes": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "LTQ Orbitrap XL MS/MS + Eksigent nano-LC AS2",
+      "first_volume": 3,
+      "volumes": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "RNAlater Protein Extraction Protocol (liquid N2 mortar + 0.1% Triton-X100)",
+      "first_volume": 3,
+      "volumes": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "BRIC-LED Canisters (flown unpowered / dark)",
+      "first_volume": 4,
+      "volumes": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "Petri Dish Fixation Units (PDFUs, 60mm plates, 6.7mL MS agar)",
+      "first_volume": 4,
+      "volumes": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "HOBO Temperature Data Loggers",
+      "first_volume": 4,
+      "volumes": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "SOLiD 4 SAGE Sequencing",
+      "first_volume": 4,
+      "volumes": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "2.6 L Opaque-Wrapped Hydroponic Tanks with 18-hole Rockwool (Grodan) Plug Lids & 3W Airstones",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "Mars-Regolith Epsomite (MgSO4·7H2O) Soil Assay Trays (0–100 mM)",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "Liquid Nitrogen Flash-Freeze Dewar & Agilent 4x44k Arabidopsis Microarray",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "BRIC-19 (4 canisters, 5 PDFUs + 1 HOBO logger each, unpowered 24 h darkness)",
+      "first_volume": 6,
+      "volumes": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "Double Cold Bag (4C hold for 150 h pre-germination)",
+      "first_volume": 6,
+      "volumes": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "SpaceX CRS-4 Dragon & ISS MELFI (-80C)",
+      "first_volume": 6,
+      "volumes": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "ISSES (ISS Environmental Simulator at KSC, 48 h delayed ground control)",
+      "first_volume": 6,
+      "volumes": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "BRIC-20 (4 canisters, 22 plates in PDFUs, 800–900 seeds/plate, 76 h dark growth)",
+      "first_volume": 7,
+      "volumes": [
+        7,
+        7
+      ]
+    },
+    {
+      "name": "SpaceX CRS-5 Dragon",
+      "first_volume": 7,
+      "volumes": [
+        7,
+        7
+      ]
+    },
+    {
+      "name": "LTQ-Orbitrap Velos Pro (iTRAQ 8-plex soluble + 100,000g membrane proteomics)",
+      "first_volume": 7,
+      "volumes": [
+        7,
+        7
+      ]
+    },
+    {
+      "name": "RNAlater vs. LN2 & Foil-Container Ground Controls",
+      "first_volume": 7,
+      "volumes": [
+        7,
+        7
+      ]
+    },
+    {
+      "name": "BRIC-16 (STS-131 Space Shuttle Discovery middeck locker, 14 d complete darkness, 3.2 mGy TLD dose)",
+      "first_volume": 8,
+      "volumes": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "Affymetrix Arabidopsis ATH1 Genome Array",
+      "first_volume": 8,
+      "volumes": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "2D Horizontal vs. Vertical Clinostat (MS10 + 10% sucrose, 100% hygrometry, 16 h light)",
+      "first_volume": 9,
+      "volumes": [
+        9,
+        9
+      ]
+    },
+    {
+      "name": "CATMA Dual-Channel Microarray (A-GEOD-9553, 6 Cy3/Cy5 dye-swaps, GenePix Pro 3.0)",
+      "first_volume": 9,
+      "volumes": [
+        9,
+        9
+      ]
+    },
+    {
+      "name": "BNL Controlled Environment Radiation Facility (100 Gy Gamma, 7 Gy/min, 0.2 keV/μ)",
+      "first_volume": 10,
+      "volumes": [
+        10,
+        10
+      ]
+    },
+    {
+      "name": "National Space Radiation Laboratory / NSRL (30 Gy 1 GeV/n 56Fe, 7 Gy/min, 170 keV/μ)",
+      "first_volume": 10,
+      "volumes": [
+        10,
+        10
+      ]
+    },
+    {
+      "name": "Affymetrix ATH1 Genome Array & Fluidics Station 450 / GeneChip Scanner 3000",
+      "first_volume": 10,
+      "volumes": [
+        10,
+        10
+      ]
+    },
+    {
+      "name": "100 x 15 mm Petri dishes (1/2 MS, 0.5% agar, continuous light 10 h)",
+      "first_volume": 11,
+      "volumes": [
+        11,
+        11
+      ]
+    },
+    {
+      "name": "Retsch MM300 bead mill tissue homogenizer",
+      "first_volume": 11,
+      "volumes": [
+        11,
+        11
+      ]
+    },
+    {
+      "name": "Roche 454 GS FLX Titanium Series pyrosequencer (Newbler de novo assembly)",
+      "first_volume": 11,
+      "volumes": [
+        11,
+        11
+      ]
+    },
+    {
+      "name": "Lada Greenhouse (ISS Zvezda module, 24 h fluorescent light, arcillite + Osmocote/Nutricote)",
+      "first_volume": 12,
+      "volumes": [
+        12,
+        12
+      ]
+    },
+    {
+      "name": "MELFI (-80 C ISS freezer) & GLACIER (< -20 C Shuttle cold stowage)",
+      "first_volume": 12,
+      "volumes": [
+        12,
+        12
+      ]
+    },
+    {
+      "name": "Illumina Genome Analyzer IIx (100-bp paired-end RNA-Seq)",
+      "first_volume": 12,
+      "volumes": [
+        12,
+        12
+      ]
+    },
+    {
+      "name": "Open ISS Destiny US Lab cabin wall mount (ambient air, 4-6 umol/m2/s dim light)",
+      "first_volume": 13,
+      "volumes": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "Duvetyne Black-Out cloth (double-layer dormancy & dark-growth wrap)",
+      "first_volume": 13,
+      "volumes": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "iPad3 (iOS 5.1.1) Light Meter HD app (improvised orbital & ISSES light calibration)",
+      "first_volume": 13,
+      "volumes": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "ISS Environment Simulator (ISSES) at KSC (24h-delayed telemetry replay)",
+      "first_volume": 13,
+      "volumes": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "Illumina NextSeq 500 + SMART-Seq v4 / Nextera ultra-low-input RNA-Seq (5 ng RNA)",
+      "first_volume": 13,
+      "volumes": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "BRIC-PDFU (Biological Research in Canisters - Petri Dish Fixation Unit, Canisters E/F/H)",
+      "first_volume": 14,
+      "volumes": [
+        14,
+        14
+      ]
+    },
+    {
+      "name": "Orbital Environmental Simulator (OES, KSC SLSL, 24-h delayed ground control)",
+      "first_volume": 14,
+      "volumes": [
+        14,
+        14
+      ]
+    },
+    {
+      "name": "TLD passive middeck dosimeters (DLOC1, DLOC2, DLOC3)",
+      "first_volume": 14,
+      "volumes": [
+        14,
+        14
+      ]
+    },
+    {
+      "name": "Affymetrix ATH1 121501 GeneChip + Ovation Pico WTA",
+      "first_volume": 14,
+      "volumes": [
+        14,
+        14
+      ]
+    },
+    {
+      "name": "CCRC 155-mAb Cell Wall Glycome ELISA (4 M KOH shredder-column zero-waste extraction)",
+      "first_volume": 14,
+      "volumes": [
+        14,
+        14
+      ]
+    },
+    {
+      "name": "Low Pressure Growth Chambers (LPGC, 245 L, 0.45 x 1.6 m, CESRF Univ. of Guelph)",
+      "first_volume": 15,
+      "volumes": [
+        15,
+        15
+      ]
+    },
+    {
+      "name": "Affymetrix 3' IVT plus + ATH1 121501 GeneChip",
+      "first_volume": 15,
+      "volumes": [
+        15,
+        15
+      ]
+    },
+    {
+      "name": "Applied Biosystems Prism 7700 Taqman qRT-PCR (UBQ11 control)",
+      "first_volume": 15,
+      "volumes": [
+        15,
+        15
+      ]
+    },
+    {
+      "name": "Random Positioning Machine (RPM, Airbus Defense and Space, Leiden)",
+      "first_volume": 17,
+      "volumes": [
+        17,
+        17
+      ]
+    },
+    {
+      "name": "Aphidicolin G1/S cell-cycle synchronization + 1% agarose immobilization",
+      "first_volume": 17,
+      "volumes": [
+        17,
+        17
+      ]
+    },
+    {
+      "name": "NimbleGen two-color microarray (A-GEOD-17404, Cy3/Cy5 dye-swap)",
+      "first_volume": 17,
+      "volumes": [
+        17,
+        17
+      ]
+    },
+    {
+      "name": "BRIC-LED (Biological Research in Canisters - LED, operated in dark mode)",
+      "first_volume": 18,
+      "volumes": [
+        18,
+        18
+      ]
+    },
+    {
+      "name": "ISSES (International Space Station Environmental Simulator, KSC, 48-h delay)",
+      "first_volume": 18,
+      "volumes": [
+        18,
+        18
+      ]
+    },
+    {
+      "name": "MELFI (-80C ISS freezer post-RNAlater fixation)",
+      "first_volume": 18,
+      "volumes": [
+        18,
+        18
+      ]
+    },
+    {
+      "name": "Olympus SZX12 dissecting microscope + thin-ruled grid (RNAlater-submerged microdissection)",
+      "first_volume": 20,
+      "volumes": [
+        20,
+        20
+      ]
+    },
+    {
+      "name": "Illumina NextSeq 500 (SMART-Seq V4 + Nextera 5 ng ultra-low-input RNA-Seq)",
+      "first_volume": 20,
+      "volumes": [
+        20,
+        20
+      ]
+    },
+    {
+      "name": "CRESS 1U VeroClear PolyJet containment vessel (1 atm, 10x10x10 cm, <=1.33 kg)",
+      "first_volume": 21,
+      "volumes": [
+        21,
+        21
+      ]
+    },
+    {
+      "name": "Modified Nunc 1536-well seed trays (24x24 = 576 bins, ~250 seeds/bin)",
+      "first_volume": 21,
+      "volumes": [
+        21,
+        21
+      ]
+    },
+    {
+      "name": "CR-39 Solid-State Nuclear Track Detectors (SSNTDs, 6M NaOH etched, Phoenix v|tome|x m Micro-CT)",
+      "first_volume": 21,
+      "volumes": [
+        21,
+        21
+      ]
+    },
+    {
+      "name": "Modified T-25 flask seed cassette holder (BNL NSRL)",
+      "first_volume": 21,
+      "volumes": [
+        21,
+        21
+      ]
+    },
+    {
+      "name": "PacBio Sequel LR-SMRT cell + SageELF size-selection workflow",
+      "first_volume": 21,
+      "volumes": [
+        21,
+        21
+      ]
+    },
+    {
+      "name": "Simbox incubator (Astrium/EADS, modified Biobox-6, 34 L, integrated 74.40 rpm 1g reference centrifuge)",
+      "first_volume": 22,
+      "volumes": [
+        22,
+        22
+      ]
+    },
+    {
+      "name": "Type V Experiment Unit Envelope (EUE) inside Type I Experiment Container (EC)",
+      "first_volume": 22,
+      "volumes": [
+        22,
+        22
+      ]
+    },
+    {
+      "name": "Tecason S polysulfone gas-exchange biofoil + spiked substrate slide + 20.3 mL RNAlater peristaltic pump system",
+      "first_volume": 22,
+      "volumes": [
+        22,
+        22
+      ]
+    },
+    {
+      "name": "Vegetable Production System (VPS/Veggie) on ISS Columbus Module + KSC ISSES 48-h delayed ground simulator",
+      "first_volume": 23,
+      "volumes": [
+        23,
+        23
+      ]
+    },
+    {
+      "name": "Light-tight Duvetyne cloth passive dormancy stowage (4-10 C)",
+      "first_volume": 23,
+      "volumes": [
+        23,
+        23
+      ]
+    },
+    {
+      "name": "Modified LeFrois phenol/chloroform gDNA extraction for RNAlater-preserved WGBS",
+      "first_volume": 23,
+      "volumes": [
+        23,
+        23
+      ]
+    },
+    {
+      "name": "SMART-Seq v4 ultra-low-input (10 ng) + Nextera tagmentation (150 pg cDNA) on Illumina NextSeq 500",
+      "first_volume": 24,
+      "volumes": [
+        24,
+        24
+      ]
+    },
+    {
+      "name": "FIJI / JFilament + R polar root-angle quantification pipeline (camera-behind-media convention)",
+      "first_volume": 24,
+      "volumes": [
+        24,
+        24
+      ]
+    },
+    {
+      "name": "SITP two-unit polysulfone culture chambers with gas-permeable membranes and tube-connected RNAlater fixative unit (no 1g onboard centrifuge)",
+      "first_volume": 25,
+      "volumes": [
+        25
+      ]
+    },
+    {
+      "name": "European Modular Cultivation System (EMCS) twin rotors (0g vs. 0.53g/0.65g/0.76g/0.88g/1.0g), TROPI-like PES seed cassettes (27 seeds/membrane), ERM-2 ground reference",
+      "first_volume": 26,
+      "volumes": [
+        26
+      ]
+    },
+    {
+      "name": "European Modular Cultivation System (EMCS) centrifuge with TROPI seed cassettes, GLACIER (-80 C) freezer",
+      "first_volume": 27,
+      "volumes": [
+        27
+      ]
+    },
+    {
+      "name": "SpaceX CRS-3 (April 2014)",
+      "first_volume": 28,
+      "volumes": [
+        28
+      ]
+    },
+    {
+      "name": "Veggie plant growth chamber (ORBITEC / Sierra Nevada Corp.) with extensible bellows, 12R:3B:1G LEDs (~200 umol m-2 s-1), 6 Kevlar/Nomex plant pillows (arcillite + Nutricote 18-6-8)",
+      "first_volume": 28,
+      "volumes": [
+        28
+      ]
+    },
+    {
+      "name": "Vegetable Production System (VPS / Veggie, Columbus Module, 100-135 umol m-2 s-1 LEDs)",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "100x15 mm Petri plates (0.5% Phytagel, 0.5x MS, 0.5% sucrose, 1x Gamborg vitamins)",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "Duvetyne Black-Out Fabric",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "Kennedy Fixation Tubes (KFTs) with RNAlater",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "MELFI -80C freezer",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "Osram L18W/30 white light (3.6 umol m-2 s-1) + Philips TL20W/01RS narrowband UV-B (1.5 umol m-2 s-1)",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Schott 3-mm WG345 / WG305 / WG327 / WG295 cutoff filters & 3-mm quartz",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Philips TL40W/12RS broadband UV-B lamps (7 W/m2)",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Bio-Rad PDS-1000/He biolistic system",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Affymetrix ATH1 GeneChip (n=36)",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Blue/Red foil seed packets (2 kg Eruca sativa payload)",
+      "first_volume": 31,
+      "volumes": [
+        31,
+        31
+      ]
+    },
+    {
+      "name": "CAAT chambers (2 mL Eppendorf tubes, 70% RH over 25 g/100 mL LiCl, 35C)",
+      "first_volume": 31,
+      "volumes": [
+        31,
+        31
+      ]
+    },
+    {
+      "name": "Electrical conductivity (EC) vigor meter",
+      "first_volume": 31,
+      "volumes": [
+        31,
+        31
+      ]
+    },
+    {
+      "name": "Illumina HiSeq V4 (2x125 bp PE, n=18)",
+      "first_volume": 31,
+      "volumes": [
+        31,
+        31
+      ]
+    },
+    {
+      "name": "Tropi EUE culture chambers (CC cassettes, 5 per EC)",
+      "first_volume": 32,
+      "volumes": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Nitrocellulose membrane (3.1 mm grid) + Whatman 17 CHR blotter paper + 1/2 MS",
+      "first_volume": 32,
+      "volumes": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "White LEDs (30-40 umol m-2 s-1) & Unidirectional Red LEDs (19 umol m-2 s-1)",
+      "first_volume": 32,
+      "volumes": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "RNAlater (Ambion AM7020) at -80C",
+      "first_volume": 32,
+      "volumes": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Illumina TruSeq RNA-seq (n=18)",
+      "first_volume": 32,
+      "volumes": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "EMCS centrifuge (microgravity vs. Mars 0.34 +/- 0.05 g)",
+      "first_volume": 33,
+      "volumes": [
+        33,
+        33
+      ]
+    },
+    {
+      "name": "Tropi culture cassettes (28 seeds/cassette, 1% guar gum, gridded nitrocellulose)",
+      "first_volume": 33,
+      "volumes": [
+        33,
+        33
+      ]
+    },
+    {
+      "name": "Lateral Red LEDs vs. Darkness",
+      "first_volume": 33,
+      "volumes": [
+        33,
+        33
+      ]
+    },
+    {
+      "name": "FixBox (orbital aldehyde fixation)",
+      "first_volume": 33,
+      "volumes": [
+        33,
+        33
+      ]
+    },
+    {
+      "name": "Illumina HiSeq2500 (50 bp stranded, n=17)",
+      "first_volume": 33,
+      "volumes": [
+        33,
+        33
+      ]
+    },
+    {
+      "name": "KSC ISS-simulated growth chamber (23C, 50% RH, 3000 ppm CO2, 16h/8h, 200-300 umol/m2/s PAR); 10-cm pots with ~500 mL greens-grade Turface calcined clay + 7.5 g/L 18-6-8 180-day Nutricote; DI bottom watering",
+      "first_volume": 38,
+      "volumes": [
+        38
+      ]
+    },
+    {
+      "name": "100x15 mm Petri dishes (0.5% Phytagel, 0.5x MS, 0.5% sucrose, 1x Gamborg's Vitamins) wrapped in Duvetyne Black-Out Cloth inside FLEX payload aboard Virgin Galactic VP-03 (VSS Unity, 82.7 km) and Blue Origin NS-12 (New Shepard)",
+      "first_volume": 39,
+      "volumes": [
+        39
+      ]
+    },
+    {
+      "name": "ISS Columbus Veggie SN 002 (VEG-03D, SpaceX-12); 250 mL autoclaved arcillite + 7.5 g/L 18-6-8 type 100 Nutricote pillows; 16h/8h LEDs 200-300 umol/m2/s; fan anomaly caused ~25 days at 100% RH",
+      "first_volume": 40,
+      "volumes": [
+        40
+      ]
+    },
+    {
+      "name": "ISS Columbus Veggie SN 001 (VEG-03E, first use, SpaceX-12); grouped crop layout; 250 mL autoclaved arcillite + 7.5 g/L 18-6-8 type 100 Nutricote; 16h/8h LEDs 200-300 umol/m2/s; 59 days (2/6/18-4/6/18)",
+      "first_volume": 41,
+      "volumes": [
+        41
+      ]
+    },
+    {
+      "name": "ISS Columbus Veggie SN 002 (VEG-03F, SpaceX-12, concurrent with VEG-03E); grouped crop layout; 250 mL autoclaved arcillite + 7.5 g/L 18-6-8 type 100 Nutricote; 16h/8h LEDs 200-300 umol/m2/s; 59 days (2/9/18-4/9/18)",
+      "first_volume": 42,
+      "volumes": [
+        42
+      ]
+    },
+    {
+      "name": "Veggie (ISS-Columbus) vs. ISSES (KSC, 24 h delay); 100 x 15 mm Phytagel plates, 3M Micropore tape, Duvetyne cloth, KFTs (RNAlater), MELFI (-80°C)",
+      "first_volume": 43,
+      "volumes": [
+        43
+      ]
+    },
+    {
+      "name": "European Modular Cultivation System (EMCS, ISS-Columbus: stationary μg vs. 1g centrifuge rotor) + ERM-2 (NASA Ames Earth 1g GC); TROPI-like seed cassettes on black-gridded PES membranes, MELFI (-80°C)",
+      "first_volume": 44,
+      "volumes": [
+        44
+      ]
+    },
+    {
+      "name": "48-well culture plates (900 mg <1 mm regolith/well) with Rockwool plugs, 0.45 μm nylon filters, vented terrarium chambers",
+      "first_volume": 45,
+      "volumes": [
+        45
+      ]
+    },
+    {
+      "name": "BRIC-LED-001 (6 canisters x 6 PDFUs = 36 60-mm Petri plates; closed system); KSC ISSES ground control",
+      "first_volume": 47,
+      "volumes": [
+        47
+      ]
+    },
+    {
+      "name": "Kennedy Space Center Fixation Tubes (KFTs, 22.1 mm ID x 62.8 mm depth, ~25 mL RNAlater, triple liquid containment) with 0.425 mm stainless-steel wire-mesh coupons (22 x 62 mm)",
+      "first_volume": 48,
+      "volumes": [
+        48
+      ]
+    },
+    {
+      "name": "Fitotron climatic chamber (16h 25°C / 8h 20°C, 60% RH, 8,600 lux); 50 mL foil-wrapped conical tubes with Miracloth sub-irrigation in 60x15 mm Petri plates; MMS-1 Martian regolith simulant vs. potting soil",
+      "first_volume": 49,
+      "volumes": [
+        49
+      ]
+    },
+    {
+      "name": "KSC/UF Magenta Vessels in microbial incubators (12:12 diel, ~275 µmol/m2/s RGBW LEDs); Claremont BioSolutions microHomogenizer (2 mL, 1.1 g beads) + PureLyse CBBB columns; Oxford Nanopore MinION Mk1C (FLO-MIN106 R9.4, SQK-RPB004)",
+      "first_volume": 50,
+      "volumes": [
+        50
+      ]
+    },
+    {
+      "name": "SpaceX CRS-5 / ISS Columbus Veggie vs. KSC SSPF ISSES (120-140 µmol/m2/s white LEDs); 90x90 mm gridded Petri dishes (0.5X MS, 1% sucrose, 1.2% phyta-agar, pH 5.7); KFTs (RNAlater / 4% PFA + 2.5% glutaraldehyde)",
+      "first_volume": 51,
+      "volumes": [
+        51
+      ]
+    },
+    {
+      "name": "Virgin Galactic Unity 22 (VSS Unity + VMS Eve, 11-Jul-2021); wearable calf leg pouch with 3 KFTs (RNAlater) actuated by Sirisha Bandla at F1, F2, F3; stainless-steel coupons (1% Phytagel, 0.5X MS, 5 g/L sucrose)",
+      "first_volume": 52,
+      "volumes": [
+        52
+      ]
+    },
+    {
+      "name": "Veggie (ISS-Columbus) vs. ISSES chamber (KSC), 24 h LEDs (100–135 µmol/m²/s PAR), KFTs with RNAlater (-80°C)",
+      "first_volume": 53,
+      "volumes": [
+        53
+      ]
+    },
+    {
+      "name": "290 mL in-line AgFoam (AgClNP/polyurethane) cartridge; 0, 31, 125, 500 ppb Ag+",
+      "first_volume": 57,
+      "volumes": [
+        57
+      ]
+    },
+    {
+      "name": "Lunar Receiving Laboratory (LRL) Class-III negative pressure biological barrier gloveboxes; sterile 100 mm glass Petri dishes with double filter pads; 23°C constant temperature incubator; Apollo 17 pristine regolith fines",
+      "first_volume": 63,
+      "volumes": [
+        63
+      ]
+    },
+    {
+      "name": "NASA LRL Plant Tissue Culture Facility; Pyrex 25x150 mm culture tubes; rotary culture drums; 24°C continuous light; MS nutrient agar; Simulated Lunar Soil Batch #005 gradient (0, 100, 500, 2000 mg)",
+      "first_volume": 64,
+      "volumes": [
+        64
+      ]
+    },
+    {
+      "name": "NASA MSC/LRL Spectrochemistry Lab; Perkin-Elmer 303/403 Atomic Absorption Spectrophotometers; air-acetylene burner; muffle furnace dry ashing; Apollo 15 Hadley mare basalt vs. Apollo 16 Descartes highland anorthosite fines",
+      "first_volume": 65,
+      "volumes": [
+        65
+      ]
+    },
+    {
+      "name": "NASA MSC/LRL Class-III glovebox chambers; 250 mL glass culture jars with silicone gas-permeable septa; Whatman No. 42 ashless filter pads; 23°C constant; Apollo 14 Fra Mauro impact-melt breccia fines (Sample 14163/14259)",
+      "first_volume": 66,
+      "volumes": [
+        66
+      ]
+    },
+    {
+      "name": "EDEN ISS Mobile Test Facility (MTF) Future Exploration Greenhouse (FEG); Neumayer Station III, Antarctica; closed-loop aeroponics/hydroponics; water-cooled LED arrays (Red/Blue/Far-Red); CO2 enrichment (1000 ppm)",
+      "first_volume": 67,
+      "volumes": [
+        67
+      ]
+    },
+    {
+      "name": "Advanced Plant Habitat (APH) and Veggie flight facilities; ISS US National Lab; SpaceX-25; KSC Fixation Tubes (RNAlater); MELFI -80°C; 22°C constant, 65% RH, broad-spectrum LEDs (100 µmol m-2 s-1)",
+      "first_volume": 68,
+      "volumes": [
+        68
+      ]
+    }
+  ],
+  "genotype_squads": [
+    {
+      "name": "Arabidopsis thaliana WS (Wassilewskija) WT",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Col-0 (Columbia-0) WT (60% WS / 40% Col-0 mixed plates)",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "35s::GFP (constitutive control)",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Adh::GFP (alcohol dehydrogenase hypoxia reporter)",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DR5r::GFP (synthetic 5x AuxRE auxin reporter)",
+      "first_volume": 1,
+      "volumes": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana MM2d undifferentiated callus culture (statolithless)",
+      "first_volume": 2,
+      "volumes": [
+        2,
+        2
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Run 1B pooled GFP lines (Adh::GFP, DR5r::GFP, 35s::GFP)",
+      "first_volume": 3,
+      "volumes": [
+        3,
+        3
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Col-0 etiolated seedlings",
+      "first_volume": 4,
+      "volumes": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Col-0 undifferentiated tissue culture cells",
+      "first_volume": 4,
+      "volumes": [
+        4,
+        4
+      ]
+    },
+    {
+      "name": "Col-0 (Hydroponic & Soil Wild Type)",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "Ws (Soil Wild Type)",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "cax1-1 (Tonoplast Ca2+/H+ antiporter knockout; +89%/+149% biomass at 80/100 mM MgSO4)",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "cax1/cax3 (Double knockout; slow baseline growth)",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "mrs2-10 (AtMRS2-10 plasma-membrane Mg2+ transporter KO; no tolerance gain)",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "sel1-10 (AtSULTR1;2 sulfate transporter KO; -80% sulfate uptake, no tolerance gain)",
+      "first_volume": 5,
+      "volumes": [
+        5,
+        5
+      ]
+    },
+    {
+      "name": "Col-0 (Columbia Wild Type)",
+      "first_volume": 6,
+      "volumes": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "Ws-2 (Wassilewskija Wild Type)",
+      "first_volume": 6,
+      "volumes": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "Ler-0 (Landsberg erecta; noted as Ler-2 in description text)",
+      "first_volume": 6,
+      "volumes": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "Cvi-0 (Cape Verde Islands Wild Type)",
+      "first_volume": 6,
+      "volumes": [
+        6,
+        6
+      ]
+    },
+    {
+      "name": "Col-0 (Etiolated 76 h seedlings)",
+      "first_volume": 7,
+      "volumes": [
+        7,
+        7
+      ]
+    },
+    {
+      "name": "Col-0 (Wild Type, SW / GW)",
+      "first_volume": 8,
+      "volumes": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "act2-3 (Vegetative ACTIN2 mutant; left-handed root coiling & wall disruption in 0g)",
+      "first_volume": 8,
+      "volumes": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "Col-0 (Root tissue, 4d / 8d / 12d)",
+      "first_volume": 9,
+      "volumes": [
+        9,
+        9
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Ws (Wild Type)",
+      "first_volume": 10,
+      "volumes": [
+        10,
+        10
+      ]
+    },
+    {
+      "name": "atm-1 (T-DNA insertion mutant defective in DSB-sensing kinase ATM)",
+      "first_volume": 10,
+      "volumes": [
+        10,
+        10
+      ]
+    },
+    {
+      "name": "Ceratopteris richardii cultivar Hn-n (single-celled fern spores)",
+      "first_volume": 11,
+      "volumes": [
+        11,
+        11
+      ]
+    },
+    {
+      "name": "Brassica rapa var. nipposinica (Mizuna)",
+      "first_volume": 12,
+      "volumes": [
+        12,
+        12
+      ]
+    },
+    {
+      "name": "Col-0 (297 Light DEGs / 224 Dark DEGs)",
+      "first_volume": 13,
+      "volumes": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "WS (natural PHYD deletion; 71 Light DEGs / 218 Dark DEGs)",
+      "first_volume": 13,
+      "volumes": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "Col-0 phyD (SALK027956C; 130 Light DEGs / 131 Dark DEGs)",
+      "first_volume": 13,
+      "volumes": [
+        13,
+        13
+      ]
+    },
+    {
+      "name": "Ler-0 (J. Z. Kiss lab line)",
+      "first_volume": 14,
+      "volumes": [
+        14,
+        14
+      ]
+    },
+    {
+      "name": "Wassilewskija (WS), 10-day-old roots & shoots",
+      "first_volume": 15,
+      "volumes": [
+        15
+      ]
+    },
+    {
+      "name": "Wassilewskija (WS / Ws-0), 5-day-old Plant Roots",
+      "first_volume": 16,
+      "volumes": [
+        16
+      ]
+    },
+    {
+      "name": "Col-0 WT (hypocotyl callus)",
+      "first_volume": 18,
+      "volumes": [
+        18,
+        18
+      ]
+    },
+    {
+      "name": "ARG1 KO (SALK024542C / arg1-3)",
+      "first_volume": 18,
+      "volumes": [
+        18,
+        18
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana WS (CS915)",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana sku5 (CS16268, AT4G12420, WS background)",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Col-0 (CS70000)",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana spr1 (CS6547, Col-0 background)",
+      "first_volume": 29,
+      "volumes": [
+        29,
+        29
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Col (cop1-4, hy5-215, uvr8-6 SALK033468)",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Ler (cop1eid6)",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Ws/ProHY5:Luc+ (uvr8-7, cop1-19, Pro35S:UVR8 Ox 2 & 3)",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Sinapis alba (mustard hypocotyls for BiFC)",
+      "first_volume": 30,
+      "volumes": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "Eruca sativa Mill. (cultivar TZ 5007, lot 09835147)",
+      "first_volume": 31,
+      "volumes": [
+        31,
+        31
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana Col-0 WT",
+      "first_volume": 32,
+      "volumes": [
+        32,
+        32,
+        33,
+        33
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana nuc1-2 (Salk002764)",
+      "first_volume": 32,
+      "volumes": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Arabidopsis thaliana nuc2-2 (GABI178D01)",
+      "first_volume": 32,
+      "volumes": [
+        32,
+        32
+      ]
+    }
+  ],
+  "molecular_characters": [
+    {
+      "gene": "TCH4",
+      "symbols_seen": [
+        "TCH4 (At5g57560)"
+      ],
+      "first_volume": 1,
+      "role_archetypes": [
+        "Cell Wall & Structural Enzyme (Xyloglucan Endotransglycosylase)"
+      ],
+      "visual_motifs": [
+        "Engineer with glowing molecular shears re-stitching xyloglucan wall tethers"
+      ],
+      "appearances": [
+        {
+          "volume": 1,
+          "accession": "OSD-7",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "DREB2A",
+      "symbols_seen": [
+        "DREB2A (At5g05410)"
+      ],
+      "first_volume": 1,
+      "role_archetypes": [
+        "Transcription Factor (Stress Commander)"
+      ],
+      "visual_motifs": [
+        "Tactical commander in the root nucleus directing osmotic/stress remodeling"
+      ],
+      "appearances": [
+        {
+          "volume": 1,
+          "accession": "OSD-7",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "DDF1",
+      "symbols_seen": [
+        "DDF1 (At1g12610)"
+      ],
+      "first_volume": 1,
+      "role_archetypes": [
+        "Transcription Factor (Stress Commander)"
+      ],
+      "visual_motifs": [
+        "Co-commander in root apex coordinating dwarfing/stress adaptation"
+      ],
+      "appearances": [
+        {
+          "volume": 1,
+          "accession": "OSD-7",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "JAZ7",
+      "symbols_seen": [
+        "JAZ7 (At2g34600)"
+      ],
+      "first_volume": 1,
+      "role_archetypes": [
+        "Hormone / Jasmonate Signaling Operative"
+      ],
+      "visual_motifs": [
+        "Relay officer linking wound/defense signaling in roots"
+      ],
+      "appearances": [
+        {
+          "volume": 1,
+          "accession": "OSD-7",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "HY5",
+      "symbols_seen": [
+        "HY5 / RHL41"
+      ],
+      "first_volume": 1,
+      "role_archetypes": [
+        "Transcription Factor (Photoreceptor-Linked Commander)"
+      ],
+      "visual_motifs": [
+        "Light-guidance officer projecting blue-white photon vectors in roots"
+      ],
+      "appearances": [
+        {
+          "volume": 1,
+          "accession": "OSD-7",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "WRKY48",
+      "symbols_seen": [
+        "WRKY48"
+      ],
+      "first_volume": 1,
+      "role_archetypes": [
+        "Transcription Factor (Touch/Wound & HY5 Target)"
+      ],
+      "visual_motifs": [
+        "Perimeter defense commander in root cells"
+      ],
+      "appearances": [
+        {
+          "volume": 1,
+          "accession": "OSD-7",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "PGP18",
+      "symbols_seen": [
+        "PGP18"
+      ],
+      "first_volume": 1,
+      "role_archetypes": [
+        "Transporter & Channel (Light/Cell-Wall Gatekeeper)"
+      ],
+      "visual_motifs": [
+        "Dual-allegiance gatekeeper—illuminated in leaves, shuttered in roots"
+      ],
+      "appearances": [
+        {
+          "volume": 1,
+          "accession": "OSD-7",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "ELIP1",
+      "symbols_seen": [
+        "ELIP1 (At3g22840)"
+      ],
+      "first_volume": 1,
+      "role_archetypes": [
+        "Plastid / Light-Stress Sentinel"
+      ],
+      "visual_motifs": [
+        "Darkened chloroplast sentinel powered down in spaceflight roots"
+      ],
+      "appearances": [
+        {
+          "volume": 1,
+          "accession": "OSD-7",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "THYLAKOID-RELATED GENES",
+      "symbols_seen": [
+        "Thylakoid-related genes"
+      ],
+      "first_volume": 2,
+      "role_archetypes": [
+        "Plastid / Magnetic-Torque Alignment Corps"
+      ],
+      "visual_motifs": [
+        "Parallel-aligned membrane ranks firing in total darkness under 16.5T"
+      ],
+      "appearances": [
+        {
+          "volume": 2,
+          "accession": "OSD-8",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "TRANSFERASES & PEROXIDASES",
+      "symbols_seen": [
+        "Transferases & Peroxidases"
+      ],
+      "first_volume": 2,
+      "role_archetypes": [
+        "Enzyme Engineers (Common Magnet Stressors)"
+      ],
+      "visual_motifs": [
+        "Frontline oxidative-buffer engineers active across >10T magnet positions"
+      ],
+      "appearances": [
+        {
+          "volume": 2,
+          "accession": "OSD-8",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "CELL WALL",
+      "symbols_seen": [
+        "Cell Wall / Cytoskeleton / Encapsulating Structures"
+      ],
+      "first_volume": 2,
+      "role_archetypes": [
+        "Structural Remodelers (μg* Levitation)"
+      ],
+      "visual_motifs": [
+        "Fractured structural corps oscillating between limma repression and RankProd induction"
+      ],
+      "appearances": [
+        {
+          "volume": 2,
+          "accession": "OSD-8",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "ABIOTIC STRESS & STIMULUS GENES",
+      "symbols_seen": [
+        "Abiotic Stress & Stimulus Genes (77 DEGs in RPM)"
+      ],
+      "first_volume": 2,
+      "role_archetypes": [
+        "Stress Sentinel Corps"
+      ],
+      "visual_motifs": [
+        "77 sentinels powering down under 3D clinorotation"
+      ],
+      "appearances": [
+        {
+          "volume": 2,
+          "accession": "OSD-8",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "GEDI 20X16 MOSAIC",
+      "symbols_seen": [
+        "GEDI 20x16 Mosaic (17,419 probesets)"
+      ],
+      "first_volume": 2,
+      "role_archetypes": [
+        "Genome-Wide Bio-HUD"
+      ],
+      "visual_motifs": [
+        "320-tile self-organizing map inverting blue/red polarity between hypogravity and hypergravity"
+      ],
+      "appearances": [
+        {
+          "volume": 2,
+          "accession": "OSD-8",
+          "direction": "unchanged"
+        }
+      ]
+    },
+    {
+      "gene": "LEAF RIBOSOME & TRANSLATION CORPS",
+      "symbols_seen": [
+        "Leaf Ribosome & Translation Corps (200 up in leaves)"
+      ],
+      "first_volume": 3,
+      "role_archetypes": [
+        "Protein Synthesis & Structural Assembly"
+      ],
+      "visual_motifs": [
+        "Overclocked ribosomal assembly lines reinforcing leaf blade structure"
+      ],
+      "appearances": [
+        {
+          "volume": 3,
+          "accession": "OSD-16",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "LEAF TRANSPORT & PRECURSOR ENERGY PROTEINS",
+      "symbols_seen": [
+        "Leaf Transport & Precursor Energy Proteins (56 down in leaves)"
+      ],
+      "first_volume": 3,
+      "role_archetypes": [
+        "Transporters & Metabolic Couriers"
+      ],
+      "visual_motifs": [
+        "Throttled membrane couriers conserving resources locally in the leaf"
+      ],
+      "appearances": [
+        {
+          "volume": 3,
+          "accession": "OSD-16",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "ROOT OXIDATIVE STRESS & COFACTOR",
+      "symbols_seen": [
+        "Root Oxidative Stress & Cofactor/Lipid Corps (237 up in roots)"
+      ],
+      "first_volume": 3,
+      "role_archetypes": [
+        "ROS Defense & Metabolic Engineers"
+      ],
+      "visual_motifs": [
+        "Frontline root repair crews burning ATP/purine nucleosides"
+      ],
+      "appearances": [
+        {
+          "volume": 3,
+          "accession": "OSD-16",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "ROOT CELL STRUCTURE PROTEINS",
+      "symbols_seen": [
+        "Root Cell Structure Proteins (121 down in roots)"
+      ],
+      "first_volume": 3,
+      "role_archetypes": [
+        "Cell Wall & Structural Scaffold"
+      ],
+      "visual_motifs": [
+        "Depleted structural scaffolds in spaceflight roots"
+      ],
+      "appearances": [
+        {
+          "volume": 3,
+          "accession": "OSD-16",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "21 ORGAN-OPPOSITE PROTEINS & 34 CONCORDANT MRNA-PROTEIN PAIRS",
+      "symbols_seen": [
+        "21 Organ-Opposite Proteins & 34 Concordant mRNA-Protein Pairs"
+      ],
+      "first_volume": 3,
+      "role_archetypes": [
+        "Cross-Omic Polarity Flippers & Messengers"
+      ],
+      "visual_motifs": [
+        "Two-faced couriers flipping abundance between roots and leaves"
+      ],
+      "appearances": [
+        {
+          "volume": 3,
+          "accession": "OSD-16",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "ATHSFA2",
+      "symbols_seen": [
+        "ATHSFA2 (At2g26150)"
+      ],
+      "first_volume": 4,
+      "role_archetypes": [
+        "Transcription Factor (Supreme Heat Shock Commander)"
+      ],
+      "visual_motifs": [
+        "Furnace commander igniting a 35.26x chaperone storm at room temperature"
+      ],
+      "appearances": [
+        {
+          "volume": 4,
+          "accession": "OSD-17",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "HSP70",
+      "symbols_seen": [
+        "HSP70 / ATHSP101 / ATHSP90.1 / HSP17.6A"
+      ],
+      "first_volume": 4,
+      "role_archetypes": [
+        "Molecular Chaperone Phalanx"
+      ],
+      "visual_motifs": [
+        "Armored protein-folding guardians dominating 75% of >7x genes in cultured cells"
+      ],
+      "appearances": [
+        {
+          "volume": 4,
+          "accession": "OSD-17",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "LTP6",
+      "symbols_seen": [
+        "LTP6 (At3g08770) & WRKY71 (At1g29860)"
+      ],
+      "first_volume": 4,
+      "role_archetypes": [
+        "Drought-Lipid & Pathogen Transcription Commanders"
+      ],
+      "visual_motifs": [
+        "Etiolated seedling frontline officers (16.80x and 9.85x)"
+      ],
+      "appearances": [
+        {
+          "volume": 4,
+          "accession": "OSD-17",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "MT3",
+      "symbols_seen": [
+        "MT3 (At3g15353)"
+      ],
+      "first_volume": 4,
+      "role_archetypes": [
+        "Metallothionein Double Agent"
+      ],
+      "visual_motifs": [
+        "Lone >=2x shared gene flipping from +2.57x in seedlings to 0.18x in cells"
+      ],
+      "appearances": [
+        {
+          "volume": 4,
+          "accession": "OSD-17",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "SKB1",
+      "symbols_seen": [
+        "SKB1 (At4g31120) & XI-J myosin (At3g58160)"
+      ],
+      "first_volume": 4,
+      "role_archetypes": [
+        "Vernalization Methyltransferase & Cytoskeletal Motor"
+      ],
+      "visual_motifs": [
+        "Most strongly repressed units in cells (0.05x) and seedlings (0.09x)"
+      ],
+      "appearances": [
+        {
+          "volume": 4,
+          "accession": "OSD-17",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "CAX1",
+      "symbols_seen": [
+        "CAX1 (At2g38170)"
+      ],
+      "first_volume": 5,
+      "role_archetypes": [
+        "Tonoplast Ca2+/H+ Gatekeeper"
+      ],
+      "visual_motifs": [
+        "Vacuolar siphon valve slammed shut at 45 min to hoard cytosolic Ca2+"
+      ],
+      "appearances": [
+        {
+          "volume": 5,
+          "accession": "OSD-22",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "MHX1",
+      "symbols_seen": [
+        "MHX1 (At2g47600)"
+      ],
+      "first_volume": 5,
+      "role_archetypes": [
+        "Vacuolar Mg2+/H+ Sequestration Turbine"
+      ],
+      "visual_motifs": [
+        "Heavy proton-driven pump locking excess Mg2+ inside the vacuole"
+      ],
+      "appearances": [
+        {
+          "volume": 5,
+          "accession": "OSD-22",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "SULTR3;1",
+      "symbols_seen": [
+        "SULTR3;1 / SULTR3;4 / SULTR4;1"
+      ],
+      "first_volume": 5,
+      "role_archetypes": [
+        "Sulfate Conduit & Vacuolar Efflux Lock"
+      ],
+      "visual_motifs": [
+        "Three-stage sulfate seal trapping excess SO4^2- inside the vacuole"
+      ],
+      "appearances": [
+        {
+          "volume": 5,
+          "accession": "OSD-22",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "NCED",
+      "symbols_seen": [
+        "NCED (At1g78390) & ABRE-CE"
+      ],
+      "first_volume": 5,
+      "role_archetypes": [
+        "ABA Tactical Commander & Promoter Beacon"
+      ],
+      "visual_motifs": [
+        "ACGCGG/CCGCGT cis-motif flare lighting 33 upregulated promoters at 45 min"
+      ],
+      "appearances": [
+        {
+          "volume": 5,
+          "accession": "OSD-22",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "EXP12",
+      "symbols_seen": [
+        "EXP12 (At3g15370) / EXP17 (At4g01630)"
+      ],
+      "first_volume": 5,
+      "role_archetypes": [
+        "Cell Wall Alpha-Expansin Sappers"
+      ],
+      "visual_motifs": [
+        "Plasma-torch engineers remodeling root walls against EXPB1/AGP17 retreat"
+      ],
+      "appearances": [
+        {
+          "volume": 5,
+          "accession": "OSD-22",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "HOT1",
+      "symbols_seen": [
+        "HOT1 / HSP101 (AT1G74310)"
+      ],
+      "first_volume": 6,
+      "role_archetypes": [
+        "Universal Chaperone Titan"
+      ],
+      "visual_motifs": [
+        "Returning Vol. 4 HSP guardian shielding oxidized proteins across all 4 ecotypes"
+      ],
+      "appearances": [
+        {
+          "volume": 6,
+          "accession": "OSD-37",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "PRX39",
+      "symbols_seen": [
+        "PRX39 (AT4G11290)"
+      ],
+      "first_volume": 6,
+      "role_archetypes": [
+        "Cell-Wall Peroxidase Sentinel"
+      ],
+      "visual_motifs": [
+        "Dimmed ROS-scavenging turret leaving the cell wall exposed"
+      ],
+      "appearances": [
+        {
+          "volume": 6,
+          "accession": "OSD-37",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "COR78",
+      "symbols_seen": [
+        "COR78 (AT5G52310)"
+      ],
+      "first_volume": 6,
+      "role_archetypes": [
+        "Cross-Stress Cold/Oxidative Beacon"
+      ],
+      "visual_motifs": [
+        "Frost-etched alarm firing at 24C under plastid/ROS stress"
+      ],
+      "appearances": [
+        {
+          "volume": 6,
+          "accession": "OSD-37",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "ABS4",
+      "symbols_seen": [
+        "ABS4 (AT1G58340) / AAP2 (AT5G09220) / MAGL4 (AT1G73480)"
+      ],
+      "first_volume": 6,
+      "role_archetypes": [
+        "Conserved Membrane & Metabolic Trio"
+      ],
+      "visual_motifs": [
+        "MATE effluxer, amino-acid permease, and hydrolase anchored to plastid/membrane hubs"
+      ],
+      "appearances": [
+        {
+          "volume": 6,
+          "accession": "OSD-37",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "TIP3;2",
+      "symbols_seen": [
+        "TIP3;2"
+      ],
+      "first_volume": 7,
+      "role_archetypes": [
+        "Post-Transcriptional Paradox Aquaporin"
+      ],
+      "visual_motifs": [
+        "Tonoplast gatekeeper whose protein armor surges while mRNA drops >4-fold"
+      ],
+      "appearances": [
+        {
+          "volume": 7,
+          "accession": "OSD-38",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "GRP7",
+      "symbols_seen": [
+        "GRP7 / GRP8"
+      ],
+      "first_volume": 7,
+      "role_archetypes": [
+        "S118 Phospho-Splicing Switches"
+      ],
+      "visual_motifs": [
+        "Nuclear RNA-binding officers losing S118 phosphate tags to flip isoform gates"
+      ],
+      "appearances": [
+        {
+          "volume": 7,
+          "accession": "OSD-38",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "VILLIN 1",
+      "symbols_seen": [
+        "VILLIN 1 (AT2G29890.2 / .3)"
+      ],
+      "first_volume": 7,
+      "role_archetypes": [
+        "Isoform-Switching Actin Blade"
+      ],
+      "visual_motifs": [
+        "Twin-form cytoskeletal cutter (.2 > +5 in space vs. .3 < -7.5 on Earth)"
+      ],
+      "appearances": [
+        {
+          "volume": 7,
+          "accession": "OSD-38",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "DPGM",
+      "symbols_seen": [
+        "dPGM (AT5G04120)"
+      ],
+      "first_volume": 7,
+      "role_archetypes": [
+        "Concordant Glycolytic Engine"
+      ],
+      "visual_motifs": [
+        "Rare dual-layer (RNA + protein) metabolic runner burning 1% sucrose"
+      ],
+      "appearances": [
+        {
+          "volume": 7,
+          "accession": "OSD-38",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "ATPIN3",
+      "symbols_seen": [
+        "ATPIN3 / AtLAZY1 & TUA4/TUA6/TUB1/TUB5"
+      ],
+      "first_volume": 7,
+      "role_archetypes": [
+        "Auxin-Cytoskeletal Polarity Axis"
+      ],
+      "visual_motifs": [
+        "Cortical microtubule builders and auxin navigators operating in 0g"
+      ],
+      "appearances": [
+        {
+          "volume": 7,
+          "accession": "OSD-38",
+          "direction": "upregulated"
+        }
+      ]
+    },
+    {
+      "gene": "PRX44",
+      "symbols_seen": [
+        "PRX44 / PRX57"
+      ],
+      "first_volume": 8,
+      "role_archetypes": [
+        "Root-Hair Class III Peroxidases"
+      ],
+      "visual_motifs": [
+        "Tip-growth wall cross-linkers silenced by 0g hypoxia; knockouts rupture on Earth"
+      ],
+      "appearances": [
+        {
+          "volume": 8,
+          "accession": "OSD-44",
+          "direction": "downregulated"
+        }
+      ]
+    },
+    {
+      "gene": "ACTIN2",
+      "symbols_seen": [
+        "ACTIN2 (act2-3)"
+      ],
+      "first_volume": 8,
+      "role_archetypes": [
+        "Cytoskeletal Anti-Skewing Brake"
+      ],
+      "visual_motifs": [
+        "Missing actin cables unleashing left-handed helical root coiling in microgravity"
+      ],
+      "appearances": [
+        {
+          "volume": 8,
+          "accession": "OSD-44",
+          "direction": "unchanged"
+        }
+      ]
+    }
+  ],
+  "continuity_hooks": [
+    {
+      "volume": 1,
+      "hook": "Mixed 60% WS / 40% Col-0 plate pooling sets up ecotype-specific separation in later studies (e.g., OSD-37, OSD-120)."
+    },
+    {
+      "volume": 1,
+      "hook": "Light cycle metadata marked 'Not Available' in OSDR OSD-7 sample table."
+    },
+    {
+      "volume": 1,
+      "hook": "PGP18 organ-opposite regulation (up in leaves, down in roots) establishes tissue-specific polarity."
+    },
+    {
+      "volume": 1,
+      "hook": "Transition from open-plate ABRS white-light growth to sealed dark BRIC canisters."
+    },
+    {
+      "volume": 1,
+      "hook": "Mixed 60% WS / 40% Col-0 plate pooling sets up ecotype-specific separation in later studies (e.g., OSD-37, OSD-120)."
+    },
+    {
+      "volume": 1,
+      "hook": "Light cycle metadata marked 'Not Available' in OSDR OSD-7 sample table."
+    },
+    {
+      "volume": 1,
+      "hook": "PGP18 organ-opposite regulation (up in leaves, down in roots) establishes tissue-specific polarity."
+    },
+    {
+      "volume": 1,
+      "hook": "Transition from open-plate ABRS white-light growth to sealed dark BRIC canisters."
+    },
+    {
+      "volume": 2,
+      "hook": "Statolith-independent gravity sensing in undifferentiated callus sets up later cell-culture vs. seedling comparisons (e.g., OSD-17, OSD-144, OSD-147, OSD-205)."
+    },
+    {
+      "volume": 2,
+      "hook": "Subtle genome-wide GEDI patterns vs. strict FDR thresholds establish multi-gene network analysis."
+    },
+    {
+      "volume": 2,
+      "hook": "Partial gravity (0.1g*) foreshadows fractional-g ISS centrifuge studies (OSD-251, OSD-314, OSD-346)."
+    },
+    {
+      "volume": 2,
+      "hook": "Statolith-independent gravity sensing in undifferentiated callus sets up later cell-culture vs. seedling comparisons (e.g., OSD-17, OSD-144, OSD-147, OSD-205)."
+    },
+    {
+      "volume": 2,
+      "hook": "Subtle genome-wide GEDI patterns vs. strict FDR thresholds establish multi-gene network analysis."
+    },
+    {
+      "volume": 2,
+      "hook": "Partial gravity (0.1g*) foreshadows fractional-g ISS centrifuge studies (OSD-251, OSD-314, OSD-346)."
+    },
+    {
+      "volume": 3,
+      "hook": "RNAlater KFTs proven viable for both RNA (OSD-7) and soluble proteomics (OSD-16)."
+    },
+    {
+      "volume": 3,
+      "hook": "n=1 pooled leaf sample vs. n=3 root replicates noted as experimental design constraint."
+    },
+    {
+      "volume": 3,
+      "hook": "Next accession OSD-17 bridges Vol. 1 seedlings and Vol. 2 callus cell cultures inside dark BRIC canisters."
+    },
+    {
+      "volume": 3,
+      "hook": "RNAlater KFTs proven viable for both RNA (OSD-7) and soluble proteomics (OSD-16)."
+    },
+    {
+      "volume": 3,
+      "hook": "n=1 pooled leaf sample vs. n=3 root replicates noted as experimental design constraint."
+    },
+    {
+      "volume": 3,
+      "hook": "Next accession OSD-17 bridges Vol. 1 seedlings and Vol. 2 callus cell cultures inside dark BRIC canisters."
+    },
+    {
+      "volume": 4,
+      "hook": "ATHSFA2 and HSP101 become major recurring markers (next seen in OSD-205, OSD-282, OSD-37, OSD-38, OSD-121)."
+    },
+    {
+      "volume": 4,
+      "hook": "DREB2A confirmed across both ABRS light-grown roots (OSD-7) and BRIC dark cell cultures (OSD-17)."
+    },
+    {
+      "volume": 4,
+      "hook": "Unpowered BRIC-LED dark-vault baseline established for upcoming BRIC volumes (OSD-37, OSD-38, OSD-44, OSD-121)."
+    },
+    {
+      "volume": 4,
+      "hook": "ATHSFA2 and HSP101 become major recurring markers (next seen in OSD-205, OSD-282, OSD-37, OSD-38, OSD-121)."
+    },
+    {
+      "volume": 4,
+      "hook": "DREB2A confirmed across both ABRS light-grown roots (OSD-7) and BRIC dark cell cultures (OSD-17)."
+    },
+    {
+      "volume": 4,
+      "hook": "Unpowered BRIC-LED dark-vault baseline established for upcoming BRIC volumes (OSD-37, OSD-38, OSD-44, OSD-121)."
+    },
+    {
+      "volume": 5,
+      "hook": "Diurnal control drift caught by Q-PCR (At2g32170 reference) becomes a recurring archival verification protocol."
+    },
+    {
+      "volume": 5,
+      "hook": "Vacuolar ion sequestration (MHX1/CAX1) establishes the intracellular defense blueprint before returning to orbital flight in Vol. 6 (OSD-37)."
+    },
+    {
+      "volume": 5,
+      "hook": "Diurnal control drift caught by Q-PCR (At2g32170 reference) becomes a recurring archival verification protocol."
+    },
+    {
+      "volume": 5,
+      "hook": "Vacuolar ion sequestration (MHX1/CAX1) establishes the intracellular defense blueprint before returning to orbital flight in Vol. 6 (OSD-37)."
+    },
+    {
+      "volume": 6,
+      "hook": "Metadata anomalies logged: Ler-2 vs. Ler-0 label, 151 bp vs. 101 bp read length in GC_Rep3_R1-GC-B1, and 48/56 initial sample release."
+    },
+    {
+      "volume": 6,
+      "hook": "Sets up Vol. 7 (OSD-38 / BRIC-20) to dissect RNAlater fixation artifacts vs. true spaceflight signals and expand the conserved 6-gene BRIC core."
+    },
+    {
+      "volume": 6,
+      "hook": "Metadata anomalies logged: Ler-2 vs. Ler-0 label, 151 bp vs. 101 bp read length in GC_Rep3_R1-GC-B1, and 48/56 initial sample release."
+    },
+    {
+      "volume": 6,
+      "hook": "Sets up Vol. 7 (OSD-38 / BRIC-20) to dissect RNAlater fixation artifacts vs. true spaceflight signals and expand the conserved 6-gene BRIC core."
+    },
+    {
+      "volume": 7,
+      "hook": "Establishes post-transcriptional uncoupling and S118 alternative splicing as core spaceflight mechanisms."
+    },
+    {
+      "volume": 7,
+      "hook": "RNAlater vs. LN2 control (rl-1..3 vs. n2-1..3) resolves Vol. 6's fixation question and sets up Vol. 8 (OSD-44 / BRIC-16)."
+    },
+    {
+      "volume": 7,
+      "hook": "Establishes post-transcriptional uncoupling and S118 alternative splicing as core spaceflight mechanisms."
+    },
+    {
+      "volume": 7,
+      "hook": "RNAlater vs. LN2 control (rl-1..3 vs. n2-1..3) resolves Vol. 6's fixation question and sets up Vol. 8 (OSD-44 / BRIC-16)."
+    },
+    {
+      "volume": 8,
+      "hook": "Establishes root-hair class III peroxidase repression (PRX44/PRX57) as a hypoxia-linked microgravity vulnerability."
+    },
+    {
+      "volume": 8,
+      "hook": "Completes the BRIC-16 STS-131 archive (OSD-17 + OSD-44) and transitions to Vol. 9 (OSD-45)."
+    },
+    {
+      "volume": 8,
+      "hook": "Establishes root-hair class III peroxidase repression (PRX44/PRX57) as a hypoxia-linked microgravity vulnerability."
+    },
+    {
+      "volume": 8,
+      "hook": "Completes the BRIC-16 STS-131 archive (OSD-17 + OSD-44) and transitions to Vol. 9 (OSD-45)."
+    },
+    {
+      "volume": 9,
+      "hook": "Unpublished GEO:GSE39631 root timecourse (4d, 8d, 12d) logged as an open archival dataset in OSDR."
+    },
+    {
+      "volume": 9,
+      "hook": "Sets up Vol. 10 (OSD-46)."
+    },
+    {
+      "volume": 9,
+      "hook": "Unpublished GEO:GSE39631 root timecourse (4d, 8d, 12d) logged as an open archival dataset in OSDR."
+    },
+    {
+      "volume": 9,
+      "hook": "Sets up Vol. 10 (OSD-46)."
+    },
+    {
+      "volume": 10,
+      "hook": "High-LET 56Fe tracks trigger an ATM-independent starvation/chloroplast-repression program absent in low-LET gamma"
+    },
+    {
+      "volume": 10,
+      "hook": "ATM unexpectedly governs late pathogen/conventional-stress gene expression (Cluster C) in addition to early DSB repair"
+    },
+    {
+      "volume": 10,
+      "hook": "Archival placeholder [GSEXXXX] in 2014 paper resolved to [GSE61484] via 2016 Frontiers Corrigendum"
+    },
+    {
+      "volume": 10,
+      "hook": "High-LET 56Fe tracks trigger an ATM-independent starvation/chloroplast-repression program absent in low-LET gamma"
+    },
+    {
+      "volume": 10,
+      "hook": "ATM unexpectedly governs late pathogen/conventional-stress gene expression (Cluster C) in addition to early DSB repair"
+    },
+    {
+      "volume": 10,
+      "hook": "Archival placeholder [GSEXXXX] in 2014 paper resolved to [GSE61484] via 2016 Frontiers Corrigendum"
+    },
+    {
+      "volume": 11,
+      "hook": "First non-angiosperm (fern) and first single-cell gravity-polarization transcriptome in the series"
+    },
+    {
+      "volume": 11,
+      "hook": "Archival n=1 de novo reference sample paired with pharmacological assays rather than multi-replicate DEG tables"
+    },
+    {
+      "volume": 11,
+      "hook": "Sets up future mechanosensitive eATP/apyrase signaling comparisons across land plants"
+    },
+    {
+      "volume": 11,
+      "hook": "First non-angiosperm (fern) and first single-cell gravity-polarization transcriptome in the series"
+    },
+    {
+      "volume": 11,
+      "hook": "Archival n=1 de novo reference sample paired with pharmacological assays rather than multi-replicate DEG tables"
+    },
+    {
+      "volume": 11,
+      "hook": "Sets up future mechanosensitive eATP/apyrase signaling comparisons across land plants"
+    },
+    {
+      "volume": 12,
+      "hook": "First Brassica rapa (Mizuna) crop study and first Zvezda Lada greenhouse volume"
+    },
+    {
+      "volume": 12,
+      "hook": "Hardware failure (2 L over-watering in 35 h) forced manual watering and exclusion of Nutricote modules"
+    },
+    {
+      "volume": 12,
+      "hook": "n=2 pooled RNA-Seq libraries (no biological replicates) explain GeneLab's raw-counts-only processing"
+    },
+    {
+      "volume": 12,
+      "hook": "First Brassica rapa (Mizuna) crop study and first Zvezda Lada greenhouse volume"
+    },
+    {
+      "volume": 12,
+      "hook": "Hardware failure (2 L over-watering in 35 h) forced manual watering and exclusion of Nutricote modules"
+    },
+    {
+      "volume": 12,
+      "hook": "n=2 pooled RNA-Seq libraries (no biological replicates) explain GeneLab's raw-counts-only processing"
+    },
+    {
+      "volume": 13,
+      "hook": "Demonstrates that much of a plant's spaceflight transcriptome response is dispensable/non-adaptive"
+    },
+    {
+      "volume": 13,
+      "hook": "Light environment flips WS from minimalist (71 DEGs in light) to reactive (218 DEGs in dark)"
+    },
+    {
+      "volume": 13,
+      "hook": "Sets up future leaf-vs-root CARA comparisons (OSD-678) and ML re-mining (GLARE)"
+    },
+    {
+      "volume": 13,
+      "hook": "Demonstrates that much of a plant's spaceflight transcriptome response is dispensable/non-adaptive"
+    },
+    {
+      "volume": 13,
+      "hook": "Light environment flips WS from minimalist (71 DEGs in light) to reactive (218 DEGs in dark)"
+    },
+    {
+      "volume": 13,
+      "hook": "Sets up future leaf-vs-root CARA comparisons (OSD-678) and ML re-mining (GLARE)"
+    },
+    {
+      "volume": 14,
+      "hook": "Direct 3-team comparison on STS-131 with BRIC-16-Reg (Blancaflor) and BRIC-16-DNA (Paul/Ferl) shows 0 shared DEGs across all 3 due to ecotype, sowing, and organ-dissection vs. whole-seedling pooling"
+    },
+    {
+      "volume": 14,
+      "hook": "PVT ground control substitution (H-F2/F3/F4) due to degraded OES ground RNA"
+    },
+    {
+      "volume": 14,
+      "hook": "Zero-waste shredder-column glycomics links transcriptomic wall remodeling to physical xylan/pectin depletion"
+    },
+    {
+      "volume": 14,
+      "hook": "Direct 3-team comparison on STS-131 with BRIC-16-Reg (Blancaflor) and BRIC-16-DNA (Paul/Ferl) shows 0 shared DEGs across all 3 due to ecotype, sowing, and organ-dissection vs. whole-seedling pooling"
+    },
+    {
+      "volume": 14,
+      "hook": "PVT ground control substitution (H-F2/F3/F4) due to degraded OES ground RNA"
+    },
+    {
+      "volume": 14,
+      "hook": "Zero-waste shredder-column glycomics links transcriptomic wall remodeling to physical xylan/pectin depletion"
+    },
+    {
+      "volume": 15,
+      "hook": "Direct setup for Vol. 16 (OSD-136 / Experiment 2), which expands to 5-day-old WS seedlings and developmental-age comparisons (EPF2, SWEET11)"
+    },
+    {
+      "volume": 15,
+      "hook": "Demonstrates NormOx oxygen supplementation eliminates most hypobaric stress in shoots (only MYB44 at 25 kPa/NormOx)"
+    },
+    {
+      "volume": 15,
+      "hook": "Unadjusted P < 0.01 justified via Taqman qRT-PCR corroboration of AHB1 and PDC1"
+    },
+    {
+      "volume": 15,
+      "hook": "Direct setup for Vol. 16 (OSD-136 / Experiment 2), which expands to 5-day-old WS seedlings and developmental-age comparisons (EPF2, SWEET11)"
+    },
+    {
+      "volume": 15,
+      "hook": "Demonstrates NormOx oxygen supplementation eliminates most hypobaric stress in shoots (only MYB44 at 25 kPa/NormOx)"
+    },
+    {
+      "volume": 15,
+      "hook": "Unadjusted P < 0.01 justified via Taqman qRT-PCR corroboration of AHB1 and PDC1"
+    },
+    {
+      "volume": 16,
+      "hook": "Completes the 2-part Zhou et al. (2017) hypobaria series alongside Vol. 15 (OSD-134)"
+    },
+    {
+      "volume": 16,
+      "hook": "Establishes developmental age (5 d vs. 10 d) as a major determinant of low-pressure transcriptional strategy (103 vs. 129 DEGs, only 10 shared at 50 kPa)"
+    },
+    {
+      "volume": 16,
+      "hook": "CWLP bridges 5 d roots at 50 kPa (OSD-136) and 10 d roots at 25 kPa (OSD-134)"
+    },
+    {
+      "volume": 16,
+      "hook": "Completes the 2-part Zhou et al. (2017) hypobaria series alongside Vol. 15 (OSD-134)"
+    },
+    {
+      "volume": 16,
+      "hook": "Establishes developmental age (5 d vs. 10 d) as a major determinant of low-pressure transcriptional strategy (103 vs. 129 DEGs, only 10 shared at 50 kPa)"
+    },
+    {
+      "volume": 16,
+      "hook": "CWLP bridges 5 d roots at 50 kPa (OSD-136) and 10 d roots at 25 kPa (OSD-134)"
+    },
+    {
+      "volume": 17,
+      "hook": "Proves undifferentiated Arabidopsis cell cultures (without statoliths) still sense altered gravity via cell-cycle timing and chromatin/nucleolar remodeling"
+    },
+    {
+      "volume": 17,
+      "hook": "Establishes staggered harvesting (7 h RPM vs. 10 h 1g for G2/M; 14 h RPM vs. 16 h 1g for G1) to match cell-cycle phases"
+    },
+    {
+      "volume": 17,
+      "hook": "Directly sets up Vol. 18 (OSD-147 / BRIC-17 CEL), which flies undifferentiated Col-0 WT vs. ARG1 KO callus cells into real spaceflight on SpaceX CRS-2"
+    },
+    {
+      "volume": 17,
+      "hook": "Proves undifferentiated Arabidopsis cell cultures (without statoliths) still sense altered gravity via cell-cycle timing and chromatin/nucleolar remodeling"
+    },
+    {
+      "volume": 17,
+      "hook": "Establishes staggered harvesting (7 h RPM vs. 10 h 1g for G2/M; 14 h RPM vs. 16 h 1g for G1) to match cell-cycle phases"
+    },
+    {
+      "volume": 17,
+      "hook": "Directly sets up Vol. 18 (OSD-147 / BRIC-17 CEL), which flies undifferentiated Col-0 WT vs. ARG1 KO callus cells into real spaceflight on SpaceX CRS-2"
+    },
+    {
+      "volume": 18,
+      "hook": "Introduces the 4-way mutant-landscape framework (Independent, Dependent, Required, Corrected, Compensated) revealing 102 genes invisible in WT-only comparisons"
+    },
+    {
+      "volume": 18,
+      "hook": "MELFI -80C post-fixation stowage resolves the ambient RNAlater RNA-degradation bottleneck of BRIC-16 (Vol. 14)"
+    },
+    {
+      "volume": 18,
+      "hook": "Companion BRIC-17-1 study (HSFA2 KO) resides in OSD-205"
+    },
+    {
+      "volume": 18,
+      "hook": "Introduces the 4-way mutant-landscape framework (Independent, Dependent, Required, Corrected, Compensated) revealing 102 genes invisible in WT-only comparisons"
+    },
+    {
+      "volume": 18,
+      "hook": "MELFI -80C post-fixation stowage resolves the ambient RNAlater RNA-degradation bottleneck of BRIC-16 (Vol. 14)"
+    },
+    {
+      "volume": 18,
+      "hook": "Companion BRIC-17-1 study (HSFA2 KO) resides in OSD-205"
+    },
+    {
+      "volume": 19,
+      "hook": "Shares the exact Col-0 WT SpaceX-2 BRIC-17-1 baseline (GSM2152569-GSM2152578) with Vol. 18 (OSD-147, ARG1 KO)."
+    },
+    {
+      "volume": 19,
+      "hook": "Demonstrates that pre-flight genetic state (349 baseline DEGs in HSFA2 KO) dictates how plant cells spend transcriptional effort in microgravity (221 DEGs vs. 78 in WT)."
+    },
+    {
+      "volume": 19,
+      "hook": "Establishes ER stress/UPR, cell-wall remodeling, and starch/BCAA metabolism as non-thermal HSF-network targets in orbit."
+    },
+    {
+      "volume": 19,
+      "hook": "Shares the exact Col-0 WT SpaceX-2 BRIC-17-1 baseline (GSM2152569-GSM2152578) with Vol. 18 (OSD-147, ARG1 KO)."
+    },
+    {
+      "volume": 19,
+      "hook": "Demonstrates that pre-flight genetic state (349 baseline DEGs in HSFA2 KO) dictates how plant cells spend transcriptional effort in microgravity (221 DEGs vs. 78 in WT)."
+    },
+    {
+      "volume": 19,
+      "hook": "Establishes ER stress/UPR, cell-wall remodeling, and starch/BCAA metabolism as non-thermal HSF-network targets in orbit."
+    },
+    {
+      "volume": 20,
+      "hook": "Establishes 5 ng RNAlater-preserved single-root-zone microdissection as a viable spaceflight protocol."
+    },
+    {
+      "volume": 20,
+      "hook": "Provides the cross-platform baseline (4,180 shared DEGs; 771 RNA-Seq-unique; 19 novel TARs; >50 low-abundance spaceflight DEGs missed by 40 M-read RNA-Seq) later cited in TOAST (2020) and Plant Space Biology meta-analyses."
+    },
+    {
+      "volume": 20,
+      "hook": "Sets up OSD-210 (CRESS Antarctic balloon & BNL GCR seed mutagenesis) as Vol. 21."
+    },
+    {
+      "volume": 20,
+      "hook": "Establishes 5 ng RNAlater-preserved single-root-zone microdissection as a viable spaceflight protocol."
+    },
+    {
+      "volume": 20,
+      "hook": "Provides the cross-platform baseline (4,180 shared DEGs; 771 RNA-Seq-unique; 19 novel TARs; >50 low-abundance spaceflight DEGs missed by 40 M-read RNA-Seq) later cited in TOAST (2020) and Plant Space Biology meta-analyses."
+    },
+    {
+      "volume": 20,
+      "hook": "Sets up OSD-210 (CRESS Antarctic balloon & BNL GCR seed mutagenesis) as Vol. 21."
+    },
+    {
+      "volume": 21,
+      "hook": "Transition from orbital microgravity transcriptomics (OSD-208) to stratospheric & accelerator cosmic radiation genomics (OSD-210)"
+    },
+    {
+      "volume": 21,
+      "hook": "First PacBio SMRT whole-genome structural variant characterization of space-irradiated seeds"
+    },
+    {
+      "volume": 21,
+      "hook": "Remaining ANT seed trays #2-#4 archived at -20 C for future shielding-depth studies"
+    },
+    {
+      "volume": 21,
+      "hook": "Next sequential plant accession check: OSD-213 / GLDS-213 vs. OSD-217"
+    },
+    {
+      "volume": 21,
+      "hook": "Transition from orbital microgravity transcriptomics (OSD-208) to stratospheric & accelerator cosmic radiation genomics (OSD-210)"
+    },
+    {
+      "volume": 21,
+      "hook": "First PacBio SMRT whole-genome structural variant characterization of space-irradiated seeds"
+    },
+    {
+      "volume": 21,
+      "hook": "Remaining ANT seed trays #2-#4 archived at -20 C for future shielding-depth studies"
+    },
+    {
+      "volume": 21,
+      "hook": "Next sequential plant accession check: OSD-213 / GLDS-213 vs. OSD-217"
+    },
+    {
+      "volume": 22,
+      "hook": "In-flight 1g centrifuge (FC) proves 573 of 897 flight-vs-ground DEGs stem from non-microgravity spaceflight conditions (radiation, vibration, hardware)"
+    },
+    {
+      "volume": 22,
+      "hook": "5-day callus cultures acclimate to microgravity (0 FDR-significant DEGs in FS vs. FC), contrasting with rapid parabolic/sounding-rocket responses"
+    },
+    {
+      "volume": 22,
+      "hook": "Skipped OSD-211 (absent), OSD-212 (mouse microbiome), OSD-214 (mouse bone marrow), OSD-215 (Bacillus subtilis), and OSD-216 (absent)"
+    },
+    {
+      "volume": 22,
+      "hook": "Next sequential plant accession: OSD-217 (APEX03-2 / TAGES-ISA Arabidopsis spaceflight methylome)"
+    },
+    {
+      "volume": 22,
+      "hook": "In-flight 1g centrifuge (FC) proves 573 of 897 flight-vs-ground DEGs stem from non-microgravity spaceflight conditions (radiation, vibration, hardware)"
+    },
+    {
+      "volume": 22,
+      "hook": "5-day callus cultures acclimate to microgravity (0 FDR-significant DEGs in FS vs. FC), contrasting with rapid parabolic/sounding-rocket responses"
+    },
+    {
+      "volume": 22,
+      "hook": "Skipped OSD-211 (absent), OSD-212 (mouse microbiome), OSD-214 (mouse bone marrow), OSD-215 (Bacillus subtilis), and OSD-216 (absent)"
+    },
+    {
+      "volume": 22,
+      "hook": "Next sequential plant accession: OSD-217 (APEX03-2 / TAGES-ISA Arabidopsis spaceflight methylome)"
+    },
+    {
+      "volume": 23,
+      "hook": "First organ-specific whole-genome bisulfite methylome + RNA-seq correlation in plants germinated and grown in space"
+    },
+    {
+      "volume": 23,
+      "hook": "Establishes organ-specific CHG/CHH genic hypermethylation in spaceflight leaves vs. stable genic averages in roots"
+    },
+    {
+      "volume": 23,
+      "hook": "Skipped OSD-214 (mouse bone marrow), OSD-215 (Bacillus subtilis), and OSD-216 (absent)"
+    },
+    {
+      "volume": 23,
+      "hook": "Next sequential plant accession: OSD-218 (APEX03-2 / SpaceX-5 Arabidopsis root-skewing sku5 & developmental timecourse)"
+    },
+    {
+      "volume": 23,
+      "hook": "First organ-specific whole-genome bisulfite methylome + RNA-seq correlation in plants germinated and grown in space"
+    },
+    {
+      "volume": 23,
+      "hook": "Establishes organ-specific CHG/CHH genic hypermethylation in spaceflight leaves vs. stable genic averages in roots"
+    },
+    {
+      "volume": 23,
+      "hook": "Skipped OSD-214 (mouse bone marrow), OSD-215 (Bacillus subtilis), and OSD-216 (absent)"
+    },
+    {
+      "volume": 23,
+      "hook": "Next sequential plant accession: OSD-218 (APEX03-2 / SpaceX-5 Arabidopsis root-skewing sku5 & developmental timecourse)"
+    },
+    {
+      "volume": 24,
+      "hook": "Demonstrates opposite genetic contributions of two root-skewing pathways (SPR1 vs. SKU5) to spaceflight adaptation"
+    },
+    {
+      "volume": 24,
+      "hook": "Establishes developmental-age acclimation (4d peak stress vs. 8d settling) and Col-0 vs. WS ecotype divergence"
+    },
+    {
+      "volume": 24,
+      "hook": "Paired with OSD-217 (11d WS methylome) and Beisel et al. (2019) alternative splicing on SpaceX-5"
+    },
+    {
+      "volume": 24,
+      "hook": "Next sequential plant accessions: OSD-219 / OSD-220 (SJ-10 satellite Arabidopsis seedlings)"
+    },
+    {
+      "volume": 24,
+      "hook": "Demonstrates opposite genetic contributions of two root-skewing pathways (SPR1 vs. SKU5) to spaceflight adaptation"
+    },
+    {
+      "volume": 24,
+      "hook": "Establishes developmental-age acclimation (4d peak stress vs. 8d settling) and Col-0 vs. WS ecotype divergence"
+    },
+    {
+      "volume": 24,
+      "hook": "Paired with OSD-217 (11d WS methylome) and Beisel et al. (2019) alternative splicing on SpaceX-5"
+    },
+    {
+      "volume": 24,
+      "hook": "Next sequential plant accessions: OSD-219 / OSD-220 (SJ-10 satellite Arabidopsis seedlings)"
+    },
+    {
+      "volume": 29,
+      "hook": "OSD-296 (Arabidopsis COP1 / UVR8 broadband UV-B photomorphogenesis & stress microarray, skipping non-plant OSD-282 through OSD-295)"
+    },
+    {
+      "volume": 30,
+      "hook": "OSD-301 (Eruca sativa 'Rocket Science' spaceflight dry-seed RNA-seq, skipping non-plant OSD-297 through OSD-300)"
+    },
+    {
+      "volume": 31,
+      "hook": "OSD-313 (Arabidopsis nucleolin NUC1/NUC2 mutants under red light vs. darkness, skipping non-plant OSD-302 through OSD-312)"
+    },
+    {
+      "volume": 32,
+      "hook": "OSD-314 (Arabidopsis Col-0 in microgravity & 0.34 g Mars gravity under red light photostimulation, EMCS on ISS)"
+    },
+    {
+      "volume": 33,
+      "hook": "OSD-320 (Arabidopsis Ws & atm-1 exposed to Gamma and 1 GeV/n 56Fe HZE radiation at BNL/NSRL, skipping non-plant OSD-315 through OSD-319)"
+    },
+    {
+      "volume": 46,
+      "hook": "OSD-522 (BRIC-LED Arabidopsis thaliana integrative transcriptomics and proteomics profiling in spaceflight)"
+    },
+    {
+      "volume": 47,
+      "hook": "Next chronological plant-omics study in OSDR after OSD-522 (to be indexed in Volume 48)"
+    },
+    {
+      "volume": 48,
+      "hook": "OSD-581 (Lolium multiflorum Italian ryegrass grown on Martian regolith simulant MMS-1)"
+    }
+  ],
+  "skipped_accession_notes": [
+    {
+      "after_volume": 25,
+      "note": "OSD-219"
+    },
+    {
+      "after_volume": 25,
+      "note": "OSD-219"
+    },
+    {
+      "after_volume": 26,
+      "note": "OSD-221"
+    },
+    {
+      "after_volume": 26,
+      "note": "OSD-222"
+    },
+    {
+      "after_volume": 26,
+      "note": "OSD-221"
+    },
+    {
+      "after_volume": 26,
+      "note": "OSD-222"
+    },
+    {
+      "after_volume": 27,
+      "note": "OSD-224 through OSD-250 (non-plant)"
+    },
+    {
+      "after_volume": 27,
+      "note": "OSD-224 through OSD-250 (non-plant)"
+    },
+    {
+      "after_volume": 28,
+      "note": "OSD-252 through OSD-266 (non-vascular/non-plant, incl. OSD-264 ISS Fusarium & OSD-265 ground Chlamydomonas)"
+    },
+    {
+      "after_volume": 28,
+      "note": "OSD-252 through OSD-266 (non-vascular/non-plant, incl. OSD-264 ISS Fusarium & OSD-265 ground Chlamydomonas)"
+    },
+    {
+      "after_volume": 29,
+      "note": "OSD-270 through OSD-280"
+    },
+    {
+      "after_volume": 29,
+      "note": "OSD-270 through OSD-280"
+    },
+    {
+      "after_volume": 30,
+      "note": "OSD-282 through OSD-295"
+    },
+    {
+      "after_volume": 30,
+      "note": "OSD-282 through OSD-295"
+    },
+    {
+      "after_volume": 31,
+      "note": "OSD-297 through OSD-300"
+    },
+    {
+      "after_volume": 31,
+      "note": "OSD-297 through OSD-300"
+    },
+    {
+      "after_volume": 32,
+      "note": "OSD-302 through OSD-312"
+    },
+    {
+      "after_volume": 32,
+      "note": "OSD-302 through OSD-312"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-315"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-316"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-317"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-318"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-319"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-315"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-316"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-317"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-318"
+    },
+    {
+      "after_volume": 34,
+      "note": "OSD-319"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-322"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-323"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-324"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-325"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-326"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-327"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-328"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-329"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-330"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-331"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-332"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-333"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-334"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-335"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-336"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-337"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-338"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-339"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-340"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-341"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-342"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-343"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-344"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-345"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-346"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-347"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-348"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-349"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-350"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-351"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-352"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-353"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-354"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-355"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-356"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-357"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-358"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-359"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-360"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-361"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-362"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-363"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-364"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-365"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-366"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-367"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-368"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-369"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-370"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-371"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-372"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-373"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-374"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-322"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-323"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-324"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-325"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-326"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-327"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-328"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-329"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-330"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-331"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-332"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-333"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-334"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-335"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-336"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-337"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-338"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-339"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-340"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-341"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-342"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-343"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-344"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-345"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-346"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-347"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-348"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-349"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-350"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-351"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-352"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-353"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-354"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-355"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-356"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-357"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-358"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-359"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-360"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-361"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-362"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-363"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-364"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-365"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-366"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-367"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-368"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-369"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-370"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-371"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-372"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-373"
+    },
+    {
+      "after_volume": 36,
+      "note": "OSD-374"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-376"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-377"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-378"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-379"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-380"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-381"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-382"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-383"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-384"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-376"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-377"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-378"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-379"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-380"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-381"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-382"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-383"
+    },
+    {
+      "after_volume": 37,
+      "note": "OSD-384"
+    },
+    {
+      "after_volume": 39,
+      "note": "OSD-387 through OSD-405 (non-plant studies)"
+    },
+    {
+      "after_volume": 39,
+      "note": "OSD-387 through OSD-405 (non-plant studies)"
+    },
+    {
+      "after_volume": 40,
+      "note": "OSD-407 through OSD-411 (non-plant studies)"
+    },
+    {
+      "after_volume": 40,
+      "note": "OSD-407 through OSD-411 (non-plant studies)"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-415"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-416 (companion WGBS dataset for APEX-04-EpEx, integrated via PMC8475764)"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-417"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-418"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-419"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-420"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-421"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-422"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-423"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-424"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-425"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-426"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-415"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-416 (companion WGBS dataset for APEX-04-EpEx, integrated via PMC8475764)"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-417"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-418"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-419"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-420"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-421"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-422"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-423"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-424"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-425"
+    },
+    {
+      "after_volume": 43,
+      "note": "OSD-426"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-428"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-429"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-430"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-431"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-432"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-433"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-434"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-435"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-436"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-428"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-429"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-430"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-431"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-432"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-433"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-434"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-435"
+    },
+    {
+      "after_volume": 44,
+      "note": "OSD-436"
+    },
+    {
+      "after_volume": 45,
+      "note": "OSD-438 to OSD-475 (non-plant/unindexed entries including OSD-455, OSD-457, OSD-471)"
+    },
+    {
+      "after_volume": 45,
+      "note": "OSD-438 to OSD-475 (non-plant/unindexed entries including OSD-455, OSD-457, OSD-471)"
+    },
+    {
+      "after_volume": 46,
+      "note": "OSD-477 through OSD-519 (no indexed plant-omics studies)"
+    },
+    {
+      "after_volume": 46,
+      "note": "OSD-477 through OSD-519 (no indexed plant-omics studies)"
+    },
+    {
+      "after_volume": 47,
+      "note": "OSD-521 (no indexed plant-omics study)"
+    },
+    {
+      "after_volume": 47,
+      "note": "OSD-521 (no indexed plant-omics study)"
+    },
+    {
+      "after_volume": 48,
+      "note": "OSD-523 through OSD-564 (non-plant studies: zebrafish, rodent, human, and microbial biofilms)"
+    },
+    {
+      "after_volume": 48,
+      "note": "OSD-523 through OSD-564 (non-plant studies: zebrafish, rodent, human, and microbial biofilms)"
+    },
+    {
+      "after_volume": 49,
+      "note": "OSD-566 through OSD-580 (non-plant and human multi-omics datasets, including Inspiration4 studies OSD-569 to OSD-575 and OSD-577)"
+    },
+    {
+      "after_volume": 50,
+      "note": "OSD-582 through OSD-593 (non-plant studies, including Drosophila artificial-gravity and rodent missions)"
+    },
+    {
+      "after_volume": 51,
+      "note": "OSD-595 through OSD-614 (non-plant studies, including Drosophila OSD-595/596 and mouse heart OSD-599)"
+    },
+    {
+      "after_volume": 52,
+      "note": "OSD-616 through OSD-623 (non-plant studies)"
+    },
+    {
+      "after_volume": 53,
+      "note": "None (directly follows OSD-624; OSD-626 through OSD-657 contain no plant studies)"
+    },
+    {
+      "after_volume": 54,
+      "note": "OSD-626 through OSD-657 (contain no plant studies)"
+    },
+    {
+      "after_volume": 55,
+      "note": "OSD-659 through OSD-669 (contain no plant studies)"
+    },
+    {
+      "after_volume": 56,
+      "note": "OSD-671 through OSD-677 (contain no plant studies)"
+    },
+    {
+      "after_volume": 57,
+      "note": "OSD-679 through OSD-722 (contain no plant studies)"
+    },
+    {
+      "after_volume": 58,
+      "note": "OSD-724 through OSD-744 (contain no plant studies)"
+    },
+    {
+      "after_volume": 59,
+      "note": "OSD-746 through OSD-749 (contain no plant studies)"
+    },
+    {
+      "after_volume": 60,
+      "note": "OSD-751 through OSD-771 (contain no plant studies)"
+    },
+    {
+      "after_volume": 61,
+      "note": "None"
+    },
+    {
+      "after_volume": 62,
+      "note": "OSD-774 through OSD-779 (contain no plant studies)"
+    },
+    {
+      "after_volume": 63,
+      "note": "OSD-781 through OSD-854 (rodent, human, and cell biology spaceflight and ground-analog datasets)"
+    },
+    {
+      "after_volume": 64,
+      "note": "None (direct chronological follow-up to OSD-855 in the Apollo historical bioassay series)"
+    },
+    {
+      "after_volume": 65,
+      "note": "None (direct chronological continuation of the Apollo historical bioassay and geochemical agronomy series)"
+    },
+    {
+      "after_volume": 66,
+      "note": "None (direct chronological continuation of the Apollo historical bioassay and regolith interaction series)"
+    },
+    {
+      "after_volume": 67,
+      "note": "OSD-884 through OSD-894 (non-plant, microbial, and spaceflight radiation benchmarks)"
+    },
+    {
+      "after_volume": 68,
+      "note": "OSD-896 through OSD-970 (non-plant multi-omics datasets across rodents, microbes, and human cell cultures)"
+    }
+  ],
+  "consistency_flags": []
+}

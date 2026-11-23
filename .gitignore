@@ -1,0 +1,4 @@
+# ASTRO-BOTANICA raw Gemini exports (contain personal account data — never commit)
+docs/astro-botanica/_raw/
+*.html.bak
+.DS_Store

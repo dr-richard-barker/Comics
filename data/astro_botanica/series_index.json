@@ -1,0 +1,3016 @@
+{
+  "series_title": "ASTRO-BOTANICA: ZERO-G ROOTS",
+  "series_aliases": [
+    "Roots in Orbit: The NASA OSDR Plant Chronicles (name used by Gemini from ~Vol 19)"
+  ],
+  "format": "32-page hard sci-fi seinen manga volume per NASA OSDR plant accession",
+  "source": "Gemini showrunner session saved 2026-11-22 (docs/astro-botanica/source/)",
+  "total_volumes": 68,
+  "script_status_counts": {
+    "complete": 3,
+    "partial": 49,
+    "condensed": 16
+  },
+  "next_queued_accession": "SERIES_COMPLETE",
+  "remaining_after_last_volume": [],
+  "unscripted_gaps_before_last_volume": [
+    "OSD-193",
+    "OSD-282",
+    "OSD-329",
+    "OSD-346",
+    "OSD-411",
+    "OSD-416",
+    "OSD-428",
+    "OSD-434",
+    "OSD-436",
+    "OSD-450",
+    "OSD-480",
+    "OSD-496",
+    "OSD-498",
+    "OSD-502",
+    "OSD-508",
+    "OSD-510",
+    "OSD-518",
+    "OSD-519",
+    "OSD-531",
+    "OSD-622",
+    "OSD-655",
+    "OSD-782"
+  ],
+  "live_osdr_reconciled": false,
+  "volumes": [
+    {
+      "volume": 1,
+      "title": "THE SILENT CANOPY, THE SCREAMING ROOT",
+      "accession": "OSD-7",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-7",
+      "osdr_doi": "10.25966/7f77-hw17",
+      "organism": "Arabidopsis thaliana — Wild-Type Wassilewskija (WS) (whole-plant assays) and mixed-plate 60% WS / 40% Col-0 (organ-dissected leaves, hypocotyls, roots); plus GFP reporter lines 35s::GFP, Adh::GFP, and DR5r::GFP (imaging Run 3A).",
+      "hardware_and_conditions": "Advanced Biological Research System (ABRS) with the GFP Imaging System (GIS) (6 vertical 10 cm² solid 0.5x MS phytagel plates; VOC-scrubbed air, 22–24°C [mean 23°C], white light, light cycle: Not Available in OSDR metadata). Flown on Space Shuttle STS-129 (Run 1B), STS-130 (Run 3A), and STS-131 Discovery (Runs 2A & 2B; returned on STS-132 Atlantis). Ground control in identical ABRS inside the Orbital Environmental Simulator (OES) at KSC on a 24–48 hr telemetry delay. Harvested at 12 days (14.5 d",
+      "publication": {
+        "citation": "Paul AL, Zupanska AK, Schultz ER, Ferl RJ. \"Organ-specific remodeling of the Arabidopsis transcriptome in response to spaceflight.\" BMC Plant Biology. 2013;13:112. DOI: 10.1186/1471-2229-13-112 (PMID: 23919896)",
+        "doi": "10.1186/1471-2229-13-112",
+        "pmid": "23919896"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-01-osd-7.md",
+      "source_turn": 9,
+      "qa": {
+        "script_status": "complete",
+        "page_headings": 30,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [],
+        "panels": 57,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Advanced Biological Research System (ABRS)",
+          "GFP Imaging System (GIS)",
+          "Kennedy Space Center Fixation Tube (KFT) with RNAlater",
+          "MELFI Freezer (<-40C)",
+          "Orbital Environmental Simulator (OES)"
+        ],
+        "genotypes": [
+          "35s::GFP (constitutive control)",
+          "Adh::GFP (alcohol dehydrogenase hypoxia reporter)",
+          "Arabidopsis thaliana Col-0 (Columbia-0) WT (60% WS / 40% Col-0 mixed plates)",
+          "Arabidopsis thaliana WS (Wassilewskija) WT",
+          "DR5r::GFP (synthetic 5x AuxRE auxin reporter)"
+        ],
+        "molecular_characters": [
+          "TCH4 (At5g57560)",
+          "DREB2A (At5g05410)",
+          "DDF1 (At1g12610)",
+          "JAZ7 (At2g34600)",
+          "HY5 / RHL41",
+          "WRKY48",
+          "PGP18",
+          "ELIP1 (At3g22840)"
+        ]
+      }
+    },
+    {
+      "volume": 2,
+      "title": "THE LEVITATING ABYSS",
+      "accession": "OSD-8",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-8",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana semi-solid MM2d undifferentiated callus cell cultures (1–2 mm layer on 1% agar MS medium; lacking statoliths).",
+      "hardware_and_conditions": "Ground-based multi-simulator campaign (200 min exposure, 22°C, total darkness)",
+      "publication": {
+        "citation": "Manzano AI, van Loon JJWA, Christianen PCM, Gonzalez-Rubio JM, Medina FJ, Herranz R. \"Gravitational and magnetic field variations synergize to cause subtle variations in the global transcriptional state of Arabidopsis in vitro callus cultures.\" BMC Genomics. 2012;13:105. DOI: 10.1186/1471-2164-13-105 (PMID: 22435851)",
+        "doi": "10.1186/1471-2164-13-105",
+        "pmid": "22435851"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-02-osd-8.md",
+      "source_turn": 11,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "26-28"
+        ],
+        "panels": 46,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Agilent Arabidopsis Oligo Microarrays v4",
+          "HFML Water-Cooled Duplex-Bitter Magnet (10.1T–16.5T)",
+          "Large Diameter Centrifuge (2g-LDC, ESA-ESTEC)",
+          "Liquid Nitrogen Flash-Freeze (<2 min)",
+          "Random Positioning Machine (μg-RPM, ESA-ESTEC)"
+        ],
+        "genotypes": [
+          "Arabidopsis thaliana MM2d undifferentiated callus culture (statolithless)"
+        ],
+        "molecular_characters": [
+          "Thylakoid-related genes",
+          "Transferases & Peroxidases",
+          "Cell Wall / Cytoskeleton / Encapsulating Structures",
+          "Abiotic Stress & Stimulus Genes (77 DEGs in RPM)",
+          "GEDI 20x16 Mosaic (17,419 probesets)"
+        ]
+      }
+    },
+    {
+      "volume": 3,
+      "title": "THE DENATURED PROTEOME",
+      "accession": "OSD-16",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-16",
+      "osdr_doi": "10.25966/scd9-gb35",
+      "organism": "Arabidopsis thaliana — GFP reporter lines (Adh::GFP, DR5r::GFP, 35s::GFP) harvested from Run 1B (12-day-old seedlings; Roots n = 3 flight vs. n = 3 ground, Leaves n = 1 pooled flight vs. n = 1 pooled ground).",
+      "hardware_and_conditions": "Advanced Biological Research System (ABRS) with GFP Imaging System (GIS) on the ISS (STS-129 launch Nov 16, 2009; Run 1B active growth 12/3/2009–12/15/2009; returned on STS-130 Feb 8, 2010), 10 cm² solid media plates, VOC-scrubbed air, light cycle: Not Available in OSDR metadata. Ground control in identical ABRS inside the Orbital Environmental Simulator (OES) at KSC. Preserved on orbit in RNAlater-filled KFTs and stored at -80°C. Analyzed via iTRAQ 8-plex (113–115 GC roots, 116–118 FLT roots, 1",
+      "publication": {
+        "citation": "Ferl RJ, Koh J, Denison F, Paul AL. \"Spaceflight induces specific alterations in the proteomes of Arabidopsis.\" Astrobiology. 2015;15(1):32–56. DOI: 10.1089/ast.2014.1210 (PMID: 25517942)",
+        "doi": "10.1089/ast.2014.1210",
+        "pmid": "25517942"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-03-osd-16.md",
+      "source_turn": 13,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "26-28"
+        ],
+        "panels": 39,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "LTQ Orbitrap XL MS/MS + Eksigent nano-LC AS2",
+          "RNAlater Protein Extraction Protocol (liquid N2 mortar + 0.1% Triton-X100)",
+          "iTRAQ 8-plex Mass Tagging (Tags 113–121)"
+        ],
+        "genotypes": [
+          "Arabidopsis thaliana Run 1B pooled GFP lines (Adh::GFP, DR5r::GFP, 35s::GFP)"
+        ],
+        "molecular_characters": [
+          "Leaf Ribosome & Translation Corps (200 up in leaves)",
+          "Leaf Transport & Precursor Energy Proteins (56 down in leaves)",
+          "Root Oxidative Stress & Cofactor/Lipid Corps (237 up in roots)",
+          "Root Cell Structure Proteins (121 down in roots)",
+          "21 Organ-Opposite Proteins & 34 Concordant mRNA-Protein Pairs"
+        ]
+      }
+    },
+    {
+      "volume": 4,
+      "title": "THE DARK VAULT & THE HEAT SHOCK FURNACE",
+      "accession": "OSD-17",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-17",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana Wild-Type cultivar Columbia (Col-0) — etiolated seedlings (~75 seeds/plate, n = 6) vs. undifferentiated tissue culture cells (~1 g callus/plate, n = 6 analyzed).",
+      "hardware_and_conditions": "BRIC-LED canisters (BRIC A, BRIC B, BRIC G) with Petri Dish Fixation Units (PDFUs) (60 mm Petri plates, 6.7 mL / ≤ 5 mm MS agar) and HOBO data loggers (21.7–24.8°C). Launched on Space Shuttle Discovery (STS-131, April 5, 2010) for 12 days, 21 hours on orbit. Hardware Quirk: Flown as a nonpowered middeck payload, so the LEDs were completely OFF—total darkness. Ground Control in identical BRIC-PDFUs inside the KSC OES on a 24-hour delay. Fixed in-orbit on Day 12 via RNAlater injection; assayed by ",
+      "publication": {
+        "citation": "Paul AL, Zupanska AK, Ostrow DT, Zhang Y, Sun Y, Li JL, Shanker S, Farmerie WG, Amalfitano CE, Ferl RJ. \"Spaceflight transcriptomes: unique responses to a novel environment.\" Astrobiology. 2012;12(1):40–56. DOI: 10.1089/ast.2011.0696 (PMID: 22221117)",
+        "doi": "10.1089/ast.2011.0696",
+        "pmid": "22221117"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-04-osd-17.md",
+      "source_turn": 15,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 23,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "21-24",
+          "25-30"
+        ],
+        "panels": 35,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "BRIC-LED Canisters (flown unpowered / dark)",
+          "HOBO Temperature Data Loggers",
+          "Petri Dish Fixation Units (PDFUs, 60mm plates, 6.7mL MS agar)",
+          "SOLiD 4 SAGE Sequencing"
+        ],
+        "genotypes": [
+          "Arabidopsis thaliana Col-0 etiolated seedlings",
+          "Arabidopsis thaliana Col-0 undifferentiated tissue culture cells"
+        ],
+        "molecular_characters": [
+          "ATHSFA2 (At2g26150)",
+          "HSP70 / ATHSP101 / ATHSP90.1 / HSP17.6A",
+          "LTP6 (At3g08770) & WRKY71 (At1g29860)",
+          "MT3 (At3g15353)",
+          "SKB1 (At4g31120) & XI-J myosin (At3g58160)"
+        ]
+      }
+    },
+    {
+      "volume": 5,
+      "title": "The Epsomite Sieve",
+      "accession": "OSD-22",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-22",
+      "osdr_doi": "10.25966/yr5e-ye67",
+      "organism": "Arabidopsis thaliana — Col-0 (Wild Type) and cax1-1 (vacuolar Ca2+/H+ antiporter knockout, At2g38170) for transcriptomics; Col-0, Ws, mrs2-10 (At1g80900 knockout), sel1-10 (AtSULTR1;2 knockout), cax1-1, and cax1/cax3 for 4-week soil growth assays.",
+      "hardware_and_conditions": "Ground Mars-Regolith Simulation (Kennedy Space Center / University of Florida).",
+      "publication": {
+        "citation": "Visscher AM, Paul AL, Kirst M, Guy CL, Schuerger AC, Ferl RJ (2010). Growth Performance and Root Transcriptome Remodeling of Arabidopsis in Response to Mars-Like Levels of Magnesium Sulfate. PLoS ONE 5(8): e12348. (DOI: 10.1371/journal.pone.0012348, PMID: 20808807, PMC2925951)",
+        "doi": "10.1371/journal.pone.0012348",
+        "pmid": "20808807"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-05-osd-22.md",
+      "source_turn": 17,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 26,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "25-30"
+        ],
+        "panels": 44,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "2.6 L Opaque-Wrapped Hydroponic Tanks with 18-hole Rockwool (Grodan) Plug Lids & 3W Airstones",
+          "Liquid Nitrogen Flash-Freeze Dewar & Agilent 4x44k Arabidopsis Microarray",
+          "Mars-Regolith Epsomite (MgSO4·7H2O) Soil Assay Trays (0–100 mM)"
+        ],
+        "genotypes": [
+          "Col-0 (Hydroponic & Soil Wild Type)",
+          "Ws (Soil Wild Type)",
+          "cax1-1 (Tonoplast Ca2+/H+ antiporter knockout; +89%/+149% biomass at 80/100 mM MgSO4)",
+          "cax1/cax3 (Double knockout; slow baseline growth)",
+          "mrs2-10 (AtMRS2-10 plasma-membrane Mg2+ transporter KO; no tolerance gain)",
+          "sel1-10 (AtSULTR1;2 sulfate transporter KO; -80% sulfate uptake, no tolerance gain)"
+        ],
+        "molecular_characters": [
+          "CAX1 (At2g38170)",
+          "MHX1 (At2g47600)",
+          "SULTR3;1 / SULTR3;4 / SULTR4;1",
+          "NCED (At1g78390) & ABRE-CE",
+          "EXP12 (At3g15370) / EXP17 (At4g01630)"
+        ]
+      }
+    },
+    {
+      "volume": 6,
+      "title": "Four Flags in the Dark Vault",
+      "accession": "OSD-37",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-37",
+      "osdr_doi": "10.26030/zmwr-qf48",
+      "organism": "Arabidopsis thaliana — four natural ecotypes: Col-0 (Columbia), Ws-2 (Wassilewskija), Ler-0 (Landsberg erecta), and Cvi-0 (Cape Verde Islands).",
+      "hardware_and_conditions": "BRIC-19 (Biological Research in Canisters, unpowered, continuous 24 h darkness), 60 mm Petri dishes inside PDFUs (5 PDFUs + 1 HOBO data-logger per BRIC; 4 BRICs). 64 seeds/plate on 15 mL 1/2-strength Epstein's medium + 1% Phytagel + 10 mM sucrose (pH 5.7), pre-irradiated 12 h (70 μmol m-2 s-1 white fluorescent, 22°C), chilled 4°C in a Double Cold Bag (150 h total cold hold through launch on SpaceX CRS-4, Sep 21 – Oct 25, 2014). Grown 8 days at ISS ambient (~24°C); ground controls run in ISSES (4",
+      "publication": {
+        "citation": "Choi WG, Barker RJ, Kim SH, Swanson SJ, Gilroy S (2019). Variation in the transcriptome of different ecotypes of Arabidopsis thaliana reveals signatures of oxidative stress in plant responses to spaceflight. American Journal of Botany 106(1): 123–136. (DOI: 10.1002/ajb2.1223, PMID: 30644539, PubMed)",
+        "doi": "10.1002/ajb2.1223",
+        "pmid": "30644539"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-06-osd-37.md",
+      "source_turn": 19,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 22,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "20-24",
+          "25-30"
+        ],
+        "panels": 34,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "BRIC-19 (4 canisters, 5 PDFUs + 1 HOBO logger each, unpowered 24 h darkness)",
+          "Double Cold Bag (4C hold for 150 h pre-germination)",
+          "ISSES (ISS Environmental Simulator at KSC, 48 h delayed ground control)",
+          "SpaceX CRS-4 Dragon & ISS MELFI (-80C)"
+        ],
+        "genotypes": [
+          "Col-0 (Columbia Wild Type)",
+          "Cvi-0 (Cape Verde Islands Wild Type)",
+          "Ler-0 (Landsberg erecta; noted as Ler-2 in description text)",
+          "Ws-2 (Wassilewskija Wild Type)"
+        ],
+        "molecular_characters": [
+          "HOT1 / HSP101 (AT1G74310)",
+          "PRX39 (AT4G11290)",
+          "COR78 (AT5G52310)",
+          "ABS4 (AT1G58340) / AAP2 (AT5G09220) / MAGL4 (AT1G73480)"
+        ]
+      }
+    },
+    {
+      "volume": 7,
+      "title": "The Uncoupled Proteome",
+      "accession": "OSD-38",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-38",
+      "osdr_doi": "10.26030/p03c-xa96",
+      "organism": "Arabidopsis thaliana Col-0 (Columbia Wild Type, ABRC).",
+      "hardware_and_conditions": "BRIC-20 (4 canisters, 22 60 mm Petri plates in PDFUs, 800–900 seeds/plate on 0.5x MS + 1% sucrose + 1% agar). Cold-stratified 16 h, light-synchronized 1–2 h white light, held 4 days at 4°C, launched on SpaceX CRS-5 (Jan 10 – Feb 11, 2015), germinated and grown 76 hours (~3 days) in continuous 24 h darkness at 22°C. Ground controls included KSC BRICs, Ohio University foil-wrapped containers, and a dedicated RNAlater vs. Liquid Nitrogen (LN2\\text{LN}2LN2​) preservation control (n = 3 pools of 5 pl",
+      "publication": {
+        "citation": "Kruse CPS, Meyers AD, Basu P, Hutchinson S, Luesse DR, Wyatt SE (2020). Spaceflight induces novel regulatory responses in Arabidopsis seedling as revealed by combined proteomic and transcriptomic analyses. BMC Plant Biology 20: 237 (DOI: 10.1186/s12870-020-02392-6, PMID: 32460700, PMC7251690)",
+        "doi": "10.1186/s12870-020-02392-6",
+        "pmid": "32460700"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-07-osd-38.md",
+      "source_turn": 21,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 19,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "17-24",
+          "25-30"
+        ],
+        "panels": 21,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "BRIC-20 (4 canisters, 22 plates in PDFUs, 800–900 seeds/plate, 76 h dark growth)",
+          "LTQ-Orbitrap Velos Pro (iTRAQ 8-plex soluble + 100,000g membrane proteomics)",
+          "RNAlater vs. LN2 & Foil-Container Ground Controls",
+          "SpaceX CRS-5 Dragon"
+        ],
+        "genotypes": [
+          "Col-0 (Etiolated 76 h seedlings)"
+        ],
+        "molecular_characters": [
+          "TIP3;2",
+          "GRP7 / GRP8",
+          "VILLIN 1 (AT2G29890.2 / .3)",
+          "dPGM (AT5G04120)",
+          "ATPIN3 / AtLAZY1 & TUA4/TUA6/TUB1/TUB5"
+        ]
+      }
+    },
+    {
+      "volume": 8,
+      "title": "The Ruptured Tip",
+      "accession": "OSD-44",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-44",
+      "osdr_doi": "10.26030/g3aa-6v52",
+      "organism": "Arabidopsis thaliana — Col-0 Wild Type (GW ground, SW spaceflight) and act2-3 vegetative actin-2 mutant (GA ground, SA spaceflight).",
+      "hardware_and_conditions": "BRIC-16 (Biological Research in Canisters, unpowered complete darkness) aboard Space Shuttle Discovery (STS-131, Apr 5 – Apr 20, 2010). 150–200 seeds per 60 mm Petri dish inside light-tight BRIC-PDFU canisters (5 PDFUs/BRIC, foam-padded middeck locker); grown 14 days. Space radiation exposure (12.88 living days): 3.2 mGy mean (2.62–4.42 mGy, TLDs DLOC1–3). Ground controls (GW, GA) housed in the Orbital Environmental Simulator (OES) at KSC SLSL.",
+      "publication": {
+        "citation": "Kwon T, Sparks JA, Nakashima J, Allen SN, Tang Y, Blancaflor E (2015). Transcriptional response of Arabidopsis seedlings during spaceflight reveals peroxidase and cell wall remodeling genes associated with root hair development. American Journal of Botany 102(1): 21–35. (DOI: 10.3732/ajb.1400458, PMID: 25587145, PubMed)",
+        "doi": "10.3732/ajb.1400458",
+        "pmid": "25587145"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-08-osd-44.md",
+      "source_turn": 23,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 14,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "9-11",
+          "14-24",
+          "25-30"
+        ],
+        "panels": 14,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Affymetrix Arabidopsis ATH1 Genome Array",
+          "BRIC-16 (STS-131 Space Shuttle Discovery middeck locker, 14 d complete darkness, 3.2 mGy TLD dose)"
+        ],
+        "genotypes": [
+          "Col-0 (Wild Type, SW / GW)",
+          "act2-3 (Vegetative ACTIN2 mutant; left-handed root coiling & wall disruption in 0g)"
+        ],
+        "molecular_characters": [
+          "PRX44 / PRX57",
+          "ACTIN2 (act2-3)"
+        ]
+      }
+    },
+    {
+      "volume": 9,
+      "title": "The Dual-Axis Pendulum",
+      "accession": "OSD-45",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-45",
+      "osdr_doi": "10.26030/rdt0-yx94",
+      "organism": "Arabidopsis thaliana Col-0 (Columbia), Plant Roots (boyes developmental stage).",
+      "hardware_and_conditions": "Ground Simulated Microgravity — Horizontal Clinostat (μg) vs. Vertical Clinostat (1G control). Seedlings grown 4, 8, and 12 days on solid Murashige and Skoog (MS10) medium with 10% sucrose, 100% hygrometry, 25 ± 2°C, 70 μE m-2 s-1 light, 16 h photoperiod.",
+      "publication": {
+        "citation": "None linked in OSDR (Direct GEO/ArrayExpress submission E-GEOD-39631 by Soubigou-Taconnat L, Balzergue S, Carnero-Diaz E, Martin-Magniette ML — INRA, France, 2012).",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-09-osd-45.md",
+      "source_turn": 25,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 9,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "3-8",
+          "9-11",
+          "14-24",
+          "25-30"
+        ],
+        "panels": 5,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "2D Horizontal vs. Vertical Clinostat (MS10 + 10% sucrose, 100% hygrometry, 16 h light)",
+          "CATMA Dual-Channel Microarray (A-GEOD-9553, 6 Cy3/Cy5 dye-swaps, GenePix Pro 3.0)"
+        ],
+        "genotypes": [
+          "Col-0 (Root tissue, 4d / 8d / 12d)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 10,
+      "title": "Vol. 10 — The Iron Track and the False Dawn",
+      "accession": "OSD-46",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-46",
+      "osdr_doi": "10.26030/gvz9-3b88",
+      "organism": "Arabidopsis thaliana ecotype Wassilewskija (Ws) Wild Type (WT) and atm-1 (T-DNA insertion mutant defective in the DSB-sensing protein kinase ATM), 5-day-old seedlings (6 days old by the 24 h harvest).",
+      "hardware_and_conditions": "Seeds (20% bleach-sterilized) plated on 1 × MS Phytoagar, shipped on ice to BNL (4°C), then grown vertically 5 days at 21°C under 16 h cool white light in the BNL Controlled Environment Facility.",
+      "publication": {
+        "citation": "Missirian V, Conklin PA, Culligan KM, Huefner ND, Britt AB (2014). High atomic weight, high-energy radiation (HZE) induces transcriptional responses shared with conventional stresses in addition to a core \"DSB\" response specific to clastogenic treatments. Frontiers in Plant Science 5:364 (PMC4117989 | PubMed 25136344 | DOI: 10.3389/fpls.2014.00364).",
+        "doi": "10.3389/fpls.2014.00364",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-10-osd-46.md",
+      "source_turn": 27,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 23,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "17-22",
+          "25-28"
+        ],
+        "panels": 44,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Affymetrix ATH1 Genome Array & Fluidics Station 450 / GeneChip Scanner 3000",
+          "BNL Controlled Environment Radiation Facility (100 Gy Gamma, 7 Gy/min, 0.2 keV/μ)",
+          "National Space Radiation Laboratory / NSRL (30 Gy 1 GeV/n 56Fe, 7 Gy/min, 170 keV/μ)"
+        ],
+        "genotypes": [
+          "Arabidopsis thaliana Ws (Wild Type)",
+          "atm-1 (T-DNA insertion mutant defective in DSB-sensing kinase ATM)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 11,
+      "title": "Vol. 11 — The Single-Cell Compass",
+      "accession": "OSD-57",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-57",
+      "osdr_doi": "10.25966/b9jj-pp51",
+      "organism": "Ceratopteris richardii (aquatic homosporous fern, Parkeriaceae), cultivar Hn-n, germinating single-celled spores.",
+      "hardware_and_conditions": "Surface-sterilized spores soaked in sterile water in the dark at 29°C for 5–7 days to synchronize germination, then exposed to continuous light for 10 hours on 1/2-strength MS basal salts (0.5% agar) in 100 × 15 mm plastic Petri dishes.",
+      "publication": {
+        "citation": "Bushart TJ, Cannon AE, Ul Haque A, San Miguel P, Mostajeran K, Clark GB, Porterfield DM, Roux SJ (2013). RNA-seq analysis identifies potential modulators of gravity response in spores of Ceratopteris (Parkeriaceae): evidence for modulation by calcium pumps and apyrase activity. American Journal of Botany 100(1):161–174 (PubMed 23048014 | DOI: 10.3732/ajb.1200292, Epub 9-Oct-2012).",
+        "doi": "10.3732/ajb.1200292",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-11-osd-57.md",
+      "source_turn": 29,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 12,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "13-18",
+          "19-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 9,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "100 x 15 mm Petri dishes (1/2 MS, 0.5% agar, continuous light 10 h)",
+          "Retsch MM300 bead mill tissue homogenizer",
+          "Roche 454 GS FLX Titanium Series pyrosequencer (Newbler de novo assembly)"
+        ],
+        "genotypes": [
+          "Ceratopteris richardii cultivar Hn-n (single-celled fern spores)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 12,
+      "title": "Vol. 12 — The Over-Watered Greenhouse",
+      "accession": "OSD-59",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-59",
+      "osdr_doi": "10.26030/4w3q-hk88",
+      "organism": "Brassica rapa var. nipposinica (Mizuna), leaf tissue (27 days cultivation).",
+      "hardware_and_conditions": "Cultivated in the Lada greenhouse aboard the Zvezda module of the International Space Station (ISS) under 24 h cool-white fluorescent light (125–250 μmol m^-2 s^-1 PAR).",
+      "publication": {
+        "citation": "Sugimoto M, Oono Y, Gusev O, Matsumoto T, Yazawa T, Levinskikh MA, Sychev VN, Bingham G, Wheeler R, Hummerick M (2014). Genome-wide expression analysis of reactive oxygen species gene network in Mizuna plants grown in long-term spaceflight. BMC Plant Biology 14:4 (PubMed 24393219 | DOI: 10.1186/1471-2229-14-4).",
+        "doi": "10.1186/1471-2229-14-4",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-12-osd-59.md",
+      "source_turn": 31,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 12,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-10",
+          "13-18",
+          "19-22",
+          "23-25",
+          "26-30"
+        ],
+        "panels": 9,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Illumina Genome Analyzer IIx (100-bp paired-end RNA-Seq)",
+          "Lada Greenhouse (ISS Zvezda module, 24 h fluorescent light, arcillite + Osmocote/Nutricote)",
+          "MELFI (-80 C ISS freezer) & GLACIER (< -20 C Shuttle cold stowage)"
+        ],
+        "genotypes": [
+          "Brassica rapa var. nipposinica (Mizuna)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 13,
+      "title": "Vol. 13 — The Dispensable Alarm",
+      "accession": "OSD-120",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-120",
+      "osdr_doi": "10.26030/0w7t-3128",
+      "organism": "Arabidopsis thaliana root tips (2 mm light-grown / 1 mm dark-grown) of Col-0, WS (which naturally lacks PHYD transcription), and Col-0 phyD (SALK027956C).",
+      "hardware_and_conditions": "18 Phytagel Petri plates (6/genotype) wrapped in double-layer Duvetyne Black-Out cloth at 4°C (6 days pre-launch, 12 days orbital cold stowage), then mounted directly on the Destiny US Lab wall (open ISS cabin air, no enclosed growth chamber).",
+      "publication": {
+        "citation": "Paul A-L, Sng NJ, Zupanska AK, Krishnamurthy A, Schultz ER, Ferl RJ (2017). Genetic dissection of the Arabidopsis spaceflight transcriptome: Are some responses dispensable for the physiological adaptation of plants to spaceflight? PLOS ONE 12(6): e0180186 (PLOS ONE | PubMed 28662188 | DOI: 10.1371/journal.pone.0180186).",
+        "doi": "10.1371/journal.pone.0180186",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-13-osd-120.md",
+      "source_turn": 33,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 11,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "3-10",
+          "13-18",
+          "19-22",
+          "23-25",
+          "26-30"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Duvetyne Black-Out cloth (double-layer dormancy & dark-growth wrap)",
+          "ISS Environment Simulator (ISSES) at KSC (24h-delayed telemetry replay)",
+          "Illumina NextSeq 500 + SMART-Seq v4 / Nextera ultra-low-input RNA-Seq (5 ng RNA)",
+          "Open ISS Destiny US Lab cabin wall mount (ambient air, 4-6 umol/m2/s dim light)",
+          "iPad3 (iOS 5.1.1) Light Meter HD app (improvised orbital & ISSES light calibration)"
+        ],
+        "genotypes": [
+          "Col-0 (297 Light DEGs / 224 Dark DEGs)",
+          "Col-0 phyD (SALK_027956C; 130 Light DEGs / 131 Dark DEGs)",
+          "WS (natural PHYD deletion; 71 Light DEGs / 218 Dark DEGs)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 14,
+      "title": "The Three Canisters and the Zero-Waste Wall",
+      "accession": "OSD-121",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-121",
+      "osdr_doi": "10.26030/23fe-sa48",
+      "organism": "Arabidopsis thaliana Landsberg erecta (Ler-0, J. Z. Kiss lab line; 40 seeds/plate in 1 central row, wet-sown on 1.2% w/v agar, 1 mM MES pH 5.5, 1% w/v sucrose, 1/2× MS salts; 1 d dark stratification at 24°C)",
+      "hardware_and_conditions": "BRIC-PDFU (Canisters E, F, and H PDFUs 3–5; 13 mL RNAlater reservoir/PDFU) vs. Orbital Environmental Simulator (OES) at KSC SLSL on 24-h delay (microarray GC replicates H-F2/F3/F4 sourced from Pre-flight Verification Test [PVT]); 309 h (~12.88 d) continuous darkness at 24°C; TLD middeck dosimetry (DLOC1–3): 3.22 mGy mean (0.25 mGy/day; range 2.62–4.42 mGy)",
+      "publication": {
+        "citation": "Johnson et al. (2017), Am J Bot 104(8):1219–1231 (PMID: 28827451 | DOI: 10.3732/ajb.1700079) — Comparative transcriptomics indicate changes in cell wall organization and stress response in seedlings during spaceflight",
+        "doi": "10.3732/ajb.1700079",
+        "pmid": "28827451"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-14-osd-121.md",
+      "source_turn": 35,
+      "qa": {
+        "script_status": "complete",
+        "page_headings": 33,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [],
+        "panels": 0,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Affymetrix ATH1 121501 GeneChip + Ovation Pico WTA",
+          "BRIC-PDFU (Biological Research in Canisters - Petri Dish Fixation Unit, Canisters E/F/H)",
+          "CCRC 155-mAb Cell Wall Glycome ELISA (4 M KOH shredder-column zero-waste extraction)",
+          "Orbital Environmental Simulator (OES, KSC SLSL, 24-h delayed ground control)",
+          "TLD passive middeck dosimeters (DLOC1, DLOC2, DLOC3)"
+        ],
+        "genotypes": [
+          "Ler-0 (J. Z. Kiss lab line)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 15,
+      "title": "The Thin-Air Dissection",
+      "accession": "OSD-134",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-134",
+      "osdr_doi": "10.26030/wknj-pf59",
+      "organism": "Arabidopsis thaliana Wassilewskija (WS), 10-day-old seedlings (12 plants/plate, 10 plates/chamber, 3 chambers/treatment) grown vertically on 0.5× MS media, 0.45% Phytagel, 2.5 ppm benomyl (pH 5.75), 24 h continuous light (70–80 µmol m⁻² s⁻¹), 22–25°C at 97 kPa ambient before 24 h atmospheric shift",
+      "hardware_and_conditions": "97 kPa (pO₂ = 21 kPa, Guelph ambient control)",
+      "publication": {
+        "citation": "Zhou et al. (2017), Front Plant Sci 8:528 (PMID: 28443120 | DOI: 10.3389/fpls.2017.00528) — Dissecting Low Atmospheric Pressure Stress: Transcriptome Responses to the Components of Hypobaria in Arabidopsis",
+        "doi": "10.3389/fpls.2017.00528",
+        "pmid": "28443120"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-15-osd-134.md",
+      "source_turn": 37,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 30,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "27-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Affymetrix 3' IVT plus + ATH1 121501 GeneChip",
+          "Applied Biosystems Prism 7700 Taqman qRT-PCR (UBQ11 control)",
+          "Low Pressure Growth Chambers (LPGC, 245 L, 0.45 x 1.6 m, CESRF Univ. of Guelph)"
+        ],
+        "genotypes": [
+          "Wassilewskija (WS), 10-day-old roots & shoots"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 16,
+      "title": "Five Days Old in Thin Air",
+      "accession": "OSD-136",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-136",
+      "osdr_doi": "10.26030/byyr-sh46",
+      "organism": "Arabidopsis thaliana Wassilewskija (WS / Ws-0), 5-day-old seedlings (12 plants/plate, 10 plates/chamber, 3 chambers/treatment) grown vertically on 0.5× MS media, 0.45% Phytagel, 2.5 ppm benomyl (pH 5.75), 24 h continuous light, 22–25°C at 97 kPa before 24 h transfer",
+      "hardware_and_conditions": "97 kPa (97,000 Pa Guelph ambient control, pO₂ = 21 kPa)",
+      "publication": {
+        "citation": "Zhou et al. (2017), Front Plant Sci 8:528 (PMID: 28443120 | DOI: 10.3389/fpls.2017.00528) — Dissecting Low Atmospheric Pressure Stress: Transcriptome Responses to the Components of Hypobaria in Arabidopsis",
+        "doi": "10.3389/fpls.2017.00528",
+        "pmid": "28443120"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-16-osd-136.md",
+      "source_turn": 39,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 19,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "6-8",
+          "16-18",
+          "19-22",
+          "23-25",
+          "26-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [
+          "Wassilewskija (WS / Ws-0), 5-day-old Plant Roots"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 17,
+      "title": "The Accelerated Clock",
+      "accession": "OSD-144",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-144",
+      "osdr_doi": "10.26030/x0c3-9p86",
+      "organism": "Arabidopsis thaliana Landsberg erecta (Ler) MM2D cell suspension culture (MSS medium: MS + 3% w/v sucrose, 0.5 mg/L NAA, 0.05 mg/L kinetin, pH 5.8, 27°C darkness; synchronized at G1/S via aphidicolin block/release T0; immobilized in 1% w/v low-melting agarose)",
+      "hardware_and_conditions": "G2/M synchronized: 7 h RPM vs. 10 h 1 g control (T7/T10, > 2/3 G2/M enrichment)",
+      "publication": {
+        "citation": "Kamal et al. (2019), Genomics 111(6):1956–1965 (PMID: 30641127 | DOI: 10.1016/j.ygeno.2019.01.007) — Differential transcriptional profile through cell cycle progression in Arabidopsis cultures under simulated microgravity",
+        "doi": "10.1016/j.ygeno.2019.01.007",
+        "pmid": "30641127"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-17-osd-144.md",
+      "source_turn": 41,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 20,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "8-10",
+          "16-18",
+          "19-22",
+          "23-25",
+          "26-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Aphidicolin G1/S cell-cycle synchronization + 1% agarose immobilization",
+          "NimbleGen two-color microarray (A-GEOD-17404, Cy3/Cy5 dye-swap)",
+          "Random Positioning Machine (RPM, Airbus Defense and Space, Leiden)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 18,
+      "title": "The Hidden Logic of ARG1",
+      "accession": "OSD-147",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-147",
+      "osdr_doi": "10.26030/npp5-bt42",
+      "organism": "Arabidopsis thaliana Columbia-0 (Col-0) hypocotyl-derived undifferentiated callus cell cultures (~1 g cells/plate on 6.5 mL nutrient agar with 2,4-D, 3% sucrose, 0.8% agar): Wild Type (WT) vs. ARG1 KO (SALK024542C / arg1-3 T-DNA insertion null allele)",
+      "hardware_and_conditions": "BRIC-LED (LEDs disabled, continuous dark) Canisters A & B (PDFU 60 mm plates + HOBO temperature logger) vs. KSC ISSES (International Space Station Environmental Simulator) ground control on a 48 h delay",
+      "publication": {
+        "citation": "Zupanska et al. (2017), Astrobiology 17(11):1077–1111 (PMID: 29088549 | DOI: 10.1089/ast.2016.1538) — ARG1 Functions in the Physiological Adaptation of Undifferentiated Plant Cells to Spaceflight (Companion HSFA2 KO study: OSD-205, PMID: 30658467)",
+        "doi": "10.1089/ast.2016.1538",
+        "pmid": "29088549"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-18-osd-147.md",
+      "source_turn": 43,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 20,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "8-10",
+          "15-17",
+          "23-25",
+          "26-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "BRIC-LED (Biological Research in Canisters - LED, operated in dark mode)",
+          "ISSES (International Space Station Environmental Simulator, KSC, 48-h delay)",
+          "MELFI (-80C ISS freezer post-RNAlater fixation)"
+        ],
+        "genotypes": [
+          "ARG1 KO (SALK_024542C / arg1-3)",
+          "Col-0 WT (hypocotyl callus)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 19,
+      "title": "The Unfolded Citadel: HSFA2 & the Non-Thermal Stress Logic of Undifferentiated Cells",
+      "accession": "OSD-205",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-205",
+      "osdr_doi": "10.26030/bjyc-pj66",
+      "organism": "Arabidopsis thaliana (Col-0) hypocotyl-derived undifferentiated callus/cell cultures (14 d old at fixation): Wild Type (WT, n = 5 FLT, n = 5 GC) vs. HSFA2 KO T-DNA insertion mutant (SALK008978C, n = 3 FLT, n = 3 GC; n = 16 total)",
+      "hardware_and_conditions": "BRIC-PDFU (BRIC-LED with LEDs disabled, 24 h continuous dark) in 60 mm Petri plates on 6.5 mL MS + 3% sucrose + 2,4-D + 0.8% agar; ISS-US Laboratory (10 d orbital growth) vs. OES / ISSES ground control chamber at KSC SLSL (24–48 h telemetry-delayed replication)",
+      "publication": {
+        "citation": "Zupanska, A.K., LeFrois, C., Ferl, R.J., & Paul, A.-L. (2019). HSFA2 Functions in the Physiological Adaptation of Undifferentiated Plant Cells to Spaceflight. Int. J. Mol. Sci. 20(2):390. PMC6359015 | PMID: 30658467 | DOI: 10.3390/ijms20020390",
+        "doi": "10.3390/ijms20020390",
+        "pmid": "30658467"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-19-osd-205.md",
+      "source_turn": 45,
+      "qa": {
+        "script_status": "complete",
+        "page_headings": 31,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [],
+        "panels": 0,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 20,
+      "title": "Two Millimeters of Destiny: Zone 1, Zone 2 & the Dual-Lens Root Apex",
+      "accession": "OSD-208",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-208",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Col-0) 8-day-old seedlings (n = 3 biological replicates per root zone, harvested from a single vertically oriented plate)",
+      "hardware_and_conditions": "Vertically oriented Petri plates with 0.5× MS salts, 0.5 g MES hydrate, 5.0 g sucrose, 1.0 mL Gamborg vitamins (pH 5.72), 0.5% (w/v) Phytagel; 19 °C, continuous light (80–100 µmol s^-2 m^-2) for 8 d",
+      "publication": {
+        "citation": "Krishnamurthy, A., Ferl, R.J., & Paul, A.-L. (2018). Comparing RNA-Seq and microarray gene expression data in two zones of the Arabidopsis root apex relevant to spaceflight. Applications in Plant Sciences 6(11):e01197. PMC6240453 | PMID: 30473943 | DOI: 10.1002/aps3.1197",
+        "doi": "10.1002/aps3.1197",
+        "pmid": "30473943"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-20-osd-208.md",
+      "source_turn": 47,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "28-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Illumina NextSeq 500 (SMART-Seq V4 + Nextera 5 ng ultra-low-input RNA-Seq)",
+          "Olympus SZX12 dissecting microscope + thin-ruled grid (RNAlater-submerged microdissection)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 21,
+      "title": "Seeds Under the Polar Sky",
+      "accession": "OSD-210",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-210",
+      "osdr_doi": "10.26030/cxya-dg98",
+      "organism": "Arabidopsis thaliana ecotype Columbia-0 (Col-0, ABRC seed stock CS70000).",
+      "hardware_and_conditions": "Antarctica (ANT): 1U CubeSat-spec (10 cm × 10 cm × 10 cm, ≤ 1.33 kg) VeroClear 3D-printed containment vessel (Objet Eden / PolyJet, 1 atm internal pressure) holding 4 modified 1536-well seed trays (576 bins per tray, ~250 seeds/bin; 580,000 seeds total in abstract/OSDR, ~500,000 in methods text) flanked by 12 CR-39 Solid-State Nuclear Track Detectors (SSNTDs).",
+      "publication": {
+        "citation": "Califar, B., Tucker, R., Cromie, J., Haveman (Sng), N., Schmitz, R.A., Callaham, J.A., Barbazuk, B., Paul, A.-L., & Ferl, R.J. (2018). Approaches for Surveying Cosmic Radiation Damage in Large Populations of Arabidopsis thaliana Seeds – Antarctic Balloons and Particle Beams. Gravitational and Space Research 6(2):54–73 (DOI: 10.2478/gsr-2018-0010).",
+        "doi": "10.2478/gsr-2018-0010",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-21-osd-210.md",
+      "source_turn": 49,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 20,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "18-22",
+          "25-30"
+        ],
+        "panels": 49,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "CR-39 Solid-State Nuclear Track Detectors (SSNTDs, 6M NaOH etched, Phoenix v|tome|x m Micro-CT)",
+          "CRESS 1U VeroClear PolyJet containment vessel (1 atm, 10x10x10 cm, <=1.33 kg)",
+          "Modified Nunc 1536-well seed trays (24x24 = 576 bins, ~250 seeds/bin)",
+          "Modified T-25 flask seed cassette holder (BNL NSRL)",
+          "PacBio Sequel LR-SMRT cell + SageELF size-selection workflow"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 22,
+      "title": "The Centrifuge Alibi",
+      "accession": "OSD-213",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-213",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana wild-type ecotype Columbia (Col-0) — 11-day-old undifferentiated semisolid callus cultures derived from sterile ~50 mm stem cuttings on 1.2a agar (1%) medium.",
+      "hardware_and_conditions": "Simbox incubator (Astrium/EADS, Friedrichshafen; modified Biobox-6, 461 × 551 × 273 mm, 34 L, 17 kg empty, 130 W max, 22–24 °C, 30–40% humidity; duplicate ground unit at PITC, Beijing).",
+      "publication": {
+        "citation": "Fengler, S., Spirer, I., Neef, M., Ecke, M., Nieselt, K., & Hampp, R. (2015). A Whole-Genome Microarray Study of Arabidopsis thaliana Semisolid Callus Cultures Exposed to Microgravity and Nonmicrogravity Related Spaceflight Conditions for 5 Days on Board of Shenzhou 8. BioMed Research International 2015:547495 (DOI: 10.1155/2015/547495, PMC4309294).",
+        "doi": "10.1155/2015/547495",
+        "pmid": null
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-22-osd-213.md",
+      "source_turn": 51,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 13,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "6-10",
+          "14-18",
+          "19-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 18,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Simbox incubator (Astrium/EADS, modified Biobox-6, 34 L, integrated 74.40 rpm 1g reference centrifuge)",
+          "Tecason S polysulfone gas-exchange biofoil + spiked substrate slide + 20.3 mL RNAlater peristaltic pump system",
+          "Type V Experiment Unit Envelope (EUE) inside Type I Experiment Container (EC)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 23,
+      "title": "The Methylation Veil",
+      "accession": "OSD-217",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-217",
+      "osdr_doi": "10.26030/f05z-e688",
+      "organism": "Arabidopsis thaliana wild-type cultivar Wassilewskija (WS, Ferl lab line propagated ~25 years, ABRC stock CS915), dissected into root and leaf tissues (n = 3 biological replicates per organ × condition).",
+      "hardware_and_conditions": "Dry, sterilized seeds plated aseptically on 10 cm^2 0.5% Phytagel / 0.5× MS plates, wrapped in light-tight black Duvetyne cloth, and held dormant at 4–10 °C until unwrapped on orbit.",
+      "publication": {
+        "citation": "Zhou, M., Sng, N.J., LeFrois, C.E., Paul, A.-L., & Ferl, R.J. (2019). Epigenomics in an extraterrestrial environment: organ-specific alteration of DNA methylation and gene expression elicited by spaceflight in Arabidopsis thaliana. BMC Genomics (PMID: 30866818, DOI: 10.1186/s12864-019-5554-z).",
+        "doi": "10.1186/s12864-019-5554-z",
+        "pmid": "30866818"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-23-osd-217.md",
+      "source_turn": 53,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 13,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "5-10",
+          "15-18",
+          "19-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 18,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Light-tight Duvetyne cloth passive dormancy stowage (4-10 C)",
+          "Modified LeFrois phenol/chloroform gDNA extraction for RNAlater-preserved WGBS",
+          "Vegetable Production System (VPS/Veggie) on ISS Columbus Module + KSC ISSES 48-h delayed ground simulator"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 24,
+      "title": "The Skewing Compass",
+      "accession": "OSD-218",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-218",
+      "osdr_doi": "10.26030/pddm-th52",
+      "organism": "Arabidopsis thaliana wild-type Col-0 (CS70000) and WS (CS915), alongside T-DNA root-skewing mutants spr1 (CS6547, Col-0 background) and sku5 (CS16268, WS background) — whole roots dissected at 4 days (4d) (5–8 roots/rep) and 8 days (8d) (2–3 roots/rep), n = 4 biological replicates.",
+      "hardware_and_conditions": "100 mm × 15 mm Petri plates (50 mL 0.5% Phytagel, 0.5× MS, 0.5% sucrose, 1× Gamborg's Vitamin Mixture), Micropore tape, wrapped in Duvetyne Black-Out Fabric within < 10 min of seed wetting, stowed at 4–10 °C, then grown vertically in Veggie under constant LEDs (100–135 µmol m^-2 s^-1).",
+      "publication": {
+        "citation": "Califar, B., Sng, N.J., Zupanska, A., Paul, A.-L., & Ferl, R.J. (2020). Root Skewing-Associated Genes Impact the Spaceflight Response of Arabidopsis thaliana. Frontiers in Plant Science 11:239 (DOI: 10.3389/fpls.2020.00239, PMC7064724, PMID: 32194611).",
+        "doi": "10.3389/fpls.2020.00239",
+        "pmid": "32194611"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-24-osd-218.md",
+      "source_turn": 55,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 11,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-6",
+          "7-10",
+          "13-16",
+          "17-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 7,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "FIJI / JFilament + R polar root-angle quantification pipeline (camera-behind-media convention)",
+          "SMART-Seq v4 ultra-low-input (10 ng) + Nextera tagmentation (150 pg cDNA) on Illumina NextSeq 500"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 25,
+      "title": "The Recoverable Epigenome",
+      "accession": "OSD-220",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-220",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana ecotype Columbia (Col-0)",
+      "hardware_and_conditions": "Custom two-unit polysulfone culture chamber assembly with gas-permeable membrane windows, canal system, pump support system, and tube-connected RNAlater® fixative unit designed by the Shanghai Institute of Technical Physics (SITP), Chinese Academy of Sciences (no 1g onboard centrifuge)",
+      "publication": {
+        "citation": "NCBI SRA SRP134216; Xu et al. (2018), npj Microgravity 4:12, DOI 10.1038/s41526-018-0046-z (PMC6043569)",
+        "doi": "10.1038/s41526-018-0046-z",
+        "pmid": null
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-25-osd-220.md",
+      "source_turn": 57,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "27-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "SITP two-unit polysulfone culture chambers with gas-permeable membranes and tube-connected RNAlater fixative unit (no 1g onboard centrifuge)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 26,
+      "title": "The Fractional Gradient",
+      "accession": "OSD-223",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-223",
+      "osdr_doi": "10.26030/wdtz-v612",
+      "organism": "Arabidopsis thaliana (Col-0 wild type and transgenic InsP 5-ptase lines with compromised InsP₃ signaling)",
+      "hardware_and_conditions": "European Modular Cultivation System (EMCS) with twin centrifuge rotors (0g stationary vs. fractional-g spinning) and TROPI-like seed cassettes (27 seeds/membrane); ground reference in ERM-2 at NASA Ames Research Center (ARC) and OVT in ERM-1 at N-USOC (Trondheim, Norway)",
+      "publication": {
+        "citation": "Sheppard et al. (2021), Life 11(10):1010, DOI 10.3390/life11101010 (PMC8539686); Land et al. (2024), Front. Plant Sci. 14:1308713, DOI 10.3389/fpls.2023.1308713 (PMC10800490)",
+        "doi": "10.3390/life11101010",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-26-osd-223.md",
+      "source_turn": 59,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "27-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "European Modular Cultivation System (EMCS) twin rotors (0g vs. 0.53g/0.65g/0.76g/0.88g/1.0g), TROPI-like PES seed cassettes (27 seeds/membrane), ERM-2 ground reference"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 27,
+      "title": "Blue Light on the Moon",
+      "accession": "OSD-251",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-251",
+      "osdr_doi": "10.26030/9bnk-7248",
+      "organism": "Arabidopsis thaliana ecotype Landsberg erecta (Ler)",
+      "hardware_and_conditions": "European Modular Cultivation System (EMCS) in the ISS Columbus Module, remotely controlled from N-USOC (Trondheim, Norway), using TROPI seed cassettes and GLACIER (-80 °C) freezer",
+      "publication": {
+        "citation": "Herranz et al. (2019), Frontiers in Plant Science 10:1529, DOI 10.3389/fpls.2019.01529 (PMC6889863 | PubMed 31850027)",
+        "doi": "10.3389/fpls.2019.01529",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-27-osd-251.md",
+      "source_turn": 61,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "27-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "European Modular Cultivation System (EMCS) centrifuge with TROPI seed cassettes, GLACIER (-80 C) freezer"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 28,
+      "title": "The Outredgeous Harvest",
+      "accession": "OSD-267",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-267",
+      "osdr_doi": "10.26030/0cpc-g985",
+      "organism": "Lactuca sativa cv. 'Outredgeous' (red romaine lettuce) + phyllosphere and rhizosphere microbiota",
+      "hardware_and_conditions": "Vegetable Production System (Veggie) (ORBITEC / Sierra Nevada Corp., Madison, WI) with extensible transparent bellows, 12R:3B:1G LED array (~200 μmol m⁻² s⁻¹, 16 h/8 h), and 6 Kevlar/Nomex plant pillows (calcined clay/arcillite + Nutricote 18-6-8)",
+      "publication": {
+        "citation": "Khodadad et al. (2020), Frontiers in Plant Science 11:199, DOI 10.3389/fpls.2020.00199 (PMC7067979 | PubMed 32210992)",
+        "doi": "10.3389/fpls.2020.00199",
+        "pmid": null
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-28-osd-267.md",
+      "source_turn": 63,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 23,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "19-22",
+          "25-30"
+        ],
+        "panels": 0,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "SpaceX CRS-3 (April 2014)",
+          "Veggie plant growth chamber (ORBITEC / Sierra Nevada Corp.) with extensible bellows, 12R:3B:1G LEDs (~200 umol m-2 s-1), 6 Kevlar/Nomex plant pillows (arcillite + Nutricote 18-6-8)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 29,
+      "title": "The Skewed Cost of Letting Go",
+      "accession": "OSD-281",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-281",
+      "osdr_doi": "10.26030/j07k-nm86",
+      "organism": "Arabidopsis thaliana Wassilewskija (WS, CS915) wild type and sku5 T-DNA mutant (CS16268; SKU5 / AT4G12420), contrasted with Col-0 (CS70000) and spr1 (CS6547).",
+      "hardware_and_conditions": "Vegetable Production System (VPS / Veggie) in the ISS Columbus Module (100–135 μmol m⁻² s⁻¹ constant overhead LED light); 100 mm × 15 mm (10-cm²) Petri plates with 50 mL 0.5% Phytagel (0.5× MS salts, 0.5% sucrose, 1× Gamborg's Vitamin Mixture), wrapped in Duvetyne Black-Out Fabric at 4–10°C until activation; Kennedy Space Center Fixation Tubes (KFTs) with RNAlater (12 h ambient perfusion → MELFI −80°C).",
+      "publication": {
+        "citation": "Califar, B., Sng, N. J., Zupanska, A., Paul, A.-L., & Ferl, R. J. (2020). Root Skewing-Associated Genes Impact the Spaceflight Response of Arabidopsis thaliana. Frontiers in Plant Science, 11:239 (PMCID: PMC7064724, PMID: 32194611; Frontiers Full Text).",
+        "doi": null,
+        "pmid": "32194611"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-29-osd-281.md",
+      "source_turn": 65,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 10,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "4-6",
+          "7-10",
+          "11-13",
+          "14-18",
+          "19-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 3,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "100x15 mm Petri plates (0.5% Phytagel, 0.5x MS, 0.5% sucrose, 1x Gamborg vitamins)",
+          "Duvetyne Black-Out Fabric",
+          "Kennedy Fixation Tubes (KFTs) with RNAlater",
+          "MELFI -80C freezer",
+          "Vegetable Production System (VPS / Veggie, Columbus Module, 100-135 umol m-2 s-1 LEDs)"
+        ],
+        "genotypes": [
+          "Arabidopsis thaliana Col-0 (CS70000)",
+          "Arabidopsis thaliana WS (CS915)",
+          "Arabidopsis thaliana sku5 (CS16268, AT4G12420, WS background)",
+          "Arabidopsis thaliana spr1 (CS6547, Col-0 background)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 30,
+      "title": "The UV-B Handshake",
+      "accession": "OSD-296",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-296",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana Col (cop1-4, hy5-215, uvr8-6 [SALK033468]), Ler (cop1eid6), and Ws/ProHY5:Luc+ (uvr8-7, cop1-19, Pro35S:UVR8 overexpressors Ox no. 2 & no. 3, cop1-4/Pro35S:YFP-COP1, cop1-4 uvr8-6/Pro35S:YFP-COP1); plus Sinapis alba (mustard) hypocotyls for BiFC.",
+      "hardware_and_conditions": "Ground growth chambers (Freiburg & Munich, Germany): Osram L18W/30 white light (3.6 μmol m⁻² s⁻¹) supplemented with Philips TL20W/01RS narrowband UV-B (~312 nm, 1.5 μmol m⁻² s⁻¹) under 3-mm Schott cutoff filters (WG345 −UV-B vs. WG305 +UV-B); broadband UV-B stress field (6× Philips TL40W/12RS, λmax 310 nm, 7 W/m² under WG327, WG305, WG295, or 3-mm quartz); Helmholtz Zentrum München sun simulators (14 h PAR 800 μmol m⁻² s⁻¹ + 12 h UVBE 400 mW m⁻², 23°C/18°C, 60% RH); Bio-Rad PDS-1000/He biolistic",
+      "publication": {
+        "citation": "Favory, J.-J., Stec, A., Gruber, H., Rizzini, L., Oravecz, A., Funk, M., Albert, A., Cloix, C., Jenkins, G. I., Oakeley, E. J., Seidlitz, H. K., Nagy, F., & Ulm, R. (2009). Interaction of COP1 and UVR8 regulates UV-B-induced photomorphogenesis and stress acclimation in Arabidopsis. The EMBO Journal, 28(5):591–601 (PMCID: PMC2657586, PMID: 19165148, doi: 10.1038/emboj.2009.4).",
+        "doi": "10.1038/emboj.2009.4",
+        "pmid": "19165148"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-30-osd-296.md",
+      "source_turn": 67,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 10,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "2-4",
+          "5-7",
+          "8-10",
+          "11-14",
+          "15-18",
+          "19-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 1,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Affymetrix ATH1 GeneChip (n=36)",
+          "Bio-Rad PDS-1000/He biolistic system",
+          "Osram L18W/30 white light (3.6 umol m-2 s-1) + Philips TL20W/01RS narrowband UV-B (1.5 umol m-2 s-1)",
+          "Philips TL40W/12RS broadband UV-B lamps (7 W/m2)",
+          "Schott 3-mm WG345 / WG305 / WG327 / WG295 cutoff filters & 3-mm quartz"
+        ],
+        "genotypes": [
+          "Arabidopsis thaliana Col (cop1-4, hy5-215, uvr8-6 SALK_033468)",
+          "Arabidopsis thaliana Ler (cop1eid6)",
+          "Arabidopsis thaliana Ws/ProHY5:Luc+ (uvr8-7, cop1-19, Pro35S:UVR8 Ox 2 & 3)",
+          "Sinapis alba (mustard hypocotyls for BiFC)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 31,
+      "title": "The Slow Clock in Dry Seeds",
+      "accession": "OSD-301",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-301",
+      "osdr_doi": "10.26030/wnm5-8942",
+      "organism": "Eruca sativa Mill. (salad rocket, Brassicaceae; cultivar TZ 5007, lot 09835147, Tozer Seeds Ltd.).",
+      "hardware_and_conditions": "Three seed batches (Earth-WS warehouse stock at 14°C, 25% RH; Earth red foil packets at ~22°C, 6.3% ± 0.1% moisture; Space blue foil packets, 8.0% ± 1.0% moisture); Controlled Artificial Ageing Treatment (CAAT) in 2 mL Eppendorf tubes above 25 g/100 mL LiCl (70% RH, 3 d at 22°C → 0/4/8/15 d at 35°C → 2 h silica drying); 24 h electrical conductivity (EC) vigor assay.",
+      "publication": {
+        "citation": "Chandler, J. O., Haas, F. B., Khan, S., Bowden, L., Ignatz, M., Enfissi, E. M. A., Gawthrop, F., Griffiths, A., Fraser, P. D., Rensing, S. A., & Leubner-Metzger, G. (2020). Rocket Science: The Effect of Spaceflight on Germination Physiology, Ageing, and Transcriptome of Eruca sativa Seeds. Life, 10(4):49 (PMCID: PMC7235897; MDPI Full Text).",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-31-osd-301.md",
+      "source_turn": 69,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 10,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "2-4",
+          "5-7",
+          "8-10",
+          "11-14",
+          "15-18",
+          "19-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 1,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Blue/Red foil seed packets (2 kg Eruca sativa payload)",
+          "CAAT chambers (2 mL Eppendorf tubes, 70% RH over 25 g/100 mL LiCl, 35C)",
+          "Electrical conductivity (EC) vigor meter",
+          "Illumina HiSeq V4 (2x125 bp PE, n=18)"
+        ],
+        "genotypes": [
+          "Eruca sativa Mill. (cultivar TZ 5007, lot 09835147)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 32,
+      "title": "Red Light in the Nucleolus",
+      "accession": "OSD-313",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-313",
+      "osdr_doi": "10.26030/0g0m-dj21",
+      "organism": "Arabidopsis thaliana Columbia (Col-0 WT), nuc1-2 (Salk002764), and nuc2-2 (GABI178D01).",
+      "hardware_and_conditions": "NASA Tropi Experiment Unique Equipment (EUE) culture chambers (CC cassettes, 5 per Experiment Container EC) with semiautomatic hydration and white/red/blue LEDs; 28 seeds affixed with 1% Guar Gum onto gridded nitrocellulose membranes (3.1 mm grid) over Whatman 17 CHR blotter paper soaked in 1/2 MS medium. Grown 6 days at 22°C (96 h 16 h/8 h white light 30–40 μmol m⁻² s⁻¹ → 48 h darkness vs. unidirectional red light 19 μmol m⁻² s⁻¹), then frozen in RNAlater (Ambion AM7020) at −80°C.",
+      "publication": {
+        "citation": "Manzano, A., Villacampa, A., Sáez-Vásquez, J., Kiss, J. Z., Medina, F. J., & Herranz, R. (2020). The Importance of Earth Reference Controls in Spaceflight -Omics Research: Characterization of Nucleolin Mutants from the Seedling Growth Experiments. iScience, 23(11):101686 (PMCID: PMC7607443, PMID: 33163940, doi: 10.1016/j.isci.2020.101686).",
+        "doi": "10.1016/j.isci.2020.101686",
+        "pmid": "33163940"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-32-osd-313.md",
+      "source_turn": 71,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 10,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "2-4",
+          "5-7",
+          "8-10",
+          "11-14",
+          "15-18",
+          "19-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 1,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Illumina TruSeq RNA-seq (n=18)",
+          "Nitrocellulose membrane (3.1 mm grid) + Whatman 17 CHR blotter paper + 1/2 MS",
+          "RNAlater (Ambion AM7020) at -80C",
+          "Tropi EUE culture chambers (CC cassettes, 5 per EC)",
+          "White LEDs (30-40 umol m-2 s-1) & Unidirectional Red LEDs (19 umol m-2 s-1)"
+        ],
+        "genotypes": [
+          "Arabidopsis thaliana Col-0 WT",
+          "Arabidopsis thaliana nuc1-2 (Salk_002764)",
+          "Arabidopsis thaliana nuc2-2 (GABI178D01)"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 33,
+      "title": "A Red Light for Mars",
+      "accession": "OSD-314",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-314",
+      "osdr_doi": "10.26030/z5yf-jx91",
+      "organism": "Arabidopsis thaliana Columbia (Col-0 WT).",
+      "hardware_and_conditions": "EMCS (European Modular Cultivation System) with built-in centrifuge (μg vs. Mars partial gravity 0.34 ± 0.05 g; 10% O2, 0.45% CO2, >80% RH, 22.5°C ± 2°C, pre-flushed against ethylene); Tropi culture cassettes (28 seeds/cassette in 1% guar gum on gridded nitrocellulose; 4 d 16 h/8 h white light 30–40 μmol m⁻² s⁻¹ → 2 d darkness vs. lateral red LEDs). Frozen in MELFI −80°C for RNA-seq, or fixed in-orbit via FixBox (5% formaldehyde for confocal/anti-fibrillarin + SCRI 2200; 4.5% glutaraldehyde / 1.",
+      "publication": {
+        "citation": "Villacampa, A., Ciska, M., Manzano, A., Vandenbrink, J. P., Kiss, J. Z., Herranz, R., & Medina, F. J. (2021). From Spaceflight to Mars g-Levels: Adaptive Response of A. Thaliana Seedlings in a Reduced Gravity Environment Is Enhanced by Red-Light Photostimulation. International Journal of Molecular Sciences, 22(2):899 (PMCID: PMC7830483, PMID: 33477454, doi: 10.3390/ijms22020899).",
+        "doi": "10.3390/ijms22020899",
+        "pmid": "33477454"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-33-osd-314.md",
+      "source_turn": 73,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 10,
+        "pages_covered": 32,
+        "missing_pages": [],
+        "condensed_ranges": [
+          "2-4",
+          "5-7",
+          "8-10",
+          "11-14",
+          "15-18",
+          "19-22",
+          "23-26",
+          "27-30"
+        ],
+        "panels": 1,
+        "double_page_spreads_mentioned": 0,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "EMCS centrifuge (microgravity vs. Mars 0.34 +/- 0.05 g)",
+          "FixBox (orbital aldehyde fixation)",
+          "Illumina HiSeq2500 (50 bp stranded, n=17)",
+          "Lateral Red LEDs vs. Darkness",
+          "Tropi culture cassettes (28 seeds/cassette, 1% guar gum, gridded nitrocellulose)"
+        ],
+        "genotypes": [
+          "Arabidopsis thaliana Col-0 WT"
+        ],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 34,
+      "title": "The Iron Track and the False Night",
+      "accession": "OSD-320",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-320",
+      "osdr_doi": "10.26030/ks24-9880",
+      "organism": "Arabidopsis thaliana — wild-type Wassilewskija (Ws) and atm-1 (T-DNA insertion mutant defective in the double-strand-break-sensing protein kinase ATM).",
+      "hardware_and_conditions": "Vertical 1× MS Phytoagar plates (PlantMedia, BioWorld, Dublin, OH), shipped on ice to BNL (4°C), then grown 5 days pre-irradiation at 21°C under cool white lamps (16 h light / 8 h dark) in the BNL Controlled Environment Facility; n = 44 samples (22 conditions × 2 biological replicates, 30–40 pooled whole seedlings per sample).",
+      "publication": {
+        "citation": "Missirian, V., Conklin, P. A., Culligan, K. M., Huefner, N. D., & Britt, A. B. (2014). High atomic weight, high-energy radiation (HZE) induces transcriptional responses shared with conventional stresses in addition to a core \"DSB\" response specific to clastogenic treatments. Frontiers in Plant Science, 5, 364. (PMC4117989 | PubMed 25136344)",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-34-osd-320.md",
+      "source_turn": 75,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 30,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 43,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 35,
+      "title": "The Equalizer in the Dark",
+      "accession": "OSD-321",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-321",
+      "osdr_doi": "10.26030/z8mc-g359",
+      "organism": "Arabidopsis thaliana — Col-0 (WT, 5 plates/unit), atire1 (ire1a ire1b double mutant, 4 plates/unit), bzip60 (4 plates/unit), bzip28 (4 plates/unit), and bzip28 bzip60 (5 plates/unit).",
+      "hardware_and_conditions": "4 Biological Research In a Canister (BRIC) canisters housing 22 Petri Dish Fixation Units (PDFUs) (60 mm Petri dishes, 6.7 mL ½ MS + Gamborg's B5 vitamins + 0.5% sucrose + 0.4% Phytagel, pH 5.7; 70–80 seeds/plate; double-wrapped in sterile aluminum foil; HOBO temperature loggers in 2 BRICs; 14-day dark germination on ISS, fixed in situ with RNAlater for 3 h at room temp, frozen in ISS -80 MELFI, returned at -32°C in double cold bags).",
+      "publication": {
+        "citation": "Angelos, E., Ko, D. K., Zemelis-Durfee, S., & Brandizzi, F. (2021). Relevance of the Unfolded Protein Response to Spaceflight-Induced Transcriptional Reprogramming in Arabidopsis. Astrobiology, 21(3), 367–380. (PMC7987364)",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-35-osd-321.md",
+      "source_turn": 77,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 30,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 37,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 36,
+      "title": "Three Grasses Under the Veggie Canopy",
+      "accession": "OSD-375",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-375",
+      "osdr_doi": "10.26030/2x6b-3v89",
+      "organism": "Brachypodium distachyon (monocot temperate grass model) — accessions Bd21, Bd21-3, and Gaz8 (n = 48 root and shoot samples across 3 accessions × 2 organs × 2 conditions × 4 biological replicates).",
+      "hardware_and_conditions": "APEX-06 (Advanced Plant Experiment-06) inside Veggie; 12 flight + 12 ground APEX Growth Units (modified Magenta boxes with Oasis Horticube LC2 foam blocks wrapped in medical gauze and Nitex mesh, fed via a bottom injection showerhead with 90 mL ½ MS + MES liquid medium); 24 seeds/unit (6 per side, 96 seeds/accession); 24 h red LED germination sync followed by 4 days continuous blue/green/red LEDs (40–55 μmol/m²/s) with HOBO loggers; photographed (Nikon D5 / Nikon D4s) and fixed in Kennedy Fixati",
+      "publication": {
+        "citation": "Su, S.-H., Levine, H. G., & Masson, P. H. (2023). Brachypodium distachyon Seedlings Display Accession-Specific Morphological and Transcriptomic Responses to the Microgravity Environment of the International Space Station. Life, 13(3), 626. (PMC10058394)",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-36-osd-375.md",
+      "source_turn": 79,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 30,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 41,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 37,
+      "title": "The Clean Seed Paradox",
+      "accession": "OSD-385",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-385",
+      "osdr_doi": "10.26030/esef-7r30",
+      "organism": "Lactuca sativa cv. 'Outredgeous' (Red Romaine lettuce) leaf (phyllosphere) and root (rhizosphere/endosphere) bacterial microbiomes (n = 100 samples).",
+      "hardware_and_conditions": null,
+      "publication": {
+        "citation": "Dixit, A. R., Khodadad, C. L. M., Hummerick, M. E., Spern, C. J., Spencer, L. E., Fischer, J. A., Curry, A. B., Gooden, J. L., Maldonado Vazquez, G. J., Wheeler, R. M., Massa, G. D., & Romeyn, M. W. (2021). Persistence of Escherichia coli in the microbiomes of red Romaine lettuce (Lactuca sativa cv. 'Outredgeous') and mizuna mustard (Brassica rapa var. japonica) - does seed sanitization matter? BM",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-37-osd-385.md",
+      "source_turn": 81,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 30,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 38,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 38,
+      "title": "The Mustard's Quiet Border",
+      "accession": "OSD-386",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-386",
+      "osdr_doi": "10.26030/thwa-cn80",
+      "organism": "Brassica rapa var. japonica (mizuna mustard, Johnny's Select Seeds, Fairfield, Maine, USA; Characteristics: Host Strain = japonica), inoculated with Escherichia coli ATCC 11775 (non-pathogenic surrogate for O157:H7).",
+      "hardware_and_conditions": null,
+      "publication": {
+        "citation": "Dixit, A. R., Khodadad, C. L. M., Hummerick, M. E., Spern, C. J., Spencer, L. E., Fischer, J. A., Curry, A. B., Gooden, J. L., Maldonado Vazquez, G. J., Wheeler, R. M., Massa, G. D., & Romeyn, M. W. (2021). Persistence of Escherichia coli in the microbiomes of red Romaine lettuce (Lactuca sativa cv. 'Outredgeous') and mizuna mustard (Brassica rapa var. japonica) - does seed sanitization matter? BM",
+        "doi": "10.1186/s12866-021-02345-5",
+        "pmid": "34686151"
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-38-osd-386.md",
+      "source_turn": 83,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 29,
+        "missing_pages": [
+          8,
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 45,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "KSC ISS-simulated growth chamber (23C, 50% RH, 3000 ppm CO2, 16h/8h, 200-300 umol/m2/s PAR); 10-cm pots with ~500 mL greens-grade Turface calcined clay + 7.5 g/L 18-6-8 180-day Nutricote; DI bottom watering"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 39,
+      "title": "Two Rides to the Edge",
+      "accession": "OSD-406",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-406",
+      "osdr_doi": "10.26030/m4mm-3414",
+      "organism": "Arabidopsis thaliana roots (n = 24 samples, 3 biological replicates/condition): Col-0 and WS (Wassilewskija) at 10 days old on VG VP-03; WS and sku5 (root-skewing mutant in WS background) at 11 days old on BO NS-12 (OSD-406).",
+      "hardware_and_conditions": "100 mm × 15 mm Petri dishes (50 mL 0.5% Phytagel, 0.5× MS salts, 0.5% w/v sucrose, 1× Gamborg's Vitamin Mixture, sealed with 3M Micropore tape), stratified 3–5 days at 4°C, grown vertically at 19 ± 2°C under 24 h fluorescent light (~80 μmol m⁻² s⁻¹ PAR). At VG site: ambient facility under LED bank; at BO site: Danby herb cultivator (DFG17A1B) at 26°C. Flight plates wrapped in Duvetyne Black-Out Cloth and Velcro-mounted inside the FLEX imaging payload.",
+      "publication": {
+        "citation": "Califar, B., Zupanska, A., Callaham, J. A., Bamsey, M. T., Graham, T., Paul, A.-L., & Ferl, R. J. (2021). Shared Metabolic Remodeling Processes Characterize the Transcriptome of Arabidopsis thaliana within Various Suborbital Flight Environments. Gravitational and Space Research, 9(1), 13–29. DOI: 10.2478/gsr-2021-0002 (indexed on OSD-406; KEGG figure summary at ResearchGate Fig. 4; VP-03 DEG count",
+        "doi": "10.2478/gsr-2021-0002",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-39-osd-406.md",
+      "source_turn": 85,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 29,
+        "missing_pages": [
+          8,
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 39,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "100x15 mm Petri dishes (0.5% Phytagel, 0.5x MS, 0.5% sucrose, 1x Gamborg's Vitamins) wrapped in Duvetyne Black-Out Cloth inside FLEX payload aboard Virgin Galactic VP-03 (VSS Unity, 82.7 km) and Blue Origin NS-12 (New Shepard)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 40,
+      "title": "Three Greens Under One Fan",
+      "accession": "OSD-412",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-412",
+      "osdr_doi": "10.26030/0jpd-te04",
+      "organism": "Simultaneous mixed crop (2 pillows each) of Brassica rapa var. japonica (mizuna mustard), Lactuca sativa cv. 'Outredgeous' (red Romaine lettuce), and Lactuca sativa cv. \"Waldmann's Green\" (green leaf lettuce), all from Johnny's Select Seeds (Fairfield, ME, USA), plus their associated microbiota acro",
+      "hardware_and_conditions": null,
+      "publication": {
+        "citation": "Hummerick, M. E., Khodadad, C. L. M., Dixit, A. R., Spencer, L. E., Maldonado-Vasquez, G. J., Gooden, J. L., Spern, C. J., Fischer, J. A., Dufour, N., Wheeler, R. M., Romeyn, M. W., Smith, T. M., Massa, G. D., & Zhang, Y. (2021). Spatial Characterization of Microbial Communities on Multi-Species Leafy Greens Grown Simultaneously in the Vegetable Production Systems on the International Space Statio",
+        "doi": "10.3390/life11101060",
+        "pmid": "34685431"
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-40-osd-412.md",
+      "source_turn": 87,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 29,
+        "missing_pages": [
+          8,
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 37,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "ISS Columbus Veggie SN 002 (VEG-03D, SpaceX-12); 250 mL autoclaved arcillite + 7.5 g/L 18-6-8 type 100 Nutricote pillows; 16h/8h LEDs 200-300 umol/m2/s; fan anomaly caused ~25 days at 100% RH"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 41,
+      "title": "The Clean Chamber's First Crop",
+      "accession": "OSD-413",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-413",
+      "osdr_doi": "10.26030/3p20-j525",
+      "organism": "Simultaneous mixed crop of Brassica rapa var. japonica (mizuna mustard), Lactuca sativa cv. 'Outredgeous' (red Romaine lettuce), and Lactuca sativa cv. \"Waldmann's Green\" (green leaf lettuce); n = 12 16S OSDR sequencing samples derived from 2 returned mizuna pillows (SN01 and SN08: root, 3 media rep",
+      "hardware_and_conditions": null,
+      "publication": {
+        "citation": "Hummerick, M. E., Khodadad, C. L. M., Dixit, A. R., Spencer, L. E., Maldonado-Vasquez, G. J., Gooden, J. L., Spern, C. J., Fischer, J. A., Dufour, N., Wheeler, R. M., Romeyn, M. W., Smith, T. M., Massa, G. D., & Zhang, Y. (2021). Spatial Characterization of Microbial Communities on Multi-Species Leafy Greens Grown Simultaneously in the Vegetable Production Systems on the International Space Statio",
+        "doi": "10.3390/life11101060",
+        "pmid": "34685431"
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-41-osd-413.md",
+      "source_turn": 89,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 29,
+        "missing_pages": [
+          8,
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 32,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "ISS Columbus Veggie SN 001 (VEG-03E, first use, SpaceX-12); grouped crop layout; 250 mL autoclaved arcillite + 7.5 g/L 18-6-8 type 100 Nutricote; 16h/8h LEDs 200-300 umol/m2/s; 59 days (2/6/18-4/6/18)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 42,
+      "title": "The Veteran Chamber's Red Harvest",
+      "accession": "OSD-414",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-414",
+      "osdr_doi": "10.26030/b487-6c39",
+      "organism": "Simultaneous mixed crop of Lactuca sativa cv. 'Outredgeous' (red Romaine lettuce), Brassica rapa var. japonica (mizuna mustard), and Lactuca sativa cv. \"Waldmann's Green\" (green leaf lettuce); OSD-414 archives n = 10 16S samples from 'Outredgeous' red Romaine leaves, roots, and pillow components (OS",
+      "hardware_and_conditions": null,
+      "publication": {
+        "citation": "Hummerick, M. E., Khodadad, C. L. M., Dixit, A. R., Spencer, L. E., Maldonado-Vasquez, G. J., Gooden, J. L., Spern, C. J., Fischer, J. A., Dufour, N., Wheeler, R. M., Romeyn, M. W., Smith, T. M., Massa, G. D., & Zhang, Y. (2021). Spatial Characterization of Microbial Communities on Multi-Species Leafy Greens Grown Simultaneously in the Vegetable Production Systems on the International Space Statio",
+        "doi": "10.3390/life11101060",
+        "pmid": "34685431"
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-42-osd-414.md",
+      "source_turn": 91,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 29,
+        "missing_pages": [
+          8,
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 30,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "ISS Columbus Veggie SN 002 (VEG-03F, SpaceX-12, concurrent with VEG-03E); grouped crop layout; 250 mL autoclaved arcillite + 7.5 g/L 18-6-8 type 100 Nutricote; 16h/8h LEDs 200-300 umol/m2/s; 59 days (2/9/18-4/9/18)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 43,
+      "title": "Marks That Steer the Root",
+      "accession": "OSD-427",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-427",
+      "osdr_doi": "10.26030/0qxz-qh80",
+      "organism": "Arabidopsis thaliana — Col-0 wild-type (TAIR CS70000), met1-7 (CG maintenance methyltransferase mutant), and elp2-5 (Elongator complex subunit 2 mutant; seed lines gifted by Dr. Zhonglin Mou).",
+      "hardware_and_conditions": null,
+      "publication": {
+        "citation": "Paul, A.-L., Haveman, N., Califar, B., & Ferl, R. J. (2021). Epigenomic Regulators Elongator Complex Subunit 2 and Methyltransferase 1 Differentially Condition the Spaceflight Response in Arabidopsis. Frontiers in Plant Science, 12, 691790. DOI: 10.3389/fpls.2021.691790 | PMID: 34589093 | PMC8475764",
+        "doi": "10.3389/fpls.2021.691790",
+        "pmid": "34589093"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-43-osd-427.md",
+      "source_turn": 93,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 0,
+        "pages_covered": 0,
+        "missing_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 0,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Veggie (ISS-Columbus) vs. ISSES (KSC, 24 h delay); 100 x 15 mm Phytagel plates, 3M Micropore tape, Duvetyne cloth, KFTs (RNAlater), MELFI (-80°C)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 44,
+      "title": "Two Rotors, One Truth",
+      "accession": "OSD-437",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-437",
+      "osdr_doi": "10.26030/7258-6m91",
+      "organism": "Arabidopsis thaliana Col-0 wild-type shoots (dissected from RNAlater-thawed cassettes on a chilled platform).",
+      "hardware_and_conditions": null,
+      "publication": {
+        "citation": "Land, E. S., Sheppard, J., Doherty, C. J., & Perera, I. Y. (2024). Conserved plant transcriptional responses to microgravity from two consecutive spaceflight experiments. Frontiers in Plant Science, 14, 1308713. DOI: 10.3389/fpls.2023.1308713 | PMID: 38259952 | PMC10800490",
+        "doi": "10.3389/fpls.2023.1308713",
+        "pmid": "38259952"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-44-osd-437.md",
+      "source_turn": 95,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 0,
+        "pages_covered": 0,
+        "missing_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 0,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "European Modular Cultivation System (EMCS, ISS-Columbus: stationary μg vs. 1g centrifuge rotor) + ERM-2 (NASA Ames Earth 1g GC); TROPI-like seed cassettes on black-gridded PES membranes, MELFI (-80°C)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 45,
+      "title": "First Roots in Lunar Dust",
+      "accession": "OSD-476",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-476",
+      "osdr_doi": "10.26030/z80v-wn96",
+      "organism": "Arabidopsis thaliana Col-0 wild-type (TAIR CS70000) aboveground biomass (leaves and hypocotyl).",
+      "hardware_and_conditions": null,
+      "publication": {
+        "citation": "Paul, A.-L., Elardo, S. M., & Ferl, R. (2022). Plants grown in Apollo lunar regolith present stress-associated transcriptomes that inform prospects for lunar exploration. Communications Biology, 5(1), 382. DOI: 10.1038/s42003-022-03334-8 | PMID: 35552509 | PMC9098553",
+        "doi": "10.1038/s42003-022-03334-8",
+        "pmid": "35552509"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-45-osd-476.md",
+      "source_turn": 97,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 0,
+        "pages_covered": 0,
+        "missing_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 0,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "48-well culture plates (900 mg <1 mm regolith/well) with Rockwool plugs, 0.45 μm nylon filters, vented terrarium chambers"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 46,
+      "title": "Threshold of the Third Seed",
+      "accession": "OSD-520",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-520",
+      "osdr_doi": "10.26030/7q4w-ej22",
+      "organism": "Arabidopsis thaliana (Columbia ecotype) 21-day-old rosettes across three generations (P0, S1, S2) and five dose rates (γ0 control <0.1 μGy/h, γ30 = 30 mGy/h / 7 Gy, γ60 = 60 mGy/h / 13 Gy, γ110 = 110 mGy/h / 29 Gy, γ430 = 430 mGy/h / 156 Gy): global %5mdC via UPLC-MS/MS (5 biological replicates/cond",
+      "hardware_and_conditions": "Biosphere Impact Studies, Belgian Nuclear Research Centre (SCK CEN, Mol, Belgium) — Snijders Scientific Microclima 1000E growth cabinet (14:10 light:dark, 200 μmol m⁻² s⁻¹ PAR, 65% RH, 22°C/18°C), hydroponic Hoagland medium (0.6% agar in cut-off 1.5 mL polyethylene tube plugs), and SCK CEN's panoramic 137Cs gamma irradiation unit (0.662 MeV, 24°C, 14 h LED).",
+      "publication": {
+        "citation": "Laanen et al. (2021), Changes in DNA Methylation in Arabidopsis thaliana Plants Exposed Over Multiple Generations to Gamma Radiation, Frontiers in Plant Science 12:611783 (PMID: 33868326 | DOI: 10.3389/fpls.2021.611783)",
+        "doi": "10.3389/fpls.2021.611783",
+        "pmid": "33868326"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-46-osd-520.md",
+      "source_turn": 99,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 43,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 47,
+      "title": "Two Ledgers, One Orbit",
+      "accession": "OSD-522",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-522",
+      "osdr_doi": "10.26030/6z0a-kg61",
+      "organism": "Arabidopsis thaliana (Col-0) 10-day-old seedlings (n = 36 sample records): shoot RNA-Seq (NEBNext Ultra II Directional, Illumina NovaSeq 6000 2 × 150 bp PE, ~50M reads/sample) paired with root and shoot soluble and membrane TMT-6plex LC-MS/MS proteomics (Orbitrap Eclipse Tribrid with FAIMS Pro and S",
+      "hardware_and_conditions": "SpaceX CRS-13 (launched Dec 15, 2017) → SpaceX CRS-14 (returned May 5, 2018); BRIC-LED-001 (6 canisters × 6 PDFUs = 36 60 mm Petri plates aboard ISS, 85% red / 15% blue LEDs at 60 μmol m⁻² s⁻¹, 4 h light : 2 h dark cycle, 10 days growth, RNAlater on-orbit fixation, -80°C MELFI storage); matched ground control in ISSES at Kennedy Space Center (KSC).",
+      "publication": {
+        "citation": "Olanrewaju et al. (2023), Integrative transcriptomics and proteomics profiling of Arabidopsis thaliana elucidates novel mechanisms underlying spaceflight adaptation, Frontiers in Plant Science 14:1260429 (PMID: 38089794 | DOI: 10.3389/fpls.2023.1260429)",
+        "doi": "10.3389/fpls.2023.1260429",
+        "pmid": "38089794"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-47-osd-522.md",
+      "source_turn": 101,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 40,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "BRIC-LED-001 (6 canisters x 6 PDFUs = 36 60-mm Petri plates; closed system); KSC ISSES ground control"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 48,
+      "title": "Triple-Contained for Three Minutes",
+      "accession": "OSD-565",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-565",
+      "osdr_doi": "10.26030/3he5-md28",
+      "organism": "Arabidopsis thaliana (Col-0 wild-type) 7-day-old seedlings (n = 45 RNA-Seq samples across roots and leaves): NEBNext Ultra II Directional stranded RNA-Seq (Illumina NovaSeq 6000 2 × 150 bp PE, ~60M target reads/sample).",
+      "hardware_and_conditions": "University of Florida Space Plants Lab / Kennedy Space Center (KSC) suborbital simulation — Kennedy Space Center Fixation Tubes (KFTs) (22.1 mm ID × 62.8 mm depth sample chamber, ~25 mL RNAlater fixation chamber, triple liquid containment), 0.425 mm stainless-steel wire mesh coupons (22 × 62 mm), Danby DFG17A1B remote growth unit, and a 2D clinostat (150 mm radius, 1 rpm for 4 min).",
+      "publication": {
+        "citation": "Haveman et al. (2022), Utilizing the KSC Fixation Tube to Conduct Human-Tended Plant Biology Experiments on a Suborbital Spaceflight, Life 12(11):1871 (PMID: 36431005 | DOI: 10.3390/life12111871)",
+        "doi": "10.3390/life12111871",
+        "pmid": "36431005"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-48-osd-565.md",
+      "source_turn": 103,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 29,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 33,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Kennedy Space Center Fixation Tubes (KFTs, 22.1 mm ID x 62.8 mm depth, ~25 mL RNAlater, triple liquid containment) with 0.425 mm stainless-steel wire-mesh coupons (22 x 62 mm)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 49,
+      "title": "Iron in the Mojave Dust",
+      "accession": "OSD-581",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-581",
+      "osdr_doi": "10.26030/j6nv-8z71",
+      "organism": "Lolium multiflorum Lam. (Italian ryegrass, Poaceae). Assays: ICP-OES leachate geochemistry (10 elements), optical histochemistry (FASGA & Perls Prussian blue), targeted RT-qPCR of 18 stress and metabolic genes at 7d, 14d, and 7d post-cut regrowth, and label-free LC-MS/MS shotgun proteomics (NanoLC-4",
+      "hardware_and_conditions": "Fitotron climatic chamber (16 h light at 25°C / 8 h dark at 20°C, 60% RH, 8,600 lux). Growth rigs: 50 mL foil-wrapped skirted Falcon tubes perforated at the bottom, lined with Miracloth, sitting in 60 × 15 mm Petri dish irrigation wells. Substrates: Potting soil (PGS: peat, sand, perlite with NPK) vs. Coarse Martian Regolith Simulant MMS-1 (PGM: crushed basaltic ash from the Mojave Desert).",
+      "publication": {
+        "citation": "Berni, R., Leclercq, C. C., Roux, P., Hausman, J.-F., Renaut, J., & Guerriero, G. (2023). A molecular study of Italian ryegrass grown on Martian regolith simulant. Science of The Total Environment, 854:158774. (PMID: 36108852 | DOI: 10.1016/j.scitotenv.2022.158774)",
+        "doi": "10.1016/j.scitotenv.2022.158774",
+        "pmid": "36108852"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-49-osd-581.md",
+      "source_turn": 107,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 46,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Fitotron climatic chamber (16h 25°C / 8h 20°C, 60% RH, 8,600 lux); 50 mL foil-wrapped conical tubes with Miracloth sub-irrigation in 60x15 mm Petri plates; MMS-1 Martian regolith simulant vs. potting soil"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 50,
+      "title": "Blades in the Bead Mill",
+      "accession": "OSD-594",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-594",
+      "osdr_doi": "10.26030/qc04-a934",
+      "organism": "Three crop pathosystems—Lactuca sativa cv. 'Outredgeous Red' + Pythium aphanidermatum (P1717), Solanum lycopersicum cv. 'Red Robin' + Fusarium oxysporum f. sp. lycopersici (FOL) Race 2, and Capsicum annuum cv. 'Chablis' + Tomato Mosaic Virus (ToMV)—plus Arabidopsis thaliana + Escherichia coli buffer",
+      "hardware_and_conditions": "Ground study at NASA Kennedy Space Center (KSC) / University of Florida (NASA SMD TIDES 80NSSC22K0160); plants grown in Magenta Vessels inside microbial incubators (12:12 diel cycle, ~275 µmol m⁻² s⁻¹ PAR 400–700 nm RGBW LEDs 150:40:20:125, or 100 µmol/m² broad-spectrum LEDs at 22°C ± 2°C). Extraction hardware: Claremont BioSolutions (CBIO) microHomogenizer™ (2 mL tubes with 1.1 g lysis beads; benchmarked vs. OmniLyse®-X for SimplePrep® automation) + PureLyse® CBBB columns + Oxford Nanopore MinI",
+      "publication": {
+        "citation": "Haveman, N. J., Schuerger, A. C., Yu, P.-L., Brown, M., Doebler, R., Paul, A.-L., & Ferl, R. J. (2023). Advancing the automation of plant nucleic acid extraction for rapid diagnosis of plant diseases in space. Frontiers in Plant Science, 14:1194753 (Published 14-Jun-2023). Frontiers Full Text | PMC (PMC10304293)",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-50-osd-594.md",
+      "source_turn": 109,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 12,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [
+          "4-6",
+          "11-13",
+          "14-16",
+          "17-19",
+          "20-22",
+          "23-25",
+          "26-28"
+        ],
+        "panels": 6,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "KSC/UF Magenta Vessels in microbial incubators (12:12 diel, ~275 µmol/m2/s RGBW LEDs); Claremont BioSolutions microHomogenizer (2 mL, 1.1 g beads) + PureLyse CBBB columns; Oxford Nanopore MinION Mk1C (FLO-MIN106 R9.4, SQK-RPB004)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 51,
+      "title": "Walls Woven in Zero-G",
+      "accession": "OSD-615",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-615",
+      "osdr_doi": "10.26030/2746-4n42",
+      "organism": "Arabidopsis thaliana (Col-0) roots (n = 12: 6-day and 11-day Flight vs. Ground); single-step 4 M KOH + 1% NaBH4 glycome profiling (ELISA, 384-well Automated ELISA Workstation) of ~2 mg cell-wall debris salvaged from QIAGEN RNeasy spin columns, paired with 0.25 µm LR White immunohistochemistry (22 mo",
+      "hardware_and_conditions": "APEX-03-1 (Advanced Plant EXperiments 03-1), launched on SpaceX CRS-5 (10-Jan-2015 – 11-Feb-2015); Vegetable Production System (Veggie) in the ISS Columbus module (15.687°C mean recorded) vs. ground twin in the ISS Environmental Simulator (ISSES) at KSC SSPF (14.655°C mean recorded); constant white LEDs (120–140 µmol m⁻² s⁻¹). Plates: 90 × 90 mm gridded square Petri dishes (1.2% phyta-agar, 0.5× MS, 1% sucrose, pH 5.7), far-red dormancy-locked (3.2 µmol m⁻² s⁻¹, 10 min) and foil-wrapped at 4°C p",
+      "publication": {
+        "citation": "Nakashima, J., Pattathil, S., Avci, U., Chin, S., Alan Sparks, J., Hahn, M. G., Gilroy, S., & Blancaflor, E. B. (2023). Glycome profiling and immunohistochemistry uncover changes in cell walls of Arabidopsis thaliana roots during spaceflight. npj Microgravity, 9:68 (Published 22-Aug-2023). PubMed (37608048) | PMC (PMC10444889)",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-51-osd-615.md",
+      "source_turn": 111,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 12,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [
+          "4-6",
+          "11-13",
+          "14-16",
+          "17-19",
+          "20-22",
+          "23-25",
+          "26-28"
+        ],
+        "panels": 5,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "SpaceX CRS-5 / ISS Columbus Veggie vs. KSC SSPF ISSES (120-140 µmol/m2/s white LEDs); 90x90 mm gridded Petri dishes (0.5X MS, 1% sucrose, 1.2% phyta-agar, pH 5.7); KFTs (RNAlater / 4% PFA + 2.5% glutaraldehyde)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 52,
+      "title": "Three Minutes on the Calf",
+      "accession": "OSD-624",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-624",
+      "osdr_doi": "10.26030/8ane-wq52",
+      "organism": "Arabidopsis thaliana (Col-0, 7-day-old roots and leaves); n = 36 poly(A) directional RNA-Seq libraries (NEBNext Ultra II Directional, Illumina NovaSeq 6000 S4 2 × 150/151 bp) across 3 flight phases (F1, F2, F3) and pooled ground controls (n = 9 per organ).",
+      "hardware_and_conditions": "Payload UF-HT-KFT-01 aboard Virgin Galactic Unity 22 (VSS Unity + VMS Eve, 11-Jul-2021, 10:40 AM EST, Spaceport America, NM; ~45,000 ft release, ~60 s rocket burn at ~3–4 g, ~86 km apogee, ~3 min microgravity, 14 min 17 s release-to-landing; NASA FOP #80NSSC18K1294). Three Kennedy Fixation Tubes (KFTs) (6 seedlings/tube on 1% Phytagel, 0.5× MS, 5 g/L sucrose stainless-steel coupons) worn in a calf leg pouch by astronaut Sirisha Bandla vs. analog ground-pouch controls (G1–G3).",
+      "publication": {
+        "citation": "Ferl, R. J., Zhou, M., Strickland, H. F., Haveman, N. J., Callaham, J. B., Bandla, S., Ambriz, D., & Paul, A.-L. (2023). Transcriptomic dynamics in the transition from ground to space are revealed by Virgin Galactic human-tended suborbital spaceflight. npj Microgravity, 9:95 (Published 20-Dec-2023). PubMed (38123588) | PMC (PMC10733374)",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-52-osd-624.md",
+      "source_turn": 113,
+      "qa": {
+        "script_status": "condensed",
+        "page_headings": 12,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [
+          "4-6",
+          "11-13",
+          "14-16",
+          "17-19",
+          "20-22",
+          "23-25",
+          "26-28"
+        ],
+        "panels": 5,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Virgin Galactic Unity 22 (VSS Unity + VMS Eve, 11-Jul-2021); wearable calf leg pouch with 3 KFTs (RNAlater) actuated by Sirisha Bandla at F1, F2, F3; stainless-steel coupons (1% Phytagel, 0.5X MS, 5 g/L sucrose)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 53,
+      "title": "Flap-Cleaved Epialleles",
+      "accession": "OSD-625",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-625",
+      "osdr_doi": "10.26030/rp5n-0d70",
+      "organism": "Arabidopsis thaliana (Col-0 wild-type and elp2-5 mutant), 11-day-old roots (n = 16: 4 Flight Col-0 [FCR], 4 Ground Col-0 [GCR], 4 Flight elp2-5 [FER], 4 Ground elp2-5 [GER]). TargetCCSEM assay: 200 ng gDNA sonicated on Bioruptor Pico, Flap-Enabled Next-Generation Capture (FENGC) across 108 targets (",
+      "hardware_and_conditions": "APEX-04-EpEx (Advanced Plant Experiment 04 – Epigenetic Expression) launched aboard SpaceX CRS-10 (02/19/2017–03/19/2017). Seedlings grew for 11 days in Veggie (ISS-Columbus, mean 19.059°C) vs. the ISSES ground control chamber (17.143°C) at NASA Kennedy Space Center under constant 24 h red/blue LEDs (100–135 µmol/m²/s PAR) on 100 mm × 15 mm Petri plates (50 mL 0.5% phytagel, 0.5× MS salts, 0.5% w/v sucrose, 1× Gamborg's Vitamin Mixture) sealed with 3M Micropore tape in APEX Petri Plate Holders, ",
+      "publication": {
+        "citation": "Zhou, M., Riva, A., Gauthier, M.-P. L., Kladde, M. P., Ferl, R. J., & Paul, A.-L. (2024). Single-molecule long-read methylation profiling reveals regional DNA methylation regulated by Elongator Complex Subunit 2 in Arabidopsis roots experiencing spaceflight. Biology Direct, 19(1):33 (PMC11059628 | PubMed 38689301 | DOI: 10.1186/s13062-024-00476-z, published 30-Apr-2024)",
+        "doi": "10.1186/s13062-024-00476-z",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-53-osd-625.md",
+      "source_turn": 115,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 48,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Veggie (ISS-Columbus) vs. ISSES chamber (KSC), 24 h LEDs (100–135 µmol/m²/s PAR), KFTs with RNAlater (-80°C)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 54,
+      "title": "Six Ions in the Dark",
+      "accession": "OSD-658",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-658",
+      "osdr_doi": "10.26030/rxc2-1v61",
+      "organism": "Arabidopsis thaliana (Col-0, whole 10-day-old seedlings, n = 14). RNA extracted via Qiagen Plant RNeasy Mini Kit (on-column DNase), 0.3 µg input into TruSeq Stranded Total RNA Library Prep with Ribo-Zero Globin, sequenced across 3 runs of 75 bp paired-end reads on Illumina NextSeq 550 (25.3M–38.4M r",
+      "hardware_and_conditions": "Ground radiation study at the NASA Space Radiation Laboratory (NSRL), Brookhaven National Laboratory (Upton, NY), funded by NASA Biological and Physical Sciences (BPS) and the Human Research Program (HRP). ~100 surface-sanitized Arabidopsis seeds per T25 culture flask were grown on 0.5× MS 0.4% phytagel (0.5% sucrose, 1× Gamborg vitamins) for 8 days (22°C, 40–45% RH, 150 µmol/m²/s, 16h/8h photoperiod, 400–500 ppm CO2), shipped overnight in darkness to NSRL, wrapped in 4 layers of black tissue pa",
+      "publication": {
+        "citation": "Dixit, A. R., Meyers, A. D., Richardson, B., Richards, J. T., Richards, S. E., Neelam, S., Levine, H. G., Cameron, M. J., & Zhang, Y. (2023). Simulated galactic cosmic ray exposure activates dose-dependent DNA repair response and down regulates glucosinolate pathways in arabidopsis seedlings. Frontiers in Plant Science, 14:1284529 (PMC10757676 | PubMed 38162303 | Frontiers | DOI: 10.3389/fpls.2023",
+        "doi": "10.3389/fpls.2023.1284529",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-54-osd-658.md",
+      "source_turn": 117,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 40,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 55,
+      "title": "The Carbonaceous Crust",
+      "accession": "OSD-670",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-670",
+      "osdr_doi": "10.26030/m04e-p031",
+      "organism": "Three space-crop species (n = 83 sample records, n = 39 photography assays): romaine lettuce (Lactuca sativa cv. \"Outredgeous\"), radish (Raphanus sativus cv. \"Pink Celebration\"), and pepper (Capsicum annuum cv. \"Chimayo\"), sown 5 seeds per 4-inch pot at ~2.54 cm depth. Measurements at 55 DAP: germin",
+      "hardware_and_conditions": "Ground study at the University of North Dakota (UND) Department of Biology, funded by the North Dakota Space Grant Consortium. Crops grew for 55 days in a Percival AR-66L growth chamber (19.8°C–23.4°C diurnal ramp, 50–60% RH, ambient CO2, 16 h / 8 h photoperiod with 32 W / 14 W cool white fluorescent + 25 W incandescent lamps up to 275 µmol/m²/s, watered every other day to field capacity with distilled water). CLASS Exolith Lab (UCF) CI asteroid regolith simulant (modeled on the Orgueil CI carbo",
+      "publication": {
+        "citation": "Russell, S. J., Fieber-Beyer, S. K., & Yurkonis, K. A. (2022). CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production. The Planetary Science Journal, 3(7):155 (UND Scholarly Commons | DOI: 10.3847/PSJ/ac74c9, published 12-Jul-2022)",
+        "doi": "10.3847/PSJ/ac74c9",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-55-osd-670.md",
+      "source_turn": 119,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 35,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 56,
+      "title": "Ten Times in the Light",
+      "accession": "OSD-678",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-678",
+      "osdr_doi": "10.26030/65t6-7p29",
+      "organism": "Arabidopsis thaliana leaves dissected at 4°C from the exact same CARA plates whose root tips were archived in OSD-120 (n = 36: Col-0, Ws, and phyD [SALK027956C] × Flight/Ground × Light/Dark, 3 biological replicates/condition). Qiagen RNeasy Plant Mini Kit, Illumina NovaSeq 6000 (2 × 150 bp, 54.7M–99",
+      "hardware_and_conditions": "CARA (Characterizing Arabidopsis Root Attractions, CASIS GA-2013-104, OpNom \"Petri Plants\"), launched aboard SpaceX CRS-3 (04/18/2014–05/18/2014) and tended on the ISS by Expedition 39 Flight Engineer Steve Swanson. 11-day-old seedlings grew on phytagel Petri plates affixed directly to the ISS US Lab bulkhead (no dedicated plant growth hardware) vs. the ISSES ground control at Kennedy Space Center (24 h offset). Light cohort: constant diffuse ambient cabin light (4–6 µmol/m²/s). Dark cohort: unw",
+      "publication": {
+        "citation": "Zhou, M., Ferl, R. J., & Paul, A.-L. (2024). Light has a principal role in the Arabidopsis transcriptomic response to the spaceflight environment. npj Microgravity, 10(1):82 (PMC11303767 | PubMed 39107298 | DOI: 10.1038/s41526-024-00417-0, published 06-Aug-2024)",
+        "doi": "10.1038/s41526-024-00417-0",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-56-osd-678.md",
+      "source_turn": 121,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 36,
+        "double_page_spreads_mentioned": 1,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 57,
+      "title": "The Unbuffered Ion",
+      "accession": "OSD-723",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-723",
+      "osdr_doi": "10.26030/nvwv-qm40",
+      "organism": "Lactuca sativa cv. 'Outredgeous' (28 days; 48 plants per treatment across 3 grow-outs × 2 systems × 8 plants); 0, 31, 125, and 500 ppb Ag⁺ irrigation; iCAP 7000 ICP-OES elemental analysis & Eurofins HPLC vitamins (B1, C, K1); n = 309 samples (192 shoots/roots + 108 NFT water + 12 water controls; 312",
+      "hardware_and_conditions": "Percival PGW-48 growth chambers at the Space Station Processing Facility (SSPF), NASA Kennedy Space Center (~101 kPa, 23°C air [25°C in sample metadata], 50% RH, 3000 ppm CO₂; 300 µmol/m²/s canopy PPFD, 16 h light / 8 h dark; 23% blue 400–500 nm, 27% green 500–600 nm, 50% red 600–700 nm, plus 25 µmol/m²/s far-red via 450 nm, 660 nm, 730 nm, and 6000 K white LEDs); 290 mL in-line AgFoam (AgClNP/polyurethane) cartridge; Turface Athletics Pro League Elite autoclaved arcillite with 7.5 g/L T70 16-6-",
+      "publication": {
+        "citation": "Spencer, L., Costine, B., Irwin, T., Dixit, A., Spern, C., Diaz, A., Lozzi, B., Li, W., Khodadad, C., Smith, T., Wheeler, R., & O'Rourke, A. (2024). Substrate Matters: Ionic Silver Alters Lettuce Growth, Nutrient Uptake, and Root Microbiome in a Hydroponics System. Microorganisms, 12(3):515 (04-Mar-2024, DOI: 10.3390/microorganisms12030515) — PMC10975162 | PMID: 38543566 | MDPI",
+        "doi": "10.3390/microorganisms12030515",
+        "pmid": "38543566"
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-57-osd-723.md",
+      "source_turn": 123,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 60,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "290 mL in-line AgFoam (AgClNP/polyurethane) cartridge; 0, 31, 125, 500 ppb Ag+"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 58,
+      "title": "First Harvest in the Pink Light",
+      "accession": "OSD-745",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-745",
+      "osdr_doi": "10.26030/4tsr-7518",
+      "organism": "Lactuca sativa cv. 'Outredgeous' (33 days single harvest for VEG-01A/B; 33–56+ days sequential \"cut-and-come-again\" harvests for VEG-03A; n = 60 samples in OSD-745); Anthocyanin Content (ASE 350 + Beckman DU 700 at 530/650 nm), Phenolic Content (ASE 350 + Folin-Ciocalteu on BioTek Synergy Hybrid), O",
+      "hardware_and_conditions": "International Space Station (ISS-Columbus) Vegetable Production System (Veggie) (VEG-01A May 8–Jun 10, 2014; VEG-01B Jul 8–Aug 10, 2015; VEG-03A Oct 25–Dec 28, 2016; SpaceX-3 & SpaceX-8) vs. KSC controlled-environment ground controls (24 h delay for VEG-01A/B, 72 h delay for VEG-03A); 6 arcillite rooting pillows (Turface Proleague + Nutricote 18-6-8, 25 mL initial hydration, 23.25°C mean); LED array 30.5–31.75 cm above baseplate (~200 µmol/m²/s PAR, 12:3:1 red 630 nm : blue 455 nm : green 530 nm",
+      "publication": {
+        "citation": "Khodadad, C. L. M., Hummerick, M. E., Spencer, L. E., Dixit, A. R., Richards, J. T., Romeyn, M. W., Smith, T. M., Wheeler, R. M., & Massa, G. D. (2020). Microbiological and Nutritional Analysis of Lettuce Crops Grown on the International Space Station. Frontiers in Plant Science, DOI: 10.3389/fpls.2020.00199 — PMC7067979 | PMID: 32210992",
+        "doi": "10.3389/fpls.2020.00199",
+        "pmid": "32210992"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-58-osd-745.md",
+      "source_turn": 125,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 53,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 59,
+      "title": "Tubers in the Basalt Dust",
+      "accession": "OSD-750",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-750",
+      "osdr_doi": "10.26030/w56j-2d69",
+      "organism": "Solanum tuberosum cv. 'Modoc' mini-tubers (n = 173 total samples in OSDR; 74 DAP harvest in Exp. 1, 59 DAP in Exp. 2); 3D Multispectral Imaging (Phenospex PlantEye F600), Chlorophyll Fluorescence (PhotosynQ MultispeQ), Biomass, Substrate Chemistry (Hanna HI5522 pH/EC, Picarro CO₂ burst, Agilent 5110",
+      "hardware_and_conditions": "Oregon State University greenhouse (22°C day / 18°C night, 20°C mean, natural sunlight); 8.89 × 7.62 cm square pots (~300 mL substrate) lined with landscaping fabric; Osmocote Plus 15-9-12 (43 cm³ per 7,570 cm³); 40 mL RO water every 2–3 days increasing to daily; Exp. 1: Lunar Mare Simulant LMS-1E vs. Oregon Adkins sandy soil (0%, 15%, 30% v/v vermicompost); Exp. 2: Adkins soil vs. five LRSs (JSC-1A, LMS-1E mare; LHS-1E, NUW-LHT-5M, OPRH4W30 highland) each with 5% vermicompost.",
+      "publication": {
+        "citation": null,
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-59-osd-750.md",
+      "source_turn": 127,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 43,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 60,
+      "title": "137 Days to Heat",
+      "accession": "OSD-772",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-772",
+      "osdr_doi": "10.26030/mjvk-v435",
+      "organism": "Capsicum annuum cv. 'NuMex Española Improved' (2,000–4,000 Scoville heat units; 48 seeds planted → thinned to 4 plants on Day 28; 137 days total, harvests Days 109 & 137, 26 edible fruits); Aerobic & Fungal Plate Counts / Pathogen Screening (TSA/IMA, Biolog, MicroSeq, 3M Petrifilm, Salmonella enrich",
+      "hardware_and_conditions": "International Space Station (Kibo / Japanese Experiment Module) Advanced Plant Habitat (APH) (180+ sensors, closed-loop air/water/ethylene Purafil scrubber, 45 cm max shoot height); PH-04 Science Carrier (SC) (SpaceX CRS-22, 03-Jun-2021; imbibed 12-Jul-2021) with 4 independent quadrants (Q1–Q4), each holding 990 g (1.6 L) 1–2 mm autoclaved Turface Proleague Elite arcillite + Nutricote (T70, T100, T180); 300 µmol/m²/s PAR (27% red, 33% green, 40% blue, 16:8 L:D), 23°C, 550 ppm CO₂, RH 80% → 50%, ",
+      "publication": {
+        "citation": "Khodadad, C. L. M., Dixit, A. R., Hummerick, M. E., Spencer, L. E., Spern, C. J., Torres, J., Monje, O., Richards, J. T., Gooden, J., Curry, A. B., Massa, G. D., DuFour, N., Poulet, L., Romeyn, M. W., & Wheeler, R. M. (2026). Evaluating microbial community profiles of Chile peppers grown on the International Space Station provides implications for fruiting crops. Scientific Reports, 16:12863 (23-J",
+        "doi": "10.1038/s41598-025-20440-9",
+        "pmid": "41577717"
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-60-osd-772.md",
+      "source_turn": 129,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 42,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 61,
+      "title": "Roots in Thin Air",
+      "accession": "OSD-773",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-773",
+      "osdr_doi": "10.26030/y0ng-8r17",
+      "organism": "Multi-crop grow-outs 2–4 (June–October 2022): radish (Raphanus sativus cv. 'Cherry Belle'), lettuce (Lactuca sativa cv. 'Little Gem'), mizuna mustard (Brassica rapa), dwarf wheat (Triticum aestivum), and transplanted dwarf pea + tomato (84 DAI fruiting); n = 156 samples (MELFI -80°C); TSA/IMA plate ",
+      "hardware_and_conditions": "International Space Station (ISS-Columbus) eXposed Root On-Orbit Test System (XROOTS) integrated beneath Veggie (baseplate and bellows removed; launched NG-17 19-Feb-2022, returned SpaceX-26 & SpaceX-27); aeroponic misting + ebb-and-flow hydroponic nutrient recovery (2 root module configurations, 3 root/shoot interface designs, watering/recovery every 3 days; 26°C, 16:8 light:dark RGB LEDs).",
+      "publication": {
+        "citation": "Khodadad, C. L. M., Spern, C. J., Hummerick, M. E., Gooden, J. L., Morales, C. J., Wheeler, R. M., Melendez, O., Morrow, R., Wetzel, J., & Zhang, Y. (2026). Microbial community characterization of multi-crop growouts in the XROOTS aeroponic–hydroponic system on the International Space Station. Frontiers in Microbiomes, 5:1779816 (15-Jun-2026, DOI: 10.3389/frmbi.2026.1779816) — Frontiers | PubMed: ",
+        "doi": "10.3389/frmbi.2026.1779816",
+        "pmid": null
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-61-osd-773.md",
+      "source_turn": 131,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 41,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 62,
+      "title": "Red-Rich, Blue-Rich, Pick-and-Eat",
+      "accession": "OSD-780",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-780",
+      "osdr_doi": "10.26030/s3hn-cj93",
+      "organism": "Brassica rapa var. japonica (mizuna mustard; 35 DAI single harvest in VEG-04A; 29, 43, 58 DAI cut-and-come-again harvests in VEG-04B); n = 207 samples (203 plate-count assays in OSD-780) using Tryptic Soy Agar (TSA) and Inhibitory Mold Agar (IMA) on leaves (ProSan-wiped vs. uncleaned), pillow wicks/",
+      "hardware_and_conditions": "Dual International Space Station (ISS) Veggie chambers (SpaceX-16, SpaceX-18, Expeditions 59–61; VEG-04A 06-Jun–11-Jul-2019; VEG-04B 03-Oct–30-Nov-2019) vs. KSC ground controls (48 h offset, 22.35°C mean); 12 pillows per test (6/treatment) with 250 mL 1:1 Turface Proleague (600 µm–1 mm & 1–2 mm) + Nutricote 18-6-8 (7.5 g/L T70 + 5 g/L T180 in VEG-04A → 4 g/L T70 + 5 g/L T180 in VEG-04B); white Beta Cloth pillow shades (62% light block); Red-rich (90% R : 10% B, 270:30:30) vs. Blue-rich (50% R : ",
+      "publication": {
+        "citation": "Bunchek, J. M., Hummerick, M. E., Spencer, L. E., Romeyn, M. W., Young, M., Morrow, R. C., Mitchell, C. A., Douglas, G. L., Wheeler, R. M., & Massa, G. D. (2024). Pick-and-eat space crop production flight testing on the International Space Station. Journal of Plant Interactions, 19(1):2292220 (18-Jan-2024, DOI: 10.1080/17429145.2023.2292220) — Taylor & Francis | DLR eLib PDF",
+        "doi": "10.1080/17429145.2023.2292220",
+        "pmid": null
+      },
+      "in_gemini_master_list": false,
+      "file": "docs/astro-botanica/volumes/vol-62-osd-780.md",
+      "source_turn": 133,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 36,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 63,
+      "title": "The Shadow of Taurus-Littrow: The Apollo 17 Challenge",
+      "accession": "OSD-855",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-855",
+      "osdr_doi": null,
+      "organism": "Tracheophyta (Vascular Plants) bio-barrier challenge",
+      "hardware_and_conditions": "NASA Manned Spacecraft Center (now Johnson Space Center, Houston, TX) — Lunar Receiving Laboratory (LRL) Biological Barrier Quarantine Facility. Specialized class-III biological safety cabinets under negative pressure, autoclave airlocks, and hermetically sealed stainless steel gloveboxes. Culture rigs: sterile glass Petri dishes (100 mm), whatman filter pads saturated with distilled water or nutrient solution, and precision germinators at 23°C ± 1°C in total darkness vs. diurnal white fluoresce",
+      "publication": {
+        "citation": "Walkinshaw, C. H., et al. (1975). Results of the Apollo 17 Plant Pathological and Seed Germination Evaluation. NASA Manned Spacecraft Center / Lunar Receiving Laboratory (LRL) Technical Memorandum (NASA-TM-X-58134). Companion studies: OSD-856 (Simulated lunar soil), OSD-877 (Apollo 15/16 post-flight biomedical evaluation), OSD-883 (Apollo 14 lunar surface fines).",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-63-osd-855.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 47,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Lunar Receiving Laboratory (LRL) Class-III negative pressure biological barrier gloveboxes; sterile 100 mm glass Petri dishes with double filter pads; 23°C constant temperature incubator; Apollo 17 pristine regolith fines"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 64,
+      "title": "The Simulant Threshold: Batch #005",
+      "accession": "OSD-856",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-856",
+      "osdr_doi": null,
+      "organism": "Lactuca sativa L. (Garden Lettuce) explants across four genetically distinct horticultural cultivars",
+      "hardware_and_conditions": "NASA Manned Spacecraft Center (Houston, TX) — Lunar Receiving Laboratory (LRL) Plant Tissue Culture Facility. Specialized laminar flow hoods, precision analytical micro-balances, rotating culture wheels, and temperature-controlled plant tissue culture incubation rooms maintained at 24°C ± 1°C under continuous cool-white fluorescent illumination (~4,000 lux). Culture vessels: sterile 25 × 150 mm Pyrex culture tubes and 125 mL Erlenmeyer flasks containing semi-solid agar-solidified Murashige & Sko",
+      "publication": {
+        "citation": "Halliwell, R. S. (1975). Analytical and Radio-Histo-Chemical Experiments of Plants and Tissue Culture Cells Treated with Lunar and Terrestrial Materials. NASA Manned Spacecraft Center / Lunar Receiving Laboratory (LRL) Technical Report. Companion to Apollo quarantine records OSD-855, OSD-877, and OSD-883.",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-64-osd-856.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 44,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "NASA LRL Plant Tissue Culture Facility; Pyrex 25x150 mm culture tubes; rotary culture drums; 24°C continuous light; MS nutrient agar; Simulated Lunar Soil Batch #005 gradient (0, 100, 500, 2000 mg)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 65,
+      "title": "The Elemental Ledger: Hadley and Descartes",
+      "accession": "OSD-877",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-877",
+      "osdr_doi": null,
+      "organism": "Diverse phylogenetic vascular and non-vascular cohort (n = 30 analytical sample batches across roots, stems, leaves, and whole seedlings)",
+      "hardware_and_conditions": "NASA Manned Spacecraft Center / Lunar Receiving Laboratory (LRL) Spectrochemistry and Radio-Analytical Laboratories (Houston, TX). Hardware: Perkin-Elmer Model 303 & 403 Atomic Absorption Spectrophotometers (AAS), air-acetylene and nitrous oxide-acetylene burner heads, hollow-cathode elemental lamps, muffle furnace ashing crucibles (500°C), and laminar flow biological culture chambers maintained at 22°C–24°C under 16:8 photoperiod. Culture rigs: sterile Petri culture dishes with pure ashless fil",
+      "publication": {
+        "citation": "Walkinshaw, C. H., et al. (1975). Apollo 15 and Apollo 16 Post-Flight Plant Biomedical Evaluations: Spectrochemical and Atomic Absorption Analysis of Vascular Seedlings and Marchantia Thalli (NASA Project MMP 21243 & MMP 21242, NASA Manned Spacecraft Center). Companion to Apollo quarantine and agronomy records OSD-855, OSD-856, and OSD-883.",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-65-osd-877.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 43,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "NASA MSC/LRL Spectrochemistry Lab; Perkin-Elmer 303/403 Atomic Absorption Spectrophotometers; air-acetylene burner; muffle furnace dry ashing; Apollo 15 Hadley mare basalt vs. Apollo 16 Descartes highland anorthosite fines"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 66,
+      "title": "Fra Mauro's Breccia: The 21-Day Contact",
+      "accession": "OSD-883",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-883",
+      "osdr_doi": null,
+      "organism": "Four foundational space vegetable crops (14 to 21 days cultivation)",
+      "hardware_and_conditions": "NASA Manned Spacecraft Center / Lunar Receiving Laboratory (LRL) Class-III Quarantine Glovebox Suite. Sterile glass culture jars (250 mL) sealed with silicone gas-permeable septa; double Whatman No. 42 ashless filter pads; deionized double-distilled water; growth room at 23°C ± 1°C under 16:8 cool-white fluorescent illumination (4,500 lux). Substrates: Ground control ashless filter pads vs. Apollo 14 Fra Mauro impact-melt breccia fines (14163, ~200 mg dusting per seedling jar).",
+      "publication": {
+        "citation": "Walkinshaw, C. H., et al. (1975). Chemical Analysis and Cytological Evaluation of Vegetable Seedlings Grown in Contact with Apollo 14 Lunar Surface Fines. NASA Manned Spacecraft Center / Lunar Receiving Laboratory (LRL) Technical Memorandum. Companion studies: OSD-855, OSD-856, and OSD-877.",
+        "doi": null,
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-66-osd-883.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 46,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "NASA MSC/LRL Class-III glovebox chambers; 250 mL glass culture jars with silicone gas-permeable septa; Whatman No. 42 ashless filter pads; 23°C constant; Apollo 14 Fra Mauro impact-melt breccia fines (Sample 14163/14259)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 67,
+      "title": "The Polar Citadel: 268 Days at Neumayer III",
+      "accession": "OSD-895",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-895",
+      "osdr_doi": null,
+      "organism": "Comprehensive multi-crop CEA portfolio across 12 space crop species/cultivars grown over a 9-month continuous overwintering mission (February–November 2018, 268 days operation)",
+      "hardware_and_conditions": "German Neumayer Station III, Ekström Ice Shelf, Atka Bay, Antarctica (70°40'S, 08°16'W). The EDEN ISS Mobile Test Facility (MTF): a 20-foot shipping container complex consisting of the Cold Porch, Service Section, and the Future Exploration Greenhouse (FEG) (12.5 m² footprint, 3.68 m² active multilevel plant growth area). Closed-loop aeroponic/hydroponic cultivation systems, high-efficiency water-cooled LED light fixtures with dynamic spectral adjustment (deep red 660 nm, far-red 730 nm, blue 44",
+      "publication": {
+        "citation": "Zabel, P., Zeidler, C., Vrakking, V., Dorn, M., & Schubert, D. (2020). Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase. Frontiers in Plant Science, 11:656. (PMID: 32528506 | DOI: 10.3389/fpls.2020.00656)",
+        "doi": "10.3389/fpls.2020.00656",
+        "pmid": "32528506"
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-67-osd-895.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 47,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "EDEN ISS Mobile Test Facility (MTF) Future Exploration Greenhouse (FEG); Neumayer Station III, Antarctica; closed-loop aeroponics/hydroponics; water-cooled LED arrays (Red/Blue/Far-Red); CO2 enrichment (1000 ppm)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    },
+    {
+      "volume": 68,
+      "title": "The Polyamine Shield: Unlocking the Orbital Genome",
+      "accession": "OSD-971",
+      "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-971",
+      "osdr_doi": null,
+      "organism": "Arabidopsis thaliana (Columbia-0 wild-type) compared against genetically engineered polyamine metabolic pathway mutant and overexpressor lines",
+      "hardware_and_conditions": "International Space Station (ISS) US National Laboratory — Advanced Plant Habitat (APH) and Veggie flight facilities (SpaceX-25 mission / Increment 67). Growth rigs: sterile Phytagel growth plates (10 cm × 10 cm) inside automated growth cassettes under controlled environmental parameters (22°C, 65% RH, 16:8 light/dark photoperiod under broad-spectrum LED arrays at 100 µmol m⁻² s⁻¹). Ground controls conducted in parallel inside the KSC Orbital Environmental Simulator (OES) with real-time telemetr",
+      "publication": {
+        "citation": "Su, S.-H., & Masson, P. H. (2026). Genetic alterations of the putrescine metabolic pathway attenuate plant responses to spaceflight. npj Microgravity, 12:45 (DOI: 10.1038/s41526-026-00663-4).",
+        "doi": "10.1038/s41526-026-00663-4",
+        "pmid": null
+      },
+      "in_gemini_master_list": true,
+      "file": "docs/astro-botanica/volumes/vol-68-osd-971.md",
+      "source_turn": 9999,
+      "qa": {
+        "script_status": "partial",
+        "page_headings": 28,
+        "pages_covered": 30,
+        "missing_pages": [
+          31,
+          32
+        ],
+        "condensed_ranges": [],
+        "panels": 37,
+        "double_page_spreads_mentioned": 2,
+        "has_mission_debrief": true,
+        "bible_json": "ok",
+        "science_verification": "unverified"
+      },
+      "bible_summary": {
+        "hardware": [
+          "Advanced Plant Habitat (APH) and Veggie flight facilities; ISS US National Lab; SpaceX-25; KSC Fixation Tubes (RNAlater); MELFI -80°C; 22°C constant, 65% RH, broad-spectrum LEDs (100 µmol m-2 s-1)"
+        ],
+        "genotypes": [],
+        "molecular_characters": []
+      }
+    }
+  ]
+}
