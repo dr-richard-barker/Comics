@@ -50,9 +50,9 @@ SPEAKER_COLORS = {
 }
 
 LEVEL_META = {
-    "k5": ("K-5", "Elementary (Grades K-5 Explorer)"),
-    "ms": ("6-8", "Middle School (Grades 6-8 Investigator)"),
-    "hs": ("9-12_Teacher", "High School & Educator (Grades 9-12 + Teacher Guide)"),
+    "k5": ("K-5", "Elementary (Grades K–5 Explorer)", "Grades K–5 Explorer"),
+    "ms": ("6-8", "Middle School (Grades 6–8 Investigator)", "Grades 6–8 Investigator"),
+    "hs": ("9-12_Teacher", "High School & Educator (Grades 9–12 + Teacher Guide)", "Grades 9–12 + Teacher"),
 }
 
 
@@ -289,7 +289,7 @@ def draw_story_page(c: canvas.Canvas, novel: dict, page: dict, level: str) -> No
     c.drawRightString(
         MARGIN + CONTENT_W - 10,
         top_bar_y + 7,
-        f"Page {page['page_number']} of 6: {page['beat_title']}  ·  Grades 9–12 + Teacher",
+        f"Page {page['page_number']} of 6: {page['beat_title']}  ·  {LEVEL_META[level][2]}",
     )
 
     # 2. Full-Bleed 16:9 Artwork Plate
@@ -447,9 +447,10 @@ def draw_teacher_guide_page(c: canvas.Canvas, novel: dict, comics_by_id: dict, l
     c.setFillColor(hex_color(theme))
     c.rect(MARGIN, ban_y, CONTENT_W, 4, fill=1, stroke=0)
 
+    lvl_short = LEVEL_META[level][2].upper()
     c.setFillColor(hex_color(accent))
     c.setFont("SansBold", 8.5)
-    c.drawString(MARGIN + 12, ban_y + 31, f"GRADES 9–12 + TEACHER GUIDE & MISSION DEBRIEF  ·  VOLUME {novel['volume']:02d} OF 10")
+    c.drawString(MARGIN + 12, ban_y + 31, f"{lvl_short} GUIDE & MISSION DEBRIEF  ·  VOLUME {novel['volume']:02d} OF 10")
     c.setFillColor(hex_color("#FFFFFF"))
     c.setFont("SansBlack", 14.5)
     c.drawString(MARGIN + 12, ban_y + 12, f"{novel['title']}: {novel['subtitle']}")
@@ -487,9 +488,18 @@ def draw_teacher_guide_page(c: canvas.Canvas, novel: dict, comics_by_id: dict, l
     footer_y = MARGIN + 22
 
     # Left Column Header
+    left_heading = (
+        "9–12+ QUANTITATIVE MECHANISMS & INQUIRY PROMPTS"
+        if level == "hs"
+        else "6–8 INVESTIGATOR DISCOVERIES & INQUIRY PROMPTS"
+        if level == "ms"
+        else "K–5 EXPLORER DISCOVERIES & WONDER QUESTIONS"
+    )
+    detail_label = "9–12+ Quantitative Detail" if level == "hs" else "Key Scientific Discovery"
+
     c.setFillColor(hex_color("#0F172A"))
     c.setFont("SansBold", 9.5)
-    c.drawString(lx, y - 10, "9–12+ QUANTITATIVE MECHANISMS & INQUIRY PROMPTS")
+    c.drawString(lx, y - 10, left_heading)
     c.setStrokeColor(hex_color(theme))
     c.setLineWidth(1.4)
     c.line(lx, y - 14, lx + left_w, y - 14)
@@ -498,15 +508,16 @@ def draw_teacher_guide_page(c: canvas.Canvas, novel: dict, comics_by_id: dict, l
     q_head = ParagraphStyle("qh", fontName="SansBold", fontSize=8.3, leading=10.8, textColor=hex_color(theme))
     q_body = ParagraphStyle("qb", fontName="Uni", fontSize=7.8, leading=10.5, textColor=hex_color("#1E293B"))
 
-    # Pull top 4 source comics for rich HS quantitative inquiry prompts
+    # Pull top 4 source comics for level-matched inquiry prompts
     for cid in novel["source_comic_ids"][:4]:
         cm = comics_by_id.get(cid)
         if not cm or ly < footer_y + 52:
             continue
         card_top = ly
+        detail_txt = cm["hs_detail"] if level == "hs" else cm["discovery"]
         h1 = draw_para_in_box(c, f"{cm['title']}  (Issue #{cm['issue_number']:02d})", q_head, lx + 8, ly - 5, left_w - 14)
         h2 = draw_para_in_box(c, f"Discussion Prompt: {cm['wonder_q']}", q_body, lx + 8, ly - 7 - h1, left_w - 14)
-        h3 = draw_para_in_box(c, f"9–12+ Quantitative Detail: {cm['hs_detail']}", q_body, lx + 8, ly - 9 - h1 - h2, left_w - 14)
+        h3 = draw_para_in_box(c, f"{detail_label}: {detail_txt}", q_body, lx + 8, ly - 9 - h1 - h2, left_w - 14)
         box_h = h1 + h2 + h3 + 16
         c.setStrokeColor(hex_color("#CBD5E1"))
         c.setLineWidth(0.8)
