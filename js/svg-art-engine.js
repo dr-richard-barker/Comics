@@ -186,6 +186,19 @@
         <pattern id="grid-${uid}" width="26" height="26" patternUnits="userSpaceOnUse">
           <path d="M 26 0 L 0 0 0 26" fill="none" stroke="${pal.gridColor}" stroke-width="1"/>
         </pattern>
+        <pattern id="woodcut-${uid}" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+          <line x1="0" y1="0" x2="0" y2="18" stroke="${pal.gridColor}" stroke-width="1.3"/>
+          <line x1="9" y1="0" x2="9" y2="18" stroke="${pal.gridColor}" stroke-width="0.6" stroke-dasharray="4 3"/>
+        </pattern>
+        <pattern id="riso-${uid}" width="14" height="14" patternUnits="userSpaceOnUse">
+          <circle cx="3" cy="3" r="1.5" fill="${pal.accent}" opacity="0.14"/>
+          <circle cx="9.5" cy="9.5" r="1.5" fill="${pal.accent2}" opacity="0.14"/>
+        </pattern>
+        <pattern id="kirby-${uid}" width="32" height="32" patternUnits="userSpaceOnUse">
+          <circle cx="6" cy="6" r="2.2" fill="${pal.accent}" opacity="0.18"/>
+          <circle cx="11" cy="8" r="1.2" fill="${pal.accent2}" opacity="0.16"/>
+          <circle cx="24" cy="22" r="2.6" fill="${pal.accent2}" opacity="0.15"/>
+        </pattern>
         <radialGradient id="glow-${uid}" cx="38%" cy="50%" r="50%">
           <stop offset="0%" stop-color="${pal.accent}" stop-opacity="${pal.theme === "light" ? "0.14" : "0.24"}"/>
           <stop offset="100%" stop-color="${pal.bg1}" stop-opacity="0"/>
@@ -194,15 +207,31 @@
     `;
 
     let styleTexture = `<rect width="${w}" height="${h}" fill="url(#grid-${uid})"/>`;
-    if (style === "cosmic-kirby" || style === "maker-risograph" || style === "solarpunk-woodcut") {
+    if (style === "cosmic-kirby") {
       styleTexture = `
-        <rect width="${w}" height="${h}" fill="url(#dots-${uid})"/>
-        <rect width="${w}" height="${h}" fill="url(#grid-${uid})" opacity="0.5"/>
+        <rect width="${w}" height="${h}" fill="url(#kirby-${uid})"/>
+        <rect width="${w}" height="${h}" fill="url(#dots-${uid})" opacity="0.55"/>
+      `;
+    } else if (style === "maker-risograph") {
+      styleTexture = `
+        <rect width="${w}" height="${h}" fill="url(#riso-${uid})"/>
+        <rect width="${w}" height="${h}" fill="url(#grid-${uid})" opacity="0.35"/>
+      `;
+    } else if (style === "solarpunk-woodcut" || style === "botanical-ghibli") {
+      styleTexture = `
+        <rect width="${w}" height="${h}" fill="url(#woodcut-${uid})"/>
+        <rect width="${w}" height="${h}" fill="url(#dots-${uid})" opacity="0.35"/>
+      `;
+    } else if (style === "cyber-genomics") {
+      styleTexture = `
+        <rect width="${w}" height="${h}" fill="url(#grid-${uid})"/>
+        <path d="M 24 140 L 120 140 L 144 164 M 24 298 L 160 298 L 184 274" fill="none" stroke="${pal.accent2}" stroke-opacity="0.22" stroke-width="1.3"/>
       `;
     }
 
     const horizonY = 290;
     const pulseR = 22 + Math.sin(p * Math.PI * 2) * 4;
+    const arenaCx = (w - 250) * 0.5;
 
     return `
       ${defs}
@@ -211,8 +240,9 @@
       ${styleTexture}
       <line x1="12" y1="${horizonY}" x2="${w - 260}" y2="${horizonY}" stroke="${pal.accent}" stroke-opacity="0.32" stroke-width="1.3" stroke-dasharray="6 4"/>
       <g>${ticksTop.join("")}</g>
-      <g transform="translate(${(w - 250) * 0.5}, 216)" opacity="0.25">
+      <g transform="translate(${arenaCx}, 216)" opacity="0.24">
         <circle cx="0" cy="0" r="${pulseR + 62}" fill="none" stroke="${pal.accent}" stroke-width="1.1" stroke-dasharray="5 5"/>
+        <path d="M ${-115} 58 A 128 96 0 0 1 115 58" fill="none" stroke="${pal.accent2}" stroke-width="1" stroke-dasharray="3 4"/>
       </g>
     `;
   }
@@ -556,6 +586,12 @@
     const s = scale || 1;
     const isShock = pose === "challenge";
     const isCheer = pose === "discovery" || pose === "finale";
+    const isExperiment = pose === "experiment";
+    const tilt = isShock ? -6 : isExperiment ? 4 : isCheer ? -3 : 0;
+    const floatY = isShock ? -4 : isCheer ? -3 : 0;
+    const cheerSpark = isCheer
+      ? `<path d="M -24 -22 L -20 -18 M 24 -22 L 20 -18 M 0 -30 L 0 -25" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round"/>`
+      : "";
 
     if (charId === "sprout") {
       const leafTilt = isShock ? -16 : isCheer ? -36 : -25;
@@ -563,7 +599,8 @@
         ? `<circle cx="0" cy="7" r="3" fill="#064e3b"/>`
         : `<path d="M -5 5 Q 0 11 5 5" fill="none" stroke="#064e3b" stroke-width="2" stroke-linecap="round"/>`;
       return `
-        <g transform="translate(${x},${y}) scale(${s})">
+        <g transform="translate(${x},${y + floatY}) rotate(${tilt}) scale(${s})">
+          ${cheerSpark}
           <path d="M 0 22 Q -6 36 -14 44 M 0 22 Q 2 38 0 48 M 0 22 Q 8 35 15 42 M -6 32 L -13 31 M 6 32 L 13 31" fill="none" stroke="#bef264" stroke-width="2.2" stroke-linecap="round"/>
           <path d="M 0 22 Q -2 10 0 -4" fill="none" stroke="#22c55e" stroke-width="5.5" stroke-linecap="round"/>
           <path d="M 0 22 Q -2 10 0 -4" fill="none" stroke="#bbf7d0" stroke-width="1.3" stroke-dasharray="2 2"/>

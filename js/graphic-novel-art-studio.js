@@ -631,7 +631,13 @@
       `;
     }
 
-    return base + art;
+    return base + `
+      <rect width="${W}" height="${H}" fill="url(#${uid}_halftone)" pointer-events="none"/>
+      ${art}
+      <rect width="${W}" height="${H}" fill="url(#${uid}_vignette)" pointer-events="none"/>
+      <rect x="8" y="8" width="${W - 16}" height="${H - 16}" fill="none" stroke="${p.ink}" stroke-width="6" pointer-events="none"/>
+      <rect x="14" y="14" width="${W - 28}" height="${H - 28}" fill="none" stroke="${p.c1}" stroke-opacity="0.35" stroke-width="1.5" pointer-events="none"/>
+    `;
   }
 
   function renderStudioSVG(novel, pageOrNull) {
@@ -672,6 +678,14 @@
             <stop offset="0%" stop-color="#fda4af"/>
             <stop offset="45%" stop-color="#e11d48"/>
             <stop offset="100%" stop-color="#881337"/>
+          </radialGradient>
+          <pattern id="${uid}_halftone" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(28)">
+            <circle cx="3" cy="3" r="1.4" fill="${p.c1}" opacity="0.16"/>
+            <circle cx="9" cy="9" r="1.1" fill="${p.c2}" opacity="0.12"/>
+          </pattern>
+          <radialGradient id="${uid}_vignette" cx="50%" cy="50%" r="65%">
+            <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#020617" stop-opacity="0.48"/>
           </radialGradient>
           <linearGradient id="solarpunkSky" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#1c0d07"/>

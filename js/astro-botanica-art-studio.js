@@ -307,6 +307,37 @@
       `;
     }
 
+    if (fam.includes("solan")) {
+      // Micro-Tom / Solanum Dwarf Tomato in Space Chamber
+      return `
+        <g transform="scale(${sc})">
+          <circle r="195" fill="url(#glow-${uid})" />
+          <path d="M 0,165 C -18,75 -10,-45 0,-165" fill="none" stroke="#10b981" stroke-width="8" stroke-linecap="round" />
+          <path d="M 0,40 C -75,15 -115,-25 -130,-70 M 0,-20 C 75,-45 110,-90 125,-135 M 0,-80 C -60,-120 -85,-165 -95,-195" fill="none" stroke="#34d399" stroke-width="5" stroke-linecap="round" />
+          <circle cx="-88" cy="-35" r="24" fill="#ef4444" stroke="#ffffff" stroke-width="3.5" />
+          <circle cx="-95" cy="-42" r="7" fill="#fda4af" opacity="0.85" />
+          <circle cx="84" cy="-88" r="22" fill="#dc2626" stroke="#ffffff" stroke-width="3.5" />
+          <circle cx="77" cy="-95" r="6" fill="#fda4af" opacity="0.85" />
+          <circle cx="-55" cy="-145" r="17" fill="#fb7185" stroke="#ffffff" stroke-width="3" />
+          <ellipse cx="0" cy="175" rx="95" ry="20" fill="#09090b" stroke="${pal.accent2}" stroke-width="3" />
+        </g>
+      `;
+    }
+
+    if (fam.includes("pterid") || domain.includes("spore") || domain.includes("fern")) {
+      // Ceratopteris fern fiddlehead & polarity calcium gradient
+      return `
+        <g transform="scale(${sc})">
+          <circle r="195" fill="url(#glow-${uid})" />
+          <path d="M 0,170 C -10,45 -5,-55 35,-120 C 65,-165 10,-195 -20,-155 C -40,-130 -12,-95 10,-115" fill="none" stroke="#34d399" stroke-width="9" stroke-linecap="round" />
+          ${[-60, -20, 20, 60, 100]
+            .map((y, idx) => `<ellipse cx="${-38 + idx * 4}" cy="${y}" rx="34" ry="12" transform="rotate(${-15 + idx * 3} ${-38 + idx * 4} ${y})" fill="#10b981" stroke="#ffffff" stroke-width="2.5" />`)
+            .join("")}
+          <circle cx="0" cy="-140" r="14" fill="${pal.accent2}" stroke="#ffffff" stroke-width="3" />
+        </g>
+      `;
+    }
+
     if (fam.includes("asteraceae")) {
       // Lush orbital Red Romaine / Mizuna canopy
       return `
@@ -430,8 +461,8 @@
             const arrow = m.trend === "up" ? "▲" : m.trend === "down" ? "▼" : "◆";
             return `
               <g transform="translate(18, ${y})">
-                <text x="0" y="13" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="800" fill="#e2e8f0">${esc(trunc(m.label, 24))}</text>
-                <text x="${pw - 36}" y="13" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="${barColor}" text-anchor="end">${arrow} ${esc(trunc(m.value, 24))}</text>
+                <text x="0" y="13" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800" fill="#e2e8f0">${esc(trunc(m.label, 32))}</text>
+                <text x="${pw - 36}" y="13" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="${barColor}" text-anchor="end">${arrow} ${esc(trunc(m.value, 28))}</text>
                 <rect x="0" y="20" width="${pw - 36}" height="12" rx="3" fill="#1e293b" />
                 <rect x="0" y="20" width="${Math.min(pw - 36, barW + 90)}" height="12" rx="3" fill="${barColor}" opacity="0.92" />
               </g>
