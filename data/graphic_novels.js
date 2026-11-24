@@ -7,6 +7,7 @@ window.COSE_GRAPHIC_NOVELS = {
   "total_plates": 70,
   "raster_plates": 58,
   "vector_studio_plates": 12,
+  "teacher_curriculum_map_pdf": "exports/pdf/CoSE_Chronicles_Teacher_NGSS_Curriculum_Map.pdf",
   "worlds": [
     "ISS",
     "Moon",
@@ -449,7 +450,17 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol01_cover"
       },
-      "raster_plate_count": 7
+      "raster_plate_count": 7,
+      "print_pdfs": {
+        "booklets": {
+          "k5": "exports/pdf/booklets/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_K-5_Booklet_11x8.5.pdf",
+          "ms": "exports/pdf/booklets/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_6-8_Booklet_11x8.5.pdf",
+          "hs": "exports/pdf/booklets/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_9-12_Teacher_Booklet_11x8.5.pdf"
+        },
+        "k5": "exports/pdf/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_K-5.pdf",
+        "ms": "exports/pdf/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_6-8.pdf",
+        "hs": "exports/pdf/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_9-12_Teacher.pdf"
+      }
     },
     {
       "volume": 2,
@@ -870,7 +881,17 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol02_cover"
       },
-      "raster_plate_count": 7
+      "raster_plate_count": 7,
+      "print_pdfs": {
+        "booklets": {
+          "k5": "exports/pdf/booklets/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_K-5_Booklet_11x8.5.pdf",
+          "ms": "exports/pdf/booklets/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_6-8_Booklet_11x8.5.pdf",
+          "hs": "exports/pdf/booklets/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_9-12_Teacher_Booklet_11x8.5.pdf"
+        },
+        "k5": "exports/pdf/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_K-5.pdf",
+        "ms": "exports/pdf/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_6-8.pdf",
+        "hs": "exports/pdf/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_9-12_Teacher.pdf"
+      }
     },
     {
       "volume": 3,
@@ -1291,7 +1312,17 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol03_cover"
       },
-      "raster_plate_count": 7
+      "raster_plate_count": 7,
+      "print_pdfs": {
+        "booklets": {
+          "k5": "exports/pdf/booklets/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_K-5_Booklet_11x8.5.pdf",
+          "ms": "exports/pdf/booklets/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_6-8_Booklet_11x8.5.pdf",
+          "hs": "exports/pdf/booklets/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_9-12_Teacher_Booklet_11x8.5.pdf"
+        },
+        "k5": "exports/pdf/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_K-5.pdf",
+        "ms": "exports/pdf/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_6-8.pdf",
+        "hs": "exports/pdf/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_9-12_Teacher.pdf"
+      }
     },
     {
       "volume": 4,
@@ -1714,7 +1745,17 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol04_cover"
       },
-      "raster_plate_count": 7
+      "raster_plate_count": 7,
+      "print_pdfs": {
+        "booklets": {
+          "k5": "exports/pdf/booklets/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_K-5_Booklet_11x8.5.pdf",
+          "ms": "exports/pdf/booklets/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_6-8_Booklet_11x8.5.pdf",
+          "hs": "exports/pdf/booklets/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_9-12_Teacher_Booklet_11x8.5.pdf"
+        },
+        "k5": "exports/pdf/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_K-5.pdf",
+        "ms": "exports/pdf/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_6-8.pdf",
+        "hs": "exports/pdf/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_9-12_Teacher.pdf"
+      }
     },
     {
       "volume": 5,
@@ -2135,7 +2176,17 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol05_cover"
       },
-      "raster_plate_count": 7
+      "raster_plate_count": 7,
+      "print_pdfs": {
+        "booklets": {
+          "k5": "exports/pdf/booklets/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_K-5_Booklet_11x8.5.pdf",
+          "ms": "exports/pdf/booklets/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_6-8_Booklet_11x8.5.pdf",
+          "hs": "exports/pdf/booklets/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_9-12_Teacher_Booklet_11x8.5.pdf"
+        },
+        "k5": "exports/pdf/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_K-5.pdf",
+        "ms": "exports/pdf/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_6-8.pdf",
+        "hs": "exports/pdf/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_9-12_Teacher.pdf"
+      }
     },
     {
       "volume": 6,
@@ -2556,7 +2607,17 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol06_cover"
       },
-      "raster_plate_count": 7
+      "raster_plate_count": 7,
+      "print_pdfs": {
+        "booklets": {
+          "k5": "exports/pdf/booklets/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_K-5_Booklet_11x8.5.pdf",
+          "ms": "exports/pdf/booklets/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_6-8_Booklet_11x8.5.pdf",
+          "hs": "exports/pdf/booklets/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_9-12_Teacher_Booklet_11x8.5.pdf"
+        },
+        "k5": "exports/pdf/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_K-5.pdf",
+        "ms": "exports/pdf/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_6-8.pdf",
+        "hs": "exports/pdf/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_9-12_Teacher.pdf"
+      }
     },
     {
       "volume": 7,
@@ -2982,7 +3043,17 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol07_cover"
       },
-      "raster_plate_count": 7
+      "raster_plate_count": 7,
+      "print_pdfs": {
+        "booklets": {
+          "k5": "exports/pdf/booklets/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_K-5_Booklet_11x8.5.pdf",
+          "ms": "exports/pdf/booklets/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_6-8_Booklet_11x8.5.pdf",
+          "hs": "exports/pdf/booklets/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_9-12_Teacher_Booklet_11x8.5.pdf"
+        },
+        "k5": "exports/pdf/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_K-5.pdf",
+        "ms": "exports/pdf/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_6-8.pdf",
+        "hs": "exports/pdf/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_9-12_Teacher.pdf"
+      }
     },
     {
       "volume": 8,
@@ -3406,7 +3477,10 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol08_cover"
       },
-      "raster_plate_count": 5
+      "raster_plate_count": 5,
+      "print_pdfs": {
+        "booklets": {}
+      }
     },
     {
       "volume": 9,
@@ -3831,7 +3905,10 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol09_cover"
       },
-      "raster_plate_count": 2
+      "raster_plate_count": 2,
+      "print_pdfs": {
+        "booklets": {}
+      }
     },
     {
       "volume": 10,
@@ -4259,7 +4336,10 @@ window.COSE_GRAPHIC_NOVELS = {
         "height": 1200,
         "scene_key": "vol10_cover"
       },
-      "raster_plate_count": 2
+      "raster_plate_count": 2,
+      "print_pdfs": {
+        "booklets": {}
+      }
     }
   ],
   "comic_to_novels": {

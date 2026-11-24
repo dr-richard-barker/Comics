@@ -101,7 +101,7 @@ def load_image_fitted(rel_path: str, target_px: tuple[int, int] | None = None) -
         if target_px is not None:
             rgb = ImageOps.fit(rgb, target_px, method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
         buf = io.BytesIO()
-        rgb.save(buf, format="JPEG", quality=93, subsampling=0)
+        rgb.save(buf, format="JPEG", quality=88, subsampling=2, optimize=True)
         buf.seek(0)
         return ImageReader(buf)
 

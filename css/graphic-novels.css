@@ -77,6 +77,20 @@
   font-weight: 700;
 }
 
+.gn-stat-link {
+  text-decoration: none;
+  background: color-mix(in srgb, var(--cose-teal) 18%, var(--bg-surface));
+  border-color: var(--cose-cyan);
+  color: var(--fg-primary);
+  transition: transform 0.14s ease, background 0.14s ease;
+}
+
+.gn-stat-link:hover {
+  transform: translateY(-1px);
+  background: var(--cose-teal);
+  color: #ffffff;
+}
+
 /* Mission Filters Console */
 .gn-filter-deck {
   display: flex;
@@ -352,6 +366,28 @@
   transform: translateY(-1px);
 }
 
+.btn-gn-pdf-quick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 8.5px 11px;
+  border: 1.5px solid var(--gn-color, var(--cose-cyan));
+  background: var(--bg-card);
+  color: var(--fg-primary);
+  font-weight: 800;
+  font-size: 0.78rem;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.btn-gn-pdf-quick:hover {
+  background: var(--gn-color, var(--cose-teal));
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
 /* ==========================================================================
    CINEMATIC GRAPHIC NOVEL READER
    ========================================================================== */
@@ -406,6 +442,70 @@
   background: var(--gn-color, var(--cose-teal));
   border-color: var(--gn-color, var(--cose-teal));
   color: #ffffff;
+}
+
+a.gn-tool-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.gn-tool-download {
+  background: color-mix(in srgb, var(--gn-color, var(--cose-teal)) 20%, var(--bg-card));
+  border-color: var(--gn-color, var(--cose-cyan));
+}
+
+.gn-tool-download:hover {
+  background: var(--gn-color, var(--cose-teal));
+  color: #ffffff;
+}
+
+.gn-print-pack-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border-line);
+}
+
+.gn-print-pack-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--fg-secondary);
+}
+
+.gn-print-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.76rem;
+  font-weight: 800;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-line);
+  color: var(--fg-primary);
+  transition: background 0.14s ease, border-color 0.14s ease, color 0.14s ease;
+}
+
+.gn-print-pill:hover,
+.gn-print-pill.current {
+  background: var(--gn-color, var(--cose-teal));
+  border-color: var(--gn-color, var(--cose-teal));
+  color: #ffffff;
+}
+
+.gn-print-pill.booklet {
+  border-color: var(--gn-accent, #fbbf24);
+  background: color-mix(in srgb, var(--gn-accent, #fbbf24) 14%, var(--bg-card));
+}
+
+.gn-print-pill.booklet:hover {
+  background: var(--gn-accent, #fbbf24);
+  color: #09090b;
 }
 
 .gn-reader-header {

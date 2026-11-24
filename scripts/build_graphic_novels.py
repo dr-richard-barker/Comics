@@ -12,17 +12,47 @@ Usage:
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 DOCS_DIR = ROOT / "docs"
+EXPORTS_PDF_DIR = ROOT / "exports" / "pdf"
 SCRIPTS_DIR = Path(__file__).resolve().parent
 
 sys.path.insert(0, str(SCRIPTS_DIR))
 from novels_data_part1 import NOVELS_PART_1
 from novels_data_part2 import NOVELS_PART_2
+
+PDF_LEVEL_TAGS = {
+    "k5": "K-5",
+    "ms": "6-8",
+    "hs": "9-12_Teacher",
+}
+
+
+def detect_print_pdfs(novel: dict) -> dict:
+    """Detects pre-built 8.5x11 print PDFs and 2-up saddle-stitch booklets in exports/pdf/."""
+    raw = novel["title"].replace("'", "")
+    words = re.findall(r"[A-Za-z0-9]+", raw)
+    formatted = [
+        w.upper() if w.upper() in ("III", "II", "IV", "ISS", "CFD", "DNA", "RNA", "G") else w.capitalize()
+        for w in words
+    ]
+    clean = "_".join(formatted)
+    found: dict = {"booklets": {}}
+    for lvl, tag in PDF_LEVEL_TAGS.items():
+        fname = f"CoSE_Chronicles_Vol{novel['volume']:02d}_{clean}_{tag}.pdf"
+        std_path = EXPORTS_PDF_DIR / fname
+        if std_path.exists():
+            found[lvl] = f"exports/pdf/{fname}"
+        bk_name = fname.replace(".pdf", "_Booklet_11x8.5.pdf")
+        bk_path = EXPORTS_PDF_DIR / "booklets" / bk_name
+        if bk_path.exists():
+            found["booklets"][lvl] = f"exports/pdf/booklets/{bk_name}"
+    return found
 
 
 def compile_story_bible_markdown(novels: list[dict], comics_by_id: dict) -> str:
@@ -192,8 +222,10 @@ def main() -> None:
         compiled["cover"] = cover_obj
         compiled["pages"] = pages_out
         compiled["raster_plate_count"] = (1 if cover_exists else 0) + sum(1 for p in pages_out if p["art"]["has_raster"])
+        compiled["print_pdfs"] = detect_print_pdfs(novel)
         compiled_novels.append(compiled)
 
+    curr_map_rel = "exports/pdf/CoSE_Chronicles_Teacher_NGSS_Curriculum_Map.pdf"
     payload = {
         "anthology_title": "The CoSE Chronicles: 10 Flagship Space Biology Graphic Novels",
         "anthology_subtitle": "Adventures across the ISS, the Moon, and Earth—through the eyes of Astronauts, Phytonauts, and Mission Control Scientists in Marvel & Manga Art Styles",
@@ -202,6 +234,7 @@ def main() -> None:
         "total_plates": total_raster + total_vector,
         "raster_plates": total_raster,
         "vector_studio_plates": total_vector,
+        "teacher_curriculum_map_pdf": curr_map_rel if (ROOT / curr_map_rel).exists() else None,
         "worlds": ["ISS", "Moon", "Earth"],
         "perspectives": ["Astronaut", "Phytonaut", "Mission Control"],
         "art_families": [

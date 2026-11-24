@@ -68,6 +68,8 @@
   }
 
   function renderShowcase(root) {
+    const level = getLevel();
+    const levelShort = { k5: "K–5", ms: "6–8", hs: "9–12+" }[level] || "6–8";
     const filtered = getFilteredNovels();
     const worldEmoji = { ISS: "🛰️", Moon: "🌙", Earth: "🌍" };
     const povEmoji = { Astronaut: "👩‍🚀", Phytonaut: "🌱", "Mission Control": "📡" };
@@ -84,6 +86,10 @@
               : "✒️ Vector Art Studio";
         const worldsHtml = n.worlds.map((w) => `<span class="gn-chip">${worldEmoji[w] || "🌐"} ${esc(w)}</span>`).join("");
         const povsHtml = n.perspectives.map((p) => `<span class="gn-chip">${povEmoji[p] || "👤"} ${esc(p)}</span>`).join("");
+        const directPdf = n.print_pdfs && n.print_pdfs[level];
+        const pdfBtnHtml = directPdf
+          ? `<a class="btn-gn-pdf-quick" href="${esc(directPdf)}" target="_blank" rel="noopener" download title="Download 8-page 8.5&quot;×11&quot; Print Comic PDF (${esc(levelShort)})">📥 ${esc(levelShort)} PDF</a>`
+          : "";
 
         return `
           <article class="gn-cover-card gn-family-${n.art_style_family}" data-open-novel="${n.id}" style="--gn-color:${n.theme_color}; --gn-accent:${n.accent_color}">
@@ -109,13 +115,18 @@
               <p class="gn-tagline">${esc(n.tagline)}</p>
               <p class="gn-find-preview"><strong>Big Find:</strong> ${esc(n.big_finds[0])}</p>
               <div class="gn-cover-cta">
-                <button class="btn-gn-launch" type="button" data-open-novel-btn="${n.id}">📖 Launch 6-Page Adventure →</button>
+                <button class="btn-gn-launch" type="button" data-open-novel-btn="${n.id}">📖 Launch Adventure →</button>
+                ${pdfBtnHtml}
               </div>
             </div>
           </article>
         `;
       })
       .join("");
+
+    const teacherMapHtml = GN_DATA.teacher_curriculum_map_pdf
+      ? `<a class="gn-stat-pill gn-stat-link" href="${esc(GN_DATA.teacher_curriculum_map_pdf)}" target="_blank" rel="noopener" download>📋 Download 1-Page Teacher NGSS Map (PDF)</a>`
+      : "";
 
     root.innerHTML = `
       <section class="gn-showcase-banner">
@@ -129,8 +140,9 @@
             <span class="gn-stat-pill">💥 6 Marvel-Core Styles</span>
             <span class="gn-stat-pill">🗾 4 Manga Data-Styles</span>
             <span class="gn-stat-pill">🛰️ ISS · 🌙 Moon · 🌍 Earth</span>
-            <span class="gn-stat-pill">🔬 Live Science Data HUD &amp; K–12 Reading Switcher</span>
+            <span class="gn-stat-pill">🖨️ 8.5"×11" Print Comics &amp; Folded Booklets</span>
             <span class="gn-stat-pill">🔗 92 Linked Open-Source Repos</span>
+            ${teacherMapHtml}
           </div>
         </div>
       </section>
@@ -184,7 +196,8 @@
       })
     );
     root.querySelectorAll("[data-open-novel]").forEach((card) =>
-      card.addEventListener("click", () => {
+      card.addEventListener("click", (e) => {
+        if (e.target && e.target.closest(".btn-gn-pdf-quick")) return;
         openNovel(card.getAttribute("data-open-novel"), 1);
       })
     );
@@ -299,6 +312,27 @@
       )
       .join("");
 
+    const pdfs = novel.print_pdfs || {};
+    const booklets = pdfs.booklets || {};
+    const activePdfUrl = pdfs[level] || null;
+    const activeBookletUrl = booklets[level] || null;
+    const levelLabelShort = { k5: "K–5", ms: "6–8", hs: "9–12+" }[level] || "6–8";
+
+    const toolbarPdfLink = activePdfUrl
+      ? `<a class="gn-tool-btn gn-tool-download" href="${esc(activePdfUrl)}" target="_blank" rel="noopener" download title="Download publication-grade 8-page 8.5&quot;×11&quot; Print Comic PDF (${esc(levelLabelShort)})">📥 8.5×11 PDF (${esc(levelLabelShort)})</a>`
+      : "";
+
+    const printPackLinks = [
+      pdfs.k5 ? `<a class="gn-print-pill ${level === "k5" ? "current" : ""}" href="${esc(pdfs.k5)}" target="_blank" rel="noopener" download>📥 K–5 Comic</a>` : "",
+      pdfs.ms ? `<a class="gn-print-pill ${level === "ms" ? "current" : ""}" href="${esc(pdfs.ms)}" target="_blank" rel="noopener" download>📥 6–8 Comic</a>` : "",
+      pdfs.hs ? `<a class="gn-print-pill ${level === "hs" ? "current" : ""}" href="${esc(pdfs.hs)}" target="_blank" rel="noopener" download>📥 9–12+ Teacher</a>` : "",
+      activeBookletUrl ? `<a class="gn-print-pill booklet" href="${esc(activeBookletUrl)}" target="_blank" rel="noopener" download title="2-sheet double-sided fold-and-staple booklet (11&quot;×8.5&quot; landscape)">📖 ${esc(levelLabelShort)} Fold-and-Staple Booklet</a>` : ""
+    ].filter(Boolean);
+
+    const printPackHtml = printPackLinks.length
+      ? `<div class="gn-print-pack-bar"><span class="gn-print-pack-label">🖨️ Ready-to-Print 8.5"×11" PDFs:</span>${printPackLinks.join("")}</div>`
+      : "";
+
     root.innerHTML = `
       <div class="gn-reader-shell ${stateClasses}" style="--gn-color:${novel.theme_color}; --gn-accent:${novel.accent_color}">
         <!-- Sticky Reader Toolbar -->
@@ -317,7 +351,8 @@
             <button class="gn-tool-btn ${cleanArtMode ? "active" : ""}" type="button" id="btn-gn-clean">🎨 Clean Art</button>
             <button class="gn-tool-btn" type="button" id="btn-gn-script">🎬 Director's Script</button>
             <button class="gn-tool-btn" type="button" id="btn-gn-png" title="Download active page as a 1400×960 HD PNG comic plate">📸 HD PNG</button>
-            <button class="gn-tool-btn" type="button" id="btn-gn-pdf" title="Open printable 8-page Graphic Novel PDF Book (Cover + 6 Pages + Educator Debrief)">🖨️ Print / PDF Book</button>
+            ${toolbarPdfLink}
+            <button class="gn-tool-btn" type="button" id="btn-gn-pdf" title="Open printable 8-page 8.5&quot;×11&quot; Graphic Novel print view">🖨️ Print View</button>
             <button class="gn-tool-btn" type="button" id="btn-gn-share" title="Copy direct link to this volume and page">🔗 Share Link</button>
           </div>
         </div>
@@ -336,6 +371,7 @@
             <h2>${esc(novel.title)}</h2>
             <p class="gn-reader-subtitle">${esc(novel.subtitle)} — ${esc(novel.tagline)}</p>
             <p class="gn-reader-style-note"><strong>Art Direction:</strong> ${esc(novel.art_style_notes)}</p>
+            ${printPackHtml}
           </div>
         </header>
 

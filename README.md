@@ -21,8 +21,39 @@ Synthesizing the biggest discoveries across all 114 projects into ten 3-act illu
 | **09** | **MISSION CONTROL EVERYWHERE**: *The Citizen-Scientist Uprising* | Earth · ISS | Mission Control | Modern Marvel Pop-Art (*Spider-Verse* Energy) |
 | **10** | **THE CLOSED-LOOP FRONTIER**: *Architects of Artemis City* | Earth · ISS · Moon | Astronaut · Phytonaut · Mission Control | Marvel Cinematic Crossover Event |
 
-- **3-Layer Interactive Reader**: Toggle **💬 Story Lettering** (synced live to K–5 / 6–8 / 9–12), **🔬 Science Data HUD** (governing equations, OSDR datasets, live simulator links), **🎨 Clean Art Mode**, **🎬 Cinema vs. 📜 Webtoon Scroll**, and the **🎬 Director's Script & Storyboard** modal.
+- **3-Layer Interactive Reader**: Toggle **💬 Story Lettering** (synced live to K–5 / 6–8 / 9–12), **🔬 Science Data HUD** (governing equations, OSDR datasets, live simulator links), **🎨 Clean Art Mode**, **🎬 Cinema vs. 📜 Webtoon Scroll**, **📸 HD PNG** downloads, **📥 Direct 8.5"×11" Print PDF & Booklet Downloads**, and the **🎬 Director's Script & Storyboard** modal.
 - **Full Story Bible & Scripts**: See [docs/STORY_BIBLE.md](docs/STORY_BIBLE.md).
+
+---
+
+## 🖨️ Print-Ready 8.5" × 11" Comic Books, Folded Booklets & Teacher Map
+
+Every completed volume is pre-compiled into publication-grade **8-page US Letter Portrait (`8.5" × 11"`) 2-Tier Comic Book PDFs** (alternating duplex binding gutters, full vertical cover, inside mission briefing, 2 stacked comic beats/page with Science Data HUDs, 6-equation Science Lab, clickable Open-Source Repository Directory, and Collectible Back Cover) in **3 reading levels** (`K–5`, `6–8`, and `9–12 + Teacher`), plus **2-sheet fold-and-staple booklets**!
+
+- **📋 1-Page Teacher NGSS Curriculum Map**: [`exports/pdf/CoSE_Chronicles_Teacher_NGSS_Curriculum_Map.pdf`](exports/pdf/CoSE_Chronicles_Teacher_NGSS_Curriculum_Map.pdf)
+- **📚 Standard 8.5" × 11" Comic PDFs** (`exports/pdf/`): Print 8 portrait pages double-sided (**Flip on Long Edge**) at 100% scale; staple along the left gutter.
+- **📖 2-Sheet Fold-and-Staple Mini-Comics** (`exports/pdf/booklets/*_Booklet_11x8.5.pdf`): Print 4 landscape pages double-sided (**Flip on Short Edge** — `[8|1]`, `[2|7]`, `[6|3]`, `[4|5]`), fold in half, and staple twice down the spine!
+
+| Vol. | Title | K–5 Explorer | 6–8 Investigator | 9–12+ Teacher |
+| :---: | :--- | :---: | :---: | :---: |
+| **01** | **Breathless in Zero-G** | [PDF](exports/pdf/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_K-5.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_K-5_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_6-8.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_6-8_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_9-12_Teacher.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol01_Breathless_In_Zero_G_9-12_Teacher_Booklet_11x8.5.pdf) |
+| **02** | **Artemis: One Small Sprout** | [PDF](exports/pdf/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_K-5.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_K-5_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_6-8.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_6-8_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_9-12_Teacher.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol02_Artemis_One_Small_Sprout_9-12_Teacher_Booklet_11x8.5.pdf) |
+| **03** | **Ghost in the Genome** | [PDF](exports/pdf/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_K-5.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_K-5_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_6-8.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_6-8_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_9-12_Teacher.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol03_Ghost_In_The_Genome_9-12_Teacher_Booklet_11x8.5.pdf) |
+| **04** | **Kirby's Quantum Shield** | [PDF](exports/pdf/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_K-5.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_K-5_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_6-8.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_6-8_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_9-12_Teacher.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol04_Kirbys_Quantum_Shield_9-12_Teacher_Booklet_11x8.5.pdf) |
+| **05** | **Lightning Without a Brain** | [PDF](exports/pdf/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_K-5.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_K-5_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_6-8.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_6-8_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_9-12_Teacher.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol05_Lightning_Without_A_Brain_9-12_Teacher_Booklet_11x8.5.pdf) |
+| **06** | **The Red Robin Harvest** | [PDF](exports/pdf/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_K-5.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_K-5_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_6-8.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_6-8_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_9-12_Teacher.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol06_The_Red_Robin_Harvest_9-12_Teacher_Booklet_11x8.5.pdf) |
+| **07** | **Alchemists of Moon Dust** | [PDF](exports/pdf/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_K-5.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_K-5_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_6-8.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_6-8_Booklet_11x8.5.pdf) | [PDF](exports/pdf/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_9-12_Teacher.pdf) · [Booklet](exports/pdf/booklets/CoSE_Chronicles_Vol07_Alchemists_Of_Moon_Dust_9-12_Teacher_Booklet_11x8.5.pdf) |
+| **08–10** | *Crew Vital · Mission Control Everywhere · The Closed-Loop Frontier* | *Interactive web edition live; print PDFs arrive upon final art pass* | — | — |
+
+To regenerate all print PDFs, saddle-stitch booklets, and the Teacher NGSS Map locally:
+
+```bash
+python3 scripts/export_novels_pdf.py --level k5 --only-complete --booklet
+python3 scripts/export_novels_pdf.py --level ms --only-complete --booklet
+python3 scripts/export_novels_pdf.py --level hs --only-complete --booklet
+python3 scripts/export_curriculum_map_pdf.py
+python3 scripts/build_graphic_novels.py --verify
+```
 
 ---
 
