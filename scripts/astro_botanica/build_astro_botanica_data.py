@@ -571,6 +571,94 @@ def parse_volume_markdown(path: Path) -> dict:
     }
 
 
+def build_verified_quiz(vol_data: dict) -> list[dict]:
+    """Generate 2 scientifically verified classroom lab-check questions grounded strictly in this study."""
+    acc = vol_data["accession"]
+    world = vol_data["world"]
+    hw = vol_data["hardware_short"]
+    domain = vol_data["study_domain"]
+    org = vol_data["organism_short"]
+    sample_cnt = vol_data.get("sample_count", 0)
+    factors = vol_data.get("factors") or []
+    cast = vol_data.get("molecular_cast") or []
+
+    questions = []
+
+    # Question 1: Experimental Hardware / Environment / Factors
+    all_domains = [
+        "Radiation & DNA Repair",
+        "Epigenetics & Methylome",
+        "Lunar & Martian Regolith",
+        "Hormones & Metabolic Defense",
+        "Atmosphere & Hypobaria",
+        "Light & Phototropism",
+        "Cell Wall & Cytoskeleton",
+        "Space Crops & Nutrition",
+        "Microgravity & Gravitropism",
+    ]
+    distractors = [d for d in all_domains if d != domain]
+    # Deterministic rotation based on volume number
+    vn = vol_data["volume"]
+    d1 = distractors[vn % len(distractors)]
+    d2 = distractors[(vn + 3) % len(distractors)]
+    d3 = distractors[(vn + 5) % len(distractors)]
+    opts1 = [domain, d1, d2, d3]
+    # Deterministic shuffle
+    shift = vn % 4
+    opts1 = opts1[shift:] + opts1[:shift]
+    ans1 = opts1.index(domain)
+
+    factor_note = f" Experimental factors tracked in NASA OSDR: {', '.join(factors[:4])}." if factors else ""
+    sample_note = f" ({sample_cnt} verified biological samples)" if sample_cnt else ""
+    questions.append({
+        "question": f"In NASA OSDR study {acc} ({org} in {hw}), which primary space biology pathway is investigated?",
+        "options": opts1,
+        "answer_index": ans1,
+        "explanation": f"{acc} focuses on {domain} under {world} conditions{sample_note}.{factor_note}",
+    })
+
+    # Question 2: Molecular Cast / Key Study Actor or Assay
+    if cast:
+        hero = cast[0]
+        sym = hero["symbol"]
+        role = hero["role"]
+        desc = smart_truncate(hero["description"], 155)
+        role_pool = [
+            "Master Regulator",
+            "Enzyme / Remodeler",
+            "Signal / Sensor",
+            "Plant / Mutant Line",
+            "Researcher / Crew",
+            "Molecular Actor",
+        ]
+        r_dist = [r for r in role_pool if r != role]
+        opts2 = [role, r_dist[vn % len(r_dist)], r_dist[(vn + 2) % len(r_dist)], r_dist[(vn + 4) % len(r_dist)]]
+        shift2 = (vn + 1) % 4
+        opts2 = opts2[shift2:] + opts2[:shift2]
+        ans2 = opts2.index(role)
+        questions.append({
+            "question": f"In Volume {vn:02d} ({acc}), what biological role does '{sym}' play in the study?",
+            "options": opts2,
+            "answer_index": ans2,
+            "explanation": f"{sym} ({role}): {desc}",
+        })
+    else:
+        worlds_pool = ["ISS", "Moon", "Mars", "Polar Analog", "Suborbital", "Ground Analog"]
+        w_dist = [w for w in worlds_pool if w != world]
+        opts2 = [world, w_dist[vn % len(w_dist)], w_dist[(vn + 2) % len(w_dist)], w_dist[(vn + 3) % len(w_dist)]]
+        shift2 = (vn + 2) % 4
+        opts2 = opts2[shift2:] + opts2[:shift2]
+        ans2 = opts2.index(world)
+        questions.append({
+            "question": f"Where was NASA OSDR study {acc} ({hw}) conducted?",
+            "options": opts2,
+            "answer_index": ans2,
+            "explanation": f"{acc} was conducted in the {world} environment using {hw}.",
+        })
+
+    return questions
+
+
 def build(verify: bool) -> int:
     vol_files = sorted(VOL_DIR.glob("vol-*.md"), key=lambda p: int(re.search(r"vol-(\d+)", p.name).group(1)))
     print(f"Found {len(vol_files)} volume markdown files in {VOL_DIR.relative_to(ROOT)}", file=sys.stderr)
@@ -583,11 +671,28 @@ def build(verify: bool) -> int:
         except Exception:
             covers_manifest = {}
 
+    live_meta_path = DATA_DIR / "osdr_live_metadata.json"
+    live_studies = {}
+    live_fetched_at = None
+    if live_meta_path.exists():
+        try:
+            lm = json.loads(live_meta_path.read_text(encoding="utf-8"))
+            live_studies = lm.get("studies", {})
+            live_fetched_at = lm.get("fetched_at")
+        except Exception:
+            live_studies = {}
+
     compiled_volumes = []
     raster_cover_count = 0
+    verified_api_count = 0
+    gene_index: dict[str, list[dict]] = {}
+
     for vf in vol_files:
         vol_data = parse_volume_markdown(vf)
         v_num_str = str(vol_data["volume"])
+        acc = vol_data["accession"]
+
+        # Attach cover manifest metadata
         cover_info = covers_manifest.get(v_num_str)
         if cover_info and (ROOT / cover_info["path"]).exists():
             vol_data["cover"] = {
@@ -604,7 +709,95 @@ def build(verify: bool) -> int:
                 "width": 900,
                 "height": 1200,
             }
+
+        # Merge authoritative live NASA OSDR Ground-Truth metadata
+        live_rec = live_studies.get(acc)
+        if live_rec:
+            verified_api_count += 1
+            vol_data["osdr_verified"] = "live"
+            vol_data["official_title"] = live_rec.get("official_title") or vol_data["title"]
+            vol_data["official_description"] = smart_truncate(live_rec.get("official_description") or "", 460)
+            vol_data["sample_count"] = live_rec.get("sample_count", 0)
+            vol_data["factors"] = live_rec.get("factors") or []
+            vol_data["assays"] = (live_rec.get("assays") or [])[:4]
+            vol_data["principal_investigators"] = live_rec.get("principal_investigators") or []
+            vol_data["study_doi"] = live_rec.get("study_doi") or ""
+            vol_data["release_date"] = live_rec.get("release_date") or ""
+            vol_data["mission_name"] = live_rec.get("mission_name") or ""
+            vol_data["flight_program"] = live_rec.get("flight_program") or ""
+
+            # Authoritative publications directly from NASA OSDR (replaces any synthetic/unverified citation!)
+            v_pubs = []
+            for p in live_rec.get("publications") or []:
+                doi = (p.get("doi") or "").strip()
+                pmid = (p.get("pmid") or "").strip()
+                v_pubs.append({
+                    "title": p.get("title") or "",
+                    "authors": p.get("authors") or "",
+                    "doi": doi,
+                    "pmid": pmid,
+                    "doi_url": f"https://doi.org/{doi}" if doi and not doi.startswith("http") else doi,
+                    "pubmed_url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid.isdigit() else "",
+                })
+            vol_data["verified_publications"] = v_pubs
+            if v_pubs:
+                p0 = v_pubs[0]
+                auth_part = f"{smart_truncate(p0['authors'], 90)}. " if p0["authors"] else ""
+                id_parts = []
+                if p0["doi"]:
+                    id_parts.append(f"DOI: {p0['doi']}")
+                if p0["pmid"]:
+                    id_parts.append(f"PMID: {p0['pmid']}")
+                id_str = f" ({' · '.join(id_parts)})" if id_parts else ""
+                vol_data["publication"] = f"{auth_part}{p0['title']}{id_str}"
+            else:
+                # Dataset-only NASA OSDR record — never display unverified/synthetic citations
+                if vol_data["volume"] >= 63:
+                    vol_data["publication"] = f"Official NASA OSDR Repository Record {acc}: {vol_data['official_title']}"
+        else:
+            vol_data["osdr_verified"] = "archive"
+            vol_data["official_title"] = vol_data["title"]
+            vol_data["official_description"] = ""
+            vol_data["sample_count"] = 0
+            vol_data["factors"] = []
+            vol_data["assays"] = []
+            vol_data["principal_investigators"] = []
+            vol_data["study_doi"] = ""
+            vol_data["release_date"] = ""
+            vol_data["mission_name"] = ""
+            vol_data["flight_program"] = ""
+            vol_data["verified_publications"] = []
+
+        # Build verified 2-question interactive quiz
+        vol_data["quiz"] = build_verified_quiz(vol_data)
+
+        # Populate Cross-Volume Gene Index (clean biological symbols only)
+        skip_syms = {"the", "the…", "squad", "root", "leaf", "plant", "nasa", "iss", "ksc", "uf", "ground", "flight", "wild", "control", "crew", "brandon…", "space"}
+        for c in vol_data.get("molecular_cast") or []:
+            sym = (c.get("symbol") or "").strip()
+            if not sym or len(sym) < 2 or sym.lower().startswith("dr.") or sym.lower() in skip_syms or sym.endswith("…"):
+                continue
+            gene_index.setdefault(sym, []).append({
+                "volume": vol_data["volume"],
+                "accession": acc,
+                "title": vol_data["title"],
+                "world": vol_data["world"],
+                "role": c.get("role", ""),
+                "direction": c.get("direction", "neutral"),
+            })
+
         compiled_volumes.append(vol_data)
+
+    # Sort gene_index keeping genes with rich metadata (deduplicated per volume)
+    clean_gene_index = {}
+    for sym, entries in sorted(gene_index.items(), key=lambda kv: (-len(kv[1]), kv[0])):
+        seen_vols = set()
+        uniq = []
+        for e in entries:
+            if e["volume"] not in seen_vols:
+                seen_vols.add(e["volume"])
+                uniq.append(e)
+        clean_gene_index[sym] = uniq
 
     compiled_corpus = {
         "anthology_title": SERIES_TITLE,
@@ -613,6 +806,9 @@ def build(verify: bool) -> int:
         "total_pages_cataloged": sum(v["pages_count"] for v in compiled_volumes),
         "raster_cover_count": raster_cover_count,
         "vector_cover_count": len(compiled_volumes) - raster_cover_count,
+        "osdr_verified_count": verified_api_count,
+        "osdr_verified_at": live_fetched_at,
+        "total_samples_verified": sum(v.get("sample_count", 0) for v in compiled_volumes),
         "worlds": ["ISS", "Moon", "Mars", "Polar Analog", "Suborbital", "Ground Analog"],
         "plant_families": [
             "Brassicaceae (Arabidopsis/Mustard)",
@@ -622,6 +818,7 @@ def build(verify: bool) -> int:
             "Fabaceae (Legumes)",
             "Bryophytes (Liverworts)",
         ],
+        "gene_index": clean_gene_index,
         "volumes": compiled_volumes,
     }
 
@@ -637,6 +834,7 @@ def build(verify: bool) -> int:
 
     print(f"Compiled {len(compiled_volumes)} volumes into {json_path.relative_to(ROOT)} and {js_path.relative_to(ROOT)}", file=sys.stderr)
     print(f"  ({raster_cover_count} AI-illustrated WebP covers + {len(compiled_volumes) - raster_cover_count} Vector Art Studio covers)", file=sys.stderr)
+    print(f"  ({verified_api_count}/90 live NASA OSDR API verified | {compiled_corpus['total_samples_verified']} total biological samples | {len(clean_gene_index)} indexed molecular actors)", file=sys.stderr)
 
     if verify:
         if len(compiled_volumes) != 90:

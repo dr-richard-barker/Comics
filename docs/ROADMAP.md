@@ -64,30 +64,15 @@ This document records the prioritized backlog and long-term milestones for the *
 
 ### TODO-3: Concept Constellation Knowledge Graph Expansion
 - **Origin:** Option 4
-- **Status:** `PENDING`
-- **Goal:** Integrate all 90 NASA OSDR plant biology studies directly into the interactive 2D/3D **Concept Constellation** visualization on `index.html`.
-- **Scope:**
-  - Connect ASTRO-BOTANICA volumes to the 16 core concepts (e.g., Gas Transport, Multi-Omics, Radiation, Regolith).
-  - Form bi-directional cross-links between related research archive issues (e.g., Issue #17 Plant Microgravity RNA-Seq ↔ Vol. 01 OSD-7).
-  - Add filter layers for flight hardware (Veggie, APH, EMCS, BRIC) and mission destination (LEO, Moon, Mars analog, Antarctica).
-- **Acceptance Criteria:**
-  - Clicking any node in the Constellation graph opens the corresponding volume or issue in the reader with deep-link state preservation.
+- **Status:** `COMPLETED ✅`
+- **Completed Deliverables:** Upgraded `js/constellation.js` into a 3-ring unified radial knowledge graph uniting the 16 Core Concept Stars, all 90 verified ASTRO-BOTANICA NASA OSDR Manga Volumes (emerald diamond nodes), and all 114 Research Archive issues with 1-click reader deep-linking.
 
 ---
 
 ### TODO-4: Procedural Web Audio Sound Design Engine
 - **Origin:** Option 5
-- **Status:** `PENDING`
-- **Goal:** Build an authentic, zero-dependency client-side audio immersion layer using the browser's native Web Audio API.
-- **Features:**
-  - Ambient spacecraft life-support background drone (custom low-pass noise synthesizer with subtle cyclical air circulation modulation).
-  - Mechanical switches, relay clicks, and synthesized data telemetry chimes for HUD interactions.
-  - Geiger counter procedural click sequences triggered on high-radiation volumes (e.g. OSD-329, OSD-496, OSD-498).
-  - Page-turn tactile audio cues in cinema mode.
-  - Audio mute/unmute toggle in the top control deck with persistent local storage preference.
-- **Acceptance Criteria:**
-  - Zero external `.mp3` or `.wav` dependencies (100% synthetically generated via AudioContext).
-  - Respects browser autoplay policies and user accessibility settings (`prefers-reduced-motion`).
+- **Status:** `COMPLETED ✅`
+- **Completed Deliverables:** Built `js/astro-botanica-audio.js` (zero external assets, native Web Audio API) featuring muted-by-default toggle, soft orbital habitat ambience, radiation-triggered Geiger counter ticks, tactile page turns, telemetry chirps, and quiz mastery chimes.
 
 ---
 

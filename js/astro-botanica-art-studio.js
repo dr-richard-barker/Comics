@@ -492,8 +492,8 @@
       <rect x="0" y="0" width="${pw}" height="40" fill="#111827" />
       <line x1="0" y1="40" x2="${pw}" y2="40" stroke="${pal.accent}" stroke-width="2" />
       <circle cx="20" cy="20" r="5" fill="${pal.accent}" />
-      <text x="34" y="24" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="900" fill="#f8fafc">LIVE OSDR TELEMETRY · ${esc(trunc(domain.toUpperCase(), 28))}</text>
-      <text x="${pw - 16}" y="24" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" fill="${pal.accent2}" text-anchor="end">${esc(volume.accession)}</text>
+      <text x="34" y="24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" fill="#f8fafc">LIVE OSDR TELEMETRY · ${esc(trunc(domain.toUpperCase(), 24))}</text>
+      <text x="${pw - 16}" y="24" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800" fill="${pal.accent2}" text-anchor="end">${esc(volume.accession)}${volume.sample_count ? ` · n=${volume.sample_count}` : ""}</text>
 
       <!-- Real Data Bars -->
       ${barRows}

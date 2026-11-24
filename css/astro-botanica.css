@@ -1276,6 +1276,413 @@
   color: var(--fg-secondary);
 }
 
+/* ==========================================================================
+   v3 Enhancements: NASA OSDR Verification Dossier, Cross-Mission Gene Drawer
+   & Interactive Mission Lab Quiz
+   ========================================================================== */
+
+.ab-chip-verified {
+  background: rgba(16, 185, 129, 0.14);
+  border-color: rgba(16, 185, 129, 0.55);
+  color: #10b981;
+  font-weight: 800;
+}
+
+.ab-stat-mastery {
+  background: color-mix(in srgb, #f59e0b 18%, var(--bg-card));
+  border-color: #f59e0b;
+}
+
+.ab-badge-mastered {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  color: #09090b;
+  font-weight: 900;
+}
+
+.ab-gene-clickable {
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.ab-gene-clickable:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
+}
+
+/* Cross-Mission Gene Comparison Drawer */
+.ab-cast-focused {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.28);
+}
+
+.ab-cast-xref-btn {
+  margin-top: auto;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid color-mix(in srgb, #38bdf8 45%, var(--border-line));
+  background: color-mix(in srgb, #0284c7 12%, var(--bg-card));
+  color: #38bdf8;
+  font-size: 0.72rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease;
+}
+
+.ab-cast-xref-btn:hover,
+.ab-cast-xref-btn.active {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.ab-xref-drawer {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--bg-surface) 90%, #0284c7 10%);
+  border: 1.5px solid #0284c7;
+}
+
+.ab-xref-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 0.88rem;
+  color: var(--fg-primary);
+}
+
+.ab-xref-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px;
+}
+
+.ab-xref-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 9px 11px;
+  border-radius: 8px;
+  border: 1px solid var(--border-line);
+  background: var(--bg-card);
+  color: var(--fg-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.12s ease;
+}
+
+.ab-xref-item:hover {
+  border-color: #10b981;
+  transform: translateY(-1px);
+}
+
+.ab-xref-item.current {
+  border-color: #10b981;
+  background: color-mix(in srgb, var(--bg-card) 85%, #10b981 15%);
+}
+
+.ab-xref-vol {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 900;
+  color: #38bdf8;
+}
+
+.ab-xref-item strong {
+  font-size: 0.8rem;
+  line-height: 1.25;
+}
+
+.ab-xref-meta {
+  font-size: 0.72rem;
+  color: var(--fg-muted);
+}
+
+/* Official NASA OSDR Ground-Truth Study Dossier */
+.ab-osdr-dossier {
+  background: color-mix(in srgb, var(--bg-card) 92%, #059669 8%);
+  border: 1.5px solid color-mix(in srgb, var(--border-line) 55%, #10b981 45%);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ab-dossier-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.ab-verified-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+
+.ab-verified-pill.is-live {
+  background: #059669;
+  color: #ffffff;
+}
+
+.ab-verified-pill.is-archive {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.ab-dossier-meta-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+  color: var(--fg-secondary);
+}
+
+.ab-dossier-stat code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--bg-surface);
+}
+
+.ab-dossier-link {
+  font-weight: 800;
+  color: #10b981;
+  text-decoration: none;
+}
+
+.ab-dossier-link:hover {
+  text-decoration: underline;
+}
+
+.ab-dossier-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--fg-primary);
+  line-height: 1.35;
+}
+
+.ab-dossier-desc {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--fg-secondary);
+}
+
+.ab-dossier-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.ab-dossier-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.ab-dossier-label {
+  font-size: 0.74rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--fg-muted);
+}
+
+.ab-dossier-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.ab-dossier-tag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  color: var(--fg-primary);
+}
+
+.ab-dossier-assay {
+  border-color: color-mix(in srgb, #38bdf8 40%, var(--border-line));
+}
+
+.ab-dossier-text {
+  font-size: 0.82rem;
+  color: var(--fg-primary);
+  font-weight: 600;
+}
+
+.ab-dossier-pubs {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-line);
+}
+
+.ab-dossier-pubs ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--fg-secondary);
+}
+
+.ab-pub-links a {
+  color: #38bdf8;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.ab-pub-links a:hover {
+  text-decoration: underline;
+}
+
+/* Interactive Mission Lab Check Quiz */
+.ab-quiz-section {
+  background: var(--bg-card);
+  border: 1.5px solid color-mix(in srgb, var(--border-line) 60%, #f59e0b 40%);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.ab-quiz-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.ab-quiz-head h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--fg-primary);
+}
+
+.ab-quiz-head p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--fg-muted);
+}
+
+.ab-mastery-stamp {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+  color: #09090b;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem;
+  font-weight: 900;
+  padding: 5px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+
+.ab-mastery-pending {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.74rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  color: var(--fg-secondary);
+}
+
+.ab-quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+.ab-quiz-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ab-quiz-q {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--fg-primary);
+}
+
+.ab-quiz-opts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.ab-quiz-opt {
+  padding: 8px 11px;
+  border-radius: 7px;
+  border: 1.5px solid var(--border-line);
+  background: var(--bg-card);
+  color: var(--fg-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.ab-quiz-opt:hover {
+  border-color: #38bdf8;
+}
+
+.ab-quiz-opt.is-correct {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.18);
+  color: #10b981;
+}
+
+.ab-quiz-opt.is-wrong {
+  border-color: #f43f5e;
+  background: rgba(244, 63, 94, 0.15);
+  color: #f43f5e;
+}
+
+.ab-quiz-feedback {
+  padding: 9px 11px;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.ab-quiz-feedback.ok {
+  background: rgba(16, 185, 129, 0.14);
+  border-left: 3px solid #10b981;
+  color: var(--fg-primary);
+}
+
+.ab-quiz-feedback.retry {
+  background: rgba(245, 158, 11, 0.14);
+  border-left: 3px solid #f59e0b;
+  color: var(--fg-primary);
+}
+
 @media (max-width: 768px) {
   .ab-reader-toolbar {
     position: relative;
