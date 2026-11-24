@@ -175,6 +175,17 @@
       themeBtn.addEventListener("click", toggleColorScheme);
     }
 
+    // Random Discovery Button
+    const randomBtn = document.getElementById("random-comic-btn");
+    if (randomBtn) {
+      randomBtn.addEventListener("click", () => {
+        const pool = getFilteredComics();
+        const list = pool.length ? pool : DATA.comics;
+        const pick = list[Math.floor(Math.random() * list.length)];
+        if (pick) openComicInReader(pick.id);
+      });
+    }
+
     // Reading Level Switcher
     document.querySelectorAll("[data-level-btn]").forEach((btn) => {
       btn.addEventListener("click", () => {

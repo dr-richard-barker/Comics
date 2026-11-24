@@ -2,3 +2,4 @@
 docs/astro-botanica/_raw/
 *.html.bak
 .DS_Store
+.abai/

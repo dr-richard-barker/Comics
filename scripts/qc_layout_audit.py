@@ -144,7 +144,7 @@ def main() -> None:
         scale_lines = split_text_lines(c["scale_bar"], std_scale_max_chars)
         assert len(scale_lines) <= 2, f"Scale bar exceeds 2 lines in {c['id']}: {scale_lines}"
 
-        plot_title_lines = split_text_lines("📈 " + c["mini_plot"]["title"], std_plot_max_chars)
+        plot_title_lines = split_text_lines("📊 Schematic: " + c["mini_plot"]["title"], std_plot_max_chars)
         assert len(plot_title_lines) <= 2, f"Plot title exceeds 2 lines in {c['id']}: {plot_title_lines}"
 
         stat_lines = split_text_lines(c["mini_plot"]["stat_note"], std_plot_max_chars)

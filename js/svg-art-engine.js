@@ -322,7 +322,7 @@
     const sB = miniPlot.series_b || [1, 1.5, 2, 2.2, 2.4, 2.5];
 
     const maxTitleChars = Math.floor((w - 18) / 5.8);
-    const titleLines = splitTextLines("📈 " + (miniPlot.title || "Telemetry"), maxTitleChars);
+    const titleLines = splitTextLines("📊 Schematic: " + (miniPlot.title || "Trend"), maxTitleChars);
     const statLines = splitTextLines(miniPlot.stat_note || "", maxTitleChars);
 
     const ox = 24;
