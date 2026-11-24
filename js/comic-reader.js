@@ -5,6 +5,7 @@
   "use strict";
 
   let DATA = null;
+  let activeUtterance = null;
   let currentLevel = "ms"; // 'k5' | 'ms' | 'hs'
   let currentTab = "novels"; // 'novels' | 'newsstand' | 'reader' | 'constellation' | 'educator'
   let currentComicId = "LunarLeaf-CFD";
@@ -189,6 +190,7 @@
     // Reading Level Switcher
     document.querySelectorAll("[data-level-btn]").forEach((btn) => {
       btn.addEventListener("click", () => {
+        stopSpeech();
         currentLevel = btn.getAttribute("data-level-btn");
         syncUIWithState();
         updateUrlHash();
@@ -198,6 +200,7 @@
     // Main View Tab Buttons
     document.querySelectorAll("[data-tab-btn]").forEach((btn) => {
       btn.addEventListener("click", () => {
+        stopSpeech();
         currentTab = btn.getAttribute("data-tab-btn");
         syncUIWithState();
         updateUrlHash();
@@ -206,6 +209,8 @@
         }
       });
     });
+
+    window.addEventListener("beforeunload", stopSpeech);
 
     // Search Input
     const searchEl = document.getElementById("comic-search-input");
@@ -292,6 +297,7 @@
     document.querySelectorAll("[data-tab-btn]").forEach((btn) => {
       const isMatch = btn.getAttribute("data-tab-btn") === currentTab;
       btn.classList.toggle("active", isMatch);
+      btn.setAttribute("aria-selected", isMatch ? "true" : "false");
     });
 
     document.querySelectorAll(".view-section").forEach((sec) => {
@@ -517,6 +523,7 @@
   }
 
   function openComicInReader(comicId) {
+    stopSpeech();
     currentComicId = comicId;
     currentTab = "reader";
     syncUIWithState();
@@ -533,6 +540,7 @@
   }
 
   function stopSpeech() {
+    activeUtterance = null;
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
       window.speechSynthesis.cancel();
     }
@@ -549,6 +557,9 @@
     stopSpeech();
     const panel = comic.panels.find((p) => p.number === panelNum);
     if (!panel) return;
+    const stopBtn = document.getElementById("btn-stop-audio");
+    if (stopBtn) stopBtn.hidden = false;
+
     const lvlData = panel[currentLevel] || panel.ms;
     const card = document.querySelector(`[data-panel-num="${panelNum}"]`);
     if (card) card.classList.add("panel-speaking");
@@ -556,10 +567,10 @@
     const utt = new SpeechSynthesisUtterance(
       `Panel ${panel.number}. ${panel.speaker_name} says: ${lvlData.dialogue}`
     );
+    activeUtterance = utt;
     utt.rate = currentLevel === "k5" ? 0.94 : 1.02;
-    utt.onend = () => {
-      if (card) card.classList.remove("panel-speaking");
-    };
+    utt.onend = stopSpeech;
+    utt.onerror = stopSpeech;
     window.speechSynthesis.speak(utt);
   }
 
@@ -600,6 +611,7 @@
         }
       }
       const utt = new SpeechSynthesisUtterance(item.text);
+      activeUtterance = utt;
       utt.rate = currentLevel === "k5" ? 0.94 : 1.02;
       utt.onend = nextUtterance;
       utt.onerror = stopSpeech;
@@ -610,8 +622,14 @@
 
   function buildQuickQuizData(comic, conceptsById) {
     const otherComics = DATA.comics.filter((c) => c.id !== comic.id && c.series_id !== comic.series_id);
-    const d1 = otherComics[comic.issue_number % otherComics.length] || DATA.comics[0];
-    const d2 = otherComics[(comic.issue_number + 7) % otherComics.length] || DATA.comics[1];
+    const comicPool = otherComics.length >= 2 ? otherComics : DATA.comics.filter((c) => c.id !== comic.id);
+    const d1Idx = comic.issue_number % comicPool.length;
+    let d2Idx = (comic.issue_number + 7) % comicPool.length;
+    if (d2Idx === d1Idx && comicPool.length > 1) {
+      d2Idx = (d1Idx + 1) % comicPool.length;
+    }
+    const d1 = comicPool[d1Idx] || DATA.comics[0];
+    const d2 = comicPool[d2Idx] || DATA.comics[1];
 
     const q1Opts = [
       { text: comic.discovery, correct: true },
@@ -624,8 +642,14 @@
 
     const mainConcept = conceptsById[comic.concepts[0]] || DATA.concepts[0];
     const otherConcepts = DATA.concepts.filter((co) => !comic.concepts.includes(co.id));
-    const c1 = otherConcepts[comic.issue_number % otherConcepts.length] || DATA.concepts[1];
-    const c2 = otherConcepts[(comic.issue_number + 3) % otherConcepts.length] || DATA.concepts[2];
+    const conceptPool = otherConcepts.length >= 2 ? otherConcepts : DATA.concepts.filter((co) => co.id !== mainConcept.id);
+    const c1Idx = comic.issue_number % conceptPool.length;
+    let c2Idx = (comic.issue_number + 3) % conceptPool.length;
+    if (c2Idx === c1Idx && conceptPool.length > 1) {
+      c2Idx = (c1Idx + 1) % conceptPool.length;
+    }
+    const c1 = conceptPool[c1Idx] || DATA.concepts[1];
+    const c2 = conceptPool[c2Idx] || DATA.concepts[2];
 
     const q2Opts = [
       { text: `${mainConcept.name}: ${mainConcept[currentLevel] || mainConcept.ms}`, correct: true },
@@ -867,7 +891,10 @@
         <section class="quick-quiz-card no-print" aria-label="K-12 Quick Check Quiz">
           <div class="quiz-header-row">
             <h3>🧠 Quick Check: Space Scientist Challenge</h3>
-            <span id="quiz-score-banner" class="quiz-score-banner">Answer both questions to earn your badge!</span>
+            <div class="quiz-status-cluster">
+              <span id="quiz-score-banner" class="quiz-score-banner" aria-live="polite">Answer both questions to earn your badge!</span>
+              <button id="btn-quiz-reset" class="btn-quiz-reset" type="button" hidden>🔄 Retry</button>
+            </div>
           </div>
           ${buildQuickQuizData(comic, conceptsById)
             .map(
@@ -884,7 +911,7 @@
                         data-quiz-q="${q.id}"
                         data-quiz-correct="${opt.correct ? "1" : "0"}"
                       >
-                        <span class="quiz-opt-letter">${String.fromCharCode(65 + oIdx)}</span>
+                        <span class="quiz-opt-letter" data-orig-letter="${String.fromCharCode(65 + oIdx)}">${String.fromCharCode(65 + oIdx)}</span>
                         <span class="quiz-opt-text">${esc(opt.text)}</span>
                       </button>`
                     )
@@ -985,9 +1012,25 @@
 
     const quizSolved = { q1: false, q2: false };
     const scoreBanner = document.getElementById("quiz-score-banner");
+    const quizResetBtn = document.getElementById("btn-quiz-reset");
+
+    function updateQuizBanner() {
+      if (!scoreBanner) return;
+      const score = (quizSolved.q1 ? 1 : 0) + (quizSolved.q2 ? 1 : 0);
+      if (score === 2) {
+        scoreBanner.textContent = "🌟 Space Scientist Badge: 2/2!";
+        scoreBanner.classList.add("is-complete");
+      } else {
+        scoreBanner.textContent = `Progress: ${score}/2 correct — keep going!`;
+        scoreBanner.classList.remove("is-complete");
+      }
+    }
+
     readerRoot.querySelectorAll("[data-quiz-q]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const qid = btn.getAttribute("data-quiz-q");
+        if (quizSolved[qid]) return;
+        if (quizResetBtn) quizResetBtn.hidden = false;
         const isCorrect = btn.getAttribute("data-quiz-correct") === "1";
         const block = btn.closest("[data-quiz-block]");
         const badge = btn.querySelector(".quiz-opt-letter");
@@ -995,6 +1038,10 @@
           if (block) {
             block.querySelectorAll(".quiz-option-btn").forEach((optBtn) => {
               optBtn.classList.remove("is-wrong");
+              const optBadge = optBtn.querySelector(".quiz-opt-letter");
+              if (optBadge && optBadge.dataset.origLetter) {
+                optBadge.textContent = optBadge.dataset.origLetter;
+              }
             });
           }
           btn.classList.add("is-correct");
@@ -1004,18 +1051,28 @@
           btn.classList.add("is-wrong");
           if (badge) badge.textContent = "💡";
         }
-        if (scoreBanner) {
-          const score = (quizSolved.q1 ? 1 : 0) + (quizSolved.q2 ? 1 : 0);
-          if (score === 2) {
-            scoreBanner.textContent = "🌟 Space Scientist Badge: 2/2!";
-            scoreBanner.classList.add("is-complete");
-          } else {
-            scoreBanner.textContent = `Progress: ${score}/2 correct — keep going!`;
-            scoreBanner.classList.remove("is-complete");
-          }
-        }
+        updateQuizBanner();
       });
     });
+
+    if (quizResetBtn) {
+      quizResetBtn.addEventListener("click", () => {
+        quizSolved.q1 = false;
+        quizSolved.q2 = false;
+        readerRoot.querySelectorAll("[data-quiz-q]").forEach((optBtn) => {
+          optBtn.classList.remove("is-correct", "is-wrong");
+          const optBadge = optBtn.querySelector(".quiz-opt-letter");
+          if (optBadge && optBadge.dataset.origLetter) {
+            optBadge.textContent = optBadge.dataset.origLetter;
+          }
+        });
+        if (scoreBanner) {
+          scoreBanner.textContent = "Answer both questions to earn your badge!";
+          scoreBanner.classList.remove("is-complete");
+        }
+        quizResetBtn.hidden = true;
+      });
+    }
 
     readerRoot.querySelectorAll("[data-export-fmt]").forEach((btn) => {
       btn.addEventListener("click", () => {
