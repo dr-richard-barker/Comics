@@ -110,16 +110,46 @@
 
       // SFX Stamp
       if (page.sfx) {
+        const sfxShort = String(page.sfx).split("(")[0].trim();
         ctx.save();
-        ctx.translate(W - 200, TOP_H + 85);
+        ctx.translate(W - 260, TOP_H + 82);
         ctx.rotate((-6 * Math.PI) / 180);
-        ctx.font = "900 36px 'Impact', 'Arial Black', sans-serif";
+        ctx.font = "900 34px 'Impact', 'Arial Black', sans-serif";
         ctx.strokeStyle = "#ffffff";
         ctx.lineWidth = 4;
-        ctx.strokeText(page.sfx, 0, 0);
+        ctx.strokeText(sfxShort, 0, 0);
         ctx.fillStyle = "#e11d48";
-        ctx.fillText(page.sfx, 0, 0);
+        ctx.fillText(sfxShort, 0, 0);
         ctx.restore();
+      }
+
+      // Speech Balloon inside Panel 4 (bottom-right, clear of Panel 3 telemetry)
+      const firstDlg = (page.dialogue || [])[0];
+      if (firstDlg) {
+        const spk = typeof firstDlg === "object" ? firstDlg.speaker || "Mission Scientist" : "Mission Scientist";
+        const dTxt = typeof firstDlg === "object" ? firstDlg.text : String(firstDlg);
+        const bx = W - 540;
+        const by = TOP_H + ART_H - 132;
+        ctx.fillStyle = "#ffffff";
+        ctx.strokeStyle = "#09090b";
+        ctx.lineWidth = 2.5;
+        roundRectPath(ctx, bx, by, 505, 102, 14);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = "#09090b";
+        roundRectPath(ctx, bx + 14, by + 10, Math.min(260, spk.length * 8 + 20), 20, 4);
+        ctx.fill();
+        ctx.fillStyle = "#38bdf8";
+        ctx.font = "800 11px 'JetBrains Mono', monospace";
+        ctx.fillText(spk.toUpperCase().slice(0, 28), bx + 22, by + 24);
+
+        ctx.fillStyle = "#09090b";
+        ctx.font = "700 13px system-ui, -apple-system, sans-serif";
+        const dlgLines = wrapLines(ctx, `“${dTxt}”`, 475);
+        dlgLines.slice(0, 3).forEach((ln, i) => {
+          ctx.fillText(ln, bx + 14, by + 48 + i * 17);
+        });
       }
     }
 
@@ -133,11 +163,11 @@
 
       ctx.fillStyle = "#38bdf8";
       ctx.font = "800 16px system-ui, -apple-system, sans-serif";
-      ctx.fillText(`🔬 NASA OSDR SPACE BIOLOGY TELEMETRY · ${volume.accession}`, 22, hy + 30);
+      ctx.fillText(`🔬 NASA OSDR SPACE BIOLOGY TELEMETRY · ${volume.accession} · ${(volume.study_domain || "Space Botany").toUpperCase()}`, 22, hy + 30);
 
       ctx.fillStyle = "#94a3b8";
       ctx.font = "600 13px system-ui, -apple-system, sans-serif";
-      ctx.fillText(`Organism: ${volume.organism.slice(0, 65)}   |   Hardware: ${volume.hardware.slice(0, 45)}   |   World: ${volume.world}`, 22, hy + 58);
+      ctx.fillText(`Organism: ${volume.organism_short || volume.organism.slice(0, 55)}   |   Hardware: ${volume.hardware_short || volume.hardware.slice(0, 40)}   |   Environment: ${volume.world}`, 22, hy + 58);
 
       ctx.fillStyle = "#e2e8f0";
       ctx.font = "500 13px system-ui, -apple-system, sans-serif";

@@ -418,38 +418,38 @@
   margin-bottom: 40px;
 }
 
-/* Sticky Reader Toolbar */
+/* Compact Reader Toolbar */
 .ab-reader-toolbar {
   position: sticky;
-  top: 72px;
-  z-index: 40;
+  top: 58px;
+  z-index: 35;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  padding: 10px 14px;
-  background: color-mix(in srgb, var(--bg-surface) 90%, transparent);
-  backdrop-filter: blur(10px);
+  gap: 8px;
+  padding: 8px 12px;
+  background: color-mix(in srgb, var(--bg-surface) 94%, transparent);
+  backdrop-filter: blur(12px);
   border: 1.5px solid var(--border-line);
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
 }
 
 .ab-toolbar-group {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
 .ab-tool-btn {
-  padding: 6px 12px;
-  border-radius: 8px;
+  padding: 5px 9px;
+  border-radius: 7px;
   border: 1px solid var(--border-line);
   background: var(--bg-card);
   color: var(--fg-primary);
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -457,6 +457,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  white-space: nowrap;
 }
 
 .ab-tool-btn:hover {
@@ -624,7 +625,7 @@
   display: block;
 }
 
-/* Lettering Layer */
+/* Lettering Layer — Disjoint Geometry (Zero Overlap with Panel 3 Telemetry) */
 .ab-lettering-layer {
   position: absolute;
   inset: 0;
@@ -632,7 +633,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 30px;
+  padding: 2.8% 3%;
 }
 
 .ab-top-lettering-row {
@@ -643,63 +644,70 @@
 }
 
 .ab-caption-box {
-  max-width: 450px;
-  background: rgba(255, 255, 255, 0.95);
+  max-width: 41%;
+  background: rgba(255, 255, 255, 0.96);
   color: #09090b;
   border: 2px solid #09090b;
-  border-radius: 4px;
-  padding: 8px 12px;
+  border-radius: 5px;
+  padding: 7px 11px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
+  font-size: clamp(0.68rem, 0.92vw, 0.8rem);
   font-weight: 700;
-  line-height: 1.4;
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8);
+  line-height: 1.38;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.82);
 }
 
 .ab-sfx-stamp {
   font-family: 'Impact', 'Arial Black', sans-serif;
-  font-size: 2.2rem;
+  font-size: clamp(1.1rem, 2vw, 1.85rem);
   color: #e11d48;
   -webkit-text-stroke: 1px #ffffff;
-  transform: rotate(-6deg);
-  letter-spacing: 0.05em;
+  transform: rotate(-5deg);
+  letter-spacing: 0.04em;
   text-shadow: 2px 2px 0 #000000;
+  max-width: 34%;
+  text-align: right;
+  line-height: 1.05;
 }
 
 .ab-bubbles-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  gap: 8px;
   align-items: flex-end;
   justify-content: flex-end;
+  width: 51%;
+  margin-left: auto;
+  padding-bottom: 4px;
 }
 
 .ab-speech-balloon {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.97);
   color: #09090b;
   border: 2.5px solid #09090b;
   border-radius: 14px;
-  padding: 8px 14px;
-  max-width: 380px;
-  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8);
+  padding: 8px 13px;
+  max-width: 100%;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.85);
 }
 
 .ab-speaker-pill {
   display: inline-block;
   background: #09090b;
   color: #38bdf8;
-  font-size: 0.65rem;
+  font-size: 0.64rem;
   font-weight: 800;
-  font-family: monospace;
-  padding: 2px 6px;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 2px 7px;
   border-radius: 4px;
   margin-bottom: 4px;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .ab-speech-text {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: clamp(0.72rem, 0.95vw, 0.84rem);
   font-weight: 700;
   line-height: 1.35;
 }
@@ -934,16 +942,360 @@
   margin: 14px 0 6px;
 }
 
+/* ==========================================================================
+   v2 Enhancements: Showcase Performance, Featured Cards, Gene Pills,
+   K-12 Adaptive Briefings, Molecular Cast Cards & Panel Breakdown Grid
+   ========================================================================== */
+
+.ab-cover-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 320px 560px;
+}
+
+.ab-card-featured {
+  border-color: #10b981;
+  box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.35), var(--shadow-card);
+}
+
+.ab-badge-illustrated {
+  background: linear-gradient(135deg, #059669, #0284c7);
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.ab-jp-sub {
+  font-size: 0.8em;
+  opacity: 0.85;
+  font-weight: 700;
+}
+
+.ab-stat-highlight {
+  background: color-mix(in srgb, #059669 20%, var(--bg-card));
+  border-color: #10b981;
+}
+
+.ab-results-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  font-size: 0.84rem;
+  color: var(--fg-secondary);
+}
+
+.ab-results-hint {
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+}
+
+.ab-card-genes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin-top: 2px;
+}
+
+.ab-card-genes-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--fg-muted);
+}
+
+.ab-gene-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--border-line);
+  background: var(--bg-surface);
+  color: var(--fg-primary);
+}
+
+.ab-gene-up {
+  border-color: rgba(16, 185, 129, 0.5);
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.ab-gene-down {
+  border-color: rgba(244, 63, 94, 0.5);
+  color: #f43f5e;
+  background: rgba(244, 63, 94, 0.1);
+}
+
+.ab-gene-neutral {
+  border-color: rgba(56, 189, 248, 0.45);
+  color: #0284c7;
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.ab-chip-domain {
+  background: color-mix(in srgb, var(--bg-surface) 82%, #7c3aed 18%);
+  border-color: color-mix(in srgb, var(--border-line) 60%, #a855f7 40%);
+  color: var(--fg-primary);
+  font-weight: 700;
+}
+
+/* Adaptive K-5 / 6-8 / 9-12 Educational Mission Briefing */
+.ab-edu-briefing {
+  border-radius: 14px;
+  padding: 16px 20px;
+  border: 1.5px solid var(--border-line);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-card);
+}
+
+.ab-edu-k5 {
+  border-left: 5px solid #10b981;
+  background: color-mix(in srgb, var(--bg-card) 93%, #10b981 7%);
+}
+
+.ab-edu-ms {
+  border-left: 5px solid #0284c7;
+  background: color-mix(in srgb, var(--bg-card) 93%, #0284c7 7%);
+}
+
+.ab-edu-hs {
+  border-left: 5px solid #a855f7;
+  background: color-mix(in srgb, var(--bg-card) 93%, #a855f7 7%);
+}
+
+.ab-edu-badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  color: var(--fg-primary);
+  margin-bottom: 10px;
+}
+
+.ab-edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.ab-edu-col h4 {
+  margin: 0 0 5px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--fg-primary);
+}
+
+.ab-edu-col p {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--fg-secondary);
+}
+
+/* Interactive Molecular Cast Strip */
+.ab-cast-section {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-card);
+}
+
+.ab-cast-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.ab-cast-section-head h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--fg-primary);
+}
+
+.ab-cast-count {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--fg-muted);
+}
+
+.ab-cast-hint {
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+}
+
+.ab-cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.ab-cast-card {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.ab-cast-card:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+}
+
+.ab-cast-up {
+  border-top: 3px solid #10b981;
+}
+
+.ab-cast-down {
+  border-top: 3px solid #f43f5e;
+}
+
+.ab-cast-dual {
+  border-top: 3px solid #a855f7;
+}
+
+.ab-cast-neutral {
+  border-top: 3px solid #38bdf8;
+}
+
+.ab-cast-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.ab-cast-symbol {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88rem;
+  font-weight: 900;
+  color: var(--fg-primary);
+}
+
+.ab-cast-dir {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--bg-card);
+  color: var(--fg-secondary);
+}
+
+.ab-cast-up .ab-cast-dir {
+  color: #10b981;
+}
+
+.ab-cast-down .ab-cast-dir {
+  color: #f43f5e;
+}
+
+.ab-cast-role {
+  font-size: 0.73rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #0284c7;
+}
+
+.ab-cast-desc {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--fg-secondary);
+}
+
+/* Panel-by-Panel Cinematography Grid inside HUD */
+.ab-hud-main {
+  flex: 1;
+  min-width: 280px;
+}
+
+.ab-panels-breakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ab-panel-beat {
+  background: var(--bg-card);
+  border: 1px solid var(--border-line);
+  border-radius: 8px;
+  padding: 8px 11px;
+}
+
+.ab-panel-num {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 900;
+  color: #10b981;
+  letter-spacing: 0.04em;
+  margin-bottom: 3px;
+}
+
+.ab-panel-beat p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.42;
+  color: var(--fg-secondary);
+}
+
+.ab-page-title-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.ab-pager-hint {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--fg-secondary);
+}
+
 @media (max-width: 768px) {
+  .ab-reader-toolbar {
+    position: relative;
+    top: 0;
+  }
   .ab-reader-header {
     flex-direction: column;
     align-items: flex-start;
   }
   .ab-reader-mini-cover {
-    width: 80px;
+    width: 84px;
   }
   .ab-data-hud-bar {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .ab-caption-box {
+    max-width: 65%;
+  }
+  .ab-bubbles-row {
+    width: 72%;
   }
 }
