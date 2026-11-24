@@ -525,10 +525,128 @@
   }
 
   function stepIssue(delta) {
+    stopSpeech();
     const idx = DATA.comics.findIndex((c) => c.id === currentComicId);
     if (idx < 0) return;
     const nextIdx = (idx + delta + DATA.comics.length) % DATA.comics.length;
     openComicInReader(DATA.comics[nextIdx].id);
+  }
+
+  function stopSpeech() {
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+    document.querySelectorAll(".panel-speaking").forEach((el) => el.classList.remove("panel-speaking"));
+    const stopBtn = document.getElementById("btn-stop-audio");
+    if (stopBtn) stopBtn.hidden = true;
+  }
+
+  function speakSinglePanel(comic, panelNum) {
+    if (!("speechSynthesis" in window)) {
+      alert("Read-aloud audio is not supported in this browser.");
+      return;
+    }
+    stopSpeech();
+    const panel = comic.panels.find((p) => p.number === panelNum);
+    if (!panel) return;
+    const lvlData = panel[currentLevel] || panel.ms;
+    const card = document.querySelector(`[data-panel-num="${panelNum}"]`);
+    if (card) card.classList.add("panel-speaking");
+
+    const utt = new SpeechSynthesisUtterance(
+      `Panel ${panel.number}. ${panel.speaker_name} says: ${lvlData.dialogue}`
+    );
+    utt.rate = currentLevel === "k5" ? 0.94 : 1.02;
+    utt.onend = () => {
+      if (card) card.classList.remove("panel-speaking");
+    };
+    window.speechSynthesis.speak(utt);
+  }
+
+  function speakComicStory(comic) {
+    if (!("speechSynthesis" in window)) {
+      alert("Read-aloud audio is not supported in this browser.");
+      return;
+    }
+    stopSpeech();
+    const stopBtn = document.getElementById("btn-stop-audio");
+    if (stopBtn) stopBtn.hidden = false;
+
+    const queue = comic.panels.map((p) => {
+      const lvlData = p[currentLevel] || p.ms;
+      return {
+        panelNum: p.number,
+        text: `Panel ${p.number}. ${p.speaker_name} says: ${lvlData.dialogue}`
+      };
+    });
+    queue.push({
+      panelNum: null,
+      text: `Key Take-Home Message: ${comic.take_home}`
+    });
+
+    let idx = 0;
+    function nextUtterance() {
+      if (idx >= queue.length) {
+        stopSpeech();
+        return;
+      }
+      const item = queue[idx++];
+      document.querySelectorAll(".panel-speaking").forEach((el) => el.classList.remove("panel-speaking"));
+      if (item.panelNum) {
+        const card = document.querySelector(`[data-panel-num="${item.panelNum}"]`);
+        if (card) {
+          card.classList.add("panel-speaking");
+          card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      }
+      const utt = new SpeechSynthesisUtterance(item.text);
+      utt.rate = currentLevel === "k5" ? 0.94 : 1.02;
+      utt.onend = nextUtterance;
+      utt.onerror = stopSpeech;
+      window.speechSynthesis.speak(utt);
+    }
+    nextUtterance();
+  }
+
+  function buildQuickQuizData(comic, conceptsById) {
+    const otherComics = DATA.comics.filter((c) => c.id !== comic.id && c.series_id !== comic.series_id);
+    const d1 = otherComics[comic.issue_number % otherComics.length] || DATA.comics[0];
+    const d2 = otherComics[(comic.issue_number + 7) % otherComics.length] || DATA.comics[1];
+
+    const q1Opts = [
+      { text: comic.discovery, correct: true },
+      { text: d1.discovery, correct: false },
+      { text: d2.discovery, correct: false }
+    ];
+    // Deterministic rotate based on issue_number so correct answer isn't always A
+    const shift1 = comic.issue_number % 3;
+    const q1Shuffled = q1Opts.slice(shift1).concat(q1Opts.slice(0, shift1));
+
+    const mainConcept = conceptsById[comic.concepts[0]] || DATA.concepts[0];
+    const otherConcepts = DATA.concepts.filter((co) => !comic.concepts.includes(co.id));
+    const c1 = otherConcepts[comic.issue_number % otherConcepts.length] || DATA.concepts[1];
+    const c2 = otherConcepts[(comic.issue_number + 3) % otherConcepts.length] || DATA.concepts[2];
+
+    const q2Opts = [
+      { text: `${mainConcept.name}: ${mainConcept[currentLevel] || mainConcept.ms}`, correct: true },
+      { text: `${c1.name}: ${c1[currentLevel] || c1.ms}`, correct: false },
+      { text: `${c2.name}: ${c2[currentLevel] || c2.ms}`, correct: false }
+    ];
+    const shift2 = (comic.issue_number + 1) % 3;
+    const q2Shuffled = q2Opts.slice(shift2).concat(q2Opts.slice(0, shift2));
+
+    return [
+      {
+        id: "q1",
+        prompt: `1. What did the CoSE team discover in "${comic.title}"?`,
+        options: q1Shuffled
+      },
+      {
+        id: "q2",
+        prompt: `2. Which core scientific concept (${mainConcept.ngss}) explains this story?`,
+        options: q2Shuffled
+      }
+    ];
   }
 
   /**
@@ -574,6 +692,7 @@
             <div class="panel-top-caption">
               <span class="panel-num-circle" style="background:${comic.series_color}">${panel.number}</span>
               <span class="panel-caption-text">${esc(lvlData.caption)}</span>
+              <button class="btn-panel-speak no-print" type="button" data-speak-panel="${panel.number}" title="Read this panel aloud">🔊</button>
             </div>
 
             <div class="panel-art-viewport">
@@ -683,6 +802,8 @@
         <div class="media-export-toolbar no-print">
           <span class="met-label">📦 View / Export / Embed Graphic Novel Plate:</span>
           <div class="met-buttons">
+            <button id="btn-speak-story" class="btn-media-export" type="button">🔊 Listen to Story</button>
+            <button id="btn-stop-audio" class="btn-media-export" type="button" hidden>⏹️ Stop Audio</button>
             <button class="btn-media-export" data-export-fmt="svg">🖼️ Embedded SVG</button>
             <button class="btn-media-export" data-export-fmt="png">📸 HD PNG Sheet</button>
             <button class="btn-media-export" data-export-fmt="gif">🎞️ Animated GIF</button>
@@ -740,6 +861,38 @@
               🐙 View Open-Source GitHub Code &amp; Data
             </a>
           </div>
+        </section>
+
+        <!-- Interactive K-12 Quick Check Mini-Quiz -->
+        <section class="quick-quiz-card no-print" aria-label="K-12 Quick Check Quiz">
+          <div class="quiz-header-row">
+            <h3>🧠 Quick Check: Space Scientist Challenge</h3>
+            <span id="quiz-score-banner" class="quiz-score-banner">Answer both questions to earn your badge!</span>
+          </div>
+          ${buildQuickQuizData(comic, conceptsById)
+            .map(
+              (q) => `
+              <div class="quiz-question-block" data-quiz-block="${q.id}">
+                <p class="quiz-prompt">${esc(q.prompt)}</p>
+                <div class="quiz-options-grid">
+                  ${q.options
+                    .map(
+                      (opt, oIdx) => `
+                      <button
+                        type="button"
+                        class="quiz-option-btn"
+                        data-quiz-q="${q.id}"
+                        data-quiz-correct="${opt.correct ? "1" : "0"}"
+                      >
+                        <span class="quiz-opt-letter">${String.fromCharCode(65 + oIdx)}</span>
+                        <span class="quiz-opt-text">${esc(opt.text)}</span>
+                      </button>`
+                    )
+                    .join("")}
+                </div>
+              </div>`
+            )
+            .join("")}
         </section>
 
         <!-- Hands-On Classroom Activity & Teacher Guide Box -->
@@ -810,6 +963,56 @@
         const nid = btn.getAttribute("data-open-flagship-novel");
         if (window.CoSEGraphicNovels && typeof window.CoSEGraphicNovels.openNovel === "function") {
           window.CoSEGraphicNovels.openNovel(nid, 1);
+        }
+      });
+    });
+
+    const speakStoryBtn = document.getElementById("btn-speak-story");
+    const stopAudioBtn = document.getElementById("btn-stop-audio");
+    if (speakStoryBtn) {
+      speakStoryBtn.addEventListener("click", () => speakComicStory(comic));
+    }
+    if (stopAudioBtn) {
+      stopAudioBtn.addEventListener("click", () => stopSpeech());
+    }
+
+    readerRoot.querySelectorAll("[data-speak-panel]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const pNum = Number(btn.getAttribute("data-speak-panel"));
+        speakSinglePanel(comic, pNum);
+      });
+    });
+
+    const quizSolved = { q1: false, q2: false };
+    const scoreBanner = document.getElementById("quiz-score-banner");
+    readerRoot.querySelectorAll("[data-quiz-q]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const qid = btn.getAttribute("data-quiz-q");
+        const isCorrect = btn.getAttribute("data-quiz-correct") === "1";
+        const block = btn.closest("[data-quiz-block]");
+        const badge = btn.querySelector(".quiz-opt-letter");
+        if (isCorrect) {
+          if (block) {
+            block.querySelectorAll(".quiz-option-btn").forEach((optBtn) => {
+              optBtn.classList.remove("is-wrong");
+            });
+          }
+          btn.classList.add("is-correct");
+          if (badge) badge.textContent = "✓";
+          quizSolved[qid] = true;
+        } else {
+          btn.classList.add("is-wrong");
+          if (badge) badge.textContent = "💡";
+        }
+        if (scoreBanner) {
+          const score = (quizSolved.q1 ? 1 : 0) + (quizSolved.q2 ? 1 : 0);
+          if (score === 2) {
+            scoreBanner.textContent = "🌟 Space Scientist Badge: 2/2!";
+            scoreBanner.classList.add("is-complete");
+          } else {
+            scoreBanner.textContent = `Progress: ${score}/2 correct — keep going!`;
+            scoreBanner.classList.remove("is-complete");
+          }
         }
       });
     });
