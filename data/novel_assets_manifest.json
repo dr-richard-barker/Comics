@@ -50,57 +50,6 @@
       "kb": 205.4
     }
   },
-  "vol-02-artemis-three-one-small-sprout": {
-    "cover": {
-      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/cover.webp",
-      "width": 900,
-      "height": 1200,
-      "bytes": 179558,
-      "kb": 175.3
-    },
-    "page-01": {
-      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-01.webp",
-      "width": 1400,
-      "height": 788,
-      "bytes": 210162,
-      "kb": 205.2
-    },
-    "page-02": {
-      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-02.webp",
-      "width": 1400,
-      "height": 788,
-      "bytes": 162152,
-      "kb": 158.4
-    },
-    "page-03": {
-      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-03.webp",
-      "width": 1400,
-      "height": 788,
-      "bytes": 342412,
-      "kb": 334.4
-    },
-    "page-04": {
-      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-04.webp",
-      "width": 1400,
-      "height": 788,
-      "bytes": 173112,
-      "kb": 169.1
-    },
-    "page-05": {
-      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-05.webp",
-      "width": 1400,
-      "height": 788,
-      "bytes": 416456,
-      "kb": 406.7
-    },
-    "page-06": {
-      "path": "assets/novels/vol-02-artemis-three-one-small-sprout/page-06.webp",
-      "width": 1400,
-      "height": 788,
-      "bytes": 206212,
-      "kb": 201.4
-    }
-  },
   "vol-03-ghost-in-the-genome": {
     "cover": {
       "path": "assets/novels/vol-03-ghost-in-the-genome/cover.webp",
@@ -423,6 +372,57 @@
       "height": 788,
       "bytes": 306998,
       "kb": 299.8
+    }
+  },
+  "vol-02-artemis-one-small-sprout": {
+    "cover": {
+      "path": "assets/novels/vol-02-artemis-one-small-sprout/cover.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 179558,
+      "kb": 175.3
+    },
+    "page-01": {
+      "path": "assets/novels/vol-02-artemis-one-small-sprout/page-01.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 210162,
+      "kb": 205.2
+    },
+    "page-02": {
+      "path": "assets/novels/vol-02-artemis-one-small-sprout/page-02.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 162152,
+      "kb": 158.4
+    },
+    "page-03": {
+      "path": "assets/novels/vol-02-artemis-one-small-sprout/page-03.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 342412,
+      "kb": 334.4
+    },
+    "page-04": {
+      "path": "assets/novels/vol-02-artemis-one-small-sprout/page-04.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 173112,
+      "kb": 169.1
+    },
+    "page-05": {
+      "path": "assets/novels/vol-02-artemis-one-small-sprout/page-05.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 416456,
+      "kb": 406.7
+    },
+    "page-06": {
+      "path": "assets/novels/vol-02-artemis-one-small-sprout/page-06.webp",
+      "width": 1400,
+      "height": 788,
+      "bytes": 206212,
+      "kb": 201.4
     }
   }
 }

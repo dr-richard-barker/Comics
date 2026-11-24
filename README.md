@@ -11,7 +11,7 @@ Synthesizing the biggest discoveries across all 114 projects into ten 3-act illu
 | Vol. | Title | Worlds | Perspective | Art Style |
 | :---: | :--- | :--- | :--- | :--- |
 | **01** | **BREATHLESS IN ZERO-G**: *The Invisible Pillow* | ISS · Earth | Phytonaut · Mission Control | Modern Marvel Sci-Fi Action |
-| **02** | **ARTEMIS III: ONE SMALL SPROUT** | Moon · Earth | Astronaut · Phytonaut | Classic Marvel Heroic Lunar Epic |
+| **02** | **ARTEMIS: ONE SMALL SPROUT** | Moon · Earth | Astronaut · Phytonaut | Classic Marvel Heroic Lunar Epic |
 | **03** | **GHOST IN THE GENOME**: *The 1,337-Sample Mystery* | Earth · ISS | Mission Control · Phytonaut | Seinen Cyberpunk Data-Manga |
 | **04** | **KIRBY'S QUANTUM SHIELD**: *Beyond Earth's Magnetic Cocoon* | Earth · Moon | Phytonaut · Astronaut | Silver-Age Marvel Cosmic (Jack Kirby) |
 | **05** | **LIGHTNING WITHOUT A BRAIN**: *The Cellular Alarm Network* | Earth · ISS | Phytonaut · Mission Control | Shōnen Kinetic Action Manga |

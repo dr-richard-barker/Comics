@@ -27,7 +27,7 @@ MANIFEST_PATH = ROOT / "data" / "novel_assets_manifest.json"
 
 EXPECTED_SLUGS = [
     "vol-01-breathless-in-zero-g",
-    "vol-02-artemis-three-one-small-sprout",
+    "vol-02-artemis-one-small-sprout",
     "vol-03-ghost-in-the-genome",
     "vol-04-kirbys-quantum-shield",
     "vol-05-lightning-without-a-brain",

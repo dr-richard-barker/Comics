@@ -31,7 +31,7 @@ def compile_story_bible_markdown(novels: list[dict], comics_by_id: dict) -> str:
         "",
         "> **10 Flagship Educational Graphic Novels** synthesizing the biggest scientific discoveries across **114 open-source space biology research projects** by Dr. Richard J. Barker & the Collaborative Science Environment (CoSE).",
         ">",
-        "> **Worlds Explored:** International Space Station (ISS) · The Moon (Artemis III & Artemis City) · Earth (Mission Control, Helmholtz Labs, Rothamsted, Antarctica, Global Classrooms)",
+        "> **Worlds Explored:** International Space Station (ISS) · The Moon (Artemis & Artemis City) · Earth (Mission Control, Helmholtz Labs, Rothamsted, Antarctica, Global Classrooms)",
         "> **Protagonist Perspectives:** Astronauts · Phytonauts (Spacefaring Plants & Fungi) · Mission Control Scientists",
         "> **Art Direction:** 6 Marvel-Core Graphic Novel Styles + 4 Specialized Manga Data-Storytelling Styles",
         "",

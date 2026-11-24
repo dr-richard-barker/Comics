@@ -197,7 +197,7 @@ source: docs/astro-botanica/source/conversation.md (turn 9999)
 
 - **Panel 1:** The technicians clean and autoclave the gloveboxes. The precious Apollo 17 lunar fines are carefully reclaimed, dried, and cataloged into inert storage vaults for future scientists.
 
-- **Panel 2:** Doc B looking through archival photos of the 1970s LRL glovebox experiments, comparing them with modern Artemis III and OSD-476 regolith transcriptomics.
+- **Panel 2:** Doc B looking through archival photos of the 1970s LRL glovebox experiments, comparing them with modern Artemis and OSD-476 regolith transcriptomics.
 
 **Page 24**
 

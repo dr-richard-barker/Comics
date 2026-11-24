@@ -178,7 +178,7 @@ RAW_PROJECTS = [
     {
         "id": "LEAF_GBC2_pot_model",
         "title": "LEAF Lunar Plant Chamber CFD",
-        "comic_title": "Artemis III Bound: The Little Pot Going to the Moon!",
+        "comic_title": "Artemis Bound: The Little Pot Going to the Moon!",
         "emoji": "🌙",
         "series_id": "series-1-biophysics",
         "url": "https://dr-richard-barker.github.io/LEAF_GBC2_pot_model/",
@@ -186,10 +186,10 @@ RAW_PROJECTS = [
         "characters": ["doc-b", "sprout", "astra"],
         "concepts": ["boundary-layer-cfd", "microgravity-buoyancy", "closed-loop-blss"],
         "scene_motif": "lunar-pot-chamber",
-        "metric_badge": "Artemis III LEAF Payload · 1g Earth vs 0.166g Moon",
-        "wonder_q": "What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during Artemis III?",
+        "metric_badge": "Artemis LEAF Payload · 1g Earth vs 0.166g Moon",
+        "wonder_q": "What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during an Artemis mission?",
         "challenge": "On the Moon, gravity is only 1/6th as strong as Earth's (0.166g). Inside the sealed LEAF growth pot, warm air from the LED lights barely circulates!",
-        "experiment": "As part of the NASA Artemis III LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot.",
+        "experiment": "As part of the NASA Artemis LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot.",
         "discovery": "At 0.166g, buoyancy convection still exists—unlike 0g on the ISS—but the plume rises much slower, creating a gentler thermal and humidity dome over the lunar seedlings!",
         "take_home": "One small sprout for a seedling, one giant leap for life beyond Earth! Modeling the Moon today prepares us to plant gardens there tomorrow.",
         "hs_detail": "Simulates 3D Rayleigh-Benard thermal and water-vapor convection inside the LEAF Growth Chamber (GBC2) geometry comparing g = 9.81 m/s^2 (Earth control) vs. g = 1.62 m/s^2 (Lunar surface).",
@@ -698,7 +698,7 @@ RAW_PROJECTS = [
         "scene_motif": "quantum-spin-compass",
         "metric_badge": "First 5 Days of Lunar Germination · NMF Review",
         "wonder_q": "During a seed's very first 5 days sprouting on the Moon, why does the missing magnetic field matter so much?",
-        "challenge": "Lunar germination experiments (like Artemis III LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes.",
+        "challenge": "Lunar germination experiments (like Artemis LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes.",
         "experiment": "Doc B reviewed and modeled how Near-Null Magnetic Fields (<50 nT) affect seed imbibition, cryptochrome phosphorylation, hormone transport, and early root emergence.",
         "discovery": "Near-null magnetic fields delay early root growth and shift iron/redox balance during the critical 120-hour germination window—a key factor to account for in lunar growth chambers!",
         "take_home": "The first few days of life set the course for the whole journey. Understanding a seedling's earliest needs helps it stand tall on the Moon!",
@@ -778,9 +778,9 @@ RAW_PROJECTS = [
         "scene_motif": "cosmic-ray-shield",
         "metric_badge": "Cross-Species Stress & Redox Scoring · Arabidopsis -> Brassica",
         "wonder_q": "If we learned all our space-stress lessons from tiny Arabidopsis lab plants, can we use that dictionary to read the stress of edible Brassica space crops?",
-        "challenge": "Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis III LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years.",
+        "challenge": "Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years.",
         "experiment": "Pixel built the Lunar LEAF Radiation & Redox Decoder—mapping Arabidopsis-trained radiation and reactive-oxygen scoring rulers onto Brassica rapa exposed to 40 cGy Galactic Cosmic Rays.",
-        "discovery": "The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis III!",
+        "discovery": "The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis missions!",
         "take_home": "Knowledge gained from one humble little plant becomes a Rosetta Stone that helps us grow a whole harvest of space crops!",
         "hs_detail": "Projects orthologous Arabidopsis radiation (SOG1/DDR) and ROS/redox gene-set signatures onto Brassica rapa 40 cGy GCR transcriptomes to compute quantitative stress indices.",
         "activity": "Test the Stress & Redox score sliders in the Lunar LEAF Radiation Decoder to see how wild-type and mutant Brassica compare on the Arabidopsis stress scale!"
@@ -2443,13 +2443,13 @@ def get_project_visual_telemetry(p: dict) -> dict:
         },
         "lunar-pot-chamber": {
             "equation": "g_Moon = 1.62 m/s² (0.166g)   |   Nu = 0.54 · (Gr · Pr)^(1/4)",
-            "scale_bar": "Scale: 25 mm · Artemis III LEAF GBC2 Growth Pot",
+            "scale_bar": "Scale: 25 mm · Artemis LEAF GBC2 Growth Pot",
             "zoom_inset": "ZOOM 150×: Brassican Seedling Hypocotyl & Lunar Thermal Plume",
             "annotations": {
-                "wonder": ["Artemis III LEAF Payload Enclosure", "Lunar Surface Gravity (0.166g)", "LED Array Radiative Heat Flux", "Seedling Agar/Substrate Pad"],
+                "wonder": ["Artemis LEAF Payload Enclosure", "Lunar Surface Gravity (0.166g)", "LED Array Radiative Heat Flux", "Seedling Agar/Substrate Pad"],
                 "challenge": ["Reduced Buoyancy Force (1/6th Earth)", "Thickened Humidity Dome Over Cotyledons", "Slowed Convective Heat Dissipation", "Headspace CO₂ Drawdown Gradient"],
                 "experiment": ["3D GBC2 Parametric Pot Geometry", "1g Earth vs 0.166g Lunar CFD Solver", "Coupled Water-Vapor & CO₂ Scalar Transport", "5-Day Germination Kinetic Window"],
-                "discovery": ["0.166g Preserves Weak Buoyant Plume (2.1 cm/s)", "Contrast with 0g ISS Complete Stagnation", "Optimal Headspace Exchange Verified", "Artemis III Flight Readiness Baseline"],
+                "discovery": ["0.166g Preserves Weak Buoyant Plume (2.1 cm/s)", "Contrast with 0g ISS Complete Stagnation", "Optimal Headspace Exchange Verified", "Artemis Flight Readiness Baseline"],
                 "finale": ["First Lunar Surface Agricultural Payload", "Validated 0.166g Boundary Layer Physics", "Earth-to-Moon Scaling Law Established", "Live 3D LEAF Portal"]
             },
             "mini_plot": {
@@ -2680,7 +2680,7 @@ def get_project_visual_telemetry(p: dict) -> dict:
                 "challenge": ["Clustered DNA Double-Strand Breaks (DSBs)", "Radiolysis of Cellular Water → Hydroxyl Radicals (•OH)", "Anthocyaninless Mutant (ast) Redox Vulnerability", "Chronic Deep-Space Dose (40–100 cGy Mars Transit)"],
                 "experiment": ["10 NASA OSDR Radiation Studies Meta-Analysis", "40 cGy Simulated GCR Beamline (B. rapa WT vs ast)", "Kinetic Trajectory Deconvolution (1h → 14d)", "Cross-Species Arabidopsis-to-Brassica Stress Scoring"],
                 "discovery": ["Phase 1 (1–6h): Acute SOG1 / RAD51 / PARP2 Repair Blitz", "Phase 2 (24h+): Phenylpropanoid / Anthocyanin Armor", "WT Purple Pigments Buffer ROS Surge vs ast Mutant", "Universal Radiation Kinetic Signature Validated"],
-                "finale": ["Breeding Radiation-Armored Purple Space Crops", "Biomarker Decoders for Artemis III Lunar LEAF", "Translational DNA-Repair Insights for Crew Health", "Live Radiation Kinetic Landscape"]
+                "finale": ["Breeding Radiation-Armored Purple Space Crops", "Biomarker Decoders for Artemis Lunar LEAF", "Translational DNA-Repair Insights for Crew Health", "Live Radiation Kinetic Landscape"]
             },
             "mini_plot": {
                 "type": "line-kinetics",
@@ -2772,7 +2772,7 @@ def get_project_visual_telemetry(p: dict) -> dict:
                 "challenge": ["0g Capillary Water Film Suffocates Micropylar O₂", "Trapped Ethylene Gas Halts Hypocotyl Hook Opening", "Delayed ABA Degradation Under Spaceflight Stress", "Stem-Cell Niche Vulnerability to HZE Cosmic Rays"],
                 "experiment": ["3D Cellular Finite-Element Imbibition Digital Twin", "Coupled O₂ / Ethylene Reaction-Diffusion Solver", "ABA ⟷ Gibberellin (GA) Hormonal Switch Kinetics", "4-Parameter Hill Curve Germination AI (T₅₀, U₈₄₋₁₆)"],
                 "discovery": ["Imbibition Front Reaches Radicle in 4.2 Hours", "ABA/GA Flip at 28h Triggers Endosperm Cell-Wall Loosen", "0g Water Film Cuts Micropylar pO₂ by 48%", "Single-Cell Decoder Pinpoints Meristem Repair Genes"],
-                "finale": ["Predictive Digital Twin for Artemis III Seed Packs", "Automated Time-Lapse Vigor Scoring with Germinator AI", "Optimal Wetting Protocol for Spaceflight Hardware", "Interactive 3D Seed Twin Portal"]
+                "finale": ["Predictive Digital Twin for Artemis Seed Packs", "Automated Time-Lapse Vigor Scoring with Germinator AI", "Optimal Wetting Protocol for Spaceflight Hardware", "Interactive 3D Seed Twin Portal"]
             },
             "mini_plot": {
                 "type": "line-kinetics",
@@ -3277,7 +3277,7 @@ def get_project_visual_telemetry(p: dict) -> dict:
                 "wonder": ["Apoplastic RBOHD Respiratory Burst Oxidase Wave", "Chloroplast Singlet Oxygen (¹O₂) & Executer1/2 Retrograde", "Peroxisomal Catalase (CAT2) & Ascorbate–Glutathione Cycle", "Beneficial Systemic Acquired Acclimation Signaling Pulse"],
                 "challenge": ["Dual Nature of ROS: Second Messenger vs Cytotoxic Damage", "Overlapping Organellar H₂O₂ Signatures in Bulk RNA-seq", "Chronic Spaceflight Photorespiratory H₂O₂ Accumulation", "Non-Linear Kinetic Transitions Between Signaling & Necrosis"],
                 "experiment": ["Conditional Variational Autoencoder (CVAE) Redox Decoder", "Compartment-Specific ROS Transcriptomic Training Library", "Latent-Space Trajectory Projection of NASA OSDR Samples", "Time-Resolved RBOHD vs Peroxisomal Decomposition"],
-                "discovery": ["CVAE Latent Axes Cleanly Separate Apoplastic vs Peroxisomal ROS", "Early Spaceflight Shows Adaptive RBOHD/ZAT12 Signaling Pulse", "Unventilated Chambers Drift into Chronic Peroxisomal H₂O₂ Stress", "Provides Quantitative Redox Ruler for Artemis III Payloads"],
+                "discovery": ["CVAE Latent Axes Cleanly Separate Apoplastic vs Peroxisomal ROS", "Early Spaceflight Shows Adaptive RBOHD/ZAT12 Signaling Pulse", "Unventilated Chambers Drift into Chronic Peroxisomal H₂O₂ Stress", "Provides Quantitative Redox Ruler for Artemis Payloads"],
                 "finale": ["Mastering the Inner Sparks of Life Unlocks Space Resilience", "Explore the CVAE Latent Space in the Redox Decoder Portal", "Connecting Quantum Spin, Photorespiration, and Cell Signaling", "Redox Decoder (CVAE Framework)"]
             },
             "mini_plot": {

@@ -300,7 +300,7 @@ NOVELS_PART_1 = [
                         "anchor": "bottom-right",
                         "k5": "Never forget, explorers: when you can't see a problem, model the invisible! Even the smallest breeze brings life to space!",
                         "ms": "Physics and biology speak the exact same language. Solve the air, and you unlock gardens across the solar system!",
-                        "hs": "Next destination: the Lunar South Pole—where 1/6th gravity brings back a whisper of buoyancy inside Artemis III's LEAF chamber!"
+                        "hs": "Next destination: the Lunar South Pole—where 1/6th gravity brings back a whisper of buoyancy inside the Artemis LEAF chamber!"
                     }
                 ],
                 "data_hud": {
@@ -320,9 +320,9 @@ NOVELS_PART_1 = [
     # =========================================================================
     {
         "volume": 2,
-        "id": "vol-02-artemis-three-one-small-sprout",
-        "slug": "vol-02-artemis-three-one-small-sprout",
-        "title": "ARTEMIS III: ONE SMALL SPROUT",
+        "id": "vol-02-artemis-one-small-sprout",
+        "slug": "vol-02-artemis-one-small-sprout",
+        "title": "ARTEMIS: ONE SMALL SPROUT",
         "subtitle": "First Garden on the Lunar South Pole",
         "tagline": "1/6th gravity. Half an atmosphere. The first living garden placed on the surface of the Moon.",
         "art_style_family": "marvel",
@@ -335,7 +335,7 @@ NOVELS_PART_1 = [
         "accent_color": "#f59e0b",
         "ngss": "5-LS1-1 · MS-PS2-4 · MS-LS1-5 · HS-LS1-5",
         "big_finds": [
-            "Unlike 0g on the ISS, 1/6th lunar gravity (0.166g) preserves gentle Rayleigh-Bénard buoyancy convection inside the Artemis III LEAF GBC2 chamber.",
+            "Unlike 0g on the ISS, 1/6th lunar gravity (0.166g) preserves gentle Rayleigh-Bénard buoyancy convection inside the Artemis LEAF GBC2 chamber.",
             "Inside lunar root caps, heavy starch Statoliths still sediment downward to steer auxin—just 6× slower and with noticeably higher Brownian thermal jitter.",
             "TabPFN v2 foundation modeling separates NASA's low-pressure Exploration Atmosphere (56 kPa, 34% O₂) from hypoxia: low total pressure speeds binary gas diffusion (D_AB ∝ 1/P) and shifts water-loss genes independently.",
             "Ring-boosted Red/Blue/Far-Red LED photon arrays achieve >90% light uniformity across compact lunar grow trays."
@@ -361,13 +361,13 @@ NOVELS_PART_1 = [
                     "shot": "Monumental low-angle Marvel wide splash across the sunlit Lunar South Pole rim with razor-sharp black crater shadows.",
                     "lighting": "Stark unfiltered lunar sunlight rim-lighting Commander Astra's white-and-crimson EVA suit; warm emerald-magenta glow radiating from the carried LEAF cylinder.",
                     "pacing": "Awe-inspiring historical hush—humanity's return to the Moon with living seeds in hand.",
-                    "data_story_note": "Sets the Artemis III LEAF science definition mission context: testing real plant growth under true 0.166g lunar gravity for the first time."
+                    "data_story_note": "Sets the Artemis LEAF science definition mission context: testing real plant growth under true 0.166g lunar gravity for the first time."
                 },
                 "caption": {
                     "anchor": "top-left",
-                    "k5": "THE LUNAR SOUTH POLE! Commander Astra steps off the Artemis III lander carrying the most precious cargo on the Moon—a tiny living garden!",
-                    "ms": "ARTEMIS III · LUNAR SOUTH POLE (0.166g). Inside Commander Astra's hands sits the LEAF GBC2 chamber—ready to test whether Earth life can sense 1/6th gravity.",
-                    "hs": "ARTEMIS III LUNAR EFFECTS ON AGRICULTURAL FLORA (LEAF). Deploying the sealed GBC2 growth cylinder at g = 1.62 m/s² to resolve fractional-gravity biophysics."
+                    "k5": "THE LUNAR SOUTH POLE! Commander Astra steps off the Artemis lander carrying the most precious cargo on the Moon—a tiny living garden!",
+                    "ms": "ARTEMIS · LUNAR SOUTH POLE (0.166g). Inside Commander Astra's hands sits the LEAF GBC2 chamber—ready to test whether Earth life can sense 1/6th gravity.",
+                    "hs": "ARTEMIS LUNAR EFFECTS ON AGRICULTURAL FLORA (LEAF). Deploying the sealed GBC2 growth cylinder at g = 1.62 m/s² to resolve fractional-gravity biophysics."
                 },
                 "bubbles": [
                     {
@@ -388,10 +388,10 @@ NOVELS_PART_1 = [
                     }
                 ],
                 "data_hud": {
-                    "headline": "Artemis III LEAF Lunar Deployment",
+                    "headline": "Artemis LEAF Lunar Deployment",
                     "equation": "g_Moon = 1.62 m/s² ≈ 0.166 g_Earth",
                     "metric": "First Living Plant Chamber on the Lunar Surface",
-                    "dataset": "NASA Artemis III LEAF · GBC2 Chamber",
+                    "dataset": "NASA Artemis LEAF · GBC2 Chamber",
                     "explanation": "Lunar gravity sits right between Earth (1g) and the ISS (0g)—a crucial physics threshold for both airflow convection and root gravity sensing.",
                     "linked_comic_id": "LEAF_GBC2_pot_model"
                 }
@@ -592,7 +592,7 @@ NOVELS_PART_1 = [
                     "anchor": "top-left",
                     "k5": "LOOK UP AT THAT BLUE MARBLE IN THE SKY! For the first time in 4 billion years, an Earth leaf unfurls on the surface of another world!",
                     "ms": "A LIVING FOOTHOLD. Gentle 0.166g convection, sinking statoliths, smart low-pressure air, and tuned LEDs prove that Earth life can take root on the Moon.",
-                    "hs": "ARTEMIS III SCIENCE MILESTONE COMPLETE. Validated 0.166g CFD, fractional-g gravitropism, hypobaric diffusion, and spectral engineering pave the way for permanent lunar BLSS."
+                    "hs": "ARTEMIS SCIENCE MILESTONE COMPLETE. Validated 0.166g CFD, fractional-g gravitropism, hypobaric diffusion, and spectral engineering pave the way for permanent lunar BLSS."
                 },
                 "bubbles": [
                     {
@@ -615,7 +615,7 @@ NOVELS_PART_1 = [
                 "data_hud": {
                     "headline": "Lunar Biophysics Blueprint Achieved",
                     "equation": "0.166g Convection + Statolith Polarity + 56 kPa Diffusion",
-                    "metric": "Artemis III LEAF · Earth-to-Moon Digital Twin Verified",
+                    "metric": "Artemis LEAF · Earth-to-Moon Digital Twin Verified",
                     "dataset": "LEAF_GBC2_pot_model · CoSE AstroBotany",
                     "explanation": "Integrating fluid dynamics, gravity sensing, atmosphere modeling, and LED optics turns hostile lunar vacuum into a predictable biological sanctuary.",
                     "linked_comic_id": "LEAF_GBC2_pot_model"

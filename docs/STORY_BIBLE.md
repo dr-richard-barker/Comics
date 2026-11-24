@@ -2,7 +2,7 @@
 
 > **10 Flagship Educational Graphic Novels** synthesizing the biggest scientific discoveries across **114 open-source space biology research projects** by Dr. Richard J. Barker & the Collaborative Science Environment (CoSE).
 >
-> **Worlds Explored:** International Space Station (ISS) · The Moon (Artemis III & Artemis City) · Earth (Mission Control, Helmholtz Labs, Rothamsted, Antarctica, Global Classrooms)
+> **Worlds Explored:** International Space Station (ISS) · The Moon (Artemis & Artemis City) · Earth (Mission Control, Helmholtz Labs, Rothamsted, Antarctica, Global Classrooms)
 > **Protagonist Perspectives:** Astronauts · Phytonauts (Spacefaring Plants & Fungi) · Mission Control Scientists
 > **Art Direction:** 6 Marvel-Core Graphic Novel Styles + 4 Specialized Manga Data-Storytelling Styles
 
@@ -13,7 +13,7 @@
 | Vol. | Title | Worlds | POV | Art Style | Art Plates |
 | :---: | :--- | :--- | :--- | :--- | :--- |
 | **01** | **BREATHLESS IN ZERO-G**: *The Invisible Pillow* | ISS, Earth | Phytonaut, Mission Control | Modern Marvel Sci-Fi Action | 7/7 AI WebP + 0/7 Vector Art Studio |
-| **02** | **ARTEMIS III: ONE SMALL SPROUT**: *First Garden on the Lunar South Pole* | Moon, Earth | Astronaut, Phytonaut | Classic Marvel Heroic Lunar Epic | 7/7 AI WebP + 0/7 Vector Art Studio |
+| **02** | **ARTEMIS: ONE SMALL SPROUT**: *First Garden on the Lunar South Pole* | Moon, Earth | Astronaut, Phytonaut | Classic Marvel Heroic Lunar Epic | 7/7 AI WebP + 0/7 Vector Art Studio |
 | **03** | **GHOST IN THE GENOME**: *The 1,337-Sample Mystery* | Earth, ISS | Mission Control, Phytonaut | Seinen Cyberpunk Data-Manga | 7/7 AI WebP + 0/7 Vector Art Studio |
 | **04** | **KIRBY'S QUANTUM SHIELD**: *Beyond Earth's Magnetic Cocoon* | Earth, Moon | Phytonaut, Astronaut | Silver-Age Marvel Cosmic (Jack Kirby) | 7/7 AI WebP + 0/7 Vector Art Studio |
 | **05** | **LIGHTNING WITHOUT A BRAIN**: *The Cellular Alarm Network* | Earth, ISS | Phytonaut, Mission Control | Shōnen Kinetic Action Manga | 7/7 AI WebP + 0/7 Vector Art Studio |
@@ -101,7 +101,7 @@
 
 ---
 
-## Volume 02 — ARTEMIS III: ONE SMALL SPROUT: First Garden on the Lunar South Pole
+## Volume 02 — ARTEMIS: ONE SMALL SPROUT: First Garden on the Lunar South Pole
 
 *1/6th gravity. Half an atmosphere. The first living garden placed on the surface of the Moon.*
 
@@ -112,7 +112,7 @@
 
 ### Key Research Breakthroughs Synthesized
 
-- Unlike 0g on the ISS, 1/6th lunar gravity (0.166g) preserves gentle Rayleigh-Bénard buoyancy convection inside the Artemis III LEAF GBC2 chamber.
+- Unlike 0g on the ISS, 1/6th lunar gravity (0.166g) preserves gentle Rayleigh-Bénard buoyancy convection inside the Artemis LEAF GBC2 chamber.
 - Inside lunar root caps, heavy starch Statoliths still sediment downward to steer auxin—just 6× slower and with noticeably higher Brownian thermal jitter.
 - TabPFN v2 foundation modeling separates NASA's low-pressure Exploration Atmosphere (56 kPa, 34% O₂) from hypoxia: low total pressure speeds binary gas diffusion (D_AB ∝ 1/P) and shifts water-loss genes independently.
 - Ring-boosted Red/Blue/Far-Red LED photon arrays achieve >90% light uniformity across compact lunar grow trays.
@@ -120,16 +120,16 @@
 ### Page-by-Page Script & Director's Notes
 
 #### Page 1 (Act I — Touchdown at the South Pole) — Carrying Earth's Greenest Payload Across Lunar Dust
-- **Art Plate:** `assets/novels/vol-02-artemis-three-one-small-sprout/page-01.webp` (AI-Illustrated WebP) · **SFX:** `CRUNCH... HISS!`
+- **Art Plate:** `assets/novels/vol-02-artemis-one-small-sprout/page-01.webp` (AI-Illustrated WebP) · **SFX:** `CRUNCH... HISS!`
 - **Director's Camera & Lighting:** Monumental low-angle Marvel wide splash across the sunlit Lunar South Pole rim with razor-sharp black crater shadows. Stark unfiltered lunar sunlight rim-lighting Commander Astra's white-and-crimson EVA suit; warm emerald-magenta glow radiating from the carried LEAF cylinder.
-- **Pacing & Data Story:** Awe-inspiring historical hush—humanity's return to the Moon with living seeds in hand. *Sets the Artemis III LEAF science definition mission context: testing real plant growth under true 0.166g lunar gravity for the first time.*
-- **Narration (6–8):** ARTEMIS III · LUNAR SOUTH POLE (0.166g). Inside Commander Astra's hands sits the LEAF GBC2 chamber—ready to test whether Earth life can sense 1/6th gravity.
+- **Pacing & Data Story:** Awe-inspiring historical hush—humanity's return to the Moon with living seeds in hand. *Sets the Artemis LEAF science definition mission context: testing real plant growth under true 0.166g lunar gravity for the first time.*
+- **Narration (6–8):** ARTEMIS · LUNAR SOUTH POLE (0.166g). Inside Commander Astra's hands sits the LEAF GBC2 chamber—ready to test whether Earth life can sense 1/6th gravity.
   - **Commander Astra:** “Houston, LEAF payload is deployed on lunar regolith. Internal LEDs are online—we're about to see how a plant grows on another world!”
   - **Doc B (Houston):** “All eyes at Mission Control are on GBC2 telemetry, Astra. We've modeled 0.166g in CFD—now the Moon itself runs the real experiment!”
-- **Science Data HUD:** **Artemis III LEAF Lunar Deployment** — `g_Moon = 1.62 m/s² ≈ 0.166 g_Earth` (First Living Plant Chamber on the Lunar Surface · *NASA Artemis III LEAF · GBC2 Chamber*)
+- **Science Data HUD:** **Artemis LEAF Lunar Deployment** — `g_Moon = 1.62 m/s² ≈ 0.166 g_Earth` (First Living Plant Chamber on the Lunar Surface · *NASA Artemis LEAF · GBC2 Chamber*)
 
 #### Page 2 (Act I — The Gentle Lunar Plume) — Inside the GBC2 Pot: Buoyancy Wakes Up
-- **Art Plate:** `assets/novels/vol-02-artemis-three-one-small-sprout/page-02.webp` (AI-Illustrated WebP) · **SFX:** `SHIMMER-RISE...`
+- **Art Plate:** `assets/novels/vol-02-artemis-one-small-sprout/page-02.webp` (AI-Illustrated WebP) · **SFX:** `SHIMMER-RISE...`
 - **Director's Camera & Lighting:** Translucent technical Marvel cross-section straight through the metallic-and-glass GBC2 cylinder resting on lunar soil. Cool metallic silver exterior vs. warm magenta-emerald interior where a delicate cyan-gold thermal plume curls gently upward.
 - **Pacing & Data Story:** Wonder and discovery—contrasting the stalled 0g bubble from Vol. 01 with 0.166g's slow graceful plume. *Shows why 0.166g is NOT just 'weak 0g': Rayleigh-Bénard buoyancy still operates, creating a slow dome of heat and humidity above lunar seedlings.*
 - **Narration (6–8):** 0.166g BIOPHYSICS REVEALED. Unlike zero-G on the space station, lunar gravity is strong enough to lift a slow, shimmering plume of warmth and water vapor!
@@ -138,7 +138,7 @@
 - **Science Data HUD:** **Lunar Buoyancy & Seed Germination Twin** — `Ra_Moon = (g_Moon / g_Earth) · Ra_Earth ≈ 0.166 Ra_Earth` (1g Earth vs. 0.166g Moon 3D Thermal Plume · *LEAF_GBC2_pot_model & deepspace-seed-twin*)
 
 #### Page 3 (Act II — The Slow-Motion Gravity Compass) — Statolith's Dance at 1/6th Gravity
-- **Art Plate:** `assets/novels/vol-02-artemis-three-one-small-sprout/page-03.webp` (AI-Illustrated WebP) · **SFX:** `TUMBLE... TING!`
+- **Art Plate:** `assets/novels/vol-02-artemis-one-small-sprout/page-03.webp` (AI-Illustrated WebP) · **SFX:** `TUMBLE... TING!`
 - **Director's Camera & Lighting:** Heroic Marvel microscopic dive into the glowing emerald root cap where faceted violet Statolith crystals drift like slow-motion astronauts. Translucent jade cell walls backlit in golden cytoplasm; glowing violet trails trace each pebble's jittery Brownian descent.
 - **Pacing & Data Story:** Playful, rhythmic slow-motion physics—giving Statolith vivid personality. *Illustrates Stokes sedimentation velocity vs. thermal Brownian jitter at 0.166g—proving lunar gravity crosses the biological gravitropism threshold.*
 - **Narration (6–8):** COLUMELLA ROOT CAP · 0.166g. On the ISS, Statoliths float aimlessly. On the Moon, they sink six times slower—bouncing through microscopic thermal jitters!
@@ -147,7 +147,7 @@
 - **Science Data HUD:** **Statolith Sedimentation Kinetics** — `v_s = 2 r² (ρ_p − ρ_f) g / (9 η)` (6× Slower Settling + Higher Brownian Jitter at 0.166g · *Physics-simulator-for-statolith-modelling-*)
 
 #### Page 4 (Act II — Thin Air, Big Surprise) — Untangling NASA's Low-Pressure Exploration Atmosphere
-- **Art Plate:** `assets/novels/vol-02-artemis-three-one-small-sprout/page-04.webp` (AI-Illustrated WebP) · **SFX:** `DECOMPRESS!`
+- **Art Plate:** `assets/novels/vol-02-artemis-one-small-sprout/page-04.webp` (AI-Illustrated WebP) · **SFX:** `DECOMPRESS!`
 - **Director's Camera & Lighting:** Crisp split-frame Mission Control thriller! Doc B and Pixel slice a glowing atmospheric pressure sphere into two distinct forces: Total Pressure vs. Oxygen Partial Pressure. Cobalt-violet atmospheric rings glowing against dark console monitors; shimmering translucent air particles speeding up in the thinner right-hand half.
 - **Pacing & Data Story:** Sharp scientific plot twist—AI foundation model untangles a classic confounding variable. *Highlights TabPFN v2 decoupling NASA's 56 kPa / 34% O₂ Exploration Atmosphere: lower total pressure speeds binary diffusion (D_AB ∝ 1/P) independently of hypoxia!*
 - **Narration (6–8):** THE EXPLORATION ATMOSPHERE PUZZLE. Lowering cabin pressure usually lowers oxygen too—so scientists couldn't tell which force stressed the plants!
@@ -156,7 +156,7 @@
 - **Science Data HUD:** **Exploration Atmosphere Decoupling (TabPFN v2)** — `D_AB ∝ T^(3/2) / P_tot   (56 kPa · 34% O₂)` (Total Pressure vs. pO₂ Separated via TabPFN v2 · *arabidopsis-exploration-atmosphere-tabpfn*)
 
 #### Page 5 (Act III — Painting with Photons) — Designing the Ultimate Lunar Grow Light
-- **Art Plate:** `assets/novels/vol-02-artemis-three-one-small-sprout/page-05.webp` (AI-Illustrated WebP) · **SFX:** `ZAP-IGNITE!`
+- **Art Plate:** `assets/novels/vol-02-artemis-one-small-sprout/page-05.webp` (AI-Illustrated WebP) · **SFX:** `ZAP-IGNITE!`
 - **Director's Camera & Lighting:** Dynamic overhead-angled Marvel composition inside the lunar habitat rack as Commander Astra calibrates a glowing ring-boosted red/blue LED array. Radiant crimson-red and electric sapphire-blue photon cones overlapping into luminous violet-white uniformity across lush emerald trays.
 - **Pacing & Data Story:** Inventive energy—engineering light as both food and biological instruction. *Illustrates Lambertian PPFD superposition and spectral ratios (Red for photosynthetic efficiency + Blue for compact stems and open stomata).*
 - **Narration (6–8):** PHOTON ARCHITECTURE. Badly spaced LEDs sunburn center plants while starving corner seedlings. A ring-boosted red/blue grid fixes every dark corner!
@@ -165,13 +165,13 @@
 - **Science Data HUD:** **Lambertian PPFD & Spectral Uniformity** — `E(x,y) = Σ I_0 cos^m(θ_i) / d_i²  [μmol m⁻² s⁻¹]` (>90% Canopy Light Uniformity · Red/Blue/Far-Red · *LED-pattern-synth & ASTRO-USA-Habitat-Model*)
 
 #### Page 6 (Act III — Earthrise Over a Living Moon) — One Small Sprout for Mankind
-- **Art Plate:** `assets/novels/vol-02-artemis-three-one-small-sprout/page-06.webp` (AI-Illustrated WebP) · **SFX:** `SHINE ON...`
+- **Art Plate:** `assets/novels/vol-02-artemis-one-small-sprout/page-06.webp` (AI-Illustrated WebP) · **SFX:** `SHINE ON...`
 - **Director's Camera & Lighting:** Iconic Bronze-Age Marvel heroic finale splash: Commander Astra stands beside the radiant LEAF chamber on the lunar ridge as Sprout unfurls beneath a towering sapphire Earth. Golden lunar horizon glow meeting vivid emerald illumination inside the glass chamber and silver-blue Earthlight across Astra's visor.
 - **Pacing & Data Story:** Grand emotional silence and triumph—a historic milestone for humanity and biology. *Synthesizes all four pillars of lunar plant physics: 0.166g convection, slow statolith sensing, thin-air diffusion, and precision photon grids.*
 - **Narration (6–8):** A LIVING FOOTHOLD. Gentle 0.166g convection, sinking statoliths, smart low-pressure air, and tuned LEDs prove that Earth life can take root on the Moon.
   - **Commander Astra:** “Every math model we tested back on Earth just came alive in lunar dust. We're not just visiting anymore—we're learning how to stay.”
   - **Sprout:** “My roots know down, my leaves feel the lunar plume, and my solar factory is singing under the stars!”
-- **Science Data HUD:** **Lunar Biophysics Blueprint Achieved** — `0.166g Convection + Statolith Polarity + 56 kPa Diffusion` (Artemis III LEAF · Earth-to-Moon Digital Twin Verified · *LEAF_GBC2_pot_model · CoSE AstroBotany*)
+- **Science Data HUD:** **Lunar Biophysics Blueprint Achieved** — `0.166g Convection + Statolith Polarity + 56 kPa Diffusion` (Artemis LEAF · Earth-to-Moon Digital Twin Verified · *LEAF_GBC2_pot_model · CoSE AstroBotany*)
 
 **Linked Archive Research Projects:** `LEAF_GBC2_pot_model` (LEAF Lunar Plant Chamber CFD), `arabidopsis-exploration-atmosphere-tabpfn` (Arabidopsis Exploration Atmosphere (TabPFN v2)), `Physics-simulator-for-statolith-modelling-` (Statolith Physics Simulator), `LED-pattern-synth` (Horticultural LED Designer), `deepspace-seed-twin` (Deep Space Seed Twin), `ASTRO-USA-Habitat-Model` (ASTRO-USA Mini-Hab Food Production Module)
 

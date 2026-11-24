@@ -2824,7 +2824,7 @@
       "series_issue_number": 8,
       "id": "LEAF_GBC2_pot_model",
       "title": "LEAF Lunar Plant Chamber CFD",
-      "comic_title": "Artemis III Bound: The Little Pot Going to the Moon!",
+      "comic_title": "Artemis Bound: The Little Pot Going to the Moon!",
       "emoji": "🌙",
       "series_id": "series-1-biophysics",
       "series_number": 1,
@@ -2838,7 +2838,7 @@
       "cose_scopes": [
         "deepspaceag"
       ],
-      "qc_verified_note": "QC Verified (Artemis III LEAF Payload · 1g Earth vs 0.166g Moon): Grounded in reproducible repository scripts, FAIR metadata, and empirical parameters (u_Moon ≈ 0.41 · u_Earth (Ra^1/4 scaling)).",
+      "qc_verified_note": "QC Verified (Artemis LEAF Payload · 1g Earth vs 0.166g Moon): Grounded in reproducible repository scripts, FAIR metadata, and empirical parameters (u_Moon ≈ 0.41 · u_Earth (Ra^1/4 scaling)).",
       "characters": [
         "doc-b",
         "sprout",
@@ -2850,9 +2850,9 @@
         "closed-loop-blss"
       ],
       "scene_motif": "lunar-pot-chamber",
-      "metric_badge": "Artemis III LEAF Payload · 1g Earth vs 0.166g Moon",
+      "metric_badge": "Artemis LEAF Payload · 1g Earth vs 0.166g Moon",
       "equation": "g_Moon = 1.62 m/s² (0.166g)   |   Nu = 0.54 · (Gr · Pr)^(1/4)",
-      "scale_bar": "Scale: 25 mm · Artemis III LEAF GBC2 Growth Pot",
+      "scale_bar": "Scale: 25 mm · Artemis LEAF GBC2 Growth Pot",
       "zoom_inset": "ZOOM 150×: Brassican Seedling Hypocotyl & Lunar Thermal Plume",
       "mini_plot": {
         "type": "line-kinetics",
@@ -2879,9 +2879,9 @@
         ],
         "stat_note": "u_Moon ≈ 0.41 · u_Earth (Ra^1/4 scaling)"
       },
-      "wonder_q": "What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during Artemis III?",
+      "wonder_q": "What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during an Artemis mission?",
       "challenge": "On the Moon, gravity is only 1/6th as strong as Earth's (0.166g). Inside the sealed LEAF growth pot, warm air from the LED lights barely circulates!",
-      "experiment": "As part of the NASA Artemis III LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot.",
+      "experiment": "As part of the NASA Artemis LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot.",
       "discovery": "At 0.166g, buoyancy convection still exists—unlike 0g on the ISS—but the plume rises much slower, creating a gentler thermal and humidity dome over the lunar seedlings!",
       "take_home": "One small sprout for a seedling, one giant leap for life beyond Earth! Modeling the Moon today prepares us to plant gardens there tomorrow.",
       "hs_detail": "Simulates 3D Rayleigh-Benard thermal and water-vapor convection inside the LEAF Growth Chamber (GBC2) geometry comparing g = 9.81 m/s^2 (Earth control) vs. g = 1.62 m/s^2 (Lunar surface).",
@@ -2895,12 +2895,12 @@
           "scene_type": "wonder",
           "speaker": "doc-b",
           "speaker_name": "Dr. Richard (\"Doc B\")",
-          "callout": "Artemis III LEAF Payload",
+          "callout": "Artemis LEAF Payload",
           "equation": "g_Moon = 1.62 m/s² (0.166g)   |   Nu = 0.54 · (Gr · Pr)^(1/4)",
-          "scale_bar": "Scale: 25 mm · Artemis III LEAF GBC2 Growth Pot",
+          "scale_bar": "Scale: 25 mm · Artemis LEAF GBC2 Growth Pot",
           "zoom_inset": "ZOOM 150×: Brassican Seedling Hypocotyl & Lunar Thermal Plume",
           "annotations": [
-            "Artemis III LEAF Payload Enclosure",
+            "Artemis LEAF Payload Enclosure",
             "Lunar Surface Gravity (0.166g)",
             "LED Array Radiative Heat Flux",
             "Seedling Agar/Substrate Pad"
@@ -2932,17 +2932,17 @@
           },
           "k5": {
             "caption": "Mission Log — LEAF Lunar Plant Chamber CFD: A cosmic curiosity question echoes through the CoSE Space Lab!",
-            "dialogue": "\"What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during Artemis III? Let's zoom in and find out together!\"",
+            "dialogue": "\"What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during an Artemis mission? Let's zoom in and find out together!\"",
             "note": "Key Idea (#BoundaryLayer): An invisible pillow of still air wraps around leaves in space, making it harder to breathe CO2 and O2."
           },
           "ms": {
             "caption": "1. THE BIG QUESTION — LEAF Lunar Plant Chamber CFD",
-            "dialogue": "\"What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during Artemis III? To solve this, we have to look at how physics and biology interact beyond Earth.\"",
+            "dialogue": "\"What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during an Artemis mission? To solve this, we have to look at how physics and biology interact beyond Earth.\"",
             "note": "Concept Connection (Boundary-Layer Physics & CFD): Stagnant air boundary layers thicken around leaves in low gravity, slowing down gas exchange and water evaporation."
           },
           "hs": {
-            "caption": "PANEL 1 · HYPOTHESIS & FRAMING — LEAF Lunar Plant Chamber CFD (Artemis III LEAF Payload · 1g Earth vs 0.166g Moon)",
-            "dialogue": "\"What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during Artemis III? Let's formulate a testable systems-level hypothesis grounded in empirical data.\"",
+            "caption": "PANEL 1 · HYPOTHESIS & FRAMING — LEAF Lunar Plant Chamber CFD (Artemis LEAF Payload · 1g Earth vs 0.166g Moon)",
+            "dialogue": "\"What will happen inside the very first plant growth chamber astronauts place on the surface of the Moon during an Artemis mission? Let's formulate a testable systems-level hypothesis grounded in empirical data.\"",
             "note": "Theoretical Prior (MS-ETS1-4 / HS-LS1-5): Computational Fluid Dynamics (Lattice-Boltzmann & OpenFOAM) quantifies diffusive boundary-layer resistance (rb) scaling as g decreases."
           }
         },
@@ -2955,7 +2955,7 @@
           "speaker_name": "Sprout",
           "callout": "Spaceflight Bottleneck!",
           "equation": "g_Moon = 1.62 m/s² (0.166g)   |   Nu = 0.54 · (Gr · Pr)^(1/4)",
-          "scale_bar": "Scale: 25 mm · Artemis III LEAF GBC2 Growth Pot",
+          "scale_bar": "Scale: 25 mm · Artemis LEAF GBC2 Growth Pot",
           "zoom_inset": "ZOOM 150×: Brassican Seedling Hypocotyl & Lunar Thermal Plume",
           "annotations": [
             "Reduced Buoyancy Force (1/6th Earth)",
@@ -3013,7 +3013,7 @@
           "speaker_name": "Commander Astra",
           "callout": "1g Earth vs 0.166g Moon",
           "equation": "g_Moon = 1.62 m/s² (0.166g)   |   Nu = 0.54 · (Gr · Pr)^(1/4)",
-          "scale_bar": "Scale: 25 mm · Artemis III LEAF GBC2 Growth Pot",
+          "scale_bar": "Scale: 25 mm · Artemis LEAF GBC2 Growth Pot",
           "zoom_inset": "ZOOM 150×: Brassican Seedling Hypocotyl & Lunar Thermal Plume",
           "annotations": [
             "3D GBC2 Parametric Pot Geometry",
@@ -3048,17 +3048,17 @@
           },
           "k5": {
             "caption": "Time to fire up our open-source CoSE lab tools and test it!",
-            "dialogue": "\"Activate the lab engine! As part of the NASA Artemis III LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot.\"",
+            "dialogue": "\"Activate the lab engine! As part of the NASA Artemis LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot.\"",
             "note": "Anyone with a web browser can open this exact tool and explore the experiment!"
           },
           "ms": {
             "caption": "3. THE METHOD & INTERACTIVE PIPELINE",
-            "dialogue": "\"As part of the NASA Artemis III LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot.\"",
-            "note": "Live Tool Architecture: Built as an open-source, reproducible pipeline (Artemis III LEAF Payload · 1g Earth vs 0.166g Moon)."
+            "dialogue": "\"As part of the NASA Artemis LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot.\"",
+            "note": "Live Tool Architecture: Built as an open-source, reproducible pipeline (Artemis LEAF Payload · 1g Earth vs 0.166g Moon)."
           },
           "hs": {
             "caption": "PANEL 3 · COMPUTATIONAL & EXPERIMENTAL METHODOLOGY",
-            "dialogue": "\"As part of the NASA Artemis III LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot. Specifically: Simulates 3D Rayleigh-Benard thermal and water-vapor convection inside the LEAF Growth Chamber (GBC2) geometry comparing g = 9.81 m/s^2 (Earth control) vs. g = 1.62 m/s^2 (Lunar surface).\"",
+            "dialogue": "\"As part of the NASA Artemis LEAF science definition team, Doc B and Pixel built a 3D CFD & biophysics portal comparing 1g Earth against 0.166g lunar gravity inside the GBC2 pot. Specifically: Simulates 3D Rayleigh-Benard thermal and water-vapor convection inside the LEAF Growth Chamber (GBC2) geometry comparing g = 9.81 m/s^2 (Earth control) vs. g = 1.62 m/s^2 (Lunar surface).\"",
             "note": "Implementation & FAIR Data: Hosted at https://github.com/dr-richard-barker/LEAF_GBC2_pot_model with reproducible scripts and visual analytics."
           }
         },
@@ -3071,13 +3071,13 @@
           "speaker_name": "Commander Astra",
           "callout": "Eureka! Verified Result",
           "equation": "g_Moon = 1.62 m/s² (0.166g)   |   Nu = 0.54 · (Gr · Pr)^(1/4)",
-          "scale_bar": "Scale: 25 mm · Artemis III LEAF GBC2 Growth Pot",
+          "scale_bar": "Scale: 25 mm · Artemis LEAF GBC2 Growth Pot",
           "zoom_inset": "ZOOM 150×: Brassican Seedling Hypocotyl & Lunar Thermal Plume",
           "annotations": [
             "0.166g Preserves Weak Buoyant Plume (2.1 cm/s)",
             "Contrast with 0g ISS Complete Stagnation",
             "Optimal Headspace Exchange Verified",
-            "Artemis III Flight Readiness Baseline"
+            "Artemis Flight Readiness Baseline"
           ],
           "mini_plot": {
             "type": "line-kinetics",
@@ -3129,7 +3129,7 @@
           "speaker_name": "Dr. Richard (\"Doc B\")",
           "callout": "Mission Take-Home Message",
           "equation": "g_Moon = 1.62 m/s² (0.166g)   |   Nu = 0.54 · (Gr · Pr)^(1/4)",
-          "scale_bar": "Scale: 25 mm · Artemis III LEAF GBC2 Growth Pot",
+          "scale_bar": "Scale: 25 mm · Artemis LEAF GBC2 Growth Pot",
           "zoom_inset": "ZOOM 150×: Brassican Seedling Hypocotyl & Lunar Thermal Plume",
           "annotations": [
             "First Lunar Surface Agricultural Payload",
@@ -6690,7 +6690,7 @@
             "CVAE Latent Axes Cleanly Separate Apoplastic vs Peroxisomal ROS",
             "Early Spaceflight Shows Adaptive RBOHD/ZAT12 Signaling Pulse",
             "Unventilated Chambers Drift into Chronic Peroxisomal H₂O₂ Stress",
-            "Provides Quantitative Redox Ruler for Artemis III Payloads"
+            "Provides Quantitative Redox Ruler for Artemis Payloads"
           ],
           "mini_plot": {
             "type": "line-kinetics",
@@ -11081,7 +11081,7 @@
           "zoom_inset": "ZOOM 3000×: Double-Strand DNA Break & RAD51 Homologous Repair Filament",
           "annotations": [
             "Breeding Radiation-Armored Purple Space Crops",
-            "Biomarker Decoders for Artemis III Lunar LEAF",
+            "Biomarker Decoders for Artemis Lunar LEAF",
             "Translational DNA-Repair Insights for Crew Health",
             "Live Radiation Kinetic Landscape"
           ],
@@ -12634,7 +12634,7 @@
         "stat_note": "Sharp quantum transition across 50 nT – 5 µT"
       },
       "wonder_q": "During a seed's very first 5 days sprouting on the Moon, why does the missing magnetic field matter so much?",
-      "challenge": "Lunar germination experiments (like Artemis III LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes.",
+      "challenge": "Lunar germination experiments (like Artemis LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes.",
       "experiment": "Doc B reviewed and modeled how Near-Null Magnetic Fields (<50 nT) affect seed imbibition, cryptochrome phosphorylation, hormone transport, and early root emergence.",
       "discovery": "Near-null magnetic fields delay early root growth and shift iron/redox balance during the critical 120-hour germination window—a key factor to account for in lunar growth chambers!",
       "take_home": "The first few days of life set the course for the whole journey. Understanding a seedling's earliest needs helps it stand tall on the Moon!",
@@ -12744,17 +12744,17 @@
           },
           "k5": {
             "caption": "Uh-oh! Out in space, the rules we're used to on Earth change fast!",
-            "dialogue": "\"Whoa! Lunar germination experiments (like Artemis III LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes.\"",
+            "dialogue": "\"Whoa! Lunar germination experiments (like Artemis LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes.\"",
             "note": "Without Earth's familiar environment, living cells face a brand-new puzzle!"
           },
           "ms": {
             "caption": "2. THE ENVIRONMENTAL CHALLENGE",
-            "dialogue": "\"Here's the obstacle we uncovered: Lunar germination experiments (like Artemis III LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes.\"",
+            "dialogue": "\"Here's the obstacle we uncovered: Lunar germination experiments (like Artemis LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes.\"",
             "note": "Why It Matters (Clocks, Calcium Waves & ROS Signals): With 16 sunrises a day on the ISS, plants rely on circadian rhythms, calcium waves, and reactive oxygen species (ROS) to stay coordinated."
           },
           "hs": {
             "caption": "PANEL 2 · BIOPHYSICAL / EXPERIMENTAL BOTTLENECK",
-            "dialogue": "\"Lunar germination experiments (like Artemis III LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes. If we don't control for this confounding variable, our interpretation breaks down.\"",
+            "dialogue": "\"Lunar germination experiments (like Artemis LEAF) focus on the first 5 days of growth, right when a seed bursts open and relies on blue-light cryptochromes and iron-sulfur enzymes. If we don't control for this confounding variable, our interpretation breaks down.\"",
             "note": "Mechanism (#CellSignaling): ChronoGauge phase decoding, CVAE redox kinetics, and GCaMP fluorescence quantification resolve systemic stress signaling dynamics."
           }
         },
@@ -13971,7 +13971,7 @@
           "zoom_inset": "ZOOM 3000×: Double-Strand DNA Break & RAD51 Homologous Repair Filament",
           "annotations": [
             "Breeding Radiation-Armored Purple Space Crops",
-            "Biomarker Decoders for Artemis III Lunar LEAF",
+            "Biomarker Decoders for Artemis Lunar LEAF",
             "Translational DNA-Repair Insights for Crew Health",
             "Live Radiation Kinetic Landscape"
           ],
@@ -14079,9 +14079,9 @@
         "stat_note": "10 OSDR Studies · 40 cGy GCR Validated"
       },
       "wonder_q": "If we learned all our space-stress lessons from tiny Arabidopsis lab plants, can we use that dictionary to read the stress of edible Brassica space crops?",
-      "challenge": "Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis III LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years.",
+      "challenge": "Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years.",
       "experiment": "Pixel built the Lunar LEAF Radiation & Redox Decoder—mapping Arabidopsis-trained radiation and reactive-oxygen scoring rulers onto Brassica rapa exposed to 40 cGy Galactic Cosmic Rays.",
-      "discovery": "The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis III!",
+      "discovery": "The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis missions!",
       "take_home": "Knowledge gained from one humble little plant becomes a Rosetta Stone that helps us grow a whole harvest of space crops!",
       "hs_detail": "Projects orthologous Arabidopsis radiation (SOG1/DDR) and ROS/redox gene-set signatures onto Brassica rapa 40 cGy GCR transcriptomes to compute quantitative stress indices.",
       "activity": "Test the Stress & Redox score sliders in the Lunar LEAF Radiation Decoder to see how wild-type and mutant Brassica compare on the Arabidopsis stress scale!",
@@ -14189,17 +14189,17 @@
           },
           "k5": {
             "caption": "Uh-oh! Out in space, the rules we're used to on Earth change fast!",
-            "dialogue": "\"Whoa! Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis III LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years.\"",
+            "dialogue": "\"Whoa! Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years.\"",
             "note": "Without Earth's familiar environment, living cells face a brand-new puzzle!"
           },
           "ms": {
             "caption": "2. THE ENVIRONMENTAL CHALLENGE",
-            "dialogue": "\"Here's the obstacle we uncovered: Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis III LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years.\"",
+            "dialogue": "\"Here's the obstacle we uncovered: Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years.\"",
             "note": "Why It Matters (Clocks, Calcium Waves & ROS Signals): With 16 sunrises a day on the ISS, plants rely on circadian rhythms, calcium waves, and reactive oxygen species (ROS) to stay coordinated."
           },
           "hs": {
             "caption": "PANEL 2 · BIOPHYSICAL / EXPERIMENTAL BOTTLENECK",
-            "dialogue": "\"Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis III LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years. If we don't control for this confounding variable, our interpretation breaks down.\"",
+            "dialogue": "\"Arabidopsis and Brassica rapa (field mustard/turnip, an Artemis LEAF candidate crop) are cousins, but their genomes have duplicated and rearranged over millions of years. If we don't control for this confounding variable, our interpretation breaks down.\"",
             "note": "Mechanism (#CellSignaling): ChronoGauge phase decoding, CVAE redox kinetics, and GCaMP fluorescence quantification resolve systemic stress signaling dynamics."
           }
         },
@@ -14305,17 +14305,17 @@
           },
           "k5": {
             "caption": "BINGO! The data lights up on the screen and reveals the secret!",
-            "dialogue": "\"Look at that pattern! The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis III!\"",
+            "dialogue": "\"Look at that pattern! The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis missions!\"",
             "note": "That's a real discovery from Dr. Barker's research portfolio!"
           },
           "ms": {
             "caption": "4. THE SCIENTIFIC DISCOVERY",
-            "dialogue": "\"The evidence is clear: The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis III!\"",
+            "dialogue": "\"The evidence is clear: The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis missions!\"",
             "note": "Seeing the pattern in the data connects the physical cause directly to the biological response."
           },
           "hs": {
             "caption": "PANEL 4 · QUANTITATIVE FINDING & SYSTEMS INSIGHT",
-            "dialogue": "\"The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis III!\"",
+            "dialogue": "\"The cross-species decoder accurately scored radiation damage and antioxidant defense in Brassica, proving our Arabidopsis knowledge base can guide lunar crop monitoring on Artemis missions!\"",
             "note": "Technical Result: Projects orthologous Arabidopsis radiation (SOG1/DDR) and ROS/redox gene-set signatures onto Brassica rapa 40 cGy GCR transcriptomes to compute quantitative stress indices."
           }
         },
@@ -14332,7 +14332,7 @@
           "zoom_inset": "ZOOM 3000×: Double-Strand DNA Break & RAD51 Homologous Repair Filament",
           "annotations": [
             "Breeding Radiation-Armored Purple Space Crops",
-            "Biomarker Decoders for Artemis III Lunar LEAF",
+            "Biomarker Decoders for Artemis Lunar LEAF",
             "Translational DNA-Repair Insights for Crew Health",
             "Live Radiation Kinetic Landscape"
           ],
@@ -15415,7 +15415,7 @@
           "scale_bar": "Scale: 250 µm · Arabidopsis Seed Digital Twin (0 – 120 h)",
           "zoom_inset": "ZOOM 600×: Micropylar Endosperm Weakening & Radicle Emergence",
           "annotations": [
-            "Predictive Digital Twin for Artemis III Seed Packs",
+            "Predictive Digital Twin for Artemis Seed Packs",
             "Automated Time-Lapse Vigor Scoring with Germinator AI",
             "Optimal Wetting Protocol for Spaceflight Hardware",
             "Interactive 3D Seed Twin Portal"
@@ -15776,7 +15776,7 @@
           "scale_bar": "Scale: 250 µm · Arabidopsis Seed Digital Twin (0 – 120 h)",
           "zoom_inset": "ZOOM 600×: Micropylar Endosperm Weakening & Radicle Emergence",
           "annotations": [
-            "Predictive Digital Twin for Artemis III Seed Packs",
+            "Predictive Digital Twin for Artemis Seed Packs",
             "Automated Time-Lapse Vigor Scoring with Germinator AI",
             "Optimal Wetting Protocol for Spaceflight Hardware",
             "Interactive 3D Seed Twin Portal"
@@ -26985,7 +26985,7 @@
           "zoom_inset": "ZOOM 3000×: Double-Strand DNA Break & RAD51 Homologous Repair Filament",
           "annotations": [
             "Breeding Radiation-Armored Purple Space Crops",
-            "Biomarker Decoders for Artemis III Lunar LEAF",
+            "Biomarker Decoders for Artemis Lunar LEAF",
             "Translational DNA-Repair Insights for Crew Health",
             "Live Radiation Kinetic Landscape"
           ],
@@ -28791,7 +28791,7 @@
           "scale_bar": "Scale: 250 µm · Arabidopsis Seed Digital Twin (0 – 120 h)",
           "zoom_inset": "ZOOM 600×: Micropylar Endosperm Weakening & Radicle Emergence",
           "annotations": [
-            "Predictive Digital Twin for Artemis III Seed Packs",
+            "Predictive Digital Twin for Artemis Seed Packs",
             "Automated Time-Lapse Vigor Scoring with Germinator AI",
             "Optimal Wetting Protocol for Spaceflight Hardware",
             "Interactive 3D Seed Twin Portal"
