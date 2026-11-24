@@ -239,16 +239,17 @@
   }
 
   /**
-   * Opens a clean, print-optimized 8-page Graphic Novel PDF Book window
-   * (Cover + 6 Illustrated Story Spreads + Mission Debrief Classroom Guide)
-   * and triggers window.print() so teachers/students can Save as PDF immediately.
+   * Opens a clean, print-optimized 8-page 8.5" x 11" Portrait 2-Tier Comic Book
+   * (Page 1 Full Cover, Page 2 Briefing, Pages 3-5 Two Stacked Beats/Page,
+   * Page 6 Science Lab, Page 7 Classroom & Repos, Page 8 Collectible Back Cover)
+   * and triggers window.print() so teachers/students can Print or Save as PDF immediately.
    */
   function printGraphicNovelPDF(novel, level, catalog) {
     const lvl = level || "ms";
     const levelNames = {
       k5: "Elementary (Grades K–5 Explorer)",
       ms: "Middle School (Grades 6–8 Investigator)",
-      hs: "High School & Educator (Grades 9–12)"
+      hs: "High School & Educator (Grades 9–12 + Teacher Guide)"
     };
     const baseHref = window.location.href.split("#")[0];
     const comicsById = {};
@@ -261,49 +262,80 @@
         ? `<img src="${esc(novel.cover.path)}" alt="${esc(novel.title)} cover">`
         : window.CoSEGraphicNovelArtStudio.renderCoverSVG(novel);
 
-    const pagesHtml = novel.pages
-      .map((p) => {
-        const artHtml =
-          p.art && p.art.has_raster
-            ? `<img src="${esc(p.art.path)}" alt="${esc(p.beat_title)}">`
-            : window.CoSEGraphicNovelArtStudio.renderPageSVG(novel, p);
-        const cap = p.caption[lvl] || p.caption.ms;
-        const bubbles = p.bubbles
-          .map((b) => {
-            const col = SPEAKER_COLORS[b.speaker] || novel.theme_color;
-            return `<div class="p-bubble"><span class="p-sp" style="background:${col}">${esc(b.speaker_name)}</span><p>“${esc(b[lvl] || b.ms)}”</p></div>`;
-          })
-          .join("");
-        return `
-          <section class="print-sheet story-sheet family-${novel.art_style_family}">
-            <header class="sheet-bar">
-              <span><strong>VOL ${String(novel.volume).padStart(2, "0")} · ${esc(novel.title)}</strong> — ${esc(p.act)}</span>
-              <span>Page ${p.page_number} of 6 · ${esc(p.beat_title)}</span>
-            </header>
-            <div class="sheet-art">
-              ${artHtml}
-              <div class="sheet-overlay">
-                <div class="p-top">
-                  <div class="p-cap">${esc(cap)}</div>
-                  <div class="p-sfx">${esc(p.sfx.text)}</div>
-                </div>
-                <div class="p-bubbles">${bubbles}</div>
+    const renderTier = (p) => {
+      const artHtml =
+        p.art && p.art.has_raster
+          ? `<img src="${esc(p.art.path)}" alt="${esc(p.beat_title)}">`
+          : window.CoSEGraphicNovelArtStudio.renderPageSVG(novel, p);
+      const cap = p.caption[lvl] || p.caption.ms;
+      const bubbles = p.bubbles
+        .map((b) => {
+          const col = SPEAKER_COLORS[b.speaker] || novel.theme_color;
+          return `<div class="p-bubble"><span class="p-sp" style="background:${col}">${esc(b.speaker_name)}</span><p>“${esc(b[lvl] || b.ms)}”</p></div>`;
+        })
+        .join("");
+      return `
+        <div class="comic-tier">
+          <div class="tier-art">
+            ${artHtml}
+            <div class="sheet-overlay">
+              <div class="p-top">
+                <div class="p-cap">${esc(cap)}</div>
+                <div class="p-sfx">${esc(p.sfx.text)}</div>
               </div>
+              <div class="p-bubbles">${bubbles}</div>
             </div>
-            <footer class="sheet-hud">
-              <div><strong>🔬 ${esc(p.data_hud.headline)}</strong> · <code>${esc(p.data_hud.equation)}</code> · ${esc(p.data_hud.metric)}</div>
-              <div class="hud-sub">${esc(p.data_hud.explanation)} <em>(${esc(p.data_hud.dataset)})</em></div>
-            </footer>
-          </section>
-        `;
-      })
+          </div>
+          <div class="tier-hud">
+            <div class="hud-r1"><strong>BEAT ${p.page_number} DATA HUD — ${esc(p.data_hud.headline)}</strong><span>${esc(p.data_hud.dataset)}</span></div>
+            <div class="hud-r2"><code>${esc(p.data_hud.equation)}</code> <span class="hud-metric">${esc(p.data_hud.metric)}</span></div>
+            <div class="hud-r3">${esc(p.data_hud.explanation)}</div>
+          </div>
+        </div>
+      `;
+    };
+
+    const actPairs = [
+      [novel.pages[0], novel.pages[1], 3],
+      [novel.pages[2], novel.pages[3], 4],
+      [novel.pages[4], novel.pages[5], 5]
+    ];
+
+    const comicPagesHtml = actPairs
+      .map(
+        ([b1, b2, pgNum]) => `
+        <section class="print-sheet comic-sheet family-${novel.art_style_family}">
+          <header class="sheet-bar">
+            <span><strong>VOL ${String(novel.volume).padStart(2, "0")} · ${esc(novel.title)}</strong> | ${esc(b1.act.toUpperCase())}</span>
+            <span>Beats ${b1.page_number}–${b2.page_number} · ${esc(levelNames[lvl])}</span>
+          </header>
+          <div class="tiers-stack">
+            ${renderTier(b1)}
+            ${renderTier(b2)}
+          </div>
+          <footer class="folio-bar"><span>The CoSE Chronicles · Vol. ${String(novel.volume).padStart(2, "0")}</span><strong>0${pgNum}</strong></footer>
+        </section>
+      `
+      )
+      .join("");
+
+    const eqCardsHtml = novel.pages
+      .map(
+        (p) => `
+        <div class="eq-card">
+          <strong>Beat ${p.page_number}: ${esc(p.data_hud.headline)}</strong>
+          <code>${esc(p.data_hud.equation)}</code>
+          <span>${esc(p.data_hud.metric)} · ${esc(p.data_hud.dataset)}</span>
+        </div>
+      `
+      )
       .join("");
 
     const reposList = novel.source_comic_ids
       .map((cid) => {
         const cm = comicsById[cid];
         if (!cm) return "";
-        return `<li><strong>${esc(cm.title)}</strong> — ${esc(cm.metric_badge)} · <code>${esc(cm.url)}</code></li>`;
+        return `<li><strong>#${String(cm.issue_number).padStart(2, "0")} · ${esc(cm.title)}</strong> — ${esc(cm.metric_badge)}<br><code>${esc(cm.url)}</code></li>`;
       })
       .join("");
 
@@ -312,82 +344,130 @@
 <head>
   <meta charset="utf-8">
   <base href="${esc(baseHref)}">
-  <title>Vol. ${String(novel.volume).padStart(2, "0")} — ${esc(novel.title)} | CoSE Science Comics PDF</title>
+  <title>Vol. ${String(novel.volume).padStart(2, "0")} — ${esc(novel.title)} | 8.5×11 Print Comic</title>
   <style>
-    @page { size: landscape; margin: 0.32in; }
+    @page { size: letter portrait; margin: 0.35in; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; color: #0f172a; background: #f8fafc; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; color: #0f172a; background: #e2e8f0; }
     .print-toolbar { position: sticky; top: 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #0f172a; color: #fff; }
-    .print-toolbar button { padding: 8px 16px; border: none; border-radius: 8px; background: #0284c7; color: #fff; font-weight: 800; cursor: pointer; font-size: 14px; }
-    .print-sheet { width: 100%; max-width: 1080px; margin: 16px auto; background: #fff; border: 3px solid #09090b; border-radius: 10px; overflow: hidden; page-break-after: always; break-after: page; }
-    .cover-sheet { display: grid; grid-template-columns: 360px 1fr; min-height: 540px; }
-    .cover-art { background: #020617; border-right: 3px solid #09090b; }
-    .cover-art img, .cover-art svg { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .cover-info { padding: 26px 28px; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
-    .vol-badge { display: inline-block; padding: 4px 10px; background: ${novel.theme_color}; color: #fff; font-weight: 900; border-radius: 6px; font-size: 12px; width: fit-content; }
-    .cover-info h1 { margin: 0; font-size: 30px; line-height: 1.1; }
-    .cover-info h2 { margin: 0; font-size: 18px; color: ${novel.theme_color}; }
-    .cover-info ul { margin: 6px 0 0; padding-left: 18px; font-size: 13px; line-height: 1.45; }
-    .sheet-bar { display: flex; justify-content: space-between; padding: 8px 14px; background: #0f172a; color: #f8fafc; font-size: 12px; }
-    .sheet-art { position: relative; aspect-ratio: 1400 / 788; background: #020617; overflow: hidden; }
-    .sheet-art img, .sheet-art svg { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .sheet-overlay { position: absolute; inset: 0; padding: 12px; display: flex; flex-direction: column; justify-content: space-between; }
-    .p-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-    .p-cap { max-width: 58%; background: #fef3c7; color: #09090b; border: 2px solid #09090b; padding: 7px 11px; font-size: 12px; font-weight: 800; line-height: 1.32; box-shadow: 3px 3px 0 #09090b; }
-    .family-manga .p-cap { background: rgba(255,255,255,0.96); border-left: 6px solid ${novel.theme_color}; }
-    .p-sfx { font-family: Impact, "Arial Black", sans-serif; font-style: italic; font-size: 22px; color: #fde047; -webkit-text-stroke: 1.2px #09090b; text-shadow: 2px 2px 0 #09090b; }
-    .p-bubbles { display: flex; justify-content: space-between; gap: 12px; align-items: flex-end; }
-    .p-bubble { max-width: 47%; background: rgba(255,255,255,0.96); border: 2px solid #09090b; border-radius: 14px; padding: 7px 11px; box-shadow: 3px 3px 0 #09090b; }
-    .p-sp { display: inline-block; color: #fff; font-size: 10px; font-weight: 900; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; margin-bottom: 3px; }
-    .p-bubble p { margin: 0; font-size: 11.5px; font-weight: 700; line-height: 1.32; }
-    .sheet-hud { padding: 8px 14px; background: #f1f5f9; border-top: 2px solid #09090b; font-size: 11.5px; line-height: 1.38; }
-    .sheet-hud code { background: #e2e8f0; padding: 1px 5px; border-radius: 4px; font-weight: 700; }
-    .hud-sub { color: #334155; margin-top: 2px; }
-    .debrief-sheet { padding: 26px 30px; }
-    .debrief-quote { font-size: 20px; font-weight: 800; border-left: 5px solid ${novel.theme_color}; padding: 8px 16px; background: #fefce8; margin: 12px 0; }
-    .debrief-sheet ul { font-size: 12px; line-height: 1.5; padding-left: 18px; }
+    .print-toolbar button { padding: 8px 16px; border: none; border-radius: 8px; background: ${novel.theme_color}; color: #fff; font-weight: 800; cursor: pointer; font-size: 14px; }
+    .print-sheet { width: 7.8in; min-height: 10.25in; margin: 16px auto; background: #fff; border: 2.5px solid #09090b; overflow: hidden; display: flex; flex-direction: column; page-break-after: always; break-after: page; }
+    .cover-full { position: relative; background: #020617; flex: 1; display: flex; flex-direction: column; }
+    .cover-full img, .cover-full svg { width: 100%; height: 10.22in; object-fit: cover; display: block; }
+    .cover-top { position: absolute; inset: 0 0 auto 0; padding: 14px; background: linear-gradient(180deg, rgba(2,6,23,0.92), transparent); display: flex; gap: 12px; align-items: flex-start; color: #fff; }
+    .c-box { background: ${novel.art_style_family === "manga" ? "#fff" : "#fef08a"}; color: #09090b; border: 2.5px solid #09090b; padding: 6px 10px; font-weight: 900; text-align: center; box-shadow: 3px 3px 0 #09090b; }
+    .cover-top h1 { margin: 0; font-size: 26px; line-height: 1.08; text-shadow: 2px 2px 0 #020617; }
+    .cover-top .sub { display: inline-block; margin-top: 5px; padding: 3px 9px; background: ${novel.theme_color}; border-radius: 4px; font-weight: 800; font-size: 12px; }
+    .cover-bot { position: absolute; inset: auto 0 0 0; padding: 16px 14px 12px; background: linear-gradient(0deg, rgba(2,6,23,0.95), transparent); color: #fff; }
+    .cover-bot p { margin: 0 0 6px; font-size: 13px; }
+    .cover-bot .rib { font-size: 11px; font-weight: 800; color: ${novel.accent_color}; text-transform: uppercase; letter-spacing: 0.04em; }
+    .sheet-bar { display: flex; justify-content: space-between; padding: 6px 12px; background: #060a12; color: #f8fafc; font-size: 11px; }
+    .tiers-stack { flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; padding: 8px; }
+    .comic-tier { border: 2.2px solid #09090b; display: flex; flex-direction: column; overflow: hidden; }
+    .tier-art { position: relative; aspect-ratio: 1400 / 718; background: #020617; overflow: hidden; }
+    .tier-art img, .tier-art svg { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sheet-overlay { position: absolute; inset: 0; padding: 8px; display: flex; flex-direction: column; justify-content: space-between; }
+    .p-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+    .p-cap { max-width: 62%; background: #fef3c7; color: #09090b; border: 2px solid #09090b; padding: 5px 8px; font-size: 10px; font-weight: 800; line-height: 1.28; box-shadow: 2.5px 2.5px 0 #09090b; }
+    .family-manga .p-cap { background: rgba(255,255,255,0.96); border-left: 5px solid ${novel.theme_color}; }
+    .p-sfx { font-family: Impact, "Arial Black", sans-serif; font-style: italic; font-size: 18px; color: #fde047; -webkit-text-stroke: 1.1px #09090b; text-shadow: 2px 2px 0 #09090b; }
+    .p-bubbles { display: flex; justify-content: space-between; gap: 8px; align-items: flex-end; }
+    .p-bubble { max-width: 48%; background: rgba(255,255,255,0.96); border: 1.8px solid #09090b; border-radius: 11px; padding: 5px 8px; box-shadow: 2.5px 2.5px 0 #09090b; }
+    .p-sp { display: inline-block; color: #fff; font-size: 8.5px; font-weight: 900; text-transform: uppercase; padding: 1px 6px; border-radius: 999px; margin-bottom: 2px; }
+    .p-bubble p { margin: 0; font-size: 9.8px; font-weight: 700; line-height: 1.26; }
+    .tier-hud { background: #0f172a; color: #e2e8f0; border-top: 2.5px solid ${novel.theme_color}; padding: 5px 9px; font-size: 9.5px; line-height: 1.3; }
+    .hud-r1 { display: flex; justify-content: space-between; color: #f8fafc; margin-bottom: 2px; }
+    .hud-r2 code { background: #1e293b; color: #38bdf8; padding: 1px 5px; border-radius: 3px; font-weight: 700; }
+    .hud-metric { color: #fde047; margin-left: 6px; }
+    .hud-r3 { color: #cbd5e1; margin-top: 2px; }
+    .folio-bar { display: flex; justify-content: space-between; padding: 4px 10px; font-size: 9.5px; color: #475569; border-top: 1px solid #cbd5e1; }
+    .doc-body { padding: 20px 24px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+    .eq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .eq-card { background: #0f172a; color: #e2e8f0; padding: 8px 10px; border-radius: 6px; border-left: 4px solid ${novel.theme_color}; font-size: 10px; display: flex; flex-direction: column; gap: 3px; }
+    .eq-card code { color: #38bdf8; font-size: 9.5px; }
+    .debrief-quote { font-size: 18px; font-weight: 800; border-left: 5px solid ${novel.theme_color}; padding: 10px 14px; background: #fefce8; margin: 4px 0; }
+    .doc-body ul { margin: 0; padding-left: 18px; font-size: 11px; line-height: 1.48; }
+    .back-cover { background: #070b14; color: #f8fafc; border-color: ${novel.theme_color}; }
     @media print {
       body { background: #fff; }
       .print-toolbar { display: none !important; }
-      .print-sheet { margin: 0; max-width: none; border-radius: 0; }
+      .print-sheet { margin: 0; width: 100%; min-height: 10.2in; }
     }
   </style>
 </head>
 <body>
   <div class="print-toolbar">
-    <span><strong>🖨️ Printable Graphic Novel Book</strong> — Vol. ${String(novel.volume).padStart(2, "0")}: ${esc(novel.title)} (${esc(levelNames[lvl])})</span>
-    <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+    <span><strong>🖨️ 8.5" × 11" Portrait Comic Book</strong> — Vol. ${String(novel.volume).padStart(2, "0")}: ${esc(novel.title)} (${esc(levelNames[lvl])})</span>
+    <button onclick="window.print()">🖨️ Print / Save 8.5×11 PDF</button>
   </div>
 
-  <section class="print-sheet cover-sheet">
-    <div class="cover-art">${coverHtml}</div>
-    <div class="cover-info">
-      <span class="vol-badge">THE COSE CHRONICLES · VOLUME ${String(novel.volume).padStart(2, "0")} OF 10</span>
-      <h1>${esc(novel.title)}</h1>
-      <h2>${esc(novel.subtitle)}</h2>
-      <p style="margin:0; font-size:14px;"><em>${esc(novel.tagline)}</em></p>
-      <p style="margin:0; font-size:12.5px; color:#334155;">
-        <strong>Art Style:</strong> ${esc(novel.art_style_label)} · <strong>Worlds:</strong> ${esc(novel.worlds.join(", "))}<br>
-        <strong>Perspectives:</strong> ${esc(novel.perspectives.join(", "))} · <strong>Reading Level:</strong> ${esc(levelNames[lvl])}<br>
-        <strong>NGSS Standards:</strong> <code>${esc(novel.ngss)}</code>
-      </p>
-      <strong style="font-size:13px; margin-top:4px;">Key Research Discoveries in This Volume:</strong>
-      <ul>${novel.big_finds.map((bf) => `<li>${esc(bf)}</li>`).join("")}</ul>
+  <!-- Page 1: Full-Page Cover -->
+  <section class="print-sheet">
+    <div class="cover-full">
+      ${coverHtml}
+      <div class="cover-top">
+        <div class="c-box"><div style="font-size:10px">VOL</div><div style="font-size:24px">${String(novel.volume).padStart(2, "0")}</div></div>
+        <div><h1>${esc(novel.title)}</h1><span class="sub">${esc(novel.subtitle)} · ${esc(levelNames[lvl])}</span></div>
+      </div>
+      <div class="cover-bot">
+        <p><em>“${esc(novel.tagline)}”</em></p>
+        <div class="rib">${esc(novel.art_style_label)} · ${esc(novel.worlds.join(" · "))} · ${esc(novel.perspectives.join(" + "))}</div>
+      </div>
     </div>
   </section>
 
-  ${pagesHtml}
+  <!-- Page 2: Mission Briefing -->
+  <section class="print-sheet">
+    <header class="sheet-bar"><span><strong>MISSION BRIEFING · VOL ${String(novel.volume).padStart(2, "0")}</strong></span><span>${esc(levelNames[lvl])}</span></header>
+    <div class="doc-body">
+      <h2 style="margin:0; color:${novel.theme_color}">${esc(novel.title)}: ${esc(novel.subtitle)}</h2>
+      <p style="margin:0; font-size:12px;"><strong>NGSS Standards:</strong> <code>${esc(novel.ngss)}</code> · <strong>Worlds:</strong> ${esc(novel.worlds.join(", "))} · <strong>POV:</strong> ${esc(novel.perspectives.join(" + "))}</p>
+      <h3 style="margin:6px 0 2px; font-size:13px;">Key Research Discoveries Synthesized</h3>
+      <ul>${novel.big_finds.map((bf) => `<li>${esc(bf)}</li>`).join("")}</ul>
+      <div style="background:#0f172a; color:#e2e8f0; padding:12px; border-radius:6px; font-size:11.5px;">
+        <strong style="color:${novel.accent_color}">Art &amp; Directing Notes:</strong> ${esc(novel.art_style_notes)}
+      </div>
+    </div>
+    <footer class="folio-bar"><strong>02</strong><span>The CoSE Chronicles · Vol. ${String(novel.volume).padStart(2, "0")}</span></footer>
+  </section>
 
-  <section class="print-sheet debrief-sheet">
-    <span class="vol-badge">MISSION DEBRIEF &amp; CLASSROOM GUIDE</span>
-    <h2 style="margin:10px 0 4px;">Vol. ${String(novel.volume).padStart(2, "0")}: ${esc(novel.title)} — ${esc(novel.subtitle)}</h2>
-    <blockquote class="debrief-quote">“${esc(novel.take_home)}”</blockquote>
-    <p style="font-size:13.5px;"><strong>🧪 Hands-On Classroom &amp; Home Investigation:</strong> ${esc(novel.mission_activity)}</p>
-    <h3 style="margin:14px 0 6px; font-size:14px;">🔗 Open-Source Research Repositories &amp; Live Web Simulators</h3>
-    <ul>${reposList}</ul>
-    <p style="margin-top:16px; font-size:11px; color:#475569;">
-      Created by Dr. Richard J. Barker · Collaborative Science Environment (CoSE) · https://dr-richard-barker.github.io/Comics/
-    </p>
+  <!-- Pages 3–5: 2-Tier Comic Action Pages (Acts I, II, III) -->
+  ${comicPagesHtml}
+
+  <!-- Page 6: Science Lab Equations & Director's Notes -->
+  <section class="print-sheet">
+    <header class="sheet-bar"><span><strong>SCIENCE LAB &amp; EQUATIONS · VOL ${String(novel.volume).padStart(2, "0")}</strong></span><span>${esc(levelNames[lvl])}</span></header>
+    <div class="doc-body">
+      <h3 style="margin:0; font-size:13px;">Complete Governing Equations &amp; Quantitative Benchmarks</h3>
+      <div class="eq-grid">${eqCardsHtml}</div>
+      <h3 style="margin:8px 0 2px; font-size:13px;">Director's Camera &amp; Data-Story Notes</h3>
+      <ul>${novel.pages.map((p) => `<li><strong>Beat ${p.page_number} (${esc(p.beat_title)}):</strong> ${esc(p.director.data_story_note)}</li>`).join("")}</ul>
+    </div>
+    <footer class="folio-bar"><strong>06</strong><span>The CoSE Chronicles · Vol. ${String(novel.volume).padStart(2, "0")}</span></footer>
+  </section>
+
+  <!-- Page 7: Classroom Protocol & Open-Source Repos -->
+  <section class="print-sheet">
+    <header class="sheet-bar"><span><strong>CLASSROOM LAB &amp; OPEN-SOURCE TOOLS · VOL ${String(novel.volume).padStart(2, "0")}</strong></span><span>NGSS: ${esc(novel.ngss)}</span></header>
+    <div class="doc-body">
+      <blockquote class="debrief-quote">“${esc(novel.take_home)}”</blockquote>
+      <p style="margin:0; font-size:12px;"><strong>🧪 Hands-On Classroom &amp; Home Investigation:</strong> ${esc(novel.mission_activity)}</p>
+      <h3 style="margin:6px 0 2px; font-size:13px;">🔗 Linked Open-Source Repositories &amp; Live Browser Simulators</h3>
+      <ul>${reposList}</ul>
+    </div>
+    <footer class="folio-bar"><span>The CoSE Chronicles · Vol. ${String(novel.volume).padStart(2, "0")}</span><strong>07</strong></footer>
+  </section>
+
+  <!-- Page 8: Collectible Back Cover -->
+  <section class="print-sheet back-cover">
+    <div class="doc-body" style="justify-content:center; text-align:center; gap:18px;">
+      <div style="color:${novel.accent_color}; font-weight:900; font-size:12px; letter-spacing:0.08em;">THE COSE CHRONICLES · VOLUME ${String(novel.volume).padStart(2, "0")} OF 10</div>
+      <h2 style="margin:0; font-size:24px; color:#fff;">“${esc(novel.take_home)}”</h2>
+      <p style="margin:0; color:#cbd5e1; font-size:13px;">Explore all 10 Flagship Graphic Novels &amp; 114 Open-Source Space Biology Research Comics online:</p>
+      <p style="margin:0; color:#38bdf8; font-weight:800; font-size:14px;">https://dr-richard-barker.github.io/Comics/</p>
+      <p style="margin:0; color:#94a3b8; font-size:11px;">Created by Dr. Richard J. Barker · Collaborative Science Environment (CoSE) · NASA GeneLab Plant AWG Chair</p>
+    </div>
+    <footer class="folio-bar" style="border-color:#334155; color:#94a3b8;"><strong>08</strong><span>8.5" × 11" Print Edition</span></footer>
   </section>
 
   <script>
