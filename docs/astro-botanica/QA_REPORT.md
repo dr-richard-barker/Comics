@@ -4,9 +4,9 @@
 
 ## Summary
 
-- Volumes ingested: **90** (complete: 3, partial: 49, condensed: 38)
+- Volumes ingested: **90** (complete: 6, partial: 48, condensed: 36)
 - Science verification: **0 / 90 verified** (all `unverified` — Phase B)
-- Molecular characters in merged bible: **39**; hardware entries: **126**
+- Molecular characters in merged bible: **43**; hardware entries: **126**
 - Next queued accession: `None`
 - Live OSDR reconciliation: not yet run
 
@@ -14,7 +14,7 @@
 
 None.
 
-## Condensed volumes — pages merged into ranges (38)
+## Condensed volumes — pages merged into ranges (36)
 
 | Vol | Accession | Title | Detail |
 |---:|---|---|---|
@@ -39,7 +39,6 @@ None.
 | 71 | OSD-329 | The Double-Strand Vanguard: ATM and ADM | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 | 72 | OSD-346 | Spectral Shades: Phytochrome Fractional Gravity | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 | 73 | OSD-411 | The Gravity Threshold: Plant Gravity Perception Pilot | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
-| 74 | OSD-416 | The Epigenetic Imprint: Bisulfite Methylomes in Orbit | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 | 75 | OSD-428 | Supersonic Parabola: Starfighter G-Transitions | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 | 76 | OSD-434 | Mach-Speed Signaling: The Starfighter Maiden Run | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 | 77 | OSD-436 | Thirty Seconds of Weightlessness: The C-9 Parabolic Pulse | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
@@ -55,9 +54,8 @@ None.
 | 87 | OSD-531 | The Bending Stalk: Inflorescence Gravity Tracers | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 | 88 | OSD-622 | The Recoverable Satellite: Dwarf Wheat on SJ-10 | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 | 89 | OSD-655 | The Orbital Harvest: Multi-Elemental Mizuna | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
-| 90 | OSD-782 | The Planetary Hormone: Ethylene and Epigenetic Resilience | 9 page headings; ranges 4-10, 11-15, 16-20, 21-25, 26-30 |
 
-## Partial volumes — some pages lack their own heading (49)
+## Partial volumes — some pages lack their own heading (48)
 
 | Vol | Accession | Title | Detail |
 |---:|---|---|---|
@@ -109,7 +107,6 @@ None.
 | 65 | OSD-877 | The Elemental Ledger: Hadley and Descartes | 30/32 pages; missing [31, 32] |
 | 66 | OSD-883 | Fra Mauro's Breccia: The 21-Day Contact | 30/32 pages; missing [31, 32] |
 | 67 | OSD-895 | The Polar Citadel: 268 Days at Neumayer III | 30/32 pages; missing [31, 32] |
-| 68 | OSD-971 | The Polyamine Shield: Unlocking the Orbital Genome | 30/32 pages; missing [31, 32] |
 
 ## Accessions not in Gemini's 76-study master list (14)
 
@@ -154,9 +151,9 @@ None.
 
 - `OSD-46` and `OSD-320` are the same gamma/HZE dataset listed twice in OSDR; both were scripted (Vols 10, 34).
 
-## Continuity flags — genes with more than one visual motif (0)
+## Continuity flags — genes with more than one visual motif (1)
 
-None.
+`MET1` (2)
 
 ## Series naming
 

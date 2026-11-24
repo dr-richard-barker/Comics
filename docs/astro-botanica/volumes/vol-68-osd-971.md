@@ -3,14 +3,11 @@ series: "ASTRO-BOTANICA: ZERO-G ROOTS"
 volume: 68
 title: "The Polyamine Shield: Unlocking the Orbital Genome"
 accession: OSD-971
-script_status: partial
-pages_covered: 30/32
+script_status: complete
+pages_covered: 32/32
 science_verification: unverified
 source: docs/astro-botanica/source/conversation.md (turn 9999)
 ---
-
-> [!NOTE]
-> Script status **partial**: 30/32 pages have their own heading.
 ## 1. Volume Metadata Header
 
 - **Series:** *Roots in Orbit: The NASA OSDR Plant Chronicles*
@@ -27,12 +24,12 @@ source: docs/astro-botanica/source/conversation.md (turn 9999)
 
 - **Setting & Hardware:** International Space Station (ISS) US National Laboratory — **Advanced Plant Habitat (APH)** and **Veggie** flight facilities (SpaceX-25 mission / Increment 67). Growth rigs: sterile Phytagel growth plates (`10 cm × 10 cm`) inside automated growth cassettes under controlled environmental parameters (`22°C`, `65%` RH, `16:8` light/dark photoperiod under broad-spectrum LED arrays at `100 µmol m⁻² s⁻¹`). Ground controls conducted in parallel inside the KSC Orbital Environmental Simulator (OES) with real-time telemetry synchronization. Harvest: Kennedy Space Center Fixation Tubes (KFTs) with RNAlater fixative followed by MELFI deep-freezing (`<-80°C`).
 
-- **Organism & Assay Scope:** *Arabidopsis thaliana* (Columbia-0 wild-type) compared against genetically engineered polyamine metabolic pathway mutant and overexpressor lines:
+- **Organism & Assay Scope:** *Arabidopsis thaliana* (`Col-0` wild-type) compared against genetically engineered putrescine (Put) metabolic pathway lines from `OSD-971` (`72` verified RNA-Seq samples across `Spaceflight`, `Organism Part`, and `Genotype` factors):
   - Wild-Type (`Col-0`) baseline controls.
-  - *spds1 spds2* (Spermidine Synthase double mutants with elevated putrescine pools).
-  - *adc1 adc2* (Arginine Decarboxylase mutants with depleted putrescine).
-  - *SAMDC* overexpressors (S-adenosylmethionine decarboxylase metabolic flux lines).
-  Assays: High-throughput whole-genome stranded RNA-Seq (`Illumina NovaSeq 6000`), targeted polyamine metabolite quantification (HPLC-MS/MS), reactive oxygen species (ROS) fluorescent live imaging, root skewing and waving morphometrics, and comprehensive multi-omic differential pathway network analysis.
+  - **`OxPtADC`** (Arginine Decarboxylase-overexpressing line accumulating elevated intracellular putrescine).
+  - **`cuao3`** (Copper-Amine Oxidase 3 knockdown mutant blocking putrescine catabolism to preserve elevated Put pools).
+  - *spds1 spds2* / *adc* comparative polyamine synthesis and degradation checkpoints.
+  Assays: Whole-genome stranded RNA-Seq (`Illumina`, `n = 72` verified samples in NASA OSDR `OSD-971`), Gene Ontology (GO) enrichment analysis, and root/shoot organ-specific transcriptomic attenuation profiling.
 
 ## 2. Dramatis Personae (Grounded in Study Data)
 
@@ -230,9 +227,23 @@ source: docs/astro-botanica/source/conversation.md (turn 9999)
 
 **Page 30**
 
-- **Panel 1:** Final full-page splash. A single, perfect, vibrant green sprout growing upright in weightlessness, unfurling its cotyledons toward a distant galaxy.
+- **Panel 1 [Full-Page Splash]:** A single, perfect, vibrant green *Arabidopsis* sprout (`OxPtADC` / `cuao3`) growing steadily in weightlessness, its putrescine-fortified tissues calm and unscarred by orbital transcriptomic noise as it unfurls its cotyledons toward a distant starfield.
 
-- **Caption:** *ASTRO-BOTANICA: ZERO-G ROOTS — THE END OF THE BEGINNING. THE GALAXY AWAITS.*
+- **Caption:** *ASTRO-BOTANICA: ZERO-G ROOTS — SIXTY-EIGHT MISSIONS OF DISCOVERY CONVERGE ON ONE MOLECULAR SHIELD.*
+
+**Page 31**
+
+- **Panel 1 [Blueprint Infographic Left Spread]:** Clean cutaway diagram of the `OSD-971` polyamine metabolic circuit (`Arginine → [OxPtADC ↑] → Putrescine Pool ⊣ [cuao3 ↓ catabolism]`). Displays the `n = 72` NASA OSDR sample matrix across Flight vs. Ground Control, Roots vs. Shoots, and `Col-0` / `OxPtADC` / `cuao3` genotypes.
+
+- **Caption:** *Page 31 Mission Architecture: Boosting synthesis (`OxPtADC`) or slowing degradation (`cuao3`) elevates intracellular putrescine—quieting the plant's spaceflight transcriptomic alarm.*
+
+**Page 32**
+
+- **Panel 1 [Data Epilogue Right Spread]:** Side-by-side DEG volcano comparison showing wild-type `Col-0` erupting with hundreds of orbital stress genes while Put-accumulating `OxPtADC` and `cuao3` profiles stay remarkably calm. Bottom ticker links directly to `NASA OSDR: OSD-971` and hands off to the 22 Special Chronicles (`Vols. 69–90`).
+
+- **Dialogue (Dr. Patrick Masson):** "When we tune the plant's own polyamine thermostat, spaceflight stops sounding like an emergency."
+
+- **SFX:** *SHUUU-QUIET (Transcriptomic attenuation locked)*
 
 ## 4. Mission Debrief (Pages 31–32 Infographic Layout)
 

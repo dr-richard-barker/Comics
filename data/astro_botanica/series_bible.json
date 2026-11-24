@@ -2149,6 +2149,93 @@
           "direction": "unchanged"
         }
       ]
+    },
+    {
+      "gene": "MET1",
+      "symbols_seen": [
+        "MET1"
+      ],
+      "first_volume": 74,
+      "role_archetypes": [
+        "DNA Methyltransferase 1 (CG Maintenance)",
+        "Endogenous Cytosine Methylation Guardian"
+      ],
+      "visual_motifs": [
+        "Precision methyl-tag stamper along symmetrical CG rungs",
+        "Epigenetic methyl anchor co-profiled via MAPit"
+      ],
+      "appearances": [
+        {
+          "volume": 74,
+          "accession": "OSD-416",
+          "direction": "knockout mutant (met1-7) alters spaceflight conditioning"
+        },
+        {
+          "volume": 90,
+          "accession": "OSD-782",
+          "direction": "remodeled at radiation-responsive loci"
+        }
+      ]
+    },
+    {
+      "gene": "ELP2",
+      "symbols_seen": [
+        "ELP2"
+      ],
+      "first_volume": 74,
+      "role_archetypes": [
+        "Elongator Complex Subunit 2 (Epigenomic Regulator)"
+      ],
+      "visual_motifs": [
+        "Chromatin-unlocking wrench bridging defense and spaceflight"
+      ],
+      "appearances": [
+        {
+          "volume": 74,
+          "accession": "OSD-416",
+          "direction": "knockout mutant (elp2-5) severely impairs orbital growth"
+        }
+      ]
+    },
+    {
+      "gene": "EIN2",
+      "symbols_seen": [
+        "EIN2"
+      ],
+      "first_volume": 90,
+      "role_archetypes": [
+        "Central Ethylene Signaling Conduit"
+      ],
+      "visual_motifs": [
+        "ER membrane gate transmitting cleaved nuclear stress signal"
+      ],
+      "appearances": [
+        {
+          "volume": 90,
+          "accession": "OSD-782",
+          "direction": "master pathway hub"
+        }
+      ]
+    },
+    {
+      "gene": "EIN3",
+      "symbols_seen": [
+        "EIN3"
+      ],
+      "first_volume": 90,
+      "role_archetypes": [
+        "Ethylene Master Transcription Factor"
+      ],
+      "visual_motifs": [
+        "Nuclear commander binding newly opened chromatin promoters"
+      ],
+      "appearances": [
+        {
+          "volume": 90,
+          "accession": "OSD-782",
+          "direction": "upregulated"
+        }
+      ]
     }
   ],
   "continuity_hooks": [
@@ -3667,5 +3754,11 @@
       "note": "OSD-896 through OSD-970 (non-plant multi-omics datasets across rodents, microbes, and human cell cultures)"
     }
   ],
-  "consistency_flags": []
+  "consistency_flags": [
+    {
+      "gene": "MET1",
+      "issue": "multiple visual motifs",
+      "count": 2
+    }
+  ]
 }

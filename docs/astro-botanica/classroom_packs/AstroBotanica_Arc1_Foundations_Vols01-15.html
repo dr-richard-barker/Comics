@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ASTRO-BOTANICA Classroom Pack — Arc I: Orbital Foundations &amp; Gravitropism</title>
+  <style>
+    @page { size: letter portrait; margin: 0.5in; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; color: #0f172a; background: #ffffff; line-height: 1.45; }
+    .toolbar { position: sticky; top: 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #09090b; color: #f8fafc; }
+    .btn-print { background: #059669; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 800; cursor: pointer; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 28px; }
+    .cover { background: #09090b; color: #f8fafc; border-radius: 14px; padding: 28px 32px; margin-bottom: 22px; border-left: 8px solid #10b981; }
+    .eyebrow { font-family: monospace; font-size: 0.78rem; color: #34d399; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 6px; }
+    .cover h1 { margin: 0 0 10px; font-size: 1.85rem; line-height: 1.2; }
+    .cover p { margin: 6px 0; color: #cbd5e1; font-size: 0.92rem; }
+    .stats-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .stat { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; color: #ecfdf5; }
+    h2 { font-size: 1.2rem; color: #065f46; border-bottom: 2px solid #0f172a; padding-bottom: 5px; margin: 22px 0 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.78rem; margin-bottom: 18px; }
+    th { background: #0f172a; color: #ffffff; padding: 6px 8px; text-align: left; }
+    td { padding: 5px 8px; border-bottom: 1px solid #e2e8f0; }
+    .vol-card { border: 1.5px solid #cbd5e1; border-radius: 10px; padding: 12px 15px; margin-bottom: 12px; break-inside: avoid; page-break-inside: avoid; background: #ffffff; }
+    .vol-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 5px; }
+    .vol-badge { background: #09090b; color: #34d399; font-family: monospace; font-size: 0.74rem; font-weight: 900; padding: 2px 7px; border-radius: 4px; }
+    .vol-domain { background: #ede9fe; color: #5b21b6; font-size: 0.72rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; }
+    .vol-meta { font-size: 0.74rem; color: #475569; font-weight: 600; }
+    .verified-tag { font-family: monospace; font-size: 0.68rem; font-weight: 900; color: #047857; background: #d1fae5; padding: 2px 7px; border-radius: 999px; }
+    .vol-card h3 { margin: 3px 0 5px; font-size: 1rem; color: #0f172a; }
+    .official-line { margin: 0 0 7px; font-size: 0.78rem; color: #334155; }
+    .edu-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 7px 9px; font-size: 0.74rem; margin-bottom: 7px; }
+    .cast-row { font-size: 0.74rem; margin-bottom: 6px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+    .chip { background: #e0f2fe; color: #0369a1; padding: 1px 6px; border-radius: 4px; font-weight: 700; font-family: monospace; font-size: 0.7rem; }
+    .findings-list { margin: 4px 0 6px; padding-left: 18px; font-size: 0.75rem; color: #1e293b; }
+    .citation-line { margin: 0; font-size: 0.71rem; color: #64748b; }
+    .citation-line a { color: #0284c7; text-decoration: none; }
+    .quiz-section { page-break-before: always; break-before: page; }
+    .quiz-item { border: 1px solid #cbd5e1; border-radius: 8px; padding: 9px 12px; margin-bottom: 8px; break-inside: avoid; font-size: 0.8rem; background: #fffbeb; }
+    .quiz-item p { margin: 0 0 5px; }
+    .quiz-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font-size: 0.76rem; }
+    .answer-box { page-break-before: always; break-before: page; background: #f0fdf4; border: 1.5px solid #10b981; border-radius: 10px; padding: 14px 18px; }
+    .answer-box ol, .answer-box ul { margin: 6px 0 0; padding-left: 18px; font-size: 0.78rem; line-height: 1.5; }
+    @media print {
+      .toolbar { display: none !important; }
+      .wrap { padding: 0; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <div><strong>🌱 ASTRO-BOTANICA Classroom Curriculum Pack</strong> · Arc I: Orbital Foundations &amp; Gravitropism (Vols 01–15)</div>
+    <button class="btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+  <div class="wrap">
+    <header class="cover">
+      <p class="eyebrow">CoSE Science Comics · NASA Open Science Data Repository (OSDR) Educator Pack</p>
+      <h1>Arc I: Orbital Foundations &amp; Gravitropism</h1>
+      <p>From Space Shuttle STS-131 BRIC and ABRS experiments to early ISS transcriptomics: how plants sense the loss of gravity without a nervous system.</p>
+      <p><strong>NGSS Alignment:</strong> MS-LS1-8 · HS-LS1-2 · MS-PS2-2 (Gravity Sensing, Statoliths &amp; Root Transcriptomics)</p>
+      <div class="stats-row">
+        <span class="stat">📚 Volumes 01–15 (15 Missions)</span>
+        <span class="stat">✅ 15/15 Live NASA OSDR Verified</span>
+        <span class="stat">🧪 432 Verified Biological Samples</span>
+        <span class="stat">🎓 K–5 · 6–8 · 9–12 Differentiated Guides</span>
+      </div>
+    </header>
+
+    <h2>📋 Arc Mission Roster &amp; NASA OSDR Index</h2>
+    <table>
+      <thead><tr><th>Vol</th><th>Accession</th><th>Manga Title</th><th>World</th><th>Hardware</th><th>Samples</th></tr></thead>
+      <tbody><tr><td><strong>Vol 01</strong></td><td><code>OSD-7</code></td><td>THE SILENT CANOPY, THE SCREAMING ROOT</td><td>ISS</td><td>ABRS + GFP Imaging System</td><td>n=36</td></tr><tr><td><strong>Vol 02</strong></td><td><code>OSD-8</code></td><td>THE LEVITATING ABYSS</td><td>ISS</td><td>Ground-based multi-simulator campaign</td><td>n=40</td></tr><tr><td><strong>Vol 03</strong></td><td><code>OSD-16</code></td><td>THE DENATURED PROTEOME</td><td>ISS</td><td>ABRS + GFP Imaging System</td><td>n=8</td></tr><tr><td><strong>Vol 04</strong></td><td><code>OSD-17</code></td><td>THE DARK VAULT &amp; THE HEAT SHOCK FURNACE</td><td>ISS</td><td>BRIC-LED Flight Hardware</td><td>n=24</td></tr><tr><td><strong>Vol 05</strong></td><td><code>OSD-22</code></td><td>The Epsomite Sieve</td><td>ISS</td><td>Ground Mars-Regolith Simulation</td><td>n=20</td></tr><tr><td><strong>Vol 06</strong></td><td><code>OSD-37</code></td><td>Four Flags in the Dark Vault</td><td>ISS</td><td>BRIC Flight Canisters</td><td>n=56</td></tr><tr><td><strong>Vol 07</strong></td><td><code>OSD-38</code></td><td>The Uncoupled Proteome</td><td>ISS</td><td>BRIC Flight Canisters</td><td>n=36</td></tr><tr><td><strong>Vol 08</strong></td><td><code>OSD-44</code></td><td>The Ruptured Tip</td><td>ISS</td><td>BRIC Flight Canisters</td><td>n=12</td></tr><tr><td><strong>Vol 09</strong></td><td><code>OSD-45</code></td><td>The Dual-Axis Pendulum</td><td>Ground Analog</td><td>2D/3D Clinostat Microgravity Sim</td><td>n=24</td></tr><tr><td><strong>Vol 10</strong></td><td><code>OSD-46</code></td><td>The Iron Track and the False Dawn</td><td>ISS</td><td>- Seeds</td><td>n=44</td></tr><tr><td><strong>Vol 11</strong></td><td><code>OSD-57</code></td><td>The Single-Cell Compass</td><td>ISS</td><td>ISS Flight Hardware</td><td>n=1</td></tr><tr><td><strong>Vol 12</strong></td><td><code>OSD-59</code></td><td>The Over-Watered Greenhouse</td><td>ISS</td><td>LADA Greenhouse (ISS)</td><td>n=2</td></tr><tr><td><strong>Vol 13</strong></td><td><code>OSD-120</code></td><td>The Dispensable Alarm</td><td>ISS</td><td>- 18 Phytagel Petri plates</td><td>n=90</td></tr><tr><td><strong>Vol 14</strong></td><td><code>OSD-121</code></td><td>The Three Canisters and the Zero-Waste Wall</td><td>ISS</td><td>BRIC Flight Canisters</td><td>n=6</td></tr><tr><td><strong>Vol 15</strong></td><td><code>OSD-134</code></td><td>The Thin-Air Dissection</td><td>Ground Analog</td><td>Low-Pressure Chambers (LPGC)</td><td>n=33</td></tr></tbody>
+    </table>
+
+    <h2>🔬 Verified Mission Study Sheets (Vols 01–15)</h2>
+    
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 01 · OSD-7</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · ABRS + GFP Imaging System · 🧪 36 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>THE SILENT CANOPY, THE SCREAMING ROOT</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> The Arabidopsis spaceflight transcriptome: a comparison of whole plants to discrete root, hypocotyl and shoot responses to the orbital environment</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside ABRS + GFP Imaging System without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. WS: Arabidopsis seedling battalions sharing the 10 cm² phytagel plates in a 60% WS / 40%…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>WS (Plant / Mutant Line)</span> <span class='chip'>HY5 (Master Regulator)</span> <span class='chip'>DREB2A (Master Regulator)</span> <span class='chip'>TCH4 (Molecular Actor)</span> <span class='chip'>JAZ7 (Master Regulator)</span></div>
+          <ul class='findings-list'><li><strong>WS:</strong> Plant / Mutant Line — Arabidopsis seedling battalions sharing the 10 cm² phytagel plates in a 60% WS / 40%…</li><li><strong>HY5:</strong> Master Regulator — Photoreceptor-linked tactical officers operating underground in the root zone…</li><li><strong>DREB2A:</strong> Master Regulator — Stress and touch/wound transcription factor commanders consistently upregulated…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Anna-Lisa Paul, Agata K. Zupanska, Robert J. Ferl. Organ-specific remodeling of the Arabidopsis transcriptome in response to spaceflight. (DOI: 10.1186/1471-2229-13-112 · PMID: 23919896) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-7">https://osdr.nasa.gov/bio/repo/data/studies/OSD-7</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 02 · OSD-8</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · Ground-based multi-simulator campaign · 🧪 40 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>THE LEVITATING ABYSS</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Gravitational and magnetic field variations synergize to cause subtle variations in the global transcriptional state of Arabidopsis in vitro callus cultures</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana semi-solid MM2d… survive and grow inside Ground-based multi-simulator campaign without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. MM2d: Undifferentiated Arabidopsis suspension-derived cells flattened into a 1–2 mm…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Altered Gravity, Magnetic Field</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>MM2d (Plant / Mutant Line)</span> <span class='chip'>The Bitter… (Molecular Actor)</span> <span class='chip'>μg-RPM (Molecular Actor)</span> <span class='chip'>Transferases… (Plant / Mutant Line)</span> <span class='chip'>μg-RPM (Master Regulator)</span></div>
+          <ul class='findings-list'><li><strong>MM2d:</strong> Plant / Mutant Line — Undifferentiated Arabidopsis suspension-derived cells flattened into a 1–2 mm…</li><li><strong>The Bitter…:</strong> Molecular Actor — A towering vertical superconducting/water-cooled solenoid (22°C bath) where…</li><li><strong>μg-RPM:</strong> Molecular Actor — A 3D-tumbling gyroscope (60 rpm) and a roaring centrifugal arm at ESA-ESTEC (plagued…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Manzano Ana I, van Loon Jack JWA, Christianen Peter CM, Gonzalez-Rubio Juana M, Medina F…. Gravitational and magnetic field variations synergize to cause subtle variations in the global transcriptional state of Arabidopsis in vitro callus cultures (DOI: 10.1186/1471-2164-13-105 · PMID: 22435851) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-8">https://osdr.nasa.gov/bio/repo/data/studies/OSD-8</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 03 · OSD-16</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · ABRS + GFP Imaging System · 🧪 8 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>THE DENATURED PROTEOME</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Spaceflight adaptation requires organ specific alterations in the proteomes of Arabidopsis</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside ABRS + GFP Imaging System without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. The RNAlater…: A strong protein denaturant meant strictly for RNA. Surviving extraction in…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>The RNAlater… (Molecular Actor)</span> <span class='chip'>Tags 113–121 (Plant / Mutant Line)</span> <span class='chip'>The 21… (Molecular Actor)</span> <span class='chip'>r = 0.49 (Molecular Actor)</span> <span class='chip'>Metadata… (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>The RNAlater…:</strong> Molecular Actor — A strong protein denaturant meant strictly for RNA. Surviving extraction in…</li><li><strong>Tags 113–121:</strong> Plant / Mutant Line — Eight mass-tag couriers (113–115 Ground Roots, 116–118 Flight Roots, 119 Ground…</li><li><strong>The 21…:</strong> Molecular Actor — 21 shared proteins that reverse polarity between organs (up in leaves, down in…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Ferl RJ, Koh J, Denison F, Paul AL. Spaceflight induces specific alterations in the proteomes of Arabidopsis. Astrobiology. (DOI: 10.1089/ast.2014.1210 · PMID: 25517942) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-16">https://osdr.nasa.gov/bio/repo/data/studies/OSD-16</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 04 · OSD-17</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · BRIC-LED Flight Hardware · 🧪 24 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>THE DARK VAULT &amp; THE HEAT SHOCK FURNACE</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Transcription profiling by array of the response of Arabidopsis cultivar Columbia etiolated seedlings and undifferentiated tissue culture cells to the spaceflight environment</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana Wild-Type cultivar Columbia survive and grow inside BRIC-LED Flight Hardware without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Col-0: 75 seeds per 60 mm dish growing pale and tall in total darkness (BRIC A &amp; BRIC G).…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Col-0 (Plant / Mutant Line)</span> <span class='chip'>Col-0 (Plant / Mutant Line)</span> <span class='chip'>ATHSFA2 (Master Regulator)</span> <span class='chip'>HSP70 (Molecular Actor)</span> <span class='chip'>LTP6 (Plant / Mutant Line)</span></div>
+          <ul class='findings-list'><li><strong>Col-0:</strong> Plant / Mutant Line — 75 seeds per 60 mm dish growing pale and tall in total darkness (BRIC A &amp; BRIC G).…</li><li><strong>Col-0:</strong> Plant / Mutant Line — 1 g of organless Arabidopsis callus cells spread across MS agar (BRIC B &amp; BRIC G).…</li><li><strong>ATHSFA2:</strong> Master Regulator — Supreme Heat Shock Transcription Factor leading the cultured-cell brigade—despite…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Anna-Lisa Paul, Agata K. Zupanska, Dejerianne T. Ostrow, Yanping Zhang, Yijun Sun…. Spaceflight Transcriptomes: Unique Responses to a Novel Environment (DOI: 10.1089/ast.2011.0696 · PMID: 22221117) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-17">https://osdr.nasa.gov/bio/repo/data/studies/OSD-17</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 05 · OSD-22</span>
+              <span class="vol-domain">Lunar &amp; Martian Regolith</span>
+              <span class="vol-meta">ISS · Ground Mars-Regolith Simulation · 🧪 20 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Epsomite Sieve</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Root transcriptome remodeling of Arabidopsis in response to high levels of magnesium sulfate</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside Ground Mars-Regolith Simulation without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Lunar &amp; Martian Regolith. Col-0 Squad: Veteran hydroponic root divers suspended beneath blacked-out Rockwool decks. At 2.08…</div>
+            <div><strong>🚀 9–12 Factors:</strong> soil environment exposure, Time, Genotype</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Col-0 Squad (Plant / Mutant Line)</span> <span class='chip'>cax1-1 (Plant / Mutant Line)</span> <span class='chip'>mrs2-10 &amp;… (Plant / Mutant Line)</span> <span class='chip'>At2g38170 (Plant / Mutant Line)</span> <span class='chip'>At2g47600 (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>Col-0 Squad:</strong> Plant / Mutant Line — Veteran hydroponic root divers suspended beneath blacked-out Rockwool decks. At 2.08…</li><li><strong>cax1-1:</strong> Plant / Mutant Line — A Col-0 knockout mutant lacking the tonoplast Ca2+/H+ antiporter CAX1. In soil at…</li><li><strong>mrs2-10 &amp;…:</strong> Plant / Mutant Line — Plasma-membrane knockout recruits lacking AtMRS2-10 (Mg2+ channel) and AtSULTR1;2…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Visscher AM, Paul AL, Kirst M, Guy CL, Schuerger AC, Ferl RJ. Growth performance and root transcriptome remodeling of Arabidopsis in response to Mars-like levels of magnesium sulfate. (DOI: 10.1371/journal.pone.0012348 · PMID: 20808807) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-22">https://osdr.nasa.gov/bio/repo/data/studies/OSD-22</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 06 · OSD-37</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · BRIC Flight Canisters · 🧪 56 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Four Flags in the Dark Vault</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Comparison of the spaceflight transcriptome of four commonly used Arabidopsis thaliana ecotypes</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside BRIC Flight Canisters without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Col-0 Squad: Veteran central-European line; baseline orbital responder.</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Ecotype</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Col-0 Squad (Plant / Mutant Line)</span> <span class='chip'>Ws-2 Squad (Plant / Mutant Line)</span> <span class='chip'>Cvi-0 Squad (Plant / Mutant Line)</span> <span class='chip'>AT1G74310 (Molecular Actor)</span> <span class='chip'>AT4G11290 (Enzyme / Remodeler)</span></div>
+          <ul class='findings-list'><li><strong>Col-0 Squad:</strong> Plant / Mutant Line — Veteran central-European line; baseline orbital responder.</li><li><strong>Ws-2 Squad:</strong> Plant / Mutant Line — Eastern-European line with high transcriptional plasticity.</li><li><strong>Cvi-0 Squad:</strong> Plant / Mutant Line — Atlantic-island ecotype evolved under intense sun and drought—testing whether…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Choi WG, Barker, Kim SH, Swanson SJ, Gilroy S. Variation in the transcriptome of different ecotypes of Arabidopsis thaliana reveals signatures of oxidative stress in plant responses to spaceflight (DOI: 10.1002/ajb2.1223 · PMID: 30644539) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-37">https://osdr.nasa.gov/bio/repo/data/studies/OSD-37</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 07 · OSD-38</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · BRIC Flight Canisters · 🧪 36 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Uncoupled Proteome</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Proteomics and Transcriptomics analysis of Arabidopsis Seedlings in Microgravity</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana Col-0 survive and grow inside BRIC Flight Canisters without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Col-0…: 800–900 densely packed seedlings per dish—younger and denser than OSD-37&#x27;s 8-day…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Sample Preservation Method</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Col-0… (Plant / Mutant Line)</span> <span class='chip'>TIP3 (Master Regulator)</span> <span class='chip'>AT5G04120 (Master Regulator)</span> <span class='chip'>GRP7 (Molecular Actor)</span> <span class='chip'>AT2G29890 (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>Col-0…:</strong> Plant / Mutant Line — 800–900 densely packed seedlings per dish—younger and denser than OSD-37&#x27;s 8-day…</li><li><strong>TIP3:</strong> Master Regulator — Tonoplast aquaporin whose protein abundance surges in spaceflight even while its…</li><li><strong>AT5G04120:</strong> Master Regulator — Rare concordant anchors: glycolytic cofactor-dependent phosphoglycerate mutase dPGM…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Kruse CPS, Basu P, Luesse DR, Wyatt SE. Transcriptome and proteome responses in RNAlater preserved tissue of Arabidopsis thaliana. (DOI: 10.1371/journal.pone.0175943 · PMID: 28423006) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-38">https://osdr.nasa.gov/bio/repo/data/studies/OSD-38</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 08 · OSD-44</span>
+              <span class="vol-domain">Radiation &amp; DNA Repair</span>
+              <span class="vol-meta">ISS · BRIC Flight Canisters · 🧪 12 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Ruptured Tip</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Transcriptomics analysis of etiolated Arabidopsis thaliana seedlings in response to microgravity</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside BRIC Flight Canisters without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Radiation &amp; DNA Repair. SW: Wild-type etiolated seedlings (14 days in BRIC-16). Their primary roots maintain…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Genotype, Spaceflight</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>SW (Plant / Mutant Line)</span> <span class='chip'>SA (Plant / Mutant Line)</span> <span class='chip'>PRX44 (Plant / Mutant Line)</span> <span class='chip'>Phosphoinositi… (Plant / Mutant Line)</span> <span class='chip'>Plastid &amp;… (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>SW:</strong> Plant / Mutant Line — Wild-type etiolated seedlings (14 days in BRIC-16). Their primary roots maintain…</li><li><strong>SA:</strong> Plant / Mutant Line — Vegetative ACTIN2 knockout mutants. Indistinguishable from Col-0 on Earth (1g), in…</li><li><strong>PRX44:</strong> Plant / Mutant Line — Uncharacterized root-hair-enriched class III peroxidases repressed in microgravity…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Kwon T, Sparks JA, Nakashima J, Allen SN, Tang Y, Blancaflor E. Transcriptional response of Arabidopsis seedlings during spaceflight reveals peroxidase and cell wall remodeling genes associated with root hair development. American Journal of Botany. (DOI: 10.3732/ajb.1400458 · PMID: 25587145) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-44">https://osdr.nasa.gov/bio/repo/data/studies/OSD-44</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 09 · OSD-45</span>
+              <span class="vol-domain">Microgravity &amp; Gravitropism</span>
+              <span class="vol-meta">Ground Analog · 2D/3D Clinostat Microgravity Sim · 🧪 24 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Dual-Axis Pendulum</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Action of microgravity on root development</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana Col-0 survive and grow inside 2D/3D Clinostat Microgravity Sim without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Microgravity &amp; Gravitropism. μg: Columbia root divers strapped to a horizontal rotating wheel—experiencing a…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Microgravity Simulation, Time</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>μg (Plant / Mutant Line)</span> <span class='chip'>1G (Plant / Mutant Line)</span> <span class='chip'>Cy5 (Molecular Actor)</span> <span class='chip'>The Unclaimed… (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>μg:</strong> Plant / Mutant Line — Columbia root divers strapped to a horizontal rotating wheel—experiencing a…</li><li><strong>1G:</strong> Plant / Mutant Line — Mirror squad spinning on a vertical clinostat—absorbing the same mechanical rotation…</li><li><strong>Cy5:</strong> Molecular Actor — Dual-channel cDNA couriers (635 nm at 30% laser vs. 532 nm at 35% laser) who swap…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> None linked in OSDR (Direct GEO/ArrayExpress submission E-GEOD-39631 by Soubigou-Taconnat L, Balzergue S, Carnero-Diaz E, Martin-Magniette ML — INRA, France, 2012). · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-45">https://osdr.nasa.gov/bio/repo/data/studies/OSD-45</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 10 · OSD-46</span>
+              <span class="vol-domain">Radiation &amp; DNA Repair</span>
+              <span class="vol-meta">ISS · - Seeds · 🧪 44 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Iron Track and the False Dawn</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Gamma radiation and HZE treatment of seedlings in Arabidopsis</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana ecotype Wassilewskija survive and grow inside - Seeds without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Radiation &amp; DNA Repair. Ws: The compact 135 Mb vanguard—resilient enough that 100 Gy gamma leaves roughly the…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Ionizing Radiation, Exposure Duration, Time of Sample Collection After Treatment, Genotype, Age, Absorbed Radiation Dose</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Ws (Plant / Mutant Line)</span> <span class='chip'>atm-1 (Plant / Mutant Line)</span> <span class='chip'>100 Gy (Molecular Actor)</span> <span class='chip'>30 Gy (Molecular Actor)</span> <span class='chip'>Cluster B (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>Ws:</strong> Plant / Mutant Line — The compact 135 Mb vanguard—resilient enough that 100 Gy gamma leaves roughly the…</li><li><strong>atm-1:</strong> Plant / Mutant Line — Ws mutant lacking the ATM double-strand-break kinase. Deaf to the initial alarm at…</li><li><strong>100 Gy:</strong> Molecular Actor — Diffuse Compton-scattering sniper fire. Generates scattered 2–5 radical clusters…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Missirian V, Conklin PA, Culligan KM, Huefner ND, Britt AB. High atomic weight, high-energy radiation (HZE) induces transcriptional responses shared with conventional stresses in addition to a core &#x27;&#x27;DSB&#x27;&#x27; response specific to clastogenic treatments. (DOI: 10.3389/fpls.2014.00364 · PMID: 25136344) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-46">https://osdr.nasa.gov/bio/repo/data/studies/OSD-46</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 11 · OSD-57</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · ISS Flight Hardware · 🧪 1 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Single-Cell Compass</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> RNA-Seq analysis identifies potential modulators of gravity response in Ceratopteris spores: Evidence for modulation by calcium pumps and apyrase activity</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Ceratopteris richardii survive and grow inside ISS Flight Hardware without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Hn-n: A lone, armored single cell—our first non-flowering plant protagonist in the…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Treatment</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Hn-n (Signal / Sensor)</span> <span class='chip'>Ca2+ (Signal / Sensor)</span> <span class='chip'>Ca2+ (Molecular Actor)</span> <span class='chip'>eATP (Molecular Actor)</span> <span class='chip'>Apyrase (Enzyme / Remodeler)</span></div>
+          <ul class='findings-list'><li><strong>Hn-n:</strong> Signal / Sensor — A lone, armored single cell—our first non-flowering plant protagonist in the…</li><li><strong>Ca2+:</strong> Signal / Sensor — An inward-at-the-bottom, outward-at-the-top calcium flux across the spore…</li><li><strong>Ca2+:</strong> Molecular Actor — Quiet intracellular custodians sequestering cytosolic Ca2+ into internal stores.…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Bushart TJ1, Cannon AE, Ul Haque A, San Miguel P, Mostajeran K, Clark GB, Porterfield DM…. RNA-seq analysis identifies potential modulators of gravity response in spores of Ceratopteris (Parkeriaceae): evidence for modulation by calcium pumps and apyrase activity. (DOI: 10.3732/ajb.1200292 · PMID: 23048014) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-57">https://osdr.nasa.gov/bio/repo/data/studies/OSD-57</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 12 · OSD-59</span>
+              <span class="vol-domain">Space Crops &amp; Nutrition</span>
+              <span class="vol-meta">ISS · LADA Greenhouse (ISS) · 🧪 2 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Over-Watered Greenhouse</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> RNA-Seq transcriptome analysis of reactive oxygen species gene network in Mizuna plants grown in long-term space flight</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Brassica rapa var. nipposinica survive and grow inside LADA Greenhouse (ISS) without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Space Crops &amp; Nutrition. Brassica rapa: A leafy Brassicaceae cousin of Arabidopsis (37.2 M flight reads vs. 37.8 M ground…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Brassica rapa (Molecular Actor)</span> <span class='chip'>Lada (Researcher / Crew)</span> <span class='chip'>RbohD (Molecular Actor)</span> <span class='chip'>MEKK1–MKK4–MPK3 (Molecular Actor)</span> <span class='chip'>Zat12 (Master Regulator)</span></div>
+          <ul class='findings-list'><li><strong>Brassica rapa:</strong> Molecular Actor — A leafy Brassicaceae cousin of Arabidopsis (37.2 M flight reads vs. 37.8 M ground…</li><li><strong>Lada:</strong> Researcher / Crew — A rogue hardware subsystem in Zvezda that locks open for 35 hours, flooding one root…</li><li><strong>RbohD:</strong> Molecular Actor — Plasma-membrane ROS generators that deliberately fire superoxide bursts in orbit…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> - Sugimoto M, Oono Y, Gusev O, Matsumoto T, Yazawa T, Levinskikh MA, Sychev VN, Bingham G, Wheeler R, Hummerick M (2014). Genome-wide expression analysis of reactive oxygen species gene network in Mizuna plants grown in long-term spaceflight. BMC Plant Biology 14:4 (PubMed 24393219 | DOI: 10.1186/1471-2229-14-4). · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-59">https://osdr.nasa.gov/bio/repo/data/studies/OSD-59</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 13 · OSD-120</span>
+              <span class="vol-domain">Microgravity &amp; Gravitropism</span>
+              <span class="vol-meta">ISS · - 18 Phytagel Petri plates · 🧪 90 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Dispensable Alarm</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Genetic dissection of the Arabidopsis spaceflight transcriptome: Are some responses dispensable for the physiological adaptation of plants to spaceflight?</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana root tips survive and grow inside - 18 Phytagel Petri plates without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Microgravity &amp; Gravitropism. Col-0: Mounts a massive 297-DEG response in dim ISS light—217 of which turn out to be…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Ecotype, Spaceflight, Treatment</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Col-0 (Plant / Mutant Line)</span> <span class='chip'>WS (Plant / Mutant Line)</span> <span class='chip'>phyD (Plant / Mutant Line)</span> <span class='chip'>ATARD3 (Molecular Actor)</span> <span class='chip'>14–17% (Researcher / Crew)</span></div>
+          <ul class='findings-list'><li><strong>Col-0:</strong> Plant / Mutant Line — Mounts a massive 297-DEG response in dim ISS light—217 of which turn out to be…</li><li><strong>WS:</strong> Plant / Mutant Line — Naturally carries a PHYD deletion; adapts to Destiny&#x27;s dim light with only 71 DEGs…</li><li><strong>phyD:</strong> Plant / Mutant Line — Col-0 stripped of a single red/far-red shade-avoidance sensor (Phytochrome D).…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Paul AL, Sng NJ, Zupanska AK, Krishnamurthy A, Schultz ER, Ferl RJ. Genetic dissection of the Arabidopsis spaceflight transcriptome: Are some responses dispensable for the physiological adaptation of plants to spaceflight? (DOI: 10.1371/journal.pone.0180186 · PMID: 28662188) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-120">https://osdr.nasa.gov/bio/repo/data/studies/OSD-120</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 14 · OSD-121</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · BRIC Flight Canisters · 🧪 6 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Three Canisters and the Zero-Waste Wall</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Biological Research in Canisters-16 (BRIC-16): Transcriptomics, Glycomics, and Morphometric photography.</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana Landsberg erecta survive and grow inside BRIC Flight Canisters without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Ler-0 Shoot: Etiolated Arabidopsis Ler-0 hypocotyl and cotyledon team from Canister F (PDFU 2–4).…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Ler-0 Shoot (Plant / Mutant Line)</span> <span class='chip'>AT1G28290 (Molecular Actor)</span> <span class='chip'>XTH32 (Enzyme / Remodeler)</span> <span class='chip'>AT3G50980 (Molecular Actor)</span> <span class='chip'>AT2G26150 (Master Regulator)</span></div>
+          <ul class='findings-list'><li><strong>Ler-0 Shoot:</strong> Plant / Mutant Line — Etiolated Arabidopsis Ler-0 hypocotyl and cotyledon team from Canister F (PDFU 2–4).…</li><li><strong>AT1G28290:</strong> Molecular Actor — An arabinogalactan scaffolding protein surging +22.97-fold (RMA) to +23.44-fold…</li><li><strong>XTH32:</strong> Enzyme / Remodeler — Wall-remodeling enzymes (+3.19 to +12.92-fold across normalizations) cleaving…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Christina M. Johnson, Aswati Subramanian, Sivakumar Pattathil, Melanie J. Correll, John…. Comparative transcriptomics indicate changes in cell wall organization and stress response in seedlings during spaceflight (DOI: 10.3732/ajb.1700079 · PMID: 28827451) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-121">https://osdr.nasa.gov/bio/repo/data/studies/OSD-121</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 15 · OSD-134</span>
+              <span class="vol-domain">Atmosphere &amp; Hypobaria</span>
+              <span class="vol-meta">Ground Analog · Low-Pressure Chambers (LPGC) · 🧪 33 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Thin-Air Dissection</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Dissecting Low Atmospheric Pressure Stress: Transcriptome Responses to the Components of Hypobaria in Arabidopsis [Experiment 1]</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana Wassilewskija survive and grow inside Low-Pressure Chambers (LPGC) without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Atmosphere &amp; Hypobaria. WS: Ten-day-old Arabidopsis WS seedlings raised vertically on 0.45% Phytagel at 97 kPa…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Atmospheric Pressure, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>WS (Plant / Mutant Line)</span> <span class='chip'>PDC1 (Molecular Actor)</span> <span class='chip'>AT5G24670 (Enzyme / Remodeler)</span> <span class='chip'>AT3G02550 (Molecular Actor)</span> <span class='chip'>AT5G67300 (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>WS:</strong> Plant / Mutant Line — Ten-day-old Arabidopsis WS seedlings raised vertically on 0.45% Phytagel at 97 kPa…</li><li><strong>PDC1:</strong> Molecular Actor — Core root hypoxia responders (AT4G33070, AT2G16060, AT5G15120) that roar to life at…</li><li><strong>AT5G24670:</strong> Enzyme / Remodeler — An essential tRNA-editing enzyme repressed in 50 kPa roots (but not 50 kPa/NormOx)…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Zhou M, Callaham JB, Reyes M, Stasiak M, Riva A, Zupanska AK, Dixon MA, Paul A, Ferl RJ. Dissecting Low Atmospheric Pressure Stress: Transcriptome Responses to the Components of Hypobaria in Arabidopsis (DOI: 10.3389/fpls.2017.00528) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-134">https://osdr.nasa.gov/bio/repo/data/studies/OSD-134</a></p>
+        </article>
+        
+
+    <section class="quiz-section">
+      <h2>🧪 Student Classroom Assessment Worksheet — Arc I: Orbital Foundations &amp; Gravitropism</h2>
+      <p style="font-size:0.84rem; margin-bottom:12px;"><strong>Name:</strong> _____________________________________ &nbsp;&nbsp; <strong>Class / Period:</strong> _______________ &nbsp;&nbsp; <strong>Date:</strong> ____________</p>
+      
+            <div class="quiz-item">
+              <p><strong>Q1 (Vol 01 · OSD-7):</strong> In NASA OSDR study OSD-7 (Arabidopsis thaliana in ABRS + GFP Imaging System), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Epigenetics &amp; Methylome</span><span>☐ B. Atmosphere &amp; Hypobaria</span><span>☐ C. Space Crops &amp; Nutrition</span><span>☐ D. Light &amp; Phototropism</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q2 (Vol 02 · OSD-8):</strong> In NASA OSDR study OSD-8 (Arabidopsis thaliana semi-solid MM2d… in Ground-based multi-simulator campaign), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Cell Wall &amp; Cytoskeleton</span><span>☐ B. Microgravity &amp; Gravitropism</span><span>☐ C. Light &amp; Phototropism</span><span>☐ D. Lunar &amp; Martian Regolith</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q3 (Vol 03 · OSD-16):</strong> In NASA OSDR study OSD-16 (Arabidopsis thaliana in ABRS + GFP Imaging System), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Radiation &amp; DNA Repair</span><span>☐ B. Light &amp; Phototropism</span><span>☐ C. Hormones &amp; Metabolic Defense</span><span>☐ D. Space Crops &amp; Nutrition</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q4 (Vol 04 · OSD-17):</strong> In NASA OSDR study OSD-17 (Arabidopsis thaliana Wild-Type cultivar Columbia in BRIC-LED Flight Hardware), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Light &amp; Phototropism</span><span>☐ B. Atmosphere &amp; Hypobaria</span><span>☐ C. Microgravity &amp; Gravitropism</span><span>☐ D. Epigenetics &amp; Methylome</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q5 (Vol 05 · OSD-22):</strong> In NASA OSDR study OSD-22 (Arabidopsis thaliana in Ground Mars-Regolith Simulation), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Cell Wall &amp; Cytoskeleton</span><span>☐ B. Radiation &amp; DNA Repair</span><span>☐ C. Hormones &amp; Metabolic Defense</span><span>☐ D. Lunar &amp; Martian Regolith</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q6 (Vol 06 · OSD-37):</strong> In NASA OSDR study OSD-37 (Arabidopsis thaliana in BRIC Flight Canisters), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Epigenetics &amp; Methylome</span><span>☐ B. Hormones &amp; Metabolic Defense</span><span>☐ C. Light &amp; Phototropism</span><span>☐ D. Space Crops &amp; Nutrition</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q7 (Vol 07 · OSD-38):</strong> In NASA OSDR study OSD-38 (Arabidopsis thaliana Col-0 in BRIC Flight Canisters), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Atmosphere &amp; Hypobaria</span><span>☐ B. Light &amp; Phototropism</span><span>☐ C. Microgravity &amp; Gravitropism</span><span>☐ D. Lunar &amp; Martian Regolith</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q8 (Vol 08 · OSD-44):</strong> In NASA OSDR study OSD-44 (Arabidopsis thaliana in BRIC Flight Canisters), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Radiation &amp; DNA Repair</span><span>☐ B. Epigenetics &amp; Methylome</span><span>☐ C. Atmosphere &amp; Hypobaria</span><span>☐ D. Cell Wall &amp; Cytoskeleton</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q9 (Vol 09 · OSD-45):</strong> In NASA OSDR study OSD-45 (Arabidopsis thaliana Col-0 in 2D/3D Clinostat Microgravity Sim), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Epigenetics &amp; Methylome</span><span>☐ B. Atmosphere &amp; Hypobaria</span><span>☐ C. Cell Wall &amp; Cytoskeleton</span><span>☐ D. Microgravity &amp; Gravitropism</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q10 (Vol 10 · OSD-46):</strong> In NASA OSDR study OSD-46 (Arabidopsis thaliana ecotype Wassilewskija in - Seeds), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Cell Wall &amp; Cytoskeleton</span><span>☐ B. Microgravity &amp; Gravitropism</span><span>☐ C. Radiation &amp; DNA Repair</span><span>☐ D. Hormones &amp; Metabolic Defense</span></div>
+            </div>
+            
+    </section>
+
+    <section class="answer-box">
+      <h2 style="margin-top:0;">👩‍🏫 Teacher Answer Key &amp; Scientific Explanations</h2>
+      <ul><li><strong>Q1 (OSD-7): D</strong> — OSD-7 focuses on Light &amp; Phototropism under ISS conditions (36 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Organism Part.</li><li><strong>Q2 (OSD-8): C</strong> — OSD-8 focuses on Light &amp; Phototropism under ISS conditions (40 verified biological samples). Experimental factors tracked in NASA OSDR: Altered Gravity, Magnetic Field.</li><li><strong>Q3 (OSD-16): B</strong> — OSD-16 focuses on Light &amp; Phototropism under ISS conditions (8 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Organism Part.</li><li><strong>Q4 (OSD-17): A</strong> — OSD-17 focuses on Light &amp; Phototropism under ISS conditions (24 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Organism Part.</li><li><strong>Q5 (OSD-22): D</strong> — OSD-22 focuses on Lunar &amp; Martian Regolith under ISS conditions (20 verified biological samples). Experimental factors tracked in NASA OSDR: soil environment exposure, Time, Genotype.</li><li><strong>Q6 (OSD-37): C</strong> — OSD-37 focuses on Light &amp; Phototropism under ISS conditions (56 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Ecotype.</li><li><strong>Q7 (OSD-38): B</strong> — OSD-38 focuses on Light &amp; Phototropism under ISS conditions (36 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Sample Preservation Method.</li><li><strong>Q8 (OSD-44): A</strong> — OSD-44 focuses on Radiation &amp; DNA Repair under ISS conditions (12 verified biological samples). Experimental factors tracked in NASA OSDR: Genotype, Spaceflight.</li><li><strong>Q9 (OSD-45): D</strong> — OSD-45 focuses on Microgravity &amp; Gravitropism under Ground Analog conditions (24 verified biological samples). Experimental factors tracked in NASA OSDR: Microgravity Simulation, Time.</li><li><strong>Q10 (OSD-46): C</strong> — OSD-46 focuses on Radiation &amp; DNA Repair under ISS conditions (44 verified biological samples). Experimental factors tracked in NASA OSDR: Ionizing Radiation, Exposure Duration, Time of Sample Collection After Treatment, Genotype.</li></ul>
+    </section>
+  </div>
+</body>
+</html>

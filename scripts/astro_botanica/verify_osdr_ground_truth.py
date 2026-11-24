@@ -269,13 +269,19 @@ def run_audit() -> int:
             continue
         verified_count += 1
 
-        # Compare organisms
+        # Compare organisms (space-normalized so "arabidopsisthaliana" matches "Arabidopsis thaliana")
         live_orgs = ", ".join(rec.get("organisms") or []) or "—"
-        script_org_low = (v.get("organism") or "").lower()
+        script_org_nospace = re.sub(r"\s+", "", (v.get("organism") or "").lower())
+        script_title_nospace = re.sub(r"\s+", "", (v.get("title") or "").lower())
         org_ok = True
         if rec.get("organisms"):
+            primary_org_nospace = re.sub(r"\s+", "", rec["organisms"][0].lower())
             primary_genus = rec["organisms"][0].split()[0].lower()
-            if primary_genus not in script_org_low and primary_genus not in (v.get("title") or "").lower():
+            if (
+                primary_genus not in script_org_nospace
+                and primary_org_nospace not in script_org_nospace
+                and primary_genus not in script_title_nospace
+            ):
                 org_ok = False
                 org_mismatches.append((vol, acc, live_orgs, v.get("organism_short")))
 

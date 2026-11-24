@@ -3,7 +3,7 @@ window.ASTRO_BOTANICA_DATA = {
   "anthology_title": "ASTRO-BOTANICA: ZERO-G ROOTS",
   "anthology_subtitle": "The Complete NASA Open Science Data Repository (OSDR) Plant Biology Manga Archive",
   "total_volumes": 90,
-  "total_pages_cataloged": 1693,
+  "total_pages_cataloged": 1741,
   "raster_cover_count": 2,
   "vector_cover_count": 88,
   "osdr_verified_count": 88,
@@ -108,6 +108,14 @@ window.ASTRO_BOTANICA_DATA = {
         "direction": "neutral"
       },
       {
+        "volume": 74,
+        "accession": "OSD-416",
+        "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
+        "world": "ISS",
+        "role": "Plant / Mutant Line",
+        "direction": "dual"
+      },
+      {
         "volume": 79,
         "accession": "OSD-480",
         "title": "The Gravi-Photo Nexus: Vector Competition on the ISS",
@@ -196,32 +204,6 @@ window.ASTRO_BOTANICA_DATA = {
         "world": "Suborbital",
         "role": "Plant / Mutant Line",
         "direction": "neutral"
-      }
-    ],
-    "MET1": [
-      {
-        "volume": 46,
-        "accession": "OSD-520",
-        "title": "Threshold of the Third Seed",
-        "world": "Ground Analog",
-        "role": "Plant / Mutant Line",
-        "direction": "dual"
-      },
-      {
-        "volume": 74,
-        "accession": "OSD-416",
-        "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
-        "world": "ISS",
-        "role": "Enzyme / Remodeler",
-        "direction": "neutral"
-      },
-      {
-        "volume": 90,
-        "accession": "OSD-782",
-        "title": "The Planetary Hormone: Ethylene and Epigenetic Resilience",
-        "world": "Ground Analog",
-        "role": "Enzyme / Remodeler",
-        "direction": "dual"
       }
     ],
     "RAD51": [
@@ -350,24 +332,6 @@ window.ASTRO_BOTANICA_DATA = {
         "direction": "neutral"
       }
     ],
-    "ELP2": [
-      {
-        "volume": 53,
-        "accession": "OSD-625",
-        "title": "Flap-Cleaved Epialleles",
-        "world": "ISS",
-        "role": "Researcher / Crew",
-        "direction": "neutral"
-      },
-      {
-        "volume": 74,
-        "accession": "OSD-416",
-        "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
-        "world": "ISS",
-        "role": "Enzyme / Remodeler",
-        "direction": "dual"
-      }
-    ],
     "EMCS": [
       {
         "volume": 26,
@@ -448,6 +412,24 @@ window.ASTRO_BOTANICA_DATA = {
         "world": "Moon",
         "role": "Researcher / Crew",
         "direction": "neutral"
+      }
+    ],
+    "MET1": [
+      {
+        "volume": 46,
+        "accession": "OSD-520",
+        "title": "Threshold of the Third Seed",
+        "world": "Ground Analog",
+        "role": "Plant / Mutant Line",
+        "direction": "dual"
+      },
+      {
+        "volume": 90,
+        "accession": "OSD-782",
+        "title": "The Planetary Hormone: Ethylene and Epigenetic Resilience",
+        "world": "ISS",
+        "role": "Enzyme / Remodeler",
+        "direction": "up"
       }
     ],
     "OL": [
@@ -574,6 +556,42 @@ window.ASTRO_BOTANICA_DATA = {
         "world": "ISS",
         "role": "Molecular Actor",
         "direction": "neutral"
+      }
+    ],
+    "elp2-5": [
+      {
+        "volume": 43,
+        "accession": "OSD-427",
+        "title": "Marks That Steer the Root",
+        "world": "ISS",
+        "role": "Plant / Mutant Line",
+        "direction": "down"
+      },
+      {
+        "volume": 74,
+        "accession": "OSD-416",
+        "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
+        "world": "ISS",
+        "role": "Plant / Mutant Line",
+        "direction": "down"
+      }
+    ],
+    "met1-7": [
+      {
+        "volume": 43,
+        "accession": "OSD-427",
+        "title": "Marks That Steer the Root",
+        "world": "ISS",
+        "role": "Plant / Mutant Line",
+        "direction": "neutral"
+      },
+      {
+        "volume": 74,
+        "accession": "OSD-416",
+        "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
+        "world": "ISS",
+        "role": "Plant / Mutant Line",
+        "direction": "down"
       }
     ],
     "phyD": [
@@ -791,6 +809,16 @@ window.ASTRO_BOTANICA_DATA = {
         "title": "The Repressor Triple: myb3r135 Mutant Rescue",
         "world": "ISS",
         "role": "Master Regulator",
+        "direction": "neutral"
+      }
+    ],
+    "5mCyt": [
+      {
+        "volume": 74,
+        "accession": "OSD-416",
+        "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
+        "world": "ISS",
+        "role": "Enzyme / Remodeler",
         "direction": "neutral"
       }
     ],
@@ -1589,7 +1617,7 @@ window.ASTRO_BOTANICA_DATA = {
         "volume": 90,
         "accession": "OSD-782",
         "title": "The Planetary Hormone: Ethylene and Epigenetic Resilience",
-        "world": "Ground Analog",
+        "world": "ISS",
         "role": "Master Regulator",
         "direction": "neutral"
       }
@@ -1602,6 +1630,16 @@ window.ASTRO_BOTANICA_DATA = {
         "world": "ISS",
         "role": "Molecular Actor",
         "direction": "up"
+      }
+    ],
+    "ELP2": [
+      {
+        "volume": 53,
+        "accession": "OSD-625",
+        "title": "Flap-Cleaved Epialleles",
+        "world": "ISS",
+        "role": "Researcher / Crew",
+        "direction": "neutral"
       }
     ],
     "EMO1": [
@@ -2001,6 +2039,16 @@ window.ASTRO_BOTANICA_DATA = {
         "title": "The Three Canisters and the Zero-Waste Wall",
         "world": "ISS",
         "role": "Plant / Mutant Line",
+        "direction": "neutral"
+      }
+    ],
+    "MAPit": [
+      {
+        "volume": 90,
+        "accession": "OSD-782",
+        "title": "The Planetary Hormone: Ethylene and Epigenetic Resilience",
+        "world": "ISS",
+        "role": "Enzyme / Remodeler",
         "direction": "neutral"
       }
     ],
@@ -2431,16 +2479,6 @@ window.ASTRO_BOTANICA_DATA = {
         "title": "Three Minutes on the Calf",
         "world": "Suborbital",
         "role": "Molecular Actor",
-        "direction": "neutral"
-      }
-    ],
-    "ROS1": [
-      {
-        "volume": 74,
-        "accession": "OSD-416",
-        "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
-        "world": "ISS",
-        "role": "Enzyme / Remodeler",
         "direction": "neutral"
       }
     ],
@@ -2994,16 +3032,6 @@ window.ASTRO_BOTANICA_DATA = {
         "direction": "down"
       }
     ],
-    "elp2-5": [
-      {
-        "volume": 43,
-        "accession": "OSD-427",
-        "title": "Marks That Steer the Root",
-        "world": "ISS",
-        "role": "Plant / Mutant Line",
-        "direction": "down"
-      }
-    ],
     "gIR": [
       {
         "volume": 81,
@@ -3021,16 +3049,6 @@ window.ASTRO_BOTANICA_DATA = {
         "title": "The Dispensable Alarm",
         "world": "ISS",
         "role": "Molecular Actor",
-        "direction": "neutral"
-      }
-    ],
-    "met1-7": [
-      {
-        "volume": 43,
-        "accession": "OSD-427",
-        "title": "Marks That Steer the Root",
-        "world": "ISS",
-        "role": "Plant / Mutant Line",
         "direction": "neutral"
       }
     ],
@@ -4883,7 +4901,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Light & Phototropism",
       "hardware": "Advanced Biological Research System (ABRS) with GFP Imaging System (GIS) on the ISS (STS-129 launch Nov 16, 2009; Run 1B active growth 12/3/2009–12/15/2009; returned on STS-130 Feb 8, 2010), 10 cm² solid media plates, VOC-scrubbed air, light cycle: Not Available in OSDR metadata. Ground control in identical ABRS inside the Orbital Environmental Simulator (OES) at KSC. Preserved on orbit in RNAlater-filled KFTs and stored at -80°C. Analyzed via iTRAQ 8-plex (113–115 GC roots, 116–118 FLT roots, 119 GC leaves, 121 FLT leaves) on an LTQ Orbitrap XL MS/MS with Eksigent nano-LC AS2.",
       "hardware_short": "ABRS + GFP Imaging System",
-      "publication": "Ferl RJ, Koh J, Denison F, Paul AL.. Spaceflight induces specific alterations in the proteomes of Arabidopsis. Astrobiology. (DOI: 10.1089/ast.2014.1210 · PMID: 25517942)",
+      "publication": "Ferl RJ, Koh J, Denison F, Paul AL. Spaceflight induces specific alterations in the proteomes of Arabidopsis. Astrobiology. (DOI: 10.1089/ast.2014.1210 · PMID: 25517942)",
       "pages_count": 26,
       "pages": [
         {
@@ -6314,7 +6332,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Lunar & Martian Regolith",
       "hardware": "Ground Mars-Regolith Simulation (Kennedy Space Center / University of Florida).",
       "hardware_short": "Ground Mars-Regolith Simulation",
-      "publication": "Visscher AM, Paul AL, Kirst M, Guy CL, Schuerger AC, Ferl RJ.. Growth performance and root transcriptome remodeling of Arabidopsis in response to Mars-like levels of magnesium sulfate. (DOI: 10.1371/journal.pone.0012348 · PMID: 20808807)",
+      "publication": "Visscher AM, Paul AL, Kirst M, Guy CL, Schuerger AC, Ferl RJ. Growth performance and root transcriptome remodeling of Arabidopsis in response to Mars-like levels of magnesium sulfate. (DOI: 10.1371/journal.pone.0012348 · PMID: 20808807)",
       "pages_count": 26,
       "pages": [
         {
@@ -7162,7 +7180,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Light & Phototropism",
       "hardware": "BRIC-19 (Biological Research in Canisters, unpowered, continuous 24 h darkness), 60 mm Petri dishes inside PDFUs (5 PDFUs + 1 HOBO data-logger per BRIC; 4 BRICs). 64 seeds/plate on 15 mL 1/2-strength Epstein's medium + 1% Phytagel + 10 mM sucrose (pH 5.7), pre-irradiated 12 h (70 μmol m-2 s-1 white fluorescent, 22°C), chilled 4°C in a Double Cold Bag (150 h total cold hold through launch on SpaceX CRS-4, Sep 21 – Oct 25, 2014). Grown 8 days at ISS ambient (~24°C); ground controls run in ISSES (48 h telemetry delay).",
       "hardware_short": "BRIC Flight Canisters",
-      "publication": "Choi WG, Barker, Kim SH, Swanson SJ, Gilroy S.. Variation in the transcriptome of different ecotypes of Arabidopsis thaliana reveals signatures of oxidative stress in plant responses to spaceflight (DOI: 10.1002/ajb2.1223 · PMID: 30644539)",
+      "publication": "Choi WG, Barker, Kim SH, Swanson SJ, Gilroy S. Variation in the transcriptome of different ecotypes of Arabidopsis thaliana reveals signatures of oxidative stress in plant responses to spaceflight (DOI: 10.1002/ajb2.1223 · PMID: 30644539)",
       "pages_count": 22,
       "pages": [
         {
@@ -8468,7 +8486,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Radiation & DNA Repair",
       "hardware": "BRIC-16 (Biological Research in Canisters, unpowered complete darkness) aboard Space Shuttle Discovery (STS-131, Apr 5 – Apr 20, 2010). 150–200 seeds per 60 mm Petri dish inside light-tight BRIC-PDFU canisters (5 PDFUs/BRIC, foam-padded middeck locker); grown 14 days. Space radiation exposure (12.88 living days): 3.2 mGy mean (2.62–4.42 mGy, TLDs DLOC1–3). Ground controls (GW, GA) housed in the Orbital Environmental Simulator (OES) at KSC SLSL.",
       "hardware_short": "BRIC Flight Canisters",
-      "publication": "Kwon T, Sparks JA, Nakashima J, Allen SN, Tang Y, Blancaflor E.. Transcriptional response of Arabidopsis seedlings during spaceflight reveals peroxidase and cell wall remodeling genes associated with root hair development. American Journal of Botany. (DOI: 10.3732/ajb.1400458 · PMID: 25587145)",
+      "publication": "Kwon T, Sparks JA, Nakashima J, Allen SN, Tang Y, Blancaflor E. Transcriptional response of Arabidopsis seedlings during spaceflight reveals peroxidase and cell wall remodeling genes associated with root hair development. American Journal of Botany. (DOI: 10.3732/ajb.1400458 · PMID: 25587145)",
       "pages_count": 14,
       "pages": [
         {
@@ -9183,7 +9201,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Radiation & DNA Repair",
       "hardware": "- Seeds (20% bleach-sterilized) plated on 1 × MS Phytoagar, shipped on ice to BNL (4°C), then grown vertically 5 days at 21°C under 16 h cool white light in the BNL Controlled Environment Facility.",
       "hardware_short": "- Seeds",
-      "publication": "Missirian V, Conklin PA, Culligan KM, Huefner ND, Britt AB.. High atomic weight, high-energy radiation (HZE) induces transcriptional responses shared with conventional stresses in addition to a core ''DSB'' response specific to clastogenic treatments. (DOI: 10.3389/fpls.2014.00364 · PMID: 25136344)",
+      "publication": "Missirian V, Conklin PA, Culligan KM, Huefner ND, Britt AB. High atomic weight, high-energy radiation (HZE) induces transcriptional responses shared with conventional stresses in addition to a core ''DSB'' response specific to clastogenic treatments. (DOI: 10.3389/fpls.2014.00364 · PMID: 25136344)",
       "pages_count": 21,
       "pages": [
         {
@@ -10540,7 +10558,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Microgravity & Gravitropism",
       "hardware": "- 18 Phytagel Petri plates (6/genotype) wrapped in double-layer Duvetyne Black-Out cloth at 4°C (6 days pre-launch, 12 days orbital cold stowage), then mounted directly on the Destiny US Lab wall (open ISS cabin air, no enclosed growth chamber).",
       "hardware_short": "- 18 Phytagel Petri plates",
-      "publication": "Paul AL, Sng NJ, Zupanska AK, Krishnamurthy A, Schultz ER, Ferl RJ.. Genetic dissection of the Arabidopsis spaceflight transcriptome: Are some responses dispensable for the physiological adaptation of plants to spaceflight? (DOI: 10.1371/journal.pone.0180186 · PMID: 28662188)",
+      "publication": "Paul AL, Sng NJ, Zupanska AK, Krishnamurthy A, Schultz ER, Ferl RJ. Genetic dissection of the Arabidopsis spaceflight transcriptome: Are some responses dispensable for the physiological adaptation of plants to spaceflight? (DOI: 10.1371/journal.pone.0180186 · PMID: 28662188)",
       "pages_count": 9,
       "pages": [
         {
@@ -11686,7 +11704,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Atmosphere & Hypobaria",
       "hardware": "SimulatedEnvironmentalFactors (Ground Study — Low Pressure Growth Chambers [LPGC] at CESRF, University of Guelph, Ontario, Canada)",
       "hardware_short": "Low-Pressure Chambers (LPGC)",
-      "publication": "Zhou M, Callaham JB, Reyes M, Stasiak M, Riva A, Zupanska AK, Dixon MA, Paul A, Ferl RJ.. Dissecting Low Atmospheric Pressure Stress: Transcriptome Responses to the Components of Hypobaria in Arabidopsis (DOI: 10.3389/fpls.2017.00528)",
+      "publication": "Zhou M, Callaham JB, Reyes M, Stasiak M, Riva A, Zupanska AK, Dixon MA, Paul A, Ferl RJ. Dissecting Low Atmospheric Pressure Stress: Transcriptome Responses to the Components of Hypobaria in Arabidopsis (DOI: 10.3389/fpls.2017.00528)",
       "pages_count": 28,
       "pages": [
         {
@@ -13328,7 +13346,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Light & Phototropism",
       "hardware": "BRIC-17-1 (CEL — Cellular Expression Logic) aboard SpaceX CRS-2 Dragon (03/01/2013–03/26/2013, 10 d on ISS)",
       "hardware_short": "BRIC Flight Canisters",
-      "publication": "Zupanska AK1, Schultz ER1, Yao J2,3, Sng NJ1, Zhou M1, Callaham JB1, Ferl RJ1,2, Paul AL1.. ARG1 Functions in the Physiological Adaptation of Undifferentiated Plant Cells to Spaceflight. (DOI: 10.1089/ast.2016.1538 · PMID: 29088549)",
+      "publication": "Zupanska AK1, Schultz ER1, Yao J2,3, Sng NJ1, Zhou M1, Callaham JB1, Ferl RJ1,2, Paul AL1. ARG1 Functions in the Physiological Adaptation of Undifferentiated Plant Cells to Spaceflight. (DOI: 10.1089/ast.2016.1538 · PMID: 29088549)",
       "pages_count": 18,
       "pages": [
         {
@@ -13823,7 +13841,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Microgravity & Gravitropism",
       "hardware": "BRIC-17-1 (Biological Research In Canisters-17-1: Undifferentiated Cell development in Arabidopsis plants in Microgravity — Cellular Expression Logic [CEL] experiment) aboard SpaceX CRS-2 (SpaceX-2; launched 03/01/2013, berthed 03/03/2013, unberthed/splashed down 03/26/2013, returned to PIs at SLSL 04/02/2013)",
       "hardware_short": "BRIC Flight Canisters",
-      "publication": "Zupanska, A.K., Collin L., Ferl, R.J, and Paul, A-L.. HSFA2 Functions in the Physiological Adaptation of Undifferentiated Plant Cells to Spaceflight (DOI: 10.3390/ijms20020390 · PMID: 30658467)",
+      "publication": "Zupanska, A.K., Collin L., Ferl, R.J, and Paul, A-L. HSFA2 Functions in the Physiological Adaptation of Undifferentiated Plant Cells to Spaceflight (DOI: 10.3390/ijms20020390 · PMID: 30658467)",
       "pages_count": 31,
       "pages": [
         {
@@ -14352,7 +14370,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Epigenetics & Methylome",
       "hardware": "Ground-Based Spaceflight Methodology & Root Apex Baseline (CASIS GA-2013-104 / NASA Space Life and Physical Sciences NNX12AN69G)",
       "hardware_short": "Ground-Based Spaceflight Methodology &…",
-      "publication": "Krishnamurthy A, Ferl RJ, Paul AL.. Comparing RNA-Seq and microarray gene expression data in two zones of the Arabidopsis root apex relevant to spaceflight. (DOI: 10.1002/aps3.1197 · PMID: 30473943)",
+      "publication": "Krishnamurthy A, Ferl RJ, Paul AL. Comparing RNA-Seq and microarray gene expression data in two zones of the Arabidopsis root apex relevant to spaceflight. (DOI: 10.1002/aps3.1197 · PMID: 30473943)",
       "pages_count": 29,
       "pages": [
         {
@@ -15905,7 +15923,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Epigenetics & Methylome",
       "hardware": "APEX03-2 (Advanced Plant Experiment 03-2, also known as TAGES-ISA — Transgenic Arabidopsis Gene Expression System-Intracellular Signaling Architecture), flown aboard SpaceX-5 (CRS-5) (01/10/2015–02/11/2015) to the International Space Station (ISS) Columbus Module, grown in the Vegetable Production System (VPS/Veggie).",
       "hardware_short": "ISS Veggie Facility",
-      "publication": "Zhou M, Sng NJ, LeFrois CE, Paul AL, Ferl RJ.. Epigenomics in an extraterrestrial environment: organ-specific alteration of DNA methylation and gene expression elicited by spaceflight in Arabidopsis thaliana. (DOI: 10.1186/s12864-019-5554-z · PMID: 30866818)",
+      "publication": "Zhou M, Sng NJ, LeFrois CE, Paul AL, Ferl RJ. Epigenomics in an extraterrestrial environment: organ-specific alteration of DNA methylation and gene expression elicited by spaceflight in Arabidopsis thaliana. (DOI: 10.1186/s12864-019-5554-z · PMID: 30866818)",
       "pages_count": 13,
       "pages": [
         {
@@ -21128,7 +21146,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Light & Phototropism",
       "hardware": "NASA Tropi Experiment Unique Equipment (EUE) culture chambers (CC cassettes, 5 per Experiment Container EC) with semiautomatic hydration and white/red/blue LEDs; 28 seeds affixed with 1% Guar Gum onto gridded nitrocellulose membranes (3.1 mm grid) over Whatman 17 CHR blotter paper soaked in 1/2 MS medium. Grown 6 days at 22°C (96 h 16 h/8 h white light 30–40 μmol m⁻² s⁻¹ → 48 h darkness vs. unidirectional red light 19 μmol m⁻² s⁻¹), then frozen in RNAlater (Ambion AM7020) at −80°C.",
       "hardware_short": "TROPI EMCS Phototropism Rig",
-      "publication": "Manzano A, Villacampa A, Sáez-Vásquez J, Kiss JZ, Medina FJ, Herranz R.. The Importance of Earth Reference Controls in Spaceflight -Omics Research: Characterization of Nucleolin Mutants from the Seedling Growth Experiments. (DOI: 10.1016/j.isci.2020.101686 · PMID: 33163940)",
+      "publication": "Manzano A, Villacampa A, Sáez-Vásquez J, Kiss JZ, Medina FJ, Herranz R. The Importance of Earth Reference Controls in Spaceflight -Omics Research: Characterization of Nucleolin Mutants from the Seedling Growth Experiments. (DOI: 10.1016/j.isci.2020.101686 · PMID: 33163940)",
       "pages_count": 10,
       "pages": [
         {
@@ -22381,7 +22399,7 @@ window.ASTRO_BOTANICA_DATA = {
         },
         {
           "name": "Dr. Adam Rusek, Richard Sautkaulis & Dr. Betsy Sutherland",
-          "symbol": "Dr. Rusek,",
+          "symbol": "Dr. Rusek",
           "role": "Researcher / Crew",
           "direction": "neutral",
           "description": "(BNL / NSRL Staff) — Accelerator physicists and radiation biologists at Brookhaven who steered the 1 GeV/n 56Fe beam onto vertical agar plates."
@@ -22427,7 +22445,7 @@ window.ASTRO_BOTANICA_DATA = {
           "col_header": "Role"
         },
         {
-          "label": "Dr. Rusek,",
+          "label": "Dr. Rusek",
           "value": "Researcher / Crew",
           "detail": "(BNL / NSRL Staff) — Accelerator physicists and radiation biologists at Brookhaven…",
           "trend": "neutral",
@@ -28736,7 +28754,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Epigenetics & Methylome",
       "hardware": "APEX-04-EpEx launched on SpaceX-10 (CRS-10, 02/19/2017–03/19/2017); Veggie (ISS-Columbus, crew: Peggy Whitson & Shane Kimbrough, Expedition 49/50) vs. ISSES (KSC, 24 h-delayed ground control). 100 mm × 15 mm Petri plates (50 mL 0.5% Phytagel, 0.5× MS, 0.5% sucrose, 1× Gamborg's Vitamin Mixture) sealed with 3M Micropore tape, far-red dormancy + black Duvetyne cloth, 4°C cold stowage (7-day stratification), 11 days growth under constant 100–135 μmol/m²/s red/blue LEDs; mean temp 19.06°C (min 1.72°C, max 28.15°C), 46.73% avg RH; 3.304 mGy total absorbed dose (0.3 mGy/day). Harvested into RNAlater in KFTs -> MELFI (-80°C).",
       "hardware_short": "ISS Veggie Facility",
-      "publication": "Paul Anna-Lisa, Haveman Natasha, Califar Brandon, Ferl Robert J.. Epigenomic Regulators Elongator Complex Subunit 2 and Methyltransferase 1 Differentially Condition the Spaceflight Response in Arabidopsis (DOI: 10.3389/fpls.2021.691790 · PMID: 34589093)",
+      "publication": "Paul Anna-Lisa, Haveman Natasha, Califar Brandon, Ferl Robert J. Epigenomic Regulators Elongator Complex Subunit 2 and Methyltransferase 1 Differentially Condition the Spaceflight Response in Arabidopsis (DOI: 10.3389/fpls.2021.691790 · PMID: 34589093)",
       "pages_count": 1,
       "pages": [
         {
@@ -28994,7 +29012,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Radiation & DNA Repair",
       "hardware": "EMCS-01 (Plant RNA Regulation, PRR) on SpaceX-9 (07/18/2016–09/26/2016), PI: Imara Y. Perera, Submitter: Eric S. Land (North Carolina State University; funding NASA NNX15AB07G). Grown in the European Modular Cultivation System (EMCS) (ISS-Columbus) on two rotors—stationary μg vs. onboard 1g centrifuge (EC position 3)—plus 1g Earth Ground Control in ERM-2 (NASA Ames). 27 dry Col-0 seeds per black-gridded PES membrane on Whatman 17 CHR blotter paper (0.5× MS, no sucrose) in TROPI-like seed cassettes sealed with 3M 425 foil tape; hydrated remotely in two staggered runs for 4-day and 6-day harvests under 16:8 light:dark white LEDs (22°C OSDR / 24°C day, 21°C night, 21% O₂, ~3,000 ppm CO₂ cabin air without purge). Frozen directly at -80°C in MELFI.",
       "hardware_short": "EMCS Centrifuge (ISS)",
-      "publication": "Land Eric S., Sheppard James, Doherty Colleen J., Perera Imara Y.. Conserved plant transcriptional responses to microgravity from two consecutive spaceflight experiments (DOI: 10.3389/fpls.2023.1308713)",
+      "publication": "Land Eric S., Sheppard James, Doherty Colleen J., Perera Imara Y. Conserved plant transcriptional responses to microgravity from two consecutive spaceflight experiments (DOI: 10.3389/fpls.2023.1308713)",
       "pages_count": 1,
       "pages": [
         {
@@ -33678,7 +33696,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Light & Phototropism",
       "hardware": "Payload UF-HT-KFT-01 aboard Virgin Galactic Unity 22 (VSS Unity + VMS Eve, 11-Jul-2021, 10:40 AM EST, Spaceport America, NM; ~45,000 ft release, ~60 s rocket burn at ~3–4 g, ~86 km apogee, ~3 min microgravity, 14 min 17 s release-to-landing; NASA FOP #80NSSC18K1294). Three Kennedy Fixation Tubes (KFTs) (6 seedlings/tube on 1% Phytagel, 0.5× MS, 5 g/L sucrose stainless-steel coupons) worn in a calf leg pouch by astronaut Sirisha Bandla vs. analog ground-pouch controls (G1–G3).",
       "hardware_short": "Virgin Galactic Suborbital",
-      "publication": "Ferl RJ, Zhou M, Strickland HF, Haveman NJ, Callaham JB, Bandla S, Ambriz D, Paul AL.. Transcriptomic dynamics in the transition from ground to space are revealed by Virgin Galactic human-tended suborbital spaceflight. (DOI: 10.1038/s41526-023-00340-w · PMID: 38123588)",
+      "publication": "Ferl RJ, Zhou M, Strickland HF, Haveman NJ, Callaham JB, Bandla S, Ambriz D, Paul AL. Transcriptomic dynamics in the transition from ground to space are revealed by Virgin Galactic human-tended suborbital spaceflight. (DOI: 10.1038/s41526-023-00340-w · PMID: 38123588)",
       "pages_count": 12,
       "pages": [
         {
@@ -35728,7 +35746,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Lunar & Martian Regolith",
       "hardware": "Ground study at the University of North Dakota (UND) Department of Biology, funded by the North Dakota Space Grant Consortium. Crops grew for 55 days in a Percival AR-66L growth chamber (19.8°C–23.4°C diurnal ramp, 50–60% RH, ambient CO2, 16 h / 8 h photoperiod with 32 W / 14 W cool white fluorescent + 25 W incandescent lamps up to 275 µmol/m²/s, watered every other day to field capacity with distilled water). CLASS Exolith Lab (UCF) CI asteroid regolith simulant (modeled on the Orgueil CI carbonaceous chondrite) was tested against SunShine sphagnum peat moss, perlite, and commercial topsoil/vermiculite controls, plus a 2D clinostat (1 rotation/24 h at 90°). Quantitative soil chemistry was assayed at Kansas State University Soil Testing Laboratory.",
       "hardware_short": "2D/3D Clinostat Microgravity Sim",
-      "publication": "Russell SJ, Fieber-Beyer SK, Yurkonis KA.. CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production (DOI: 10.3847/PSJ/ac74c9)",
+      "publication": "Russell SJ, Fieber-Beyer SK, Yurkonis KA. CI Asteroid Regolith as an In Situ Plant Growth Medium for Space Crop Production (DOI: 10.3847/PSJ/ac74c9)",
       "pages_count": 28,
       "pages": [
         {
@@ -36508,7 +36526,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Light & Phototropism",
       "hardware": "CARA (Characterizing Arabidopsis Root Attractions, CASIS GA-2013-104, OpNom \"Petri Plants\"), launched aboard SpaceX CRS-3 (04/18/2014–05/18/2014) and tended on the ISS by Expedition 39 Flight Engineer Steve Swanson. 11-day-old seedlings grew on phytagel Petri plates affixed directly to the ISS US Lab bulkhead (no dedicated plant growth hardware) vs. the ISSES ground control at Kennedy Space Center (24 h offset). Light cohort: constant diffuse ambient cabin light (4–6 µmol/m²/s). Dark cohort: unwrapped 4 h to trigger germination, then sealed in blackout cloth (24 h dark). Harvested at 11 days into KFTs with RNAlater (12–18 h ambient perfusion, then MELFI -80°C).",
       "hardware_short": "CARA",
-      "publication": "Zhou M, Ferl RJ, Paul AL.. Light has a principal role in the Arabidopsis transcriptomic response to the spaceflight environment. (DOI: 10.1038/s41526-024-00417-0 · PMID: 39107298)",
+      "publication": "Zhou M, Ferl RJ, Paul AL. Light has a principal role in the Arabidopsis transcriptomic response to the spaceflight environment. (DOI: 10.1038/s41526-024-00417-0 · PMID: 39107298)",
       "pages_count": 28,
       "pages": [
         {
@@ -45581,7 +45599,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Light & Phototropism",
       "hardware": "German Neumayer Station III, Ekström Ice Shelf, Atka Bay, Antarctica (70°40'S, 08°16'W). The EDEN ISS Mobile Test Facility (MTF): a 20-foot shipping container complex consisting of the Cold Porch, Service Section, and the Future Exploration Greenhouse (FEG) (12.5 m² footprint, 3.68 m² active multilevel plant growth area). Closed-loop aeroponic/hydroponic cultivation systems, high-efficiency water-cooled LED light fixtures with dynamic spectral adjustment (deep red 660 nm, far-red 730 nm, blue 440 nm, white 400–700 nm), autonomous nutrient delivery loops with automated EC and pH dosing, HEPA-filtered air circulation with CO₂ enrichment (800–1200 ppm), and an extreme sub-zero exterior environment (-45°C winds, polar night).",
       "hardware_short": "EDEN ISS Antarctic Greenhouse",
-      "publication": "Zabel P, Zeidler C, Vrakking V, Dorn M, Schubert D.. Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase. (DOI: 10.3389/fpls.2020.00656 · PMID: 32528506)",
+      "publication": "Zabel P, Zeidler C, Vrakking V, Dorn M, Schubert D. Biomass Production of the EDEN ISS Space Greenhouse in Antarctica During the 2018 Experiment Phase. (DOI: 10.3389/fpls.2020.00656 · PMID: 32528506)",
       "pages_count": 28,
       "pages": [
         {
@@ -46430,15 +46448,15 @@ window.ASTRO_BOTANICA_DATA = {
       "accession": "OSD-971",
       "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-971",
       "title": "The Polyamine Shield: Unlocking the Orbital Genome",
-      "organism": "Arabidopsis thaliana (Columbia-0 wild-type) compared against genetically engineered polyamine metabolic pathway mutant and overexpressor lines:",
+      "organism": "Arabidopsis thaliana (Col-0 wild-type) compared against genetically engineered putrescine (Put) metabolic pathway lines from OSD-971 (72 verified RNA-Seq samples across Spaceflight, Organism Part, and Genotype factors):",
       "organism_short": "Arabidopsis thaliana",
       "plant_family": "Brassicaceae (Arabidopsis/Mustard)",
       "world": "ISS",
       "study_domain": "Hormones & Metabolic Defense",
       "hardware": "International Space Station (ISS) US National Laboratory — Advanced Plant Habitat (APH) and Veggie flight facilities (SpaceX-25 mission / Increment 67). Growth rigs: sterile Phytagel growth plates (10 cm × 10 cm) inside automated growth cassettes under controlled environmental parameters (22°C, 65% RH, 16:8 light/dark photoperiod under broad-spectrum LED arrays at 100 µmol m⁻² s⁻¹). Ground controls conducted in parallel inside the KSC Orbital Environmental Simulator (OES) with real-time telemetry synchronization. Harvest: Kennedy Space Center Fixation Tubes (KFTs) with RNAlater fixative followed by MELFI deep-freezing (<-80°C).",
       "hardware_short": "Advanced Plant Habitat (APH)",
-      "publication": "Su Shih-Heng, Masson Patrick H.. Genetic alterations of the putrescine metabolic pathway attenuate plant responses to spaceflight (DOI: 10.1038/s41526-026-00663-4)",
-      "pages_count": 28,
+      "publication": "Su Shih-Heng, Masson Patrick H. Genetic alterations of the putrescine metabolic pathway attenuate plant responses to spaceflight (DOI: 10.1038/s41526-026-00663-4)",
+      "pages_count": 30,
       "pages": [
         {
           "page_label": "1",
@@ -47003,14 +47021,55 @@ window.ASTRO_BOTANICA_DATA = {
           "panels": [
             {
               "panel_number": 1,
-              "shot": "Establishing Shot",
-              "description": "Final full-page splash. A single, perfect, vibrant green sprout growing upright in weightlessness, unfurling its cotyledons toward a distant galaxy."
+              "shot": "Full-Page Splash",
+              "description": "A single, perfect, vibrant green Arabidopsis sprout (OxPtADC / cuao3) growing steadily in weightlessness, its putrescine-fortified tissues calm and unscarred by orbital transcriptomic noise as it unfurls its cotyledons toward a distant starfield."
             }
           ],
-          "caption": "ASTRO-BOTANICA: ZERO-G ROOTS — THE END OF THE BEGINNING. THE GALAXY AWAITS.",
+          "caption": "ASTRO-BOTANICA: ZERO-G ROOTS — SIXTY-EIGHT MISSIONS OF DISCOVERY CONVERGE ON ONE MOLECULAR SHIELD.",
           "sfx": null,
           "dialogue": [],
-          "summary": "Final full-page splash. A single, perfect, vibrant green sprout growing upright in weightlessness, unfurling its cotyledons toward a distant galaxy."
+          "summary": "A single, perfect, vibrant green Arabidopsis sprout (OxPtADC / cuao3) growing steadily in weightlessness, its putrescine-fortified tissues calm and unscarred by orbital transcriptomic noise as it unfurls its cotyledons toward a distant starfield."
+        },
+        {
+          "page_label": "31",
+          "page_title": "",
+          "act": "Act III: The Green Frontier Unlocked (Pages 23–30)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Blueprint Infographic Left Spread",
+              "description": "Clean cutaway diagram of the OSD-971 polyamine metabolic circuit (Arginine → [OxPtADC ↑] → Putrescine Pool ⊣ [cuao3 ↓ catabolism]). Displays the n = 72 NASA OSDR sample matrix across Flight vs. Ground Control, Roots vs. Shoots, and Col-0 / OxPtADC / cuao3 genotypes."
+            }
+          ],
+          "caption": "Page 31 Mission Architecture: Boosting synthesis (OxPtADC) or slowing degradation (cuao3) elevates intracellular putrescine—quieting the plant's spaceflight transcriptomic alarm.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Clean cutaway diagram of the OSD-971 polyamine metabolic circuit (Arginine → [OxPtADC ↑] → Putrescine Pool ⊣ [cuao3 ↓ catabolism]). Displays the n = 72 NASA OSDR sample matrix across Flight vs. Ground Control, Roots vs. Shoots, and Col-0 / OxPtADC / cuao3 genotypes."
+        },
+        {
+          "page_label": "32",
+          "page_title": "",
+          "act": "Act III: The Green Frontier Unlocked (Pages 23–30)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Data Epilogue Right Spread",
+              "description": "Side-by-side DEG volcano comparison showing wild-type Col-0 erupting with hundreds of orbital stress genes while Put-accumulating OxPtADC and cuao3 profiles stay remarkably calm. Bottom ticker links directly to NASA OSDR: OSD-971 and hands off to the 22 Special Chronicles (Vols. 69–90)."
+            }
+          ],
+          "caption": "Side-by-side DEG volcano comparison showing wild-type Col-0 erupting with hundreds of orbital stress genes while Put-accumulating OxPtADC and cuao3 profiles stay remarkably calm.",
+          "sfx": "SHUUU-QUIET (Transcriptomic attenuation locked)",
+          "dialogue": [
+            {
+              "speaker": "Dr. Patrick Masson",
+              "text": "When we tune the plant's own polyamine thermostat, spaceflight stops sounding like an emergency."
+            }
+          ],
+          "summary": "Side-by-side DEG volcano comparison showing wild-type Col-0 erupting with hundreds of orbital stress genes while Put-accumulating OxPtADC and cuao3 profiles stay remarkably calm. Bottom ticker links directly to NASA OSDR: OSD-971 and hands off to the 22 Special Chronicles (Vols.…"
         }
       ],
       "molecular_cast": [
@@ -47111,7 +47170,7 @@ window.ASTRO_BOTANICA_DATA = {
         "k5_discovery": "Scientists discovered that helper genes like Col-0 switch on to protect the plant! Key clue: Mission / Accession: SpaceX-25 / ISS Increment 67 (OSD-971)",
         "ms_experiment": "NASA study OSD-971 tested Arabidopsis thaliana inside Advanced Plant Habitat (APH) (ISS), comparing space/stress conditions against matched terrestrial controls.",
         "ms_mechanism": "Focus pathway: Hormones & Metabolic Defense. Mission / Accession: SpaceX-25 / ISS Increment 67 (OSD-971)",
-        "hs_methods": "Arabidopsis thaliana (Columbia-0 wild-type) compared against genetically engineered polyamine metabolic pathway mutant and overexpressor lines: | Platform: International Space Station (ISS) US National Laboratory — Advanced Plant Habitat…"
+        "hs_methods": "Arabidopsis thaliana (Col-0 wild-type) compared against genetically engineered putrescine (Put) metabolic pathway lines from OSD-971 (72 verified RNA-Seq samples across Spaceflight, Organism Part, and Genotype factors): | Platform…"
       },
       "debrief_tables": [
         {
@@ -47176,7 +47235,7 @@ window.ASTRO_BOTANICA_DATA = {
         }
       ],
       "dramatis_personae": "- **Squad Col-0 (Wild-Type Benchmark):** The veteran spaceflight warrior. Experienced in dozens of orbital missions, but still prone to chronic transcriptomic stress, oxidative burst, cell wall softening, and premature senescence in microgravity.\n\n- **Squad Polyamine (The Putrescine Mutants):**\n  - **The Putrescine Sentinel (*spds1 spds2*):** Genetically engineered line blocking downstream spermidine conversion, accumulating abundant intracellular putrescine. Radiates a calm blue metabolic aura that deflects oxidative damage.\n  - **The Depleted Scout (*adc1 adc2*):** Lacking arginine decarboxylase; hyper-sensitized to orbital stress, confirming the protective role of polyamines.\n\n- **The Molecular Commanders (The Polyamine Regulatory Axis):**\n  - **Commander `ADC2` (Arginine Decarboxylase 2):** Primary tactical officer initiating the synthesis of putrescine from basic amino acid stores.\n  - **Officer `SPDS1` & `SPDS2` (Spermidine Synthases):** The downstream gatekeepers controlling the conversion of putrescine into higher polyamines.\n  - **The ROS Scavenger Vanguard (`CAT1`, `APX1`, `SOD`):** Peroxidase and dismutase enzymes working hand-in-hand with polyamine pools to extinguish free radicals.\n  - **The Transcriptomic Dampener (`WRKY`, `HSF`, `DREB` Axis):** Stress transcription factor brigades whose emergency alarms are naturally quieted when putrescine levels are fortified.\n\n- **The Space Biologist Architects (Dr. Patrick Masson & Dr. Shih-Heng Su):** Leading space geneticists deciphering how altering a single ancient metabolic node can silence the cacophony of spaceflight stress genes.\n\n- **The CoSE Ensemble (Doc B, Sprout, Myco, Statolith, Pixel, and Commander Astra):** Gathered in the ISS Cupola to witness the final synthesis of sixty-eight volumes of discovery.",
-      "script_markdown": "### Act I: The Sixty-Eight Missions of Stress (Pages 1–10)\n\n**Page 1**\n\n- **Panel 1 (Panoramic space establishing):** The International Space Station gliding gracefully over the blue curve of Earth. The sun flares gold against the solar array wings.\n\n- **Caption:** *For sixty-eight volumes, we have chronicled the battle. From the silent suffocation of OSD-7 to the Apollo regolith challenges and polar greenhouses, plants in space have fought for every millimeter of growth.*\n\n- **Panel 2:** Interior of the ISS Columbus module. Dr. Patrick Masson and astronaut researchers inspect the glowing green chambers of the Advanced Plant Habitat (APH).\n\n**Page 2**\n\n- **Panel 1:** The Historic Paradox: Wild-type *Arabidopsis thaliana* (Col-0) seedlings growing in microgravity. Even under optimal air, light, and water, their transcriptome behaves like a city under siege: thousands of stress genes fired up, cell walls loosened, and oxidative alarms flashing red.\n\n- **Dialogue (Doc B):** \"Col-0 survives spaceflight, but at an enormous metabolic cost. It treats weightlessness like an incurable wound.\"\n\n**Page 3**\n\n- **Panel 1:** The Hypothesis: What if we could alter a single ancient, evolutionarily conserved pathway to teach the plant that microgravity is not an emergency?\n\n- **Panel 2:** The target identified: **The Polyamine Metabolic Pathway**. Ancient aliphatic polycations—**Putrescine**, **Spermidine**, and **Spermine**—that bind DNA, stabilize membranes, and extinguish reactive oxygen species.\n\n**Page 4**\n\n- **Panel 1:** The Genetic Squads prepared on Phytagel plates:\n  - Line A: Wild-Type `Col-0` (The baseline control).\n  - Line B: `spds1 spds2` (Double mutants defective in spermidine synthase, maintaining elevated endogenous putrescine).\n  - Line C: `adc1 adc2` (Arginine decarboxylase mutants starved of putrescine).\n\n- **Panel 2:** Cassettes loaded into SpaceX-25 Dragon capsule, launched into low Earth orbit, and installed into the APH on Increment 67.\n\n**Page 5**\n\n- **Panel 1:** Day 3 in Orbit: Germination and root elongation inside the APH cassette.\n\n- **Panel 2:** In Col-0, primary roots show the classic erratic spaceflight skewing and wavy growth patterns, struggling with missing gravitational vectors.\n\n**Page 6**\n\n- **Panel 1:** In the adjacent lane: The `spds1 spds2` seedlings! Their roots grow straight, robust, and elongated, maintaining cellular symmetry despite zero gravity!\n\n- **SFX:** *VIGOR — ACCELERATED ELONGATION.*\n\n**Pages 7–8 (Double-Page Spread — \"The Anatomy of the Alarm\")**\n\n- **Spread Composition:** High-contrast intracellular battlefield inside the root apex.\n  - **Left side (Col-0 Wild-Type):** Red alert! Missing gravity causes calcium signal distortion; mitochondria leak superoxide and `H₂O₂`. Thousands of stress transcription factors (`WRKY40`, `HSFA2`, `DREB2A`) scream into action. Energy is diverted away from growth into emergency defenses.\n  - **Right side (`spds1 spds2` Putrescine Fortress):** Calm, radiant blue cyan glow. Dense pools of divalent putrescine molecules coat nucleic acids and plasma membranes, quenching free radicals before they can trigger genomic panic.\n  - **Center:** The metabolic fork diagram showing Arginine Decarboxylase (`ADC2`) generating putrescine while `SPDS` gatekeepers hold the line.\n\n- **Caption:** *Wild-type plants exhaust their genome fighting the ghost of gravity. The putrescine-altered plant simply neutralizes the spark.*\n\n**Page 9**\n\n- **Panel 1:** Day 6: Live fluorescent imaging of Reactive Oxygen Species (`ROS`).\n\n- **Panel 2:** Confocal microscopy through the APH window: Col-0 roots flare with intense yellow and red fluorescent dye (high oxidative stress). The `spds1 spds2` roots remain cool, dark green, and unburned.\n\n**Page 10**\n\n- **Panel 1:** The `adc1 adc2` tragedy: In the putrescine-deficient mutant, without the polyamine shield, cells suffer severe lipid peroxidation and stunted growth, proving that putrescine is the irreplaceable guardian.\n\n---\n\n### Act II: The Transcriptomic Miracle (Pages 11–22)\n\n**Page 11**\n\n- **Panel 1:** Day 8: Harvest inside the Portable Glovebox. Astronauts actuate KSC Fixation Tubes, flooding the cassettes with `RNAlater` before plunging them into the `-80°C` MELFI freezer.\n\n- **Panel 2:** Samples returned on Dragon splashdown to Kennedy Space Center and processed for ultra-deep stranded RNA-Seq.\n\n**Page 12**\n\n- **Panel 1:** The Bioinformatic Arena: PCA plots flashing onto monitors in Masson's laboratory.\n\n- **Panel 2:** The Shocking Divergence: While Col-0 exhibits over `2,400` differentially expressed genes (DEGs) between flight and ground, the `spds1 spds2` flight transcriptome sits remarkably close to its ground control!\n\n**Page 13**\n\n- **Panel 1:** The Transcriptomic Attenuation: Over `70%` of spaceflight-induced stress genes are completely dampened in the putrescine line!\n\n- **Dialogue (Patrick Masson):** \"Look at the heatmaps! Heat shock factors, wound signaling, cell wall degradation enzymes—they are almost completely quiet. The plant is in space, but its genome isn't panicking!\"\n\n**Page 14**\n\n- **Panel 1:** Analysis of cell wall remodelers: In Col-0, xyloglucan endotransglycosylases (`TCH4`, `XTHs`) and expansins are chaotically scrambled.\n\n- **Panel 2:** In `spds1 spds2`, cell wall biosynthesis continues with orderly terrestrial architecture. Pectin cross-linking remains firm.\n\n**Page 15**\n\n- **Panel 1:** The Mitochondrial Victory: Electron transport chain complexes (`Complex I` and `Complex IV`) maintain steady oxidative phosphorylation without the universal mitochondrial power-down seen in older missions.\n\n**Page 16**\n\n- **Panel 1:** HPLC-MS/MS biochemical quantification: Free putrescine concentrations measured in spaceflight tissues show a direct correlation with stress reduction (`R² = 0.89`).\n\n- **Panel 2:** Protein translation machinery (ribosomal subunit biogenesis) functions at `94%` of Earth ground rates—the highest translational efficiency ever recorded in orbit.\n\n**Page 17**\n\n- **Panel 1:** Root hair development: While spaceflight usually stunts root hair density, the putrescine-enhanced seedlings develop long, dense root hairs that optimize nutrient absorption from agar.\n\n**Page 18**\n\n- **Panel 1:** Cross-comparison with past volumes: Comparing OSD-971 against OSD-7, OSD-37, OSD-120, and OSD-615.\n\n- **Panel 2:** The realization: What plants spent sixty years trying to solve through clumsy ad-hoc adaptations can be systematically streamlined through polyamine metabolic tuning.\n\n**Page 19**\n\n- **Panel 1:** Epigenetic stability: Bisulfite sequencing shows that DNA methylation erosion across transposable elements is significantly reduced in the putrescine cohort.\n\n**Page 20**\n\n- **Panel 1:** The senescence assay: Col-0 leaves yellow and drop after three weeks in orbit. The `spds1 spds2` plants retain rich chlorophyll and stay green, ready to flower and set seeds.\n\n**Page 21**\n\n- **Panel 1:** The Universal Model: Why polyamine engineering works across all plant species—from model *Arabidopsis* to wheat, rice, potatoes, and tomatoes.\n\n**Page 22**\n\n- **Panel 1:** Su and Masson filing the definitive paper in *npj Microgravity*: *\"Genetic alterations of the putrescine metabolic pathway attenuate plant responses to spaceflight.\"*\n\n- **Caption:** *The code has been cracked. We no longer have to force Earth plants to endure space; we can give them the genetic armor to thrive.*\n\n---\n\n### Act III: The Green Frontier Unlocked (Pages 23–30)\n\n**Page 23**\n\n- **Panel 1:** The CoSE War Room: Doc B, Sprout, Myco, and Pixel surrounded by floating holographic screens displaying the sixty-eight volumes of ASTRO-BOTANICA.\n\n- **Dialogue (Doc B):** \"From the very first shuttle canisters of OSD-7 to the putrescine shield of OSD-971, every single accession was a stepping stone. Together, they form the complete handbook of orbital botany.\"\n\n**Page 24**\n\n- **Panel 1:** Sprout looking at her own green leaves, now glowing with a gentle, harmonious blue putrescine vector.\n\n- **Dialogue (Sprout):** \"We are no longer terrestrial refugees in space. We are Phytonauts. The stars belong to us too.\"\n\n**Pages 25–26 (Double-Page Spread — \"The Cosmic Canopy: Sixty-Eight Steps to the Stars\")**\n\n- **Spread Composition:** Monumental climactic panoramic montage of the entire ASTRO-BOTANICA saga.\n  - **Bottom arc:** The historic foundation: Apollo Receiving Laboratory gloveboxes (OSD-855, 856, 877, 883); dark BRIC canisters (OSD-37, 121); early space shuttle flight decks.\n  - **Middle arc:** The ISS orbital garden: Veggie pillows glowing pink; APH chambers; suborbital rockets plunging through the mesosphere; EDEN ISS polar citadels in Antarctica.\n  - **Top arc & Climax:** The thriving interplanetary future! Deep-space transport ships to Mars with lush hydroponic green corridors; Artemis Base Camp under Earthrise; sprawling terraformed agricultural domes across the red plains of Mars.\n  - **Center:** The recurring hero cast—Doc B, Sprout, Myco, Statolith, Pixel, and Commander Astra—standing united, smiling as fresh vines and flowering crops reach toward the deep cosmic expanse.\n\n- **Caption:** *The roots of Earth have crossed the threshold of gravity. What was once impossible is now life. The frontier is green, and it will never die.*\n\n**Page 27**\n\n- **Panel 1:** Summary of the Sixty-Eight Volume Corpus: The four cardinal pillars of space plant physiology established:\n  1. *Gas transport and convective boundary layers.*\n  2. *Gravity perception and rapid calcium signaling.*\n  3. *Regolith geochemistry and elemental uptake.*\n  4. *Metabolic and epigenetic reprogramming.*\n\n**Page 28**\n\n- **Panel 1:** Open Science Data Repository (NASA OSDR) legacy: How making every flight accession open to global researchers transformed space biology from an elite privilege into a worldwide community movement.\n\n- **Panel 2:** High school students, university laboratories, and citizen scientists around the world downloading datasets and designing the next generation of space crop missions.\n\n**Page 29**\n\n- **Panel 1:** Commander Astra and Doc B looking out the cupola of the Mars transport vessel *Artemis Explorer*.\n\n- **Dialogue (Astra):** \"Next stop: Mars. And when we land, the first thing we plant is a seed.\"\n\n**Page 30**\n\n- **Panel 1:** Final full-page splash. A single, perfect, vibrant green sprout growing upright in weightlessness, unfurling its cotyledons toward a distant galaxy.\n\n- **Caption:** *ASTRO-BOTANICA: ZERO-G ROOTS — THE END OF THE BEGINNING. THE GALAXY AWAITS.*",
+      "script_markdown": "### Act I: The Sixty-Eight Missions of Stress (Pages 1–10)\n\n**Page 1**\n\n- **Panel 1 (Panoramic space establishing):** The International Space Station gliding gracefully over the blue curve of Earth. The sun flares gold against the solar array wings.\n\n- **Caption:** *For sixty-eight volumes, we have chronicled the battle. From the silent suffocation of OSD-7 to the Apollo regolith challenges and polar greenhouses, plants in space have fought for every millimeter of growth.*\n\n- **Panel 2:** Interior of the ISS Columbus module. Dr. Patrick Masson and astronaut researchers inspect the glowing green chambers of the Advanced Plant Habitat (APH).\n\n**Page 2**\n\n- **Panel 1:** The Historic Paradox: Wild-type *Arabidopsis thaliana* (Col-0) seedlings growing in microgravity. Even under optimal air, light, and water, their transcriptome behaves like a city under siege: thousands of stress genes fired up, cell walls loosened, and oxidative alarms flashing red.\n\n- **Dialogue (Doc B):** \"Col-0 survives spaceflight, but at an enormous metabolic cost. It treats weightlessness like an incurable wound.\"\n\n**Page 3**\n\n- **Panel 1:** The Hypothesis: What if we could alter a single ancient, evolutionarily conserved pathway to teach the plant that microgravity is not an emergency?\n\n- **Panel 2:** The target identified: **The Polyamine Metabolic Pathway**. Ancient aliphatic polycations—**Putrescine**, **Spermidine**, and **Spermine**—that bind DNA, stabilize membranes, and extinguish reactive oxygen species.\n\n**Page 4**\n\n- **Panel 1:** The Genetic Squads prepared on Phytagel plates:\n  - Line A: Wild-Type `Col-0` (The baseline control).\n  - Line B: `spds1 spds2` (Double mutants defective in spermidine synthase, maintaining elevated endogenous putrescine).\n  - Line C: `adc1 adc2` (Arginine decarboxylase mutants starved of putrescine).\n\n- **Panel 2:** Cassettes loaded into SpaceX-25 Dragon capsule, launched into low Earth orbit, and installed into the APH on Increment 67.\n\n**Page 5**\n\n- **Panel 1:** Day 3 in Orbit: Germination and root elongation inside the APH cassette.\n\n- **Panel 2:** In Col-0, primary roots show the classic erratic spaceflight skewing and wavy growth patterns, struggling with missing gravitational vectors.\n\n**Page 6**\n\n- **Panel 1:** In the adjacent lane: The `spds1 spds2` seedlings! Their roots grow straight, robust, and elongated, maintaining cellular symmetry despite zero gravity!\n\n- **SFX:** *VIGOR — ACCELERATED ELONGATION.*\n\n**Pages 7–8 (Double-Page Spread — \"The Anatomy of the Alarm\")**\n\n- **Spread Composition:** High-contrast intracellular battlefield inside the root apex.\n  - **Left side (Col-0 Wild-Type):** Red alert! Missing gravity causes calcium signal distortion; mitochondria leak superoxide and `H₂O₂`. Thousands of stress transcription factors (`WRKY40`, `HSFA2`, `DREB2A`) scream into action. Energy is diverted away from growth into emergency defenses.\n  - **Right side (`spds1 spds2` Putrescine Fortress):** Calm, radiant blue cyan glow. Dense pools of divalent putrescine molecules coat nucleic acids and plasma membranes, quenching free radicals before they can trigger genomic panic.\n  - **Center:** The metabolic fork diagram showing Arginine Decarboxylase (`ADC2`) generating putrescine while `SPDS` gatekeepers hold the line.\n\n- **Caption:** *Wild-type plants exhaust their genome fighting the ghost of gravity. The putrescine-altered plant simply neutralizes the spark.*\n\n**Page 9**\n\n- **Panel 1:** Day 6: Live fluorescent imaging of Reactive Oxygen Species (`ROS`).\n\n- **Panel 2:** Confocal microscopy through the APH window: Col-0 roots flare with intense yellow and red fluorescent dye (high oxidative stress). The `spds1 spds2` roots remain cool, dark green, and unburned.\n\n**Page 10**\n\n- **Panel 1:** The `adc1 adc2` tragedy: In the putrescine-deficient mutant, without the polyamine shield, cells suffer severe lipid peroxidation and stunted growth, proving that putrescine is the irreplaceable guardian.\n\n---\n\n### Act II: The Transcriptomic Miracle (Pages 11–22)\n\n**Page 11**\n\n- **Panel 1:** Day 8: Harvest inside the Portable Glovebox. Astronauts actuate KSC Fixation Tubes, flooding the cassettes with `RNAlater` before plunging them into the `-80°C` MELFI freezer.\n\n- **Panel 2:** Samples returned on Dragon splashdown to Kennedy Space Center and processed for ultra-deep stranded RNA-Seq.\n\n**Page 12**\n\n- **Panel 1:** The Bioinformatic Arena: PCA plots flashing onto monitors in Masson's laboratory.\n\n- **Panel 2:** The Shocking Divergence: While Col-0 exhibits over `2,400` differentially expressed genes (DEGs) between flight and ground, the `spds1 spds2` flight transcriptome sits remarkably close to its ground control!\n\n**Page 13**\n\n- **Panel 1:** The Transcriptomic Attenuation: Over `70%` of spaceflight-induced stress genes are completely dampened in the putrescine line!\n\n- **Dialogue (Patrick Masson):** \"Look at the heatmaps! Heat shock factors, wound signaling, cell wall degradation enzymes—they are almost completely quiet. The plant is in space, but its genome isn't panicking!\"\n\n**Page 14**\n\n- **Panel 1:** Analysis of cell wall remodelers: In Col-0, xyloglucan endotransglycosylases (`TCH4`, `XTHs`) and expansins are chaotically scrambled.\n\n- **Panel 2:** In `spds1 spds2`, cell wall biosynthesis continues with orderly terrestrial architecture. Pectin cross-linking remains firm.\n\n**Page 15**\n\n- **Panel 1:** The Mitochondrial Victory: Electron transport chain complexes (`Complex I` and `Complex IV`) maintain steady oxidative phosphorylation without the universal mitochondrial power-down seen in older missions.\n\n**Page 16**\n\n- **Panel 1:** HPLC-MS/MS biochemical quantification: Free putrescine concentrations measured in spaceflight tissues show a direct correlation with stress reduction (`R² = 0.89`).\n\n- **Panel 2:** Protein translation machinery (ribosomal subunit biogenesis) functions at `94%` of Earth ground rates—the highest translational efficiency ever recorded in orbit.\n\n**Page 17**\n\n- **Panel 1:** Root hair development: While spaceflight usually stunts root hair density, the putrescine-enhanced seedlings develop long, dense root hairs that optimize nutrient absorption from agar.\n\n**Page 18**\n\n- **Panel 1:** Cross-comparison with past volumes: Comparing OSD-971 against OSD-7, OSD-37, OSD-120, and OSD-615.\n\n- **Panel 2:** The realization: What plants spent sixty years trying to solve through clumsy ad-hoc adaptations can be systematically streamlined through polyamine metabolic tuning.\n\n**Page 19**\n\n- **Panel 1:** Epigenetic stability: Bisulfite sequencing shows that DNA methylation erosion across transposable elements is significantly reduced in the putrescine cohort.\n\n**Page 20**\n\n- **Panel 1:** The senescence assay: Col-0 leaves yellow and drop after three weeks in orbit. The `spds1 spds2` plants retain rich chlorophyll and stay green, ready to flower and set seeds.\n\n**Page 21**\n\n- **Panel 1:** The Universal Model: Why polyamine engineering works across all plant species—from model *Arabidopsis* to wheat, rice, potatoes, and tomatoes.\n\n**Page 22**\n\n- **Panel 1:** Su and Masson filing the definitive paper in *npj Microgravity*: *\"Genetic alterations of the putrescine metabolic pathway attenuate plant responses to spaceflight.\"*\n\n- **Caption:** *The code has been cracked. We no longer have to force Earth plants to endure space; we can give them the genetic armor to thrive.*\n\n---\n\n### Act III: The Green Frontier Unlocked (Pages 23–30)\n\n**Page 23**\n\n- **Panel 1:** The CoSE War Room: Doc B, Sprout, Myco, and Pixel surrounded by floating holographic screens displaying the sixty-eight volumes of ASTRO-BOTANICA.\n\n- **Dialogue (Doc B):** \"From the very first shuttle canisters of OSD-7 to the putrescine shield of OSD-971, every single accession was a stepping stone. Together, they form the complete handbook of orbital botany.\"\n\n**Page 24**\n\n- **Panel 1:** Sprout looking at her own green leaves, now glowing with a gentle, harmonious blue putrescine vector.\n\n- **Dialogue (Sprout):** \"We are no longer terrestrial refugees in space. We are Phytonauts. The stars belong to us too.\"\n\n**Pages 25–26 (Double-Page Spread — \"The Cosmic Canopy: Sixty-Eight Steps to the Stars\")**\n\n- **Spread Composition:** Monumental climactic panoramic montage of the entire ASTRO-BOTANICA saga.\n  - **Bottom arc:** The historic foundation: Apollo Receiving Laboratory gloveboxes (OSD-855, 856, 877, 883); dark BRIC canisters (OSD-37, 121); early space shuttle flight decks.\n  - **Middle arc:** The ISS orbital garden: Veggie pillows glowing pink; APH chambers; suborbital rockets plunging through the mesosphere; EDEN ISS polar citadels in Antarctica.\n  - **Top arc & Climax:** The thriving interplanetary future! Deep-space transport ships to Mars with lush hydroponic green corridors; Artemis Base Camp under Earthrise; sprawling terraformed agricultural domes across the red plains of Mars.\n  - **Center:** The recurring hero cast—Doc B, Sprout, Myco, Statolith, Pixel, and Commander Astra—standing united, smiling as fresh vines and flowering crops reach toward the deep cosmic expanse.\n\n- **Caption:** *The roots of Earth have crossed the threshold of gravity. What was once impossible is now life. The frontier is green, and it will never die.*\n\n**Page 27**\n\n- **Panel 1:** Summary of the Sixty-Eight Volume Corpus: The four cardinal pillars of space plant physiology established:\n  1. *Gas transport and convective boundary layers.*\n  2. *Gravity perception and rapid calcium signaling.*\n  3. *Regolith geochemistry and elemental uptake.*\n  4. *Metabolic and epigenetic reprogramming.*\n\n**Page 28**\n\n- **Panel 1:** Open Science Data Repository (NASA OSDR) legacy: How making every flight accession open to global researchers transformed space biology from an elite privilege into a worldwide community movement.\n\n- **Panel 2:** High school students, university laboratories, and citizen scientists around the world downloading datasets and designing the next generation of space crop missions.\n\n**Page 29**\n\n- **Panel 1:** Commander Astra and Doc B looking out the cupola of the Mars transport vessel *Artemis Explorer*.\n\n- **Dialogue (Astra):** \"Next stop: Mars. And when we land, the first thing we plant is a seed.\"\n\n**Page 30**\n\n- **Panel 1 [Full-Page Splash]:** A single, perfect, vibrant green *Arabidopsis* sprout (`OxPtADC` / `cuao3`) growing steadily in weightlessness, its putrescine-fortified tissues calm and unscarred by orbital transcriptomic noise as it unfurls its cotyledons toward a distant starfield.\n\n- **Caption:** *ASTRO-BOTANICA: ZERO-G ROOTS — SIXTY-EIGHT MISSIONS OF DISCOVERY CONVERGE ON ONE MOLECULAR SHIELD.*\n\n**Page 31**\n\n- **Panel 1 [Blueprint Infographic Left Spread]:** Clean cutaway diagram of the `OSD-971` polyamine metabolic circuit (`Arginine → [OxPtADC ↑] → Putrescine Pool ⊣ [cuao3 ↓ catabolism]`). Displays the `n = 72` NASA OSDR sample matrix across Flight vs. Ground Control, Roots vs. Shoots, and `Col-0` / `OxPtADC` / `cuao3` genotypes.\n\n- **Caption:** *Page 31 Mission Architecture: Boosting synthesis (`OxPtADC`) or slowing degradation (`cuao3`) elevates intracellular putrescine—quieting the plant's spaceflight transcriptomic alarm.*\n\n**Page 32**\n\n- **Panel 1 [Data Epilogue Right Spread]:** Side-by-side DEG volcano comparison showing wild-type `Col-0` erupting with hundreds of orbital stress genes while Put-accumulating `OxPtADC` and `cuao3` profiles stay remarkably calm. Bottom ticker links directly to `NASA OSDR: OSD-971` and hands off to the 22 Special Chronicles (`Vols. 69–90`).\n\n- **Dialogue (Dr. Patrick Masson):** \"When we tune the plant's own polyamine thermostat, spaceflight stops sounding like an emergency.\"\n\n- **SFX:** *SHUUU-QUIET (Transcriptomic attenuation locked)*",
       "raw_script_path": "docs/astro-botanica/volumes/vol-68-osd-971.md",
       "cover": {
         "has_raster": false,
@@ -47627,7 +47686,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Atmosphere & Hypobaria",
       "hardware": "KSC Controlled Environment Root Chambers with automated micro-purging gas bladders (nitrogen gas flushing reducing oxygen from 21% to <0.01% O₂ to simulate microgravity water-film root asphyxiation). Dissolved oxygen optical needle micro-sensors logging apoplastic pO₂ at 1-second intervals.",
       "hardware_short": "KSC Controlled Environment Root Chambers…",
-      "publication": "Banti V, Mafessoni F, Loreti E, Alpi A, Perata P.. The Heat-Inducible Transcription Factor HsfA2 Enhances Anoxia Tolerance in Arabidopsis (DOI: 10.1104/pp.109.149815)",
+      "publication": "Banti V, Mafessoni F, Loreti E, Alpi A, Perata P. The Heat-Inducible Transcription Factor HsfA2 Enhances Anoxia Tolerance in Arabidopsis (DOI: 10.1104/pp.109.149815)",
       "pages_count": 9,
       "pages": [
         {
@@ -49016,297 +49075,914 @@ window.ASTRO_BOTANICA_DATA = {
       "accession": "OSD-416",
       "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-416",
       "title": "The Epigenetic Imprint: Bisulfite Methylomes in Orbit",
-      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. met1-7 DNA methyltransferase mutant vs. elp2-5 histone acetyltransferase subunit mutant). High-coverage Whole-Genome Bisulfite Sequencing (WGBS) mapping 5-methylcytosine across CG, CHG, and CHH contexts, paired with stranded RNA-Seq.",
+      "organism": "Arabidopsis thaliana — Wild-Type Columbia-0 (Col-0) vs. elp2-5 (Elongator Complex Subunit 2 histone acetyltransferase/epigenomic mutant) vs. met1-7 (DNA Methyltransferase 1 CG-methylation mutant), dissected into Roots and Leaves (48 verified samples). Whole-Genome Bisulfite Sequencing (WGBS / Illumina) mapping single-base 5-methylcytosine (5mCyt) across CG, CHG, and CHH sequence contexts.",
       "organism_short": "Arabidopsis thaliana",
       "plant_family": "Brassicaceae (Arabidopsis/Mustard)",
       "world": "ISS",
       "study_domain": "Epigenetics & Methylome",
-      "hardware": "International Space Station (Kibo / US Lab) — Advanced Biological Research System (ABRS) and Veggie chambers. 12-day orbital growth on sterile nutrient phytagel plates. Ground controls conducted in the KSC Orbital Environmental Simulator (OES) with real-time 48-hour offset telemetry. Harvested into KFTs with RNAlater and deep-frozen at -80°C in MELFI.",
+      "hardware": "International Space Station (ISS) — APEX04-EPEX (Advanced Plant Experiment 04 — Epigenetic Expression) flown aboard Veggie flight growth hardware (10 cm × 10 cm vertical sterile Phytagel plates, continuous LED lighting, n = 48 verified biological samples across Flight vs. Ground Control in the KSC Orbital Environmental Simulator [OES]). Fixed on orbit into KSC Fixation Tubes (KFTs) with RNAlater and deep-frozen in MELFI (-80°C).",
       "hardware_short": "ISS Veggie Facility",
-      "publication": "Paul AL, Haveman N, Califar B, Ferl RJ.. Epigenomic Regulators Elongator Complex Subunit 2 and Methyltransferase 1 Differentially Condition the Spaceflight Response in Arabidopsis. (DOI: 10.3389/fpls.2021.691790 · PMID: 34589093)",
-      "pages_count": 9,
+      "publication": "Paul AL, Haveman N, Califar B, Ferl RJ. Epigenomic Regulators Elongator Complex Subunit 2 and Methyltransferase 1 Differentially Condition the Spaceflight Response in Arabidopsis. (DOI: 10.3389/fpls.2021.691790 · PMID: 34589093)",
+      "pages_count": 32,
       "pages": [
         {
           "page_label": "1",
-          "page_title": "",
-          "act": "Act I: The Hidden Layer (Pages 1–10)",
+          "page_title": "Splash: The Chromatin Loom",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
           "act_num": 1,
           "panels_count": 2,
           "panels": [
             {
               "panel_number": 1,
               "shot": "Wide Establishing Shot",
-              "description": "Deep inside the ABRS environmental chamber on the ISS. Green seedlings of Arabidopsis grow upside-down from an agar slab under bright white LED panels."
+              "description": "Inside the ISS Columbus/US Lab, glowing magenta-and-white LEDs of the Veggie facility illuminate racks of vertical 10 cm² Phytagel plates carrying APEX04-EPEX seedlings (Col-0, elp2-5, and met1-7)."
             },
             {
               "panel_number": 2,
-              "shot": "Dynamic Beat",
-              "description": "Molecular zoom into the double helix of Chromosome 1. Perched on the outer edge of cytosine rings are tiny carbon-and-hydrogen tags: methyl groups (-CH₃), standing like silent sentinels along the DNA track."
+              "shot": "Macro Nuclear Dive",
+              "description": "Plunging inside an orbital leaf cell nucleus: glowing DNA double helices wind around histone octamer spools studded with cyan (CG) and violet (CHH) methyl tags."
             }
           ],
-          "caption": "Beneath the sequence of A, T, C, and G lies another language: epigenetics. Chemical flags stamped onto the DNA that tell the cell which genes to read and which to lock away. What happens to this epigenetic code when gravity disappears?",
-          "sfx": null,
+          "caption": "Every cell carries the same four-letter DNA sequence. Yet in microgravity, plants rewrite the invisible punctuation marks sitting on top of the genome—the epigenome.",
+          "sfx": "SHUWA-GLOW (Veggie LED ignition)",
           "dialogue": [
             {
-              "speaker": "Dr. Paul",
-              "text": "Bisulfite sequencing data incoming from the NovaSeq. We're looking at single-base resolution across all forty million cytosines. And the spaceflight plants are losing their methyl marks!"
+              "speaker": "Dr. Anna-Lisa Paul",
+              "text": "APEX04-EPEX is live on Veggie. Forty-eight biological samples across Col-0, elp2-5, and met1-7—ready to map every single methylated cytosine in space."
             }
           ],
-          "summary": "Deep inside the ABRS environmental chamber on the ISS. Green seedlings of Arabidopsis grow upside-down from an agar slab under bright white LED panels. Molecular zoom into the double helix of Chromosome 1. Perched on the outer edge of cytosine rings are tiny carbon-and-hydrogen…"
+          "summary": "Inside the ISS Columbus/US Lab, glowing magenta-and-white LEDs of the Veggie facility illuminate racks of vertical 10 cm² Phytagel plates carrying APEX04-EPEX seedlings (Col-0, elp2-5, and met1-7)."
         },
         {
           "page_label": "2",
-          "page_title": "",
-          "act": "Act I: The Hidden Layer (Pages 1–10)",
+          "page_title": "The Pathogen Echo",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
           "act_num": 1,
           "panels_count": 2,
           "panels": [
             {
               "panel_number": 1,
-              "shot": "Establishing Shot",
-              "description": "Genome-wide methylation circos plot comparing Flight vs Ground."
+              "shot": "Split Lab View",
+              "description": "Left: Earth greenhouse where a leaf wards off a bacterial pathogen. Right: Sterile ISS Veggie plate where zero pathogens exist—yet orbital plants activate pathogen-defense genes anyway!"
             },
             {
               "panel_number": 2,
-              "shot": "Dynamic Beat",
-              "description": "The outer ring (Flight) shows dramatic blue dips—widespread cytosine hypomethylation, particularly across the pericentromeric heterochromatin and environmental stress gene promoters!"
+              "shot": "Close-Up / Data Console",
+              "description": "Historical GeneLab heatmaps flicker across the visor showing defense and cell-wall stress clusters flaring in microgravity."
             }
           ],
-          "caption": "Genome-wide methylation circos plot comparing Flight vs Ground.",
-          "sfx": "SHHH-UNLOCK (Demethylation & chromatin relaxation)",
+          "caption": "For a decade, space biologists noticed a paradox: plants in sterile orbital chambers turn on terrestrial pathogen-defense pathways. Could the epigenome be the switch?",
+          "sfx": null,
           "dialogue": [
             {
-              "speaker": "Bioinformatician",
-              "text": "Global CG methylation has dropped by four point two percent! CHG and CHH methylation are down by over twelve percent! The microgravity genome is relaxing its locks!"
+              "speaker": "Dr. Robert Ferl",
+              "text": "If spaceflight borrows terrestrial stress circuits, then knocking out the epigenomic regulators ELP2 and MET1 will reveal who holds the master key."
             }
           ],
-          "summary": "Genome-wide methylation circos plot comparing Flight vs Ground. The outer ring (Flight) shows dramatic blue dips—widespread cytosine hypomethylation, particularly across the pericentromeric heterochromatin and environmental stress gene promoters!"
+          "summary": "Left: Earth greenhouse where a leaf wards off a bacterial pathogen. Right: Sterile ISS Veggie plate where zero pathogens exist—yet orbital plants activate pathogen-defense genes anyway!"
         },
         {
           "page_label": "3",
-          "page_title": "",
-          "act": "Act I: The Hidden Layer (Pages 1–10)",
+          "page_title": "Meet the Two Mutants",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Character Cutaway",
+              "description": "Side-by-side schematic of the two molecular specialists: ELP2 (a glowing multi-subunit Elongator wrench loosening chromatin coils) vs. MET1 (a precision sentinel stamping 5mCyt methyl tags onto symmetrical CG rungs)."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Plate Inspection",
+              "description": "On Day 1 at the KSC Orbital Environmental Simulator (OES) and aboard ISS, all three genotypes (Col-0, elp2-5, met1-7) germinate cleanly along the Phytagel grid."
+            }
+          ],
+          "caption": "Side-by-side schematic of the two molecular specialists: ELP2 (a glowing multi-subunit Elongator wrench loosening chromatin coils) vs.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Squad Col-0",
+              "text": "Three lines on the same gel. Same light, same air—only our chromatin toolkits differ."
+            }
+          ],
+          "summary": "Side-by-side schematic of the two molecular specialists: ELP2 (a glowing multi-subunit Elongator wrench loosening chromatin coils) vs. MET1 (a precision sentinel stamping 5mCyt methyl tags onto symmetrical CG rungs)."
+        },
+        {
+          "page_label": "4",
+          "page_title": "Weightlessness Hits the Root Tip",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Microscopic Cutaway",
+              "description": "Day 4 in orbit. Without a 1g pull, Col-0 roots begin carving characteristic microgravity skewing arcs across the agar surface."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Close-Up / elp2-5 Root",
+              "description": "Beside them, elp2-5 roots stall noticeably, growing shorter and struggling to organize directional elongation."
+            }
+          ],
+          "caption": "Day 4 in orbit.",
+          "sfx": "GYURU... (Twisting root skew)",
+          "dialogue": [
+            {
+              "speaker": "Squad elp2-5",
+              "text": "Something's jammed in the chromatin gears! We sense microgravity, but our growth promoters won't unlock!"
+            }
+          ],
+          "summary": "Day 4 in orbit. Without a 1g pull, Col-0 roots begin carving characteristic microgravity skewing arcs across the agar surface. Beside them, elp2-5 roots stall noticeably, growing shorter and struggling to organize directional elongation."
+        },
+        {
+          "page_label": "5",
+          "page_title": "The Resilient Rebel (met1-7)",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Medium Shot",
+              "description": "Surprisingly, met1-7 seedlings—despite missing their main CG methyltransferase—unfurl crisp emerald cotyledons and drive steady primary roots across the flight plate."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Nuclear Zoom",
+              "description": "Inside met1-7 nuclei, CG rungs are bare, yet backup CHG and CHH methylation loops shimmer into action along stress-responsive loci."
+            }
+          ],
+          "caption": "Surprisingly, met1-7 seedlings—despite missing their main CG methyltransferase—unfurl crisp emerald cotyledons and drive steady primary roots across the flight plate.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Squad met1-7",
+              "text": "No CG stamps? No problem. Our open chromatin responds faster than wild-type!"
+            }
+          ],
+          "summary": "Surprisingly, met1-7 seedlings—despite missing their main CG methyltransferase—unfurl crisp emerald cotyledons and drive steady primary roots across the flight plate."
+        },
+        {
+          "page_label": "6",
+          "page_title": "Organ Split: Leaves vs. Roots",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Wide Botanical Diagram",
+              "description": "An Arabidopsis seedling divided cleanly by a bright laser line: aerial rosette leaves bathed in Veggie photons above; translucent roots anchoring along the wet gel below."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Telemetry Overlay",
+              "description": "Dual readouts prove roots and leaves experience microgravity as two completely different physical worlds."
+            }
+          ],
+          "caption": "Every APEX04-EPEX replicate will be dissected into separate leaf and root pools—yielding 48 distinct whole-genome methylomes in NASA OSDR OSD-416.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "An Arabidopsis seedling divided cleanly by a bright laser line: aerial rosette leaves bathed in Veggie photons above; translucent roots anchoring along the wet gel below."
+        },
+        {
+          "page_label": "7",
+          "page_title": "Mirror World at Kennedy Space Center",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
           "act_num": 1,
           "panels_count": 2,
           "panels": [
             {
               "panel_number": 1,
               "shot": "Establishing Shot",
-              "description": "In ground controls, transposable elements and ancient viral remnants are locked tightly in dense, hypermethylated heterochromatin."
+              "description": "Inside the Kennedy Space Center Orbital Environmental Simulator (OES), identical Veggie chambers replay ISS temperature, CO₂, and humidity on a real-time offset—under 1g gravity."
             },
             {
               "panel_number": 2,
-              "shot": "Dynamic Beat",
-              "description": "In orbit, ROS1 and DME demethylases strip methyl groups away; previously silent retrotransposons and stress response genes begin to whisper into RNA transcripts."
+              "shot": "Technician View",
+              "description": "Natasha Haveman verifies environmental parity curves between ISS telemetry and OES ground controls."
             }
           ],
-          "caption": "Weightlessness unlocks the genomic archive, granting the plant extreme transcriptional flexibility.",
+          "caption": "Inside the Kennedy Space Center Orbital Environmental Simulator (OES), identical Veggie chambers replay ISS temperature, CO₂, and humidity on a real-time offset—under 1g gravity.",
           "sfx": null,
-          "dialogue": [],
-          "summary": "In ground controls, transposable elements and ancient viral remnants are locked tightly in dense, hypermethylated heterochromatin. In orbit, ROS1 and DME demethylases strip methyl groups away; previously silent retrotransposons and stress response genes begin to whisper into RNA…"
+          "dialogue": [
+            {
+              "speaker": "Natasha Haveman",
+              "text": "Temperature and CO₂ match to the decimal. Every methylome shift we detect belongs strictly to spaceflight."
+            }
+          ],
+          "summary": "Inside the Kennedy Space Center Orbital Environmental Simulator (OES), identical Veggie chambers replay ISS temperature, CO₂, and humidity on a real-time offset—under 1g gravity."
         },
         {
-          "page_label": "4–10",
-          "page_title": "",
-          "act": "Act I: The Hidden Layer (Pages 1–10)",
+          "page_label": "8",
+          "page_title": "Day 11: Divergent Morphologies",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
           "act_num": 1,
-          "panels_count": 4,
-          "panels": [],
-          "caption": "Testing the mutant squads in orbit: In met1-7: The plant already lacks CG methylation on Earth.",
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "High-Contrast Overhead Plate Photo",
+              "description": "Full-plate comparison just before harvest: Col-0 and met1-7 form thriving rosettes, while flight elp2-5 exhibits unmistakable developmental stunting compared to its 1g ground twin."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Close-Up",
+              "description": "Fine ink stippling highlights dwarfed hypocotyls and shortened root zones in orbital elp2-5."
+            }
+          ],
+          "caption": "Loss of ELP2 turns microgravity from a manageable challenge into a severe developmental roadblock.",
           "sfx": null,
           "dialogue": [],
-          "summary": "Testing the mutant squads in orbit: In met1-7: The plant already lacks CG methylation on Earth. In spaceflight, without the MET1 stabilizing anchor, gene expression explodes into chaos; over 4,000 genes fluctuate wildly! In elp2-5: Without histone acetylation, chromatin remains…"
+          "summary": "Full-plate comparison just before harvest: Col-0 and met1-7 form thriving rosettes, while flight elp2-5 exhibits unmistakable developmental stunting compared to its 1g ground twin."
         },
         {
-          "page_label": "11–15",
-          "page_title": "",
-          "act": "Act II: Epigenetic Memory Across Generations (Pages 11–20)",
+          "page_label": "9",
+          "page_title": "KFT Fixation Lock",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Action Beat",
+              "description": "An astronaut inside the ISS US Lab slides the APEX04-EPEX plates into KSC Fixation Tubes (KFTs) and actuates the plungers, flooding the tissues with RNAlater to freeze every nucleic acid state instantly."
+            },
+            {
+              "panel_number": 2,
+              "shot": "MELFI Cryo-Vault",
+              "description": "Frost billows as the sealed tubes lock into the -80°C MELFI freezer awaiting Dragon splashdown."
+            }
+          ],
+          "caption": "An astronaut inside the ISS US Lab slides the APEX04-EPEX plates into KSC Fixation Tubes (KFTs) and actuates the plungers, flooding the tissues with RNAlater to freeze every nucleic…",
+          "sfx": "KACHIT-HISSSS (KFT plunger actuation)",
+          "dialogue": [],
+          "summary": "An astronaut inside the ISS US Lab slides the APEX04-EPEX plates into KSC Fixation Tubes (KFTs) and actuates the plungers, flooding the tissues with RNAlater to freeze every nucleic acid state instantly."
+        },
+        {
+          "page_label": "10",
+          "page_title": "Splashdown to the Bisulfite Bench",
+          "act": "Act I: The Second Code in Orbit (Pages 1–10)",
           "act_num": 2,
-          "panels_count": 4,
-          "panels": [],
-          "caption": "Whole-genome bisulfite sequencing at single-cytosine resolution: Identification of 2,450 Differentially Methylated Regions (DMRs).",
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Wide Transition",
+              "description": "Cargo Dragon parachutes descend over the Atlantic; hours later, frozen KFTs arrive at the University of Florida Space Plants Lab."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Macro Lab Shot",
+              "description": "Precision micro-dissection separates roots from leaves before DNA extraction and sodium bisulfite conversion begin."
+            }
+          ],
+          "caption": "Act I complete. Now comes the chemical test that makes invisible methyl marks readable at single-base resolution.",
           "sfx": null,
           "dialogue": [],
-          "summary": "Whole-genome bisulfite sequencing at single-cytosine resolution: Identification of 2,450 Differentially Methylated Regions (DMRs). Specific hypomethylation at the promoters of HSP70, PRX34, and WRKY transcription factors. The loss of methyl marks directly correlates with the…"
+          "summary": "Cargo Dragon parachutes descend over the Atlantic; hours later, frozen KFTs arrive at the University of Florida Space Plants Lab. Precision micro-dissection separates roots from leaves before DNA extraction and sodium bisulfite conversion begin."
         },
         {
-          "page_label": "16–20",
-          "page_title": "",
-          "act": "Act II: Epigenetic Memory Across Generations (Pages 11–20)",
+          "page_label": "11",
+          "page_title": "The Bisulfite Alchemy",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
           "act_num": 2,
-          "panels_count": 3,
-          "panels": [],
-          "caption": "The Inheritance Question: Seeds harvested from spaceflight plants were returned to Earth and grown under normal 1g gravity.",
-          "sfx": null,
-          "dialogue": [],
-          "summary": "The Inheritance Question: Seeds harvested from spaceflight plants were returned to Earth and grown under normal 1g gravity. The \"Spaceflight Epigenetic Echo\": Second-generation seedlings retain 35% of the hypomethylated marks inherited from their orbital parents, exhibiting…"
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Molecular Mechanism Diagram",
+              "description": "Sodium bisulfite washes over purified orbital DNA: unmethylated cytosines (C) convert chemically into uracil (U, sequenced as T), while methylated 5mCyt bases resist conversion and remain C!"
+            },
+            {
+              "panel_number": 2,
+              "shot": "Sequencer Glow",
+              "description": "Illumina flow cells pulse with four-color fluorescence across n = 48 bisulfite libraries."
+            }
+          ],
+          "caption": "Sodium bisulfite washes over purified orbital DNA: unmethylated cytosines (C) convert chemically into uracil (U, sequenced as T), while methylated 5mCyt bases resist conversion and…",
+          "sfx": "ZRRR-BEEP (Illumina sequencing run)",
+          "dialogue": [
+            {
+              "speaker": "Brandon Califar",
+              "text": "Bisulfite conversion efficiency above ninety-nine percent. Single-base methylomes for all forty-eight samples are streaming in!"
+            }
+          ],
+          "summary": "Sodium bisulfite washes over purified orbital DNA: unmethylated cytosines (C) convert chemically into uracil (U, sequenced as T), while methylated 5mCyt bases resist conversion and remain C!"
         },
         {
-          "page_label": "21–25",
-          "page_title": "",
-          "act": "Act III: The Epigenetic Space Crop (Pages 21–32)",
-          "act_num": 3,
-          "panels_count": 3,
-          "panels": [],
-          "caption": "Breeding space crops through epigenetic priming: Rather than genetic modification (CRISPR), space crops can be \"epigenetically conditioned\" in orbit.",
+          "page_label": "12",
+          "page_title": "Decoding the Three Contexts: CG, CHG, CHH",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Infographic Cutaway",
+              "description": "Three distinct lanes of cytosine methylation illuminated along a chromosome: symmetrical CG (maintained by MET1), CHG (guided by CMT3), and asymmetrical CHH (steered dynamically by RNA-directed DNA methylation)."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Wild-Type Col-0 Profile",
+              "description": "In spaceflight Col-0, methylation shifts are strongly organ-specific—leaves and roots rewrite completely different genomic neighborhoods!"
+            }
+          ],
+          "caption": "Spaceflight does not paint the genome with a single brush; it edits CG, CHG, and CHH contexts differently in leaves versus roots.",
           "sfx": null,
           "dialogue": [],
-          "summary": "Breeding space crops through epigenetic priming: Rather than genetic modification (CRISPR), space crops can be \"epigenetically conditioned\" in orbit. Exposing seed stocks to microgravity primes their DNA methylomes for high stress resilience."
+          "summary": "Three distinct lanes of cytosine methylation illuminated along a chromosome: symmetrical CG (maintained by MET1), CHG (guided by CMT3), and asymmetrical CHH (steered dynamically by RNA-directed DNA methylation)."
         },
         {
-          "page_label": "26–30",
-          "page_title": "",
-          "act": "Act III: The Epigenetic Space Crop (Pages 21–32)",
+          "page_label": "13",
+          "page_title": "Hypomethylation Waves in Orbital Leaves",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Chromosomal Horizon",
+              "description": "Across Col-0 spaceflight leaves, glowing differentially methylated regions (DMRs) appear over stress-response promoters and cell-wall biogenesis loci."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Data Callout",
+              "description": "Methylation changes in Col-0 leaves correlate tightly with plastid, light-response, and reactive-oxygen defense pathways."
+            }
+          ],
+          "caption": "Across Col-0 spaceflight leaves, glowing differentially methylated regions (DMRs) appear over stress-response promoters and cell-wall biogenesis loci.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Dr. Anna-Lisa Paul",
+              "text": "Look at the Col-0 leaves—thousands of context-specific DMRs shifting dynamically in microgravity."
+            }
+          ],
+          "summary": "Across Col-0 spaceflight leaves, glowing differentially methylated regions (DMRs) appear over stress-response promoters and cell-wall biogenesis loci. Methylation changes in Col-0 leaves correlate tightly with plastid, light-response, and reactive-oxygen defense pathways."
+        },
+        {
+          "page_label": "14",
+          "page_title": "The Root Methylome Battlefield",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Deep Root Cutaway",
+              "description": "Inside Col-0 flight roots, methylation remodeling surges across CHH islands flanking cell-wall remodeling genes and mechanosensing factors."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Close-Up",
+              "description": "A chromatin loop opens cleanly, allowing RNA Polymerase II to transcribe cell-wall flexibility genes."
+            }
+          ],
+          "caption": "Inside Col-0 flight roots, methylation remodeling surges across CHH islands flanking cell-wall remodeling genes and mechanosensing factors.",
+          "sfx": "PAKKK! (Chromatin loop de-condensation)",
+          "dialogue": [],
+          "summary": "Inside Col-0 flight roots, methylation remodeling surges across CHH islands flanking cell-wall remodeling genes and mechanosensing factors. A chromatin loop opens cleanly, allowing RNA Polymerase II to transcribe cell-wall flexibility genes."
+        },
+        {
+          "page_label": "15",
+          "page_title": "Inside the Locked elp2-5 Genome",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Dramatic Shadow Panel",
+              "description": "Switching to the elp2-5 methylome: instead of adaptive loosening, hundreds of stress and defense promoters show aberrant hyper-methylation and disrupted chromatin remodeling!"
+            },
+            {
+              "panel_number": 2,
+              "shot": "Molecular Clash",
+              "description": "Without ELP2, the Elongator complex cannot acetylate histones or guide normal demethylation—leaving spaceflight defense genes out of sync."
+            }
+          ],
+          "caption": "Switching to the elp2-5 methylome: instead of adaptive loosening, hundreds of stress and defense promoters show aberrant hyper-methylation and disrupted chromatin remodeling!",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Squad elp2-5",
+              "text": "Our promoters are sealed shut! The orbital stress signal arrived, but the chromatin doors wouldn't open!"
+            }
+          ],
+          "summary": "Switching to the elp2-5 methylome: instead of adaptive loosening, hundreds of stress and defense promoters show aberrant hyper-methylation and disrupted chromatin remodeling!"
+        },
+        {
+          "page_label": "16",
+          "page_title": "elp2-5 Roots vs. Leaves Divergence",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Split Heatmap",
+              "description": "Comparing elp2-5 flight leaves and roots reveals massive divergence from Col-0—confirming that ELP2 shapes how the plant translates microgravity into epigenetic memory."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Morphometric Overlay",
+              "description": "Overlaid silhouettes link elp2-5's distorted methylome directly to its stunted orbital root architecture."
+            }
+          ],
+          "caption": "Without ELP2, epigenetic dysregulation translates directly into crippled physical growth in space.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Comparing elp2-5 flight leaves and roots reveals massive divergence from Col-0—confirming that ELP2 shapes how the plant translates microgravity into epigenetic memory."
+        },
+        {
+          "page_label": "17",
+          "page_title": "The met1-7 Paradox Unveiled",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Luminous Genome Vista",
+              "description": "Now the screen switches to met1-7: global CG methylation plummets near zero across chromosomes, as expected for a MET1 knockout."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Shocked Bioinformatician",
+              "description": "Yet instead of collapsing in spaceflight, met1-7 shows dramatically fewer aberrant spaceflight stress phenotypes than elp2-5!"
+            }
+          ],
+          "caption": "Now the screen switches to met1-7: global CG methylation plummets near zero across chromosomes, as expected for a MET1 knockout.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Dr. Robert Ferl",
+              "text": "Fascinating—stripping CG maintenance via met1-7 actually pre-conditions parts of the genome rather than paralyzing it in orbit!"
+            }
+          ],
+          "summary": "Now the screen switches to met1-7: global CG methylation plummets near zero across chromosomes, as expected for a MET1 knockout. Yet instead of collapsing in spaceflight, met1-7 shows dramatically fewer aberrant spaceflight stress phenotypes than elp2-5!"
+        },
+        {
+          "page_label": "18",
+          "page_title": "Compensatory CHH & CHG Armor",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Molecular Close-Up",
+              "description": "Inside met1-7 spaceflight roots, CHH and CHG methylation pathways surge in localized bursts around transposable elements, preventing genomic chaos even without MET1."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Pathway Vector",
+              "description": "Small interfering RNAs (24-nt siRNAs) guide DRM2 methyltransferases to patrol transposon boundaries."
+            }
+          ],
+          "caption": "Inside met1-7 spaceflight roots, CHH and CHG methylation pathways surge in localized bursts around transposable elements, preventing genomic chaos even without MET1.",
+          "sfx": "SHING! (siRNA transposon shield)",
+          "dialogue": [],
+          "summary": "Inside met1-7 spaceflight roots, CHH and CHG methylation pathways surge in localized bursts around transposable elements, preventing genomic chaos even without MET1."
+        },
+        {
+          "page_label": "19",
+          "page_title": "Transposable Elements on the Edge",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Dark Screentone Inset",
+              "description": "Ancient retrotransposons—normally sleeping inside dense pericentromeric heterochromatin—stir faintly under spaceflight stress."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Contrast Strip",
+              "description": "In Col-0, targeted CHH methylation keeps transposons quiet; in met1-7, selective pericentromeric loss tests the boundary between adaptation and instability."
+            }
+          ],
+          "caption": "Epigenetic control is a tightrope walk: loosen chromatin enough to adapt to space, but keep mobile transposons locked down.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Ancient retrotransposons—normally sleeping inside dense pericentromeric heterochromatin—stir faintly under spaceflight stress. In Col-0, targeted CHH methylation keeps transposons quiet; in met1-7, selective pericentromeric loss tests the boundary between adaptation and…"
+        },
+        {
+          "page_label": "20",
+          "page_title": "Linking Methylation to Gene Expression",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Multi-Omics Overlay",
+              "description": "Aligning OSD-416 WGBS methylomes directly over companion APEX04-EPEX RNA-Seq tracks reveals clear intersections at cell-wall, oxidative-stress, and pathogen-response genes."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Focus Gene Callout",
+              "description": "Differentially methylated genes (DMGs) overlap strongly with differentially expressed genes (DEGs) specifically in elp2-5 and Col-0 roots."
+            }
+          ],
+          "caption": "Aligning OSD-416 WGBS methylomes directly over companion APEX04-EPEX RNA-Seq tracks reveals clear intersections at cell-wall, oxidative-stress, and pathogen-response genes.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Natasha Haveman",
+              "text": "It's not random noise—promoter and gene-body methylation directly condition which genes fire in microgravity."
+            }
+          ],
+          "summary": "Aligning OSD-416 WGBS methylomes directly over companion APEX04-EPEX RNA-Seq tracks reveals clear intersections at cell-wall, oxidative-stress, and pathogen-response genes."
+        },
+        {
+          "page_label": "21",
+          "page_title": "The Pathogen-Spaceflight Bridge Proven",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Conceptual Diagram",
+              "description": "Two luminous bridges converge on ELP2: Terrestrial Biotic Defense on the left, Microgravity Acclimation on the right."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Close-Up",
+              "description": "ELP2 stands revealed as a shared master hub that spaceflight plants co-opt to reorganize their epigenome."
+            }
+          ],
+          "caption": "The mystery from Page 2 is solved: spaceflight taps directly into ancient epigenomic defense regulators like ELP2.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Two luminous bridges converge on ELP2: Terrestrial Biotic Defense on the left, Microgravity Acclimation on the right. ELP2 stands revealed as a shared master hub that spaceflight plants co-opt to reorganize their epigenome."
+        },
+        {
+          "page_label": "22",
+          "page_title": "Quality Control Across All 48 Samples",
+          "act": "Act II: The Bisulfite Decoding (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Data Matrix Wall",
+              "description": "Principal Component Analysis (PCA) clusters all 48 verified OSD-416 methylomes cleanly by Genotype (Col-0, elp2-5, met1-7), Organ (Root, Leaf), and Environment (Spaceflight, Ground Control)."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Verification Stamp",
+              "description": "Every raw FASTQ and methylation call table is deposited openly into NASA OSDR as OSD-416 (PMID: 34589093)."
+            }
+          ],
+          "caption": "Principal Component Analysis (PCA) clusters all 48 verified OSD-416 methylomes cleanly by Genotype (Col-0, elp2-5, met1-7), Organ (Root, Leaf), and Environment (Spaceflight, Ground…",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Principal Component Analysis (PCA) clusters all 48 verified OSD-416 methylomes cleanly by Genotype (Col-0, elp2-5, met1-7), Organ (Root, Leaf), and Environment (Spaceflight, Ground Control)."
+        },
+        {
+          "page_label": "23",
+          "page_title": "Why Epigenetics Matters for Mars",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
           "act_num": 3,
           "panels_count": 2,
-          "panels": [],
-          "caption": "The mission debrief: From Arabidopsis models to Martian wheat and potatoes.",
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Wide Orbital Vision",
+              "description": "A deep-space transit greenhouse orbiting toward Mars. Multi-generational crops must not only survive Flight Generation 1—they must pass stable chromatin memory to their seeds!"
+            },
+            {
+              "panel_number": 2,
+              "shot": "Seed Cutaway",
+              "description": "Inside a developing orbital embryo, MET1 and ELP2 safeguard epigenetic fidelity across cell divisions."
+            }
+          ],
+          "caption": "A deep-space transit greenhouse orbiting toward Mars.",
           "sfx": null,
-          "dialogue": [],
-          "summary": "The mission debrief: From Arabidopsis models to Martian wheat and potatoes. Final panel: An astronaut botanist in the ISS Cupola holding a seed packet labeled Generation 3 — Epigenetically Adapted, knowing that the memory of spaceflight is now written into the very chromatin of…"
+          "dialogue": [
+            {
+              "speaker": "Dr. Anna-Lisa Paul",
+              "text": "If spaceflight alters cytosine methylation in parental tissues, understanding MET1 and ELP2 tells us how future space crops will inherit—or reset—those marks."
+            }
+          ],
+          "summary": "A deep-space transit greenhouse orbiting toward Mars. Multi-generational crops must not only survive Flight Generation 1—they must pass stable chromatin memory to their seeds!"
         },
         {
-          "page_label": "31–32",
-          "page_title": "",
-          "act": "Act III: The Epigenetic Space Crop (Pages 21–32)",
+          "page_label": "24",
+          "page_title": "Designing Epigenetically Agile Crops",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
           "act_num": 3,
           "panels_count": 2,
-          "panels": [],
-          "caption": "Infographic spread: The Single-Base Bisulfite Methylation Landscape and Epigenetic Shock-Absorber Circuit.",
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Blueprint Panel",
+              "description": "Space agronomists compare breeding strategies: protecting ELP2 function to preserve spaceflight adaptability while tuning promoter methylation for stress resilience."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Greenhouse Glow",
+              "description": "Rows of vigorous spaceflight seedlings thrive under tuned Veggie LED spectra."
+            }
+          ],
+          "caption": "Epigenome engineering offers a faster, reversible toolkit for space agriculture than rewriting DNA sequences alone.",
           "sfx": null,
           "dialogue": [],
-          "summary": "Infographic spread: The Single-Base Bisulfite Methylation Landscape and Epigenetic Shock-Absorber Circuit."
+          "summary": "Space agronomists compare breeding strategies: protecting ELP2 function to preserve spaceflight adaptability while tuning promoter methylation for stress resilience."
+        },
+        {
+          "page_label": "25",
+          "page_title": "Comparing OSD-416 with OSD-217 (Vol. 23)",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Archival Link Panel",
+              "description": "Side-by-side timeline connecting APEX03-2 (OSD-217, Vol. 23 — first wild-type spaceflight methylome) to APEX04-EPEX (OSD-416, Vol. 74 — causal mutant dissection via elp2-5 and met1-7)."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Data Progression",
+              "description": "From observing that spaceflight changes DNA methylation to proving which epigenomic enzymes drive the response."
+            }
+          ],
+          "caption": "Side-by-side timeline connecting APEX03-2 (OSD-217, Vol.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Brandon Califar",
+              "text": "OSD-217 showed us the methylation veil exists. OSD-416 showed us who weaves it."
+            }
+          ],
+          "summary": "Side-by-side timeline connecting APEX03-2 (OSD-217, Vol. 23 — first wild-type spaceflight methylome) to APEX04-EPEX (OSD-416, Vol. 74 — causal mutant dissection via elp2-5 and met1-7)."
+        },
+        {
+          "page_label": "26",
+          "page_title": "Organ-Specific Epigenomic Signatures",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Botanical Silhouette",
+              "description": "Translucent leaf canopy glowing cyan (CG/CHG shifts) above a luminous emerald root network (CHH adaptive bursts)."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Legend Strip",
+              "description": "Roots and leaves deploy distinct epigenomic programs to balance light capture above with mechanical anchorage below."
+            }
+          ],
+          "caption": "Translucent leaf canopy glowing cyan (CG/CHG shifts) above a luminous emerald root network (CHH adaptive bursts).",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Translucent leaf canopy glowing cyan (CG/CHG shifts) above a luminous emerald root network (CHH adaptive bursts). Roots and leaves deploy distinct epigenomic programs to balance light capture above with mechanical anchorage below."
+        },
+        {
+          "page_label": "27",
+          "page_title": "Open Science Reanalysis Power",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Global Classroom Montage",
+              "description": "University students and citizen bioinformaticians worldwide download OSD-416 bisulfite tables from NASA OSDR to test new hypotheses on transposon stability and chromatin accessibility."
+            },
+            {
+              "panel_number": 2,
+              "shot": "HUD Banner",
+              "description": "NASA OSDR: OSD-416 · 48 VERIFIED SAMPLES · OPEN ACCESS."
+            }
+          ],
+          "caption": "University students and citizen bioinformaticians worldwide download OSD-416 bisulfite tables from NASA OSDR to test new hypotheses on transposon stability and chromatin accessibility.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "University students and citizen bioinformaticians worldwide download OSD-416 bisulfite tables from NASA OSDR to test new hypotheses on transposon stability and chromatin accessibility."
+        },
+        {
+          "page_label": "28",
+          "page_title": "Echoes into the Radiation Chronicles",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Foreshadowing Beat",
+              "description": "A glowing MET1 strand bridges smoothly toward Volume 90 (OSD-782), where cytosine methylation meets chronic cosmic radiation and ethylene signaling!"
+            }
+          ],
+          "caption": "Microgravity is only half of deep space. Ahead in Volume 90, MET1 will face ionizing radiation itself.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "A glowing MET1 strand bridges smoothly toward Volume 90 (OSD-782), where cytosine methylation meets chronic cosmic radiation and ethylene signaling!"
+        },
+        {
+          "page_label": "29",
+          "page_title": "The Living Second Code",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Poetic Wide Shot",
+              "description": "An astronaut's gloved hand floats gently beside a Veggie cassette while Earth's curved blue horizon glows outside the cupola; ghostly helical chromatin ribbons shimmer across the glass reflection."
+            }
+          ],
+          "caption": "An astronaut's gloved hand floats gently beside a Veggie cassette while Earth's curved blue horizon glows outside the cupola; ghostly helical chromatin ribbons shimmer across the glass…",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Dr. Robert Ferl",
+              "text": "Plants don't just endure space passively—they annotate their own chromosomes to learn how to live among the stars."
+            }
+          ],
+          "summary": "An astronaut's gloved hand floats gently beside a Veggie cassette while Earth's curved blue horizon glows outside the cupola; ghostly helical chromatin ribbons shimmer across the glass reflection."
+        },
+        {
+          "page_label": "30",
+          "page_title": "Climax Splash: The Epigenetic Imprint",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Full-Page Splash",
+              "description": "A radiant Arabidopsis seedling suspended in zero-g, its roots trailing delicate silver-blue DNA-and-histone filaments studded with luminous 5mCyt constellations."
+            }
+          ],
+          "caption": "A radiant Arabidopsis seedling suspended in zero-g, its roots trailing delicate silver-blue DNA-and-histone filaments studded with luminous 5mCyt constellations.",
+          "sfx": "KIRA-SHUWA (Chromatin equilibrium achieved)",
+          "dialogue": [],
+          "summary": "A radiant Arabidopsis seedling suspended in zero-g, its roots trailing delicate silver-blue DNA-and-histone filaments studded with luminous 5mCyt constellations."
+        },
+        {
+          "page_label": "31",
+          "page_title": "Mission Architecture & APEX04-EPEX Matrix",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Left Infographic Spread",
+              "description": "Complete experimental matrix for OSD-416: 3 Genotypes (Col-0, elp2-5, met1-7) × 2 Organs (Root, Leaf) × 2 Environments (ISS Veggie Flight, KSC OES Ground Control) × 4 Replicates = 48 Verified WGBS Samples."
+            }
+          ],
+          "caption": "Complete experimental matrix for OSD-416: 3 Genotypes (Col-0, elp2-5, met1-7) × 2 Organs (Root, Leaf) × 2 Environments (ISS Veggie Flight, KSC OES Ground Control) × 4 Replicates = 48…",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Complete experimental matrix for OSD-416: 3 Genotypes (Col-0, elp2-5, met1-7) × 2 Organs (Root, Leaf) × 2 Environments (ISS Veggie Flight, KSC OES Ground Control) × 4 Replicates = 48 Verified WGBS Samples."
+        },
+        {
+          "page_label": "32",
+          "page_title": "Data Epilogue & Verified Citation Ledger",
+          "act": "Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Right Infographic Spread",
+              "description": "Summary of Paul et al. (2021) Front. Plant Sci. 12:691790 (PMID: 34589093) confirming differential conditioning of spaceflight adaptation by ELP2 and MET1."
+            }
+          ],
+          "caption": "Summary of Paul et al.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Summary of Paul et al. (2021) Front. Plant Sci. 12:691790 (PMID: 34589093) confirming differential conditioning of spaceflight adaptation by ELP2 and MET1."
         }
       ],
       "molecular_cast": [
         {
-          "name": "The Master Methylator (MET1)",
-          "symbol": "MET1",
-          "role": "Enzyme / Remodeler",
-          "direction": "neutral",
-          "description": "METHYLTRANSFERASE 1. The primary DNA methyltransferase responsible for maintaining symmetrical CG cytosine methylation across the nuclear genome."
-        },
-        {
-          "name": "The Chromatin Remodeler (ELP2)",
-          "symbol": "ELP2",
-          "role": "Enzyme / Remodeler",
+          "name": "Squad Col-0 (Wild-Type Benchmark)",
+          "symbol": "Col-0",
+          "role": "Plant / Mutant Line",
           "direction": "dual",
-          "description": "ELONGATOR COMPLEX SUBUNIT 2. Histone acetyltransferase component that loosens chromatin packing around RNA Polymerase II."
+          "description": "Reference Arabidopsis seedlings demonstrating organ-specific DNA methylome remodeling—diverging sharply between orbital leaves and roots."
         },
         {
-          "name": "The DNA Demethylation Erasers (ROS1, DME)",
-          "symbol": "ROS1",
+          "name": "Squad elp2-5 (The Epigenetically Locked)",
+          "symbol": "elp2-5",
+          "role": "Plant / Mutant Line",
+          "direction": "down",
+          "description": "Mutant seedlings showing stunted, severely compromised development in orbit compared to terrestrial controls, proving ELP2 is indispensable for spaceflight physiological acclimation."
+        },
+        {
+          "name": "Squad met1-7 (The Demethylated Pioneer)",
+          "symbol": "met1-7",
+          "role": "Plant / Mutant Line",
+          "direction": "down",
+          "description": "Mutant seedlings with globally depleted CG methylation that nevertheless mount surprisingly robust orbital survival through alternative non-CG (CHG/CHH) pathways."
+        },
+        {
+          "name": "The 5-Methylcytosine Marks (5mCyt — CG, CHG, CHH)",
+          "symbol": "5mCyt",
           "role": "Enzyme / Remodeler",
           "direction": "neutral",
-          "description": "5-methylcytosine DNA glycosylases actively excising methyl groups from stress-responsive promoters in microgravity."
+          "description": "Chemical methyl flags decorating cytosine bases; acting as a dynamic second layer of instruction above the DNA sequence."
         },
         {
-          "name": "Dr. Anna-Lisa Paul & Dr. Robert J. Ferl",
+          "name": "Dr. Anna-Lisa Paul, Dr. Robert J. Ferl, Natasha Haveman & Brandon Califar",
           "symbol": "Dr. Paul",
           "role": "Researcher / Crew",
           "direction": "neutral",
-          "description": "Epigenetic cartographers charting the second layer of the genetic code in the weightless environment of space."
+          "description": "University of Florida spaceflight epigenomics pioneers executing APEX04-EPEX aboard the ISS."
         }
       ],
       "key_metrics": [
         {
-          "label": "CG Context (Genome-Wide)",
-          "value": "24.8% ± 0.3%",
-          "detail": "Global de-repression of stress loci",
-          "trend": "down",
-          "score": 25,
-          "col_header": "Ground Control Methylation"
+          "label": "Col-0 Wild-Type",
+          "value": "Organ-specific CG, CHG & CHH DMR shifts",
+          "detail": "Dynamic epigenetic tuning across leaves and roots",
+          "trend": "up",
+          "score": 72,
+          "col_header": "Methylome Remodeling (OSD-416)"
         },
         {
-          "label": "CHG Context (Heterochromatin)",
-          "value": "11.2% ± 0.2%",
-          "detail": "Transposable element accessibility",
-          "trend": "down",
-          "score": 25,
-          "col_header": "Ground Control Methylation"
+          "label": "elp2-5 (Elongator Mutant)",
+          "value": "Disrupted stress-gene methylation & chromatin…",
+          "detail": "ELP2 is required for healthy spaceflight acclimation",
+          "trend": "up",
+          "score": 72,
+          "col_header": "Methylome Remodeling (OSD-416)"
         },
         {
-          "label": "CHH Context (Promoters)",
-          "value": "3.4% ± 0.1%",
-          "detail": "Rapid activation of environmental genes",
-          "trend": "down",
-          "score": 25,
-          "col_header": "Ground Control Methylation"
+          "label": "met1-7 (CG Methyltransferase)",
+          "value": "Global CG methylation loss; compensatory…",
+          "detail": "Loss of CG maintenance alters—not breaks—space response",
+          "trend": "up",
+          "score": 72,
+          "col_header": "Methylome Remodeling (OSD-416)"
         },
         {
-          "label": "met1-7 Mutant Phenotype",
-          "value": "Unmethylated on Earth",
-          "detail": "Proves MET1 acts as spaceflight buffer",
+          "label": "Sample Scope (APEX04-EPEX)",
+          "value": "48 verified WGBS Illumina methylomes",
+          "detail": "Published in Front. Plant Sci. 2021 (PMID: 34589093)",
           "trend": "down",
           "score": 48,
-          "col_header": "Ground Control Methylation"
-        },
-        {
-          "label": "elp2-5 Mutant Phenotype",
-          "value": "Hyper-condensed chromatin",
-          "detail": "Histone acetylation needed for adaptation",
-          "trend": "down",
-          "score": 48,
-          "col_header": "Ground Control Methylation"
+          "col_header": "Methylome Remodeling (OSD-416)"
         }
       ],
       "edu": {
         "k5_mystery": "How does Arabidopsis thaliana survive and grow inside ISS Veggie Facility without normal Earth conditions?",
-        "k5_discovery": "Scientists discovered that helper genes like MET1 switch on to protect the plant! Key clue: CG Context (Genome-Wide): Global de-repression of stress loci",
+        "k5_discovery": "Scientists discovered that helper genes like Col-0 switch on to protect the plant! Key clue: Col-0 Wild-Type: Dynamic epigenetic tuning across leaves and roots",
         "ms_experiment": "NASA study OSD-416 tested Arabidopsis thaliana inside ISS Veggie Facility (ISS), comparing space/stress conditions against matched terrestrial controls.",
-        "ms_mechanism": "Focus pathway: Epigenetics & Methylome. CG Context (Genome-Wide): Global de-repression of stress loci",
-        "hs_methods": "Arabidopsis thaliana (Columbia-0 wild-type vs. met1-7 DNA methyltransferase mutant vs. elp2-5 histone acetyltransferase subunit mutant). High-coverage Whole-Genome Bisulfite Sequencing (WGBS) mapping 5-methylcytosine across CG, CHG, and…"
+        "ms_mechanism": "Focus pathway: Epigenetics & Methylome. Col-0 Wild-Type: Dynamic epigenetic tuning across leaves and roots",
+        "hs_methods": "Arabidopsis thaliana — Wild-Type Columbia-0 (Col-0) vs. elp2-5 (Elongator Complex Subunit 2 histone acetyltransferase/epigenomic mutant) vs. met1-7 (DNA Methyltransferase 1 CG-methylation mutant), dissected into Roots and Leaves (48…"
       },
       "debrief_tables": [
         {
           "headers": [
-            "Genomic Context",
-            "Ground Control Methylation",
-            "Spaceflight Methylation (ABRS)",
-            "Net Methylation Shift",
-            "Biological Consequence"
+            "Genotype / Context",
+            "Methylome Remodeling (OSD-416)",
+            "Spaceflight Growth Phenotype",
+            "Epigenomic Role Proven"
           ],
           "rows": [
             [
-              "CG Context (Genome-Wide)",
-              "24.8% ± 0.3%",
-              "20.6% ± 0.4%",
-              "-4.2% Hypomethylation",
-              "Global de-repression of stress loci"
+              "Col-0 Wild-Type",
+              "Organ-specific CG, CHG & CHH DMR shifts",
+              "Normal adaptive root skewing & rosette growth",
+              "Dynamic epigenetic tuning across leaves and roots"
             ],
             [
-              "CHG Context (Heterochromatin)",
-              "11.2% ± 0.2%",
-              "8.8% ± 0.3%",
-              "-2.4% Hypomethylation",
-              "Transposable element accessibility"
+              "elp2-5 (Elongator Mutant)",
+              "Disrupted stress-gene methylation & chromatin control",
+              "Severely stunted orbital growth vs. ground",
+              "ELP2 is required for healthy spaceflight acclimation"
             ],
             [
-              "CHH Context (Promoters)",
-              "3.4% ± 0.1%",
-              "2.6% ± 0.1%",
-              "-0.8% Hypomethylation",
-              "Rapid activation of environmental genes"
+              "met1-7 (CG Methyltransferase)",
+              "Global CG methylation loss; compensatory CHH/CHG",
+              "Robust orbital survival & distinct stress priming",
+              "Loss of CG maintenance alters—not breaks—space response"
             ],
             [
-              "met1-7 Mutant Phenotype",
-              "Unmethylated on Earth",
-              "Transcriptomic deregulation in orbit",
-              "Extreme gene chaos",
-              "Proves MET1 acts as spaceflight buffer"
-            ],
-            [
-              "elp2-5 Mutant Phenotype",
-              "Hyper-condensed chromatin",
-              "Inability to remodel nucleosomes",
-              "Severe chlorosis & arrest",
-              "Histone acetylation needed for adaptation"
+              "Sample Scope (APEX04-EPEX)",
+              "48 verified WGBS Illumina methylomes",
+              "ISS Veggie Flight vs. KSC OES 1g Ground Control",
+              "Published in Front. Plant Sci. 2021 (PMID: 34589093)"
             ]
           ]
         }
       ],
-      "dramatis_personae": "- **The Master Methylator (`MET1`):** *METHYLTRANSFERASE 1*. The primary DNA methyltransferase responsible for maintaining symmetrical CG cytosine methylation across the nuclear genome.\n- **The Chromatin Remodeler (`ELP2`):** *ELONGATOR COMPLEX SUBUNIT 2*. Histone acetyltransferase component that loosens chromatin packing around RNA Polymerase II.\n- **Squad Epigenetic Mutants:**\n  - **The Unmethylated Rebel (*met1-7*):** Seedlings with globally stripped DNA methylation; hyper-responsive to microgravity, expressing hundreds of cryptic transposons.\n  - **The Tightly Wound (*elp2-5*):** Seedlings unable to acetylate histones; suffering from transcriptional stagnation and developmental stunting in orbit.\n- **The DNA Demethylation Erasers (`ROS1`, `DME`):** 5-methylcytosine DNA glycosylases actively excising methyl groups from stress-responsive promoters in microgravity.\n- **Dr. Anna-Lisa Paul & Dr. Robert J. Ferl:** Epigenetic cartographers charting the second layer of the genetic code in the weightless environment of space.",
-      "script_markdown": "### Act I: The Hidden Layer (Pages 1–10)\n\n**Page 1**\n- **Panel 1 [Wide Establishing Shot]:** Deep inside the ABRS environmental chamber on the ISS. Green seedlings of *Arabidopsis* grow upside-down from an agar slab under bright white LED panels.\n- **Panel 2:** Molecular zoom into the double helix of Chromosome 1. Perched on the outer edge of cytosine rings are tiny carbon-and-hydrogen tags: **methyl groups (`-CH₃`)**, standing like silent sentinels along the DNA track.\n- **Caption (Narrator):** *Beneath the sequence of A, T, C, and G lies another language: epigenetics. Chemical flags stamped onto the DNA that tell the cell which genes to read and which to lock away. What happens to this epigenetic code when gravity disappears?*\n- **Dialogue (Dr. Paul):** \"Bisulfite sequencing data incoming from the NovaSeq. We're looking at single-base resolution across all forty million cytosines. And the spaceflight plants are losing their methyl marks!\"\n\n**Page 2**\n- **Panel 1:** Genome-wide methylation circos plot comparing Flight vs Ground.\n- **Panel 2:** The outer ring (Flight) shows dramatic blue dips—widespread **cytosine hypomethylation**, particularly across the pericentromeric heterochromatin and environmental stress gene promoters!\n- **SFX:** *SHHH-UNLOCK (Demethylation & chromatin relaxation)*\n- **Dialogue (Bioinformatician):** \"Global CG methylation has dropped by four point two percent! CHG and CHH methylation are down by over twelve percent! The microgravity genome is relaxing its locks!\"\n\n**Page 3**\n- **Panel 1:** In ground controls, transposable elements and ancient viral remnants are locked tightly in dense, hypermethylated heterochromatin.\n- **Panel 2:** In orbit, *ROS1* and *DME* demethylases strip methyl groups away; previously silent retrotransposons and stress response genes begin to whisper into RNA transcripts.\n- **Caption:** *Weightlessness unlocks the genomic archive, granting the plant extreme transcriptional flexibility.*\n\n**Page 4–10**\n- Testing the mutant squads in orbit:\n  - In *met1-7*: The plant already lacks CG methylation on Earth. In spaceflight, without the MET1 stabilizing anchor, gene expression explodes into chaos; over 4,000 genes fluctuate wildly!\n  - In *elp2-5*: Without histone acetylation, chromatin remains rigidly compacted; the plant cannot remodel its nucleosomes to adapt to microgravity, suffering severe chlorosis and root tip arrest.\n- Discovery: Epigenetic regulation via *MET1* and *ELP2* acts as a vital **shock absorber** that prevents spaceflight stress from overwhelming cellular physiology!\n\n### Act II: Epigenetic Memory Across Generations (Pages 11–20)\n\n**Page 11–15**\n- Whole-genome bisulfite sequencing at single-cytosine resolution:\n  - Identification of 2,450 Differentially Methylated Regions (DMRs).\n  - Specific hypomethylation at the promoters of *HSP70*, *PRX34*, and *WRKY* transcription factors.\n  - The loss of methyl marks directly correlates with the elevated expression of spaceflight survival genes!\n\n**Page 16–20**\n- The Inheritance Question:\n  - Seeds harvested from spaceflight plants were returned to Earth and grown under normal 1g gravity.\n  - The \"Spaceflight Epigenetic Echo\": Second-generation seedlings retain 35% of the hypomethylated marks inherited from their orbital parents, exhibiting enhanced vigor and drought tolerance on Earth!\n\n### Act III: The Epigenetic Space Crop (Pages 21–32)\n\n**Page 21–25**\n- Breeding space crops through epigenetic priming:\n  - Rather than genetic modification (CRISPR), space crops can be \"epigenetically conditioned\" in orbit.\n  - Exposing seed stocks to microgravity primes their DNA methylomes for high stress resilience.\n\n**Page 26–30**\n- The mission debrief: From *Arabidopsis* models to Martian wheat and potatoes.\n- Final panel: An astronaut botanist in the ISS Cupola holding a seed packet labeled *Generation 3 — Epigenetically Adapted*, knowing that the memory of spaceflight is now written into the very chromatin of the crop.\n\n**Page 31–32**\n- Infographic spread: The Single-Base Bisulfite Methylation Landscape and Epigenetic Shock-Absorber Circuit.",
+      "dramatis_personae": "- **The Master Methylator (`MET1`, *METHYLTRANSFERASE 1*):** Primary maintenance DNA methyltransferase responsible for preserving symmetrical CG cytosine methylation across gene bodies and transposons. When lost in `met1-7`, spaceflight triggers distinct stress-response rewiring.\n- **The Chromatin Remodeler (`ELP2`, *ELONGATOR COMPLEX SUBUNIT 2*):** Epigenomic histone-acetyltransferase regulator essential for terrestrial pathogen-defense signaling. In `elp2-5`, seedlings fail to mount normal spaceflight root growth and transcriptional conditioning.\n- **Squad `Col-0` (Wild-Type Benchmark):** Reference *Arabidopsis* seedlings demonstrating organ-specific DNA methylome remodeling—diverging sharply between orbital leaves and roots.\n- **Squad `elp2-5` (The Epigenetically Locked):** Mutant seedlings showing stunted, severely compromised development in orbit compared to terrestrial controls, proving `ELP2` is indispensable for spaceflight physiological acclimation.\n- **Squad `met1-7` (The Demethylated Pioneer):** Mutant seedlings with globally depleted CG methylation that nevertheless mount surprisingly robust orbital survival through alternative non-CG (CHG/CHH) pathways.\n- **The 5-Methylcytosine Marks (`5mCyt` — CG, CHG, CHH):** Chemical methyl flags decorating cytosine bases; acting as a dynamic second layer of instruction above the DNA sequence.\n- **Dr. Anna-Lisa Paul, Dr. Robert J. Ferl, Natasha Haveman & Brandon Califar:** University of Florida spaceflight epigenomics pioneers executing `APEX04-EPEX` aboard the ISS.",
+      "script_markdown": "### Act I: The Second Code in Orbit (Pages 1–10)\n\n**Page 1 — Splash: The Chromatin Loom**\n- **Panel 1 [Wide Establishing Shot]:** Inside the ISS Columbus/US Lab, glowing magenta-and-white LEDs of the **Veggie** facility illuminate racks of vertical `10 cm²` Phytagel plates carrying `APEX04-EPEX` seedlings (`Col-0`, `elp2-5`, and `met1-7`).\n- **Panel 2 [Macro Nuclear Dive]:** Plunging inside an orbital leaf cell nucleus: glowing DNA double helices wind around histone octamer spools studded with cyan (`CG`) and violet (`CHH`) methyl tags.\n- **Caption:** *Every cell carries the same four-letter DNA sequence. Yet in microgravity, plants rewrite the invisible punctuation marks sitting on top of the genome—the epigenome.*\n- **Dialogue (Dr. Anna-Lisa Paul):** \"APEX04-EPEX is live on Veggie. Forty-eight biological samples across Col-0, elp2-5, and met1-7—ready to map every single methylated cytosine in space.\"\n- **SFX:** *SHUWA-GLOW (Veggie LED ignition)*\n\n**Page 2 — The Pathogen Echo**\n- **Panel 1 [Split Lab View]:** Left: Earth greenhouse where a leaf wards off a bacterial pathogen. Right: Sterile ISS Veggie plate where zero pathogens exist—yet orbital plants activate pathogen-defense genes anyway!\n- **Panel 2 [Close-Up / Data Console]:** Historical GeneLab heatmaps flicker across the visor showing defense and cell-wall stress clusters flaring in microgravity.\n- **Caption:** *For a decade, space biologists noticed a paradox: plants in sterile orbital chambers turn on terrestrial pathogen-defense pathways. Could the epigenome be the switch?*\n- **Dialogue (Dr. Robert Ferl):** \"If spaceflight borrows terrestrial stress circuits, then knocking out the epigenomic regulators ELP2 and MET1 will reveal who holds the master key.\"\n\n**Page 3 — Meet the Two Mutants**\n- **Panel 1 [Character Cutaway]:** Side-by-side schematic of the two molecular specialists: `ELP2` (a glowing multi-subunit Elongator wrench loosening chromatin coils) vs. `MET1` (a precision sentinel stamping `5mCyt` methyl tags onto symmetrical CG rungs).\n- **Panel 2 [Plate Inspection]:** On Day 1 at the KSC Orbital Environmental Simulator (OES) and aboard ISS, all three genotypes (`Col-0`, `elp2-5`, `met1-7`) germinate cleanly along the Phytagel grid.\n- **Dialogue (Squad Col-0):** \"Three lines on the same gel. Same light, same air—only our chromatin toolkits differ.\"\n\n**Page 4 — Weightlessness Hits the Root Tip**\n- **Panel 1 [Microscopic Cutaway]:** Day 4 in orbit. Without a `1g` pull, `Col-0` roots begin carving characteristic microgravity skewing arcs across the agar surface.\n- **Panel 2 [Close-Up / `elp2-5` Root]:** Beside them, `elp2-5` roots stall noticeably, growing shorter and struggling to organize directional elongation.\n- **SFX:** *GYURU... (Twisting root skew)*\n- **Dialogue (Squad elp2-5):** \"Something's jammed in the chromatin gears! We sense microgravity, but our growth promoters won't unlock!\"\n\n**Page 5 — The Resilient Rebel (`met1-7`)**\n- **Panel 1 [Medium Shot]:** Surprisingly, `met1-7` seedlings—despite missing their main CG methyltransferase—unfurl crisp emerald cotyledons and drive steady primary roots across the flight plate.\n- **Panel 2 [Nuclear Zoom]:** Inside `met1-7` nuclei, CG rungs are bare, yet backup CHG and CHH methylation loops shimmer into action along stress-responsive loci.\n- **Dialogue (Squad met1-7):** \"No CG stamps? No problem. Our open chromatin responds faster than wild-type!\"\n\n**Page 6 — Organ Split: Leaves vs. Roots**\n- **Panel 1 [Wide Botanical Diagram]:** An *Arabidopsis* seedling divided cleanly by a bright laser line: aerial rosette leaves bathed in Veggie photons above; translucent roots anchoring along the wet gel below.\n- **Panel 2 [Telemetry Overlay]:** Dual readouts prove roots and leaves experience microgravity as two completely different physical worlds.\n- **Caption:** *Every APEX04-EPEX replicate will be dissected into separate leaf and root pools—yielding 48 distinct whole-genome methylomes in NASA OSDR `OSD-416`.*\n\n**Page 7 — Mirror World at Kennedy Space Center**\n- **Panel 1 [Establishing Shot]:** Inside the Kennedy Space Center Orbital Environmental Simulator (OES), identical Veggie chambers replay ISS temperature, CO₂, and humidity on a real-time offset—under `1g` gravity.\n- **Panel 2 [Technician View]:** Natasha Haveman verifies environmental parity curves between ISS telemetry and OES ground controls.\n- **Dialogue (Natasha Haveman):** \"Temperature and CO₂ match to the decimal. Every methylome shift we detect belongs strictly to spaceflight.\"\n\n**Page 8 — Day 11: Divergent Morphologies**\n- **Panel 1 [High-Contrast Overhead Plate Photo]:** Full-plate comparison just before harvest: `Col-0` and `met1-7` form thriving rosettes, while flight `elp2-5` exhibits unmistakable developmental stunting compared to its `1g` ground twin.\n- **Panel 2 [Close-Up]:** Fine ink stippling highlights dwarfed hypocotyls and shortened root zones in orbital `elp2-5`.\n- **Caption:** *Loss of ELP2 turns microgravity from a manageable challenge into a severe developmental roadblock.*\n\n**Page 9 — KFT Fixation Lock**\n- **Panel 1 [Action Beat]:** An astronaut inside the ISS US Lab slides the `APEX04-EPEX` plates into KSC Fixation Tubes (KFTs) and actuates the plungers, flooding the tissues with `RNAlater` to freeze every nucleic acid state instantly.\n- **Panel 2 [MELFI Cryo-Vault]:** Frost billows as the sealed tubes lock into the `-80°C` MELFI freezer awaiting Dragon splashdown.\n- **SFX:** *KACHIT-HISSSS (KFT plunger actuation)*\n\n**Page 10 — Splashdown to the Bisulfite Bench**\n- **Panel 1 [Wide Transition]:** Cargo Dragon parachutes descend over the Atlantic; hours later, frozen KFTs arrive at the University of Florida Space Plants Lab.\n- **Panel 2 [Macro Lab Shot]:** Precision micro-dissection separates roots from leaves before DNA extraction and sodium bisulfite conversion begin.\n- **Caption:** *Act I complete. Now comes the chemical test that makes invisible methyl marks readable at single-base resolution.*\n\n### Act II: The Bisulfite Decoding (Pages 11–22)\n\n**Page 11 — The Bisulfite Alchemy**\n- **Panel 1 [Molecular Mechanism Diagram]:** Sodium bisulfite washes over purified orbital DNA: unmethylated cytosines (`C`) convert chemically into uracil (`U`, sequenced as `T`), while methylated `5mCyt` bases resist conversion and remain `C`!\n- **Panel 2 [Sequencer Glow]:** Illumina flow cells pulse with four-color fluorescence across `n = 48` bisulfite libraries.\n- **Dialogue (Brandon Califar):** \"Bisulfite conversion efficiency above ninety-nine percent. Single-base methylomes for all forty-eight samples are streaming in!\"\n- **SFX:** *ZRRR-BEEP (Illumina sequencing run)*\n\n**Page 12 — Decoding the Three Contexts: CG, CHG, CHH**\n- **Panel 1 [Infographic Cutaway]:** Three distinct lanes of cytosine methylation illuminated along a chromosome: symmetrical `CG` (maintained by `MET1`), `CHG` (guided by `CMT3`), and asymmetrical `CHH` (steered dynamically by RNA-directed DNA methylation).\n- **Panel 2 [Wild-Type Col-0 Profile]:** In spaceflight `Col-0`, methylation shifts are strongly organ-specific—leaves and roots rewrite completely different genomic neighborhoods!\n- **Caption:** *Spaceflight does not paint the genome with a single brush; it edits CG, CHG, and CHH contexts differently in leaves versus roots.*\n\n**Page 13 — Hypomethylation Waves in Orbital Leaves**\n- **Panel 1 [Chromosomal Horizon]:** Across `Col-0` spaceflight leaves, glowing differentially methylated regions (DMRs) appear over stress-response promoters and cell-wall biogenesis loci.\n- **Panel 2 [Data Callout]:** Methylation changes in `Col-0` leaves correlate tightly with plastid, light-response, and reactive-oxygen defense pathways.\n- **Dialogue (Dr. Anna-Lisa Paul):** \"Look at the Col-0 leaves—thousands of context-specific DMRs shifting dynamically in microgravity.\"\n\n**Page 14 — The Root Methylome Battlefield**\n- **Panel 1 [Deep Root Cutaway]:** Inside `Col-0` flight roots, methylation remodeling surges across `CHH` islands flanking cell-wall remodeling genes and mechanosensing factors.\n- **Panel 2 [Close-Up]:** A chromatin loop opens cleanly, allowing RNA Polymerase II to transcribe cell-wall flexibility genes.\n- **SFX:** *PAKKK! (Chromatin loop de-condensation)*\n\n**Page 15 — Inside the Locked `elp2-5` Genome**\n- **Panel 1 [Dramatic Shadow Panel]:** Switching to the `elp2-5` methylome: instead of adaptive loosening, hundreds of stress and defense promoters show aberrant hyper-methylation and disrupted chromatin remodeling!\n- **Panel 2 [Molecular Clash]:** Without `ELP2`, the Elongator complex cannot acetylate histones or guide normal demethylation—leaving spaceflight defense genes out of sync.\n- **Dialogue (Squad elp2-5):** \"Our promoters are sealed shut! The orbital stress signal arrived, but the chromatin doors wouldn't open!\"\n\n**Page 16 — `elp2-5` Roots vs. Leaves Divergence**\n- **Panel 1 [Split Heatmap]:** Comparing `elp2-5` flight leaves and roots reveals massive divergence from `Col-0`—confirming that `ELP2` shapes *how* the plant translates microgravity into epigenetic memory.\n- **Panel 2 [Morphometric Overlay]:** Overlaid silhouettes link `elp2-5`'s distorted methylome directly to its stunted orbital root architecture.\n- **Caption:** *Without ELP2, epigenetic dysregulation translates directly into crippled physical growth in space.*\n\n**Page 17 — The `met1-7` Paradox Unveiled**\n- **Panel 1 [Luminous Genome Vista]:** Now the screen switches to `met1-7`: global `CG` methylation plummets near zero across chromosomes, as expected for a `MET1` knockout.\n- **Panel 2 [Shocked Bioinformatician]:** Yet instead of collapsing in spaceflight, `met1-7` shows dramatically *fewer* aberrant spaceflight stress phenotypes than `elp2-5`!\n- **Dialogue (Dr. Robert Ferl):** \"Fascinating—stripping CG maintenance via met1-7 actually pre-conditions parts of the genome rather than paralyzing it in orbit!\"\n\n**Page 18 — Compensatory CHH & CHG Armor**\n- **Panel 1 [Molecular Close-Up]:** Inside `met1-7` spaceflight roots, `CHH` and `CHG` methylation pathways surge in localized bursts around transposable elements, preventing genomic chaos even without `MET1`.\n- **Panel 2 [Pathway Vector]:** Small interfering RNAs (`24-nt siRNAs`) guide `DRM2` methyltransferases to patrol transposon boundaries.\n- **SFX:** *SHING! (siRNA transposon shield)*\n\n**Page 19 — Transposable Elements on the Edge**\n- **Panel 1 [Dark Screentone Inset]:** Ancient retrotransposons—normally sleeping inside dense pericentromeric heterochromatin—stir faintly under spaceflight stress.\n- **Panel 2 [Contrast Strip]:** In `Col-0`, targeted `CHH` methylation keeps transposons quiet; in `met1-7`, selective pericentromeric loss tests the boundary between adaptation and instability.\n- **Caption:** *Epigenetic control is a tightrope walk: loosen chromatin enough to adapt to space, but keep mobile transposons locked down.*\n\n**Page 20 — Linking Methylation to Gene Expression**\n- **Panel 1 [Multi-Omics Overlay]:** Aligning `OSD-416` WGBS methylomes directly over companion `APEX04-EPEX` RNA-Seq tracks reveals clear intersections at cell-wall, oxidative-stress, and pathogen-response genes.\n- **Panel 2 [Focus Gene Callout]:** Differentially methylated genes (`DMGs`) overlap strongly with differentially expressed genes (`DEGs`) specifically in `elp2-5` and `Col-0` roots.\n- **Dialogue (Natasha Haveman):** \"It's not random noise—promoter and gene-body methylation directly condition which genes fire in microgravity.\"\n\n**Page 21 — The Pathogen-Spaceflight Bridge Proven**\n- **Panel 1 [Conceptual Diagram]:** Two luminous bridges converge on `ELP2`: Terrestrial Biotic Defense on the left, Microgravity Acclimation on the right.\n- **Panel 2 [Close-Up]:** `ELP2` stands revealed as a shared master hub that spaceflight plants co-opt to reorganize their epigenome.\n- **Caption:** *The mystery from Page 2 is solved: spaceflight taps directly into ancient epigenomic defense regulators like ELP2.*\n\n**Page 22 — Quality Control Across All 48 Samples**\n- **Panel 1 [Data Matrix Wall]:** Principal Component Analysis (PCA) clusters all `48` verified `OSD-416` methylomes cleanly by **Genotype (`Col-0`, `elp2-5`, `met1-7`)**, **Organ (`Root`, `Leaf`)**, and **Environment (`Spaceflight`, `Ground Control`)**.\n- **Panel 2 [Verification Stamp]:** Every raw FASTQ and methylation call table is deposited openly into NASA OSDR as `OSD-416` (`PMID: 34589093`).\n\n### Act III: Epigenetic Inheritance & Deep-Space Crops (Pages 23–32)\n\n**Page 23 — Why Epigenetics Matters for Mars**\n- **Panel 1 [Wide Orbital Vision]:** A deep-space transit greenhouse orbiting toward Mars. Multi-generational crops must not only survive Flight Generation 1—they must pass stable chromatin memory to their seeds!\n- **Panel 2 [Seed Cutaway]:** Inside a developing orbital embryo, `MET1` and `ELP2` safeguard epigenetic fidelity across cell divisions.\n- **Dialogue (Dr. Anna-Lisa Paul):** \"If spaceflight alters cytosine methylation in parental tissues, understanding MET1 and ELP2 tells us how future space crops will inherit—or reset—those marks.\"\n\n**Page 24 — Designing Epigenetically Agile Crops**\n- **Panel 1 [Blueprint Panel]:** Space agronomists compare breeding strategies: protecting `ELP2` function to preserve spaceflight adaptability while tuning promoter methylation for stress resilience.\n- **Panel 2 [Greenhouse Glow]:** Rows of vigorous spaceflight seedlings thrive under tuned Veggie LED spectra.\n- **Caption:** *Epigenome engineering offers a faster, reversible toolkit for space agriculture than rewriting DNA sequences alone.*\n\n**Page 25 — Comparing `OSD-416` with `OSD-217` (Vol. 23)**\n- **Panel 1 [Archival Link Panel]:** Side-by-side timeline connecting `APEX03-2` (`OSD-217`, Vol. 23 — first wild-type spaceflight methylome) to `APEX04-EPEX` (`OSD-416`, Vol. 74 — causal mutant dissection via `elp2-5` and `met1-7`).\n- **Panel 2 [Data Progression]:** From observing that spaceflight changes DNA methylation to proving *which epigenomic enzymes drive the response*.\n- **Dialogue (Brandon Califar):** \"OSD-217 showed us the methylation veil exists. OSD-416 showed us who weaves it.\"\n\n**Page 26 — Organ-Specific Epigenomic Signatures**\n- **Panel 1 [Botanical Silhouette]:** Translucent leaf canopy glowing cyan (`CG`/`CHG` shifts) above a luminous emerald root network (`CHH` adaptive bursts).\n- **Panel 2 [Legend Strip]:** Roots and leaves deploy distinct epigenomic programs to balance light capture above with mechanical anchorage below.\n\n**Page 27 — Open Science Reanalysis Power**\n- **Panel 1 [Global Classroom Montage]:** University students and citizen bioinformaticians worldwide download `OSD-416` bisulfite tables from NASA OSDR to test new hypotheses on transposon stability and chromatin accessibility.\n- **Panel 2 [HUD Banner]:** `NASA OSDR: OSD-416 · 48 VERIFIED SAMPLES · OPEN ACCESS`.\n\n**Page 28 — Echoes into the Radiation Chronicles**\n- **Panel 1 [Foreshadowing Beat]:** A glowing `MET1` strand bridges smoothly toward Volume 90 (`OSD-782`), where cytosine methylation meets chronic cosmic radiation and ethylene signaling!\n- **Caption:** *Microgravity is only half of deep space. Ahead in Volume 90, MET1 will face ionizing radiation itself.*\n\n**Page 29 — The Living Second Code**\n- **Panel 1 [Poetic Wide Shot]:** An astronaut's gloved hand floats gently beside a Veggie cassette while Earth's curved blue horizon glows outside the cupola; ghostly helical chromatin ribbons shimmer across the glass reflection.\n- **Dialogue (Dr. Robert Ferl):** \"Plants don't just endure space passively—they annotate their own chromosomes to learn how to live among the stars.\"\n\n**Page 30 — Climax Splash: The Epigenetic Imprint**\n- **Panel 1 [Full-Page Splash]:** A radiant *Arabidopsis* seedling suspended in zero-g, its roots trailing delicate silver-blue DNA-and-histone filaments studded with luminous `5mCyt` constellations.\n- **SFX:** *KIRA-SHUWA (Chromatin equilibrium achieved)*\n\n**Page 31 — Mission Architecture & `APEX04-EPEX` Matrix**\n- **Panel 1 [Left Infographic Spread]:** Complete experimental matrix for `OSD-416`: `3 Genotypes (Col-0, elp2-5, met1-7) × 2 Organs (Root, Leaf) × 2 Environments (ISS Veggie Flight, KSC OES Ground Control) × 4 Replicates = 48 Verified WGBS Samples`.\n\n**Page 32 — Data Epilogue & Verified Citation Ledger**\n- **Panel 1 [Right Infographic Spread]:** Summary of `Paul et al. (2021) Front. Plant Sci. 12:691790 (PMID: 34589093)` confirming differential conditioning of spaceflight adaptation by `ELP2` and `MET1`.",
       "raw_script_path": "docs/astro-botanica/volumes/vol-74-osd-416.md",
       "cover": {
         "has_raster": true,
@@ -49356,15 +50032,15 @@ window.ASTRO_BOTANICA_DATA = {
           "explanation": "OSD-416 focuses on Epigenetics & Methylome under ISS conditions (48 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Genotype, Organism Part."
         },
         {
-          "question": "In Volume 74 (OSD-416), what biological role does 'MET1' play in the study?",
+          "question": "In Volume 74 (OSD-416), what biological role does 'Col-0' play in the study?",
           "options": [
             "Researcher / Crew",
-            "Enzyme / Remodeler",
+            "Plant / Mutant Line",
             "Molecular Actor",
-            "Signal / Sensor"
+            "Enzyme / Remodeler"
           ],
           "answer_index": 1,
-          "explanation": "MET1 (Enzyme / Remodeler): METHYLTRANSFERASE 1. The primary DNA methyltransferase responsible for maintaining symmetrical CG cytosine methylation across the nuclear genome."
+          "explanation": "Col-0 (Plant / Mutant Line): Reference Arabidopsis seedlings demonstrating organ-specific DNA methylome remodeling—diverging sharply between orbital leaves and roots."
         }
       ]
     },
@@ -51150,7 +51826,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Radiation & DNA Repair",
       "hardware": "Salk Institute and Ghent Center for Plant Systems Biology Genomic Sequencing Facility. High-energy gamma irradiation chambers paired with chromatin immunoprecipitation (ChIP-Seq) on Illumina HiSeq 2500 platforms. Deep-sequencing of cross-linked chromatin fragments isolating the exact DNA binding footprints of the plant p53 analog.",
       "hardware_short": "Salk Institute and Ghent Center for Plant…",
-      "publication": "Bourbousse C, Vegesna N, Law JA.. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
+      "publication": "Bourbousse C, Vegesna N, Law JA. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
       "pages_count": 9,
       "pages": [
         {
@@ -51507,7 +52183,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Radiation & DNA Repair",
       "hardware": "Controlled Radiation Phenotyping Chambers with automated robotic harvest arms. Cobalt-60 gamma-ray source delivering calibrated doses (20 Gy). RNA preservation in liquid nitrogen dewars followed by stranded paired-end Illumina RNA-Seq (NovaSeq 6000).",
       "hardware_short": "Controlled Radiation Phenotyping Chambers…",
-      "publication": "Bourbousse C, Vegesna N, Law JA.. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
+      "publication": "Bourbousse C, Vegesna N, Law JA. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
       "pages_count": 9,
       "pages": [
         {
@@ -51864,7 +52540,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Radiation & DNA Repair",
       "hardware": "Ghent Center for Plant Systems Biology Radiation Facility. Automated gamma-ray irradiators coupled with high-resolution confocal laser scanning microscopes (CLSM) equipped with time-lapse live cell cycle tracking sensors (CSN::GFP and CYCB1;1::GUS).",
       "hardware_short": "Ghent Center for Plant Systems Biology…",
-      "publication": "Bourbousse C, Vegesna N, Law JA.. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
+      "publication": "Bourbousse C, Vegesna N, Law JA. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
       "pages_count": 9,
       "pages": [
         {
@@ -52221,7 +52897,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Radiation & DNA Repair",
       "hardware": "High-Throughput Automated Radiation Phenotyping Robotic System. Automated liquid nitrogen snap-freezer arms sampling roots at exact kinetic intervals: 0h (baseline), 0.5h, 1h, 2h, 4h, 8h, 12h, and 24h post-gamma irradiation. High-coverage stranded paired-end Illumina RNA-Seq.",
       "hardware_short": "High-Throughput Automated Radiation…",
-      "publication": "Bourbousse C, Vegesna N, Law JA.. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
+      "publication": "Bourbousse C, Vegesna N, Law JA. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
       "pages_count": 9,
       "pages": [
         {
@@ -52599,7 +53275,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Radiation & DNA Repair",
       "hardware": "High-Performance Computing (HPC) Supercomputing Cluster at VIB-UGent Center for Plant Systems Biology. Integration of ChIP-Seq binding matrices, temporal transcriptomic trajectories (0h–24h), and Hidden Markov Models (HMMs) running the Dynamic Regulatory Events Miner (DREM 2.0) algorithm.",
       "hardware_short": "High-Performance Computing",
-      "publication": "Bourbousse C, Vegesna N, Law JA.. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
+      "publication": "Bourbousse C, Vegesna N, Law JA. SOG1 activator and MYB3R repressors regulate a complex DNA damage network in Arabidopsis. (DOI: 10.1073/pnas.1810582115 · PMID: 30541889)",
       "pages_count": 9,
       "pages": [
         {
@@ -52984,7 +53660,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Hormones & Metabolic Defense",
       "hardware": "NASA Kennedy Space Center Plant Growth Chambers and Space Station Flight Cassette Simulators. Controlled environmental growth conditions (22°C, 16:8 photoperiod, multi-tier LED racks). Digital phenotyping goniometry tracking lateral shoot branch angles from emergence through reproductive flowering.",
       "hardware_short": "NASA Kennedy Space Center Plant Growth…",
-      "publication": "Hollender CA, Hill JL, Waite J, Dardick C.. Opposing influences of TAC1 and LAZY1 on Lateral Shoot Orientation in Arabidopsis. (DOI: 10.1038/s41598-020-62962-4 · PMID: 32269265)",
+      "publication": "Hollender CA, Hill JL, Waite J, Dardick C. Opposing influences of TAC1 and LAZY1 on Lateral Shoot Orientation in Arabidopsis. (DOI: 10.1038/s41598-020-62962-4 · PMID: 32269265)",
       "pages_count": 9,
       "pages": [
         {
@@ -54061,7 +54737,7 @@ window.ASTRO_BOTANICA_DATA = {
       "study_domain": "Light & Phototropism",
       "hardware": "Shijian-10 (SJ-10) Recoverable Scientific Experiment Satellite, launched aboard a Long March 2D rocket from Jiuquan Satellite Launch Center. 12-day orbital free-flight mission (252 km × 392 km orbit, inclination 42.89°, microgravity level <10⁻⁴ g). Autonomous Plant Growth Chamber with automated photoperiodic LED banks, capillary nutrient delivery, and post-reentry soft touchdown recovery in Siziwang Banner, Inner Mongolia.",
       "hardware_short": "SJ-10 Recoverable Satellite",
-      "publication": "Stutte GW, Monje O, Hatfield RD, Paul A-, Ferl RJ, Simone CG.. Microgravity effects on leaf morphology, cell structure, carbon metabolism and mRNA expression of dwarf wheat (DOI: 10.1007/s00425-006-0290-4)",
+      "publication": "Stutte GW, Monje O, Hatfield RD, Paul A-, Ferl RJ, Simone CG. Microgravity effects on leaf morphology, cell structure, carbon metabolism and mRNA expression of dwarf wheat (DOI: 10.1007/s00425-006-0290-4)",
       "pages_count": 9,
       "pages": [
         {
@@ -54818,290 +55494,876 @@ window.ASTRO_BOTANICA_DATA = {
       "accession": "OSD-782",
       "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-782",
       "title": "The Planetary Hormone: Ethylene and Epigenetic Resilience",
-      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. ein2-1 ethylene-insensitive mutant vs. ctr1-1 constitutive ethylene signaling mutant). Multi-omics integration: Whole-genome stranded RNA-Seq, Whole-Genome Bisulfite Sequencing (WGBS) cytosine methylomes, and targeted ethylene gas emission chromatography.",
-      "organism_short": "Arabidopsis thaliana",
+      "organism": "Arabidopsis thaliana seedlings profiled across three verified NASA OSDR experimental factors: Ionizing Radiation, Absorbed Radiation Dose, and Time of Sample Collection After Treatment (36 samples). Integrated multi-omics combining whole-genome RNA-Seq with MAPit single-molecule endogenous cytosine methylation (5mC) and nucleosome chromatin accessibility profiling.",
+      "organism_short": "Arabidopsis thaliana seedlings profiled across…",
       "plant_family": "Brassicaceae (Arabidopsis/Mustard)",
-      "world": "Ground Analog",
+      "world": "ISS",
       "study_domain": "Radiation & DNA Repair",
-      "hardware": "SCK CEN Low-Dose Irradiation Facility (Belgium) simulating deep-space galactic cosmic background radiation. Precision Cesium-137 continuous low-dose gamma exposure (1.4 mGy/h across 14 days, total cumulative dose 470 mGy, identical to a one-way transit to Mars). Hermetically sealed chambers with gas chromatography ethylene sensors and real-time infrared growth tracking.",
-      "hardware_short": "SCK CEN Gamma Irradiation Facility",
+      "hardware": "University of Florida Ground Analog Ionizing Radiation Facility — controlled acute low-dose ionizing radiation exposure chambers calibrated to deep-space transit dose regimes across multiple absorbed doses and post-irradiation recovery time points (n = 36 verified biological samples in NASA OSDR OSD-782). Paired with MAPit (Methyltransferase Accessibility Protocol for individual templates) chromatin accessibility assays and Illumina stranded RNA-Seq.",
+      "hardware_short": "University of Florida Ground Analog…",
       "publication": "Newman Jeremy R B, Zhou Mingqi, Pires J. Chris, Bacher Rhonda L, Kladde Michael…. Multi-omics profiling reveals ethylene signalling as a key pathway underlying both genetic and epigenetic responses to low-dose ionizing radiation in Arabidopsis (DOI: 10.1101/2023.10.14.562363)",
-      "pages_count": 9,
+      "pages_count": 32,
       "pages": [
         {
           "page_label": "1",
-          "page_title": "",
-          "act": "Act I: The Chronic Drizzle (Pages 1–10)",
+          "page_title": "Splash: Beneath the Cosmic Drizzle",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
           "act_num": 1,
           "panels_count": 2,
           "panels": [
             {
               "panel_number": 1,
               "shot": "Wide Establishing Shot",
-              "description": "Deep inside the SCK CEN underground radiation research citadel. A long corridor of stainless-steel growth chambers bathed in sterile magenta LED light. A tiny Cesium-137 source hums silently behind lead collimators, emitting a gentle, continuous drizzle of gamma rays: 1.4 mGy per hour."
+              "description": "Inside the ground-analog ionizing radiation chamber, arrays of Arabidopsis thaliana seedlings rest in precision trays beneath calibrated radiation collimators. No catastrophic blast—only an invisible, low-dose pulse mimicking deep-space cosmic rays."
             },
             {
               "panel_number": 2,
-              "shot": "Dynamic Beat",
-              "description": "Macro view of an Arabidopsis rosette. Unlike acute radiation blasts that shatter DNA in seconds, this gentle cosmic drizzle accumulates quietly over two weeks: T = Day 14, Cumulative Dose = 470 mGy—the exact radiation budget of an astronaut traveling to Mars!"
+              "shot": "Macro Rosette Cutaway",
+              "description": "Glowing ionizing photon tracks pass silently through leaf epidermis and mesophyll nuclei without scorching the leaves—leaving subtle molecular ripples behind."
             }
           ],
-          "caption": "Acute radiation is an explosion. Chronic space radiation is an endless, subtle whisper. For fourteen days, every cell in the seedling receives a continuous tick of ionizing energy. How does a living organism adapt to a universe filled with cosmic rays?",
-          "sfx": null,
+          "caption": "High-dose radiation shatters genomes in an instant. Low-dose space radiation is a quieter riddle: how does a living plant detect, remember, and adapt to subtle ionizing whispers?",
+          "sfx": "TICK... TICK... (Low-dose dosimeter cadence)",
           "dialogue": [
             {
-              "speaker": "Radiobiologist Dr. Horemans",
-              "text": "Fourteen days of continuous low-dose exposure completed. Gas chromatograph Channel 3 reading: ethylene emission is spiking by three hundred percent in the wild-type chamber!"
+              "speaker": "Dr. Jeremy Newman",
+              "text": "Thirty-six biological samples across absorbed dose and post-irradiation recovery time points. Let's look beneath the RNA—straight into chromatin accessibility."
             }
           ],
-          "summary": "Deep inside the SCK CEN underground radiation research citadel. A long corridor of stainless-steel growth chambers bathed in sterile magenta LED light. A tiny Cesium-137 source hums silently behind lead collimators, emitting a gentle, continuous drizzle of gamma rays: 1.4 mGy…"
+          "summary": "Inside the ground-analog ionizing radiation chamber, arrays of Arabidopsis thaliana seedlings rest in precision trays beneath calibrated radiation collimators. No catastrophic blast—only an invisible, low-dose pulse mimicking deep-space cosmic rays."
         },
         {
           "page_label": "2",
-          "page_title": "",
-          "act": "Act I: The Chronic Drizzle (Pages 1–10)",
+          "page_title": "Beyond Acute Mutation Breeding",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
           "act_num": 1,
           "panels_count": 2,
           "panels": [
             {
               "panel_number": 1,
-              "shot": "Establishing Shot",
-              "description": "Cutaway into the petiole tissue. The rate-limiting enzyme ACS (1-aminocyclopropane-1-carboxylate synthase) surges into action."
+              "shot": "Historical Flashback Split",
+              "description": "Left: 20th-century high-dose gamma fields blasting seeds to generate random agricultural mutations. Right: A sleek Mars transit spacecraft bathed in low-dose galactic cosmic radiation."
             },
             {
               "panel_number": 2,
-              "shot": "Dynamic Beat",
-              "description": "Clouds of volatile ethylene gas (C₂H₄) diffuse from cell to cell across the apoplast, binding to ETR1 receptors on the endoplasmic reticulum."
+              "shot": "Data Monitor",
+              "description": "Telemetry graph contrasts lethal acute blasts against low-dose physiological stress where plants survive—yet silently reprogram their regulatory circuits."
             }
           ],
-          "caption": "Cutaway into the petiole tissue.",
-          "sfx": "SHHH-DIFFUSE (Volatile hormone transmission)",
-          "dialogue": [
-            {
-              "speaker": "Dr. Van Hees",
-              "text": "The plants are talking to each other through the air! Ethylene gas is binding to the ETR1 receptor, deactivating the negative regulator CTR1!"
-            }
-          ],
-          "summary": "Cutaway into the petiole tissue. The rate-limiting enzyme ACS (1-aminocyclopropane-1-carboxylate synthase) surges into action. Clouds of volatile ethylene gas (C₂H₄) diffuse from cell to cell across the apoplast, binding to ETR1 receptors on the endoplasmic reticulum."
+          "caption": "For decades, plant radiobiology studied high-dose damage. Deep-space missions demand answers about low-dose ionizing radiation.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Left: 20th-century high-dose gamma fields blasting seeds to generate random agricultural mutations. Right: A sleek Mars transit spacecraft bathed in low-dose galactic cosmic radiation."
         },
         {
           "page_label": "3",
-          "page_title": "",
-          "act": "Act I: The Chronic Drizzle (Pages 1–10)",
+          "page_title": "Introducing MAPit: Two Maps on One Strand",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
           "act_num": 1,
           "panels_count": 2,
           "panels": [
             {
               "panel_number": 1,
-              "shot": "Establishing Shot",
-              "description": "Inside the cytoplasm, EIN2 is cleaved. The nuclear C-terminal fragment (EIN2-C) translocates into the nucleus, stabilizing EIN3 and EIL1 transcription factors."
+              "shot": "Molecular Blueprint",
+              "description": "Inside the University of Florida lab, Dr. Michael Kladde's MAPit (Methyltransferase Accessibility Protocol for individual templates) enzyme M.CviPI glides over intact plant nuclei, tagging open, nucleosome-free GC dinucleotides!"
             },
             {
               "panel_number": 2,
-              "shot": "Dynamic Beat",
-              "description": "Comparison: In Col-0, rosette growth continues smoothly. In ein2-1, yellow chlorotic spots appear on the leaf tips, and root hairs fail to elongate."
+              "shot": "Close-Up / Single DNA Molecule",
+              "description": "On the exact same individual DNA strand, MAPit captures both chromatin accessibility (G-mC) and endogenous plant methylation (mC-G) simultaneously!"
             }
           ],
-          "caption": "Cut the ethylene wire, and the plant's defense system is blinded to chronic cosmic rays.",
-          "sfx": null,
-          "dialogue": [],
-          "summary": "Inside the cytoplasm, EIN2 is cleaved. The nuclear C-terminal fragment (EIN2-C) translocates into the nucleus, stabilizing EIN3 and EIL1 transcription factors. Comparison: In Col-0, rosette growth continues smoothly. In ein2-1, yellow chlorotic spots appear on the leaf tips, and…"
+          "caption": "Inside the University of Florida lab, Dr.",
+          "sfx": "SHING-TAG (M.CviPI footprinting)",
+          "dialogue": [
+            {
+              "speaker": "Dr. Michael Kladde",
+              "text": "MAPit lets us see which promoters physically open up after low-dose radiation—and whether endogenous methylation shifts on the exact same molecule."
+            }
+          ],
+          "summary": "Inside the University of Florida lab, Dr. Michael Kladde's MAPit (Methyltransferase Accessibility Protocol for individual templates) enzyme M.CviPI glides over intact plant nuclei, tagging open, nucleosome-free GC dinucleotides!"
         },
         {
-          "page_label": "4–10",
-          "page_title": "",
-          "act": "Act I: The Chronic Drizzle (Pages 1–10)",
+          "page_label": "4",
+          "page_title": "The Three-Factor Experimental Matrix",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
           "act_num": 1,
-          "panels_count": 4,
-          "panels": [],
-          "caption": "Testing across the mutant spectrum: ein2-1: Severely stunted under chronic low-dose radiation; accumulates high levels of malondialdehyde (MDA, a marker of lipid peroxidation).",
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Blueprint Grid",
+              "description": "A crisp experimental matrix lights up on the screen mapping the three verified NASA OSDR OSD-782 factors: Ionizing Radiation, Absorbed Radiation Dose, and Time of Sample Collection After Treatment."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Sample Tubes",
+              "description": "Thirty-six labeled biological replicates line the chilled rack—paired identically for RNA-Seq expression and MAPit epigenomic accessibility."
+            }
+          ],
+          "caption": "Time matters. Collecting samples across post-treatment time points captures the wave from first perception to epigenetic stabilization.",
           "sfx": null,
           "dialogue": [],
-          "summary": "Testing across the mutant spectrum: ein2-1: Severely stunted under chronic low-dose radiation; accumulates high levels of malondialdehyde (MDA, a marker of lipid peroxidation). ctr1-1: Constitutively active ethylene mutant; thrives under the radiation drizzle with zero leaf…"
+          "summary": "A crisp experimental matrix lights up on the screen mapping the three verified NASA OSDR OSD-782 factors: Ionizing Radiation, Absorbed Radiation Dose, and Time of Sample Collection After Treatment."
         },
         {
-          "page_label": "11–15",
+          "page_label": "5",
+          "page_title": "First Minutes After Exposure",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Cellular Interior",
+              "description": "Ionizing photons generate tiny, localized bursts of reactive oxygen species (ROS) inside chloroplasts and nuclei."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Nuclear Radar",
+              "description": "Rather than triggering chaotic cell death, the plant's early stress sensors fire a surprisingly coordinated transcriptional pulse."
+            }
+          ],
+          "caption": "Ionizing photons generate tiny, localized bursts of reactive oxygen species (ROS) inside chloroplasts and nuclei.",
+          "sfx": "PIIIN... (Early ROS signal wave)",
+          "dialogue": [],
+          "summary": "Ionizing photons generate tiny, localized bursts of reactive oxygen species (ROS) inside chloroplasts and nuclei. Rather than triggering chaotic cell death, the plant's early stress sensors fire a surprisingly coordinated transcriptional pulse."
+        },
+        {
+          "page_label": "6",
+          "page_title": "Early Gene Expression Ripples",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "RNA-Seq Waveform Wall",
+              "description": "Stranded Illumina RNA-Seq traces surge across the bioinformatics terminal as Dr. Mingqi Zhou aligns all 36 transcriptomes."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Close-Up",
+              "description": "Unexpectedly, classic double-strand break genes are only part of the picture—an entire hormonal signaling cascade dominates the enrichment chart!"
+            }
+          ],
+          "caption": "Stranded Illumina RNA-Seq traces surge across the bioinformatics terminal as Dr.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Dr. Mingqi Zhou",
+              "text": "Look at the top enriched pathway across doses and time points—it's not just DNA repair. It's ethylene signaling!"
+            }
+          ],
+          "summary": "Stranded Illumina RNA-Seq traces surge across the bioinformatics terminal as Dr. Mingqi Zhou aligns all 36 transcriptomes. Unexpectedly, classic double-strand break genes are only part of the picture—an entire hormonal signaling cascade dominates the enrichment chart!"
+        },
+        {
+          "page_label": "7",
+          "page_title": "Enter the Planetary Hormone (C₂H₄)",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Dramatic Botanical Cutaway",
+              "description": "Translucent, glowing vapor ribbons of two-carbon ethylene gas (C₂H₄) diffuse across intercellular air spaces between irradiated leaf cells."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Molecular Structure Inset",
+              "description": "Two carbon atoms linked by a double bond, four hydrogens (H₂C=CH₂)—the tiniest volatile hormone in biology acting as a rapid systemic alert!"
+            }
+          ],
+          "caption": "Translucent, glowing vapor ribbons of two-carbon ethylene gas (C₂H₄) diffuse across intercellular air spaces between irradiated leaf cells.",
+          "sfx": "SHHH-DIFFUSE (Volatile hormone transmission)",
+          "dialogue": [],
+          "summary": "Translucent, glowing vapor ribbons of two-carbon ethylene gas (C₂H₄) diffuse across intercellular air spaces between irradiated leaf cells. Two carbon atoms linked by a double bond, four hydrogens (H₂C=CH₂)—the tiniest volatile hormone in biology acting as a rapid systemic alert!"
+        },
+        {
+          "page_label": "8",
+          "page_title": "Receptor Unlock: ETR1 → CTR1 → EIN2",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Endoplasmic Reticulum Action Beat",
+              "description": "Ethylene molecules dock into copper-cofactor ETR1 receptors embedded in the ER membrane, shutting off the brake kinase CTR1."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Signal Cleavage",
+              "description": "Liberated from phosphorylation, the C-terminal tail of EIN2 cleaves cleanly and rockets toward the nuclear pore!"
+            }
+          ],
+          "caption": "Ethylene molecules dock into copper-cofactor ETR1 receptors embedded in the ER membrane, shutting off the brake kinase CTR1.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "EIN2 Conduit",
+              "text": "Brake released! C-terminal fragment heading to the nucleus—stabilize EIN3 immediately!"
+            }
+          ],
+          "summary": "Ethylene molecules dock into copper-cofactor ETR1 receptors embedded in the ER membrane, shutting off the brake kinase CTR1. Liberated from phosphorylation, the C-terminal tail of EIN2 cleaves cleanly and rockets toward the nuclear pore!"
+        },
+        {
+          "page_label": "9",
+          "page_title": "EIN3 & EIL1 Take Command",
+          "act": "Act I: The Low-Dose Whisper (Pages 1–10)",
+          "act_num": 1,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Nuclear Command Center",
+              "description": "Inside the nucleus, EIN3 and EIL1 transcription factors lock onto target promoters, activating an army of Ethylene Response Factors (ERFs)."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Dose Comparison",
+              "description": "Even at subtle low doses where leaves look outwardly calm, the ethylene transcriptional network lights up with surgical precision."
+            }
+          ],
+          "caption": "Low-dose ionizing radiation speaks to the plant genome in the language of ethylene.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Inside the nucleus, EIN3 and EIL1 transcription factors lock onto target promoters, activating an army of Ethylene Response Factors (ERFs). Even at subtle low doses where leaves look outwardly calm, the ethylene transcriptional network lights up with surgical precision."
+        },
+        {
+          "page_label": "10",
           "page_title": "",
-          "act": "Act II: The Epigenetic Coupling (Pages 11–20)",
+          "act": "Act I Turn: Is Ethylene Epigenetic Too?",
           "act_num": 2,
-          "panels_count": 3,
-          "panels": [],
-          "caption": "Whole-genome bisulfite sequencing (WGBS) under chronic low-dose radiation: In wild-type Col-0, chronic ethylene signaling orchestrates targeted cytosine hyper-methylation at…",
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Split Screen",
+              "description": "Top: RNA-Seq expression peaks. Bottom: Raw MAPit chromatin accessibility tracks loading across the server cluster."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Close-Up / Dr. Rhonda Bacher",
+              "description": "Statistical models cross-correlate expression shifts with promoter nucleosome opening."
+            }
+          ],
+          "caption": "Top: RNA-Seq expression peaks.",
           "sfx": null,
-          "dialogue": [],
-          "summary": "Whole-genome bisulfite sequencing (WGBS) under chronic low-dose radiation: In wild-type Col-0, chronic ethylene signaling orchestrates targeted cytosine hyper-methylation at transposable elements while maintaining open hypomethylated chromatin at DNA repair promoters (RAD51…"
+          "dialogue": [
+            {
+              "speaker": "Dr. Rhonda Bacher",
+              "text": "Now let's test the big hypothesis: does ethylene signaling only change RNA, or is it opening the physical chromatin itself?"
+            }
+          ],
+          "summary": "Top: RNA-Seq expression peaks. Bottom: Raw MAPit chromatin accessibility tracks loading across the server cluster. Statistical models cross-correlate expression shifts with promoter nucleosome opening."
         },
         {
-          "page_label": "16–20",
-          "page_title": "",
-          "act": "Act II: The Epigenetic Coupling (Pages 11–20)",
+          "page_label": "11",
+          "page_title": "Nucleosomes Slide Open",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
           "act_num": 2,
-          "panels_count": 3,
-          "panels": [],
-          "caption": "Multi-omics cross-correlation: Direct interaction between EIN3 and MET1 / CMT3 DNA methyltransferases.",
-          "sfx": null,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Microscopic Chromatin View",
+              "description": "Along ethylene-responsive promoters, tightly packed histone octamers slide aside after low-dose irradiation—exposing bare DNA helices to MAPit's accessibility probe!"
+            },
+            {
+              "panel_number": 2,
+              "shot": "Footprint Readout",
+              "description": "High-resolution single-molecule plots show unmistakable bursts of G-mC accessibility right at EIN3/ERF binding motifs."
+            }
+          ],
+          "caption": "Along ethylene-responsive promoters, tightly packed histone octamers slide aside after low-dose irradiation—exposing bare DNA helices to MAPit's accessibility probe!",
+          "sfx": "KAKAKAKA! (Nucleosome remodeling)",
           "dialogue": [],
-          "summary": "Multi-omics cross-correlation: Direct interaction between EIN3 and MET1 / CMT3 DNA methyltransferases. Ethylene acts as the bridge connecting physical stress perception with the stable epigenetic memory of the chromosome!"
+          "summary": "Along ethylene-responsive promoters, tightly packed histone octamers slide aside after low-dose irradiation—exposing bare DNA helices to MAPit's accessibility probe!"
         },
         {
-          "page_label": "21–25",
+          "page_label": "12",
+          "page_title": "Single-Molecule Proof",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "MAPit Alignment Stack",
+              "description": "Dozens of individual DNA molecules stack vertically like a manga speed-screen: unexposed controls remain tightly closed, while low-dose irradiated strands open cleanly across regulatory regions."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Researcher Reaction",
+              "description": "Dr. Patrick Concannon traces the synchronized accessibility wave across time points."
+            }
+          ],
+          "caption": "Dozens of individual DNA molecules stack vertically like a manga speed-screen: unexposed controls remain tightly closed, while low-dose irradiated strands open cleanly across…",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Dr. Patrick Concannon",
+              "text": "Look at those single-template footprints. Low-dose radiation leaves a targeted chromatin accessibility signature—not random genome damage."
+            }
+          ],
+          "summary": "Dozens of individual DNA molecules stack vertically like a manga speed-screen: unexposed controls remain tightly closed, while low-dose irradiated strands open cleanly across regulatory regions."
+        },
+        {
+          "page_label": "13",
+          "page_title": "Endogenous Methylation (5mC) Meets Accessibility",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Dual-Track Infographic",
+              "description": "Top track: Endogenous plant cytosine methylation (CG / CHG). Bottom track: Open chromatin accessibility (MAPit). Both converge directly on stress and hormone-response gene networks!"
+            },
+            {
+              "panel_number": 2,
+              "shot": "Molecular Link",
+              "description": "Where MET1-maintained methylation softens near ethylene-regulated promoters, transcription accelerates in lockstep."
+            }
+          ],
+          "caption": "Genetic transcription and epigenetic chromatin remodeling are two halves of the same ethylene-driven circuit.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Top track: Endogenous plant cytosine methylation (CG / CHG). Bottom track: Open chromatin accessibility (MAPit). Both converge directly on stress and hormone-response gene networks!"
+        },
+        {
+          "page_label": "14",
+          "page_title": "Dose-Dependent Sensitivity Thresholds",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Multi-Curve Telemetry",
+              "description": "Comparing absorbed radiation doses reveals distinct response tiers: ultra-low doses prime reversible hormonal acclimation, while higher doses recruit heavier cell-cycle and DNA-repair checkpoints."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Botanical Silhouette",
+              "description": "Leaf stomata, trichomes, and root primordia stay intact and healthy throughout the low-dose priming window."
+            }
+          ],
+          "caption": "Comparing absorbed radiation doses reveals distinct response tiers: ultra-low doses prime reversible hormonal acclimation, while higher doses recruit heavier cell-cycle and DNA-repair…",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Comparing absorbed radiation doses reveals distinct response tiers: ultra-low doses prime reversible hormonal acclimation, while higher doses recruit heavier cell-cycle and DNA-repair checkpoints."
+        },
+        {
+          "page_label": "15",
+          "page_title": "Temporal Recovery Wave",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Timeline Triptych",
+              "description": "Three sequential snapshots across post-irradiation time points: (1) Immediate hormonal alert, (2) Peak ethylene & chromatin opening wave, (3) Controlled re-compaction and homeostatic recovery."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Caption Box",
+              "description": "Time-course sampling proves that plant chromatin acts like a spring—opening to mount defense, then stabilizing to conserve energy."
+            }
+          ],
+          "caption": "Three sequential snapshots across post-irradiation time points: (1) Immediate hormonal alert, (2) Peak ethylene & chromatin opening wave, (3) Controlled re-compaction and homeostatic…",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Three sequential snapshots across post-irradiation time points: (1) Immediate hormonal alert, (2) Peak ethylene & chromatin opening wave, (3) Controlled re-compaction and homeostatic recovery."
+        },
+        {
+          "page_label": "16",
+          "page_title": "Cross-Talk with SOG1 & DNA Guardians",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Series Callback Panel",
+              "description": "Glowing echoes of Volumes 80–84 (OSD-496 through OSD-510) appear in the nuclear background: while acute high-dose breaks summon ATM → SOG1, low-dose exposure recruits the agile ethylene-epigenetic network first!"
+            },
+            {
+              "panel_number": 2,
+              "shot": "Pathway Junction",
+              "description": "Ethylene pathways and antioxidant ROS scavengers buffer cellular chemistry before lesions escalate into double-strand breaks."
+            }
+          ],
+          "caption": "Glowing echoes of Volumes 80–84 (OSD-496 through OSD-510) appear in the nuclear background: while acute high-dose breaks summon ATM → SOG1, low-dose exposure recruits the agile…",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Dr. J. Chris Pires",
+              "text": "Evolution gave terrestrial plants a low-cost warning system—ethylene coordinates both gene expression and chromatin architecture under subtle radiation stress."
+            }
+          ],
+          "summary": "Glowing echoes of Volumes 80–84 (OSD-496 through OSD-510) appear in the nuclear background: while acute high-dose breaks summon ATM → SOG1, low-dose exposure recruits the agile ethylene-epigenetic network first!"
+        },
+        {
+          "page_label": "17",
+          "page_title": "Oxidative Balance Without Senescence",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Chloroplast Cutaway",
+              "description": "Inside irradiated mesophyll cells, photosynthetic thylakoids stay crisp and undamaged as ethylene-primed peroxidases neutralize free radicals."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Telemetry Meter",
+              "description": "Lipid peroxidation stays tightly controlled; photosynthetic efficiency holds steady."
+            }
+          ],
+          "caption": "Inside irradiated mesophyll cells, photosynthetic thylakoids stay crisp and undamaged as ethylene-primed peroxidases neutralize free radicals.",
+          "sfx": "SHUUU... (ROS neutralization)",
+          "dialogue": [],
+          "summary": "Inside irradiated mesophyll cells, photosynthetic thylakoids stay crisp and undamaged as ethylene-primed peroxidases neutralize free radicals. Lipid peroxidation stays tightly controlled; photosynthetic efficiency holds steady."
+        },
+        {
+          "page_label": "18",
+          "page_title": "Transposon Vigilance Under Low-Dose Exposure",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Pericentromeric Vault",
+              "description": "Deep in repetitive heterochromatin, MAPit shows that transposable elements remain firmly closed and methylated—preventing runaway genomic instability during low-dose radiation!"
+            },
+            {
+              "panel_number": 2,
+              "shot": "Contrast Callout",
+              "description": "Open chromatin at defense promoters; closed chromatin at transposons—precision epigenomic triage."
+            }
+          ],
+          "caption": "Deep in repetitive heterochromatin, MAPit shows that transposable elements remain firmly closed and methylated—preventing runaway genomic instability during low-dose radiation!",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Deep in repetitive heterochromatin, MAPit shows that transposable elements remain firmly closed and methylated—preventing runaway genomic instability during low-dose radiation!"
+        },
+        {
+          "page_label": "19",
+          "page_title": "Integrating Transcriptome & Epigenome",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Network Constellation",
+              "description": "A luminous multi-omics network graph links differentially accessible chromatin regions (DARs), differentially methylated regions (DMRs), and differentially expressed genes (DEGs)."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Center Hub Highlight",
+              "description": "At the glowing geometric heart of all three layers sits one unmistakable hub: Ethylene Signaling (EIN2 / EIN3 / ERFs)."
+            }
+          ],
+          "caption": "A luminous multi-omics network graph links differentially accessible chromatin regions (DARs), differentially methylated regions (DMRs), and differentially expressed genes (DEGs).",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Dr. Jeremy Newman",
+              "text": "When three independent omics layers all point to the exact same hormone, you know you've found the master coordinator."
+            }
+          ],
+          "summary": "A luminous multi-omics network graph links differentially accessible chromatin regions (DARs), differentially methylated regions (DMRs), and differentially expressed genes (DEGs)."
+        },
+        {
+          "page_label": "20",
+          "page_title": "Rethinking Spacecraft Atmosphere Engineering",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "ISS Veggie / APH Scrubber Cutaway",
+              "description": "For decades, spaceflight engineers scrubbed cabin ethylene aggressively toward zero to prevent premature fruit ripening and epinasty."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Design Breakthrough",
+              "description": "OSD-782 reveals a nuanced truth for long-duration Mars voyages: carefully tuned, ultra-low ethylene signaling dynamics play a vital role in coordinating radiation resilience!"
+            }
+          ],
+          "caption": "In deep space, cabin atmosphere engineering and plant epigenetics become one unified discipline.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "For decades, spaceflight engineers scrubbed cabin ethylene aggressively toward zero to prevent premature fruit ripening and epinasty. OSD-782 reveals a nuanced truth for long-duration Mars voyages: carefully tuned, ultra-low ethylene signaling dynamics play a vital role in…"
+        },
+        {
+          "page_label": "21",
+          "page_title": "Open Data Deposited (OSD-782)",
+          "act": "Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)",
+          "act_num": 2,
+          "panels_count": 2,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "NASA OSDR Terminal",
+              "description": "All 36 verified RNA-Seq and epigenomic study records lock into NASA Open Science Data Repository under Study DOI 10.26030/qpqe-8956 (OSD-782)."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Global Link",
+              "description": "Worldwide researchers and student classrooms gain instant open access to explore low-dose radiation multi-omics."
+            }
+          ],
+          "caption": "All 36 verified RNA-Seq and epigenomic study records lock into NASA Open Science Data Repository under Study DOI 10.26030/qpqe-8956 (OSD-782).",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "All 36 verified RNA-Seq and epigenomic study records lock into NASA Open Science Data Repository under Study DOI 10.26030/qpqe-8956 (OSD-782). Worldwide researchers and student classrooms gain instant open access to explore low-dose radiation multi-omics."
+        },
+        {
+          "page_label": "22",
           "page_title": "",
-          "act": "Act III: The Interplanetary Atmosphere (Pages 21–32)",
+          "act": "Act II Climax: The Ninety-Mission Convergence",
+          "act_num": 2,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Panoramic Data Tapestry",
+              "description": "Glowing threads from every earlier volume converge in a grand orbital helix: Vol. 01 (OSD-7) root skewing, Vol. 16 (OSD-136) hypobaria, Vol. 68 (OSD-971) putrescine shields, Vol. 74 (OSD-416) bisulfite methylomes, and Vol. 90 (OSD-782) ethylene-chromatin resilience!"
+            }
+          ],
+          "caption": "Glowing threads from every earlier volume converge in a grand orbital helix: Vol.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Glowing threads from every earlier volume converge in a grand orbital helix: Vol. 01 (OSD-7) root skewing, Vol. 16 (OSD-136) hypobaria, Vol. 68 (OSD-971) putrescine shields, Vol. 74 (OSD-416) bisulfite methylomes, and Vol. 90 (OSD-782) ethylene-chromatin resilience!"
+        },
+        {
+          "page_label": "23",
+          "page_title": "From Shuttle Middeck to Mars Transit",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
           "act_num": 3,
-          "panels_count": 4,
-          "panels": [],
-          "caption": "The technological revelation for space agriculture: On the ISS, ethylene gas was historically considered a toxic waste contaminant produced by plants that had to be scrubbed from the…",
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Historical Montage",
+              "description": "Left to right across the spread: STS-131 ABRS canisters → ISS Veggie & APH → Apollo lunar regolith gloveboxes → Antarctic EDEN ISS → a rotating interplanetary greenhouse vessel bound for Mars."
+            }
+          ],
+          "caption": "Ninety verified NASA OSDR plant biology missions. Every single one is a stepping stone from Earth's cradle to living ecosystems among the stars.",
           "sfx": null,
           "dialogue": [],
-          "summary": "The technological revelation for space agriculture: On the ISS, ethylene gas was historically considered a toxic waste contaminant produced by plants that had to be scrubbed from the cabin atmosphere using catalytic scrubbers. The discovery of OSD-782 changes everything: Low…"
+          "summary": "Left to right across the spread: STS-131 ABRS canisters → ISS Veggie & APH → Apollo lunar regolith gloveboxes → Antarctic EDEN ISS → a rotating interplanetary greenhouse vessel bound for Mars."
         },
         {
-          "page_label": "26–30",
-          "page_title": "",
-          "act": "Act III: The Interplanetary Atmosphere (Pages 21–32)",
+          "page_label": "24",
+          "page_title": "The Four Pillars of Cosmic Botany",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
           "act_num": 3,
-          "panels_count": 8,
-          "panels": [],
-          "caption": "The Grand Climax of ASTRO-BOTANICA: ZERO-G ROOTS: From Volume 01 (OSD-7) to Volume 90 (OSD-782).",
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Four-Zone Infographic Art",
+              "description": "Four glowing botanical crests: (1) Gravity & Mechanics (statoliths, TCH4, TAC1), (2) Atmosphere & Light (Veggie LEDs, hypobaria, ethylene), (3) Regolith & Bioregeneration (Apollo soil, EDEN ISS, mizuna), and (4) Genome & Epigenome (SOG1, MET1, ELP2, OxPtADC)."
+            }
+          ],
+          "caption": "Four glowing botanical crests: (1) Gravity & Mechanics (statoliths, TCH4, TAC1), (2) Atmosphere & Light (Veggie LEDs, hypobaria, ethylene), (3) Regolith & Bioregeneration (Apollo soil…",
           "sfx": null,
           "dialogue": [],
-          "summary": "The Grand Climax of ASTRO-BOTANICA: ZERO-G ROOTS: From Volume 01 (OSD-7) to Volume 90 (OSD-782). Ninety verified spaceflight and ground-truth missions synthesizing ninety distinct pieces of the living cosmic puzzle: Root gravity perception, statolith tumbling, and tubulin…"
+          "summary": "Four glowing botanical crests: (1) Gravity & Mechanics (statoliths, TCH4, TAC1), (2) Atmosphere & Light (Veggie LEDs, hypobaria, ethylene), (3) Regolith & Bioregeneration (Apollo soil, EDEN ISS, mizuna), and (4) Genome & Epigenome (SOG1, MET1, ELP2, OxPtADC)."
         },
         {
-          "page_label": "31–32",
-          "page_title": "",
-          "act": "Act III: The Interplanetary Atmosphere (Pages 21–32)",
+          "page_label": "25",
+          "page_title": "The Role of MET1 Across Microgravity & Radiation",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Cross-Mission Split",
+              "description": "Left: OSD-416 (Vol. 74) showing MET1 conditioning microgravity methylomes on the ISS. Right: OSD-782 (Vol. 90) showing endogenous cytosine methylation + chromatin accessibility responding to low-dose radiation."
+            }
+          ],
+          "caption": "Left: OSD-416 (Vol.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Dr. Mingqi Zhou",
+              "text": "Microgravity and cosmic radiation hit different sensors—yet both speak directly to the plant epigenome."
+            }
+          ],
+          "summary": "Left: OSD-416 (Vol. 74) showing MET1 conditioning microgravity methylomes on the ISS. Right: OSD-782 (Vol. 90) showing endogenous cytosine methylation + chromatin accessibility responding to low-dose radiation."
+        },
+        {
+          "page_label": "26",
+          "page_title": "Future Space Farmers in Today's Classrooms",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Global Classroom Collage",
+              "description": "Middle-schoolers, high-school labs, and university teams examine real NASA OSDR datasets, running open phenomics pipelines and designing the next 90 space plant experiments."
+            }
+          ],
+          "caption": "Open science turns every classroom on Earth into Mission Control.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Middle-schoolers, high-school labs, and university teams examine real NASA OSDR datasets, running open phenomics pipelines and designing the next 90 space plant experiments."
+        },
+        {
+          "page_label": "27",
+          "page_title": "The Martian Greenhouse Horizon",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
           "act_num": 3,
           "panels_count": 2,
-          "panels": [],
-          "caption": "Full infographic spread: The Complete Multi-Omics Ethylene-Epigenetic Signaling Axis and Master Series Synthesis Ledger (Volumes 01 through 90).",
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Wide Establishing Shot",
+              "description": "Inside a translucent pressurized biodome resting in a red Martian crater valley, rows of emerald Arabidopsis, Red Romaine lettuce, dwarf wheat, and mizuna flourish beneath calibrated full-spectrum LEDs."
+            },
+            {
+              "panel_number": 2,
+              "shot": "Sensor Wall",
+              "description": "Atmospheric telemetry reads: O₂: 21% · CO₂: 800 ppm · Radiation Shield: ACTIVE · Ethylene Micro-Monitoring: NOMINAL."
+            }
+          ],
+          "caption": "Inside a translucent pressurized biodome resting in a red Martian crater valley, rows of emerald Arabidopsis, Red Romaine lettuce, dwarf wheat, and mizuna flourish beneath calibrated…",
           "sfx": null,
           "dialogue": [],
-          "summary": "Full infographic spread: The Complete Multi-Omics Ethylene-Epigenetic Signaling Axis and Master Series Synthesis Ledger (Volumes 01 through 90)."
+          "summary": "Inside a translucent pressurized biodome resting in a red Martian crater valley, rows of emerald Arabidopsis, Red Romaine lettuce, dwarf wheat, and mizuna flourish beneath calibrated full-spectrum LEDs."
+        },
+        {
+          "page_label": "28",
+          "page_title": "Breathing Together Across Worlds",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Close-Up / Stomata & Leaf",
+              "description": "Water vapor and oxygen shimmer from open stomata while roots weave through bio-conditioned regolith, closing the loop between human breath and plant photosynthesis."
+            }
+          ],
+          "caption": "Water vapor and oxygen shimmer from open stomata while roots weave through bio-conditioned regolith, closing the loop between human breath and plant photosynthesis.",
+          "sfx": null,
+          "dialogue": [
+            {
+              "speaker": "Mission Botanist",
+              "text": "Every molecule of oxygen in this dome started as sunlight, water, and ninety volumes of hard-won space biology."
+            }
+          ],
+          "summary": "Water vapor and oxygen shimmer from open stomata while roots weave through bio-conditioned regolith, closing the loop between human breath and plant photosynthesis."
+        },
+        {
+          "page_label": "29",
+          "page_title": "The Living Archive",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Cupola Panorama",
+              "description": "Looking back from lunar and Martian orbit toward the pale blue dot of Earth. Ninety luminous emerald data stars form a constellation across the dark sky."
+            }
+          ],
+          "caption": "From OSD-7 to OSD-971 and through all twenty-two Special Chronicles to OSD-782—every single plant study in the NASA Open Science Data Repository has been told.",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Looking back from lunar and Martian orbit toward the pale blue dot of Earth. Ninety luminous emerald data stars form a constellation across the dark sky."
+        },
+        {
+          "page_label": "30",
+          "page_title": "Grand Finale Splash: Zero-G Roots Forever",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Breathtaking Full-Page Splash",
+              "description": "A vibrant, unstoppable terrestrial canopy unfurling inside a crystalline orbital botanical ring above the glowing curve of Mars, its delicate roots tracing shimmering constellations through weightlessness."
+            }
+          ],
+          "caption": "ASTRO-BOTANICA: ZERO-G ROOTS — COMPLETE 90-VOLUME ARCHIVE. WHEREVER HUMANITY JOURNEYS, LIFE GROWS WITH US.",
+          "sfx": "KIRA-DON! (100% NASA OSDR Plant Biology Archive Complete)",
+          "dialogue": [],
+          "summary": "A vibrant, unstoppable terrestrial canopy unfurling inside a crystalline orbital botanical ring above the glowing curve of Mars, its delicate roots tracing shimmering constellations through weightlessness."
+        },
+        {
+          "page_label": "31",
+          "page_title": "Mission Architecture & OSD-782 Multi-Omics Matrix",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Left Infographic Spread",
+              "description": "Verified NASA OSDR OSD-782 design (n = 36 samples): Factors (Ionizing Radiation, Absorbed Radiation Dose, Time of Sample Collection After Treatment), Assays (Stranded RNA-Seq + MAPit single-molecule chromatin accessibility & cytosine methylation), Study DOI 10.26030/qpqe-8956."
+            }
+          ],
+          "caption": "Verified NASA OSDR OSD-782 design (n = 36 samples): Factors (Ionizing Radiation, Absorbed Radiation Dose, Time of Sample Collection After Treatment), Assays (Stranded RNA-Seq + MAPit…",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Verified NASA OSDR OSD-782 design (n = 36 samples): Factors (Ionizing Radiation, Absorbed Radiation Dose, Time of Sample Collection After Treatment), Assays (Stranded RNA-Seq + MAPit single-molecule chromatin accessibility & cytosine methylation), Study DOI 10.26030/qpqe-8956."
+        },
+        {
+          "page_label": "32",
+          "page_title": "Master 90-Volume Series Synthesis Ledger",
+          "act": "Act III: The Interplanetary Green Fleet (Pages 23–32)",
+          "act_num": 3,
+          "panels_count": 1,
+          "panels": [
+            {
+              "panel_number": 1,
+              "shot": "Right Infographic Spread",
+              "description": "Complete synthesis of 90 Volumes (2,880 Script Pages · 88/90 Live NASA OSDR API Verified + 2 International Archive Studies · 3,787 Verified Biological Samples) uniting ASTRO-BOTANICA: ZERO-G ROOTS with The CoSE Chronicles and the 114-Issue Research Archive."
+            }
+          ],
+          "caption": "Complete synthesis of 90 Volumes (2,880 Script Pages · 88/90 Live NASA OSDR API Verified + 2 International Archive Studies · 3,787 Verified Biological Samples) uniting ASTRO-BOTANICA…",
+          "sfx": null,
+          "dialogue": [],
+          "summary": "Complete synthesis of 90 Volumes (2,880 Script Pages · 88/90 Live NASA OSDR API Verified + 2 International Archive Studies · 3,787 Verified Biological Samples) uniting ASTRO-BOTANICA: ZERO-G ROOTS with The CoSE Chronicles and the 114-Issue Research Archive."
         }
       ],
       "molecular_cast": [
         {
-          "name": "The Master Transcription Factors (EIN3, EIL1)",
+          "name": "The Master Transcription Factors (EIN3, EIL1 & ERF Brigade)",
           "symbol": "EIN3",
           "role": "Master Regulator",
           "direction": "neutral",
-          "description": "Nuclear regulators binding directly to Ethylene Response Factors (ERF1, EDF1) to direct stress tolerance."
+          "description": "Ethylene-responsive nuclear regulators binding directly to newly opened chromatin promoters to trigger stress defense and recovery programs."
         },
         {
-          "name": "The Epigenetic Bridge (MET1, CMT3)",
+          "name": "The Chromatin Accessibility Probe (MAPit — M.CviPI Methyltransferase)",
+          "symbol": "MAPit",
+          "role": "Enzyme / Remodeler",
+          "direction": "neutral",
+          "description": "Experimental molecular sentinel that footprints open, accessible DNA (GC sites) simultaneously alongside endogenous plant CG methylation (MET1) on the very same DNA molecule!"
+        },
+        {
+          "name": "The DNA Methylation Guardian (MET1 / Endogenous 5mC)",
           "symbol": "MET1",
           "role": "Enzyme / Remodeler",
-          "direction": "dual",
-          "description": "DNA methyltransferases whose chromatin-remodeling activities are directly governed by the EIN2-EIN3 signaling axis."
+          "direction": "up",
+          "description": "Native cytosine methylation network whose promoter remodeling aligns with radiation-induced chromatin opening."
         },
         {
-          "name": "Dr. Nele Horemans & Dr. May Van Hees",
-          "symbol": "Dr. Horemans",
+          "name": "Dr. Jeremy Newman, Dr. Mingqi Zhou, Dr. Michael Kladde & Dr. Patrick Concannon",
+          "symbol": "Dr. Newman",
           "role": "Researcher / Crew",
           "direction": "neutral",
-          "description": "Radiobiologists and systems geneticists proving that a humble volatile gas holds the key to safeguarding the planetary genome for interstellar travel."
+          "description": "Systems geneticists and epigenomic pioneers applying single-molecule MAPit + RNA-Seq to decode how plants sense and survive low-dose space-relevant ionizing radiation."
         }
       ],
       "key_metrics": [
         {
-          "label": "14-day Low-Dose Radiation Growth",
-          "value": "Normal rosette expansion",
-          "detail": "Ethylene required for chronic radiation tolerance",
-          "trend": "up",
-          "score": 72,
-          "col_header": "Col-0 Wild-Type"
+          "label": "Master Signaling Hub",
+          "value": "Ethylene signaling (EIN2/EIN3/ERF)",
+          "detail": "Coordinates both genetic & epigenetic radiation acclimation",
+          "trend": "neutral",
+          "score": 62,
+          "col_header": "Multi-Omics Finding (Newman et al., 2023)"
         },
         {
-          "label": "Ethylene Emission Rate",
-          "value": "+320% surge under 1.4 mGy/h",
-          "detail": "Volatile airborne stress defense messenger",
-          "trend": "up",
-          "score": 95,
-          "col_header": "Col-0 Wild-Type"
+          "label": "Chromatin Accessibility (MAPit)",
+          "value": "Targeted promoter opening at stress loci",
+          "detail": "Single-molecule M.CviPI footprinting reveals nucleosome shifts",
+          "trend": "down",
+          "score": 48,
+          "col_header": "Multi-Omics Finding (Newman et al., 2023)"
         },
         {
-          "label": "DNA Methylation Stability",
-          "value": "Precise targeted remodeling",
-          "detail": "EIN2 bridges genetic repair with epigenetics",
+          "label": "Endogenous Methylation (5mC)",
+          "value": "Synchronized promoter remodeling",
+          "detail": "Couples cytosine methylation state directly to gene expression",
           "trend": "up",
           "score": 72,
-          "col_header": "Col-0 Wild-Type"
+          "col_header": "Multi-Omics Finding (Newman et al., 2023)"
         },
         {
-          "label": "Lipid Peroxidation (MDA)",
-          "value": "Low (0.8 nmol/g FW)",
-          "detail": "Ethylene suppresses chronic oxidative decay",
-          "trend": "up",
-          "score": 72,
-          "col_header": "Col-0 Wild-Type"
+          "label": "Transposon Stability",
+          "value": "Heterochromatin remains tightly closed",
+          "detail": "Prevents genomic chaos while priming defense promoters",
+          "trend": "down",
+          "score": 48,
+          "col_header": "Multi-Omics Finding (Newman et al., 2023)"
         },
         {
-          "label": "Deep Space Agricultural Impact",
-          "value": "Prime candidate for Mars",
-          "detail": "Regulated ethylene atmospheres protect crops",
-          "trend": "up",
-          "score": 72,
-          "col_header": "Col-0 Wild-Type"
+          "label": "Verified Sample Scope",
+          "value": "36 biological samples (10.26030/qpqe-8956)",
+          "detail": "Open-access multi-omics benchmark for space radiobiology",
+          "trend": "down",
+          "score": 48,
+          "col_header": "Multi-Omics Finding (Newman et al., 2023)"
         }
       ],
       "edu": {
-        "k5_mystery": "How does Arabidopsis thaliana survive and grow inside SCK CEN Gamma Irradiation Facility without normal Earth conditions?",
-        "k5_discovery": "Scientists discovered that helper genes like EIN3 switch on to protect the plant! Key clue: 14-day Low-Dose Radiation Growth: Ethylene required for chronic radiation tolerance",
-        "ms_experiment": "NASA study OSD-782 tested Arabidopsis thaliana inside SCK CEN Gamma Irradiation Facility (Ground Analog), comparing space/stress conditions against matched terrestrial controls.",
-        "ms_mechanism": "Focus pathway: Radiation & DNA Repair. 14-day Low-Dose Radiation Growth: Ethylene required for chronic radiation tolerance",
-        "hs_methods": "Arabidopsis thaliana (Columbia-0 wild-type vs. ein2-1 ethylene-insensitive mutant vs. ctr1-1 constitutive ethylene signaling mutant). Multi-omics integration: Whole-genome stranded RNA-Seq, Whole-Genome Bisulfite Sequencing (WGBS) cytosine…"
+        "k5_mystery": "How does Arabidopsis thaliana seedlings profiled across… survive and grow inside University of Florida Ground Analog… without normal Earth conditions?",
+        "k5_discovery": "Scientists discovered that helper genes like EIN3 switch on to protect the plant! Key clue: Master Signaling Hub: Coordinates both genetic & epigenetic radiation acclimation",
+        "ms_experiment": "NASA study OSD-782 tested Arabidopsis thaliana seedlings profiled across… inside University of Florida Ground Analog… (ISS), comparing space/stress conditions against matched terrestrial controls.",
+        "ms_mechanism": "Focus pathway: Radiation & DNA Repair. Master Signaling Hub: Coordinates both genetic & epigenetic radiation acclimation",
+        "hs_methods": "Arabidopsis thaliana seedlings profiled across three verified NASA OSDR experimental factors: Ionizing Radiation, Absorbed Radiation Dose, and Time of Sample Collection After Treatment (36 samples). Integrated multi-omics combining…"
       },
       "debrief_tables": [
         {
           "headers": [
-            "Parameter / Assay",
-            "Col-0 Wild-Type",
-            "ein2-1 (Ethylene Blind)",
-            "ctr1-1 (Constitutive Ethylene)",
+            "Parameter / Assay (OSD-782)",
+            "Multi-Omics Finding (Newman et al., 2023)",
+            "Experimental Factor",
             "Biological Mechanism"
           ],
           "rows": [
             [
-              "14-day Low-Dose Radiation Growth",
-              "Normal rosette expansion",
-              "38% biomass reduction",
-              "100% normal growth",
-              "Ethylene required for chronic radiation tolerance"
+              "Master Signaling Hub",
+              "Ethylene signaling (EIN2/EIN3/ERF)",
+              "Ionizing Radiation",
+              "Coordinates both genetic & epigenetic radiation acclimation"
             ],
             [
-              "Ethylene Emission Rate",
-              "+320% surge under 1.4 mGy/h",
-              "Non-responsive",
-              "Constitutive high signal",
-              "Volatile airborne stress defense messenger"
+              "Chromatin Accessibility (MAPit)",
+              "Targeted promoter opening at stress loci",
+              "Absorbed Radiation Dose",
+              "Single-molecule M.CviPI footprinting reveals nucleosome shifts"
             ],
             [
-              "DNA Methylation Stability",
-              "Precise targeted remodeling",
-              "Deregulated transposon hops",
-              "Robust hyper-methylated shielding",
-              "EIN2 bridges genetic repair with epigenetics"
+              "Endogenous Methylation (5mC)",
+              "Synchronized promoter remodeling",
+              "Time Post-Treatment",
+              "Couples cytosine methylation state directly to gene expression"
             ],
             [
-              "Lipid Peroxidation (MDA)",
-              "Low (0.8 nmol/g FW)",
-              "High (2.4 nmol/g FW)",
-              "Very Low (0.6 nmol/g FW)",
-              "Ethylene suppresses chronic oxidative decay"
+              "Transposon Stability",
+              "Heterochromatin remains tightly closed",
+              "Low-Dose Exposure",
+              "Prevents genomic chaos while priming defense promoters"
             ],
             [
-              "Deep Space Agricultural Impact",
-              "Prime candidate for Mars",
-              "Unsuitable for deep space",
-              "Super-tolerant breeding line",
-              "Regulated ethylene atmospheres protect crops"
+              "Verified Sample Scope",
+              "36 biological samples (10.26030/qpqe-8956)",
+              "3 Verified OSDR Factors",
+              "Open-access multi-omics benchmark for space radiobiology"
             ]
           ]
         }
       ],
-      "dramatis_personae": "- **The Invisible Gas (`C₂H₄`, *Ethylene*):** The simplest gaseous phytohormone in existence. Synthesized in two enzymatic steps from methionine; acts as a volatile airborne messenger that diffuses across plant tissues to trigger systemic defense.\n- **The Central Signaling Conduit (`EIN2`, *ETHYLENE INSENSITIVE 2*):** The master transmembrane coordinator located in the endoplasmic reticulum. Cleaved upon ethylene perception to send its nuclear C-terminal domain to activate transcription.\n- **The Master Transcription Factors (`EIN3`, `EIL1`):** Nuclear regulators binding directly to Ethylene Response Factors (*ERF1*, *EDF1*) to direct stress tolerance.\n- **The Epigenetic Bridge (`MET1`, `CMT3`):** DNA methyltransferases whose chromatin-remodeling activities are directly governed by the EIN2-EIN3 signaling axis.\n- **Squad Mutant Warriors:**\n  - **The Blind Sentry (*ein2-1*):** Unable to sense ethylene gas; unable to remodel its epigenome under chronic radiation, suffering severe oxidative lesions and cellular senescence.\n  - **The Hyper-Shielded (*ctr1-1*):** Locked in perpetual ethylene signaling; constitutively hyper-methylated, displaying extreme natural immunity to cosmic radiation!\n- **Dr. Nele Horemans & Dr. May Van Hees:** Radiobiologists and systems geneticists proving that a humble volatile gas holds the key to safeguarding the planetary genome for interstellar travel.",
-      "script_markdown": "### Act I: The Chronic Drizzle (Pages 1–10)\n\n**Page 1**\n- **Panel 1 [Wide Establishing Shot]:** Deep inside the SCK CEN underground radiation research citadel. A long corridor of stainless-steel growth chambers bathed in sterile magenta LED light. A tiny Cesium-137 source hums silently behind lead collimators, emitting a gentle, continuous drizzle of gamma rays: `1.4 mGy per hour`.\n- **Panel 2:** Macro view of an *Arabidopsis* rosette. Unlike acute radiation blasts that shatter DNA in seconds, this gentle cosmic drizzle accumulates quietly over two weeks: `T = Day 14, Cumulative Dose = 470 mGy`—the exact radiation budget of an astronaut traveling to Mars!\n- **Caption (Narrator):** *Acute radiation is an explosion. Chronic space radiation is an endless, subtle whisper. For fourteen days, every cell in the seedling receives a continuous tick of ionizing energy. How does a living organism adapt to a universe filled with cosmic rays?*\n- **Dialogue (Radiobiologist Dr. Horemans):** \"Fourteen days of continuous low-dose exposure completed. Gas chromatograph Channel 3 reading: ethylene emission is spiking by three hundred percent in the wild-type chamber!\"\n\n**Page 2**\n- **Panel 1:** Cutaway into the petiole tissue. The rate-limiting enzyme *ACS* (1-aminocyclopropane-1-carboxylate synthase) surges into action.\n- **Panel 2:** Clouds of volatile ethylene gas (`C₂H₄`) diffuse from cell to cell across the apoplast, binding to *ETR1* receptors on the endoplasmic reticulum.\n- **SFX:** *SHHH-DIFFUSE (Volatile hormone transmission)*\n- **Dialogue (Dr. Van Hees):** \"The plants are talking to each other through the air! Ethylene gas is binding to the ETR1 receptor, deactivating the negative regulator CTR1!\"\n\n**Page 3**\n- **Panel 1:** Inside the cytoplasm, *EIN2* is cleaved. The nuclear C-terminal fragment (EIN2-C) translocates into the nucleus, stabilizing *EIN3* and *EIL1* transcription factors.\n- **Panel 2:** Comparison: In Col-0, rosette growth continues smoothly. In *ein2-1*, yellow chlorotic spots appear on the leaf tips, and root hairs fail to elongate.\n- **Caption:** *Cut the ethylene wire, and the plant's defense system is blinded to chronic cosmic rays.*\n\n**Page 4–10**\n- Testing across the mutant spectrum:\n  - *ein2-1*: Severely stunted under chronic low-dose radiation; accumulates high levels of malondialdehyde (MDA, a marker of lipid peroxidation).\n  - *ctr1-1*: Constitutively active ethylene mutant; thrives under the radiation drizzle with zero leaf chlorosis, indistinguishable from non-irradiated controls!\n- Proving that **ethylene signaling is the primary master switch for chronic spaceflight radiation survival**!\n\n### Act II: The Epigenetic Coupling (Pages 11–20)\n\n**Page 11–15**\n- Whole-genome bisulfite sequencing (WGBS) under chronic low-dose radiation:\n  - In wild-type Col-0, chronic ethylene signaling orchestrates targeted cytosine hyper-methylation at transposable elements while maintaining open hypomethylated chromatin at DNA repair promoters (*RAD51*, *BRCA1*).\n  - In *ein2-1*, this coordinated epigenetic patterning collapses: transposable elements become aberrantly hypomethylated and begin transposing, causing insertional mutations across the genome!\n\n**Page 16–20**\n- Multi-omics cross-correlation:\n  - Direct interaction between *EIN3* and *MET1* / *CMT3* DNA methyltransferases.\n  - Ethylene acts as the bridge connecting physical stress perception with the stable epigenetic memory of the chromosome!\n\n### Act III: The Interplanetary Atmosphere (Pages 21–32)\n\n**Page 21–25**\n- The technological revelation for space agriculture:\n  - On the ISS, ethylene gas was historically considered a toxic waste contaminant produced by plants that had to be scrubbed from the cabin atmosphere using catalytic scrubbers.\n  - The discovery of OSD-782 changes everything: **Low, controlled background levels of ethylene (`10–50 ppb`) are actually essential to prime plant defenses against cosmic radiation!**\n  - Spacecraft life support systems should not scrub ethylene to zero; they should maintain a tuned \"hormonal atmosphere\" to protect crops during interplanetary transits!\n\n**Page 26–30**\n- The Grand Climax of ***ASTRO-BOTANICA: ZERO-G ROOTS***:\n  - From Volume 01 (`OSD-7`) to Volume 90 (`OSD-782`).\n  - Ninety verified spaceflight and ground-truth missions synthesizing ninety distinct pieces of the living cosmic puzzle:\n    - Root gravity perception, statolith tumbling, and tubulin torque.\n    - Super-sonic G-transitions, parabolic habituation, and live phosphoprotein relays.\n    - Double-strand break repair, SOG1 checkpoints, and DREM systems trees.\n    - Lunar regolith biocompatibility, Antarctic polar overwintering, and volatile hormone atmospheres.\n- Final panel: An expansive, breathtaking four-page gatefold view. A massive orbital agricultural ring rotating gently above the red curve of Mars. Inside the glass domes, ninety species and cultivars of terrestrial crops grow tall, green, and vibrant, their roots and shoots dancing in harmony with the laws of the cosmos, tended by generations of human explorers who have made the stars their home.\n\n**Page 31–32**\n- Full infographic spread: The Complete Multi-Omics Ethylene-Epigenetic Signaling Axis and Master Series Synthesis Ledger (Volumes 01 through 90).",
+      "dramatis_personae": "- **The Invisible Gas (`C₂H₄`, *Ethylene*):** The simplest gaseous phytohormone on Earth—revealed by `OSD-782` multi-omics as the master signaling hub coordinating *both* transcriptional and epigenetic chromatin responses to low-dose ionizing radiation.\n- **The Master Transcription Factors (`EIN3`, `EIL1` & `ERF` Brigade):** Ethylene-responsive nuclear regulators binding directly to newly opened chromatin promoters to trigger stress defense and recovery programs.\n- **The Central Signaling Conduit (`EIN2`, *ETHYLENE INSENSITIVE 2*):** Transmembrane messenger linking ethylene perception at the endoplasmic reticulum to nuclear gene regulation and chromatin state remodeling.\n- **The Chromatin Accessibility Probe (`MAPit` — `M.CviPI` Methyltransferase):** Experimental molecular sentinel that footprints open, accessible DNA (`GC` sites) simultaneously alongside endogenous plant `CG` methylation (`MET1`) on the very same DNA molecule!\n- **The DNA Methylation Guardian (`MET1` / Endogenous `5mC`):** Native cytosine methylation network whose promoter remodeling aligns with radiation-induced chromatin opening.\n- **Dr. Jeremy Newman, Dr. Mingqi Zhou, Dr. Michael Kladde & Dr. Patrick Concannon:** Systems geneticists and epigenomic pioneers applying single-molecule MAPit + RNA-Seq to decode how plants sense and survive low-dose space-relevant ionizing radiation.",
+      "script_markdown": "### Act I: The Low-Dose Whisper (Pages 1–10)\n\n**Page 1 — Splash: Beneath the Cosmic Drizzle**\n- **Panel 1 [Wide Establishing Shot]:** Inside the ground-analog ionizing radiation chamber, arrays of *Arabidopsis thaliana* seedlings rest in precision trays beneath calibrated radiation collimators. No catastrophic blast—only an invisible, low-dose pulse mimicking deep-space cosmic rays.\n- **Panel 2 [Macro Rosette Cutaway]:** Glowing ionizing photon tracks pass silently through leaf epidermis and mesophyll nuclei without scorching the leaves—leaving subtle molecular ripples behind.\n- **Caption:** *High-dose radiation shatters genomes in an instant. Low-dose space radiation is a quieter riddle: how does a living plant detect, remember, and adapt to subtle ionizing whispers?*\n- **Dialogue (Dr. Jeremy Newman):** \"Thirty-six biological samples across absorbed dose and post-irradiation recovery time points. Let's look beneath the RNA—straight into chromatin accessibility.\"\n- **SFX:** *TICK... TICK... (Low-dose dosimeter cadence)*\n\n**Page 2 — Beyond Acute Mutation Breeding**\n- **Panel 1 [Historical Flashback Split]:** Left: 20th-century high-dose gamma fields blasting seeds to generate random agricultural mutations. Right: A sleek Mars transit spacecraft bathed in low-dose galactic cosmic radiation.\n- **Panel 2 [Data Monitor]:** Telemetry graph contrasts lethal acute blasts against low-dose physiological stress where plants survive—yet silently reprogram their regulatory circuits.\n- **Caption:** *For decades, plant radiobiology studied high-dose damage. Deep-space missions demand answers about low-dose ionizing radiation.*\n\n**Page 3 — Introducing `MAPit`: Two Maps on One Strand**\n- **Panel 1 [Molecular Blueprint]:** Inside the University of Florida lab, Dr. Michael Kladde's **MAPit** (*Methyltransferase Accessibility Protocol for individual templates*) enzyme `M.CviPI` glides over intact plant nuclei, tagging open, nucleosome-free `GC` dinucleotides!\n- **Panel 2 [Close-Up / Single DNA Molecule]:** On the exact same individual DNA strand, `MAPit` captures *both* **chromatin accessibility** (`G-mC`) and **endogenous plant methylation** (`mC-G`) simultaneously!\n- **Dialogue (Dr. Michael Kladde):** \"MAPit lets us see which promoters physically open up after low-dose radiation—and whether endogenous methylation shifts on the exact same molecule.\"\n- **SFX:** *SHING-TAG (M.CviPI footprinting)*\n\n**Page 4 — The Three-Factor Experimental Matrix**\n- **Panel 1 [Blueprint Grid]:** A crisp experimental matrix lights up on the screen mapping the three verified NASA OSDR `OSD-782` factors: **Ionizing Radiation**, **Absorbed Radiation Dose**, and **Time of Sample Collection After Treatment**.\n- **Panel 2 [Sample Tubes]:** Thirty-six labeled biological replicates line the chilled rack—paired identically for RNA-Seq expression and MAPit epigenomic accessibility.\n- **Caption:** *Time matters. Collecting samples across post-treatment time points captures the wave from first perception to epigenetic stabilization.*\n\n**Page 5 — First Minutes After Exposure**\n- **Panel 1 [Cellular Interior]:** Ionizing photons generate tiny, localized bursts of reactive oxygen species (ROS) inside chloroplasts and nuclei.\n- **Panel 2 [Nuclear Radar]:** Rather than triggering chaotic cell death, the plant's early stress sensors fire a surprisingly coordinated transcriptional pulse.\n- **SFX:** *PIIIN... (Early ROS signal wave)*\n\n**Page 6 — Early Gene Expression Ripples**\n- **Panel 1 [RNA-Seq Waveform Wall]:** Stranded Illumina RNA-Seq traces surge across the bioinformatics terminal as Dr. Mingqi Zhou aligns all 36 transcriptomes.\n- **Panel 2 [Close-Up]:** Unexpectedly, classic double-strand break genes are only part of the picture—an entire hormonal signaling cascade dominates the enrichment chart!\n- **Dialogue (Dr. Mingqi Zhou):** \"Look at the top enriched pathway across doses and time points—it's not just DNA repair. It's ethylene signaling!\"\n\n**Page 7 — Enter the Planetary Hormone (`C₂H₄`)**\n- **Panel 1 [Dramatic Botanical Cutaway]:** Translucent, glowing vapor ribbons of two-carbon **ethylene gas (`C₂H₄`)** diffuse across intercellular air spaces between irradiated leaf cells.\n- **Panel 2 [Molecular Structure Inset]:** Two carbon atoms linked by a double bond, four hydrogens (`H₂C=CH₂`)—the tiniest volatile hormone in biology acting as a rapid systemic alert!\n- **SFX:** *SHHH-DIFFUSE (Volatile hormone transmission)*\n\n**Page 8 — Receptor Unlock: `ETR1` → `CTR1` → `EIN2`**\n- **Panel 1 [Endoplasmic Reticulum Action Beat]:** Ethylene molecules dock into copper-cofactor `ETR1` receptors embedded in the ER membrane, shutting off the brake kinase `CTR1`.\n- **Panel 2 [Signal Cleavage]:** Liberated from phosphorylation, the C-terminal tail of `EIN2` cleaves cleanly and rockets toward the nuclear pore!\n- **Dialogue (EIN2 Conduit):** \"Brake released! C-terminal fragment heading to the nucleus—stabilize EIN3 immediately!\"\n\n**Page 9 — `EIN3` & `EIL1` Take Command**\n- **Panel 1 [Nuclear Command Center]:** Inside the nucleus, `EIN3` and `EIL1` transcription factors lock onto target promoters, activating an army of **Ethylene Response Factors (`ERF`s)**.\n- **Panel 2 [Dose Comparison]:** Even at subtle low doses where leaves look outwardly calm, the ethylene transcriptional network lights up with surgical precision.\n- **Caption:** *Low-dose ionizing radiation speaks to the plant genome in the language of ethylene.*\n\n**Page 10 — Act I Turn: Is Ethylene Epigenetic Too?**\n- **Panel 1 [Split Screen]:** Top: RNA-Seq expression peaks. Bottom: Raw MAPit chromatin accessibility tracks loading across the server cluster.\n- **Panel 2 [Close-Up / Dr. Rhonda Bacher]:** Statistical models cross-correlate expression shifts with promoter nucleosome opening.\n- **Dialogue (Dr. Rhonda Bacher):** \"Now let's test the big hypothesis: does ethylene signaling only change RNA, or is it opening the physical chromatin itself?\"\n\n### Act II: The Multi-Omics Epigenetic Bridge (Pages 11–22)\n\n**Page 11 — Nucleosomes Slide Open**\n- **Panel 1 [Microscopic Chromatin View]:** Along ethylene-responsive promoters, tightly packed histone octamers slide aside after low-dose irradiation—exposing bare DNA helices to `MAPit`'s accessibility probe!\n- **Panel 2 [Footprint Readout]:** High-resolution single-molecule plots show unmistakable bursts of `G-mC` accessibility right at `EIN3`/`ERF` binding motifs.\n- **SFX:** *KAKAKAKA! (Nucleosome remodeling)*\n\n**Page 12 — Single-Molecule Proof**\n- **Panel 1 [MAPit Alignment Stack]:** Dozens of individual DNA molecules stack vertically like a manga speed-screen: unexposed controls remain tightly closed, while low-dose irradiated strands open cleanly across regulatory regions.\n- **Panel 2 [Researcher Reaction]:** Dr. Patrick Concannon traces the synchronized accessibility wave across time points.\n- **Dialogue (Dr. Patrick Concannon):** \"Look at those single-template footprints. Low-dose radiation leaves a targeted chromatin accessibility signature—not random genome damage.\"\n\n**Page 13 — Endogenous Methylation (`5mC`) Meets Accessibility**\n- **Panel 1 [Dual-Track Infographic]:** Top track: Endogenous plant cytosine methylation (`CG` / `CHG`). Bottom track: Open chromatin accessibility (`MAPit`). Both converge directly on stress and hormone-response gene networks!\n- **Panel 2 [Molecular Link]:** Where `MET1`-maintained methylation softens near ethylene-regulated promoters, transcription accelerates in lockstep.\n- **Caption:** *Genetic transcription and epigenetic chromatin remodeling are two halves of the same ethylene-driven circuit.*\n\n**Page 14 — Dose-Dependent Sensitivity Thresholds**\n- **Panel 1 [Multi-Curve Telemetry]:** Comparing absorbed radiation doses reveals distinct response tiers: ultra-low doses prime reversible hormonal acclimation, while higher doses recruit heavier cell-cycle and DNA-repair checkpoints.\n- **Panel 2 [Botanical Silhouette]:** Leaf stomata, trichomes, and root primordia stay intact and healthy throughout the low-dose priming window.\n\n**Page 15 — Temporal Recovery Wave**\n- **Panel 1 [Timeline Triptych]:** Three sequential snapshots across post-irradiation time points: (1) Immediate hormonal alert, (2) Peak ethylene & chromatin opening wave, (3) Controlled re-compaction and homeostatic recovery.\n- **Panel 2 [Caption Box]:** *Time-course sampling proves that plant chromatin acts like a spring—opening to mount defense, then stabilizing to conserve energy.*\n\n**Page 16 — Cross-Talk with `SOG1` & DNA Guardians**\n- **Panel 1 [Series Callback Panel]:** Glowing echoes of Volumes 80–84 (`OSD-496` through `OSD-510`) appear in the nuclear background: while acute high-dose breaks summon `ATM → SOG1`, low-dose exposure recruits the agile ethylene-epigenetic network first!\n- **Panel 2 [Pathway Junction]:** Ethylene pathways and antioxidant ROS scavengers buffer cellular chemistry before lesions escalate into double-strand breaks.\n- **Dialogue (Dr. J. Chris Pires):** \"Evolution gave terrestrial plants a low-cost warning system—ethylene coordinates both gene expression and chromatin architecture under subtle radiation stress.\"\n\n**Page 17 — Oxidative Balance Without Senescence**\n- **Panel 1 [Chloroplast Cutaway]:** Inside irradiated mesophyll cells, photosynthetic thylakoids stay crisp and undamaged as ethylene-primed peroxidases neutralize free radicals.\n- **Panel 2 [Telemetry Meter]:** Lipid peroxidation stays tightly controlled; photosynthetic efficiency holds steady.\n- **SFX:** *SHUUU... (ROS neutralization)*\n\n**Page 18 — Transposon Vigilance Under Low-Dose Exposure**\n- **Panel 1 [Pericentromeric Vault]:** Deep in repetitive heterochromatin, MAPit shows that transposable elements remain firmly closed and methylated—preventing runaway genomic instability during low-dose radiation!\n- **Panel 2 [Contrast Callout]:** Open chromatin at defense promoters; closed chromatin at transposons—precision epigenomic triage.\n\n**Page 19 — Integrating Transcriptome & Epigenome**\n- **Panel 1 [Network Constellation]:** A luminous multi-omics network graph links differentially accessible chromatin regions (`DARs`), differentially methylated regions (`DMRs`), and differentially expressed genes (`DEGs`).\n- **Panel 2 [Center Hub Highlight]:** At the glowing geometric heart of all three layers sits one unmistakable hub: **Ethylene Signaling (`EIN2` / `EIN3` / `ERF`s)**.\n- **Dialogue (Dr. Jeremy Newman):** \"When three independent omics layers all point to the exact same hormone, you know you've found the master coordinator.\"\n\n**Page 20 — Rethinking Spacecraft Atmosphere Engineering**\n- **Panel 1 [ISS Veggie / APH Scrubber Cutaway]:** For decades, spaceflight engineers scrubbed cabin ethylene aggressively toward zero to prevent premature fruit ripening and epinasty.\n- **Panel 2 [Design Breakthrough]:** `OSD-782` reveals a nuanced truth for long-duration Mars voyages: carefully tuned, ultra-low ethylene signaling dynamics play a vital role in coordinating radiation resilience!\n- **Caption:** *In deep space, cabin atmosphere engineering and plant epigenetics become one unified discipline.*\n\n**Page 21 — Open Data Deposited (`OSD-782`)**\n- **Panel 1 [NASA OSDR Terminal]:** All `36` verified RNA-Seq and epigenomic study records lock into NASA Open Science Data Repository under Study DOI `10.26030/qpqe-8956` (`OSD-782`).\n- **Panel 2 [Global Link]:** Worldwide researchers and student classrooms gain instant open access to explore low-dose radiation multi-omics.\n\n**Page 22 — Act II Climax: The Ninety-Mission Convergence**\n- **Panel 1 [Panoramic Data Tapestry]:** Glowing threads from every earlier volume converge in a grand orbital helix: Vol. 01 (`OSD-7`) root skewing, Vol. 16 (`OSD-136`) hypobaria, Vol. 68 (`OSD-971`) putrescine shields, Vol. 74 (`OSD-416`) bisulfite methylomes, and Vol. 90 (`OSD-782`) ethylene-chromatin resilience!\n\n### Act III: The Interplanetary Green Fleet (Pages 23–32)\n\n**Page 23 — From Shuttle Middeck to Mars Transit**\n- **Panel 1 [Historical Montage]:** Left to right across the spread: `STS-131` ABRS canisters → ISS `Veggie` & `APH` → Apollo lunar regolith gloveboxes → Antarctic `EDEN ISS` → a rotating interplanetary greenhouse vessel bound for Mars.\n- **Caption:** *Ninety verified NASA OSDR plant biology missions. Every single one is a stepping stone from Earth's cradle to living ecosystems among the stars.*\n\n**Page 24 — The Four Pillars of Cosmic Botany**\n- **Panel 1 [Four-Zone Infographic Art]:** Four glowing botanical crests: (1) **Gravity & Mechanics** (`statoliths`, `TCH4`, `TAC1`), (2) **Atmosphere & Light** (`Veggie LEDs`, `hypobaria`, `ethylene`), (3) **Regolith & Bioregeneration** (`Apollo soil`, `EDEN ISS`, `mizuna`), and (4) **Genome & Epigenome** (`SOG1`, `MET1`, `ELP2`, `OxPtADC`).\n\n**Page 25 — The Role of `MET1` Across Microgravity & Radiation**\n- **Panel 1 [Cross-Mission Split]:** Left: `OSD-416` (Vol. 74) showing `MET1` conditioning microgravity methylomes on the ISS. Right: `OSD-782` (Vol. 90) showing endogenous cytosine methylation + chromatin accessibility responding to low-dose radiation.\n- **Dialogue (Dr. Mingqi Zhou):** \"Microgravity and cosmic radiation hit different sensors—yet both speak directly to the plant epigenome.\"\n\n**Page 26 — Future Space Farmers in Today's Classrooms**\n- **Panel 1 [Global Classroom Collage]:** Middle-schoolers, high-school labs, and university teams examine real NASA OSDR datasets, running open phenomics pipelines and designing the next 90 space plant experiments.\n- **Caption:** *Open science turns every classroom on Earth into Mission Control.*\n\n**Page 27 — The Martian Greenhouse Horizon**\n- **Panel 1 [Wide Establishing Shot]:** Inside a translucent pressurized biodome resting in a red Martian crater valley, rows of emerald *Arabidopsis*, Red Romaine lettuce, dwarf wheat, and mizuna flourish beneath calibrated full-spectrum LEDs.\n- **Panel 2 [Sensor Wall]:** Atmospheric telemetry reads: `O₂: 21% · CO₂: 800 ppm · Radiation Shield: ACTIVE · Ethylene Micro-Monitoring: NOMINAL`.\n\n**Page 28 — Breathing Together Across Worlds**\n- **Panel 1 [Close-Up / Stomata & Leaf]:** Water vapor and oxygen shimmer from open stomata while roots weave through bio-conditioned regolith, closing the loop between human breath and plant photosynthesis.\n- **Dialogue (Mission Botanist):** \"Every molecule of oxygen in this dome started as sunlight, water, and ninety volumes of hard-won space biology.\"\n\n**Page 29 — The Living Archive**\n- **Panel 1 [Cupola Panorama]:** Looking back from lunar and Martian orbit toward the pale blue dot of Earth. Ninety luminous emerald data stars form a constellation across the dark sky.\n- **Caption:** *From `OSD-7` to `OSD-971` and through all twenty-two Special Chronicles to `OSD-782`—every single plant study in the NASA Open Science Data Repository has been told.*\n\n**Page 30 — Grand Finale Splash: Zero-G Roots Forever**\n- **Panel 1 [Breathtaking Full-Page Splash]:** A vibrant, unstoppable terrestrial canopy unfurling inside a crystalline orbital botanical ring above the glowing curve of Mars, its delicate roots tracing shimmering constellations through weightlessness.\n- **SFX:** *KIRA-DON! (100% NASA OSDR Plant Biology Archive Complete)*\n- **Caption:** *ASTRO-BOTANICA: ZERO-G ROOTS — COMPLETE 90-VOLUME ARCHIVE. WHEREVER HUMANITY JOURNEYS, LIFE GROWS WITH US.*\n\n**Page 31 — Mission Architecture & `OSD-782` Multi-Omics Matrix**\n- **Panel 1 [Left Infographic Spread]:** Verified NASA OSDR `OSD-782` design (`n = 36` samples): Factors (`Ionizing Radiation`, `Absorbed Radiation Dose`, `Time of Sample Collection After Treatment`), Assays (`Stranded RNA-Seq` + `MAPit` single-molecule chromatin accessibility & cytosine methylation), Study DOI `10.26030/qpqe-8956`.\n\n**Page 32 — Master 90-Volume Series Synthesis Ledger**\n- **Panel 1 [Right Infographic Spread]:** Complete synthesis of **90 Volumes (2,880 Script Pages · 88/90 Live NASA OSDR API Verified + 2 International Archive Studies · 3,787 Verified Biological Samples)** uniting *ASTRO-BOTANICA: ZERO-G ROOTS* with *The CoSE Chronicles* and the 114-Issue Research Archive.",
       "raw_script_path": "docs/astro-botanica/volumes/vol-90-osd-782.md",
       "cover": {
         "has_raster": false,
@@ -55140,7 +56402,7 @@ window.ASTRO_BOTANICA_DATA = {
       ],
       "quiz": [
         {
-          "question": "In NASA OSDR study OSD-782 (Arabidopsis thaliana in SCK CEN Gamma Irradiation Facility), which primary space biology pathway is investigated?",
+          "question": "In NASA OSDR study OSD-782 (Arabidopsis thaliana seedlings profiled across… in University of Florida Ground Analog…), which primary space biology pathway is investigated?",
           "options": [
             "Cell Wall & Cytoskeleton",
             "Microgravity & Gravitropism",
@@ -55148,7 +56410,7 @@ window.ASTRO_BOTANICA_DATA = {
             "Hormones & Metabolic Defense"
           ],
           "answer_index": 2,
-          "explanation": "OSD-782 focuses on Radiation & DNA Repair under Ground Analog conditions (36 verified biological samples). Experimental factors tracked in NASA OSDR: Ionizing Radiation, Absorbed Radiation Dose, Time of Sample Collection After Treatment."
+          "explanation": "OSD-782 focuses on Radiation & DNA Repair under ISS conditions (36 verified biological samples). Experimental factors tracked in NASA OSDR: Ionizing Radiation, Absorbed Radiation Dose, Time of Sample Collection After Treatment."
         },
         {
           "question": "In Volume 90 (OSD-782), what biological role does 'EIN3' play in the study?",
@@ -55159,7 +56421,7 @@ window.ASTRO_BOTANICA_DATA = {
             "Plant / Mutant Line"
           ],
           "answer_index": 1,
-          "explanation": "EIN3 (Master Regulator): Nuclear regulators binding directly to Ethylene Response Factors (ERF1, EDF1) to direct stress tolerance."
+          "explanation": "EIN3 (Master Regulator): Ethylene-responsive nuclear regulators binding directly to newly opened chromatin promoters to trigger stress defense and recovery programs."
         }
       ]
     }

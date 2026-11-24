@@ -110,7 +110,7 @@ def parse_dramatis_personae(pers_txt: str) -> list[dict]:
         if sym_m:
             symbol = sym_m.group(1)
         elif raw_name.lower().startswith("dr."):
-            parts_n = [p for p in raw_name.replace("&", " ").split() if p]
+            parts_n = [p.strip(",;:") for p in raw_name.replace("&", " ").split() if p.strip(",;:")]
             symbol = f"Dr. {parts_n[2]}" if len(parts_n) >= 3 else smart_truncate(raw_name, 14)
         elif raw_name.lower().startswith("squad "):
             symbol = smart_truncate(raw_name[6:].split("(")[0].strip(), 14)
@@ -742,7 +742,8 @@ def build(verify: bool) -> int:
             vol_data["verified_publications"] = v_pubs
             if v_pubs:
                 p0 = v_pubs[0]
-                auth_part = f"{smart_truncate(p0['authors'], 90)}. " if p0["authors"] else ""
+                auth_clean = smart_truncate(p0["authors"], 90).rstrip(".")
+                auth_part = f"{auth_clean}. " if auth_clean else ""
                 id_parts = []
                 if p0["doi"]:
                     id_parts.append(f"DOI: {p0['doi']}")

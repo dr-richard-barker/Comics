@@ -7,9 +7,9 @@
   "source": "Gemini showrunner session saved 2026-11-22 (docs/astro-botanica/source/)",
   "total_volumes": 90,
   "script_status_counts": {
-    "complete": 3,
-    "partial": 49,
-    "condensed": 38
+    "complete": 6,
+    "partial": 48,
+    "condensed": 36
   },
   "next_queued_accession": null,
   "remaining_after_last_volume": [],
@@ -2956,7 +2956,7 @@
       "accession": "OSD-971",
       "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-971",
       "osdr_doi": null,
-      "organism": "Arabidopsis thaliana (Columbia-0 wild-type) compared against genetically engineered polyamine metabolic pathway mutant and overexpressor lines",
+      "organism": "Arabidopsis thaliana (Col-0 wild-type) compared against genetically engineered putrescine (Put) metabolic pathway lines from OSD-971 (72 verified RNA-Seq samples across Spaceflight, Organism Part, and Genotype factors)",
       "hardware_and_conditions": "International Space Station (ISS) US National Laboratory — Advanced Plant Habitat (APH) and Veggie flight facilities (SpaceX-25 mission / Increment 67). Growth rigs: sterile Phytagel growth plates (10 cm × 10 cm) inside automated growth cassettes under controlled environmental parameters (22°C, 65% RH, 16:8 light/dark photoperiod under broad-spectrum LED arrays at 100 µmol m⁻² s⁻¹). Ground controls conducted in parallel inside the KSC Orbital Environmental Simulator (OES) with real-time telemetr",
       "publication": {
         "citation": "Su, S.-H., & Masson, P. H. (2026). Genetic alterations of the putrescine metabolic pathway attenuate plant responses to spaceflight. npj Microgravity, 12:45 (DOI: 10.1038/s41526-026-00663-4).",
@@ -2967,15 +2967,12 @@
       "file": "docs/astro-botanica/volumes/vol-68-osd-971.md",
       "source_turn": 9999,
       "qa": {
-        "script_status": "partial",
-        "page_headings": 28,
-        "pages_covered": 30,
-        "missing_pages": [
-          31,
-          32
-        ],
+        "script_status": "complete",
+        "page_headings": 30,
+        "pages_covered": 32,
+        "missing_pages": [],
         "condensed_ranges": [],
-        "panels": 37,
+        "panels": 39,
         "double_page_spreads_mentioned": 2,
         "has_mission_debrief": true,
         "bible_json": "ok",
@@ -3195,29 +3192,23 @@
       "accession": "OSD-416",
       "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-416",
       "osdr_doi": null,
-      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. met1-7 DNA methyltransferase mutant vs. elp2-5 histone acetyltransferase subunit mutant). High-coverage Whole-Genome Bisulfite Sequencing (WGBS) mapping 5-methylcytosine across CG, CHG, and CHH contexts, paired with stranded RNA-Seq.",
-      "hardware_and_conditions": "International Space Station (Kibo / US Lab) — Advanced Biological Research System (ABRS) and Veggie chambers. 12-day orbital growth on sterile nutrient phytagel plates. Ground controls conducted in the KSC Orbital Environmental Simulator (OES) with real-time 48-hour offset telemetry. Harvested into KFTs with RNAlater and deep-frozen at -80°C in MELFI.",
+      "organism": "Arabidopsis thaliana — Wild-Type Columbia-0 (Col-0) vs. elp2-5 (Elongator Complex Subunit 2 histone acetyltransferase/epigenomic mutant) vs. met1-7 (DNA Methyltransferase 1 CG-methylation mutant), dissected into Roots and Leaves (48 verified samples). Whole-Genome Bisulfite Sequencing (WGBS / Illumi",
+      "hardware_and_conditions": "International Space Station (ISS) — APEX04-EPEX (Advanced Plant Experiment 04 — Epigenetic Expression) flown aboard Veggie flight growth hardware (10 cm × 10 cm vertical sterile Phytagel plates, continuous LED lighting, n = 48 verified biological samples across Flight vs. Ground Control in the KSC Orbital Environmental Simulator [OES]). Fixed on orbit into KSC Fixation Tubes (KFTs) with RNAlater and deep-frozen in MELFI (-80°C).",
       "publication": {
-        "citation": "Paul, A. L., Sng, N. J., Zupanska, A., Ferl, R. J., et al. (2020). Epigenetic remodeling in spaceflight: Whole-genome bisulfite sequencing reveals cytosine hypomethylation and chromatin de-repression on the International Space Station. Communications Biology, 3:298 (DOI: 10.1038/s42003-020-1023-0).",
-        "doi": "10.1038/s42003-020-1023-0",
-        "pmid": null
+        "citation": "Paul AL, Haveman N, Califar B, Ferl RJ. (2021). Epigenomic Regulators Elongator Complex Subunit 2 and Methyltransferase 1 Differentially Condition the Spaceflight Response in Arabidopsis. Frontiers in Plant Science, 12:691790 (DOI: 10.3389/fpls.2021.691790, PMID: 34589093).",
+        "doi": "10.3389/fpls.2021.691790",
+        "pmid": "34589093"
       },
       "in_gemini_master_list": true,
       "file": "docs/astro-botanica/volumes/vol-74-osd-416.md",
       "source_turn": 9999,
       "qa": {
-        "script_status": "condensed",
-        "page_headings": 9,
+        "script_status": "complete",
+        "page_headings": 32,
         "pages_covered": 32,
         "missing_pages": [],
-        "condensed_ranges": [
-          "4-10",
-          "11-15",
-          "16-20",
-          "21-25",
-          "26-30"
-        ],
-        "panels": 6,
+        "condensed_ranges": [],
+        "panels": 59,
         "double_page_spreads_mentioned": 0,
         "has_mission_debrief": true,
         "bible_json": "ok",
@@ -3226,7 +3217,10 @@
       "bible_summary": {
         "hardware": [],
         "genotypes": [],
-        "molecular_characters": []
+        "molecular_characters": [
+          "MET1",
+          "ELP2"
+        ]
       }
     },
     {
@@ -3836,30 +3830,24 @@
       "title": "The Planetary Hormone: Ethylene and Epigenetic Resilience",
       "accession": "OSD-782",
       "osdr_url": "https://osdr.nasa.gov/bio/repo/data/studies/OSD-782",
-      "osdr_doi": null,
-      "organism": "Arabidopsis thaliana (Columbia-0 wild-type vs. ein2-1 ethylene-insensitive mutant vs. ctr1-1 constitutive ethylene signaling mutant). Multi-omics integration: Whole-genome stranded RNA-Seq, Whole-Genome Bisulfite Sequencing (WGBS) cytosine methylomes, and targeted ethylene gas emission chromatograph",
-      "hardware_and_conditions": "SCK CEN Low-Dose Irradiation Facility (Belgium) simulating deep-space galactic cosmic background radiation. Precision Cesium-137 continuous low-dose gamma exposure (1.4 mGy/h across 14 days, total cumulative dose 470 mGy, identical to a one-way transit to Mars). Hermetically sealed chambers with gas chromatography ethylene sensors and real-time infrared growth tracking.",
+      "osdr_doi": "10.26030/qpqe-8956",
+      "organism": "Arabidopsis thaliana seedlings profiled across three verified NASA OSDR experimental factors: Ionizing Radiation, Absorbed Radiation Dose, and Time of Sample Collection After Treatment (36 samples). Integrated multi-omics combining whole-genome RNA-Seq with MAPit single-molecule endogenous cytosine ",
+      "hardware_and_conditions": "University of Florida Ground Analog Ionizing Radiation Facility — controlled acute low-dose ionizing radiation exposure chambers calibrated to deep-space transit dose regimes across multiple absorbed doses and post-irradiation recovery time points (n = 36 verified biological samples in NASA OSDR OSD-782). Paired with MAPit (Methyltransferase Accessibility Protocol for individual templates) chromatin accessibility assays and Illumina stranded RNA-Seq.",
       "publication": {
-        "citation": "Van Hees, M., Horemans, N., Leys, N., et al. (2023). Multi-omics profiling reveals ethylene signalling as a master coordinator of genetic and epigenetic acclimation to chronic low-dose ionizing radiation in Arabidopsis. Environmental and Experimental Botany, 206:105193 (DOI: 10.1016/j.envexpbot.2022.105193).",
-        "doi": "10.1016/j.envexpbot.2022.105193",
+        "citation": "Newman JRB, Zhou M, Pires JC, Bacher RL, Kladde M, Concannon P. (2023). Multi-omics profiling reveals ethylene signalling as a key pathway underlying both genetic and epigenetic responses to low-dose ionizing radiation in Arabidopsis. DOI: 10.1101/2023.10.14.562363.",
+        "doi": "10.1101/2023.10.14.562363",
         "pmid": null
       },
       "in_gemini_master_list": true,
       "file": "docs/astro-botanica/volumes/vol-90-osd-782.md",
       "source_turn": 9999,
       "qa": {
-        "script_status": "condensed",
-        "page_headings": 9,
+        "script_status": "complete",
+        "page_headings": 32,
         "pages_covered": 32,
         "missing_pages": [],
-        "condensed_ranges": [
-          "4-10",
-          "11-15",
-          "16-20",
-          "21-25",
-          "26-30"
-        ],
-        "panels": 6,
+        "condensed_ranges": [],
+        "panels": 54,
         "double_page_spreads_mentioned": 0,
         "has_mission_debrief": true,
         "bible_json": "ok",
@@ -3868,7 +3856,11 @@
       "bible_summary": {
         "hardware": [],
         "genotypes": [],
-        "molecular_characters": []
+        "molecular_characters": [
+          "EIN2",
+          "EIN3",
+          "MET1"
+        ]
       }
     }
   ]

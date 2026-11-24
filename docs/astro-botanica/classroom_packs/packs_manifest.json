@@ -1,0 +1,52 @@
+[
+  {
+    "id": "arc-1-foundations",
+    "title": "Arc I: Orbital Foundations & Gravitropism",
+    "range": "Vols 01–15",
+    "volume_count": 15,
+    "sample_count": 432,
+    "ngss": "MS-LS1-8 · HS-LS1-2 · MS-PS2-2 (Gravity Sensing, Statoliths & Root Transcriptomics)",
+    "html_path": "docs/astro-botanica/classroom_packs/AstroBotanica_Arc1_Foundations_Vols01-15.html",
+    "pdf_path": null
+  },
+  {
+    "id": "arc-2-deep-space-ag",
+    "title": "Arc II: Deep Space Agriculture, Hypobaria & Regolith",
+    "range": "Vols 16–35",
+    "volume_count": 20,
+    "sample_count": 415,
+    "ngss": "MS-LS1-5 · HS-LS2-4 · MS-ESS3-3 (Low Atmospheric Pressure, Methylation & Space Crops)",
+    "html_path": "docs/astro-botanica/classroom_packs/AstroBotanica_Arc2_DeepSpaceAg_Vols16-35.html",
+    "pdf_path": null
+  },
+  {
+    "id": "arc-3-multi-omics",
+    "title": "Arc III: Multi-Omics, Microbiomes & Epigenetics",
+    "range": "Vols 36–50",
+    "volume_count": 15,
+    "sample_count": 571,
+    "ngss": "HS-LS1-1 · HS-LS3-1 · MS-LS2-2 (Space Crop Microbiomes, Chromatin Marks & Cereals)",
+    "html_path": "docs/astro-botanica/classroom_packs/AstroBotanica_Arc3_MultiOmics_Vols36-50.html",
+    "pdf_path": null
+  },
+  {
+    "id": "arc-4-frontier-climax",
+    "title": "Arc IV: Lunar Regolith, Polar Analogs & Polyamine Climax",
+    "range": "Vols 51–68",
+    "volume_count": 18,
+    "sample_count": 1384,
+    "ngss": "HS-LS2-6 · HS-ETS1-2 · HS-LS3-2 (Apollo Lunar Fines, EDEN ISS Antarctica & Putrescine Engineering)",
+    "html_path": "docs/astro-botanica/classroom_packs/AstroBotanica_Arc4_Frontier_Vols51-68.html",
+    "pdf_path": null
+  },
+  {
+    "id": "arc-5-special-chronicles",
+    "title": "Arc V: Special Chronicles — Starfighters, SOG1 & Ethylene Finale",
+    "range": "Vols 69–90",
+    "volume_count": 22,
+    "sample_count": 985,
+    "ngss": "HS-LS3-2 · HS-PS4-4 · HS-LS1-3 (Parabolic 0g Flights, SOG1 DNA Repair, WGBS Methylomes & Ethylene)",
+    "html_path": "docs/astro-botanica/classroom_packs/AstroBotanica_Arc5_SpecialChronicles_Vols69-90.html",
+    "pdf_path": null
+  }
+]

@@ -71,13 +71,13 @@
 | 65 | [OSD-877](https://osdr.nasa.gov/bio/repo/data/studies/OSD-877) | [The Elemental Ledger: Hadley and Descartes](volumes/vol-65-osd-877.md) | Diverse phylogenetic vascular and non-vascular cohort (n = 3 | 30/32 | 🟡 |
 | 66 | [OSD-883](https://osdr.nasa.gov/bio/repo/data/studies/OSD-883) | [Fra Mauro's Breccia: The 21-Day Contact](volumes/vol-66-osd-883.md) | Four foundational space vegetable crops (14 to 21 days culti | 30/32 | 🟡 |
 | 67 | [OSD-895](https://osdr.nasa.gov/bio/repo/data/studies/OSD-895) | [The Polar Citadel: 268 Days at Neumayer III](volumes/vol-67-osd-895.md) | Comprehensive multi-crop CEA portfolio across 12 space crop  | 30/32 | 🟡 |
-| 68 | [OSD-971](https://osdr.nasa.gov/bio/repo/data/studies/OSD-971) | [The Polyamine Shield: Unlocking the Orbital Genome](volumes/vol-68-osd-971.md) | Arabidopsis thaliana (Columbia-0 wild-type) compared against | 30/32 | 🟡 |
+| 68 | [OSD-971](https://osdr.nasa.gov/bio/repo/data/studies/OSD-971) | [The Polyamine Shield: Unlocking the Orbital Genome](volumes/vol-68-osd-971.md) | Arabidopsis thaliana (Col-0 wild-type) compared against gene | 32/32 | ✅ |
 | 69 | [OSD-193](https://osdr.nasa.gov/bio/repo/data/studies/OSD-193) | [The Helical Skew: Tubulin Dynamics in Orbit](volumes/vol-69-osd-193.md) | Arabidopsis thaliana (Columbia-0 wild-type vs. sku6-1/spr1-1 | 32/32 | 🟠 |
 | 70 | [OSD-282](https://osdr.nasa.gov/bio/repo/data/studies/OSD-282) | [Submerged in Vacuum: The Anoxia Rescue](volumes/vol-70-osd-282.md) | Arabidopsis thaliana (Col-0 wild-type vs. hsfa2 knockout mut | 32/32 | 🟠 |
 | 71 | [OSD-329](https://osdr.nasa.gov/bio/repo/data/studies/OSD-329) | [The Double-Strand Vanguard: ATM and ADM](volumes/vol-71-osd-329.md) | Arabidopsis thaliana (Columbia-0 wild-type vs. atm-2 kinase- | 32/32 | 🟠 |
 | 72 | [OSD-346](https://osdr.nasa.gov/bio/repo/data/studies/OSD-346) | [Spectral Shades: Phytochrome Fractional Gravity](volumes/vol-72-osd-346.md) | Arabidopsis thaliana (Wild-type Col-0 vs. phyA-211 single mu | 32/32 | 🟠 |
 | 73 | [OSD-411](https://osdr.nasa.gov/bio/repo/data/studies/OSD-411) | [The Gravity Threshold: Plant Gravity Perception Pilot](volumes/vol-73-osd-411.md) | Arabidopsis thaliana wild-type Col-0 vs. starch-deficient ph | 32/32 | 🟠 |
-| 74 | [OSD-416](https://osdr.nasa.gov/bio/repo/data/studies/OSD-416) | [The Epigenetic Imprint: Bisulfite Methylomes in Orbit](volumes/vol-74-osd-416.md) | Arabidopsis thaliana (Columbia-0 wild-type vs. met1-7 DNA me | 32/32 | 🟠 |
+| 74 | [OSD-416](https://osdr.nasa.gov/bio/repo/data/studies/OSD-416) | [The Epigenetic Imprint: Bisulfite Methylomes in Orbit](volumes/vol-74-osd-416.md) | Arabidopsis thaliana | 32/32 | ✅ |
 | 75 | [OSD-428](https://osdr.nasa.gov/bio/repo/data/studies/OSD-428) | [Supersonic Parabola: Starfighter G-Transitions](volumes/vol-75-osd-428.md) | Arabidopsis thaliana (Wassilewskija ecotype overexpressing t | 32/32 | 🟠 |
 | 76 | [OSD-434](https://osdr.nasa.gov/bio/repo/data/studies/OSD-434) | [Mach-Speed Signaling: The Starfighter Maiden Run](volumes/vol-76-osd-434.md) | Arabidopsis thaliana (Wassilewskija ecotype overexpressing 1 | 32/32 | 🟠 |
 | 77 | [OSD-436](https://osdr.nasa.gov/bio/repo/data/studies/OSD-436) | [Thirty Seconds of Weightlessness: The C-9 Parabolic Pulse](volumes/vol-77-osd-436.md) | Arabidopsis thaliana (Wassilewskija wild-type). Time-course  | 32/32 | 🟠 |
@@ -93,6 +93,6 @@
 | 87 | [OSD-531](https://osdr.nasa.gov/bio/repo/data/studies/OSD-531) | [The Bending Stalk: Inflorescence Gravity Tracers](volumes/vol-87-osd-531.md) | Arabidopsis thaliana (Col-0 wild-type inflorescence stems).  | 32/32 | 🟠 |
 | 88 | [OSD-622](https://osdr.nasa.gov/bio/repo/data/studies/OSD-622) | [The Recoverable Satellite: Dwarf Wheat on SJ-10](volumes/vol-88-osd-622.md) | Triticum aestivum (Dwarf wheat, cultivar 'Jimai 22'). Transm | 32/32 | 🟠 |
 | 89 | [OSD-655](https://osdr.nasa.gov/bio/repo/data/studies/OSD-655) | [The Orbital Harvest: Multi-Elemental Mizuna](volumes/vol-89-osd-655.md) | Brassica rapa var. japonica (Mizuna mustard) and Lactuca sat | 32/32 | 🟠 |
-| 90 | [OSD-782](https://osdr.nasa.gov/bio/repo/data/studies/OSD-782) | [The Planetary Hormone: Ethylene and Epigenetic Resilience](volumes/vol-90-osd-782.md) | Arabidopsis thaliana (Columbia-0 wild-type vs. ein2-1 ethyle | 32/32 | 🟠 |
+| 90 | [OSD-782](https://osdr.nasa.gov/bio/repo/data/studies/OSD-782) | [The Planetary Hormone: Ethylene and Epigenetic Resilience](volumes/vol-90-osd-782.md) | Arabidopsis thaliana seedlings profiled across three verifie | 32/32 | ✅ |
 
 **Next queued:** `None` · **Remaining after last volume:** 0 accessions

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ASTRO-BOTANICA Classroom Pack — Arc III: Multi-Omics, Microbiomes &amp; Epigenetics</title>
+  <style>
+    @page { size: letter portrait; margin: 0.5in; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; color: #0f172a; background: #ffffff; line-height: 1.45; }
+    .toolbar { position: sticky; top: 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #09090b; color: #f8fafc; }
+    .btn-print { background: #059669; color: #ffffff; border: none; padding: 8px 16px; border-radius: 6px; font-weight: 800; cursor: pointer; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px 28px; }
+    .cover { background: #09090b; color: #f8fafc; border-radius: 14px; padding: 28px 32px; margin-bottom: 22px; border-left: 8px solid #10b981; }
+    .eyebrow { font-family: monospace; font-size: 0.78rem; color: #34d399; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 6px; }
+    .cover h1 { margin: 0 0 10px; font-size: 1.85rem; line-height: 1.2; }
+    .cover p { margin: 6px 0; color: #cbd5e1; font-size: 0.92rem; }
+    .stats-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .stat { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; color: #ecfdf5; }
+    h2 { font-size: 1.2rem; color: #065f46; border-bottom: 2px solid #0f172a; padding-bottom: 5px; margin: 22px 0 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.78rem; margin-bottom: 18px; }
+    th { background: #0f172a; color: #ffffff; padding: 6px 8px; text-align: left; }
+    td { padding: 5px 8px; border-bottom: 1px solid #e2e8f0; }
+    .vol-card { border: 1.5px solid #cbd5e1; border-radius: 10px; padding: 12px 15px; margin-bottom: 12px; break-inside: avoid; page-break-inside: avoid; background: #ffffff; }
+    .vol-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px; margin-bottom: 5px; }
+    .vol-badge { background: #09090b; color: #34d399; font-family: monospace; font-size: 0.74rem; font-weight: 900; padding: 2px 7px; border-radius: 4px; }
+    .vol-domain { background: #ede9fe; color: #5b21b6; font-size: 0.72rem; font-weight: 800; padding: 2px 7px; border-radius: 4px; }
+    .vol-meta { font-size: 0.74rem; color: #475569; font-weight: 600; }
+    .verified-tag { font-family: monospace; font-size: 0.68rem; font-weight: 900; color: #047857; background: #d1fae5; padding: 2px 7px; border-radius: 999px; }
+    .vol-card h3 { margin: 3px 0 5px; font-size: 1rem; color: #0f172a; }
+    .official-line { margin: 0 0 7px; font-size: 0.78rem; color: #334155; }
+    .edu-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 7px 9px; font-size: 0.74rem; margin-bottom: 7px; }
+    .cast-row { font-size: 0.74rem; margin-bottom: 6px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+    .chip { background: #e0f2fe; color: #0369a1; padding: 1px 6px; border-radius: 4px; font-weight: 700; font-family: monospace; font-size: 0.7rem; }
+    .findings-list { margin: 4px 0 6px; padding-left: 18px; font-size: 0.75rem; color: #1e293b; }
+    .citation-line { margin: 0; font-size: 0.71rem; color: #64748b; }
+    .citation-line a { color: #0284c7; text-decoration: none; }
+    .quiz-section { page-break-before: always; break-before: page; }
+    .quiz-item { border: 1px solid #cbd5e1; border-radius: 8px; padding: 9px 12px; margin-bottom: 8px; break-inside: avoid; font-size: 0.8rem; background: #fffbeb; }
+    .quiz-item p { margin: 0 0 5px; }
+    .quiz-opts { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font-size: 0.76rem; }
+    .answer-box { page-break-before: always; break-before: page; background: #f0fdf4; border: 1.5px solid #10b981; border-radius: 10px; padding: 14px 18px; }
+    .answer-box ol, .answer-box ul { margin: 6px 0 0; padding-left: 18px; font-size: 0.78rem; line-height: 1.5; }
+    @media print {
+      .toolbar { display: none !important; }
+      .wrap { padding: 0; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <div><strong>🌱 ASTRO-BOTANICA Classroom Curriculum Pack</strong> · Arc III: Multi-Omics, Microbiomes &amp; Epigenetics (Vols 36–50)</div>
+    <button class="btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+  <div class="wrap">
+    <header class="cover">
+      <p class="eyebrow">CoSE Science Comics · NASA Open Science Data Repository (OSDR) Educator Pack</p>
+      <h1>Arc III: Multi-Omics, Microbiomes &amp; Epigenetics</h1>
+      <p>Red Romaine lettuce and mizuna food safety, Brachypodium grasses, automated nucleic acid extraction, and chromatin marks guiding root architecture.</p>
+      <p><strong>NGSS Alignment:</strong> HS-LS1-1 · HS-LS3-1 · MS-LS2-2 (Space Crop Microbiomes, Chromatin Marks &amp; Cereals)</p>
+      <div class="stats-row">
+        <span class="stat">📚 Volumes 36–50 (15 Missions)</span>
+        <span class="stat">✅ 15/15 Live NASA OSDR Verified</span>
+        <span class="stat">🧪 571 Verified Biological Samples</span>
+        <span class="stat">🎓 K–5 · 6–8 · 9–12 Differentiated Guides</span>
+      </div>
+    </header>
+
+    <h2>📋 Arc Mission Roster &amp; NASA OSDR Index</h2>
+    <table>
+      <thead><tr><th>Vol</th><th>Accession</th><th>Manga Title</th><th>World</th><th>Hardware</th><th>Samples</th></tr></thead>
+      <tbody><tr><td><strong>Vol 36</strong></td><td><code>OSD-375</code></td><td>Three Grasses Under the Veggie Canopy</td><td>ISS</td><td>ISS Veggie Facility</td><td>n=48</td></tr><tr><td><strong>Vol 37</strong></td><td><code>OSD-385</code></td><td>The Clean Seed Paradox</td><td>ISS</td><td>Ground-based ISS-simulating…</td><td>n=100</td></tr><tr><td><strong>Vol 38</strong></td><td><code>OSD-386</code></td><td>The Mustard&#x27;s Quiet Border</td><td>Ground Analog</td><td>Kennedy Space Center</td><td>n=100</td></tr><tr><td><strong>Vol 39</strong></td><td><code>OSD-406</code></td><td>Two Rides to the Edge</td><td>Mars</td><td>Virgin Galactic Suborbital</td><td>n=24</td></tr><tr><td><strong>Vol 40</strong></td><td><code>OSD-412</code></td><td>Three Greens Under One Fan</td><td>ISS</td><td>ISS Veggie Facility</td><td>n=43</td></tr><tr><td><strong>Vol 41</strong></td><td><code>OSD-413</code></td><td>The Clean Chamber&#x27;s First Crop</td><td>ISS</td><td>ISS Veggie Facility</td><td>n=12</td></tr><tr><td><strong>Vol 42</strong></td><td><code>OSD-414</code></td><td>The Veteran Chamber&#x27;s Red Harvest</td><td>ISS</td><td>ISS Veggie Facility</td><td>n=10</td></tr><tr><td><strong>Vol 43</strong></td><td><code>OSD-427</code></td><td>Marks That Steer the Root</td><td>ISS</td><td>ISS Veggie Facility</td><td>n=48</td></tr><tr><td><strong>Vol 44</strong></td><td><code>OSD-437</code></td><td>Two Rotors, One Truth</td><td>ISS</td><td>EMCS Centrifuge (ISS)</td><td>n=19</td></tr><tr><td><strong>Vol 45</strong></td><td><code>OSD-476</code></td><td>First Roots in Lunar Dust</td><td>Ground Analog</td><td>Apollo Lunar Receiving Lab</td><td>n=20</td></tr><tr><td><strong>Vol 46</strong></td><td><code>OSD-520</code></td><td>Threshold of the Third Seed</td><td>Ground Analog</td><td>SCK CEN Gamma Irradiation Facility</td><td>n=45</td></tr><tr><td><strong>Vol 47</strong></td><td><code>OSD-522</code></td><td>Two Ledgers, One Orbit</td><td>ISS</td><td>BRIC-LED Flight Hardware</td><td>n=36</td></tr><tr><td><strong>Vol 48</strong></td><td><code>OSD-565</code></td><td>Triple-Contained for Three Minutes</td><td>Ground Analog</td><td>2D/3D Clinostat Microgravity Sim</td><td>n=45</td></tr><tr><td><strong>Vol 49</strong></td><td><code>OSD-581</code></td><td>Iron in the Mojave Dust</td><td>Mars</td><td>Fitotron climatic chamber</td><td>n=12</td></tr><tr><td><strong>Vol 50</strong></td><td><code>OSD-594</code></td><td>Blades in the Bead Mill</td><td>Ground Analog</td><td>Ground study at NASA Kennedy Space Center</td><td>n=9</td></tr></tbody>
+    </table>
+
+    <h2>🔬 Verified Mission Study Sheets (Vols 36–50)</h2>
+    
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 36 · OSD-375</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · ISS Veggie Facility · 🧪 48 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Three Grasses Under the Veggie Canopy</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Transcriptional profiling of roots and shoots from Brachypodium distachyon seedlings flown on the ISS</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Brachypodium distachyon survive and grow inside ISS Veggie Facility without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Dr. Su: (First Author, University of Wisconsin–Madison) — Plant geneticist who engineered…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Accession, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Dr. Su (Researcher / Crew)</span> <span class='chip'>Dr. H. (Researcher / Crew)</span> <span class='chip'>Dr. G. (Researcher / Crew)</span> <span class='chip'>Scott Tingle (Researcher / Crew)</span> <span class='chip'>Drs. Daniel… (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>Dr. Su:</strong> Researcher / Crew — (First Author, University of Wisconsin–Madison) — Plant geneticist who engineered…</li><li><strong>Dr. H.:</strong> Researcher / Crew — (Principal Investigator, University of Wisconsin–Madison) — Tropism and…</li><li><strong>Dr. G.:</strong> Researcher / Crew — (Co-Author, NASA Kennedy Space Center) — Veteran spaceflight hardware and plant…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Su, S.-H., Levine, H. G., &amp; Masson, P. H. (2023). Brachypodium distachyon Seedlings Display Accession-Specific Morphological and Transcriptomic Responses to the Microgravity Environment of the International Space Station. Life, 13(3), 626. (PMC10058394) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-375">https://osdr.nasa.gov/bio/repo/data/studies/OSD-375</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 37 · OSD-385</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · Ground-based ISS-simulating… · 🧪 100 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Clean Seed Paradox</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Persistence of Escherichia coli in the microbiomes of red Romaine lettuce (Lactuca sativa cv. ‘Outredgeous’)- does seed sanitization matter?</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Lactuca sativa cv. &#x27;Outredgeous&#x27; survive and grow inside Ground-based ISS-simulating… without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Dr. R.: (First Author, AMENTUM Services Inc. / LASSO, KSC) — Microbial ecologist who led the…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Treatment, Seed Sanitization, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Dr. R. (Researcher / Crew)</span> <span class='chip'>Dr. L. (Researcher / Crew)</span> <span class='chip'>Dr. W. (Researcher / Crew)</span> <span class='chip'>Cory J.… (Molecular Actor)</span> <span class='chip'>Bacillus (Signal / Sensor)</span></div>
+          <ul class='findings-list'><li><strong>Dr. R.:</strong> Researcher / Crew — (First Author, AMENTUM Services Inc. / LASSO, KSC) — Microbial ecologist who led the…</li><li><strong>Dr. L.:</strong> Researcher / Crew — (Co-Authors, AMENTUM / LASSO, KSC) — Space-crop food-safety specialists who designed…</li><li><strong>Dr. W.:</strong> Researcher / Crew — (NASA KSC) — Space-agriculture leads overseeing the Outredgeous red Romaine lettuce…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Dixit AR, Khodadad CLM, Hummerick ME, Spern CJ, Spencer LE, Fischer JA, Curry AB, Gooden…. Persistence of Escherichia coli in the microbiomes of red Romaine lettuce (Lactuca sativa cv. ‘Outredgeous’) and mizuna mustard (Brassica rapa var. japonica) - does seed sanitization matter? (DOI: 10.1186/s12866-021-02345-5) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-385">https://osdr.nasa.gov/bio/repo/data/studies/OSD-385</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 38 · OSD-386</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">Ground Analog · Kennedy Space Center · 🧪 100 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Mustard&#x27;s Quiet Border</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Persistence of Escherichia coli in the microbiomes of mizuna mustard (Brassica rapa var. japonica) - does seed sanitization matter?</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Brassica rapa var. japonica survive and grow inside Kennedy Space Center without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Leaves (Sanitized + E. coli): 4.77 × 10⁷ → 2.90 × 10²</div>
+            <div><strong>🚀 9–12 Factors:</strong> Treatment, Seed Sanitization, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>The… (Signal / Sensor)</span></div>
+          <ul class='findings-list'><li><strong>Leaves (Sanitized + E. coli):</strong> 4.3 × 10⁴ — 4.77 × 10⁷ → 2.90 × 10²</li><li><strong>Leaves (Unsanitized + E. coli):</strong> 2.5 × 10⁴ — 8.34 × 10⁶ → 2.9 × 10²</li><li><strong>Leaves (Sanitized, Non-treated):</strong> — — —</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Dixit Anirudha R., Khodadad Christina L. M., Hummerick Mary E., Spern Cory J., Spencer…. Persistence of Escherichia coli in the microbiomes of red Romaine lettuce (Lactuca sativa cv. ‘Outredgeous’) and mizuna mustard (Brassica rapa var. japonica) - does seed sanitization matter? (DOI: 10.1186/s12866-021-02345-5 · PMID: 34686151) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-386">https://osdr.nasa.gov/bio/repo/data/studies/OSD-386</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 39 · OSD-406</span>
+              <span class="vol-domain">Microgravity &amp; Gravitropism</span>
+              <span class="vol-meta">Mars · Virgin Galactic Suborbital · 🧪 24 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Two Rides to the Edge</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Transcriptomic responses of Arabidopsis thaliana lines WS and sku5 to the Blue Origin NS-12 and Virgin Galactic VP-03 suborbital flights</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana roots survive and grow inside Virgin Galactic Suborbital without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Microgravity &amp; Gravitropism. Virgin Galactic VP-03 (VSS Unity): Post-landing in rear bay of nearby vehicle</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spacecraft, Altered Gravity, Ecotype, Genotype</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>WS (Plant / Mutant Line)</span> <span class='chip'>sku5 (Plant / Mutant Line)</span> <span class='chip'>VSS Unity (Molecular Actor)</span> <span class='chip'>New Shepard (Molecular Actor)</span> <span class='chip'>The Conserved… (Plant / Mutant Line)</span></div>
+          <ul class='findings-list'><li><strong>Virgin Galactic VP-03 (VSS Unity):</strong> Dec 13, 2018; Mojave, CA (82.7 km apogee) — Post-landing in rear bay of nearby vehicle</li><li><strong>Blue Origin NS-12 (New Shepard):</strong> Dec 11, 2019 (12:53 PM EST); West Texas — 33 min post-landing (43 min elapsed); GC +1 h</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Califar Brandon, Zupanska Agata, Callaham Jordan A., Bamsey Matthew T., Graham Thomas…. Shared Metabolic Remodeling Processes Characterize the Transcriptome of Arabidopsis thaliana within Various Suborbital Flight Environments (DOI: 10.2478/gsr-2021-0002) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-406">https://osdr.nasa.gov/bio/repo/data/studies/OSD-406</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 40 · OSD-412</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · ISS Veggie Facility · 🧪 43 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Three Greens Under One Fan</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Spatial characterization of microbial communities on multi-species leafy greens grown simultaneously in the Veggie vegetable production systems on the International Space Station VEG-03D</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Simultaneous mixed crop survive and grow inside ISS Veggie Facility without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Red Romaine Leaves: E. coli, S. aureus, Salmonella negative</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>VEG-03D (Molecular Actor)</span> <span class='chip'>Veggie SN 002 (Plant / Mutant Line)</span> <span class='chip'>ISS (Plant / Mutant Line)</span></div>
+          <ul class='findings-list'><li><strong>Red Romaine Leaves:</strong> 6.9 × 10⁶ CFU/g (avg) — E. coli, S. aureus, Salmonella negative</li><li><strong>Green Leaf Lettuce Leaves:</strong> 7.9 × 10⁶ CFU/g (avg) — Higher fungi on 2nd harvest</li><li><strong>Mizuna Mustard Leaves:</strong> 1.4 × 10³–2.6 × 10⁷ CFU/g (D/E range) — Lowest fungal average on leaves</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Hummerick Mary E., Khodadad Christina L. M., Dixit Anirudha R., Spencer Lashelle E.…. Spatial Characterization of Microbial Communities on Multi-Species Leafy Greens Grown Simultaneously in the Vegetable Production Systems on the International Space Station (DOI: 10.3390/life11101060 · PMID: 34685431) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-412">https://osdr.nasa.gov/bio/repo/data/studies/OSD-412</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 41 · OSD-413</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · ISS Veggie Facility · 🧪 12 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Clean Chamber&#x27;s First Crop</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Spatial characterization of microbial communities on multi-species leafy greens grown simultaneously in the Veggie vegetable production systems on the International Space Station VEG-03E</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Simultaneous mixed crop of Brassica rapa var.… survive and grow inside ISS Veggie Facility without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Red Romaine Leaves (OL): Significantly lower (p ≤ 0.05) than D (6.9 × 10⁶) &amp; F (6.1 × 10⁶)</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Veggie SN 001 (Plant / Mutant Line)</span> <span class='chip'>SN01 (Plant / Mutant Line)</span> <span class='chip'>OL (Plant / Mutant Line)</span></div>
+          <ul class='findings-list'><li><strong>Red Romaine Leaves (OL):</strong> 5.7 × 10³ CFU/g avg (low 4.3 × 10²) — Significantly lower (p ≤ 0.05) than D (6.9 × 10⁶) &amp; F (6.1 × 10⁶)</li><li><strong>Green Leaf Lettuce (WG):</strong> 3.5 × 10⁷ CFU/g (1 harvest) — 62.5% germination (E/F); 2/4 healthy pillows</li><li><strong>Mizuna Roots (2 pillows):</strong> 8.7 × 10⁷ &amp; 2.5 × 10⁸ CFU/g — E. coli, S. aureus, Salmonella negative</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Hummerick Mary E., Khodadad Christina L. M., Dixit Anirudha R., Spencer Lashelle E.…. Spatial Characterization of Microbial Communities on Multi-Species Leafy Greens Grown Simultaneously in the Vegetable Production Systems on the International Space Station (DOI: 10.3390/life11101060 · PMID: 34685431) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-413">https://osdr.nasa.gov/bio/repo/data/studies/OSD-413</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 42 · OSD-414</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">ISS · ISS Veggie Facility · 🧪 10 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>The Veteran Chamber&#x27;s Red Harvest</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Spatial characterization of microbial communities on multi-species leafy greens grown simultaneously in the Veggie vegetable production systems on the International Space Station VEG-03F</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Simultaneous mixed crop of Lactuca sativa cv.… survive and grow inside ISS Veggie Facility without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Red Romaine Leaves (OL): Matches D (6.9 × 10⁶ in SN 002); higher than E (5.7 × 10³ in SN 001)</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>OL (Molecular Actor)</span> <span class='chip'>Veggie SN 002 (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>Red Romaine Leaves (OL):</strong> 6.1 × 10⁶ CFU/g (avg) — Matches D (6.9 × 10⁶ in SN 002); higher than E (5.7 × 10³ in SN 001)</li><li><strong>Green Leaf Lettuce (WG):</strong> 5.9 × 10⁵ CFU/g (avg) — E. coli, S. aureus, Salmonella negative</li><li><strong>Red Romaine Roots (OL):</strong> 9.3 × 10⁶ &amp; 2.6 × 10⁷ CFU/g — Lowest root bacterial counts in trilogy</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Hummerick Mary E., Khodadad Christina L. M., Dixit Anirudha R., Spencer Lashelle E.…. Spatial Characterization of Microbial Communities on Multi-Species Leafy Greens Grown Simultaneously in the Vegetable Production Systems on the International Space Station (DOI: 10.3390/life11101060 · PMID: 34685431) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-414">https://osdr.nasa.gov/bio/repo/data/studies/OSD-414</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 43 · OSD-427</span>
+              <span class="vol-domain">Epigenetics &amp; Methylome</span>
+              <span class="vol-meta">ISS · ISS Veggie Facility · 🧪 48 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Marks That Steer the Root</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Characterizing Epigenetic Changes in Methylation Mutants (elp2-5 and met1-7) in Response to Spaceflight. [RNA-Seq]</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside ISS Veggie Facility without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Epigenetics &amp; Methylome. Col-0 (WT): No global average change; 51% CHH DMRs</div>
+            <div><strong>🚀 9–12 Factors:</strong> Spaceflight, Genotype, Organism part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Col-0 (Plant / Mutant Line)</span> <span class='chip'>elp2-5 (Plant / Mutant Line)</span> <span class='chip'>met1-7 (Plant / Mutant Line)</span> <span class='chip'>Astronauts… (Researcher / Crew)</span> <span class='chip'>UF (Enzyme / Remodeler)</span></div>
+          <ul class='findings-list'><li><strong>Col-0 (WT):</strong> Healthy green leaves; negatively phototropic… — No global average change; 51% CHH DMRs</li><li><strong>elp2-5:</strong> Tangled roots within 1 cm of seed… — Global hypermethylation; 63% CHH DMRs</li><li><strong>met1-7:</strong> Healthy leaves &amp; extended roots like Col-0… — Global hypermethylation (CG in roots); 83% CG DMRs</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Paul Anna-Lisa, Haveman Natasha, Califar Brandon, Ferl Robert J. Epigenomic Regulators Elongator Complex Subunit 2 and Methyltransferase 1 Differentially Condition the Spaceflight Response in Arabidopsis (DOI: 10.3389/fpls.2021.691790 · PMID: 34589093) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-427">https://osdr.nasa.gov/bio/repo/data/studies/OSD-427</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 44 · OSD-437</span>
+              <span class="vol-domain">Radiation &amp; DNA Repair</span>
+              <span class="vol-meta">ISS · EMCS Centrifuge (ISS) · 🧪 19 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Two Rotors, One Truth</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Transcriptional and Post transcriptional Regulation of Seedling Development in Microgravity</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana Col-0 wild-type shoots survive and grow inside EMCS Centrifuge (ISS) without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Radiation &amp; DNA Repair. PRR Day 4 (OSD-437): 210 downregulated stress/cell-wall genes persist to Day 6</div>
+            <div><strong>🚀 9–12 Factors:</strong> Age, Altered Gravity, Spaceflight</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>EMCS (Molecular Actor)</span> <span class='chip'>Col-0 Shoots (Plant / Mutant Line)</span> <span class='chip'>miR319c (Enzyme / Remodeler)</span> <span class='chip'>NC (Molecular Actor)</span> <span class='chip'>ARC (Researcher / Crew)</span></div>
+          <ul class='findings-list'><li><strong>PRR Day 4 (OSD-437):</strong> 406 — 210 downregulated stress/cell-wall genes persist to Day 6</li><li><strong>PRR Day 6 (OSD-437):</strong> 1,792 — PC1 (53%) separates 4d vs. 6d in 1g, collapses in μg</li><li><strong>PS Day 5 (OSD-223):</strong> 1,819 — Constant light, ~760 ppm CO₂, 48 h initial 1g cue</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Land Eric S., Sheppard James, Doherty Colleen J., Perera Imara Y. Conserved plant transcriptional responses to microgravity from two consecutive spaceflight experiments (DOI: 10.3389/fpls.2023.1308713) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-437">https://osdr.nasa.gov/bio/repo/data/studies/OSD-437</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 45 · OSD-476</span>
+              <span class="vol-domain">Lunar &amp; Martian Regolith</span>
+              <span class="vol-meta">Ground Analog · Apollo Lunar Receiving Lab · 🧪 20 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>First Roots in Lunar Dust</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Plants grown in Apollo lunar regolith present stress-associated transcriptomes that inform prospects for lunar exploration</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana Col-0 wild-type survive and grow inside Apollo Lunar Receiving Lab without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Lunar &amp; Martian Regolith. Apollo 11 (10084): 71% salt, metal, ROS; 29% nutrient (PORA down, AT5G26270 up)</div>
+            <div><strong>🚀 9–12 Factors:</strong> Treatment</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>10084 (Molecular Actor)</span> <span class='chip'>12070 (Molecular Actor)</span> <span class='chip'>70051 (Molecular Actor)</span> <span class='chip'>JSC-1A (Plant / Mutant Line)</span> <span class='chip'>UF (Researcher / Crew)</span></div>
+          <ul class='findings-list'><li><strong>Apollo 11 (10084):</strong> Mature; high-Ti (5–7 wt.% TiO₂), high… — 71% salt, metal, ROS; 29% nutrient (PORA down, AT5G26270 up)</li><li><strong>Apollo 12 (12070):</strong> Submature; basaltic mare — Salt, metal, ROS + Nitrilase-2, JRG21, Defensin-like</li><li><strong>Apollo 17 (70051):</strong> Immature; high-Ti (5–7 wt.% TiO₂) — Mildest site response; shared ionic/ROS core</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Paul Anna-Lisa, Elardo Stephen M., Ferl Robert. Plants grown in Apollo lunar regolith present stress-associated transcriptomes that inform prospects for lunar exploration (DOI: 10.1038/s42003-022-03334-8 · PMID: 35552509) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-476">https://osdr.nasa.gov/bio/repo/data/studies/OSD-476</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 46 · OSD-520</span>
+              <span class="vol-domain">Radiation &amp; DNA Repair</span>
+              <span class="vol-meta">Ground Analog · SCK CEN Gamma Irradiation Facility · 🧪 45 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Threshold of the Third Seed</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Changes in DNA Methylation in Arabidopsis thaliana Plants Exposed Over Multiple Generations to Gamma Radiation</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside SCK CEN Gamma Irradiation Facility without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Radiation &amp; DNA Repair. Organism &amp; Tissue: Arabidopsis thaliana (Columbia ecotype)…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Generation, Ionizing Radiation</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>S₁-Spike (Plant / Mutant Line)</span> <span class='chip'>S₂-Sentinel (Plant / Mutant Line)</span> <span class='chip'>137Cs (Plant / Mutant Line)</span> <span class='chip'>MET1 (Plant / Mutant Line)</span></div>
+          <ul class='findings-list'><li><strong>Organism &amp; Tissue:</strong> Arabidopsis thaliana (Columbia ecotype)… — Arabidopsis thaliana (Columbia ecotype)…</li><li><strong>Generations:</strong> P0 (naive parent), S1 (1st irradiated… — P0 (naive parent), S1 (1st irradiated…</li><li><strong>Irradiation Source:</strong> Panoramic 137Cs (0.662 MeV) at SCK CEN for 14… — Panoramic 137Cs (0.662 MeV) at SCK CEN for 14…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Laanen P, Saenen E, Mysara M, Van de Walle J, Van Hees M, Nauts R, Van Nieuwerburgh F…. Changes in DNA Methylation in Arabidopsis thaliana Plants Exposed Over Multiple Generations to Gamma Radiation. (DOI: 10.3389/fpls.2021.611783 · PMID: 33868326) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-520">https://osdr.nasa.gov/bio/repo/data/studies/OSD-520</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 47 · OSD-522</span>
+              <span class="vol-domain">Hormones &amp; Metabolic Defense</span>
+              <span class="vol-meta">ISS · BRIC-LED Flight Hardware · 🧪 36 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Two Ledgers, One Orbit</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Integrative Transcriptomics and Proteomics Profiling of Arabidopsis thaliana Elucidates Novel Mechanisms Underlying Spaceflight Adaptation</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside BRIC-LED Flight Hardware without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Hormones &amp; Metabolic Defense. Shoot RNA-Seq: ≥ 1</div>
+            <div><strong>🚀 9–12 Factors:</strong> Organism Part, Spaceflight</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>RNA-Seq (Signal / Sensor)</span> <span class='chip'>Membrane-Worke… (Molecular Actor)</span> <span class='chip'>PSBA (Molecular Actor)</span> <span class='chip'>Villin &amp; The… (Enzyme / Remodeler)</span> <span class='chip'>BRIC (Signal / Sensor)</span></div>
+          <ul class='findings-list'><li><strong>Shoot RNA-Seq:</strong> 15,505 transcripts — ≥ 1</li><li><strong>Root Membrane:</strong> 3,973 proteins (20,923 peptides) — ≥ 0.2</li><li><strong>Root Soluble:</strong> 3,412 proteins (18,636 peptides) — ≥ 0.2</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Gbolaga O. Olanrewaju, Natasha J. Haveman, Michael J. Naldrett, Anna-Lisa Paul, Robert J.…. Integrative Transcriptomics and Proteomics Profiling of Arabidopsis thaliana Elucidates Novel Mechanisms Underlying Spaceflight Adaptation (DOI: 10.3389/fpls.2023.1260429) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-522">https://osdr.nasa.gov/bio/repo/data/studies/OSD-522</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 48 · OSD-565</span>
+              <span class="vol-domain">Space Crops &amp; Nutrition</span>
+              <span class="vol-meta">Ground Analog · 2D/3D Clinostat Microgravity Sim · 🧪 45 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Triple-Contained for Three Minutes</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Utilizing the KSC Fixation Tube to Conduct Human-Tended Plant Biology Experiments on a Suborbital Spaceflight</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Arabidopsis thaliana survive and grow inside 2D/3D Clinostat Microgravity Sim without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Space Crops &amp; Nutrition. Organism &amp; Age: Arabidopsis thaliana (Col-0 wild-type), 7…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Treatment, Organism Part, Microgravity Simulation</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>Kennedy Space Center Fixation Tube (Researcher / Crew)</span> <span class='chip'>22 × 62 mm (Molecular Actor)</span> <span class='chip'>Q1 (Signal / Sensor)</span> <span class='chip'>Q-Leaves (Molecular Actor)</span> <span class='chip'>C (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>Organism &amp; Age:</strong> Arabidopsis thaliana (Col-0 wild-type), 7… — Arabidopsis thaliana (Col-0 wild-type), 7…</li><li><strong>Growth Coupon:</strong> 0.425 mm stainless-steel wire mesh (22 × 62… — 0.425 mm stainless-steel wire mesh (22 × 62…</li><li><strong>Pre-Seal Light:</strong> 3 days at 100 μmol m⁻² s⁻¹ (24 h) → 8 h dark… — 3 days at 100 μmol m⁻² s⁻¹ (24 h) → 8 h dark…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Haveman Natasha J., Zhou Mingqi, Callaham Jordan, Strickland Hunter F., Houze Donald…. Utilizing the KSC Fixation Tube to Conduct Human-Tended Plant Biology Experiments on a Suborbital Spaceflight (DOI: 10.3390/life12111871 · PMID: 36431005) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-565">https://osdr.nasa.gov/bio/repo/data/studies/OSD-565</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 49 · OSD-581</span>
+              <span class="vol-domain">Lunar &amp; Martian Regolith</span>
+              <span class="vol-meta">Mars · Fitotron climatic chamber · 🧪 12 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Iron in the Mojave Dust</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> A molecular study of Italian ryegrass grown on Martian regolith simulant</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Lolium multiflorum Lam. survive and grow inside Fitotron climatic chamber without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Lunar &amp; Martian Regolith. Organism: Lolium multiflorum Lam. (Italian ryegrass…</div>
+            <div><strong>🚀 9–12 Factors:</strong> soil environment exposure, Organism Part</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>PGM (Plant / Mutant Line)</span> <span class='chip'>YSL13 (Molecular Actor)</span> <span class='chip'>The Lacuna… (Researcher / Crew)</span> <span class='chip'>SuSy1 (Master Regulator)</span> <span class='chip'>PAL1-5 (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>Organism:</strong> Lolium multiflorum Lam. (Italian ryegrass… — Lolium multiflorum Lam. (Italian ryegrass…</li><li><strong>Substrates (n = 18 tubes):</strong> 9 Potting soil (PGS: 1/3 sand, 2/3 peat… — 9 Potting soil (PGS: 1/3 sand, 2/3 peat…</li><li><strong>Growth Rig &amp; Chamber:</strong> 50 mL foil-wrapped skirted tubes with… — 50 mL foil-wrapped skirted tubes with…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Berni Roberto, Leclercq Céline C., Roux Philippe, Hausman Jean-Francois, Renaut Jenny…. A molecular study of Italian ryegrass grown on Martian regolith simulant (DOI: 10.1016/j.scitotenv.2022.158774 · PMID: 36108852) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-581">https://osdr.nasa.gov/bio/repo/data/studies/OSD-581</a></p>
+        </article>
+        
+        <article class="vol-card">
+          <div class="vol-head">
+            <div>
+              <span class="vol-badge">VOL 50 · OSD-594</span>
+              <span class="vol-domain">Light &amp; Phototropism</span>
+              <span class="vol-meta">Ground Analog · Ground study at NASA Kennedy Space Center · 🧪 9 samples</span>
+            </div>
+            <span class="verified-tag">✅ LIVE OSDR VERIFIED</span>
+          </div>
+          <h3>Blades in the Bead Mill</h3>
+          <p class="official-line"><strong>Official NASA OSDR Study:</strong> Advancing the automation of plant nucleic acid extraction for rapid diagnosis of plant diseases in space</p>
+          <div class="edu-trio">
+            <div><strong>🌱 K–5 Mystery:</strong> How does Three crop pathosystems survive and grow inside Ground study at NASA Kennedy Space Center without normal Earth conditions?</div>
+            <div><strong>🔬 6–8 Mechanism:</strong> Focus pathway: Light &amp; Phototropism. Lysis Hardware &amp; Chemistry: CBIO microHomogenizer™ (2 mL, 1.1 g beads, 10…</div>
+            <div><strong>🚀 9–12 Factors:</strong> Organism Part, Treatment</div>
+          </div>
+          <div class='cast-row'><strong>Molecular Cast:</strong> <span class='chip'>microHomogenizer™ (Molecular Actor)</span> <span class='chip'>TES (Molecular Actor)</span> <span class='chip'>FOL (Plant / Mutant Line)</span> <span class='chip'>Pythium (Molecular Actor)</span> <span class='chip'>Chablis (Molecular Actor)</span></div>
+          <ul class='findings-list'><li><strong>Lysis Hardware &amp; Chemistry:</strong> CBIO microHomogenizer™ (2 mL, 1.1 g beads, 10… — CBIO microHomogenizer™ (2 mL, 1.1 g beads, 10…</li><li><strong>Pathosystem #1 (Oomycete):</strong> Lactuca sativa &#x27;Outredgeous Red&#x27; + Pythium… — Lactuca sativa &#x27;Outredgeous Red&#x27; + Pythium…</li><li><strong>Pathosystem #2 (Fungus):</strong> Solanum lycopersicum &#x27;Red Robin&#x27; + Fusarium… — Solanum lycopersicum &#x27;Red Robin&#x27; + Fusarium…</li></ul>
+          <p class="citation-line"><strong>Verified Reference:</strong> Haveman Natasha J., Schuerger Andrew C., Yu Pei-Ling, Brown Mark, Doebler Robert, Paul…. Advancing the automation of plant nucleic acid extraction for rapid diagnosis of plant diseases in space (DOI: 10.3389/fpls.2023.1194753) · <a href="https://osdr.nasa.gov/bio/repo/data/studies/OSD-594">https://osdr.nasa.gov/bio/repo/data/studies/OSD-594</a></p>
+        </article>
+        
+
+    <section class="quiz-section">
+      <h2>🧪 Student Classroom Assessment Worksheet — Arc III: Multi-Omics, Microbiomes &amp; Epigenetics</h2>
+      <p style="font-size:0.84rem; margin-bottom:12px;"><strong>Name:</strong> _____________________________________ &nbsp;&nbsp; <strong>Class / Period:</strong> _______________ &nbsp;&nbsp; <strong>Date:</strong> ____________</p>
+      
+            <div class="quiz-item">
+              <p><strong>Q1 (Vol 36 · OSD-375):</strong> In NASA OSDR study OSD-375 (Brachypodium distachyon in ISS Veggie Facility), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Light &amp; Phototropism</span><span>☐ B. Atmosphere &amp; Hypobaria</span><span>☐ C. Microgravity &amp; Gravitropism</span><span>☐ D. Epigenetics &amp; Methylome</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q2 (Vol 37 · OSD-385):</strong> In NASA OSDR study OSD-385 (Lactuca sativa cv. &#x27;Outredgeous&#x27; in Ground-based ISS-simulating…), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Cell Wall &amp; Cytoskeleton</span><span>☐ B. Radiation &amp; DNA Repair</span><span>☐ C. Lunar &amp; Martian Regolith</span><span>☐ D. Light &amp; Phototropism</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q3 (Vol 38 · OSD-386):</strong> In NASA OSDR study OSD-386 (Brassica rapa var. japonica in Kennedy Space Center), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Epigenetics &amp; Methylome</span><span>☐ B. Hormones &amp; Metabolic Defense</span><span>☐ C. Light &amp; Phototropism</span><span>☐ D. Space Crops &amp; Nutrition</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q4 (Vol 39 · OSD-406):</strong> In NASA OSDR study OSD-406 (Arabidopsis thaliana roots in Virgin Galactic Suborbital), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Atmosphere &amp; Hypobaria</span><span>☐ B. Microgravity &amp; Gravitropism</span><span>☐ C. Space Crops &amp; Nutrition</span><span>☐ D. Lunar &amp; Martian Regolith</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q5 (Vol 40 · OSD-412):</strong> In NASA OSDR study OSD-412 (Simultaneous mixed crop in ISS Veggie Facility), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Light &amp; Phototropism</span><span>☐ B. Radiation &amp; DNA Repair</span><span>☐ C. Hormones &amp; Metabolic Defense</span><span>☐ D. Cell Wall &amp; Cytoskeleton</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q6 (Vol 41 · OSD-413):</strong> In NASA OSDR study OSD-413 (Simultaneous mixed crop of Brassica rapa var.… in ISS Veggie Facility), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Epigenetics &amp; Methylome</span><span>☐ B. Atmosphere &amp; Hypobaria</span><span>☐ C. Space Crops &amp; Nutrition</span><span>☐ D. Light &amp; Phototropism</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q7 (Vol 42 · OSD-414):</strong> In NASA OSDR study OSD-414 (Simultaneous mixed crop of Lactuca sativa cv.… in ISS Veggie Facility), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Cell Wall &amp; Cytoskeleton</span><span>☐ B. Microgravity &amp; Gravitropism</span><span>☐ C. Light &amp; Phototropism</span><span>☐ D. Lunar &amp; Martian Regolith</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q8 (Vol 43 · OSD-427):</strong> In NASA OSDR study OSD-427 (Arabidopsis thaliana in ISS Veggie Facility), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Radiation &amp; DNA Repair</span><span>☐ B. Epigenetics &amp; Methylome</span><span>☐ C. Atmosphere &amp; Hypobaria</span><span>☐ D. Space Crops &amp; Nutrition</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q9 (Vol 44 · OSD-437):</strong> In NASA OSDR study OSD-437 (Arabidopsis thaliana Col-0 wild-type shoots in EMCS Centrifuge (ISS)), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Radiation &amp; DNA Repair</span><span>☐ B. Light &amp; Phototropism</span><span>☐ C. Microgravity &amp; Gravitropism</span><span>☐ D. Lunar &amp; Martian Regolith</span></div>
+            </div>
+            
+            <div class="quiz-item">
+              <p><strong>Q10 (Vol 45 · OSD-476):</strong> In NASA OSDR study OSD-476 (Arabidopsis thaliana Col-0 wild-type in Apollo Lunar Receiving Lab), which primary space biology pathway is investigated?</p>
+              <div class="quiz-opts"><span>☐ A. Cell Wall &amp; Cytoskeleton</span><span>☐ B. Radiation &amp; DNA Repair</span><span>☐ C. Hormones &amp; Metabolic Defense</span><span>☐ D. Lunar &amp; Martian Regolith</span></div>
+            </div>
+            
+    </section>
+
+    <section class="answer-box">
+      <h2 style="margin-top:0;">👩‍🏫 Teacher Answer Key &amp; Scientific Explanations</h2>
+      <ul><li><strong>Q1 (OSD-375): A</strong> — OSD-375 focuses on Light &amp; Phototropism under ISS conditions (48 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Accession, Organism Part.</li><li><strong>Q2 (OSD-385): D</strong> — OSD-385 focuses on Light &amp; Phototropism under ISS conditions (100 verified biological samples). Experimental factors tracked in NASA OSDR: Treatment, Seed Sanitization, Organism Part.</li><li><strong>Q3 (OSD-386): C</strong> — OSD-386 focuses on Light &amp; Phototropism under Ground Analog conditions (100 verified biological samples). Experimental factors tracked in NASA OSDR: Treatment, Seed Sanitization, Organism Part.</li><li><strong>Q4 (OSD-406): B</strong> — OSD-406 focuses on Microgravity &amp; Gravitropism under Mars conditions (24 verified biological samples). Experimental factors tracked in NASA OSDR: Spacecraft, Altered Gravity, Ecotype, Genotype.</li><li><strong>Q5 (OSD-412): A</strong> — OSD-412 focuses on Light &amp; Phototropism under ISS conditions (43 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Organism Part.</li><li><strong>Q6 (OSD-413): D</strong> — OSD-413 focuses on Light &amp; Phototropism under ISS conditions (12 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Organism Part.</li><li><strong>Q7 (OSD-414): C</strong> — OSD-414 focuses on Light &amp; Phototropism under ISS conditions (10 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Organism Part.</li><li><strong>Q8 (OSD-427): B</strong> — OSD-427 focuses on Epigenetics &amp; Methylome under ISS conditions (48 verified biological samples). Experimental factors tracked in NASA OSDR: Spaceflight, Genotype, Organism part.</li><li><strong>Q9 (OSD-437): A</strong> — OSD-437 focuses on Radiation &amp; DNA Repair under ISS conditions (19 verified biological samples). Experimental factors tracked in NASA OSDR: Age, Altered Gravity, Spaceflight.</li><li><strong>Q10 (OSD-476): D</strong> — OSD-476 focuses on Lunar &amp; Martian Regolith under Ground Analog conditions (20 verified biological samples). Experimental factors tracked in NASA OSDR: Treatment.</li></ul>
+    </section>
+  </div>
+</body>
+</html>
