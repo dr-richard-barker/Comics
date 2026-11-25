@@ -213,7 +213,7 @@
       <section class="ab-showcase-banner">
         <div class="ab-banner-content">
           <p class="ab-banner-eyebrow">🌱 Flagship Seinen Manga Series · Live NASA OSDR Verified Plant Biology Archive</p>
-          <h2 class="ab-banner-title">ASTRO-BOTANICA: ZERO-G ROOTS <span class="ab-jp-sub">(宇宙植物学 · 根の無重力)</span></h2>
+          <h2 class="ab-banner-title">AstroBotanical GeneLab Graphical Catalogue <span class="ab-jp-sub">(宇宙植物学 · 根の無重力)</span></h2>
           <p class="ab-banner-lede">
             Synthesizing all <strong>90 NASA OSDR space plant biology studies</strong> (<strong>${verifiedCount}/90 verified live via NASA OSDR REST API</strong> covering <strong>${totalSamples.toLocaleString()} biological samples</strong>) into <strong>2,880 pages of interactive seinen manga</strong>.
             Explore real differential gene expression ledgers, clickable cross-mission molecular cast rosters, K–12 / Researcher adaptive briefings, and interactive lab-check quizzes.
@@ -228,12 +228,12 @@
         </div>
       </section>
 
-      <div class="ab-filter-deck" aria-label="Filter ASTRO-BOTANICA Volumes">
+      <div class="ab-filter-deck" aria-label="Filter AstroBotanical GeneLab Graphical Catalogue Volumes">
         <!-- Search Row -->
         <div class="ab-search-row">
           <div class="ab-search-box">
             <span class="ab-search-icon">🔍</span>
-            <input id="ab-search-input" type="search" placeholder="Search 90 volumes by accession (OSD-7, OSD-416), gene (HY5, SOG1, MET1, RAD51), hardware (Veggie, APH), or plant..." value="${esc(searchQuery)}" aria-label="Search ASTRO-BOTANICA manga volumes">
+            <input id="ab-search-input" type="search" placeholder="Search 90 volumes by accession (OSD-7, OSD-416), gene (HY5, SOG1, MET1, RAD51), hardware (Veggie, APH), or plant..." value="${esc(searchQuery)}" aria-label="Search AstroBotanical GeneLab Graphical Catalogue manga volumes">
           </div>
           <button id="ab-illustrated-toggle" class="ab-tool-btn ${filterIllustratedOnly ? "active" : ""}" type="button">✨ Illustrated Covers (${rasterCount})</button>
           <button id="ab-reset-filters-btn" class="ab-tool-btn" type="button">↺ Reset</button>

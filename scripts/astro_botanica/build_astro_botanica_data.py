@@ -22,7 +22,7 @@ DOCS_DIR = ROOT / "docs/astro-botanica"
 VOL_DIR = DOCS_DIR / "volumes"
 DATA_DIR = ROOT / "data/astro_botanica"
 
-SERIES_TITLE = "ASTRO-BOTANICA: ZERO-G ROOTS"
+SERIES_TITLE = "AstroBotanical GeneLab Graphical Catalogue"
 SERIES_SUBTITLE = "The Complete NASA Open Science Data Repository (OSDR) Plant Biology Manga Archive"
 
 

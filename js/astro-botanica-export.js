@@ -79,7 +79,7 @@
     ctx.fillStyle = "#10b981";
     ctx.font = "800 16px system-ui, -apple-system, sans-serif";
     ctx.fillText(
-      `🌱 ASTRO-BOTANICA: ZERO-G ROOTS · VOL ${String(volume.volume).padStart(2, "0")} (${volume.accession}${volume.sample_count ? ` · n=${volume.sample_count}` : ""})`,
+      `🌱 AstroBotanical GeneLab Graphical Catalogue · VOL ${String(volume.volume).padStart(2, "0")} (${volume.accession}${volume.sample_count ? ` · n=${volume.sample_count}` : ""})`,
       22,
       28
     );
@@ -222,7 +222,7 @@
         return `
           <section class="manga-sheet story-sheet">
             <header class="sheet-bar">
-              <span><strong>ASTRO-BOTANICA VOL ${String(volume.volume).padStart(2, "0")} (${esc(volume.accession)})</strong> — ${esc(p.act || "Act I")}</span>
+              <span><strong>AstroBotanical GeneLab Graphical Catalogue VOL ${String(volume.volume).padStart(2, "0")} (${esc(volume.accession)})</strong> — ${esc(p.act || "Act I")}</span>
               <span>Page ${esc(p.page_label)} of ${volume.pages.length}</span>
             </header>
             <div class="sheet-art">${spreadSvg}</div>
@@ -288,7 +288,7 @@
 <head>
   <meta charset="utf-8">
   <base href="${esc(baseHref)}">
-  <title>ASTRO-BOTANICA Vol. ${String(volume.volume).padStart(2, "0")} (${esc(volume.accession)}) | Verified Classroom Manga Booklet</title>
+  <title>AstroBotanical GeneLab Graphical Catalogue Vol. ${String(volume.volume).padStart(2, "0")} (${esc(volume.accession)}) | Verified Classroom Manga Booklet</title>
   <style>
     @page { size: landscape; margin: 0.28in; }
     * { box-sizing: border-box; }
@@ -334,7 +334,7 @@
 </head>
 <body>
   <div class="print-toolbar">
-    <div><strong>ASTRO-BOTANICA: ZERO-G ROOTS</strong> · Verified Classroom Manga Booklet — Vol. ${String(volume.volume).padStart(2, "0")} (${esc(volume.accession)})</div>
+    <div><strong>AstroBotanical GeneLab Graphical Catalogue</strong> · Verified Classroom Manga Booklet — Vol. ${String(volume.volume).padStart(2, "0")} (${esc(volume.accession)})</div>
     <button class="btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
   </div>
 

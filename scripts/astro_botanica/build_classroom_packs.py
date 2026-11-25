@@ -159,7 +159,7 @@ def render_arc_pack_html(arc: dict, vols: list[dict]) -> str:
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ASTRO-BOTANICA Classroom Pack — {esc(arc['title'])}</title>
+  <title>AstroBotanical GeneLab Graphical Catalogue Classroom Pack — {esc(arc['title'])}</title>
   <style>
     @page {{ size: letter portrait; margin: 0.5in; }}
     * {{ box-sizing: border-box; }}
@@ -205,7 +205,7 @@ def render_arc_pack_html(arc: dict, vols: list[dict]) -> str:
 </head>
 <body>
   <div class="toolbar">
-    <div><strong>🌱 ASTRO-BOTANICA Classroom Curriculum Pack</strong> · {esc(arc['title'])} (Vols {v_start:02d}–{v_end:02d})</div>
+    <div><strong>🌱 AstroBotanical GeneLab Graphical Catalogue Classroom Curriculum Pack</strong> · {esc(arc['title'])} (Vols {v_start:02d}–{v_end:02d})</div>
     <button class="btn-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
   </div>
   <div class="wrap">

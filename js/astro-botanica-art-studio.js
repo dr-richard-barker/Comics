@@ -392,7 +392,7 @@
     const castChips = (volume.molecular_cast || []).slice(0, 3);
 
     return `
-      <svg class="manga-svg-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" height="100%" role="img" aria-label="ASTRO-BOTANICA Volume ${volNumStr} Manga Cover">
+      <svg class="manga-svg-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="100%" height="100%" role="img" aria-label="AstroBotanical GeneLab Graphical Catalogue Volume ${volNumStr} Manga Cover">
         ${buildDefs(uid, pal)}
         <clipPath id="clip-cov-${uid}">
           <rect x="0" y="0" width="${W}" height="${H}" />

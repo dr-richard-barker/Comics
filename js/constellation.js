@@ -441,7 +441,7 @@
       box.innerHTML = `
         <div class="inspector-empty">
           <h3>🌌 Unified Space Biology Knowledge Graph</h3>
-          <p>Explore how <strong>16 Core Concept Stars</strong> (inner ring) bridge <strong>90 NASA OSDR ASTRO-BOTANICA Manga Volumes</strong> (middle emerald diamonds) and <strong>114 Open-Source Research Issues</strong> (outer ring)!</p>
+          <p>Explore how <strong>16 Core Concept Stars</strong> (inner ring) bridge <strong>90 NASA OSDR AstroBotanical GeneLab Graphical Catalogue Volumes</strong> (middle emerald diamonds) and <strong>114 Open-Source Research Issues</strong> (outer ring)!</p>
         </div>
       `;
       return;
@@ -462,7 +462,7 @@
           ${
             connectedAstro.length
               ? `
-            <h4>🌱 Connected ASTRO-BOTANICA NASA OSDR Manga (${connectedAstro.length} Volumes):</h4>
+            <h4>🌱 Connected AstroBotanical GeneLab Graphical Catalogue (${connectedAstro.length} Volumes):</h4>
             <div class="inspector-comic-list">
               ${connectedAstro
                 .map(
@@ -500,7 +500,7 @@
       box.innerHTML = `
         <div class="inspector-card">
           <div class="inspector-header" style="border-left: 4px solid #10b981">
-            <span class="inspector-badge" style="background:#059669">🌱 ASTRO-BOTANICA VOL ${String(node.volume).padStart(2, "0")} · ${node.accession}</span>
+            <span class="inspector-badge" style="background:#059669">🌱 AstroBotanical GeneLab Graphical Catalogue VOL ${String(node.volume).padStart(2, "0")} · ${node.accession}</span>
             <h3>${node.label.replace(/^Vol \d+:\s*/, "")}</h3>
             <p class="inspector-sub"><strong>Official NASA Study:</strong> ${node.official_title}</p>
             <p class="inspector-sub">${node.world} · ${node.hardware}${node.sample_count ? ` · 🧪 ${node.sample_count} verified samples` : ""}</p>
