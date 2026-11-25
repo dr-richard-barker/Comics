@@ -226,6 +226,7 @@ def main() -> None:
         compiled_novels.append(compiled)
 
     curr_map_rel = "exports/pdf/CoSE_Chronicles_Teacher_NGSS_Curriculum_Map.pdf"
+    cast_poster_rel = "exports/pdf/CoSE_Chronicles_Cast_And_Glossary_Poster.pdf"
     payload = {
         "anthology_title": "The CoSE Chronicles: 10 Flagship Space Biology Graphic Novels",
         "anthology_subtitle": "Adventures across the ISS, the Moon, and Earth—through the eyes of Astronauts, Phytonauts, and Mission Control Scientists in Marvel & Manga Art Styles",
@@ -235,6 +236,7 @@ def main() -> None:
         "raster_plates": total_raster,
         "vector_studio_plates": total_vector,
         "teacher_curriculum_map_pdf": curr_map_rel if (ROOT / curr_map_rel).exists() else None,
+        "cast_glossary_poster_pdf": cast_poster_rel if (ROOT / cast_poster_rel).exists() else None,
         "worlds": ["ISS", "Moon", "Earth"],
         "perspectives": ["Astronaut", "Phytonaut", "Mission Control"],
         "art_families": [

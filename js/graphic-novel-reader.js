@@ -125,7 +125,10 @@
       .join("");
 
     const teacherMapHtml = GN_DATA.teacher_curriculum_map_pdf
-      ? `<a class="gn-stat-pill gn-stat-link" href="${esc(GN_DATA.teacher_curriculum_map_pdf)}" target="_blank" rel="noopener" download>📋 Download 1-Page Teacher NGSS Map (PDF)</a>`
+      ? `<a class="gn-stat-pill gn-stat-link" href="${esc(GN_DATA.teacher_curriculum_map_pdf)}" target="_blank" rel="noopener" download>📋 1-Page Teacher NGSS Map (PDF)</a>`
+      : "";
+    const castPosterHtml = GN_DATA.cast_glossary_poster_pdf
+      ? `<a class="gn-stat-pill gn-stat-link" href="${esc(GN_DATA.cast_glossary_poster_pdf)}" target="_blank" rel="noopener" download>🎭 Cast &amp; 16-Term Glossary Poster (PDF)</a>`
       : "";
 
     root.innerHTML = `
@@ -143,6 +146,7 @@
             <span class="gn-stat-pill">🖨️ 8.5"×11" Print Comics &amp; Folded Booklets</span>
             <span class="gn-stat-pill">🔗 92 Linked Open-Source Repos</span>
             ${teacherMapHtml}
+            ${castPosterHtml}
           </div>
         </div>
       </section>

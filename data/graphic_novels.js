@@ -8,6 +8,7 @@ window.COSE_GRAPHIC_NOVELS = {
   "raster_plates": 58,
   "vector_studio_plates": 12,
   "teacher_curriculum_map_pdf": "exports/pdf/CoSE_Chronicles_Teacher_NGSS_Curriculum_Map.pdf",
+  "cast_glossary_poster_pdf": "exports/pdf/CoSE_Chronicles_Cast_And_Glossary_Poster.pdf",
   "worlds": [
     "ISS",
     "Moon",

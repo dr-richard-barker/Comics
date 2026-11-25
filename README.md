@@ -31,6 +31,7 @@ Synthesizing the biggest discoveries across all 114 projects into ten 3-act illu
 Every completed volume is pre-compiled into publication-grade **8-page US Letter Portrait (`8.5" × 11"`) 2-Tier Comic Book PDFs** (alternating duplex binding gutters, full vertical cover, inside mission briefing, 2 stacked comic beats/page with Science Data HUDs, 6-equation Science Lab, clickable Open-Source Repository Directory, and Collectible Back Cover) in **3 reading levels** (`K–5`, `6–8`, and `9–12 + Teacher`), plus **2-sheet fold-and-staple booklets**!
 
 - **📋 1-Page Teacher NGSS Curriculum Map**: [`exports/pdf/CoSE_Chronicles_Teacher_NGSS_Curriculum_Map.pdf`](exports/pdf/CoSE_Chronicles_Teacher_NGSS_Curriculum_Map.pdf)
+- **🎭 1-Page Cast & 16-Term Space Biology Glossary Wall Poster**: [`exports/pdf/CoSE_Chronicles_Cast_And_Glossary_Poster.pdf`](exports/pdf/CoSE_Chronicles_Cast_And_Glossary_Poster.pdf)
 - **📚 Standard 8.5" × 11" Comic PDFs** (`exports/pdf/`): Print 8 portrait pages double-sided (**Flip on Long Edge**) at 100% scale; staple along the left gutter.
 - **📖 2-Sheet Fold-and-Staple Mini-Comics** (`exports/pdf/booklets/*_Booklet_11x8.5.pdf`): Print 4 landscape pages double-sided (**Flip on Short Edge** — `[8|1]`, `[2|7]`, `[6|3]`, `[4|5]`), fold in half, and staple twice down the spine!
 
@@ -52,6 +53,7 @@ python3 scripts/export_novels_pdf.py --level k5 --only-complete --booklet
 python3 scripts/export_novels_pdf.py --level ms --only-complete --booklet
 python3 scripts/export_novels_pdf.py --level hs --only-complete --booklet
 python3 scripts/export_curriculum_map_pdf.py
+python3 scripts/export_cast_glossary_poster_pdf.py
 python3 scripts/build_graphic_novels.py --verify
 ```
 
